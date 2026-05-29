@@ -19,6 +19,8 @@ jobs:
           run_install: true
       - run: pnpm build
       - run: node .
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
