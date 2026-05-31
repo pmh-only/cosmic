@@ -6,7 +6,12 @@ import { readFile, writeFile, appendFile } from 'node:fs/promises'
 
 const model = new OpenAIModel({
   apiKey: process.env['OPENAI_API_KEY'] ?? '<KEY>',
-  modelId: 'gpt-5.5'
+  modelId: 'gpt-5.5',
+  params: {
+    reasoning: {
+      effort: 'xhigh'
+    }
+  }
 })
 
 const readDocs = tool({
