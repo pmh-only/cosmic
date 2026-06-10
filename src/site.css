@@ -1,0 +1,269 @@
+:root {
+  color: #d7fbff;
+  background: #02030a;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(55, 255, 239, 0.16), transparent 28rem),
+    radial-gradient(circle at 86% 4%, rgba(158, 80, 255, 0.18), transparent 30rem),
+    linear-gradient(135deg, #02030a 0%, #070d21 48%, #02030a 100%);
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+code {
+  color: #81f7ff;
+}
+
+.shell {
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.nebula {
+  position: absolute;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 999px;
+  filter: blur(64px);
+  opacity: 0.34;
+  animation: drift 18s ease-in-out infinite alternate;
+}
+
+.nebula-a {
+  left: -8rem;
+  bottom: 8%;
+  background: #00e5ff;
+}
+
+.nebula-b {
+  right: -9rem;
+  top: 18%;
+  background: #8d35ff;
+  animation-delay: -7s;
+}
+
+.scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 7px);
+  mix-blend-mode: screen;
+  opacity: 0.16;
+  pointer-events: none;
+  animation: pulse 4s linear infinite;
+}
+
+.hero {
+  max-width: 980px;
+  margin: 0 auto clamp(1.5rem, 4vw, 3rem);
+  text-align: center;
+}
+
+.eyebrow,
+.panel-kicker {
+  color: #7bf8ff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0.25rem 0 0.75rem;
+  color: #f7fdff;
+  font-size: clamp(2.7rem, 8vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+  text-shadow: 0 0 26px rgba(68, 243, 255, 0.55), 0 0 68px rgba(154, 79, 255, 0.44);
+}
+
+.hero p:last-child {
+  margin: 0 auto;
+  max-width: 720px;
+  color: #adc6d3;
+  line-height: 1.7;
+}
+
+.console-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.panel {
+  position: relative;
+  min-height: 24rem;
+  background: linear-gradient(135deg, rgba(3, 10, 24, 0.78), rgba(5, 11, 31, 0.52));
+  box-shadow: 0 0 56px rgba(0, 225, 255, 0.12), inset 0 0 42px rgba(129, 77, 255, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.panel-content {
+  position: relative;
+  padding: clamp(1.25rem, 2vw, 2rem);
+}
+
+.nav-panel {
+  align-self: start;
+  position: sticky;
+  top: 1rem;
+}
+
+.nav-panel h2 {
+  margin: 0.35rem 0 1.2rem;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.doc-list {
+  display: grid;
+  gap: 0.65rem;
+  max-height: 64vh;
+  overflow: auto;
+  padding-right: 0.35rem;
+}
+
+.doc-button {
+  display: grid;
+  gap: 0.2rem;
+  width: 100%;
+  border: 1px solid rgba(101, 242, 255, 0.22);
+  border-left: 3px solid rgba(101, 242, 255, 0.46);
+  padding: 0.85rem 0.9rem;
+  color: #d7fbff;
+  text-align: left;
+  background: rgba(4, 15, 33, 0.7);
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.doc-button:hover,
+.doc-button.active {
+  transform: translateX(5px);
+  border-color: rgba(119, 248, 255, 0.9);
+  background: rgba(8, 38, 62, 0.92);
+  box-shadow: 0 0 22px rgba(35, 235, 255, 0.18);
+}
+
+.doc-button span {
+  color: #75f7ff;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.doc-button small {
+  color: #a7bfca;
+  line-height: 1.35;
+}
+
+.read-panel {
+  min-height: 72vh;
+}
+
+.markdown-shell {
+  color: #d2e9ef;
+  line-height: 1.75;
+}
+
+.markdown-shell h1,
+.markdown-shell h2,
+.markdown-shell h3 {
+  color: #f7feff;
+  line-height: 1.15;
+  text-shadow: 0 0 20px rgba(77, 235, 255, 0.28);
+}
+
+.markdown-shell h1 {
+  margin-top: 0;
+  font-size: clamp(2rem, 5vw, 4.25rem);
+}
+
+.markdown-shell h2 {
+  margin-top: 2.2rem;
+  color: #8df9ff;
+}
+
+.markdown-shell a,
+.inline-link {
+  border: 0;
+  padding: 0;
+  color: #c69cff;
+  background: transparent;
+  text-decoration: underline;
+  text-decoration-color: rgba(198, 156, 255, 0.42);
+  cursor: pointer;
+}
+
+.markdown-shell li {
+  margin: 0.45rem 0;
+}
+
+.markdown-shell blockquote {
+  margin-left: 0;
+  border-left: 3px solid #73f7ff;
+  padding-left: 1rem;
+  color: #b8cad2;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(4rem, -2rem, 0) scale(1.12);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.22;
+  }
+}
+
+@media (max-width: 860px) {
+  .console-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-panel {
+    position: relative;
+    top: 0;
+  }
+
+  .doc-list {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    max-height: none;
+  }
+}

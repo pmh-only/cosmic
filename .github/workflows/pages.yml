@@ -1,17 +1,30 @@
-name: Write new COS document
+name: Deploy COSMIC archive
+
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**/*.md'
+      - 'src/**'
+      - 'index.html'
+      - 'vite.config.ts'
+      - 'tsconfig*.json'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 
 permissions:
-  contents: write
-  packages: write
+  contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -25,14 +38,6 @@ jobs:
         with:
           version: 11.4.0
           run_install: true
-      - run: pnpm build:agent
-      - run: node .
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      - uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: "write COS document"
       - run: pnpm build:web
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v4
