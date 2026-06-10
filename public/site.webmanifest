@@ -1,0 +1,16 @@
+{
+  "name": "COSMIC Archive",
+  "short_name": "COSMIC",
+  "description": "Animated sci-fi archive for COS markdown dossiers.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#02030a",
+  "theme_color": "#02030a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

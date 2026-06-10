@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="a" cx="25%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.65" />
+      <stop offset="0.45" stop-color="#141a44" />
+      <stop offset="1" stop-color="#02030a" />
+    </radialGradient>
+    <linearGradient id="b" x1="0" x2="1">
+      <stop offset="0" stop-color="#75f7ff" />
+      <stop offset="1" stop-color="#a56bff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#a)" />
+  <g opacity="0.28" stroke="#75f7ff" stroke-width="1">
+    <path d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200" />
+    <path d="M120 0V630M240 0V630M360 0V630M480 0V630M600 0V630M720 0V630M840 0V630M960 0V630M1080 0V630" />
+  </g>
+  <rect x="74" y="76" width="1052" height="478" fill="#020817" fill-opacity="0.76" stroke="#75f7ff" stroke-width="4" />
+  <text x="104" y="170" fill="#75f7ff" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="12">CLASSIFIED COS INDEX</text>
+  <text x="100" y="315" fill="#f7feff" font-family="Arial, sans-serif" font-size="106" font-weight="900">COSMIC Archive</text>
+  <text x="104" y="400" fill="url(#b)" font-family="Arial, sans-serif" font-size="42" font-weight="700">Animated anomalous dossier interface</text>
+  <text x="104" y="470" fill="#cfe8ef" font-family="Arial, sans-serif" font-size="30">Markdown records from docs/ rendered as sci-fi pages.</text>
+</svg>
