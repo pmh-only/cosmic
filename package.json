@@ -6,7 +6,7 @@
   "scripts": {
     "build": "pnpm build:agent && pnpm build:web",
     "build:agent": "tsc -p tsconfig.agent.json",
-    "build:web": "tsc -p tsconfig.app.json && vite build",
+    "build:web": "tsc -p tsconfig.app.json && vite build && tsx scripts/materialize-pages.ts",
     "dev": "vite",
     "dev:agent": "tsx watch src/main.ts",
     "preview": "vite preview"
