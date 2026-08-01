@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'docs/**/*.md'
+      - 'public/**'
       - 'scripts/**'
       - 'tsconfig*.json'
       - 'package.json'
