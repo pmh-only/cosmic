@@ -3,18 +3,19 @@ import { join, parse } from 'node:path'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import ReactMarkdown from 'react-markdown'
+import { parseCosDocument, renderCosDocument, type CosDocument } from '../src/cos-document'
 
 const siteDir = 'site-dist'
 const docsDir = 'docs'
 const entries = await readdir(docsDir)
-const markdownEntries = entries.filter((entry) => entry.endsWith('.md')).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+const documentEntries = entries.filter((entry) => entry.endsWith('.json')).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
 const repository = process.env['GITHUB_REPOSITORY']
 const [owner, repo] = repository?.split('/') ?? []
 const basePath = repository ? `/${repo}/` : '/'
 const siteOrigin = owner && repo ? `https://${owner}.github.io` : 'https://pmh-only.github.io'
 const siteUrl = `${siteOrigin}${basePath}`
 const siteTitle = 'COSMIC Archive'
-const siteDescription = 'A static archive of anomalous COS markdown dossiers.'
+const siteDescription = 'A static archive of anomalous COS dossiers stored as structured JSON.'
 const now = new Date().toISOString()
 
 type DocMeta = {
@@ -23,8 +24,9 @@ type DocMeta = {
   description: string
   path: string
   url: string
-  markdownUrl: string
+  jsonUrl: string
   body: string
+  document: CosDocument
 }
 
 function escapeHtml(value: string): string {
@@ -60,7 +62,7 @@ function buildMetaTags(meta: {
   title: string
   description: string
   canonical: string
-  markdownUrl: string
+  jsonUrl: string
   type: 'website' | 'article'
   jsonLd: unknown
 }): string {
@@ -69,9 +71,9 @@ function buildMetaTags(meta: {
     <meta name="application-name" content="${escapeHtml(siteTitle)}" />
     <meta name="apple-mobile-web-app-title" content="${escapeHtml(siteTitle)}" />
     <meta name="author" content="COSMIC Archive" />
-    <meta name="keywords" content="COSMIC Archive, COS, anomalous dossier, sci-fi archive, markdown documents, Korean fiction" />
+    <meta name="keywords" content="COSMIC Archive, COS, anomalous dossier, sci-fi archive, structured JSON, Korean fiction" />
     <link rel="canonical" href="${escapeHtml(meta.canonical)}" />
-    <link rel="alternate" type="text/markdown" href="${escapeHtml(meta.markdownUrl)}" title="${escapeHtml(`${meta.title} in Markdown`)}" />
+    <link rel="alternate" type="application/json" href="${escapeHtml(meta.jsonUrl)}" title="${escapeHtml(`${meta.title} as structured JSON`)}" />
     <meta property="og:site_name" content="${escapeHtml(siteTitle)}" />
     <meta property="og:type" content="${meta.type}" />
     <meta property="og:title" content="${escapeHtml(meta.title)}" />
@@ -109,19 +111,23 @@ ${content}
 }
 
 const docs: DocMeta[] = await Promise.all(
-  markdownEntries.map(async (entry) => {
-    const body = await readFile(join(docsDir, entry), 'utf-8')
+  documentEntries.map(async (entry) => {
+    const document = parseCosDocument(JSON.parse(await readFile(join(docsDir, entry), 'utf-8')))
     const id = parse(entry).name
-    const title = body.match(/^#\s+(.+)$/m)?.[1] ?? id.toUpperCase()
+    if (id !== `cos${document.id}`) {
+      throw new Error(`Filename and document ID differ in ${entry}`)
+    }
+    const title = `COS${document.id} — ${document.title}`
     const path = `docs/${id}/`
     return {
       id,
       title,
-      description: excerpt(body),
+      description: excerpt(renderCosDocument(document)),
       path,
       url: `${siteUrl}${path}`,
-      markdownUrl: `${siteUrl}${path}index.html.md`,
-      body
+      jsonUrl: `${siteUrl}${path}index.json`,
+      body: renderCosDocument(document),
+      document
     }
   })
 )
@@ -130,10 +136,26 @@ function getDocHref(id: string): string {
   return `${basePath}docs/${id}/`
 }
 
-function getMarkdownBody(doc: DocMeta): string {
-  return doc.body.replace(/\]\(\.\/(cos\d+)\.md(#[^)]+)?\)/g, (_match, id: string, fragment: string | undefined) => {
-    return `](${siteUrl}docs/${id}/index.html.md${fragment ?? ''})`
-  })
+function getReferences(document: CosDocument): number[] {
+  const references = [...JSON.stringify(document).matchAll(/\.\/cos(\d+)\.json/g)]
+    .map((match) => Number.parseInt(match[1] ?? '', 10))
+  return [...new Set(references)].sort((a, b) => a - b)
+}
+
+function getJsonResource(doc: DocMeta): object {
+  const document = JSON.parse(
+    JSON.stringify(doc.document).replace(/\]\(\.\/(cos\d+)\.json(#[^)]+)?\)/g, (_match, id: string, fragment: string | undefined) => {
+      return `](${siteUrl}docs/${id}/index.json${fragment ?? ''})`
+    })
+  ) as CosDocument
+
+  return {
+    ...document,
+    code: `COS${doc.document.id}`,
+    canonicalUrl: doc.url,
+    jsonUrl: doc.jsonUrl,
+    references: getReferences(doc.document)
+  }
 }
 
 function renderIndex(): string {
@@ -160,7 +182,7 @@ function renderDocument(activeDoc: DocMeta, index: number): string {
     createElement(ReactMarkdown, {
       components: {
         a: ({ href, children }) => {
-          const internalLink = href?.match(/^\.\/(cos\d+)\.md(#[^)]+)?$/)
+          const internalLink = href?.match(/^\.\/(cos\d+)\.json(#[^)]+)?$/)
           const targetId = internalLink?.[1]
           const targetHref = targetId && docs.some((doc) => doc.id === targetId)
             ? `${getDocHref(targetId)}${internalLink?.[2] ?? ''}`
@@ -209,8 +231,8 @@ const rootJsonLd = {
     inLanguage: 'ko-KR',
     encoding: {
       '@type': 'MediaObject',
-      contentUrl: doc.markdownUrl,
-      encodingFormat: 'text/markdown'
+      contentUrl: doc.jsonUrl,
+      encodingFormat: 'application/json'
     }
   }))
 }
@@ -229,26 +251,30 @@ await writeFile(join(siteDir, 'index.html'), buildHtml(
     title: siteTitle,
     description: siteDescription,
     canonical: siteUrl,
-    markdownUrl: `${siteUrl}index.html.md`,
+    jsonUrl: `${siteUrl}index.json`,
     type: 'website',
     jsonLd: rootJsonLd
   }),
   renderIndex()
 ))
 
-const indexMarkdown = `# ${siteTitle}
-
-> ${siteDescription}
-
-The archive contains ${docs.length} Korean-language fictional dossiers. Each COS record describes an anomalous entity, object, or phenomenon and links to related records.
-
-## Records
-
-${docs.map((doc) => `- [${doc.title}](${doc.markdownUrl}): ${doc.description}`).join('\n')}
-`
-
-await writeFile(join(siteDir, 'index.html.md'), indexMarkdown)
-await writeFile(join(siteDir, 'index.md'), indexMarkdown)
+await writeFile(join(siteDir, 'index.json'), `${JSON.stringify({
+  schemaVersion: 1,
+  name: siteTitle,
+  description: siteDescription,
+  language: 'ko-KR',
+  canonicalUrl: siteUrl,
+  corpusUrl: `${siteUrl}corpus.json`,
+  records: docs.map((doc) => ({
+    id: doc.document.id,
+    code: `COS${doc.document.id}`,
+    title: doc.document.title,
+    description: doc.description,
+    canonicalUrl: doc.url,
+    jsonUrl: doc.jsonUrl,
+    references: getReferences(doc.document)
+  }))
+}, null, 2)}\n`)
 
 for (const [index, doc] of docs.entries()) {
   const outputDir = join(siteDir, 'docs', doc.id)
@@ -263,8 +289,8 @@ for (const [index, doc] of docs.entries()) {
     dateModified: now,
     encoding: {
       '@type': 'MediaObject',
-      contentUrl: doc.markdownUrl,
-      encodingFormat: 'text/markdown'
+      contentUrl: doc.jsonUrl,
+      encodingFormat: 'application/json'
     },
     isPartOf: {
       '@type': 'WebSite',
@@ -280,15 +306,13 @@ for (const [index, doc] of docs.entries()) {
       title: `${doc.title} | ${siteTitle}`,
       description: doc.description,
       canonical: doc.url,
-      markdownUrl: doc.markdownUrl,
+      jsonUrl: doc.jsonUrl,
       type: 'article',
       jsonLd
     }),
     renderDocument(doc, index)
   ))
-  const markdownBody = getMarkdownBody(doc)
-  await writeFile(join(outputDir, 'index.html.md'), markdownBody)
-  await writeFile(join(outputDir, 'index.md'), markdownBody)
+  await writeFile(join(outputDir, 'index.json'), `${JSON.stringify(getJsonResource(doc), null, 2)}\n`)
 }
 
 const sitemapUrls = [
@@ -332,41 +356,28 @@ await writeFile(
 
 > ${siteDescription} It contains ${docs.length} Korean-language fictional dossiers about anomalous entities, objects, and phenomena.
 
-COS identifiers begin at COS100. Relationships between records are part of the fictional corpus. Prefer the Markdown resources below over HTML when extracting content.
+COS identifiers begin at COS100. Relationships between records are part of the fictional corpus. Prefer the structured JSON resources below over HTML when extracting content.
 
 ## Complete Archive
 
-- [Full archive context](${siteUrl}llms-full.txt): Every COS dossier in one Markdown-compatible context file with explicit document boundaries.
-- [Archive index](${siteUrl}index.html.md): Concise index of all records with descriptions.
-- [JSON Lines corpus](${siteUrl}corpus.jsonl): One structured JSON object per record, including metadata and full Markdown content.
+- [Full structured corpus](${siteUrl}corpus.json): Every COS dossier in one versioned JSON document.
+- [Archive index](${siteUrl}index.json): Concise structured index with descriptions and relationship IDs.
 
 ## Records
 
-${docs.map((doc) => `- [${doc.title}](${doc.markdownUrl}): ${doc.description}`).join('\n')}
+${docs.map((doc) => `- [${doc.title}](${doc.jsonUrl}): ${doc.description}`).join('\n')}
 `
 )
 
 await writeFile(
-  join(siteDir, 'llms-full.txt'),
-  `# ${siteTitle}: Full Corpus
-
-> Complete Korean-language COS dossier corpus. Each document is enclosed in an XML-style boundary to preserve provenance during concatenation.
-
-${docs.map((doc) => `<document id="${doc.id}" title="${escapeHtml(doc.title)}" canonical_url="${doc.url}" markdown_url="${doc.markdownUrl}">
-${getMarkdownBody(doc).trim()}
-</document>`).join('\n\n')}
-`
-)
-
-await writeFile(
-  join(siteDir, 'corpus.jsonl'),
-  `${docs.map((doc) => JSON.stringify({
-    id: doc.id,
-    title: doc.title,
+  join(siteDir, 'corpus.json'),
+  `${JSON.stringify({
+    schemaVersion: 1,
+    name: siteTitle,
+    description: siteDescription,
     language: 'ko-KR',
-    description: doc.description,
-    canonical_url: doc.url,
-    markdown_url: doc.markdownUrl,
-    content_markdown: getMarkdownBody(doc)
-  })).join('\n')}\n`
+    canonicalUrl: siteUrl,
+    generatedAt: now,
+    documents: docs.map(getJsonResource)
+  }, null, 2)}\n`
 )
