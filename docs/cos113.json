@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 4
+  },
   "id": 113,
   "title": "은색 선행색인",
   "language": "ko-KR",

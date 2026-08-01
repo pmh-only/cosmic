@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 2,
+    "chaos": 4,
+    "danger": 2,
+    "popularity": 4,
+    "containment": 4
+  },
   "id": 118,
   "title": "갈색 미수행목록",
   "language": "ko-KR",

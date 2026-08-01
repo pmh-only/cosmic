@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 4,
+    "chaos": 5,
+    "danger": 4,
+    "popularity": 2,
+    "containment": 5
+  },
   "id": 154,
   "title": "종결 뒤 무인 배가열",
   "language": "ko-KR",

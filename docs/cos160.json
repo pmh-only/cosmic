@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 4
+  },
   "id": 160,
   "title": "후면 열람자",
   "language": "ko-KR",

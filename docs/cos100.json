@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 3,
+    "chaos": 5,
+    "danger": 4,
+    "popularity": 5,
+    "containment": 5
+  },
   "id": 100,
   "title": "회귀하는 공백핵",
   "language": "ko-KR",

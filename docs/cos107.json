@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 3
+  },
   "id": 107,
   "title": "흑색 대조침",
   "language": "ko-KR",

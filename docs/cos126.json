@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 5,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 4
+  },
   "id": 126,
   "title": "흑요색 역참조환",
   "language": "ko-KR",

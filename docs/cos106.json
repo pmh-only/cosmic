@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 3
+  },
   "id": 106,
   "title": "백색 합의면",
   "language": "ko-KR",

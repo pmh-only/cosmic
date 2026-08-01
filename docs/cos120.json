@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 5,
+    "danger": 5,
+    "popularity": 3,
+    "containment": 5
+  },
   "id": 120,
   "title": "청록 대차장",
   "language": "ko-KR",

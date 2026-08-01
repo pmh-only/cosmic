@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 4,
+    "chaos": 5,
+    "danger": 5,
+    "popularity": 5,
+    "containment": 5
+  },
   "id": 121,
   "title": "진주색 잉여란",
   "language": "ko-KR",

@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 2,
+    "containment": 4
+  },
   "id": 119,
   "title": "무명 대행흔",
   "language": "ko-KR",

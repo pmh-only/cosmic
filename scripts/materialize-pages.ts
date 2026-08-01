@@ -3,7 +3,13 @@ import { join, parse } from 'node:path'
 import { createElement } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import ReactMarkdown from 'react-markdown'
-import { parseCosDocument, renderCosDocument, type CosDocument } from '../src/cos-document'
+import {
+  classificationAxes,
+  getClassificationLabel,
+  parseCosDocument,
+  renderCosDocument,
+  type CosDocument
+} from '../src/cos-document'
 
 const siteDir = 'site-dist'
 const docsDir = 'docs'
@@ -166,15 +172,51 @@ function getJsonResource(doc: DocMeta): object {
   }
 }
 
+function getClassificationSearchText(document: CosDocument): string {
+  return classificationAxes
+    .map((axis) => `${axis.label} ${axis.code} ${document.classification[axis.key]} ${getClassificationLabel(axis, document.classification[axis.key])}`)
+    .join(' ')
+}
+
+function renderClassificationBadges(document: CosDocument): string {
+  const badges = classificationAxes.map((axis) => {
+    const level = document.classification[axis.key]
+    const levelLabel = getClassificationLabel(axis, level)
+    return `<li class="level-${level}" title="${axis.label}: LEVEL ${level} ${levelLabel}"><span>${axis.code}</span><strong>${level}</strong></li>`
+  }).join('')
+
+  return `<ul class="record-levels" aria-label="분류 수준: ${classificationAxes
+    .map((axis) => `${axis.label} ${document.classification[axis.key]}`)
+    .join(', ')}">${badges}</ul>`
+}
+
+function renderClassificationMatrix(document: CosDocument): string {
+  const rows = classificationAxes.map((axis) => {
+    const level = document.classification[axis.key]
+    const levelLabel = getClassificationLabel(axis, level)
+    const meter = Array.from({ length: 5 }, (_, index) => `<i${index < level ? ' class="active"' : ''}></i>`).join('')
+    return `<div class="level-${level}">
+      <dt><span>${axis.code}</span>${axis.label}</dt>
+      <dd><span class="level-meter" aria-hidden="true">${meter}</span><strong>L${level} ${levelLabel}</strong></dd>
+    </div>`
+  }).join('\n')
+
+  return `<section class="classification-matrix" aria-labelledby="classification-heading">
+    <h2 id="classification-heading">// CLASSIFICATION MATRIX</h2>
+    <dl>${rows}</dl>
+  </section>`
+}
+
 function renderIndex(): string {
   const records = docs
     .map((doc, index) => {
       const code = `COS${doc.document.id}`
-      return `<li class="record-card" data-record data-search="${escapeHtml(`${code} ${doc.document.title} ${doc.description}`.toLocaleLowerCase('ko-KR'))}">
+      return `<li class="record-card" data-record data-search="${escapeHtml(`${code} ${doc.document.title} ${doc.description} ${getClassificationSearchText(doc.document)}`.toLocaleLowerCase('ko-KR'))}">
   <a href="${getDocHref(doc.id)}" aria-label="${escapeHtml(doc.title)} 열람">
     <span class="record-index" aria-hidden="true">${String(index + 1).padStart(3, '0')}</span>
     <span class="record-code">${code}</span>
     <strong class="record-title">${escapeHtml(doc.document.title)}</strong>
+    ${renderClassificationBadges(doc.document)}
     <span class="record-excerpt">${escapeHtml(doc.description)}</span>
     <span class="record-access">OPEN_FILE <span aria-hidden="true">[ENTER]</span></span>
   </a>
@@ -202,12 +244,12 @@ function renderIndex(): string {
         <h1 id="archive-title">COSMIC<br/><span>ARCHIVE</span></h1>
       </div>
       <div class="hero-copy">
-        <p class="classification">[ CLASSIFIED // LEVEL 4 ]</p>
+        <p class="classification">[ CLASSIFIED // SIX-AXIS CONTROL ]</p>
         <p>미확인 개체, 물체 및 현상에 대한 중앙 기록망. 모든 접근은 기록되며 열람 흔적은 보존됩니다.</p>
         <dl class="archive-stats">
           <div><dt>FILES</dt><dd>${String(docs.length).padStart(3, '0')}</dd></div>
           <div><dt>STATUS</dt><dd>LIVE</dd></div>
-          <div><dt>FORMAT</dt><dd>JSON.V2</dd></div>
+          <div><dt>FORMAT</dt><dd>JSON.V3</dd></div>
         </dl>
       </div>
     </div>
@@ -282,13 +324,14 @@ function renderDocument(activeDoc: DocMeta, index: number): string {
     <div class="file-stamp">
       <span>FILE_ID</span>
       <strong>COS${activeDoc.document.id}</strong>
-      <span>ACCESS // L4</span>
+      <span>ACCESS // L${activeDoc.document.classification.permission}</span>
     </div>
+    ${renderClassificationMatrix(activeDoc.document)}
     <dl class="file-meta">
       <div><dt>TYPE</dt><dd>INCIDENT DOSSIER</dd></div>
       <div><dt>LANG</dt><dd>KO-KR</dd></div>
       <div><dt>STATE</dt><dd class="live-value">VERIFIED</dd></div>
-      <div><dt>SCHEMA</dt><dd>V2.0</dd></div>
+      <div><dt>SCHEMA</dt><dd>V3.0</dd></div>
     </dl>
     <a class="raw-link" href="index.json">VIEW_RAW_JSON <span aria-hidden="true">↗</span></a>
     <nav class="section-nav" aria-label="문서 목차">
@@ -298,7 +341,7 @@ function renderDocument(activeDoc: DocMeta, index: number): string {
   </aside>
   <div class="dossier-content">
     <div class="dossier-banner">
-      <span>DECLASSIFIED FOR INTERNAL REVIEW</span>
+      <span>CLASSIFIED // CONTROLLED RECORD</span>
       <span>CRC:${String(activeDoc.document.id * 7919).slice(-6).padStart(6, '0')}</span>
     </div>
     <article class="dossier-article" data-dossier>
@@ -370,6 +413,7 @@ await writeFile(join(siteDir, 'index.json'), `${JSON.stringify({
     description: doc.description,
     canonicalUrl: doc.url,
     jsonUrl: doc.jsonUrl,
+    classification: doc.document.classification,
     references: getReferences(doc.document)
   }))
 }, null, 2)}\n`)

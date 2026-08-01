@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 3
+  },
   "id": 135,
   "title": "남백색 미개최회차",
   "language": "ko-KR",

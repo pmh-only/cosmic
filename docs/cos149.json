@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 3
+  },
   "id": 149,
   "title": "무인 결재석",
   "language": "ko-KR",

@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 5,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 4
+  },
   "id": 157,
   "title": "무재소 기보관고",
   "language": "ko-KR",

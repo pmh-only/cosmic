@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
   "id": 141,
   "title": "청회색 사후열람자",
   "language": "ko-KR",

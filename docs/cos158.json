@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 2,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
   "id": 158,
   "title": "한 칸 뒤의 회랑",
   "language": "ko-KR",

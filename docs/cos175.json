@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
   "id": 175,
   "title": "경사대행면",
   "language": "ko-KR",

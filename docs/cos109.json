@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 5,
+    "containment": 3
+  },
   "id": 109,
   "title": "회색 응답역",
   "language": "ko-KR",

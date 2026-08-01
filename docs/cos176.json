@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 1,
+    "containment": 3
+  },
   "id": 176,
   "title": "유백색 선입면",
   "language": "ko-KR",

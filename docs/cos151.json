@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 2,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 3
+  },
   "id": 151,
   "title": "결석자의 최후서명",
   "language": "ko-KR",

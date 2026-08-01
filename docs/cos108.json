@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 3
+  },
   "id": 108,
   "title": "황색 잔여좌표",
   "language": "ko-KR",

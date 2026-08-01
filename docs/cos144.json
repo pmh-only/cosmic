@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 1,
+    "containment": 4
+  },
   "id": 144,
   "title": "흑자색 묵인인장",
   "language": "ko-KR",

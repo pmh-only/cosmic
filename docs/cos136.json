@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 3
+  },
   "id": 136,
   "title": "월황색 무표결가결안",
   "language": "ko-KR",

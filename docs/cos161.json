@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 3,
+    "danger": 3,
+    "popularity": 1,
+    "containment": 3
+  },
   "id": 161,
   "title": "후면 기입자",
   "language": "ko-KR",

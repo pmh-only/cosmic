@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 3,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
   "id": 140,
   "title": "적백색 귀결통지서",
   "language": "ko-KR",

@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 2,
+    "chaos": 3,
+    "danger": 2,
+    "popularity": 2,
+    "containment": 3
+  },
   "id": 167,
   "title": "중량대행체",
   "language": "ko-KR",

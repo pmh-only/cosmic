@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 2,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
   "id": 153,
   "title": "종결 후 무인 퇴실열",
   "language": "ko-KR",

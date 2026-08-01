@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 2,
+    "permission": 2,
+    "chaos": 2,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 3
+  },
   "id": 150,
   "title": "미도착 최후참석자",
   "language": "ko-KR",

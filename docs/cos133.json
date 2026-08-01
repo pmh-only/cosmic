@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 3,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 3
+  },
   "id": 133,
   "title": "흑은색 폐회봉",
   "language": "ko-KR",

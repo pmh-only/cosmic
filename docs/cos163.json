@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 2,
+    "permission": 2,
+    "chaos": 2,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 3
+  },
   "id": 163,
   "title": "은청색 천두목차",
   "language": "ko-KR",

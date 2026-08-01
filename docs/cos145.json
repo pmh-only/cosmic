@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 3
+  },
   "id": 145,
   "title": "은회색 합동정본",
   "language": "ko-KR",

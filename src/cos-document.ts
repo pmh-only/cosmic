@@ -2,6 +2,46 @@ import z from 'zod'
 
 const textListSchema = z.array(z.string().min(1))
 
+export const classificationLevelSchema = z.number().int().min(1).max(5)
+
+export const classificationSchema = z.object({
+  secrecy: classificationLevelSchema,
+  permission: classificationLevelSchema,
+  chaos: classificationLevelSchema,
+  danger: classificationLevelSchema,
+  popularity: classificationLevelSchema,
+  containment: classificationLevelSchema
+})
+
+export type Classification = z.infer<typeof classificationSchema>
+
+export const legacyClassification: Classification = {
+  secrecy: 4,
+  permission: 4,
+  chaos: 3,
+  danger: 3,
+  popularity: 2,
+  containment: 3
+}
+
+export const classificationAxes: ReadonlyArray<{
+  key: keyof Classification
+  code: string
+  label: string
+  levels: readonly [string, string, string, string, string]
+}> = [
+  { key: 'secrecy', code: 'SEC', label: 'SECRECY', levels: ['PUBLIC', 'RESTRICTED', 'CONFIDENTIAL', 'SECRET', 'TOP SECRET'] },
+  { key: 'permission', code: 'PER', label: 'PERMISSION', levels: ['OBSERVER', 'FIELD', 'RESEARCH', 'COMMAND', 'DIRECTORATE'] },
+  { key: 'chaos', code: 'CHS', label: 'CHAOS', levels: ['STABLE', 'VARIABLE', 'UNSTABLE', 'CHAOTIC', 'CATASTROPHIC'] },
+  { key: 'danger', code: 'DNG', label: 'DANGER', levels: ['NEGLIGIBLE', 'GUARDED', 'SEVERE', 'CRITICAL', 'EXTREME'] },
+  { key: 'popularity', code: 'POP', label: 'POPULARITY', levels: ['UNKNOWN', 'OBSCURE', 'NOTABLE', 'WIDESPREAD', 'UBIQUITOUS'] },
+  { key: 'containment', code: 'CNT', label: 'CONTAINMENT', levels: ['ROUTINE', 'CONTROLLED', 'REINFORCED', 'MAXIMUM', 'ABSOLUTE'] }
+]
+
+export function getClassificationLabel(axis: (typeof classificationAxes)[number], level: number): string {
+  return axis.levels[level - 1] ?? 'INVALID'
+}
+
 export const behaviorStageSchema = z.object({
   name: z.string().min(1),
   description: z.string().min(1)
@@ -41,6 +81,7 @@ export const noteSchema = z.object({
 })
 
 export const cosReadableFieldSchema = z.enum([
+  'classification',
   'overview',
   'identificationTraits',
   'discovery',
@@ -69,6 +110,10 @@ export const cosPatchSchema = z.discriminatedUnion('operation', [
   z.object({
     operation: z.literal('set_title'),
     title: z.string().min(1)
+  }),
+  z.object({
+    operation: z.literal('set_classification'),
+    classification: classificationSchema
   }),
   z.object({
     operation: z.literal('append_text'),
@@ -118,8 +163,7 @@ export const cosPatchSchema = z.discriminatedUnion('operation', [
 
 export type CosPatch = z.infer<typeof cosPatchSchema>
 
-export const cosDocumentSchema = z.object({
-  schemaVersion: z.literal(2),
+const cosDocumentFields = {
   id: z.number().int().min(100),
   title: z.string().min(1),
   language: z.literal('ko-KR'),
@@ -141,11 +185,30 @@ export const cosDocumentSchema = z.object({
   notes: z.array(noteSchema),
   amendments: z.array(amendmentSchema),
   supplementalSections: z.array(supplementalSectionSchema)
+}
+
+const legacyCosDocumentSchema = z.object({
+  schemaVersion: z.literal(2),
+  ...cosDocumentFields
+})
+
+export const cosDocumentSchema = z.object({
+  schemaVersion: z.literal(3),
+  classification: classificationSchema,
+  ...cosDocumentFields
 })
 
 export type CosDocument = z.infer<typeof cosDocumentSchema>
 
 export function parseCosDocument(value: unknown): CosDocument {
+  if (typeof value === 'object' && value !== null && 'schemaVersion' in value && value.schemaVersion === 2) {
+    const legacyDocument = legacyCosDocumentSchema.parse(value)
+    return cosDocumentSchema.parse({
+      ...legacyDocument,
+      schemaVersion: 3,
+      classification: legacyClassification
+    })
+  }
   return cosDocumentSchema.parse(value)
 }
 
@@ -180,6 +243,9 @@ export function applyCosPatches(document: CosDocument, patches: CosPatch[]): Cos
     switch (patch.operation) {
       case 'set_title':
         updated.title = patch.title
+        break
+      case 'set_classification':
+        updated.classification = patch.classification
         break
       case 'append_text':
         getTextField(updated, patch.field).push(patch.value)

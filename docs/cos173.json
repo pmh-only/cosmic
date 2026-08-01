@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 2,
+    "chaos": 3,
+    "danger": 2,
+    "popularity": 1,
+    "containment": 3
+  },
   "id": 173,
   "title": "늦게 식는 부재면",
   "language": "ko-KR",

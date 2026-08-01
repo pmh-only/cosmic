@@ -15,6 +15,12 @@
   --mono: "IBM Plex Mono", "Noto Sans Mono", "Noto Sans KR", "Malgun Gothic", Consolas, monospace;
 }
 
+.level-1 { --level-color: #69ff96; }
+.level-2 { --level-color: #b7ffca; }
+.level-3 { --level-color: #d8ff4f; }
+.level-4 { --level-color: #ffad4d; }
+.level-5 { --level-color: #ff6673; }
+
 * {
   box-sizing: border-box;
 }
@@ -427,7 +433,7 @@ input {
   grid-template-columns: 3.2rem 1fr auto;
   grid-template-rows: auto 1fr auto;
   gap: 0.7rem 1rem;
-  min-height: 210px;
+  min-height: 250px;
   padding: 1.5rem;
   overflow: hidden;
   text-decoration: none;
@@ -457,7 +463,7 @@ input {
 }
 
 .record-index {
-  grid-row: 1 / span 3;
+  grid-row: 1 / -1;
   color: #386e47;
   font-size: 0.66rem;
 }
@@ -473,6 +479,34 @@ input {
   color: var(--green-bright);
   font-size: clamp(1rem, 1.7vw, 1.28rem);
   line-height: 1.4;
+}
+
+.record-levels {
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.record-levels li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  margin: 0;
+  padding: 0.22rem 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--level-color) 45%, transparent);
+  color: var(--level-color);
+  font-size: 0.58rem;
+  line-height: 1;
+}
+
+.record-levels strong {
+  color: inherit;
+  font-size: 0.7rem;
 }
 
 .record-excerpt {
@@ -577,6 +611,78 @@ input {
 
 .file-meta {
   margin: 0 0 2rem;
+}
+
+.classification-matrix {
+  margin: 0 0 2rem;
+}
+
+.classification-matrix h2 {
+  margin: 0 0 0.6rem;
+  color: var(--green-dim);
+  font-size: 0.64rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.classification-matrix dl {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.classification-matrix dl > div {
+  padding: 0.55rem 0;
+  border-bottom: 1px dotted rgba(99, 255, 143, 0.18);
+}
+
+.classification-matrix dt,
+.classification-matrix dd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.classification-matrix dt {
+  color: #668c70;
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
+}
+
+.classification-matrix dt span {
+  color: var(--level-color);
+  font-weight: 800;
+}
+
+.classification-matrix dd {
+  margin-top: 0.35rem;
+}
+
+.classification-matrix dd strong {
+  overflow: hidden;
+  color: var(--level-color);
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.level-meter {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  width: 44%;
+}
+
+.level-meter i {
+  height: 4px;
+  background: rgba(100, 150, 112, 0.16);
+}
+
+.level-meter i.active {
+  background: var(--level-color);
+  box-shadow: 0 0 5px color-mix(in srgb, var(--level-color) 65%, transparent);
 }
 
 .file-meta div {
@@ -956,6 +1062,11 @@ input {
     grid-template-columns: 2rem 1fr;
     min-height: 200px;
     padding: 1.2rem 1rem;
+  }
+
+  .record-levels {
+    grid-column: 2;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .record-title,

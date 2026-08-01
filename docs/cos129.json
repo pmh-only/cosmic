@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 2,
+    "chaos": 3,
+    "danger": 2,
+    "popularity": 4,
+    "containment": 3
+  },
   "id": 129,
   "title": "연분홍 접수증",
   "language": "ko-KR",

@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
   "id": 162,
   "title": "측면 편철자",
   "language": "ko-KR",

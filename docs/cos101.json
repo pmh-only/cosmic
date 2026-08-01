@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 2,
+    "chaos": 2,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 3
+  },
   "id": 101,
   "title": "청색 망각등",
   "language": "ko-KR",

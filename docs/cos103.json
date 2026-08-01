@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 3,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 4
+  },
   "id": 103,
   "title": "무음의 군집",
   "language": "ko-KR",

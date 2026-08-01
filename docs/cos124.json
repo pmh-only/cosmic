@@ -1,5 +1,13 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "classification": {
+    "secrecy": 5,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 4
+  },
   "id": 124,
   "title": "유리색 병행판",
   "language": "ko-KR",
