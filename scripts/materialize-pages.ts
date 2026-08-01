@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import {
   classificationAxes,
   getClassificationLabel,
+  getClassificationMeaning,
   parseCosDocument,
   renderCosDocument,
   type CosDocument
@@ -178,11 +179,15 @@ function getClassificationSearchText(document: CosDocument): string {
     .join(' ')
 }
 
+function getNarrativeSearchText(document: CosDocument): string {
+  return JSON.stringify(document.narrative)
+}
+
 function renderClassificationBadges(document: CosDocument): string {
   const badges = classificationAxes.map((axis) => {
     const level = document.classification[axis.key]
     const levelLabel = getClassificationLabel(axis, level)
-    return `<li class="level-${level}" title="${axis.label}: LEVEL ${level} ${levelLabel}"><span>${axis.code}</span><strong>${level}</strong></li>`
+    return `<li class="level-${level}" title="${axis.label}: LEVEL ${level} ${levelLabel} — ${getClassificationMeaning(axis, level)}"><span>${axis.code}</span><strong>${level}</strong></li>`
   }).join('')
 
   return `<ul class="record-levels" aria-label="분류 수준: ${classificationAxes
@@ -207,11 +212,24 @@ function renderClassificationMatrix(document: CosDocument): string {
   </section>`
 }
 
+function renderLevelGuide(): string {
+  const axes = classificationAxes.map((axis) => `<section>
+    <h3><span>${axis.code}</span>${axis.label}</h3>
+    <p>${axis.description}</p>
+    <ol>${axis.levels.map((label, index) => `<li><strong>L${index + 1} ${label}</strong><span>${axis.meanings[index]}</span></li>`).join('')}</ol>
+  </section>`).join('')
+
+  return `<details class="level-guide">
+    <summary>LEVEL MEANINGS <span aria-hidden="true">[+]</span></summary>
+    <div>${axes}</div>
+  </details>`
+}
+
 function renderIndex(): string {
   const records = docs
     .map((doc, index) => {
       const code = `COS${doc.document.id}`
-      return `<li class="record-card" data-record data-search="${escapeHtml(`${code} ${doc.document.title} ${doc.description} ${getClassificationSearchText(doc.document)}`.toLocaleLowerCase('ko-KR'))}">
+      return `<li class="record-card" data-record data-search="${escapeHtml(`${code} ${doc.document.title} ${doc.description} ${getClassificationSearchText(doc.document)} ${getNarrativeSearchText(doc.document)}`.toLocaleLowerCase('ko-KR'))}">
   <a href="${getDocHref(doc.id)}" aria-label="${escapeHtml(doc.title)} 열람">
     <span class="record-index" aria-hidden="true">${String(index + 1).padStart(3, '0')}</span>
     <span class="record-code">${code}</span>
@@ -249,7 +267,7 @@ function renderIndex(): string {
         <dl class="archive-stats">
           <div><dt>FILES</dt><dd>${String(docs.length).padStart(3, '0')}</dd></div>
           <div><dt>STATUS</dt><dd>LIVE</dd></div>
-          <div><dt>FORMAT</dt><dd>JSON.V3</dd></div>
+          <div><dt>FORMAT</dt><dd>JSON.V4</dd></div>
         </dl>
       </div>
     </div>
@@ -327,11 +345,12 @@ function renderDocument(activeDoc: DocMeta, index: number): string {
       <span>ACCESS // L${activeDoc.document.classification.permission}</span>
     </div>
     ${renderClassificationMatrix(activeDoc.document)}
+    ${renderLevelGuide()}
     <dl class="file-meta">
       <div><dt>TYPE</dt><dd>INCIDENT DOSSIER</dd></div>
       <div><dt>LANG</dt><dd>KO-KR</dd></div>
       <div><dt>STATE</dt><dd class="live-value">VERIFIED</dd></div>
-      <div><dt>SCHEMA</dt><dd>V3.0</dd></div>
+      <div><dt>SCHEMA</dt><dd>V4.0</dd></div>
     </dl>
     <a class="raw-link" href="index.json">VIEW_RAW_JSON <span aria-hidden="true">↗</span></a>
     <nav class="section-nav" aria-label="문서 목차">
@@ -414,6 +433,7 @@ await writeFile(join(siteDir, 'index.json'), `${JSON.stringify({
     canonicalUrl: doc.url,
     jsonUrl: doc.jsonUrl,
     classification: doc.document.classification,
+    personnel: doc.document.narrative.personnel.map((person) => person.name),
     references: getReferences(doc.document)
   }))
 }, null, 2)}\n`)

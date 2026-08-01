@@ -685,6 +685,84 @@ input {
   box-shadow: 0 0 5px color-mix(in srgb, var(--level-color) 65%, transparent);
 }
 
+.level-guide {
+  margin: -0.75rem 0 2rem;
+  border: 1px solid var(--line);
+  color: #73977c;
+}
+
+.level-guide summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0.8rem;
+  color: var(--green-dim);
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  list-style: none;
+}
+
+.level-guide summary::-webkit-details-marker {
+  display: none;
+}
+
+.level-guide[open] summary {
+  border-bottom: 1px solid var(--line);
+  color: var(--alert);
+}
+
+.level-guide[open] summary span {
+  rotate: 45deg;
+}
+
+.level-guide > div {
+  padding: 0.8rem;
+}
+
+.level-guide section + section {
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+  border-top: 1px dotted var(--line);
+}
+
+.level-guide h3 {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--green-bright);
+  font-size: 0.62rem;
+}
+
+.level-guide h3 span {
+  color: var(--alert);
+}
+
+.level-guide p {
+  margin: 0.35rem 0 0.7rem;
+  font-size: 0.56rem;
+  line-height: 1.6;
+}
+
+.level-guide ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.level-guide li {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.35rem 0;
+  border-top: 1px solid rgba(99, 255, 143, 0.08);
+  font-size: 0.54rem;
+  line-height: 1.45;
+}
+
+.level-guide li strong {
+  color: #8fbd99;
+}
+
 .file-meta div {
   display: flex;
   justify-content: space-between;
@@ -801,6 +879,15 @@ input {
   margin-right: 0.7rem;
   color: var(--green-dim);
   content: "[+]";
+}
+
+.dossier-article h3 {
+  margin: 2.75rem 0 1rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--alert);
+  color: var(--green-bright);
+  font-size: 1rem;
+  letter-spacing: 0.03em;
 }
 
 .dossier-article p {

@@ -107,10 +107,16 @@ await agent.invoke(`
   현장에서 이미 발견되어 임시 등록된 미지의 존재, 물체 또는 현상 COS${id}의 공식 조사 문서를 완성하시오.
   추상적인 착상에서 대상을 만들어 내지 말고, 기록관에게 인계된 관측 자료를 검토해 확인된 사례를 문서화하는 관점으로 작성하시오.
   발견 경위와 실험 기록에는 구체적인 장소·시점·관측 조건·계측값·표본 수·대조 결과 중 해당하는 정보를 포함하고, 확인된 사실과 현재 가설을 구분하시오.
-  write_docs 도구를 사용해 schemaVersion 3의 구조화 JSON 문서로 저장하시오.
-  classification, overview, identificationTraits, discovery, behavior.summary, behavior.stages, relationships.summary, relationships.entries, experiments, handlingProcedures, hypotheses, riskAssessment, notes, amendments, supplementalSections 필드를 의미에 맞게 작성하시오.
+  write_docs 도구를 사용해 schemaVersion 4의 구조화 JSON 문서로 저장하시오.
+  classification, classificationRationale, narrative, overview, identificationTraits, discovery, behavior.summary, behavior.stages, relationships.summary, relationships.entries, experiments, handlingProcedures, hypotheses, riskAssessment, notes, amendments, supplementalSections 필드를 의미에 맞게 작성하시오.
   classification은 secrecy, permission, chaos, danger, popularity, containment의 여섯 축을 각각 1부터 5까지의 정수로 평가하시오. 모든 축에 같은 값을 일괄 부여하지 말고 관측 기록에 근거해 독립적으로 판정하시오.
   secrecy는 공개 가능성, permission은 필요한 최소 열람 권한, chaos는 행동의 불규칙성과 예측 불가능성, danger는 인명·시설·기록에 대한 위해, popularity는 기관 내 인지도와 관측 빈도, containment는 필요한 통제 강도를 나타낸다. 1은 가장 낮고 5는 가장 높다.
+  classificationRationale에는 여섯 축 각각의 수치가 선택된 구체적인 관측 근거를 한 문장 이상 기록하시오.
+  narrative.personnel에는 이름, 역할, 현재 상태, 사건 관여 내용을 가진 인원 2명 이상을 기록하시오. 기존 기록에 실명이 없으면 기관식 익명 식별명을 부여하되 문서 내에서 일관되게 사용하시오.
+  narrative.timeline에는 발견부터 현재까지의 핵심 시점 3건 이상을 date, label, description으로 기록하시오.
+  narrative.incidents에는 code, date, location, title, involvedPersonnel, 두 문단 이상의 narrative, outcome을 갖춘 주요 사건 2건 이상을 작성하시오. 현장 인원의 선택, 실수, 대응과 그 결과가 드러나야 하며 기존 관측 사실과 모순되어서는 안 된다.
+  narrative.evidence에는 추적 가능한 증거물 또는 자료 3건 이상을 code, type, description, custodyStatus로 기록하시오.
+  narrative.testimonies에는 서로 다른 인원의 증언 2건 이상을 speaker, role, context, statement로 기록하시오. 증언은 관측 사실을 보완하되 검증되지 않은 해석은 화자의 판단으로 명시하시오.
   관계는 targetId, targetTitle, description으로, 행동 단계는 name과 description으로, 위험은 category와 assessment로 구조화하시오.
   notes는 원래 순서를 유지하는 paragraph 또는 quotation 타입의 항목 배열로 작성하시오.
   문자열 필드 내부에서만 Markdown 문법을 사용할 수 있습니다.
@@ -118,7 +124,7 @@ await agent.invoke(`
   100 부터 ${id - 1}까지 랜덤하게 COS를 골라 존재할 경우 연관성을 작성하시오. (적어도 5개의 COS와 연관 짓습니다.)
   다른 COS를 언급할때는 [...](./cos{n}.json)를 통해 다른 Object를 링크하시오.
   다른 COS를 서술하는 내용을 적을때는 read_docs로 amendments 필드만 읽고 patch_docs의 upsert_amendment 연산으로 reciprocal amendment를 추가하시오.
-  기존 JSON 전체를 다시 쓰지 말고 부분 수정은 patch_docs를 사용하며, 분류 변경에는 set_classification 연산을 사용하고 서로 관련된 여러 변경은 patches 배열 한 번에 적용하시오.`)
+  기존 JSON 전체를 다시 쓰지 말고 부분 수정은 patch_docs를 사용하며, 분류 변경에는 set_classification, 분류 근거 변경에는 set_classification_rationale, 서사 기록 변경에는 해당 upsert 연산을 사용하고 서로 관련된 여러 변경은 patches 배열 한 번에 적용하시오.`)
 
 await writeFile('./lastId.txt', id.toString())
 process.exit(0)
