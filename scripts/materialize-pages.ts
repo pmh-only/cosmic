@@ -18,9 +18,9 @@ const entries = await readdir(docsDir)
 const documentEntries = entries.filter((entry) => entry.endsWith('.json')).sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
 const repository = process.env['GITHUB_REPOSITORY']
 const [owner, repo] = repository?.split('/') ?? []
-const basePath = repository ? `/${repo}/` : '/'
-const siteOrigin = owner && repo ? `https://${owner}.github.io` : 'https://pmh-only.github.io'
-const siteUrl = `${siteOrigin}${basePath}`
+const fallbackSiteUrl = owner && repo ? `https://${owner}.github.io/${repo}/` : 'https://pmh-only.github.io/'
+const siteUrl = `${(process.env['SITE_URL'] ?? fallbackSiteUrl).replace(/\/+$/, '')}/`
+const basePath = new URL(siteUrl).pathname
 const siteTitle = 'COSMIC Archive'
 const rootPageTitle = 'COSMIC Archive | 미확인 현상 조사 기록'
 const siteDescription = 'COSMIC Archive는 미확인 개체, 물체 및 현상의 관측 기록과 사건 보고서, 관련 인원, 증거 및 격리 절차를 제공하는 한국어 조사 기록망입니다.'
