@@ -6,7 +6,6 @@ import ReactMarkdown from 'react-markdown'
 import {
   classificationAxes,
   getClassificationLabel,
-  getClassificationMeaning,
   parseCosDocument,
   renderCosDocument,
   type CosDocument
@@ -21,10 +20,10 @@ const [owner, repo] = repository?.split('/') ?? []
 const fallbackSiteUrl = owner && repo ? `https://${owner}.github.io/${repo}/` : 'https://pmh-only.github.io/'
 const siteUrl = `${(process.env['SITE_URL'] ?? fallbackSiteUrl).replace(/\/+$/, '')}/`
 const basePath = new URL(siteUrl).pathname
-const siteTitle = 'COSMIC Archive'
-const rootPageTitle = 'COSMIC Archive | 미확인 현상 조사 기록'
-const siteDescription = 'COSMIC Archive는 미확인 개체, 물체 및 현상의 관측 기록과 사건 보고서, 관련 인원, 증거 및 격리 절차를 제공하는 한국어 조사 기록망입니다.'
-const siteKeywords = ['COSMIC Archive', 'COS', '미확인 현상', '이상 현상 기록', '사건 보고서', '격리 절차', '한국어 아카이브']
+const siteTitle = 'COSMIC 기록관리시스템'
+const rootPageTitle = 'COSMIC 기록관리시스템 | 현상 조사 자료'
+const siteDescription = '현장에서 접수된 미확인 현상에 대한 조사 기록, 확인 자료 및 후속 조치 내역을 조회할 수 있습니다.'
+const siteKeywords = ['COSMIC', 'COS', '현상 조사', '현장 기록', '사건 보고', '확인 자료', '기록관리']
 const organizationId = `${siteUrl}#organization`
 const websiteId = `${siteUrl}#website`
 const collectionId = `${siteUrl}#collection`
@@ -122,8 +121,8 @@ function buildHtml(title: string, tags: string, content: string): string {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="generator" content="COSMIC Archive static generator" />
-  <meta name="theme-color" content="#020704" />
+  <meta name="generator" content="COSMIC records publisher" />
+  <meta name="theme-color" content="#f4f5f7" />
   <link rel="icon" href="${basePath}favicon.svg" type="image/svg+xml" />
   <link rel="home" href="${siteUrl}" />
   <link rel="sitemap" type="application/xml" href="${siteUrl}sitemap.xml" />
@@ -137,9 +136,7 @@ function buildHtml(title: string, tags: string, content: string): string {
 </head>
 <body>
 <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
-<canvas class="matrix-rain" aria-hidden="true"></canvas>
-<div class="crt-effects" aria-hidden="true"></div>
-<div class="terminal-frame">
+<div class="site-shell">
 ${content}
 </div>
 </body>
@@ -225,16 +222,17 @@ function getNarrativeSearchText(document: CosDocument): string {
   return JSON.stringify(document.narrative)
 }
 
-function renderClassificationBadges(document: CosDocument): string {
-  const badges = classificationAxes.map((axis) => {
+function renderRecordMetadata(document: CosDocument): string {
+  const keys = ['secrecy', 'danger', 'containment'] as const
+  const items = keys.map((key) => {
+    const axis = classificationAxes.find((candidate) => candidate.key === key)
+    if (!axis) return ''
     const level = document.classification[axis.key]
     const levelLabel = getClassificationLabel(axis, level)
-    return `<li class="level-${level}" title="${axis.label}: LEVEL ${level} ${levelLabel} — ${getClassificationMeaning(axis, level)}"><span>${axis.code}</span><strong>${level}</strong></li>`
+    return `<div><dt>${axis.label}</dt><dd>${levelLabel} ${level}</dd></div>`
   }).join('')
 
-  return `<ul class="record-levels" aria-label="분류 수준: ${classificationAxes
-    .map((axis) => `${axis.label} ${document.classification[axis.key]}`)
-    .join(', ')}">${badges}</ul>`
+  return `<dl class="record-meta">${items}</dl>`
 }
 
 function renderClassificationMatrix(document: CosDocument): string {
@@ -244,12 +242,12 @@ function renderClassificationMatrix(document: CosDocument): string {
     const meter = Array.from({ length: 5 }, (_, index) => `<i${index < level ? ' class="active"' : ''}></i>`).join('')
     return `<div class="level-${level}">
       <dt><span>${axis.code}</span>${axis.label}</dt>
-      <dd><span class="level-meter" aria-hidden="true">${meter}</span><strong>L${level} ${levelLabel}</strong></dd>
+      <dd><span class="level-meter" aria-hidden="true">${meter}</span><strong>${levelLabel} · ${level}</strong></dd>
     </div>`
   }).join('\n')
 
   return `<section class="classification-matrix" aria-labelledby="classification-heading">
-    <h2 id="classification-heading">// CLASSIFICATION MATRIX</h2>
+    <h2 id="classification-heading">관리 분류</h2>
     <dl>${rows}</dl>
   </section>`
 }
@@ -258,13 +256,39 @@ function renderLevelGuide(): string {
   const axes = classificationAxes.map((axis) => `<section>
     <h3><span>${axis.code}</span>${axis.label}</h3>
     <p>${axis.description}</p>
-    <ol>${axis.levels.map((label, index) => `<li><strong>L${index + 1} ${label}</strong><span>${axis.meanings[index]}</span></li>`).join('')}</ol>
+    <ol>${axis.levels.map((label, index) => `<li><strong>${index + 1}단계 ${label}</strong><span>${axis.meanings[index]}</span></li>`).join('')}</ol>
   </section>`).join('')
 
   return `<details class="level-guide">
-    <summary>LEVEL MEANINGS <span aria-hidden="true">[+]</span></summary>
+    <summary>분류 기준 보기 <span aria-hidden="true">+</span></summary>
     <div>${axes}</div>
   </details>`
+}
+
+function renderSiteHeader(status: string): string {
+  return `<div class="service-strip">
+  <div><span class="service-symbol" aria-hidden="true">C</span><span>COSMIC 기관업무용 기록관리 시스템입니다.</span><span class="system-clock" aria-label="현재 날짜"></span></div>
+</div>
+<header class="system-bar">
+  <a class="wordmark" href="${basePath}" aria-label="COSMIC 기록관리시스템 홈">
+    <span class="wordmark-mark" aria-hidden="true">C</span>
+    <span><strong>COSMIC</strong><small>현상기록관리센터</small></span>
+  </a>
+  <div class="system-readout" aria-label="시스템 상태">
+    <span>접속구분: 외부 열람</span>
+    <span>${status}</span>
+    <a href="${basePath}index.json">자료구조</a>
+  </div>
+</header>
+<nav class="global-nav" aria-label="주요 메뉴">
+  <div>
+    <a class="active" href="${basePath}">통합조회</a>
+    <a href="${basePath}#records-heading">현장기록</a>
+    <a href="${basePath}#records-heading">관측자료</a>
+    <a href="${basePath}#records-heading">상호참조</a>
+    <a href="${basePath}#records-heading">관리기준</a>
+  </div>
+</nav>`
 }
 
 function renderIndex(): string {
@@ -276,69 +300,62 @@ function renderIndex(): string {
     <span class="record-index" aria-hidden="true">${String(index + 1).padStart(3, '0')}</span>
     <span class="record-code">${code}</span>
     <strong class="record-title">${escapeHtml(doc.document.title)}</strong>
-    ${renderClassificationBadges(doc.document)}
+    ${renderRecordMetadata(doc.document)}
     <span class="record-excerpt">${escapeHtml(doc.description)}</span>
-    <span class="record-access">OPEN_FILE <span aria-hidden="true">[ENTER]</span></span>
+    <span class="record-access">보기</span>
   </a>
 </li>`
     })
     .join('\n')
 
-  return `<header class="system-bar">
-  <a class="wordmark" href="${basePath}" aria-label="COSMIC Archive 홈">
-    <span class="wordmark-mark" aria-hidden="true">C∴</span>
-    <span>COSMIC_ARCHIVE</span>
-  </a>
-  <div class="system-readout" aria-label="시스템 상태">
-    <span><i class="status-light"></i> LINK_SECURE</span>
-    <span class="system-clock" aria-label="현재 시각">00:00:00</span>
-  </div>
-  <button class="effects-toggle" type="button" data-effects-toggle aria-pressed="true">CRT: ON</button>
-</header>
+  return `${renderSiteHeader('기록목록')}
 <main id="main-content" class="archive-main">
+  <nav class="page-path" aria-label="현재 위치"><a href="${basePath}">홈</a><span>자료조회</span><strong>현상 조사 기록</strong></nav>
   <section class="archive-hero" aria-labelledby="archive-title">
-    <div class="eyebrow"><span>RESTRICTED NETWORK</span><span>NODE 09 / KR</span></div>
     <div class="hero-grid">
       <div>
-        <p class="boot-line">&gt; uplink established<span class="cursor" aria-hidden="true"></span></p>
-        <h1 id="archive-title">COSMIC<br/><span>ARCHIVE</span></h1>
+        <h1 id="archive-title">현상 조사 기록 통합조회</h1>
+        <p class="boot-line">등록된 현장 조사기록과 관련 자료를 조회합니다.</p>
       </div>
-      <div class="hero-copy">
-        <p class="classification">[ CLASSIFIED // SIX-AXIS CONTROL ]</p>
-        <p>미확인 개체, 물체 및 현상에 대한 중앙 기록망. 모든 접근은 기록되며 열람 흔적은 보존됩니다.</p>
-        <dl class="archive-stats">
-          <div><dt>FILES</dt><dd>${String(docs.length).padStart(3, '0')}</dd></div>
-          <div><dt>STATUS</dt><dd>LIVE</dd></div>
-          <div><dt>FORMAT</dt><dd>JSON.V4</dd></div>
-        </dl>
-      </div>
+      <dl class="archive-stats">
+        <div><dt>등록 건수</dt><dd>${String(docs.length).padStart(3, '0')}건</dd></div>
+        <div><dt>기준본</dt><dd>${String(docs.length).padStart(3, '0')}건</dd></div>
+        <div><dt>자료 갱신</dt><dd>${new Date().getUTCFullYear()}.08</dd></div>
+      </dl>
     </div>
   </section>
   <section class="records-panel" aria-labelledby="records-heading">
     <div class="panel-heading">
       <div>
-        <p class="section-number">// 01</p>
-        <h2 id="records-heading">RECORD_DIRECTORY</h2>
+        <h2 id="records-heading">검색 조건</h2>
       </div>
-      <p><span data-result-count>${docs.length}</span> / ${docs.length} ENTRIES</p>
+      <p><span class="required-mark">*</span> 문서번호, 건명 및 본문을 대상으로 검색합니다.</p>
     </div>
     <form class="archive-search" role="search" action="${siteUrl}" method="get" data-search-form>
-      <label for="record-search">QUERY::</label>
+      <label for="record-search">검색어</label>
       <div class="search-field">
-        <span aria-hidden="true">&gt;</span>
-        <input id="record-search" name="q" type="search" autocomplete="off" placeholder="SEARCH ID / DESIGNATION / CONTENT" data-search-input />
-        <kbd>/</kbd>
+        <span class="search-select" aria-hidden="true">제목+내용</span>
+        <input id="record-search" name="q" type="search" autocomplete="off" placeholder="문서번호, 건명 또는 본문 검색" data-search-input />
+        <button type="submit">검색</button>
       </div>
     </form>
-    <p class="no-results" data-no-results hidden>NO MATCHING RECORDS // QUERY REJECTED</p>
+    <div class="result-toolbar">
+      <p>전체 <strong data-result-count>${docs.length}</strong>건</p>
+      <p><span>문서번호순</span><span>페이지당 ${docs.length}건</span></p>
+    </div>
+    <p class="no-results" data-no-results hidden>조건에 맞는 기록이 없습니다.</p>
+    <div class="record-table-head" aria-hidden="true">
+      <span>번호</span><span>문서번호</span><span>건명</span><span>기록 개요</span><span>관리 분류</span><span>열람</span>
+    </div>
     <ol class="record-grid">
 ${records}
     </ol>
+    <nav class="pagination" aria-label="페이지 이동"><strong>1</strong></nav>
   </section>
   <footer class="archive-footer">
-    <span>COSMIC ARCHIVAL TERMINAL</span>
-    <span>END_OF_DIRECTORY //</span>
-    <span>© ${new Date().getUTCFullYear()} INTERNAL USE</span>
+    <span>COSMIC 기록관리시스템</span>
+    <span>자료 오류 및 정정사항은 기록관리 담당자에게 통보</span>
+    <span>기준연도 ${new Date().getUTCFullYear()}</span>
   </footer>
 </main>`
 }
@@ -361,55 +378,47 @@ function renderDocument(activeDoc: DocMeta, index: number): string {
   const previous = docs[index - 1]
   const next = docs[index + 1]
   const navigation = [
-    `<a href="${basePath}">Archive index</a>`,
-    previous ? `<a rel="prev" href="${getDocHref(previous.id)}">Previous: ${escapeHtml(previous.title)}</a>` : undefined,
-    next ? `<a rel="next" href="${getDocHref(next.id)}">Next: ${escapeHtml(next.title)}</a>` : undefined
+    `<a href="${basePath}">전체 목록</a>`,
+    previous ? `<a rel="prev" href="${getDocHref(previous.id)}">이전 기록: ${escapeHtml(previous.title)}</a>` : undefined,
+    next ? `<a rel="next" href="${getDocHref(next.id)}">다음 기록: ${escapeHtml(next.title)}</a>` : undefined
   ].filter((link) => link !== undefined).join(' | ')
 
-  return `<header class="system-bar">
-  <a class="wordmark" href="${basePath}" aria-label="COSMIC Archive 홈">
-    <span class="wordmark-mark" aria-hidden="true">C∴</span>
-    <span>COSMIC_ARCHIVE</span>
-  </a>
-  <div class="system-readout" aria-label="시스템 상태">
-    <span><i class="status-light"></i> FILE_OPEN</span>
-    <span class="system-clock" aria-label="현재 시각">00:00:00</span>
-  </div>
-  <button class="effects-toggle" type="button" data-effects-toggle aria-pressed="true">CRT: ON</button>
-</header>
+  return `${renderSiteHeader(`COS${activeDoc.document.id} 조회`)}
 <div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
+<nav class="page-path document-path" aria-label="현재 위치"><a href="${basePath}">홈</a><a href="${basePath}">통합조회</a><strong>COS${activeDoc.document.id}</strong></nav>
 <main id="main-content" class="dossier-main">
   <aside class="dossier-sidebar">
-    <a class="back-link" href="${basePath}"><span aria-hidden="true">&lt;-</span> ARCHIVE_INDEX</a>
+    <div class="sidebar-title">현상 조사 기록</div>
+    <a class="back-link" href="${basePath}">통합조회</a>
     <div class="file-stamp">
-      <span>FILE_ID</span>
+      <span>문서번호</span>
       <strong>COS${activeDoc.document.id}</strong>
-      <span>ACCESS // L${activeDoc.document.classification.permission}</span>
+      <span>열람권한 ${getClassificationLabel(classificationAxes[1]!, activeDoc.document.classification.permission)} · ${activeDoc.document.classification.permission}</span>
     </div>
     ${renderClassificationMatrix(activeDoc.document)}
     ${renderLevelGuide()}
     <dl class="file-meta">
-      <div><dt>TYPE</dt><dd>INCIDENT DOSSIER</dd></div>
-      <div><dt>LANG</dt><dd>KO-KR</dd></div>
-      <div><dt>STATE</dt><dd class="live-value">VERIFIED</dd></div>
-      <div><dt>SCHEMA</dt><dd>V4.0</dd></div>
+      <div><dt>자료구분</dt><dd>현상 조사 기록</dd></div>
+      <div><dt>언어</dt><dd>한국어</dd></div>
+      <div><dt>등록상태</dt><dd class="live-value">기준본</dd></div>
+      <div><dt>구조버전</dt><dd>4.0</dd></div>
     </dl>
-    <a class="raw-link" href="index.json">VIEW_RAW_JSON <span aria-hidden="true">↗</span></a>
+    <a class="raw-link" href="index.json">구조화 자료(JSON) <span aria-hidden="true">↗</span></a>
     <nav class="section-nav" aria-label="문서 목차">
-      <p>// SECTIONS</p>
+      <p>문서 목차</p>
       <ol data-section-nav></ol>
     </nav>
   </aside>
   <div class="dossier-content">
     <div class="dossier-banner">
-      <span>CLASSIFIED // CONTROLLED RECORD</span>
-      <span>CRC:${String(activeDoc.document.id * 7919).slice(-6).padStart(6, '0')}</span>
+      <span>기록관리번호 COS-${activeDoc.document.id}</span>
+      <span>무결성 확인값 ${String(activeDoc.document.id * 7919).slice(-6).padStart(6, '0')}</span>
     </div>
     <article class="dossier-article" data-dossier>
 ${article}
     </article>
-    <nav class="record-navigation" aria-label="Record navigation">${navigation}</nav>
-    <footer class="document-footer"><span>EOF // COS${activeDoc.document.id}</span><span>CONNECTION MAINTAINED</span></footer>
+    <nav class="record-navigation" aria-label="기록 이동">${navigation}</nav>
+    <footer class="document-footer"><span>문서 끝 · COS${activeDoc.document.id}</span><span>기준본 등록 상태</span></footer>
   </div>
 </main>`
 }
@@ -603,7 +612,7 @@ for (const [index, doc] of docs.entries()) {
         identifier: `COS${doc.document.id}`,
         keywords: doc.keywords,
         wordCount: plainText(doc.body).split(/\s+/).filter(Boolean).length,
-        articleSection: ['분류 근거', '관련 인원', '사건 연대기', '주요 사건 기록', '증거물 및 자료', '취급 절차', '위험도', '증언 기록'],
+        articleSection: ['분류 근거', '담당 및 관련 인원', '처리 이력', '주요 보고 내역', '증거물 및 자료', '관리 지침', '영향 평가', '면담 기록'],
         about: {
           '@type': 'Thing',
           name: doc.document.title,

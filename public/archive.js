@@ -1,92 +1,18 @@
 (() => {
-  const root = document.documentElement
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
-  const effectsButton = document.querySelector('[data-effects-toggle]')
-  const canvas = document.querySelector('.matrix-rain')
-  const context = canvas?.getContext('2d')
-  let effectsEnabled = localStorage.getItem('cosmic-effects') !== 'off'
-  let animationFrame = 0
-  let columns = []
-  let lastFrame = 0
+  document.documentElement.classList.add('js')
 
-  root.classList.add('js')
-
-  function updateEffects() {
-    root.classList.toggle('effects-off', !effectsEnabled)
-    if (effectsButton) {
-      effectsButton.textContent = `CRT: ${effectsEnabled ? 'ON' : 'OFF'}`
-      effectsButton.setAttribute('aria-pressed', String(effectsEnabled))
-    }
-    localStorage.setItem('cosmic-effects', effectsEnabled ? 'on' : 'off')
-    if (effectsEnabled && !reduceMotion.matches) startRain()
-    else stopRain()
-  }
-
-  effectsButton?.addEventListener('click', () => {
-    effectsEnabled = !effectsEnabled
-    updateEffects()
-  })
-
-  function resizeRain() {
-    if (!canvas || !context) return
-    const scale = Math.min(window.devicePixelRatio || 1, 1.5)
-    canvas.width = Math.floor(window.innerWidth * scale)
-    canvas.height = Math.floor(window.innerHeight * scale)
-    canvas.style.width = `${window.innerWidth}px`
-    canvas.style.height = `${window.innerHeight}px`
-    context.setTransform(scale, 0, 0, scale, 0, 0)
-    columns = Array.from({ length: Math.ceil(window.innerWidth / 22) }, () => Math.random() * -50)
-  }
-
-  function drawRain(timestamp) {
-    if (!context || !canvas || !effectsEnabled || reduceMotion.matches) return
-    animationFrame = requestAnimationFrame(drawRain)
-    if (timestamp - lastFrame < 70) return
-    lastFrame = timestamp
-    context.fillStyle = 'rgba(0, 5, 2, 0.12)'
-    context.fillRect(0, 0, window.innerWidth, window.innerHeight)
-    context.font = '15px monospace'
-    const glyphs = '01COS기록보존분류アクセスデータ'
-    columns.forEach((position, index) => {
-      const glyph = glyphs[Math.floor(Math.random() * glyphs.length)]
-      context.fillStyle = Math.random() > 0.985 ? '#d8ff4f' : '#2faf52'
-      context.fillText(glyph, index * 22, position * 22)
-      columns[index] = position * 22 > window.innerHeight && Math.random() > 0.97 ? 0 : position + 1
-    })
-  }
-
-  function startRain() {
-    if (!canvas || !context || animationFrame) return
-    resizeRain()
-    animationFrame = requestAnimationFrame(drawRain)
-  }
-
-  function stopRain() {
-    if (animationFrame) cancelAnimationFrame(animationFrame)
-    animationFrame = 0
-    context?.clearRect(0, 0, canvas?.width || 0, canvas?.height || 0)
-  }
-
-  window.addEventListener('resize', resizeRain, { passive: true })
-  reduceMotion.addEventListener('change', updateEffects)
-  updateEffects()
-
-  const clock = document.querySelector('.system-clock')
-  function updateClock() {
-    if (!clock) return
-    clock.textContent = new Intl.DateTimeFormat('en-GB', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: false
+  const date = document.querySelector('.system-clock')
+  if (date) {
+    date.textContent = new Intl.DateTimeFormat('ko-KR', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
     }).format(new Date())
   }
-  updateClock()
-  window.setInterval(updateClock, 1000)
 
   const searchInput = document.querySelector('[data-search-input]')
   const records = [...document.querySelectorAll('[data-record]')]
-  const resultCount = document.querySelector('[data-result-count]')
+  const resultCounts = document.querySelectorAll('[data-result-count]')
   const noResults = document.querySelector('[data-no-results]')
   const initialQuery = new URLSearchParams(window.location.search).get('q')?.trim() || ''
 
@@ -100,7 +26,9 @@
       record.hidden = !matches
       if (matches) visible += 1
     })
-    if (resultCount) resultCount.textContent = String(visible)
+    resultCounts.forEach((resultCount) => {
+      resultCount.textContent = String(visible)
+    })
     if (noResults) noResults.hidden = visible !== 0
   }
 
@@ -115,6 +43,7 @@
     filterRecords()
   })
   if (initialQuery) filterRecords()
+
   document.addEventListener('keydown', (event) => {
     if (event.key === '/' && searchInput && document.activeElement !== searchInput) {
       event.preventDefault()

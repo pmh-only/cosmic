@@ -1,16 +1,16 @@
 {
-  "name": "COSMIC Archive",
+  "name": "COSMIC 기록관리시스템",
   "short_name": "COSMIC",
-  "description": "미확인 개체, 물체 및 현상의 관측 기록과 사건 보고서를 제공하는 한국어 조사 기록망입니다.",
+  "description": "현장에서 접수된 미확인 현상의 조사 기록과 후속 조치 내역을 조회합니다.",
   "id": ".",
   "start_url": ".",
   "scope": ".",
   "lang": "ko-KR",
   "dir": "ltr",
   "display": "standalone",
-  "background_color": "#020704",
-  "theme_color": "#020704",
-  "categories": ["education", "reference"],
+  "background_color": "#f2f4f6",
+  "theme_color": "#10263a",
+  "categories": ["reference", "productivity"],
   "icons": [
     {
       "src": "favicon.svg",

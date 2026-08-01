@@ -109,8 +109,8 @@ await agent.invoke(`
   발견 경위와 실험 기록에는 구체적인 장소·시점·관측 조건·계측값·표본 수·대조 결과 중 해당하는 정보를 포함하고, 확인된 사실과 현재 가설을 구분하시오.
   write_docs 도구를 사용해 schemaVersion 4의 구조화 JSON 문서로 저장하시오.
   classification, classificationRationale, narrative, overview, identificationTraits, discovery, behavior.summary, behavior.stages, relationships.summary, relationships.entries, experiments, handlingProcedures, hypotheses, riskAssessment, notes, amendments, supplementalSections 필드를 의미에 맞게 작성하시오.
-  classification은 secrecy, permission, chaos, danger, popularity, containment의 여섯 축을 각각 1부터 5까지의 정수로 평가하시오. 모든 축에 같은 값을 일괄 부여하지 말고 관측 기록에 근거해 독립적으로 판정하시오.
-  secrecy는 공개 가능성, permission은 필요한 최소 열람 권한, chaos는 행동의 불규칙성과 예측 불가능성, danger는 인명·시설·기록에 대한 위해, popularity는 기관 내 인지도와 관측 빈도, containment는 필요한 통제 강도를 나타낸다. 1은 가장 낮고 5는 가장 높다.
+  classification은 secrecy, permission, chaos, danger, popularity, containment의 여섯 관리 항목을 각각 1부터 5까지의 정수로 평가하시오. 모든 항목에 같은 값을 일괄 부여하지 말고 관측 기록에 근거해 독립적으로 판정하시오.
+  secrecy는 공개 가능성, permission은 필요한 최소 열람 권한, chaos는 결과의 변동성과 예측 곤란도, danger는 인명·시설·기록에 대한 영향, popularity는 관련 기록의 참조 빈도, containment는 필요한 관리 강도를 나타낸다. 1은 가장 낮고 5는 가장 높다.
   classificationRationale에는 여섯 축 각각의 수치가 선택된 구체적인 관측 근거를 한 문장 이상 기록하시오.
   narrative.personnel에는 이름, 역할, 현재 상태, 사건 관여 내용을 가진 인원 2명 이상을 기록하시오. 기존 기록에 실명이 없으면 기관식 익명 식별명을 부여하되 문서 내에서 일관되게 사용하시오.
   narrative.timeline에는 발견부터 현재까지의 핵심 시점 3건 이상을 date, label, description으로 기록하시오.

@@ -88,34 +88,34 @@ export const classificationAxes: ReadonlyArray<{
   meanings: readonly [string, string, string, string, string]
 }> = [
   {
-    key: 'secrecy', code: 'SEC', label: 'SECRECY', description: '기록 공개 시 발생하는 정보 노출 및 악용 위험',
-    levels: ['PUBLIC', 'RESTRICTED', 'CONFIDENTIAL', 'SECRET', 'TOP SECRET'],
-    meanings: ['일반 공개 가능', '내부 인원으로 열람 제한', '업무상 필요 인원만 열람', '유출 시 중대한 피해 예상', '존재 또는 관측 정보 자체가 최고 기밀']
+    key: 'secrecy', code: 'INF', label: '정보등급', description: '기록 공개 범위와 비식별 처리 필요 수준',
+    levels: ['일반', '내부', '제한', '통제', '비공개'],
+    meanings: ['일반 공개 가능', '내부 업무용', '업무 관련자 열람', '책임자 승인 후 열람', '별도 승인 및 열람 기록 필요']
   },
   {
-    key: 'permission', code: 'PER', label: 'PERMISSION', description: '안전한 열람과 취급에 필요한 최소 권한',
-    levels: ['OBSERVER', 'FIELD', 'RESEARCH', 'COMMAND', 'DIRECTORATE'],
-    meanings: ['일반 기록 인원', '훈련된 현장 요원', '전문 연구 책임자', '지휘 권한 보유자', '기관 최고 관리부 승인 필요']
+    key: 'permission', code: 'ACL', label: '열람권한', description: '자료 열람과 취급에 필요한 최소 업무 권한',
+    levels: ['기본', '현장', '조사', '책임', '관리'],
+    meanings: ['기본 열람 계정', '현장 업무 담당자', '조사 및 분석 담당자', '부서 책임자', '기록관리자 승인 필요']
   },
   {
-    key: 'chaos', code: 'CHS', label: 'CHAOS', description: '현상의 불규칙성, 전이성 및 예측 불가능성',
-    levels: ['STABLE', 'VARIABLE', 'UNSTABLE', 'CHAOTIC', 'CATASTROPHIC'],
-    meanings: ['조건과 결과가 안정적', '알려진 조건에서 변동', '전이 가능하나 추적 가능', '재귀적 또는 관측자 의존적 확산', '통제되지 않는 체계 간 증식']
+    key: 'chaos', code: 'VAR', label: '변동성', description: '관측 조건과 결과의 변동 및 예측 곤란 수준',
+    levels: ['고정', '경미', '유동', '불규칙', '확산'],
+    meanings: ['조건과 결과가 일정함', '알려진 범위 안에서 변동', '변화가 있으나 추적 가능', '관측자 또는 환경에 따라 불규칙', '복수 체계로 전이 가능']
   },
   {
-    key: 'danger', code: 'DNG', label: 'DANGER', description: '인명, 시설, 판단 및 기록에 대한 종합 위해',
-    levels: ['NEGLIGIBLE', 'GUARDED', 'SEVERE', 'CRITICAL', 'EXTREME'],
-    meanings: ['절차상 주의만 필요', '국소적이고 복구 가능한 피해', '중대한 국소 피해', '광범위 피해 또는 위험 행동 유발', '직접적이고 체계적인 극한 피해']
+    key: 'danger', code: 'IMP', label: '영향도', description: '인원, 시설, 판단 및 기록에 미치는 영향',
+    levels: ['미미', '주의', '중대', '심각', '광범위'],
+    meanings: ['절차상 주의만 필요', '국소적이고 복구 가능한 영향', '중대한 국소 영향', '복수 인원 또는 시설에 영향', '직접적이고 체계적인 광범위 영향']
   },
   {
-    key: 'popularity', code: 'POP', label: 'POPULARITY', description: '기관 기록망에서의 관측 빈도와 연관 기록 규모',
-    levels: ['UNKNOWN', 'OBSCURE', 'NOTABLE', 'WIDESPREAD', 'UBIQUITOUS'],
+    key: 'popularity', code: 'REF', label: '참조빈도', description: '기록망에서의 관측 빈도와 연관 자료 규모',
+    levels: ['희소', '낮음', '보통', '높음', '집중'],
     meanings: ['참조 기록 8건 이하', '참조 기록 9~13건', '참조 기록 14~18건', '참조 기록 19~27건', '참조 기록 28건 이상']
   },
   {
-    key: 'containment', code: 'CNT', label: 'CONTAINMENT', description: '격리와 통제에 필요한 절차의 강도',
-    levels: ['ROUTINE', 'CONTROLLED', 'REINFORCED', 'MAXIMUM', 'ABSOLUTE'],
-    meanings: ['일상 기록과 감시', '단일 매체 격리', '독립 로그를 포함한 강화 격리', '복수 매체 및 복합 현상 통제', '체계 단위 완전 격리']
+    key: 'containment', code: 'CTL', label: '관리수준', description: '보관과 취급에 필요한 관리 절차의 강도',
+    levels: ['일상', '분리', '강화', '복합', '전용'],
+    meanings: ['일상 기록과 점검', '단일 매체 분리 보관', '독립 로그를 포함한 강화 관리', '복수 매체 및 연관 자료 통제', '전용 체계에서만 취급']
   }
 ]
 
@@ -470,48 +470,48 @@ const personnelStatusLabels: Record<z.infer<typeof personnelSchema>['status'], s
 
 export function renderCosDocument(document: CosDocument): string {
   const sections = [
-    `## 개요\n\n${renderParagraphs(document.overview)}`,
+    `## 기록 개요\n\n${renderParagraphs(document.overview)}`,
     `## 분류 근거\n\n${classificationAxes.map((axis) => {
       const level = document.classification[axis.key]
-      return `- **${axis.code} — ${axis.label} / L${level} ${getClassificationLabel(axis, level)}**: ${document.classificationRationale[axis.key]} _(${getClassificationMeaning(axis, level)})_`
+      return `- **${axis.label}: ${getClassificationLabel(axis, level)} (${level}단계)**: ${document.classificationRationale[axis.key]} _(${getClassificationMeaning(axis, level)})_`
     }).join('\n')}`,
-    `## 식별 특성\n\n${renderList(document.identificationTraits)}`,
-    `## 발견 경위\n\n${renderParagraphs(document.discovery)}`,
+    `## 확인 기준\n\n${renderList(document.identificationTraits)}`,
+    `## 접수 및 확인 경위\n\n${renderParagraphs(document.discovery)}`,
     document.narrative.personnel.length > 0
-      ? `## 관련 인원\n\n${document.narrative.personnel.map((person) => `- **${person.name}** — ${person.role} / ${personnelStatusLabels[person.status]}\n  ${person.involvement}`).join('\n')}`
+      ? `## 담당 및 관련 인원\n\n${document.narrative.personnel.map((person) => `- **${person.name}** — ${person.role} / ${personnelStatusLabels[person.status]}\n  ${person.involvement}`).join('\n')}`
       : '',
     document.narrative.timeline.length > 0
-      ? `## 사건 연대기\n\n${document.narrative.timeline.map((event) => `- **${event.date} — ${event.label}**: ${event.description}`).join('\n')}`
+      ? `## 처리 이력\n\n${document.narrative.timeline.map((event) => `- **${event.date} — ${event.label}**: ${event.description}`).join('\n')}`
       : '',
     document.narrative.incidents.length > 0
-      ? `## 주요 사건 기록\n\n${document.narrative.incidents.map((incident) => [
+      ? `## 주요 보고 내역\n\n${document.narrative.incidents.map((incident) => [
         `### ${incident.code} — ${incident.title}`,
         `**일시:** ${incident.date}  \n**장소:** ${incident.location}  \n**관련 인원:** ${incident.involvedPersonnel.join(', ')}`,
         renderParagraphs(incident.narrative),
         `**결과:** ${incident.outcome}`
       ].join('\n\n')).join('\n\n')}`
       : '',
-    `## 행동 및 영향\n\n${[
+    `## 관찰 내용\n\n${[
       renderParagraphs(document.behavior.summary),
       document.behavior.stages.map((stage, index) => `${index + 1}. **${stage.name}**  \n   ${stage.description}`).join('\n\n')
     ].filter(Boolean).join('\n\n')}`,
-    `## 다른 COS와의 연관성\n\n${[
+    `## 관련 기록\n\n${[
       renderParagraphs(document.relationships.summary),
       document.relationships.entries
         .map((relationship) => `- [COS${relationship.targetId} — ${relationship.targetTitle}](./cos${relationship.targetId}.json): ${relationship.description}`)
         .join('\n\n')
     ].filter(Boolean).join('\n\n')}`,
     document.experiments.length > 0
-      ? `## 실험 기록 요약\n\n${document.experiments.map((experiment) => `- **${experiment.label}**: ${experiment.description}`).join('\n')}`
+      ? `## 확인 작업 요약\n\n${document.experiments.map((experiment) => `- **${experiment.label}**: ${experiment.description}`).join('\n')}`
       : '',
     document.narrative.evidence.length > 0
       ? `## 증거물 및 자료\n\n${document.narrative.evidence.map((evidence) => `- **${evidence.code} / ${evidence.type}**: ${evidence.description}  \n  보관 상태: ${evidence.custodyStatus}`).join('\n')}`
       : '',
-    `## 취급 절차\n\n${renderList(document.handlingProcedures)}`,
-    `## 현재 가설\n\n${renderParagraphs(document.hypotheses)}`,
-    `## 위험도\n\n${document.riskAssessment.map((risk) => `- ${risk.category}: ${risk.assessment}`).join('\n')}`,
+    `## 관리 지침\n\n${renderList(document.handlingProcedures)}`,
+    `## 검토 의견\n\n${renderParagraphs(document.hypotheses)}`,
+    `## 영향 평가\n\n${document.riskAssessment.map((risk) => `- ${risk.category}: ${risk.assessment}`).join('\n')}`,
     document.narrative.testimonies.length > 0
-      ? `## 증언 기록\n\n${document.narrative.testimonies.map((testimony) => `**${testimony.speaker} / ${testimony.role} — ${testimony.context}**\n\n${testimony.statement.split('\n').map((line) => `> ${line}`).join('\n')}`).join('\n\n')}`
+      ? `## 면담 기록\n\n${document.narrative.testimonies.map((testimony) => `**${testimony.speaker} / ${testimony.role} — ${testimony.context}**\n\n${testimony.statement.split('\n').map((line) => `> ${line}`).join('\n')}`).join('\n\n')}`
       : '',
     `## 비고\n\n${document.notes.map((note) => note.type === 'quotation'
       ? note.content.split('\n').map((line) => `> ${line}`).join('\n')
