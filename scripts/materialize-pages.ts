@@ -98,13 +98,21 @@ function buildHtml(title: string, tags: string, content: string): string {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="generator" content="COSMIC Archive static generator" />
+  <meta name="theme-color" content="#020704" />
   <link rel="icon" href="${basePath}favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="${basePath}site.webmanifest" />
+  <link rel="stylesheet" href="${basePath}archive.css" />
   <link rel="alternate" type="text/plain" href="${basePath}llms.txt" title="${siteTitle} LLM index" />
+  <script src="${basePath}archive.js" defer></script>
   <title>${escapeHtml(title)}</title>${tags}
 </head>
 <body>
+<a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+<canvas class="matrix-rain" aria-hidden="true"></canvas>
+<div class="crt-effects" aria-hidden="true"></div>
+<div class="terminal-frame">
 ${content}
+</div>
 </body>
 </html>
 `
@@ -160,20 +168,76 @@ function getJsonResource(doc: DocMeta): object {
 
 function renderIndex(): string {
   const records = docs
-    .map((doc) => `<li><a href="${getDocHref(doc.id)}">${escapeHtml(doc.title)}</a>: ${escapeHtml(doc.description)}</li>`)
+    .map((doc, index) => {
+      const code = `COS${doc.document.id}`
+      return `<li class="record-card" data-record data-search="${escapeHtml(`${code} ${doc.document.title} ${doc.description}`.toLocaleLowerCase('ko-KR'))}">
+  <a href="${getDocHref(doc.id)}" aria-label="${escapeHtml(doc.title)} 열람">
+    <span class="record-index" aria-hidden="true">${String(index + 1).padStart(3, '0')}</span>
+    <span class="record-code">${code}</span>
+    <strong class="record-title">${escapeHtml(doc.document.title)}</strong>
+    <span class="record-excerpt">${escapeHtml(doc.description)}</span>
+    <span class="record-access">OPEN_FILE <span aria-hidden="true">[ENTER]</span></span>
+  </a>
+</li>`
+    })
     .join('\n')
 
-  return `<header>
-  <h1>${siteTitle}</h1>
-  <p>${siteDescription}</p>
+  return `<header class="system-bar">
+  <a class="wordmark" href="${basePath}" aria-label="COSMIC Archive 홈">
+    <span class="wordmark-mark" aria-hidden="true">C∴</span>
+    <span>COSMIC_ARCHIVE</span>
+  </a>
+  <div class="system-readout" aria-label="시스템 상태">
+    <span><i class="status-light"></i> LINK_SECURE</span>
+    <span class="system-clock" aria-label="현재 시각">00:00:00</span>
+  </div>
+  <button class="effects-toggle" type="button" data-effects-toggle aria-pressed="true">CRT: ON</button>
 </header>
-<main>
-  <section aria-labelledby="records-heading">
-    <h2 id="records-heading">Records</h2>
-    <ol>
+<main id="main-content" class="archive-main">
+  <section class="archive-hero" aria-labelledby="archive-title">
+    <div class="eyebrow"><span>RESTRICTED NETWORK</span><span>NODE 09 / KR</span></div>
+    <div class="hero-grid">
+      <div>
+        <p class="boot-line">&gt; uplink established<span class="cursor" aria-hidden="true"></span></p>
+        <h1 id="archive-title">COSMIC<br/><span>ARCHIVE</span></h1>
+      </div>
+      <div class="hero-copy">
+        <p class="classification">[ CLASSIFIED // LEVEL 4 ]</p>
+        <p>미확인 개체, 물체 및 현상에 대한 중앙 기록망. 모든 접근은 기록되며 열람 흔적은 보존됩니다.</p>
+        <dl class="archive-stats">
+          <div><dt>FILES</dt><dd>${String(docs.length).padStart(3, '0')}</dd></div>
+          <div><dt>STATUS</dt><dd>LIVE</dd></div>
+          <div><dt>FORMAT</dt><dd>JSON.V2</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <section class="records-panel" aria-labelledby="records-heading">
+    <div class="panel-heading">
+      <div>
+        <p class="section-number">// 01</p>
+        <h2 id="records-heading">RECORD_DIRECTORY</h2>
+      </div>
+      <p><span data-result-count>${docs.length}</span> / ${docs.length} ENTRIES</p>
+    </div>
+    <form class="archive-search" role="search" data-search-form>
+      <label for="record-search">QUERY::</label>
+      <div class="search-field">
+        <span aria-hidden="true">&gt;</span>
+        <input id="record-search" type="search" autocomplete="off" placeholder="SEARCH ID / DESIGNATION / CONTENT" data-search-input />
+        <kbd>/</kbd>
+      </div>
+    </form>
+    <p class="no-results" data-no-results hidden>NO MATCHING RECORDS // QUERY REJECTED</p>
+    <ol class="record-grid">
 ${records}
     </ol>
   </section>
+  <footer class="archive-footer">
+    <span>COSMIC ARCHIVAL TERMINAL</span>
+    <span>END_OF_DIRECTORY //</span>
+    <span>© ${new Date().getUTCFullYear()} INTERNAL USE</span>
+  </footer>
 </main>`
 }
 
@@ -200,15 +264,49 @@ function renderDocument(activeDoc: DocMeta, index: number): string {
     next ? `<a rel="next" href="${getDocHref(next.id)}">Next: ${escapeHtml(next.title)}</a>` : undefined
   ].filter((link) => link !== undefined).join(' | ')
 
-  return `<header>
-  <p><a href="${basePath}">${siteTitle}</a></p>
-  <p>${siteDescription}</p>
+  return `<header class="system-bar">
+  <a class="wordmark" href="${basePath}" aria-label="COSMIC Archive 홈">
+    <span class="wordmark-mark" aria-hidden="true">C∴</span>
+    <span>COSMIC_ARCHIVE</span>
+  </a>
+  <div class="system-readout" aria-label="시스템 상태">
+    <span><i class="status-light"></i> FILE_OPEN</span>
+    <span class="system-clock" aria-label="현재 시각">00:00:00</span>
+  </div>
+  <button class="effects-toggle" type="button" data-effects-toggle aria-pressed="true">CRT: ON</button>
 </header>
-<main>
-  <article>
+<div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
+<main id="main-content" class="dossier-main">
+  <aside class="dossier-sidebar">
+    <a class="back-link" href="${basePath}"><span aria-hidden="true">&lt;-</span> ARCHIVE_INDEX</a>
+    <div class="file-stamp">
+      <span>FILE_ID</span>
+      <strong>COS${activeDoc.document.id}</strong>
+      <span>ACCESS // L4</span>
+    </div>
+    <dl class="file-meta">
+      <div><dt>TYPE</dt><dd>INCIDENT DOSSIER</dd></div>
+      <div><dt>LANG</dt><dd>KO-KR</dd></div>
+      <div><dt>STATE</dt><dd class="live-value">VERIFIED</dd></div>
+      <div><dt>SCHEMA</dt><dd>V2.0</dd></div>
+    </dl>
+    <a class="raw-link" href="index.json">VIEW_RAW_JSON <span aria-hidden="true">↗</span></a>
+    <nav class="section-nav" aria-label="문서 목차">
+      <p>// SECTIONS</p>
+      <ol data-section-nav></ol>
+    </nav>
+  </aside>
+  <div class="dossier-content">
+    <div class="dossier-banner">
+      <span>DECLASSIFIED FOR INTERNAL REVIEW</span>
+      <span>CRC:${String(activeDoc.document.id * 7919).slice(-6).padStart(6, '0')}</span>
+    </div>
+    <article class="dossier-article" data-dossier>
 ${article}
-  </article>
-  <nav aria-label="Record navigation">${navigation}</nav>
+    </article>
+    <nav class="record-navigation" aria-label="Record navigation">${navigation}</nav>
+    <footer class="document-footer"><span>EOF // COS${activeDoc.document.id}</span><span>CONNECTION MAINTAINED</span></footer>
+  </div>
 </main>`
 }
 
