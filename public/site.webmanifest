@@ -1,11 +1,16 @@
 {
   "name": "COSMIC Archive",
   "short_name": "COSMIC",
-  "description": "Static archive of anomalous COS dossiers stored as structured JSON.",
+  "description": "미확인 개체, 물체 및 현상의 관측 기록과 사건 보고서를 제공하는 한국어 조사 기록망입니다.",
+  "id": ".",
   "start_url": ".",
+  "scope": ".",
+  "lang": "ko-KR",
+  "dir": "ltr",
   "display": "standalone",
-  "background_color": "#02030a",
-  "theme_color": "#02030a",
+  "background_color": "#020704",
+  "theme_color": "#020704",
+  "categories": ["education", "reference"],
   "icons": [
     {
       "src": "favicon.svg",

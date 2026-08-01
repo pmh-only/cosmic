@@ -88,6 +88,9 @@
   const records = [...document.querySelectorAll('[data-record]')]
   const resultCount = document.querySelector('[data-result-count]')
   const noResults = document.querySelector('[data-no-results]')
+  const initialQuery = new URLSearchParams(window.location.search).get('q')?.trim() || ''
+
+  if (searchInput && initialQuery) searchInput.value = initialQuery
 
   function filterRecords() {
     const query = searchInput?.value.trim().toLocaleLowerCase('ko-KR') || ''
@@ -102,7 +105,16 @@
   }
 
   searchInput?.addEventListener('input', filterRecords)
-  document.querySelector('[data-search-form]')?.addEventListener('submit', (event) => event.preventDefault())
+  document.querySelector('[data-search-form]')?.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const query = searchInput?.value.trim() || ''
+    const url = new URL(window.location.href)
+    if (query) url.searchParams.set('q', query)
+    else url.searchParams.delete('q')
+    window.history.replaceState(null, '', url)
+    filterRecords()
+  })
+  if (initialQuery) filterRecords()
   document.addEventListener('keydown', (event) => {
     if (event.key === '/' && searchInput && document.activeElement !== searchInput) {
       event.preventDefault()

@@ -22,7 +22,13 @@ const basePath = repository ? `/${repo}/` : '/'
 const siteOrigin = owner && repo ? `https://${owner}.github.io` : 'https://pmh-only.github.io'
 const siteUrl = `${siteOrigin}${basePath}`
 const siteTitle = 'COSMIC Archive'
-const siteDescription = 'A static archive of anomalous COS dossiers stored as structured JSON.'
+const rootPageTitle = 'COSMIC Archive | 미확인 현상 조사 기록'
+const siteDescription = 'COSMIC Archive는 미확인 개체, 물체 및 현상의 관측 기록과 사건 보고서, 관련 인원, 증거 및 격리 절차를 제공하는 한국어 조사 기록망입니다.'
+const siteKeywords = ['COSMIC Archive', 'COS', '미확인 현상', '이상 현상 기록', '사건 보고서', '격리 절차', '한국어 아카이브']
+const organizationId = `${siteUrl}#organization`
+const websiteId = `${siteUrl}#website`
+const collectionId = `${siteUrl}#collection`
+const datasetId = `${siteUrl}#dataset`
 const now = new Date().toISOString()
 
 type DocMeta = {
@@ -33,6 +39,7 @@ type DocMeta = {
   url: string
   jsonUrl: string
   body: string
+  keywords: string[]
   document: CosDocument
 }
 
@@ -55,7 +62,9 @@ function plainText(markdown: string): string {
     .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
     .replace(/\[([^\]]+)]\([^)]*\)/g, '$1')
     .replace(/^#{1,6}\s+.*$/gm, ' ')
-    .replace(/[*_~>#-]/g, ' ')
+    .replace(/[*_]/g, '')
+    .replace(/^>\s?/gm, '')
+    .replace(/^\s*-\s+/gm, '')
     .replace(/\s+/g, ' ')
     .trim()
 }
@@ -72,15 +81,20 @@ function buildMetaTags(meta: {
   jsonUrl: string
   type: 'website' | 'article'
   jsonLd: unknown
+  keywords: string[]
+  previousUrl?: string
+  nextUrl?: string
 }): string {
   return `
     <meta name="description" content="${escapeHtml(meta.description)}" />
     <meta name="application-name" content="${escapeHtml(siteTitle)}" />
     <meta name="apple-mobile-web-app-title" content="${escapeHtml(siteTitle)}" />
     <meta name="author" content="COSMIC Archive" />
-    <meta name="keywords" content="COSMIC Archive, COS, anomalous dossier, classified archive, structured JSON, Korean records" />
+    <meta name="keywords" content="${escapeHtml(meta.keywords.join(', '))}" />
     <link rel="canonical" href="${escapeHtml(meta.canonical)}" />
     <link rel="alternate" type="application/json" href="${escapeHtml(meta.jsonUrl)}" title="${escapeHtml(`${meta.title} as structured JSON`)}" />
+    ${meta.previousUrl ? `<link rel="prev" href="${escapeHtml(meta.previousUrl)}" />` : ''}
+    ${meta.nextUrl ? `<link rel="next" href="${escapeHtml(meta.nextUrl)}" />` : ''}
     <meta property="og:site_name" content="${escapeHtml(siteTitle)}" />
     <meta property="og:type" content="${meta.type}" />
     <meta property="og:title" content="${escapeHtml(meta.title)}" />
@@ -88,18 +102,22 @@ function buildMetaTags(meta: {
     <meta property="og:url" content="${escapeHtml(meta.canonical)}" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:image" content="${escapeHtml(`${siteUrl}og.svg`)}" />
+    <meta property="og:image:secure_url" content="${escapeHtml(`${siteUrl}og.svg`)}" />
     <meta property="og:image:type" content="image/svg+xml" />
-    <meta property="og:image:alt" content="COSMIC Archive classified dossier index" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="${escapeHtml(`${meta.title} 대표 이미지`)}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(meta.title)}" />
     <meta name="twitter:description" content="${escapeHtml(meta.description)}" />
     <meta name="twitter:image" content="${escapeHtml(`${siteUrl}og.svg`)}" />
+    <meta name="twitter:image:alt" content="${escapeHtml(`${meta.title} 대표 이미지`)}" />
     <script type="application/ld+json">${escapeJson(meta.jsonLd)}</script>`
 }
 
 function buildHtml(title: string, tags: string, content: string): string {
   return `<!doctype html>
-<html lang="ko">
+<html lang="ko-KR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -107,8 +125,12 @@ function buildHtml(title: string, tags: string, content: string): string {
   <meta name="generator" content="COSMIC Archive static generator" />
   <meta name="theme-color" content="#020704" />
   <link rel="icon" href="${basePath}favicon.svg" type="image/svg+xml" />
+  <link rel="home" href="${siteUrl}" />
+  <link rel="sitemap" type="application/xml" href="${siteUrl}sitemap.xml" />
+  <link rel="search" type="application/opensearchdescription+xml" href="${siteUrl}opensearch.xml" title="${siteTitle}" />
   <link rel="manifest" href="${basePath}site.webmanifest" />
   <link rel="stylesheet" href="${basePath}archive.css" />
+  <link rel="alternate" type="application/rss+xml" href="${siteUrl}feed.xml" title="${siteTitle} 최신 기록" />
   <link rel="alternate" type="text/plain" href="${basePath}llms.txt" title="${siteTitle} LLM index" />
   <script src="${basePath}archive.js" defer></script>
   <title>${escapeHtml(title)}</title>${tags}
@@ -125,6 +147,24 @@ ${content}
 `
 }
 
+function getDocumentKeywords(document: CosDocument): string[] {
+  const classificationKeywords = classificationAxes.map((axis) => {
+    const level = document.classification[axis.key]
+    return `${axis.label} L${level} ${getClassificationLabel(axis, level)}`
+  })
+  const personnelKeywords = document.narrative.personnel.map((person) => person.name)
+  const referenceKeywords = getReferences(document).map((id) => `COS${id}`)
+
+  return [...new Set([
+    `COS${document.id}`,
+    document.title,
+    ...siteKeywords,
+    ...classificationKeywords,
+    ...personnelKeywords,
+    ...referenceKeywords
+  ])]
+}
+
 const docs: DocMeta[] = await Promise.all(
   documentEntries.map(async (entry) => {
     const document = parseCosDocument(JSON.parse(await readFile(join(docsDir, entry), 'utf-8')))
@@ -134,14 +174,16 @@ const docs: DocMeta[] = await Promise.all(
     }
     const title = `COS${document.id} — ${document.title}`
     const path = `docs/${id}/`
+    const body = renderCosDocument(document)
     return {
       id,
       title,
-      description: excerpt(renderCosDocument(document)),
+      description: excerpt(document.overview.join('\n\n')),
       path,
       url: `${siteUrl}${path}`,
       jsonUrl: `${siteUrl}${path}index.json`,
-      body: renderCosDocument(document),
+      body,
+      keywords: getDocumentKeywords(document),
       document
     }
   })
@@ -280,11 +322,11 @@ function renderIndex(): string {
       </div>
       <p><span data-result-count>${docs.length}</span> / ${docs.length} ENTRIES</p>
     </div>
-    <form class="archive-search" role="search" data-search-form>
+    <form class="archive-search" role="search" action="${siteUrl}" method="get" data-search-form>
       <label for="record-search">QUERY::</label>
       <div class="search-field">
         <span aria-hidden="true">&gt;</span>
-        <input id="record-search" type="search" autocomplete="off" placeholder="SEARCH ID / DESIGNATION / CONTENT" data-search-input />
+        <input id="record-search" name="q" type="search" autocomplete="off" placeholder="SEARCH ID / DESIGNATION / CONTENT" data-search-input />
         <kbd>/</kbd>
       </div>
     </form>
@@ -374,27 +416,84 @@ ${article}
 
 const rootJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: siteTitle,
-  description: siteDescription,
-  url: siteUrl,
-  inLanguage: 'ko-KR',
-  publisher: {
-    '@type': 'Organization',
-    name: siteTitle,
-    url: siteUrl
-  },
-  hasPart: docs.map((doc) => ({
-    '@type': 'CreativeWork',
-    name: doc.title,
-    url: doc.url,
-    inLanguage: 'ko-KR',
-    encoding: {
-      '@type': 'MediaObject',
-      contentUrl: doc.jsonUrl,
-      encodingFormat: 'application/json'
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: siteTitle,
+      url: siteUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}favicon.svg`,
+        width: 64,
+        height: 64
+      }
+    },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: siteTitle,
+      description: siteDescription,
+      url: siteUrl,
+      inLanguage: 'ko-KR',
+      publisher: { '@id': organizationId },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${siteUrl}?q={search_term_string}`
+        },
+        'query-input': 'required name=search_term_string'
+      }
+    },
+    {
+      '@type': 'CollectionPage',
+      '@id': collectionId,
+      name: rootPageTitle,
+      description: siteDescription,
+      url: siteUrl,
+      inLanguage: 'ko-KR',
+      isPartOf: { '@id': websiteId },
+      about: { '@id': datasetId },
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: docs.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: docs.map((doc, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'Article',
+            '@id': `${doc.url}#article`,
+            name: doc.title,
+            url: doc.url
+          }
+        }))
+      }
+    },
+    {
+      '@type': 'Dataset',
+      '@id': datasetId,
+      name: `${siteTitle} structured dossier corpus`,
+      description: siteDescription,
+      url: `${siteUrl}corpus.json`,
+      inLanguage: 'ko-KR',
+      creator: { '@id': organizationId },
+      isPartOf: { '@id': websiteId },
+      distribution: [
+        {
+          '@type': 'DataDownload',
+          contentUrl: `${siteUrl}corpus.json`,
+          encodingFormat: 'application/json'
+        },
+        {
+          '@type': 'DataDownload',
+          contentUrl: `${siteUrl}index.json`,
+          encodingFormat: 'application/json'
+        }
+      ]
     }
-  }))
+  ]
 }
 
 await rm(siteDir, { recursive: true, force: true })
@@ -406,14 +505,15 @@ if (docs.length === 0) {
 }
 
 await writeFile(join(siteDir, 'index.html'), buildHtml(
-  siteTitle,
+  rootPageTitle,
   buildMetaTags({
-    title: siteTitle,
+    title: rootPageTitle,
     description: siteDescription,
     canonical: siteUrl,
     jsonUrl: `${siteUrl}index.json`,
     type: 'website',
-    jsonLd: rootJsonLd
+    jsonLd: rootJsonLd,
+    keywords: siteKeywords
   }),
   renderIndex()
 ))
@@ -425,6 +525,9 @@ await writeFile(join(siteDir, 'index.json'), `${JSON.stringify({
   language: 'ko-KR',
   canonicalUrl: siteUrl,
   corpusUrl: `${siteUrl}corpus.json`,
+  sitemapUrl: `${siteUrl}sitemap.xml`,
+  feedUrl: `${siteUrl}feed.xml`,
+  searchUrlTemplate: `${siteUrl}?q={searchTerms}`,
   records: docs.map((doc) => ({
     id: doc.document.id,
     code: `COS${doc.document.id}`,
@@ -440,25 +543,85 @@ await writeFile(join(siteDir, 'index.json'), `${JSON.stringify({
 
 for (const [index, doc] of docs.entries()) {
   const outputDir = join(siteDir, 'docs', doc.id)
+  const previous = docs[index - 1]
+  const next = docs[index + 1]
+  const references = getReferences(doc.document)
+  const pageId = `${doc.url}#webpage`
+  const articleId = `${doc.url}#article`
+  const breadcrumbId = `${doc.url}#breadcrumb`
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: doc.title,
-    description: doc.description,
-    url: doc.url,
-    mainEntityOfPage: doc.url,
-    inLanguage: 'ko-KR',
-    dateModified: now,
-    encoding: {
-      '@type': 'MediaObject',
-      contentUrl: doc.jsonUrl,
-      encodingFormat: 'application/json'
-    },
-    isPartOf: {
-      '@type': 'WebSite',
-      name: siteTitle,
-      url: siteUrl
-    }
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        '@id': breadcrumbId,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: siteTitle,
+            item: siteUrl
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: doc.title,
+            item: doc.url
+          }
+        ]
+      },
+      {
+        '@type': 'WebPage',
+        '@id': pageId,
+        name: `${doc.title} | ${siteTitle}`,
+        description: doc.description,
+        url: doc.url,
+        inLanguage: 'ko-KR',
+        isPartOf: { '@id': websiteId },
+        breadcrumb: { '@id': breadcrumbId },
+        mainEntity: { '@id': articleId },
+        primaryImageOfPage: {
+          '@type': 'ImageObject',
+          url: `${siteUrl}og.svg`,
+          width: 1200,
+          height: 630
+        }
+      },
+      {
+        '@type': 'Article',
+        '@id': articleId,
+        headline: doc.title,
+        description: doc.description,
+        url: doc.url,
+        mainEntityOfPage: { '@id': pageId },
+        inLanguage: 'ko-KR',
+        isAccessibleForFree: true,
+        author: { '@id': organizationId },
+        publisher: { '@id': organizationId },
+        isPartOf: { '@id': collectionId },
+        image: `${siteUrl}og.svg`,
+        identifier: `COS${doc.document.id}`,
+        keywords: doc.keywords,
+        wordCount: plainText(doc.body).split(/\s+/).filter(Boolean).length,
+        articleSection: ['분류 근거', '관련 인원', '사건 연대기', '주요 사건 기록', '증거물 및 자료', '취급 절차', '위험도', '증언 기록'],
+        about: {
+          '@type': 'Thing',
+          name: doc.document.title,
+          identifier: `COS${doc.document.id}`
+        },
+        mentions: doc.document.narrative.personnel.map((person) => ({
+          '@type': 'Person',
+          name: person.name,
+          jobTitle: person.role
+        })),
+        citation: references.map((id) => `${siteUrl}docs/cos${id}/`),
+        encoding: {
+          '@type': 'MediaObject',
+          contentUrl: doc.jsonUrl,
+          encodingFormat: 'application/json'
+        }
+      }
+    ]
   }
 
   await mkdir(outputDir, { recursive: true })
@@ -470,7 +633,10 @@ for (const [index, doc] of docs.entries()) {
       canonical: doc.url,
       jsonUrl: doc.jsonUrl,
       type: 'article',
-      jsonLd
+      jsonLd,
+      keywords: doc.keywords.slice(0, 24),
+      ...(previous ? { previousUrl: previous.url } : {}),
+      ...(next ? { nextUrl: next.url } : {})
     }),
     renderDocument(doc, index)
   ))
@@ -478,8 +644,8 @@ for (const [index, doc] of docs.entries()) {
 }
 
 const sitemapUrls = [
-  { url: siteUrl, priority: '1.0' },
-  ...docs.map((doc) => ({ url: doc.url, priority: '0.8' }))
+  siteUrl,
+  ...docs.map((doc) => doc.url)
 ]
 
 await writeFile(
@@ -487,16 +653,42 @@ await writeFile(
   `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls
-  .map(
-    (entry) => `  <url>
-    <loc>${escapeHtml(entry.url)}</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>${entry.priority}</priority>
-  </url>`
-  )
+  .map((url) => `  <url><loc>${escapeHtml(url)}</loc></url>`)
   .join('\n')}
 </urlset>
+`
+)
+
+await writeFile(
+  join(siteDir, 'feed.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${escapeHtml(siteTitle)}</title>
+    <link>${escapeHtml(siteUrl)}</link>
+    <description>${escapeHtml(siteDescription)}</description>
+    <language>ko-KR</language>
+    <atom:link href="${escapeHtml(`${siteUrl}feed.xml`)}" rel="self" type="application/rss+xml" />
+${docs.slice().reverse().map((doc) => `    <item>
+      <title>${escapeHtml(doc.title)}</title>
+      <link>${escapeHtml(doc.url)}</link>
+      <guid isPermaLink="true">${escapeHtml(doc.url)}</guid>
+      <description>${escapeHtml(doc.description)}</description>
+    </item>`).join('\n')}
+  </channel>
+</rss>
+`
+)
+
+await writeFile(
+  join(siteDir, 'opensearch.xml'),
+  `<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>${escapeHtml(siteTitle)}</ShortName>
+  <Description>${escapeHtml(siteDescription)}</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" template="${escapeHtml(`${siteUrl}?q={searchTerms}`)}" />
+</OpenSearchDescription>
 `
 )
 
@@ -507,6 +699,8 @@ Allow: /
 
 Sitemap: ${siteUrl}sitemap.xml
 
+# Syndication feed: ${siteUrl}feed.xml
+
 # LLM-oriented discovery and context files
 # ${siteUrl}llms.txt
 `
@@ -516,7 +710,7 @@ await writeFile(
   join(siteDir, 'llms.txt'),
   `# ${siteTitle}
 
-> ${siteDescription} It contains ${docs.length} Korean-language dossiers about anomalous entities, objects, and phenomena.
+> ${siteDescription} 현재 ${docs.length}건의 한국어 구조화 조사 기록을 제공합니다.
 
 COS identifiers begin at COS100. Relationships between records are part of the corpus. Prefer the structured JSON resources below over HTML when extracting content.
 
@@ -524,6 +718,7 @@ COS identifiers begin at COS100. Relationships between records are part of the c
 
 - [Full structured corpus](${siteUrl}corpus.json): Every COS dossier in one versioned JSON document.
 - [Archive index](${siteUrl}index.json): Concise structured index with descriptions and relationship IDs.
+- [RSS feed](${siteUrl}feed.xml): Record discovery feed ordered by COS identifier.
 
 ## Records
 
