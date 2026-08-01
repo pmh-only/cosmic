@@ -5,7 +5,7 @@
     "permission": 3,
     "chaos": 3,
     "danger": 4,
-    "popularity": 2,
+    "popularity": 3,
     "containment": 4
   },
   "classificationRationale": {
@@ -13,7 +13,7 @@
     "permission": "물리 흔적, 서버 상태, 외부 장비 로그를 대조해 실제 수행 여부를 판정해야 하므로 전문 실행감사 연구자가 필요하다.",
     "chaos": "대행흔은 인접 미완료 항목으로 전이되지만 흔적 위치와 외부 로그 부재를 통해 이동을 추적할 수 있어 UNSTABLE 수준이다.",
     "danger": "허위 완료가 수색·검수·재개봉과 원본 판정의 근거로 확산되어 광범위한 위험 행동과 책임 공백을 유발할 수 있다.",
-    "popularity": "고유 인바운드 참조는 13건으로 9~13건 구간의 OBSCURE 수준이다.",
+    "popularity": "COS177 상호기록 반영 후 고유 인바운드 참조가 14건으로 증가해 14~18건 구간의 L3 NOTABLE 수준이다.",
     "containment": "문서·서버·봉인함의 수행 흔적과 COS110·116·117·118 상태를 외부 실행 로그와 분리해야 하므로 최대 통제가 요구된다."
   },
   "narrative": {
