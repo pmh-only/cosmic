@@ -71,7 +71,7 @@ function buildMetaTags(meta: {
     <meta name="application-name" content="${escapeHtml(siteTitle)}" />
     <meta name="apple-mobile-web-app-title" content="${escapeHtml(siteTitle)}" />
     <meta name="author" content="COSMIC Archive" />
-    <meta name="keywords" content="COSMIC Archive, COS, anomalous dossier, sci-fi archive, structured JSON, Korean fiction" />
+    <meta name="keywords" content="COSMIC Archive, COS, anomalous dossier, classified archive, structured JSON, Korean records" />
     <link rel="canonical" href="${escapeHtml(meta.canonical)}" />
     <link rel="alternate" type="application/json" href="${escapeHtml(meta.jsonUrl)}" title="${escapeHtml(`${meta.title} as structured JSON`)}" />
     <meta property="og:site_name" content="${escapeHtml(siteTitle)}" />
@@ -82,7 +82,7 @@ function buildMetaTags(meta: {
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:image" content="${escapeHtml(`${siteUrl}og.svg`)}" />
     <meta property="og:image:type" content="image/svg+xml" />
-    <meta property="og:image:alt" content="COSMIC Archive sci-fi interface" />
+    <meta property="og:image:alt" content="COSMIC Archive classified dossier index" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(meta.title)}" />
     <meta name="twitter:description" content="${escapeHtml(meta.description)}" />
@@ -354,9 +354,9 @@ await writeFile(
   join(siteDir, 'llms.txt'),
   `# ${siteTitle}
 
-> ${siteDescription} It contains ${docs.length} Korean-language fictional dossiers about anomalous entities, objects, and phenomena.
+> ${siteDescription} It contains ${docs.length} Korean-language dossiers about anomalous entities, objects, and phenomena.
 
-COS identifiers begin at COS100. Relationships between records are part of the fictional corpus. Prefer the structured JSON resources below over HTML when extracting content.
+COS identifiers begin at COS100. Relationships between records are part of the corpus. Prefer the structured JSON resources below over HTML when extracting content.
 
 ## Complete Archive
 

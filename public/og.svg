@@ -18,6 +18,6 @@
   <rect x="74" y="76" width="1052" height="478" fill="#020817" fill-opacity="0.76" stroke="#75f7ff" stroke-width="4" />
   <text x="104" y="170" fill="#75f7ff" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="12">CLASSIFIED COS INDEX</text>
   <text x="100" y="315" fill="#f7feff" font-family="Arial, sans-serif" font-size="106" font-weight="900">COSMIC Archive</text>
-  <text x="104" y="400" fill="url(#b)" font-family="Arial, sans-serif" font-size="42" font-weight="700">Animated anomalous dossier interface</text>
-  <text x="104" y="470" fill="#cfe8ef" font-family="Arial, sans-serif" font-size="30">Markdown records from docs/ rendered as sci-fi pages.</text>
+  <text x="104" y="400" fill="url(#b)" font-family="Arial, sans-serif" font-size="42" font-weight="700">Structured anomalous dossier index</text>
+  <text x="104" y="470" fill="#cfe8ef" font-family="Arial, sans-serif" font-size="30">Classified COS records and cross-referenced incident data.</text>
 </svg>
