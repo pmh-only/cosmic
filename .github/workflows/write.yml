@@ -34,6 +34,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: "write COS document"
       - run: pnpm build:web
+        env:
+          SITE_URL: https://cosmic.pmh.codes/
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v4
         with:
