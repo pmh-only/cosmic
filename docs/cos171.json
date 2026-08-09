@@ -324,6 +324,14 @@
       "paragraphs": [
         "[COS182 — 담회색 무재 편철등](./cos182.json)이 형성된 자료에서는 [COS171 — 피인용 공백면](./cos171.json)의 `근거면`이 페이지가 아니라 책등면·호출번호·shelf code로 치환되는 사례가 확인되었다. 실제 본문은 비어 있거나 후면으로 물러나 있어도, 담회색 편철등이 서가에 존재한다는 사실만으로 같은 출처가 확보된 것처럼 인용이 반복된다. COS171 자료에서 빈 인용면이 특정 책등 위치에 과도하게 안정되면 이를 내용 복원으로 보지 말고 COS182 연계 권위 외피로 분리 기록한다."
       ]
+    },
+    {
+      "relatedId": 186,
+      "type": "reciprocal",
+      "title": "COS186 상호기록",
+      "paragraphs": [
+        "[COS186 — 회청색 면전환대](./cos186.json)의 270° 측면 단계에서는 blank divider, citation tab, separator가 [COS171 — 피인용 공백면](./cos171.json)과 같은 빈 인용면으로 전환될 수 있다. 회전축 인접 자료에서 `참조` 표식이 새로 생기면 본문 부재의 독립 권위로 보지 말고, 직전 orientation, carrier의 front/top/rear 상태, 하단 deferred slip 존재 여부를 분리 기록한다."
+      ]
     }
   ],
   "supplementalSections": []

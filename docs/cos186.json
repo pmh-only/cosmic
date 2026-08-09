@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2043-03-18~2043-04-02 통제 시험 24회 중 suspect carrier 18점 가운데 14점이 실제 본문 없이도 배가·목차·인용·속행·지시 외피를 생성했다. 현상 자체를 외부에 노출하면 기관의 기록 무결성과 절차 권위를 오염시킬 수 있으므로 제한 공개가 필요하다.",
+    "permission": "질량-두께 대조, 저각 촬영, 후면 보어스코프 탐색, 인접 blank frame 차폐, 비구두 통제를 동시에 운용해야만 안전한 판독이 가능했다. 일반 열람 권한으로는 COS186의 생성물과 실제 원본문을 구분하기 어렵다.",
+    "chaos": "같은 carrier라도 0°/90°/180°/270° 체류 순서와 blank carrier 존재 여부에 따라 [COS182 — 담회색 무재 편철등](./cos182.json), [COS163 — 은청색 천두목차](./cos163.json), [COS155 — 선열람 음영본](./cos155.json), [COS171 — 피인용 공백면](./cos171.json), [COS134 — 청백색 속행전표](./cos134.json), [COS148 — 무문 지령대](./cos148.json)에 대응하는 외피가 서로 다른 조합으로 나타났다. 한 세션 안에서 3종 이상이 연속 생성되어 예측성이 낮다.",
+    "danger": "직접 신체 손상은 확인되지 않았으나 허위 current copy 2건, 허위 인용 3건, 빈 지시면 전이 1건이 일반 실무 라인에 진입 직전까지 갔다. 기록 무결성과 현장 동선에 대한 국소 위험은 높지만 현재까지 회복 가능한 범위에 머물러 있다.",
+    "popularity": "임시표기 T-186 부여 뒤 7건의 역조회와 4회의 비교 판독 회의만 기록되어 전기관급 허브 항목보다는 제한된 전문 참조 단계에 머물러 있다.",
+    "containment": "blank carrier 제거, 무광 세라믹 간극 12 mm 이상, 비압착 평판 보관, 번호 패들 기반 무구두 절차, 후면 보어스코프 탐색을 함께 적용했을 때 8/8 억제에 성공했다. 단일 조치만으로는 재현을 막지 못해 고강도 관리가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "ARC-07",
+        "role": "기록관 / B-4 복원실 담당",
+        "status": "active",
+        "involvement": "2043-03-18 최초 면전환 사례를 봉인하고 임시표기 T-186 등록을 요청했다. 이후 면별 체인 분리, 후면 탐색, 일반 배가 차단 절차를 수립했다."
+      },
+      {
+        "name": "LAB-12",
+        "role": "보존기사 / 광학·질량 계측 담당",
+        "status": "active",
+        "involvement": "질량-두께 불일치, 투과광 촬영, 저선량 방사선 촬영, 서가 lip 잔열을 계측했고 무광 세라믹 차단편과 비압착 보관 규격을 확정했다."
+      },
+      {
+        "name": "IDX-05",
+        "role": "서가색인 담당관",
+        "status": "active",
+        "involvement": "최초 전면 고정 사례를 정상 current copy로 판독했다가 정정 절차에 참여했다. 이후 shelf code와 실물 존재를 분리 확인하는 검수표를 작성했다."
+      },
+      {
+        "name": "AUD-03",
+        "role": "음향분석관 / 현장기록 검토",
+        "status": "active",
+        "involvement": "반경 0.8 m 내 반복된 동사·수량 표현 유실을 분석하고 번호 패들·수기 보드 기반 무구두 회수 절차를 수립했다."
+      },
+      {
+        "name": "TRI-02",
+        "role": "이관분류 주임 / 보조서가 운용",
+        "status": "reassigned",
+        "involvement": "2043-03-24 blank cover 압착 정리와 반복 회전을 승인해 속행 표식과 인접 blank frame 전이를 유발했다. 사건 후 연속면 이관 구역 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2043-03-18 09:12 KST",
+        "label": "최초 면전환 확인",
+        "description": "복원실 B-4에서 관련 비교 표본을 RV-4 회전 검토대에 올려 촬영하던 중 동일 carrier가 전면 shelf code, 상단 제목, 후면 음영, 빈 citation strip을 순차 획득했다."
+      },
+      {
+        "date": "2043-03-18 09:27 KST",
+        "label": "임시표기 T-186 부여",
+        "description": "ARC-07이 일반 배가·색인 절차를 중지하고 면별 체인을 분리한 뒤 현상을 T-186으로 임시 등록했다."
+      },
+      {
+        "date": "2043-03-20 13:40 KST",
+        "label": "대조군 무반응 확인",
+        "description": "질량 검증이 끝난 정상 문서철 6점은 완전한 면전환을 보이지 않았고 blank jacket·underfilled folder를 포함한 suspect군만 단계적 외피를 반복했다."
+      },
+      {
+        "date": "2043-03-24 16:06 KST",
+        "label": "속행 표식·지시면 전이 사고",
+        "description": "TRI-02가 blank cover를 압착 정리하고 인접 blank frame을 0.82 m까지 접근시키자 하단 clip의 속행 표식과 외부 지시면 전이가 동시에 발생했다."
+      },
+      {
+        "date": "2043-04-02 10:15 KST",
+        "label": "억제 절차 승인",
+        "description": "무광 세라믹 간극, 비압착 평판 보관, 번호 패들 지시, 후면 보어스코프 탐색을 조합한 억제 절차가 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-186-01",
+        "date": "2043-03-18",
+        "location": "중앙기록동 복원실 B-4 / RV-4 회전 검토대",
+        "title": "동일 carrier의 다면 전환 최초 확인",
+        "involvedPersonnel": [
+          "ARC-07",
+          "IDX-05",
+          "LAB-12"
+        ],
+        "narrative": [
+          "ARC-07과 IDX-05는 격리 보관 중이던 비교 표본 `PK-4`를 촬영하기 위해 무산성 separator `BL-7`을 하단에 끼운 뒤 RV-4 상판 0° 위치에 올렸다. 68초 뒤 `BL-7` 전면에 shelf code와 current line이 나타났고, IDX-05는 이를 정상 current copy로 분류해 일반 감사 대기열로 넘기려 했다. ARC-07은 같은 시각 공식 원본문이 봉인 서랍에 남아 있는 점을 확인하고 이동을 중지시켰다.",
+          "LAB-12가 질량 17.3 g, apparent thickness 7.9 mm를 확인한 뒤 ARC-07은 같은 carrier를 90°, 180°, 270°로 75초씩 순차 회전시켰다. 그 결과 90°에서는 상단 제목선, 180°에서는 후면 접힘 음영, 270°에서는 빈 citation strip과 `참조` 표식이 차례로 나타났다. 세 사람은 서로 다른 COS형 외피가 같은 carrier와 같은 검토축에서 연속 발생했다는 점을 확인하고 일반 색인·배가 절차를 중단했다."
+        ],
+        "outcome": "RV-4와 `PK-4/BL-7`은 즉시 봉인되었고 임시표기 T-186이 부여되었다. 복원실 B-4의 일반 배가 라인은 같은 날 11:00까지 중지되었다."
+      },
+      {
+        "code": "IR-186-02",
+        "date": "2043-03-24",
+        "location": "복원실 B-4 인접 전달복도 / blank frame N-2",
+        "title": "하단 clip 속행화와 빈 게시면 전이",
+        "involvedPersonnel": [
+          "ARC-07",
+          "AUD-03",
+          "TRI-02",
+          "LAB-12"
+        ],
+        "narrative": [
+          "TRI-02는 suspect shell이 단순 전면 잔류인지 확인한다는 이유로 blank cover 4장을 같은 상판에 차례로 올린 뒤, 양측을 아크릴 추로 눌러 평탄화하고 하단 clip에 빈 전달 표를 꽂아 두었다. 이어 인접 blank frame `N-2`를 검토대에서 0.82 m 거리로 옮겨 세웠다. 3회전 뒤 하단 clip에는 `다음 검토 H-3`와 `후속 본문` 표식이 생겼고, `N-2` 앞에서는 카트 2대와 트레이 1개가 같은 각도로 정렬되었다.",
+          "ARC-07은 즉시 중지를 지시했으나 AUD-03가 확인한 다중 채널 녹음에서는 동사와 수량 표현이 불완전하게 남아 TRI-02의 손이 19초 더 유지되었다. 그 사이 한 blank cover는 front shell을, 다른 표본은 상단 번호선을 얻었고 `N-2`는 제목 없는 공지면처럼 남았다. LAB-12가 무광 세라믹 차단편을 삽입하고 `N-2`를 불투명 포로 덮은 뒤에야 정렬이 해제되었다."
+        ],
+        "outcome": "TRI-02는 연속면 이관 구역에서 재배치되었고, COS186 반경 1.2 m 안의 blank frame·공지판·빈 전달표 사용이 금지되었다. `N-2`와 하단 clip 산물은 carrier 본체와 পৃথ리 chain으로 봉인되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-186-01",
+        "type": "RV-4 회전 검토대 본체",
+        "description": "회청색 산화막이 남은 금속 회전대 1기. 상판 432×318 mm, 높이 918 mm, 0°/90°/180°/270° detent 4개, 하단 clip 1개, 전면 acrylic lip 11 mm가 확인되었다.",
+        "custodyStatus": "B-4 격리실 불투명 차폐부스 안에 고정 봉인되었으며 일반 문서 작업에 재사용되지 않는다."
+      },
+      {
+        "code": "EV-186-02",
+        "type": "다면 동기화 영상",
+        "description": "`PK-4/BL-7`이 0° front shell, 90° top title, 180° rear shadow, 270° blank citation으로 변하는 4채널 동기화 영상이다.",
+        "custodyStatus": "광학 서버 `B4-186-SYNC`와 오프라인 SSD 2식에 해시 고정 상태로 이중 보관 중이다."
+      },
+      {
+        "code": "EV-186-03",
+        "type": "질량-두께·투과광 계측표",
+        "description": "suspect군 18점과 대조군 6점의 질량, apparent thickness, 투과광 이미지, 저선량 촬영본을 묶은 계측 기록이다. 다수 표본에서 front cover와 spine fold만 안정화되고 page block이 없음이 기록되었다.",
+        "custodyStatus": "LAB-12 보존 금고와 감사 서버에 각각 읽기 전용 사본으로 보존한다."
+      },
+      {
+        "code": "EV-186-04",
+        "type": "N-2 blank frame 및 하단 clip 산물",
+        "description": "2043-03-24 사건에서 생성된 `다음 검토 H-3`, `후속 본문` 표식과 제목 없는 공지면 사진군이다.",
+        "custodyStatus": "carrier 본체와 분리한 뒤 `-D`, `-B` 접미 체인으로 별도 봉인 보관한다."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "ARC-07",
+        "role": "기록관",
+        "context": "IR-186-01 봉인 직후 진술",
+        "statement": "제가 확인한 사실은 같은 carrier가 같은 축 위에서 서로 다른 면의 권위를 차례로 얻었다는 점입니다. 다른 COS가 동시에 유입되었다는 설명은 가능하지만, 그 해석보다 먼저 기록해야 할 것은 전면·천두·후면·citation이 하나의 세션 안에서 바뀌었다는 관찰입니다."
+      },
+      {
+        "speaker": "LAB-12",
+        "role": "보존기사",
+        "context": "질량-두께 대조 보고",
+        "statement": "두께는 정상 파일처럼 보였지만 질량이 따라오지 않았고, 투과광에서는 표지와 fold만 보였습니다. 내부 본문이 숨어 있다는 설명은 일부 후면 분리편 사례를 제외하면 계측으로 지지되지 않았습니다."
+      },
+      {
+        "speaker": "TRI-02",
+        "role": "이관분류 주임",
+        "context": "IR-186-02 재배치 면담",
+        "statement": "내가 한 행동은 blank cover를 눌러 정리하고 빈 전달표와 blank frame을 가까이 둔 것입니다. 당시에는 표면을 안정시키면 오히려 오염이 줄어든다고 판단했지만, 실제로는 속행 표식과 공지면 전이가 더 강해졌다는 결과를 인정합니다."
+      }
+    ]
+  },
+  "id": 186,
+  "title": "회청색 면전환대",
+  "language": "ko-KR",
+  "overview": [
+    "**COS186**은 회전형 문서 검토대 본체와 그 반경 약 1.2 m 안에서 나타나는 **면전환 현상**이다. 닫힌 기록물이나 공란 외피를 올려 두고 90도 단위로 돌리면, 본문은 안정되지 않은 채 현재 운영상 필요한 면—전면, 천두, 후면, 인용란, 속행 전표, 인접 게시면—이 차례로 권위를 획득한다. 현장 통칭은 **회청색 면전환대**이다.",
+    "가장 중요한 관찰은 같은 carrier가 하나의 세션 안에서 서로 다른 COS형 외피를 연속적으로 보인다는 점이다. 0°에서는 [COS182 — 담회색 무재 편철등](./cos182.json)과 유사한 책등면이, 90°에서는 [COS163 — 은청색 천두목차](./cos163.json)와 유사한 상단 제목이, 180°에서는 [COS155 — 선열람 음영본](./cos155.json)과 유사한 후면 흔적이, 270°에서는 [COS171 — 피인용 공백면](./cos171.json)과 유사한 빈 인용면이 나타났고, 반복 회전 뒤에는 [COS134 — 청백색 속행전표](./cos134.json)와 [COS148 — 무문 지령대](./cos148.json)에 대응하는 외피가 추가되었다. 현재로서는 COS186을 이들 전부의 원인으로 단정하지 않으며, 한 축 위에서 유사 외피를 순차 재현하는 집중 현상으로 분류한다."
+  ],
+  "identificationTraits": [
+    "본체는 회청색 산화막이 남은 금속 회전대 1기(RV-4)와 반경 약 1.2 m의 국소 영향권으로 기록되어 있다. 상판 432×318 mm, 높이 918 mm, 0°/90°/180°/270° 4개 detent, 하단 clip 1개, 전면 acrylic lip 11 mm가 확인되었다.",
+    "공식 본문이 불완전하거나 blank carrier를 포함한 자료를 상판에 놓고 43~210초 유지하면, 현재 작업면에 해당하는 한 면이 먼저 안정화된다.",
+    "0° 전면 방향에서는 shelf code, current line, 제목행을 가진 front shell이 형성되며, 두께 6~11 mm에 비해 질량은 12~28 g으로 낮다.",
+    "90° 천두 방향에서는 정면 본문과 일치하지 않는 은청색 상단 제목이나 번호선이 저각 3200 K 조명에서만 판독된다.",
+    "180° 후면 방향에서는 carrier 뒤 12~28 mm 구간이나 1칸 뒤 가이드에서 접힘, 책갈피, 반납 흔적과 유사한 음영이 나타난다.",
+    "270° 측면/개방 방향에서는 빈 분할지, citation tab, separator에 페이지 번호, 빈 따옴표, `참조` 표식이 생성되지만 안정된 본문은 확인되지 않는다.",
+    "20분 이내 3회 이상 연속 회전시키고 하단 clip이나 인접 blank board를 남겨 두면, `다음 검토`, `후속 본문`, `이미 게시된 기준`과 유사한 외피가 생성될 수 있다.",
+    "반경 0.8 m 안에서 file명이나 수량을 구두로 부르면 녹음에서 동사·수량 표현이 부분 소실되는 경향이 있다. 같은 조건에서 번호 패들과 수기 보드만 사용한 대조군에서는 같은 손실이 재현되지 않았다."
+  ],
+  "discovery": [
+    "COS186은 2043-03-18 중앙기록동 복원실 B-4에서, 기존 사건군 비교 판독을 위해 격리 보관 중이던 [COS134 — 청백색 속행전표](./cos134.json), [COS148 — 무문 지령대](./cos148.json), [COS155 — 선열람 음영본](./cos155.json), [COS163 — 은청색 천두목차](./cos163.json), [COS171 — 피인용 공백면](./cos171.json), [COS182 — 담회색 무재 편철등](./cos182.json) 관련 접촉 산물과 차폐 복제판 총 18점을 RV-4 회전 검토대에 올려 면별 촬영하던 중 분리되었다.",
+    "초기 목적은 각 산물의 전면, 천두, 후면을 동일 조건에서 촬영해 공통점을 확인하는 것이었다. 그러나 `PK-4`를 보호하기 위해 넣은 무산성 separator `BL-7`이 0°에서 68초 만에 shelf code를 얻었고, 같은 carrier를 90°로 돌린 뒤 97초가 지나자 상단 제목이, 180°에서는 후면 접힘 음영이, 270°에서는 빈 citation strip이 차례로 형성되었다. 같은 세션에서 동일 carrier가 여러 외피를 순차적으로 획득한 것은 기존 개별 COS 기록과 달랐다.",
+    "2043-03-20~2043-04-02 대조 실험에서 질량 검증이 끝난 정상 문서철 6점은 완전한 면전환을 보이지 않았고, blank jacket·blank divider·내용 불완전 carrier를 포함한 suspect군 18점만 단계적 외피를 반복했다. 이에 따라 현상은 단순 색인 오류나 잔존 오염이 아니라, 특정 검토축 위에서 본문 부재가 운영상 권위면으로 전환되는 독립 항목으로 판단되어 임시표기 T-186 뒤 정식 COS186으로 편입되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS186은 닫힌 기록이 실제 내용을 제공하지 못할 때, 현재 작업에 가장 가까운 **면**을 대리 권위면으로 만든다.",
+      "면전환은 대개 0° 전면 → 90° 천두 → 180° 후면 → 270° 인용란 → 하단 clip 속행 → 인접 게시면 전이 순으로 관찰되지만, 모든 사례가 마지막 단계까지 진행되지는 않는다.",
+      "한 번 생긴 외피는 서로 다른 면으로 옮겨 가며 중첩될 수 있으므로, 같은 carrier라도 orientation마다 별개의 증거 상태로 기록해야 한다."
+    ],
+    "stages": [
+      {
+        "name": "전면 고정",
+        "description": "0° 전면에서 blank carrier 또는 내용 불완전 carrier의 표지와 책등이 먼저 안정화된다. 이 단계에서는 shelf code, current line, 제목행이 생기지만 본문은 동등하게 확보되지 않는다."
+      },
+      {
+        "name": "천두 응결",
+        "description": "90° 천두 방향에서는 상단 절단면이나 위쪽 edge에만 제목, 번호선, 짧은 목차가 형성된다. 정면 본문과 정확히 일치하지 않는 경우가 많다."
+      },
+      {
+        "name": "후면 선열람화",
+        "description": "180° 후면 방향에서는 carrier 뒤쪽 간극에 접힘, 밑줄, 반납 흔적, 읽힘 이후의 사용 흔적이 생긴다. 그러나 직접 인출되는 것은 앞쪽 외피일 때가 많다."
+      },
+      {
+        "name": "인용 공백화",
+        "description": "270° 측면/개방 방향에서는 빈 분할지나 citation tab이 `참조`, 페이지 번호, 빈 따옴표를 획득한다. 이 단계의 carrier는 읽을 수 있는 본문 없이도 인용 가능한 근거처럼 취급되기 쉽다."
+      },
+      {
+        "name": "속행 투영",
+        "description": "반복 회전 뒤 하단 clip, 전달표, 하부 pocket에 `다음 검토`, `후속 본문`, `차회 참조`와 같은 속행 외피가 생긴다. 실제 후속 문서나 일정은 동반되지 않을 수 있다."
+      },
+      {
+        "name": "외부 지시면 전이",
+        "description": "blank frame, 빈 공지판, 아크릴 게시면이 반경 0.9~1.2 m 안에 존재하면, 면전환의 마지막 외피가 인접 평면으로 이동해 제목 없는 지시 축을 형성할 수 있다. 이 단계에서는 인원과 장비가 공지 없는 표면 앞에 정렬될 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS186은 [COS182 — 담회색 무재 편철등](./cos182.json), [COS163 — 은청색 천두목차](./cos163.json), [COS155 — 선열람 음영본](./cos155.json), [COS171 — 피인용 공백면](./cos171.json), [COS134 — 청백색 속행전표](./cos134.json), [COS148 — 무문 지령대](./cos148.json)에서 분리 기록되었던 외피를 **하나의 회전축 위에서 순차적으로 재현**한다.",
+      "현재까지는 COS186이 외부 현상의 단일 원인이라는 증거가 없으며, 내용보다 면이 먼저 권위를 얻는 공통 조건을 집중적으로 드러내는 재현 환경으로 해석한다."
+    ],
+    "entries": [
+      {
+        "targetId": 134,
+        "targetTitle": "청백색 속행전표",
+        "description": "[COS134 — 청백색 속행전표](./cos134.json)는 COS186의 하단 clip과 removal stage에서 가장 자주 재현된다. 같은 carrier를 여러 면으로 회전시킨 뒤 `다음 검토`, `후속 본문`, `차회 참조`가 생기는 현상은, 미래 절차가 실제 문서가 아니라 **현재 carrier의 회전 이력**에 붙어 권위를 얻을 수 있음을 보여 준다."
+      },
+      {
+        "targetId": 148,
+        "targetTitle": "무문 지령대",
+        "description": "[COS148 — 무문 지령대](./cos148.json)는 COS186의 마지막 전이 단계와 가장 가깝다. blank frame이나 빈 공지판을 반경 0.9~1.2 m 안에 두면 제목 없는 표면이 지시 축처럼 작동하며, 인원과 장비가 그 앞에 정렬되는 사례가 확인되었다. 다만 모든 COS148 사례가 COS186에서 비롯된다고 단정하지는 않는다."
+      },
+      {
+        "targetId": 155,
+        "targetTitle": "선열람 음영본",
+        "description": "[COS155 — 선열람 음영본](./cos155.json)은 COS186의 180° 후면 단계와 유사하다. unopened carrier 뒤 12~28 mm 구간에 접힘, 읽힘 이후 흔적, 반납 표식이 생기지만 전면 본문은 여전히 비어 있거나 불완전하다. COS186은 이 후면 흔적을 같은 carrier의 다른 권위면과 연결해 추적할 수 있다는 점에서 차이를 보인다."
+      },
+      {
+        "targetId": 163,
+        "targetTitle": "은청색 천두목차",
+        "description": "[COS163 — 은청색 천두목차](./cos163.json)는 COS186의 90° 천두 응결 단계와 직접 맞닿아 있다. 상단 절단면에만 제목과 번호가 형성되고, 정면 본문과 일치하지 않는 점이 동일하다. COS186에서는 이 천두 권위가 전면 shell이나 빈 인용면과 같은 세션 안에서 이동할 수 있다."
+      },
+      {
+        "targetId": 171,
+        "targetTitle": "피인용 공백면",
+        "description": "[COS171 — 피인용 공백면](./cos171.json)은 COS186의 270° 측면/개방 단계에서 반복적으로 나타난다. 빈 divider와 citation tab이 본문 없는 근거면처럼 기능하고, 주변 로그는 같은 shelf code와 page 표식을 인용하기 시작한다. 이는 피인용 공백이 독립 페이지가 아니라 다른 권위면에서 전도된 빈 측면일 가능성을 보여 준다."
+      },
+      {
+        "targetId": 182,
+        "targetTitle": "담회색 무재 편철등",
+        "description": "[COS182 — 담회색 무재 편철등](./cos182.json)은 COS186의 0° 전면 고정 단계와 가장 강하게 일치한다. blank jacket이나 underfilled folder가 제목행과 shelf code를 가진 front shell로 안정화되는 현상은 COS186에서 가장 먼저 관찰되며, 이후 같은 carrier가 천두·후면·인용 외피로 이동할 수 있다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "실험 186-A / orientation mapping",
+      "description": "suspect carrier 18점과 질량 검증이 끝난 정상 대조군 6점을 RV-4에 올려 0°/90°/180°/270° 각 120초씩 유지했다. suspect군에서는 front shell 12/18, top title 9/18, rear shadow 7/18, blank citation 8/18이 기록되었고, 대조군에서는 완전한 면전환이 0/6, 약한 천두 변색만 1/6이었다."
+    },
+    {
+      "label": "실험 186-B / sequence inversion",
+      "description": "blank jacket 또는 underfilled folder 8점을 0°→90°→180°→270° 순으로 75초씩 회전시킨 결과 5/8에서 네 단계 중 셋 이상이 같은 표본에 연속 발생했다. 같은 표본을 270°→180°→90°→0° 역순으로 시험하자 1/8만 세 단계에 도달해 순서 의존성이 확인되었다."
+    },
+    {
+      "label": "실험 186-C / content density control",
+      "description": "54~88쪽의 질량 검증 완료 봉인본 10점과 blank/underfilled carrier 10점을 비교했다. filled군은 current line 0/10, blank citation 0/10이었고, blank군은 current line 7/10, blank citation 6/10이 발생했다. page block이 충실한 자료일수록 면전환 재현율이 낮았다."
+    },
+    {
+      "label": "실험 186-D / board distance test",
+      "description": "blank acrylic frame을 RV-4에서 0.6 m, 0.9 m, 1.5 m에 각각 배치하고 3회전 세션 6회를 수행했다. 0.6 m에서 3/6, 0.9 m에서 2/6이 제목 없는 지시 축을 형성했고, 1.5 m에서는 0/6이었다."
+    },
+    {
+      "label": "실험 186-E / spoken vs silent handling",
+      "description": "반경 0.8 m 안에서 file명과 수량을 육성으로 호출한 5회 중 4회에서 녹음의 동사 또는 수량 표현이 탈락했다. 번호 패들과 수기 보드만 사용한 5회에서는 같은 탈락이 0회였다."
+    },
+    {
+      "label": "실험 186-F / ceramic suppression",
+      "description": "무광 세라믹 간극 12 mm와 비압착 평판 트레이를 적용한 억제 시험 8회에서 stage 1 이상이 0회였다. 동일 조건에서 blank carrier를 남긴 미억제 대조 8회에서는 6회에서 stage 1 또는 stage 2가 발생했다."
+    }
+  ],
+  "handlingProcedures": [
+    "COS186 본체 RV-4와 반경 1.2 m 영향권 안에서는 blank jacket, blank cover, blank divider, 빈 전달표, gap marker를 남겨 두지 않는다.",
+    "suspect carrier를 발견하면 먼저 전면, 천두, 후면, 측면, 하단 clip, 인접 blank frame을 각각 촬영하고 orientation 시각을 기록한다.",
+    "질량과 apparent thickness를 즉시 대조한다. apparent thickness가 5 mm 이상인데 질량이 30 g 이하이면 일반 배가나 current copy 등록을 중지한다.",
+    "carrier를 정상 문서철처럼 압착하거나 북엔드 사이에 세우지 않는다. suspect 산물은 평판 트레이에 단독 보관한다.",
+    "대응 원본문 탐색은 전면 인출보다 후면 보어스코프 확인을 우선한다. 후면 12~28 mm 구간과 1칸 뒤 가이드를 별도 좌표로 기록한다.",
+    "반경 0.8 m 내에서는 file명, shelf code, 수량, 중지 지시를 구두로 하지 않는다. 번호 패들, 수기 보드, 광신호만 사용한다.",
+    "COS186 인접 blank frame, 공지판, 아크릴 게시면은 불투명 포로 가리고 1.2 m 밖으로 이동시킨다.",
+    "하단 clip이나 pocket에 생성된 `다음 검토`, `후속 본문` 표식은 미래 일정의 증거로 사용하지 않는다. carrier 본체와 분리한 `-D` 체인으로만 보관한다.",
+    "같은 carrier에서 전면 shell, 천두 title, 후면 shadow, citation blank, 속행 slip이 연속 생성되어도 하나의 current copy나 하나의 원본문으로 병합하지 않는다.",
+    "[COS182 — 담회색 무재 편철등](./cos182.json), [COS163 — 은청색 천두목차](./cos163.json), [COS155 — 선열람 음영본](./cos155.json), [COS171 — 피인용 공백면](./cos171.json), [COS134 — 청백색 속행전표](./cos134.json), [COS148 — 무문 지령대](./cos148.json)와 유사한 외피가 보이더라도 우선 COS186 연쇄 여부를 배제한 뒤 개별 항목으로 재분류한다."
+  ],
+  "hypotheses": [
+    "COS186은 본문을 생성하는 현상이 아니라, 기록에 요구되는 기능—배가, 목차, 선열람, 인용, 속행, 지시—을 현재 향하고 있는 면에 순차 배분하는 현상으로 보인다. 내용이 안정되지 않을수록 면의 권위가 먼저 증가한다.",
+    "현재까지 가장 일관된 가설은 [COS182 — 담회색 무재 편철등](./cos182.json) → [COS163 — 은청색 천두목차](./cos163.json) → [COS155 — 선열람 음영본](./cos155.json) → [COS171 — 피인용 공백면](./cos171.json) → [COS134 — 청백색 속행전표](./cos134.json) → [COS148 — 무문 지령대](./cos148.json)에 대응하는 외피가 COS186에서 하나의 회전축 위에 집중 재현된다는 것이다. 그러나 기관 내 모든 외부 사례가 COS186에서 파생되었다는 증거는 아직 없다.",
+    "질량이 충분한 완전 본문은 대체로 면전환을 끝까지 진행하지 않았고, blank carrier와 underfilled carrier가 더 민감했다. 따라서 공란 외피와 미해결 상태 자체가 매개체일 가능성이 높다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "허위 배가 및 current copy 생성 위험",
+      "assessment": "매우 높음"
+    },
+    {
+      "category": "허위 인용·근거면 형성 위험",
+      "assessment": "매우 높음"
+    },
+    {
+      "category": "원본문 후면 이탈 및 미검출 위험",
+      "assessment": "높음"
+    },
+    {
+      "category": "빈 지시면 전이와 현장 동선 오염 위험",
+      "assessment": "높음"
+    },
+    {
+      "category": "구두 지시 손실과 절차 오판 위험",
+      "assessment": "중간 이상"
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS186에서 가장 흔한 오판은 **가장 선명한 면을 원본문으로 채택하는 것**이다. 실제 통제 시험에서는 가장 강한 외피가 전면일 때도 있었고, 천두·후면·citation·하단 clip일 때도 있었다."
+    },
+    {
+      "type": "quotation",
+      "content": "“우리는 책등, 천두, 후면, 인용란을 차례로 본 것이지, 네 개의 다른 파일을 본 것이 아닙니다.” — ARC-07, 2043-03-18 봉인 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "동일 carrier가 최대 6개의 증거 상태를 만들 수 있으므로, orientation별 체인 분리가 이루어지지 않으면 허위 current copy와 허위 속행 파일이 매우 빠르게 증가한다. 현재까지 18개 suspect carrier 중 안정된 본문 복원에 성공한 사례는 0건이다."
+    },
+    {
+      "type": "quotation",
+      "content": "“두께가 있다는 감각이 먼저 판단을 속였습니다. 무게를 달고 빛을 비추면 그제야 안이 없다는 사실이 따라왔습니다.” — LAB-12, 2043-03-20 계측 메모"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-186 정식 편입",
+      "paragraphs": [
+        "임시표기 `T-186`, `RV-4 회전면 현상`, `다면 권위전이축`은 모두 COS186으로 통합한다.",
+        "초기 보고서의 `회전 검토대 오작동` 분류는 기계 결함 가설을 전제하므로 폐기한다. 현상은 stand 단독 손상이 아니라 carrier와 인접 평면을 포함한 면전환 사건군에 가깝다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "면별 체인 분리 원칙",
+      "paragraphs": [
+        "같은 carrier에서 발생한 front, top, rear, citation, deferred, board state는 하나의 원본 체인으로 병합하지 않고 `-F`, `-T`, `-R`, `-C`, `-D`, `-B` 접미를 붙인 분리 chain으로 관리한다.",
+        "특히 `-B`는 인접 게시면 전이 상태를 뜻하며 carrier 본체와 같은 슬리브에 보관하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "재현 조건",
+      "paragraphs": [
+        "full sequence 재현율이 가장 높았던 조건은 0°→90°→180°→270° 순서, 각 단계 60~120초 체류, blank carrier 포함, 하단 clip 유지, 인접 blank frame 1.2 m 이내 존재 조건이었다.",
+        "질량 검증이 끝난 54~88쪽 봉인본은 stage 5와 stage 6에 도달하지 못했다. blank jacket, blank divider, underfilled folder, 내용 불완전 carrier가 가장 민감했다."
+      ]
+    },
+    {
+      "title": "면별 증거 접미",
+      "paragraphs": [
+        "`-F`는 front shell, `-T`는 top title, `-R`은 rear shadow, `-C`는 citation blank, `-D`는 deferred slip, `-B`는 board transfer 상태를 뜻한다.",
+        "동일 carrier라도 서로 다른 접미 상태 사이에는 상호 참조만 허용하며, 자동 current copy 등록·인용본 병합·후속 일정 생성은 금지한다."
+      ]
+    }
+  ]
+}

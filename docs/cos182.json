@@ -357,6 +357,14 @@
         "COS182에서 생성된 blank jacket, blank cover, 빈 슬리브, 통합 전면, 담회색 책등 산물에는 모두 `A182-shell` 접두를 부여한다.",
         "`A182-shell` 자료는 실제 원본문·접수본·심의본과 같은 체인 번호를 공유하지 않으며, 실물 존재와 후면 구조가 확인될 때까지 보조 산물로만 취급한다."
       ]
+    },
+    {
+      "relatedId": 186,
+      "type": "reciprocal",
+      "title": "COS186 상호기록",
+      "paragraphs": [
+        "[COS186 — 회청색 면전환대](./cos186.json)의 0° 전면 단계는 [COS182 — 담회색 무재 편철등](./cos182.json)과 동일한 front shell을 가장 직접적으로 재현한다. 다만 COS186에서는 같은 carrier가 이후 천두·후면·인용 외피로 이동할 수 있으므로, 회전 검토대에서 발생한 담회색 책등은 `A182-shell`만으로 종결하지 말고 `-F/-T/-R/-C/-D/-B` 면별 체인을 함께 유지한다."
+      ]
     }
   ],
   "supplementalSections": [
