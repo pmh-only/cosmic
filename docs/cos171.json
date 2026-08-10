@@ -332,6 +332,14 @@
       "paragraphs": [
         "[COS186 — 회청색 면전환대](./cos186.json)의 270° 측면 단계에서는 blank divider, citation tab, separator가 [COS171 — 피인용 공백면](./cos171.json)과 같은 빈 인용면으로 전환될 수 있다. 회전축 인접 자료에서 `참조` 표식이 새로 생기면 본문 부재의 독립 권위로 보지 말고, 직전 orientation, carrier의 front/top/rear 상태, 하단 deferred slip 존재 여부를 분리 기록한다."
       ]
+    },
+    {
+      "relatedId": 187,
+      "type": "reciprocal",
+      "title": "COS187 상호기록",
+      "paragraphs": [
+        "[COS187 — 공란 경유판](./cos187.json)이 [COS171 — 피인용 공백면](./cos171.json)과 결합하면, comment slip이나 검토 주석이 실제 본문 없는 carrier를 `171 참조`의 근거면처럼 호출하는 사례가 있다. 공란 board가 접수·속행 흔적을 단 채 인용까지 획득하면, 이는 출처 확보가 아니라 경유 흔적의 권위화이므로 carrier 자체를 원문 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

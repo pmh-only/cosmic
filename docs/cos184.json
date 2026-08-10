@@ -334,6 +334,14 @@
         "선개방된 슬롯 로그, 공란 인계표, 빈 봉투, 빈 슬리브 등 파생 산물에는 `A184-slot` 접두를 부여한다.",
         "`A184-call`과 `A184-slot` 자료는 실제 배정 문서와 체인 번호를 공유할 수 없으며, 실물 존재가 검증될 때까지 접수·인계·열람 근거로 사용할 수 없다."
       ]
+    },
+    {
+      "relatedId": 187,
+      "type": "reciprocal",
+      "title": "COS187 상호기록",
+      "paragraphs": [
+        "[COS187 — 공란 경유판](./cos187.json)은 [COS184 — 회청색 차순호명패](./cos184.json)의 `다음` 권한이 blank plaque에서 더 큰 blank carrier로 확장된 후속 단계로 확인되었다. 차순 호명패가 연 빈 칸 앞에 divider나 separator board를 두면, 그 board가 접수·속행·열람 흔적까지 운반할 수 있으므로 [COS184 — 회청색 차순호명패](./cos184.json)의 억제 시에는 plaque뿐 아니라 인접 blank carrier 전체를 함께 회수해야 한다."
+      ]
     }
   ],
   "supplementalSections": [
