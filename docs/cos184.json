@@ -342,6 +342,15 @@
       "paragraphs": [
         "[COS187 — 공란 경유판](./cos187.json)은 [COS184 — 회청색 차순호명패](./cos184.json)의 `다음` 권한이 blank plaque에서 더 큰 blank carrier로 확장된 후속 단계로 확인되었다. 차순 호명패가 연 빈 칸 앞에 divider나 separator board를 두면, 그 board가 접수·속행·열람 흔적까지 운반할 수 있으므로 [COS184 — 회청색 차순호명패](./cos184.json)의 억제 시에는 plaque뿐 아니라 인접 blank carrier 전체를 함께 회수해야 한다."
       ]
+    },
+    {
+      "relatedId": 188,
+      "type": "reciprocal",
+      "title": "COS188 상호기록",
+      "paragraphs": [
+        "[COS188 — 무본문 대용철](./cos188.json)은 [COS184 — 회청색 차순호명패](./cos184.json)의 `다음` 권한이 작은 blank plaque에서 한 권의 shell 전면과 책등으로 확장된 사례로 분류된다. 차순 호명패가 연 빈 칸 앞에 blank shell을 세우면, 그 shell 전체가 실제 본문 없이 사건철 선두 권위를 얻을 수 있으므로 `A184-call`과 `A188-shell`을 같은 산물로 취급해서는 안 된다.",
+        "회청색 상단띠가 shell의 lip 또는 상단 가장자리로 이동하고, 뒤따르는 body가 인접 슬리브에 남아 있으면 차순 개방 단계는 이미 [COS188 — 무본문 대용철](./cos188.json)로 넘어간 것으로 본다. 이 경우 plaque 회수만으로는 충분하지 않으며 shell 자체를 별도 봉인하고 실물 본문 위치를 다시 확인한다."
+      ]
     }
   ],
   "supplementalSections": [

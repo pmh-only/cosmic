@@ -364,6 +364,15 @@
         "경유판이 남긴 선개방 슬롯, 공란 인계표, 파생 메모, 선행 검토 로그에는 `A187-trace` 접두를 부여한다.",
         "`A187-carrier`와 `A187-trace` 자료는 실제 사건본의 체인 번호와 병합하지 않으며, 실물 존재가 검증될 때까지 접수·속행·열람·인용 근거로 사용할 수 없다."
       ]
+    },
+    {
+      "relatedId": 188,
+      "type": "reciprocal",
+      "title": "COS188 상호기록",
+      "paragraphs": [
+        "[COS188 — 무본문 대용철](./cos188.json)은 [COS187 — 공란 경유판](./cos187.json)이 접수·속행·열람 trace를 축적한 뒤, 전면 사건선·책등·상단 제목까지 얻어 독립 사건철 shell로 안정화된 경우에 해당한다. 경유판이 더 이상 단순 board가 아니라 file cover처럼 보이기 시작하고 실제 본문이 계속 뒤 슬리브에 남아 있으면 COS187 단독 chain으로 유지하지 말고 COS188로 분리한다.",
+        "`A187-carrier`에 spine line, front case number, review box가 붙은 순간부터는 절차 흔적의 이동보다 사건철 권위의 고정이 핵심 위험이 된다. [COS187 — 공란 경유판](./cos187.json) 자료에서 carrier가 선두 표지 역할까지 시작하면 [COS188 — 무본문 대용철](./cos188.json) shell/body/trace 3분리 규칙을 적용한다."
+      ]
     }
   ],
   "supplementalSections": [
