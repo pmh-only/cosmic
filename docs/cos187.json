@@ -373,6 +373,14 @@
         "[COS188 — 무본문 대용철](./cos188.json)은 [COS187 — 공란 경유판](./cos187.json)이 접수·속행·열람 trace를 축적한 뒤, 전면 사건선·책등·상단 제목까지 얻어 독립 사건철 shell로 안정화된 경우에 해당한다. 경유판이 더 이상 단순 board가 아니라 file cover처럼 보이기 시작하고 실제 본문이 계속 뒤 슬리브에 남아 있으면 COS187 단독 chain으로 유지하지 말고 COS188로 분리한다.",
         "`A187-carrier`에 spine line, front case number, review box가 붙은 순간부터는 절차 흔적의 이동보다 사건철 권위의 고정이 핵심 위험이 된다. [COS187 — 공란 경유판](./cos187.json) 자료에서 carrier가 선두 표지 역할까지 시작하면 [COS188 — 무본문 대용철](./cos188.json) shell/body/trace 3분리 규칙을 적용한다."
       ]
+    },
+    {
+      "relatedId": 190,
+      "type": "reciprocal",
+      "title": "COS190 상호기록",
+      "paragraphs": [
+        "[COS190 — 회청색 무재장수표](./cos190.json)는 [COS187 — 공란 경유판](./cos187.json) carrier가 접수·속행·열람 trace뿐 아니라 `1/19`, `27매`, `부록-3` 같은 장수 외형까지 선행 운반할 수 있음을 보여 주는 후속 단계로 확인되었다. 이 경우 실제 body는 뒤에 남아 있는데 blank board만 counted packet처럼 취급되어, 경유판이 사건의 길이와 부속 구조까지 대행하게 된다. COS187 자료에서 carrier에 page total이 붙으면 이를 본문 도착 증거로 사용하지 말고 [COS190 — 회청색 무재장수표](./cos190.json) shell/body/trace 3분리 규칙을 적용한다."
+      ]
     }
   ],
   "supplementalSections": [

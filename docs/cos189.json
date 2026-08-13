@@ -378,6 +378,14 @@
         "빈 carrier, queue ticket, approval packet 등 선언 값을 운반한 매체에는 `A189-carrier` 접두를, PLC·계량·열영상 로그에는 `A189-log` 접두를 부여한다.",
         "값이 소실되거나 인접 blank로 전이된 흔적, 잘못 열린 게이트, 부록 번호만 남은 인용지에는 `A189-trace` 접두를 부여하며, 서로 다른 접두 자료는 동일 보관 슬리브를 공유하지 않는다."
       ]
+    },
+    {
+      "relatedId": 190,
+      "type": "reciprocal",
+      "title": "COS190 상호기록",
+      "paragraphs": [
+        "[COS190 — 회청색 무재장수표](./cos190.json)가 [COS189 — 회청색 무재하중표](./cos189.json)와 결합하면, empty shell이나 blank carrier는 실제 본문 없이도 `무겁고 동시에 27매짜리`인 완결본처럼 보일 수 있다. 이는 질량과 장수가 함께 복원되었다는 뜻이 아니라, 비어 있는 외피에 하중 상태와 page total이 동시에 고정된 복합 오염이다. COS189 자료에서 declared mass와 declared count가 함께 붙은 shell은 실제 적재본으로 간주하지 말고, 수동 계량·borescope·수기 장수 대조를 [COS190 — 회청색 무재장수표](./cos190.json) 동반 여부와 함께 분리 보존한다."
+      ]
     }
   ],
   "supplementalSections": [

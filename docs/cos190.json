@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "빈 shell·carrier가 실제 본문 없이도 `본문 24매 / 부록 3매`, `1/27` 같은 장수 외형을 획득해 완결된 문서처럼 보이면, 제한 기록의 구조와 누락 장수를 사후 위장하거나 역추적하는 데 악용될 수 있다. 2043-08-02~2043-08-09 동안 확인된 14건 중 6건은 실제 body와 분리된 상태에서도 승인·스캔·인계 단계가 닫힐 뻔했다.",
+    "permission": "COS190 판정에는 shell·body 분리 기록, 마지막 수기 장수, [COS177 — 회청색 후열인계로](./cos177.json) 잔류축 여부, [COS189 — 회청색 무재하중표](./cos189.json) 선언 질량, 빈 slip과 carrier 전이 상태를 함께 대조해야 한다. 일반 접수 권한만으로는 허위 완결 상태를 되돌리기 어렵기 때문에 전문 기록 연구관급 이상의 판독 권한이 요구된다.",
+    "chaos": "무재장수표는 빈 shell, 공란 citation slip, blank carrier, 외륜 띠 사이를 이동하며, blank sheet를 채워 넣거나 클립으로 결속해도 실제 folio가 안정되지 않고 다른 매체로 전이되는 사례가 반복되었다. 장수 값의 위치와 지속 시간이 개입 방식에 따라 크게 달라져 예측 곤란도가 높다.",
+    "danger": "직접적인 신체 손상은 확인되지 않았으나, 실제 본문이 없는 carrier가 `완결된 27매 문서`처럼 승인·브리핑·스캔 단계에 진입해 기록 진본성과 체인 오브 커스터디를 손상시킬 수 있다. 위해는 주로 기록·설비·절차에 집중되며 국소적이지만 중대하다.",
+    "popularity": "정식 분리 전 8일 동안 비교 판독 요청 13건, 승인실·스캔 준비실·이관 레일에서의 교차 회의 5회가 기록되었다. 기관 전반의 상시 핵심 항목 수준은 아니지만 후열·무재 계열 공정에서는 중간 이상 빈도로 참조되었다.",
+    "containment": "활성 표본은 shell·body·count trace를 3분리하고, blank divider 금지, 승인석·review stand 격리, 수기 장수 대조, 비평면 차단재 사용을 동시에 적용해야만 추가 전이가 멈췄다. 단순 회수나 장수 정정만으로는 억제가 되지 않아 높은 관리 강도가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 K-04",
+        "role": "주조사 및 체인 검증",
+        "status": "active",
+        "involvement": "2043-08-02 최초 사례에서 empty shell의 장수 표식과 실제 body 위치를 분리 기록했고, `A190-shell`, `A190-body`, `A190-trace` 식별 체계를 수립했다."
+      },
+      {
+        "name": "보존기사 J-11",
+        "role": "계측·보존 운용",
+        "status": "active",
+        "involvement": "활성 shell의 질량·두께·borescope 결과를 계측하고, 장수 외형과 실제 종이 부재가 동시에 성립한다는 점을 처음 확인했다."
+      },
+      {
+        "name": "조사관 R-03",
+        "role": "연계 COS 대조실험 총괄",
+        "status": "active",
+        "involvement": "[COS177 — 회청색 후열인계로](./cos177.json), [COS149 — 무인 결재석](./cos149.json), [COS187 — 공란 경유판](./cos187.json), [COS189 — 회청색 무재하중표](./cos189.json)와의 결합 조건을 재현하고 단계별 분기 실험을 승인했다."
+      },
+      {
+        "name": "시설운용원 M-27",
+        "role": "스캔·승인 설비 로그 관리",
+        "status": "active",
+        "involvement": "scan queue, review lamp, pending rail, 자동 장수 필드의 원시 로그를 추출하고, shell만으로 닫힌 페이지 예약 및 완료 상태를 독립 로그와 대조했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2043-08-02 13:08 KST",
+        "label": "최초 장수 표식 확인",
+        "description": "review room 2의 scan-prep tray S-5에서 empty shell `A188-shell-12`에 `1/27`과 `본문 24매 / 부록 3매`가 형성되었고, 실제 body는 제습 셀 H-4에 남아 있었다."
+      },
+      {
+        "date": "2043-08-02 13:27 KST",
+        "label": "자동 스캔 예약 동결",
+        "description": "scan queue가 27페이지 작업을 예약했으나 실제 이미지가 0장인 상태가 확인되어 K-04가 자동 스캔·정리 절차를 중지시켰다."
+      },
+      {
+        "date": "2043-08-05 09:32 KST",
+        "label": "blank sheet 충전 실패",
+        "description": "J-11이 declared count와 같은 수의 blank sheet를 shell에 넣어 neutralize하려 했으나, inserted sheet에는 번호가 붙지 않고 count가 outer band와 blank board로 전이되었다."
+      },
+      {
+        "date": "2043-08-07 08:10~17:40 KST",
+        "label": "통제 실험 완료",
+        "description": "후열축, shell/body 분리, mass·thickness, approval coupling, transit coupling에 대한 6개 실험이 종료되었고, declared leaf count가 실제 종이와 독립적이라는 결론이 확정되었다."
+      },
+      {
+        "date": "2043-08-09 18:05 KST",
+        "label": "정식 분류 승인",
+        "description": "empty shell과 blank carrier가 실제 본문 없이도 장수·부록 수를 획득하는 독립 현상으로 COS190 공식 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "I-190-01",
+        "date": "2043-08-02 13:08~13:41 KST",
+        "location": "제2보존동 2층 review room 2 및 scan-prep tray S-5",
+        "title": "빈 shell의 `1/27` 선행과 27페이지 작업 예약",
+        "involvedPersonnel": [
+          "기록관 K-04",
+          "보존기사 J-11",
+          "조사관 R-03"
+        ],
+        "narrative": [
+          "`A188-shell-12`는 앞선 [COS189 — 회청색 무재하중표](./cos189.json) 대조 후 empty shell 상태로 분리 보관 중이었고, 실제 body `A188-body-12`는 제습 셀 H-4에 따로 봉인되어 있었다. 2043-07-31 수기 계수표상 body의 최종 장수는 **본문 24매 / 부록 3매**, 총 27매였다. K-04는 shell 표면 오염 여부를 확인하기 위해 blank citation slip 2매와 blank digest form 1매를 shell 위에 올리지 않은 채 같은 tray에 배치했다. 배치 190초 뒤 shell 우상단에는 `1/27`, 등면에는 `27매`, blank citation slip 1매에는 `부록-3` 표식이 생겼고, scan queue `SQ-R2-4421`은 27페이지 작업을 자동 예약했다.",
+          "J-11은 이 값을 실제 body의 장수가 shell로 복귀한 정상화 신호로 오해해 shell과 body를 재결합한 뒤 스캔을 재개하자고 제안했다. K-04는 borescope 확인에서 shell 내부에 실종 장이 전혀 없고, digital caliper 측정에서도 두께 변화가 0.04 mm에 불과하다는 점을 들어 이를 거부했다. R-03는 page reservation이 실제 이미지 수집 없이 닫히는 것을 확인하고 즉시 queue를 동결했으며, 세 사람은 shell·body·page-count trace를 각각 분리 봉인했다."
+        ],
+        "outcome": "실제 본문이 없는 27페이지 작업은 실행되지 않았고, `A190-shell-01`, `A190-body-01`, `A190-trace-01~03`가 신규 증거군으로 등록되었다. 장수 표식을 실제 복구나 body 회수의 근거로 사용하지 않는 임시 지침이 시행되었다."
+      },
+      {
+        "code": "I-190-02",
+        "date": "2043-08-05 09:32~10:18 KST",
+        "location": "보존수복실 C-7 및 인접 정리대 T-4",
+        "title": "blank sheet 충전 시도와 외륜·경유 전이",
+        "involvedPersonnel": [
+          "기록관 K-04",
+          "보존기사 J-11",
+          "시설운용원 M-27"
+        ],
+        "narrative": [
+          "J-11은 empty shell에 declared count와 같은 수의 종이를 실제로 채워 넣으면 무재장수표가 사라질 수 있다고 판단했다. 그는 `A190-shell-02`의 표식 `1/19`에 맞춰 무산성 blank sheet 19매를 삽입하고, 얇은 edge strap으로 shell을 고정했다. 172초 뒤 inserted sheet 자체에는 어떤 folio도 생기지 않았고, 대신 묶음 가장자리에 `19매`가 적힌 얇은 외륜이 형성되었으며, 정리대 T-4 위의 blank transfer board 1점 하단에는 `1/19`가 새로 나타났다.",
+          "M-27은 정리대 쪽 board에 맞춰 scan queue가 19페이지를 새로 예약한 것을 보고, board를 다음 레일로 보내 겉상태와 로그를 일치시키려 했다. K-04는 실제 body가 여전히 다른 선반에 남아 있다는 점과 blank sheet가 끝내 번호를 받지 않았다는 점을 들어 이동을 중지시켰고, inserted sheet를 한 장씩 제거하며 shell·outer band·transfer board를 독립 봉인했다. 이 과정은 `누락된 장수를 blank sheet로 맞추면 해결된다`는 해석이 오히려 [COS172 — 외륜 회람띠](./cos172.json) 및 [COS187 — 공란 경유판](./cos187.json) 분기를 증폭시킨 사례로 기록되었다."
+        ],
+        "outcome": "blank sheet 충전, flush binding, edge strap 보정이 전면 금지되었다. `A190-trace-07` 외륜 조각과 `A187-carrier/19` 전이 표본이 추가 등록되었고, 장수 보정 시도는 모두 수기 대조와 실제 body 확인이 끝난 뒤에만 허용하도록 절차가 개정되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A190-shell-01",
+        "type": "활성 empty shell",
+        "description": "`A188-shell-12`에서 분리 등록한 최초 확정 표본이다. 우상단 `1/27`, 등면 `27매` 잔흔과 실제 본문 부재가 함께 기록되어 있다.",
+        "custodyStatus": "격리 셀 C-190-1에서 단독 봉인, body 및 blank slip과 접촉 금지"
+      },
+      {
+        "code": "A190-body-01",
+        "type": "분리 body 수기 계수본",
+        "description": "제습 셀 H-4에 남아 있던 실제 본문 24매와 부록 3매의 수기 장수 대조표 및 봉인 상태 사진이다.",
+        "custodyStatus": "shell과 다른 보존함에 분리 보관, 열람 시 chain 대조 의무화"
+      },
+      {
+        "code": "A190-trace-02",
+        "type": "장수·부록 수 파생 slip 세트",
+        "description": "`부록-3`, `1/27`, `본문 24매 / 부록 3매`가 형성된 blank citation slip, blank digest form, scan queue printout 묶음이다.",
+        "custodyStatus": "무산소 포켓 3개에 개별 봉인, shell과 동일 상자 보관 금지"
+      },
+      {
+        "code": "A190-log-03",
+        "type": "scan queue 및 review lamp 로그",
+        "description": "실제 이미지 수집 0장 상태에서 27페이지 예약과 `검토 완료` 성격의 상태가 닫힌 전산 로그 세트이다.",
+        "custodyStatus": "읽기 전용 저장소 `PROC-190-LOG`에 보관, 외부 반출 금지"
+      },
+      {
+        "code": "A190-metric-04",
+        "type": "질량·두께·borescope 대조표",
+        "description": "9개 활성 표본과 9개 대조군에 대한 실측 질량, 두께, 선언 장수, 내부 borescope 결과를 모은 표이다.",
+        "custodyStatus": "원시 측정값과 분석본 분리 보관"
+      },
+      {
+        "code": "A190-band-05",
+        "type": "blank sheet 충전 실패 표본",
+        "description": "19매 blank sheet를 삽입한 뒤 outer band와 blank transfer board로 장수값이 전이된 사건의 shell, band 조각, board 사진군이다.",
+        "custodyStatus": "세 표본을 서로 접촉시키지 않은 채 개별 봉인하고 묶음 사진만 교차 참조"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 K-04",
+        "role": "주조사 및 체인 검증",
+        "context": "2043-08-02 최초 분리 보고",
+        "statement": "제가 직접 확인한 것은 실제 27매 body가 제습 셀에 남아 있었고, 비어 있는 shell 쪽에만 `1/27`과 `27매`가 생겼다는 사실입니다. shell이 문서를 회수했다는 결론은 해석일 뿐이며, 관측값은 장수 외형과 본문의 위치가 분리되었다는 점입니다."
+      },
+      {
+        "speaker": "보존기사 J-11",
+        "role": "계측·보존 운용",
+        "context": "2043-08-05 blank sheet 충전 실패 진술",
+        "statement": "제가 본 것은 19매 blank sheet를 넣어도 그 종이들에는 번호가 붙지 않고, 바깥 띠와 옆 board가 대신 장수를 가져간 과정입니다. `채워 넣으면 맞춰질 것`이라는 판단은 제 해석이었고 데이터는 이를 지지하지 않았습니다."
+      },
+      {
+        "speaker": "조사관 R-03",
+        "role": "연계 COS 대조실험 총괄",
+        "context": "2043-08-07 종합 실험 해석",
+        "statement": "반복 관측에서 선언 장수는 실제 두께나 질량과 상관이 거의 없었고, 후열축과 blank carrier, approval seat에서 더 오래 유지되었습니다. 다만 이 장수가 원래 body의 마지막 인증 값을 복사한 것인지, 완결 외형만 독립적으로 만든 것인지는 아직 확정하지 못했습니다."
+      }
+    ]
+  },
+  "id": 190,
+  "title": "회청색 무재장수표",
+  "language": "ko-KR",
+  "overview": [
+    "**COS190**은 실제 본문이나 첨부 장이 비어 있거나 별도 격리된 shell·carrier·blank cover에, `몇 장짜리 문서인가`라는 **장수 상태만 선행 부착되는 회청색 표식 현상**이다. 현재 통칭은 **회청색 무재장수표**이다.",
+    "활성 표본은 상단 우측의 `1/27`, 등면의 `27매`, blank digest form의 `본문 24매 / 부록 3매`, citation slip의 `부록-3` 같은 수치를 획득하지만, borescope, 수기 계수, 독립 계량, 두께 측정으로는 해당 장수에 대응하는 실제 종이 또는 본문이 확인되지 않는다.",
+    "COS190은 페이지를 생성하지 않는다. 대신 마지막으로 인증되었던 body의 장수·부록 수·folio 범위를 빈 외피나 인접한 공란 slip으로 끌어와, 기록 체계가 **내용이 없는 shell을 완결된 사건철처럼 취급하도록 만드는 수치적 완결 외피**를 형성한다."
+  ],
+  "identificationTraits": [
+    "활성 표식은 대개 shell 우상단, 등면, blank digest form 하단, blank citation slip 우상단, scan queue page field에 나타난다.",
+    "지금까지 확인된 declared count 범위는 **11~31매**였고, 최초 확정 사례의 중심값은 `27매`였다.",
+    "활성 형성 뒤 실측 질량 변화는 **-0.2~+0.8 g**, 두께 변화는 **0.00~0.18 mm**에 머물렀으며, declared count와 상관관계가 거의 없었다.",
+    "표식은 정지 배치 **190±22초** 후 가장 자주 확인되었고, body와 shell이 분리된 상태일수록 shell 쪽에 먼저 나타났다.",
+    "실제 body의 마지막 수기 장수가 남아 있는 사례에서는, 활성 count가 그 수치를 **정확히 일치하거나 ±1매** 범위로 재현하는 빈도가 높았다.",
+    "blank sheet를 declared count만큼 채워 넣어도 inserted sheet 자체에는 folio가 안정되지 않고, count는 outer band·blank board·queue ticket으로 이동하기 쉽다.",
+    "[COS189 — 회청색 무재하중표](./cos189.json)의 선언 질량과 함께 있을 때 지속 시간이 길어졌고, [COS149 — 무인 결재석](./cos149.json) 또는 review stand에 놓이면 `검토 완료` 오인이 더 빨리 발생했다.",
+    "활성 shell을 실제 body와 flush contact 상태로 두면 장수 표식이 소실되기보다 다른 blank slip이나 경유판으로 전이되는 경향이 강했다."
+  ],
+  "discovery": [
+    "COS190은 2043-08-02, [COS189 — 회청색 무재하중표](./cos189.json) 후속 대조 중 분리 보관하던 empty shell 표본에서 처음 독립 항목으로 포착되었다. 당시 `A188-shell-12`는 review room 2의 scan-prep tray S-5에, 실제 body는 제습 셀 H-4에 별도 봉인되어 있었고, 두 표본 사이에는 blank digest form과 citation slip만 배치되어 있었다.",
+    "배치 190초 뒤 shell에는 `1/27`과 `27매`, citation slip에는 `부록-3`, digest form에는 `본문 24매 / 부록 3매`가 나타났다. scan queue는 실제 이미지 수집 없이 27페이지 작업을 예약했지만, borescope·수기 계수·digital caliper는 shell 내부가 비어 있음을 계속 지지했다.",
+    "후속 조사에서 같은 장수 외형은 [COS177 — 회청색 후열인계로](./cos177.json) 잔류축을 지난 shell, [COS187 — 공란 경유판](./cos187.json)과 접촉한 blank carrier, [COS166 — 공심대행체](./cos166.json) 성격의 empty sleeve, [COS149 — 무인 결재석](./cos149.json) 시험용 approval desk, [COS141 — 청회색 사후열람자](./cos141.json) 성격의 review stand, [COS156 — 무수령 인계대](./cos156.json) mock platform, [COS172 — 외륜 회람띠](./cos172.json)로 전이된 blank bundle에서 반복 확인되었다.",
+    "2043-08-02부터 2043-08-09까지 총 **14건 확정 사례**, **6개 통제 실험**, **실제 body와 shell 분리 사례 10건**, **직접 신체 손상 0건**, **허위 완결·승인·예약 오인 9건**이 축적되면서 COS190 공식 문서화가 승인되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS190은 실제 장수를 복구하지 않는다. 현재까지는 **분리된 shell 또는 blank carrier에 장수 외형이 먼저 붙고**, 실제 body는 원래 위치 또는 한 단계 뒤에 남는 양상을 가장 안정적으로 보였다.",
+      "개입이 잘못되면 장수값은 소실되지 않고 outer band, blank board, queue ticket, approval cover로 이동한다. 따라서 `값을 맞춰 넣는` 시도는 해소보다 전이를 유발하는 경우가 많다."
+    ],
+    "stages": [
+      {
+        "name": "body-shell 분리 유지",
+        "description": "실제 본문 또는 부록이 shell·carrier와 물리적으로 분리되거나, empty shell이 독립 절차 외피를 유지한다. 이 단계에서 마지막 수기 장수나 기존 page total 기록이 남아 있는 경우가 많다."
+      },
+      {
+        "name": "장수 표식 응축",
+        "description": "정지 배치 약 190초 뒤 shell 우상단, 등면, 인접 blank slip, scan queue field에 folio와 총 장수가 형성된다. 표식은 page content가 아니라 장수 외형만 제공한다."
+      },
+      {
+        "name": "완결 외피 선행",
+        "description": "관측자는 실제 종이를 확인하지 못하면서도 `27매 문서`, `부록 3매 첨부`, `1/19 시작`처럼 문서의 길이와 구조가 이미 확정된 것으로 판단하기 시작한다. 이 단계에서 scan queue나 review lamp 같은 자동 절차가 쉽게 반응한다."
+      },
+      {
+        "name": "실물 후행화",
+        "description": "실제 body는 원위치나 제습 셀, 별도 선반에 남아 있지만, 절차 로그와 현장 인원은 shell·carrier 쪽을 완성된 사건본처럼 따라간다. 체인 오브 커스터디의 분기가 가장 쉽게 발생하는 단계다."
+      },
+      {
+        "name": "보정 시도 실패",
+        "description": "blank sheet 삽입, clip 결속, edge strap, page total 수기 정정 같은 개입이 이루어지면 inserted sheet에는 folio가 안정되지 않고 값이 blank board, outer band, queue ticket 같은 다른 공란 매체로 이동한다."
+      },
+      {
+        "name": "다단계 절차 오염",
+        "description": "장수 외형이 approval seat, review stand, handoff platform, transit board와 결합하면 `검토 완료`, `부록 존재`, `이관 완료`, `다음 단계 도착` 같은 후속 상태가 실제 본문 없이 닫힌다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS190은 단순한 잘못된 page numbering이 아니라, **비어 있는 외피가 문서의 구조적 완결성만 먼저 획득하는 단계**로 보인다.",
+      "현재까지 가장 안정적인 선행 또는 결합 상대는 [COS166 — 공심대행체](./cos166.json), [COS177 — 회청색 후열인계로](./cos177.json), [COS187 — 공란 경유판](./cos187.json), [COS189 — 회청색 무재하중표](./cos189.json)이며, 가장 위험한 downstream 결합은 [COS149 — 무인 결재석](./cos149.json), [COS141 — 청회색 사후열람자](./cos141.json), [COS156 — 무수령 인계대](./cos156.json), [COS172 — 외륜 회람띠](./cos172.json)에서 확인되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 141,
+        "targetTitle": "청회색 사후열람자",
+        "description": "[COS141 — 청회색 사후열람자](./cos141.json)가 `누군가 이미 읽었다`는 외형을 만든다면, COS190은 그 읽었어야 할 body 대신 `1/27`, `본문 24매 / 부록 3매` 같은 장수 외형을 먼저 제공한다. 두 현상이 결합하면 실제 본문이 없어도 `27매가 검토 완료되었다`는 허위 사후 확인 상태가 매우 쉽게 형성된다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "[COS149 — 무인 결재석](./cos149.json)의 빈 approval seat 위에서 COS190이 형성된 shell은 실제 내용보다 `27매의 검토 대상이 도착했다`는 완결성을 먼저 띤다. 이때 승인 공백은 장수 외형으로 가려지고, empty shell이 상위 결재를 기다리는 실문서처럼 취급된다."
+      },
+      {
+        "targetId": 156,
+        "targetTitle": "무수령 인계대",
+        "description": "[COS156 — 무수령 인계대](./cos156.json)는 수령자 없이도 `이미 넘겼다`는 상태를 먼저 만들고, COS190은 그 위에 `몇 장을 넘겼는가`라는 수치까지 붙인다. 결과적으로 실제 body를 받지 않은 상태에서도 counted shell만으로 인계 완료가 닫힐 수 있다."
+      },
+      {
+        "targetId": 166,
+        "targetTitle": "공심대행체",
+        "description": "[COS166 — 공심대행체](./cos166.json)는 내용이 없는 내부를 본체처럼 유지하고, COS190은 그 empty core에 장수 외형을 부착한다. 이 결합은 `비어 있지만 27매짜리 사건본`이라는 가장 설득력 있는 허위 완결 구조를 만든다."
+      },
+      {
+        "targetId": 172,
+        "targetTitle": "외륜 회람띠",
+        "description": "[COS172 — 외륜 회람띠](./cos172.json)는 COS190 장수값을 blank sheet 묶음이나 여러 empty carrier의 외곽 띠로 회수한다. 이 경우 실제 어느 sheet가 `1/27`인지보다, 바깥 묶음 전체가 `27매 세트`처럼 보이게 되어 장수 외형이 더 넓은 단위로 확장된다."
+      },
+      {
+        "targetId": 177,
+        "targetTitle": "회청색 후열인계로",
+        "description": "[COS177 — 회청색 후열인계로](./cos177.json) 잔류축을 지난 shell에서 COS190이 가장 자주 형성되었다. 후열인계로가 뒤에서 절차를 먼저 이동시킨다면, COS190은 그 결과를 전면 수치로 번역해 `문서 길이까지 이미 확정되었다`는 인상을 만든다."
+      },
+      {
+        "targetId": 187,
+        "targetTitle": "공란 경유판",
+        "description": "[COS187 — 공란 경유판](./cos187.json)은 COS190 장수값이 실제 body보다 먼저 이동할 수 있는 대표 매개체이다. counted shell 곁의 blank carrier가 `1/19`나 `부록-3`을 이어받으면, page total은 문서 길이의 기록이 아니라 절차 경유 상태임이 더 분명해진다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json)가 `얼마나 무거운가`를 빈 carrier에 부여한다면, COS190은 `몇 장짜리인가`를 같은 carrier에 부여한다. 실제로 false load가 붙은 shell은 page total의 지속 시간이 길고 approval lamp 반응률도 높았으며, 두 현상은 empty shell을 내용 없는 완결본으로 가장 빠르게 위장시킨다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "190-A / 후열축 선행 조건 시험",
+      "description": "2043-08-06 08:40~10:10 KST, line 1 시험셀. [COS177 — 회청색 후열인계로](./cos177.json) 잔류축 위에 previously contaminated shell 8점, 축에서 35° 틀어진 대조 트레이에 shell 8점을 각각 배치했다. 실내 22.0°C / RH 43%, 측면 카메라 2대와 상부 카메라 1대를 사용했다. 축 위 표본은 190초 뒤 6/8에서 `1/x` 또는 `x매` 표식을 얻었고, 회전 대조군은 0/8이었다."
+    },
+    {
+      "label": "190-B / shell-body 장수 포착 시험",
+      "description": "2043-08-07 08:10~10:30 KST, scan-prep cell S-5. affected shell 12점과 clean blank binder 12점을 blank digest form 1매, blank citation slip 2매와 함께 배치했다. affected shell 9/12에서 190±22초 내 declared count가 형성되었고, 이 중 7건은 마지막 수기 body count와 정확히 일치했으며 2건은 ±1매 차이였다. 대조군 12점은 0/12였다."
+    },
+    {
+      "label": "190-C / 질량·두께 독립성 시험",
+      "description": "2043-08-07 11:05~12:10 KST. 활성 표본 9점과 대조군 9점에 대해 A&D GX-2000 전자저울, MB-12 기계식 빔 저울, Mitutoyo 500-196-30 caliper로 전후 계측을 수행했다. declared count는 11~31매였지만 질량 변화는 -0.2~+0.8 g, 두께 변화는 0.00~0.18 mm였고 상관계수는 r=0.07에 그쳤다. 실제 paper stack 생성은 확인되지 않았다."
+    },
+    {
+      "label": "190-D / blank sheet 충전 중화 시험",
+      "description": "2043-08-07 13:20~14:15 KST, 보존수복실 C-7. 활성 shell 5점에 declared count와 동일한 수의 무산성 blank sheet를 삽입했다. inserted sheet가 실제 folio를 얻은 경우는 0/5였고, 4/5에서는 장수값이 outer band로, 3/5에서는 인접 blank board로 이동했다. `값을 맞춰 채우는` 방식은 중화가 아니라 전이를 유발했다."
+    },
+    {
+      "label": "190-E / 승인·사후열람 결합 시험",
+      "description": "2043-08-08 09:30~11:40 KST, review room 2. counted shell 6점과 대조군 6점을 [COS149 — 무인 결재석](./cos149.json) 모의 approval desk D-2 및 review stand R-1에 배치했다. counted shell군은 4/6에서 `검토 완료`등이 점등했고, 3/6에서 blank citation slip이 `부록-1`~`부록-3` 번호를 얻었으며, 2/6에서는 [COS141 — 청회색 사후열람자](./cos141.json) 성격의 열람 흔적이 추가되었다. 대조군은 0/6이었다."
+    },
+    {
+      "label": "190-F / 공란 경유판 전이 시험",
+      "description": "2043-08-08 14:00~15:20 KST, Q-3→TR-2 mock line. counted shell 4점 앞 5 cm에 [COS187 — 공란 경유판](./cos187.json) 계열 blank carrier를 놓고 진행한 결과, 3/4에서 `1/x` 또는 `부록-x` 표식이 blank carrier 하단으로 먼저 이동했다. 같은 조건에서 무광 흑색 blocker를 사용한 대조군 4회는 0/4였고, 실제 body는 원위치에 남아 있었다."
+    }
+  ],
+  "handlingProcedures": [
+    "declared count, folio, 부록 수를 **실제 본문 존재의 증거로 사용하지 않는다**. 장수는 항상 마지막 수기 body count와 별도로 검증한다.",
+    "활성 의심 표본은 `shell`, `body`, `count trace`를 반드시 3분리한다. 같은 슬리브나 같은 트레이에 겹쳐 두지 않는다.",
+    "blank sheet를 declared count만큼 채워 넣어 `맞추는` 시도를 하지 않는다. blank padding은 outer band나 blank board로의 전이를 증폭할 수 있다.",
+    "활성 shell을 approval desk, review stand, scan-prep queue, handoff platform에 올리지 않는다. 필요한 경우 5 mm 이상 무광 세라믹 차단재 위에 직교 배치한다.",
+    "[COS189 — 회청색 무재하중표](./cos189.json)가 동반된 표본은 false load가 사라질 때까지 page total 검증을 시작하지 않는다. 질량 필드와 장수 필드를 동시에 육성으로 낭독하지 않는다.",
+    "[COS177 — 회청색 후열인계로](./cos177.json) 잔류축이 의심되는 경로에서는 shell·carrier를 후면 가장자리에서 5 cm 이상 띄우고 축을 30° 이상 틀어 둔다.",
+    "[COS187 — 공란 경유판](./cos187.json) 계열 blank board, divider, citation slip, digest form을 주변에 방치하지 않는다. 공란 매체가 장수값을 이어받을 수 있다.",
+    "blank citation slip에 `부록-3` 같은 번호가 생겨도 missing appendix를 새로 작성하거나 placeholder를 추가하지 않는다. 실제 부록 존재 여부는 body에서만 확인한다.",
+    "scan queue가 실제 이미지 없이 page reservation을 만들면 즉시 자동 스캔을 중지하고, shell·queue printout·body 위치를 함께 촬영한 뒤 로그를 동결한다.",
+    "장수 보정은 항상 body를 직접 수기 계수한 뒤에만 허용한다. shell 표면의 `1/x`를 지우거나 덧쓰는 행위는 trace 전이를 유발할 수 있다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS190이 **실제 body의 내용이 아니라 마지막으로 인증된 장수·부록 수만을 empty shell의 전면 외피로 이전**하는 현상이라는 것이다. [COS166 — 공심대행체](./cos166.json)가 비어 있는 내부를 본체처럼 유지하고, [COS177 — 회청색 후열인계로](./cos177.json)가 뒤에서 절차를 먼저 이동시키며, [COS187 — 공란 경유판](./cos187.json)이 그 절차를 앞 칸으로 운반하고, [COS189 — 회청색 무재하중표](./cos189.json)가 하중 권위를 부여할 때, COS190은 그 위에 `몇 장짜리인가`라는 수치적 완결성까지 덧붙인다.",
+    "대안 가설로, COS190의 장수값은 특정 body의 실제 장수를 복사하는 것이 아니라 **문서가 완결되려면 가져야 했던 최소 구조**를 외피에 부여하는 절차적 보정일 가능성이 있다. 그러나 2043-08-07 기준 활성 shell 9건 중 7건이 마지막 수기 body count와 정확히 일치해, 현재로서는 단순한 임의 수치보다 기존 장수 기록을 참조한 잔류 현상으로 보는 편이 타당하다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "body-shell 장수 분리",
+      "assessment": "매우 높음. empty shell이 실제 body와 다른 위치에서 `27매`, `부록-3`을 획득해 문서 구조의 진본성을 손상시킬 수 있다."
+    },
+    {
+      "category": "허위 승인·사후열람·인계 완료",
+      "assessment": "높음. approval desk, review stand, handoff platform과 결합하면 내용 없는 shell만으로 `검토 완료`나 `이관 완료`가 닫힐 수 있다."
+    },
+    {
+      "category": "스캔·색인·부록 생성 오염",
+      "assessment": "높음. 실제 이미지 없이 page reservation이 생기고 blank citation slip이 번호를 받아 잘못된 부록 체계를 만들 수 있다."
+    },
+    {
+      "category": "공란 매체로의 전이",
+      "assessment": "높음. blank board, queue ticket, outer band, digest form이 장수값을 이어받아 오염 범위를 넓힌다."
+    },
+    {
+      "category": "직접 신체 손상",
+      "assessment": "낮음. 현재까지 인체 직접 위해는 없었으나 설비 오작동과 잘못된 dispatch 위험 때문에 수동 통제가 필요하다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "2043-08-02 최초 사례에서 가장 위험했던 판단은 `27매 수치가 돌아왔으니 shell과 body를 다시 합치면 된다`는 제안이었다. 이후 대조 실험은 COS190이 종이를 되돌려 주는 것이 아니라, **비어 있는 외피를 완결된 장수로 보이게 만든다**는 점을 반복 확인했다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“비어 있는 표지가 먼저 27장을 가졌고, 실제 27장은 제습 셀 안에 남아 있었다.”** — 기록관 K-04, 2043-08-02 현장 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "blank sheet를 추가해 declared count를 맞추려는 시도는 한 번도 inserted sheet 자체에 folio를 안정시키지 못했다. 숫자를 `채우는` 행위는 대개 [COS172 — 외륜 회람띠](./cos172.json) 또는 [COS187 — 공란 경유판](./cos187.json) 분기로 이어졌다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-190 명칭 확정",
+      "paragraphs": [
+        "2043-08-02~2043-08-05 현장 메모에서는 현상을 `장수 오기 shell`, `page count drift`, `T-190`으로 병기했다.",
+        "2043-08-07 대조 실험 결과, 핵심은 page numbering 오류가 아니라 **empty shell 또는 blank carrier가 실제 본문 없이 장수·부록 수를 획득하는 현상**임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 무재장수표**로 확정하고, 단순 스캔·색인 오류가 아닌 기록-절차 복합 현상으로 재분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A190 식별 접두",
+      "paragraphs": [
+        "활성 empty shell에는 `A190-shell` 접두를, 실제 분리 body에는 `A190-body` 접두를 부여한다.",
+        "folio, 부록 번호, digest line, queue reservation, outer band 등 장수 외형이 남은 파생 흔적에는 `A190-trace` 접두를 부여한다.",
+        "`A190-shell`, `A190-body`, `A190-trace` 자료는 동일 보관 슬리브를 공유하지 않으며, 실제 body 직접 확인 전까지 완결 장수의 근거로 사용할 수 없다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판별 기준",
+      "paragraphs": [
+        "다음 조건을 동시에 만족하면 COS190 확정 표본으로 승격한다.\n1. shell 또는 carrier가 실제 body 없이 `1/x`, `x매`, `본문 x매 / 부록 y매` 형식의 장수 외형을 획득할 것.\n2. borescope, 수기 계수, 독립 계량 가운데 두 가지 이상이 실제 종이 부재 또는 declared count와 무관한 상태를 지지할 것.\n3. shell과 body의 마지막 확인 위치가 서로 다를 것.\n4. page total이 shell, blank slip, queue log 중 둘 이상에서 일치할 것.",
+        "위 조건 중 1~2만 만족하는 경우에는 page count 오류 또는 단순 라벨 오염 가능성을 우선 배제한다. 특히 scan queue의 예약 건수만으로는 COS190을 확정하지 않는다."
+      ]
+    },
+    {
+      "title": "유사 항목과의 구별",
+      "paragraphs": [
+        "[COS189 — 회청색 무재하중표](./cos189.json)은 `얼마나 무거운가`를 허위로 부여하는 현상이고, COS190은 `몇 장짜리인가`를 허위로 부여하는 현상이다. 두 항목은 함께 나타날 수 있으나 질량 계측과 수기 장수 대조가 구별 기준이다.",
+        "[COS187 — 공란 경유판](./cos187.json)은 blank carrier가 절차 상태를 먼저 운반하는 단계이고, COS190은 그 carrier 또는 shell이 page total 자체를 획득하는 단계다.",
+        "[COS166 — 공심대행체](./cos166.json)은 빈 내부가 본체처럼 남는 구조이고, COS190은 그 빈 내부에 장수 외형까지 덧붙어 완결본처럼 보이는 상태다.",
+        "[COS172 — 외륜 회람띠](./cos172.json)는 여러 공란 매체 바깥에 묶음 외피를 형성하는 현상이며, COS190은 장수값이 먼저 생긴 뒤 그 값이 outer band로 확장되는 경우가 많다."
+      ]
+    }
+  ]
+}
