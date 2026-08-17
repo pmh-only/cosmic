@@ -381,6 +381,14 @@
       "paragraphs": [
         "[COS190 — 회청색 무재장수표](./cos190.json)는 [COS187 — 공란 경유판](./cos187.json) carrier가 접수·속행·열람 trace뿐 아니라 `1/19`, `27매`, `부록-3` 같은 장수 외형까지 선행 운반할 수 있음을 보여 주는 후속 단계로 확인되었다. 이 경우 실제 body는 뒤에 남아 있는데 blank board만 counted packet처럼 취급되어, 경유판이 사건의 길이와 부속 구조까지 대행하게 된다. COS187 자료에서 carrier에 page total이 붙으면 이를 본문 도착 증거로 사용하지 말고 [COS190 — 회청색 무재장수표](./cos190.json) shell/body/trace 3분리 규칙을 적용한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS187 — 공란 경유판](./cos187.json)이 운반한 page total이나 appendix number가 empty shell 내부 blank sheet로 옮겨 갔을 때 나타나는 후속 단계로 확인되었다. blank carrier가 `1/19`, `부록-3` 같은 구조 외형을 먼저 획득한 뒤 shell 안의 blank sheet가 page surface를 얻으면, 실제 body는 계속 뒤 단계에 남아 있어도 carrier와 shell만 완결본처럼 보일 수 있다. COS187 자료에서 blank board의 count trace가 shell 내부 page block으로 확장되면 이를 본문 도착으로 해석하지 말고 COS194 전이로 분리 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

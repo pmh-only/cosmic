@@ -297,6 +297,14 @@
         "[COS192 — 회청색 전면요약패](./cos192.json)를 회람 앞장처럼 둔 묶음은 실제 원본문 유무와 무관하게 외곽 가장자리에 [COS172 — 외륜 회람띠](./cos172.json)를 획득할 수 있다. 2026-08-15 회람 대조 9회 중 5회에서 read state의 COS192가 먼저 놓인 묶음만 외륜 띠를 형성했다.",
         "이때 회람 권한은 개별 본문에서 나온 것이 아니라 전면 요약패가 부여한 현재 처리 외피이므로, COS192가 선두에 놓인 bundle은 회람 완결본으로 취급하지 않는다. 외륜 띠가 형성된 경우 실제 원본문 위치와 요약패 형성 시각을 함께 대조한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)가 형성된 blank sheet 묶음을 flush bundling하거나 outer band로 정리하면, 개별 pseudo-body page의 문단 block은 약화되는 대신 `27매`, `부록 3매` 같은 총장이 외곽 띠로 회수되는 사례가 확인되었다. 이 경우 [COS172 — 외륜 회람띠](./cos172.json)는 실제 body를 묶는 것이 아니라 COS194가 만든 가짜 page set의 완결 외피만 보존한다. COS172 자료에서 외륜 표면의 page total이 shell·body와 분리되어 보이면, 이를 통합본 근거로 사용하지 말고 COS194 분기 여부를 먼저 확인한다."
+      ]
     }
   ],
   "supplementalSections": [

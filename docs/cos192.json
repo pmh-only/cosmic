@@ -363,6 +363,14 @@
         "초기 현장 메모 `공란 요약카드`, `digest slip`, `T-192`는 숙주 재질과 기능 범위를 충분히 반영하지 못했다.",
         "공식 명칭은 **회청색 전면요약패**로 확정하며, 원본문보다 전면의 요약표면이 먼저 권한을 획득하는 점을 명칭에 반영한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS192 — 회청색 전면요약패](./cos192.json)의 summary line가 empty shell 내부 blank sheet로 확장될 때 가장 자주 나타나는 후속 단계로 확인되었다. 반대로 pseudo-body를 음성 판독하거나 오버헤드 스캔하면 page block이 다시 2~7행 요약패로 붕괴하는 사례가 반복되었다. COS192 표본이 declared count를 가진 shell과 함께 있을 때는 요약문을 본문 복구의 단서로 사용하지 말고 COS194 전이·붕괴 양쪽 가능성을 함께 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

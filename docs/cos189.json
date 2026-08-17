@@ -386,6 +386,14 @@
       "paragraphs": [
         "[COS190 — 회청색 무재장수표](./cos190.json)가 [COS189 — 회청색 무재하중표](./cos189.json)와 결합하면, empty shell이나 blank carrier는 실제 본문 없이도 `무겁고 동시에 27매짜리`인 완결본처럼 보일 수 있다. 이는 질량과 장수가 함께 복원되었다는 뜻이 아니라, 비어 있는 외피에 하중 상태와 page total이 동시에 고정된 복합 오염이다. COS189 자료에서 declared mass와 declared count가 함께 붙은 shell은 실제 적재본으로 간주하지 말고, 수동 계량·borescope·수기 장수 대조를 [COS190 — 회청색 무재장수표](./cos190.json) 동반 여부와 함께 분리 보존한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS189 — 회청색 무재하중표](./cos189.json)가 부여한 false load 위에 page structure까지 덧붙은 복합 단계로 분류된다. 실제 질량이 없는 empty shell이 `1/x`와 paragraph block을 동시에 얻으면, 빈 carrier는 `무겁고 동시에 완결된 본문`처럼 보이게 되어 승인·스캔·인계 오인이 급격히 쉬워진다. COS189 자료에서 declared mass와 pseudo-body sheet가 함께 확인되면 적재본 복구로 판단하지 말고, shell·body·count trace를 COS194 동반 여부와 함께 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

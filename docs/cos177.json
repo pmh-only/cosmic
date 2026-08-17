@@ -373,6 +373,14 @@
       "paragraphs": [
         "[COS190 — 회청색 무재장수표](./cos190.json)는 [COS177 — 회청색 후열인계로](./cos177.json) 잔류축을 지난 empty shell이나 blank carrier에서 반복 확인된 말단 수치 외형이다. 후열 경로가 접수·검토·결재 절차를 뒤에서 먼저 운반한 뒤, 그 결과가 전면에서 `1/27`, `27매`, `부록 3매` 같은 장수 표식으로 나타나는 양상으로 해석된다. COS177 자료에서 후면 편이와 함께 page total이 선행 생성되면 이를 실제 본문 이동이나 장수 복원으로 보지 말고 [COS190 — 회청색 무재장수표](./cos190.json) 분기로 기록하며, 실제 body 위치와 수기 장수 대조를 별도 봉인한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS177 — 회청색 후열인계로](./cos177.json)의 후행 body 조건이 blank sheet 표면으로 번역된 말단 단계로 분류되었다. 후열 경로를 지난 empty shell에 blank sheet를 넣으면 실제 본문은 뒤 슬롯이나 제습 셀에 남은 채 `1/27`, page block, appendix mark가 먼저 형성될 수 있다. 이는 본문 복구가 아니라 후열 경로가 남긴 `본문이 여기 있어야 한다`는 구조적 잔재이므로, COS177 현장에서 shell 내부 blank sheet가 페이지처럼 보이더라도 restored copy로 채택하지 말고 body 위치와 후행 슬롯을 먼저 확인한다."
+      ]
     }
   ],
   "supplementalSections": [

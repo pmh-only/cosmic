@@ -376,6 +376,14 @@
       "paragraphs": [
         "표지 3종 이상이 겹친 5건은 본문 통합 없이 [COS145 — 은회색 합동정본](./cos145.json) 표지만 남겼다. 합동정본이 비정상적으로 가볍거나 후면 압착 직후 형성되면 COS193 유래 표지 결속 가능성을 먼저 기록한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS193 — 회청색 후입등재구](./cos193.json)의 rear stop 조건이 유지된 shell에서 가장 높은 재현률을 보였다. 후면 정지대가 front matter와 장수 외형을 먼저 등재한 뒤 blank sheet를 끼워 넣으면, 실제 body는 뒤 슬롯이나 제습 셀에 남은 채 pseudo-body page가 형성될 수 있다. COS193 자료에서 전면만 앞서 이동한 empty shell이 blank sheet와 결합하면 이를 복구본으로 보지 말고 COS194 발생 여부를 먼저 점검한다."
+      ]
     }
   ],
   "supplementalSections": [

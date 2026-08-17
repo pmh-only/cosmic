@@ -365,6 +365,14 @@
         "folio, 부록 번호, digest line, queue reservation, outer band 등 장수 외형이 남은 파생 흔적에는 `A190-trace` 접두를 부여한다.",
         "`A190-shell`, `A190-body`, `A190-trace` 자료는 동일 보관 슬리브를 공유하지 않으며, 실제 body 직접 확인 전까지 완결 장수의 근거로 사용할 수 없다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS190 — 회청색 무재장수표](./cos190.json)의 page total이 blank sheet 표면 전체로 확장된 후속 단계로 확인되었다. empty shell에 `1/27`, `27매`, `부록-3`만 있던 상태에서 inserted blank sheet가 folio와 paragraph block을 얻기 시작하면, 장수 외형은 더 이상 단순 count trace가 아니라 pseudo-body surface를 형성한다. COS190 자료에서 count만이 아니라 읽힐 듯한 page block까지 발생하면 이를 body 복구로 채택하지 말고 COS194로 승격해 shell/body/trace를 재분리한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2043-08-12~2043-08-18 확정 사례 11건 중 4건에서 비어 있는 shell과 blank sheet 묶음이 실제 본문보다 먼저 스캔·검토·인계 단계로 진입할 뻔했다. 제한 기록의 외형과 구조가 내용 없이 복제될 수 있어 기관 외부나 일반 운영 구역에 알려질 경우 오배치와 은폐에 악용될 가능성이 높다.",
+    "permission": "COS194 판정에는 shell/body 분리 여부, 마지막 수기 장수, blank sheet 삽입 시각, 상단띠 형성 시간, 실제 body의 현위치를 함께 대조해야 한다. 일반 접수 인력은 pseudo-body를 정상 복구본으로 오인하는 비율이 높았으므로 훈련된 기록관·보존기사 수준의 3급 열람이 필요하다.",
+    "chaos": "같은 규격의 무산성 blank sheet를 사용해도 결과는 full pseudo-body, header-only sheet, summary collapse, outer-band page total로 분기했다. 특히 낭독, 오버헤드 스캔, rear stop 밀착, false load 동반 여부에 따라 후속 양상이 달라져 재현 개시는 가능하지만 결과 예측은 어려웠다.",
+    "danger": "직접적인 인체 손상은 확인되지 않았으나 empty shell이 `27매 검토본`처럼 오인되어 자동 스캔 예약 1건, 승인 desk 접근 1건, body 회수 지연 2건이 발생했다. 위해의 중심은 인명보다 기록 무결성·보존 사슬·시설 운영 오염에 있다.",
+    "popularity": "임시표기 T-194가 부여된 뒤 6일 동안 비교 판독 요청 13건, 교차 회의 5회, 감사 질의 3건이 기록되었다. 기관 전반의 최상위 허브 항목은 아니지만 후열·무재 계열 공정에서 빠르게 참조 빈도가 증가하고 있다.",
+    "containment": "blank sheet 삽입 금지, shell/body/count trace 3분리, 무구두 취급, 오프라인 촬영, rear stop 스페이서 유지 가운데 어느 하나라도 빠지면 8회 대조 중 6회에서 재활성화가 발생했다. 안정적 억제에는 고강도 현장 통제가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "K-04",
+        "role": "기록관 / 주조사 및 체인 검증",
+        "status": "active",
+        "involvement": "2043-08-12 최초 표본을 숙주째 봉인했고, 실제 body와 pseudo-body를 분리 기록했다. 이후 A194 식별 체계와 무구두 취급 절차를 수립했다."
+      },
+      {
+        "name": "J-11",
+        "role": "보존기사 / 계측·보존 운용",
+        "status": "active",
+        "involvement": "blank sheet 삽입, 질량·두께·borescope 계측, 후행 body 회수, 격리 셀 봉인 작업을 수행했다."
+      },
+      {
+        "name": "R-03",
+        "role": "조사관 / 연계 COS 대조실험 총괄",
+        "status": "active",
+        "involvement": "[COS177 — 회청색 후열인계로](./cos177.json), [COS188 — 무본문 대용철](./cos188.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS190 — 회청색 무재장수표](./cos190.json) 결합 조건을 재현하고 단계별 판정을 승인했다."
+      },
+      {
+        "name": "M-27",
+        "role": "시설운용원 / 스캔·승인 설비 로그 관리",
+        "status": "active",
+        "involvement": "scan queue, review lamp, rear stop sensor, 페이지 예약 필드의 원시 로그를 추출하고 실제 이미지 수집 수와 비교했다."
+      },
+      {
+        "name": "H-27",
+        "role": "문서기술원 / 오프라인 촬영·분광 계측",
+        "status": "active",
+        "involvement": "상단띠의 반사 스펙트럼, pseudo-body 문면 촬영, 오버헤드 스캔 대조, 잔류 절편 회수를 담당했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2043-08-12 10:14 KST",
+        "label": "최초 pseudo-body 형성 확인",
+        "description": "제2보존동 2층 보존수복실 C-7에서 empty shell `A188-shell-12`에 무산성 blank sheet 27매를 삽입한 뒤 194초 후 상단띠, folio, paragraph block이 동시에 형성되었다."
+      },
+      {
+        "date": "2043-08-12 10:31 KST",
+        "label": "임시표기 T-194 부여",
+        "description": "K-04가 shell 표면의 장수 외형과 실제 body의 분리 상태를 근거로 A190 후속 현상과 구별되는 이동형 pseudo-body로 임시 등록했다."
+      },
+      {
+        "date": "2043-08-13 22:06 KST",
+        "label": "rear stop 재현 성공",
+        "description": "후면 정지대 H-2와 15 mm 스페이서 제거 조건에서 10회 중 8회가 재현되어 [COS193 — 회청색 후입등재구](./cos193.json) 잔류 조건과의 연관성이 확정되었다."
+      },
+      {
+        "date": "2043-08-15 03:20 KST",
+        "label": "격리 임계치 확정",
+        "description": "형성 후 12초 이내 숙주째 봉인한 군은 추가 전이가 현저히 줄어들었고, 낭독 또는 스캔을 먼저 수행한 군은 평균 21.4분 동안 pseudo-body 권위를 유지했다."
+      },
+      {
+        "date": "2043-08-17 14:05 KST",
+        "label": "scan/OCR collapse 확인",
+        "description": "오버헤드 스캔과 OCR 적용군에서 내부 paragraph block이 summary line과 page reservation으로 붕괴하는 양상이 재현되었다."
+      },
+      {
+        "date": "2043-08-18 19:30 KST",
+        "label": "정식 분류 승인",
+        "description": "확정 사례 11건, 부분 사례 4건, 통제 재현 28회 중 19회 양성을 근거로 COS194 공식 조사 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "I-194-01",
+        "date": "2043-08-12 10:14~10:41 KST",
+        "location": "제2보존동 2층 보존수복실 C-7 및 scan-prep tray S-5",
+        "title": "declared count 중화 시도 중 pseudo-body 형성",
+        "involvedPersonnel": [
+          "K-04",
+          "J-11",
+          "R-03",
+          "M-27"
+        ],
+        "narrative": [
+          "`A188-shell-12`는 앞선 [COS190 — 회청색 무재장수표](./cos190.json) 검증 뒤 empty shell 상태로 분리 보관 중이었고, 실제 body `A190-body-01`은 제습 셀 H-4에 별도 봉인되어 있었다. J-11은 shell 표면의 `1/27`과 `본문 24매 / 부록 3매`를 중화하기 위해 무산성 80 g/㎡ blank sheet 27매를 shell 안에 삽입하고, shell 우측에 blank digest form 1매와 blank citation slip 2매를 두었다. 삽입 후 194초가 지나자 27매 중 19매에 5~8 mm 회청색 상단띠, 1~27의 folio, 3~11행 길이의 paragraph block이 형성되었고, 남은 8매에는 folio 또는 appendix mark만 남았다.",
+          "J-11은 이를 실제 body의 복귀 신호로 해석해 shell을 scan-prep tray S-5로 옮기려 했다. M-27의 scan queue에는 같은 시각 27페이지 작업이 자동 예약되었고, queue field는 실제 이미지 수집 0장 상태였다. K-04는 H-4의 body가 여전히 24매 본문과 3매 부록으로 봉인되어 있다는 점을 확인하고 이동을 중지시켰다. R-03는 pseudo-body sheet 1매를 꺼내 direct light 아래 대조하려 했으나, 그 선택 직후 page 11과 page 12의 block 폭이 각각 18 mm씩 이동해 개별 sheet를 분리 판독하는 방식이 오염을 키울 수 있음을 확인했다.",
+          "K-04는 shell, blank sheet 묶음, body, queue log를 즉시 4개 체인으로 분리 봉인하고 자동 스캔 예약을 무효화했다. 이 사건은 COS194가 `page total`만이 아니라 실제 body처럼 보이는 page surface를 blank sheet에 부여할 수 있음을 입증한 최초 사례로 기록되었다."
+        ],
+        "outcome": "실제 본문은 이동되지 않았고, pseudo-body sheet 27매는 `A194-sheet/01~27`로 분리 등록되었다. scan-prep tray S-5의 자동 예약은 취소되었으며 blank sheet를 declared count만큼 삽입하는 보정 절차가 금지되었다."
+      },
+      {
+        "code": "I-194-02",
+        "date": "2043-08-15 13:05~13:33 KST",
+        "location": "제2보존동 2층 review room 2 및 인접 통로 Q-1",
+        "title": "낭독 시험 중 요약 붕괴와 shell 추종 정렬",
+        "involvedPersonnel": [
+          "K-04",
+          "R-03",
+          "J-11",
+          "M-27",
+          "H-27"
+        ],
+        "narrative": [
+          "통제 낭독 시험에서 R-03는 `A194-sheet/04~09`가 꽂힌 shell을 review room 2의 독립 스탠드에 세우고, K-04의 무음 촬영 지시에도 불구하고 page 1의 첫 두 줄을 0.7 m 거리에서 61 dBA로 읽었다. 17초 뒤 M-27과 J-11은 별도 지시 없이 shell 뒤에 1인 간격으로 정렬했고, shell을 든 채 Q-1 방향으로 3.4 m 이동하기 시작했다. 동시에 room log에는 `검토 완료` 성격의 lamp 전환이 1회 기록되었으나 좌석 압력과 실인원 변동은 없었다.",
+          "K-04는 흑색 폴더보드로 문면을 가리며 이동을 중지시켰고, H-27는 같은 시점의 상부 카메라에서 page 4~9의 paragraph block이 순차적으로 소실되는 대신 3×5 card 1매에 2행 summary line이 생성되는 것을 확인했다. 즉 낭독은 pseudo-body를 안정화하지 않고 [COS192 — 회청색 전면요약패](./cos192.json) 형태의 전면 요약으로 붕괴시키며, 인원과 shell은 그 붕괴 직전의 `완결된 본문`을 따라 움직인 것으로 해석되었다.",
+          "J-11은 당시 shell이 실제 review 대상인 것처럼 보였다고 진술했으나, K-04는 낭독 직전과 직후의 body 위치를 대조해 실제 본문이 여전히 H-4에 남아 있음을 재확인했다. 이 사건 이후 COS194 표본의 음성 판독, 집단 시야 노출, review room 반입은 전면 금지되었다."
+        ],
+        "outcome": "직접적인 인명 피해는 없었으나 shell 추종 정렬과 summary collapse가 동시에 확인되어 danger가 상향되었다. Q-1은 24시간 무구두 통제 구역으로 전환되었고, read-state 표본은 `A194-read` 접두로 별도 재분류되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A194-sheet-01~27",
+        "type": "physical specimen set",
+        "description": "2043-08-12 사건에서 회수한 pseudo-body sheet 27매. 19매는 folio와 paragraph block, 8매는 folio 또는 appendix mark만 보유하며, 모든 sheet에서 필압과 토너 응집은 확인되지 않았다.",
+        "custodyStatus": "격리 셀 C-194-1에서 sheet별 개별 포켓 보관, shell과 분리 봉인"
+      },
+      {
+        "code": "A194-shell-01",
+        "type": "host shell",
+        "description": "`A188-shell-12`에서 분리 등록한 empty shell. 우상단 `1/27`, 등면 `27매`, 상단 제목선이 남아 있으나 내부 본문은 borescope와 수기 대조 모두 음성이었다.",
+        "custodyStatus": "평판 프레임 F-194-1에 단독 보관, body 및 pseudo-body sheet와 접촉 금지"
+      },
+      {
+        "code": "A194-body-01",
+        "type": "separated body record",
+        "description": "제습 셀 H-4에 남아 있던 실제 본문 24매와 부록 3매의 수기 장수표, 사진, 봉인 이력이다. pseudo-body 형성 전후 위치가 변하지 않았다.",
+        "custodyStatus": "shell과 다른 보존함에 분리 보관, 열람 시 chain 대조 의무화"
+      },
+      {
+        "code": "A194-log-02",
+        "type": "scan/review log set",
+        "description": "scan-prep tray S-5의 27페이지 예약, review room 2 lamp 전환 1건, 실제 이미지 수집 0장, 좌석 압력 음성 상태를 포함한 전산 로그 세트이다.",
+        "custodyStatus": "읽기 전용 저장소 `PROC-194-LOG`에 보관, 외부 반출 금지"
+      },
+      {
+        "code": "A194-spec-03",
+        "type": "optical analysis file",
+        "description": "CM-2600d 반사 스펙트럼, ESDA-3 압흔 검사, 200배 디지털 현미경, OCR 추출 로그를 묶은 분석 파일이다. 상단띠 반사 피크 487±6 nm, OCR 인식률 11~37%가 기록되어 있다.",
+        "custodyStatus": "분석 서버 `SPEC-194`와 오프라인 SSD 1식에 이중 해시로 보존"
+      },
+      {
+        "code": "A194-frg-04",
+        "type": "residual fragment",
+        "description": "2043-08-17 아크릴 지지면 급박리 시험에서 회수한 길이 6.8 mm, 9.1 mm의 회청색 절편 2점. 뒤집힌 점열과 가장자리 압착이 [COS172 — 외륜 회람띠](./cos172.json) 및 [COS192 — 회청색 전면요약패](./cos192.json) 잔흔과 구별되는 page-block 잔류 특성을 보였다.",
+        "custodyStatus": "미세표본 앰플 F-194-2에 질소 충전 보관"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "K-04",
+        "role": "기록관 / 주조사 및 체인 검증",
+        "context": "2043-08-12 C-7 초동 진술",
+        "statement": "제가 직접 본 것은 실제 27매 body가 제습 셀에 남아 있는데 blank sheet 쪽만 페이지처럼 보이기 시작했다는 점입니다. 이것을 복원으로 부르고 싶었던 유혹은 있었지만, 관찰 사실은 본문이 돌아온 것이 아니라 본문처럼 보이는 표면이 생겼다는 것입니다."
+      },
+      {
+        "speaker": "J-11",
+        "role": "보존기사 / 계측·보존 운용",
+        "context": "2043-08-12 보정 실패 보고",
+        "statement": "처음에는 declared count에 맞춰 빈 종이를 넣으면 수치만 사라질 것이라 생각했습니다. 하지만 제가 확인한 사실은 종이들 자체보다 shell과 slip 쪽이 먼저 페이지 수와 문단 모양을 가져갔다는 것입니다. `채워 넣으면 해결된다`는 생각은 제 해석이었습니다."
+      },
+      {
+        "speaker": "H-27",
+        "role": "문서기술원 / 오프라인 촬영·분광 계측",
+        "context": "2043-08-17 scan/OCR 분석 메모",
+        "statement": "OCT나 X-ray 같은 깊이 계측이 아니라 광학 기록으로만 보면 진짜 문단처럼 보이는 순간이 있습니다. 그러나 OCR이 안정적으로 읽어 낸 것은 제목, folio, 부록 번호뿐이었고, 실제 서술 내용은 반복해서 요약선으로 붕괴했습니다."
+      }
+    ]
+  },
+  "id": 194,
+  "title": "회청색 대용본문지",
+  "language": "ko-KR",
+  "overview": [
+    "**COS194**는 실제 본문이 분리·격리된 shell 또는 blank carrier 안에서, 무산성 blank sheet가 잠시 **본문 대용 페이지**처럼 보이는 현상이다. 현재까지 확정 사례는 11건이며, 그중 9건은 empty shell 내부 blank sheet가 `1/x`, `x매`, `부록-y`와 함께 paragraph block을 획득하는 형태로 나타났다.",
+    "COS194는 본문을 복원하지 않는다. pseudo-body sheet는 page count, running header, 부록 수, 문단 길이의 외형만 먼저 획득하며, 실제 body는 대개 인접 1~3슬롯 뒤, 제습 셀, trailing sleeve 또는 별도 봉인 상자에 그대로 남아 있다.",
+    "현재 자료는 [COS188 — 무본문 대용철](./cos188.json)의 shell, [COS189 — 회청색 무재하중표](./cos189.json)의 false load, [COS190 — 회청색 무재장수표](./cos190.json)의 declared count, [COS193 — 회청색 후입등재구](./cos193.json)의 rear-entry 조건, [COS177 — 회청색 후열인계로](./cos177.json)의 후열 지연, [COS192 — 회청색 전면요약패](./cos192.json)의 summary line가 COS194 형성의 핵심 선행 조건임을 지지한다.",
+    "위험의 중심은 `본문이 돌아온 것처럼 보이는` 착시가 아니라, 비어 있는 shell과 blank sheet가 **완결된 사건본**처럼 승인·스캔·인계 절차에 진입한다는 점이다. 따라서 COS194는 문서 복원 현상이 아니라, 내용이 없는 page surface가 구조적 완결성만 먼저 획득하는 기록-절차 복합 현상으로 취급한다."
+  ],
+  "identificationTraits": [
+    "숙주는 대개 `A188-shell` 계열 empty shell, underfilled folder, blank cover이며, 내부에 삽입된 무산성 70~90 g/㎡ blank sheet가 4~18분 사이 pseudo-body로 변한다.",
+    "형성 후 상단 5~8 mm 구간에 회청색 띠가 나타나고, 우상단 또는 하단에 `1/27`, `12/27`, `부록-3` 같은 folio·appendix 표식이 생긴다.",
+    "page block은 3~11행 범위의 얕은 광택 차로 보이며, line height는 4.1~4.9 mm, block width는 56~92 mm였다. direct light 650 lx 이상에서는 contrast가 급격히 낮아지고 470±15 nm 사광에서 가장 선명하다.",
+    "CM-2600d 반사 스펙트럼은 상단띠에서 487±6 nm 피크를 보였고, ESDA-3와 200배 현미경 검사에서는 펜 압흔과 토너 입자가 확인되지 않았다.",
+    "OCR 인식률은 11~37%에 그쳤고, 추출 문자 대부분이 제목선, page total, appendix label, 절차어에 집중되었다. 단일 원본문 전체와 일치한 경우는 0건이었다.",
+    "실제 body의 마지막 수기 장수가 남아 있는 경우 declared count는 정확히 일치하거나 ±1매 범위로 재현되지만, shell 내부 질량 증가와 두께 증가는 통계적으로 유의하지 않았다.",
+    "blank sheet를 declared count만큼 더 넣어도 inserted sheet 자체에는 folio가 안정되지 않고, 장수값이 outer band나 blank board로 전이되는 경향이 강했다.",
+    "음성 판독, 오버헤드 스캔, rear stop 밀착이 개입하면 pseudo-body는 summary line 또는 bundle total로 붕괴·전이되며, 실제 body 회수는 평균 21.4분 지연되었다."
+  ],
+  "discovery": [
+    "최초 확정 사례는 2043-08-12 10:14 KST, 제2보존동 2층 보존수복실 C-7에서 확인되었다. 당시 `A188-shell-12`는 [COS190 — 회청색 무재장수표](./cos190.json) 검증 뒤 empty shell로 분리 보관 중이었고, 실제 body는 제습 셀 H-4에 별도 봉인되어 있었다.",
+    "보존기사 J-11이 declared count `27`을 중화하기 위해 무산성 blank sheet 27매를 shell 안에 넣자, 194초 뒤 19매에서 page block과 folio가, 8매에서 folio 또는 appendix mark만 형성되었다. 같은 시각 shell 외부의 blank digest form과 citation slip에도 page structure 파생 흔적이 나타났다.",
+    "다음날 rear stop H-2에서 15 mm 스페이서를 제거한 조건으로 재현한 결과 10회 중 8회가 양성이었고, 이는 [COS193 — 회청색 후입등재구](./cos193.json)와 [COS177 — 회청색 후열인계로](./cos177.json) 잔류 조건이 pseudo-body 형성에 직접 관여함을 시사했다.",
+    "2043-08-18까지 확정 사례 11건, 부분 사례 4건, 통제 재현 28회 중 19회 양성이 축적되면서, COS194는 [COS188 — 무본문 대용철](./cos188.json)과 [COS190 — 회청색 무재장수표](./cos190.json)의 단순 부속 단계가 아닌 독립 조사 항목으로 승격되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS194는 본문이 없는 shell에 `문서 길이와 구조는 이미 확정되었다`는 외형을 부여한 뒤, 그 구조에 맞는 페이지 표면을 blank sheet에 분배하는 방식으로 진행된다.",
+      "한 번 형성된 pseudo-body는 무음 촬영·즉시 봉인에서는 비교적 안정하지만, 낭독·스캔·bundle 결속이 개입하면 [COS192 — 회청색 전면요약패](./cos192.json)나 [COS172 — 외륜 회람띠](./cos172.json) 형태로 빠르게 붕괴·전이한다."
+    ],
+    "stages": [
+      {
+        "name": "shell-body 분리 유지",
+        "description": "실제 body가 shell과 다른 위치에 남아 있고, shell 또는 blank carrier에 [COS190 — 회청색 무재장수표](./cos190.json)형 page total이 유지되는 단계다. 이 상태에서 blank sheet 삽입이나 근접 배치가 이루어지면 COS194 형성 가능성이 급증한다."
+      },
+      {
+        "name": "header seeding",
+        "description": "blank sheet 상단 5~8 mm 구간에 회청색 띠와 running header가 먼저 생긴다. 이 단계에서는 page total만 선행될 수 있으며, 아직 모든 sheet가 문단 block을 획득하지는 않는다."
+      },
+      {
+        "name": "folio spread",
+        "description": "`1/x`, `2/x`, `부록-y`가 각 sheet와 인접 slip으로 분산된다. declared count는 실제 종이 수나 두께보다 마지막 수기 body count와 더 강하게 일치한다."
+      },
+      {
+        "name": "pseudo-body stabilization",
+        "description": "일부 또는 다수 sheet에 3~11행의 paragraph block이 형성되어 shell 전체가 읽을 수 있는 본문처럼 보인다. 그러나 OCR·수기 전사·body 대조에서는 실제 원본문과 안정적인 일치를 보이지 않는다."
+      },
+      {
+        "name": "summary or bundle collapse",
+        "description": "낭독, 오버헤드 스캔, flush bundling, blank board 접근이 개입하면 pseudo-body가 [COS192 — 회청색 전면요약패](./cos192.json)의 summary line 또는 [COS172 — 외륜 회람띠](./cos172.json)의 bundle total로 붕괴한다. 이때 실제 body는 계속 후행 위치에 남아 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS194는 [COS188 — 무본문 대용철](./cos188.json)·[COS189 — 회청색 무재하중표](./cos189.json)·[COS190 — 회청색 무재장수표](./cos190.json)가 empty shell에 부여한 외피 권위가, blank sheet 표면으로 확장된 결과로 가장 잘 설명된다.",
+      "형성은 대개 [COS193 — 회청색 후입등재구](./cos193.json)와 [COS177 — 회청색 후열인계로](./cos177.json)의 후행 body 조건을 따르고, 읽기나 묶음화는 [COS192 — 회청색 전면요약패](./cos192.json) 및 [COS172 — 외륜 회람띠](./cos172.json)로의 붕괴를 촉진한다."
+    ],
+    "entries": [
+      {
+        "targetId": 177,
+        "targetTitle": "회청색 후열인계로",
+        "description": "[COS177 — 회청색 후열인계로](./cos177.json)가 실제 body를 한 단계 뒤에 남긴 shell에서 COS194 형성률이 가장 높았다. 후열 경로가 절차만 먼저 이동시킨 뒤, COS194는 그 비어 있는 전면에 `본문이 여기 있어야 한다`는 page surface를 임시로 채워 넣는 것으로 보인다. 형성 직전 가장 흔한 위치는 후열축 종료점 뒤 1~3슬롯이었다."
+      },
+      {
+        "targetId": 188,
+        "targetTitle": "무본문 대용철",
+        "description": "[COS188 — 무본문 대용철](./cos188.json)은 COS194의 가장 안정적인 숙주다. empty shell이 사건선·책등·상단 제목을 유지할수록 inserted blank sheet가 pseudo-body를 형성할 확률이 높았고, 확정 표본 11건 중 8건이 `A188-shell` 계열에서 발생했다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json)가 동반된 shell에서는 pseudo-body 지속 시간이 중앙값 24.3분으로, false load가 없는 shell의 7.1분보다 길었다. 즉 [COS189 — 회청색 무재하중표](./cos189.json)는 COS194 표면을 실제 본문처럼 다루게 만드는 취급 권위를 강화한다."
+      },
+      {
+        "targetId": 190,
+        "targetTitle": "회청색 무재장수표",
+        "description": "[COS190 — 회청색 무재장수표](./cos190.json)는 COS194의 수치적 골격이다. COS190이 `27매`, `본문 24매 / 부록 3매` 같은 구조를 shell에 먼저 부여하면, COS194는 그 구조를 따라 blank sheet에 folio와 paragraph block을 분배한다. 따라서 page total이 선행된 shell에서 pseudo-body가 나타나도 이를 복구된 본문으로 취급해서는 안 된다."
+      },
+      {
+        "targetId": 192,
+        "targetTitle": "회청색 전면요약패",
+        "description": "[COS192 — 회청색 전면요약패](./cos192.json)는 COS194의 형성 전단과 붕괴 말단 모두에서 관찰되었다. pseudo-body 31개 페이지 블록의 running header와 첫 줄은 [COS192 — 회청색 전면요약패](./cos192.json) 표본 9건과 58~71%의 어휘 중첩을 보였고, 반대로 낭독이나 오버헤드 스캔이 개입하면 COS194는 다시 summary line 중심의 전면 요약으로 압축되었다."
+      },
+      {
+        "targetId": 193,
+        "targetTitle": "회청색 후입등재구",
+        "description": "[COS193 — 회청색 후입등재구](./cos193.json)의 rear stop 조건은 COS194 형성의 가장 강한 선행 요소였다. 15 mm 스페이서를 제거하고 shell 말단을 후면 정지대에 밀착한 시험 10회 중 8회가 양성이었고, 같은 shell을 후면에서 5 cm 띄운 대조군은 0/10이었다. 이는 front matter가 먼저 등재된 뒤 blank sheet가 그 빈 본문 위치를 점유한다는 해석을 지지한다."
+      },
+      {
+        "targetId": 172,
+        "targetTitle": "외륜 회람띠",
+        "description": "[COS172 — 외륜 회람띠](./cos172.json)는 COS194를 `완결된 x매 세트`처럼 보이게 만드는 대표적 후속 단계다. pseudo-body sheet를 blank outer band로 묶거나 shell과 flush bundling하면, 개별 page block은 약화되는 대신 bundle 외곽에 `27매`, `부록 3매`가 회수되어 실제 body 부재가 더 감춰진다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-194-01 / 형성 임계치 시험",
+      "description": "2043-08-13 00:40~02:20 KST, 보존수복실 C-7. affected shell 9점과 clean blank shell 9점에 A4 80 g/㎡ 무산성 sheet 27매를 각각 넣고 520 lx, 22.2°C, RH 44%에서 정지시켰다. affected shell군은 9점 중 7점에서 172~216초 사이 상단띠와 2~7행 paragraph block이 형성되었고, clean shell군은 0/9였다. 상단띠만 형성된 부분 양성은 affected군 2점이었다."
+    },
+    {
+      "label": "EXP-194-02 / declared count 의존성 시험",
+      "description": "2043-08-13 10:10~12:00 KST, 격리 셀 C-194-2. `27매`, `19매`, 무declared count shell을 각 3점씩 비교했다. pseudo-body가 형성된 8점 중 6점은 마지막 수기 body count와 정확히 일치했고, 2점은 ±1매 차이를 보였다. declared count가 없는 shell 3점은 header만 나타났고 complete folio spread는 0/3이었다."
+    },
+    {
+      "label": "EXP-194-03 / rear stop·spacer 대조",
+      "description": "2043-08-13 22:06~23:50 KST, rear-stop bench H-2. same shell 10점을 15 mm 스페이서 제거군과 유지군으로 나누어 후면 밀착시켰다. 제거군 10회 중 8회가 양성이었고, 유지군 10회는 0/10이었다. 형성 시간 중앙값은 194초, rear stop 온도 저하는 0.7~1.0°C였다."
+    },
+    {
+      "label": "EXP-194-04 / scan/OCR 붕괴 시험",
+      "description": "2043-08-17 09:30~11:40 KST, 오프라인 스캔실 S-3. pseudo-body 형성 표본 6점은 오버헤드 스캔, 대조군 6점은 단순 정지 촬영만 수행했다. 스캔군 4/6에서 page block이 2~5분 내 summary line과 page reservation으로 붕괴했고, OCR 인식률은 11~37%에 그쳤다. 정지 촬영군은 6/6 모두 15분 이상 동일 block 구조를 유지했다."
+    },
+    {
+      "label": "EXP-194-05 / 낭독 vs 무음 대조",
+      "description": "2043-08-15 02:10~03:30 KST, review room 2와 Q-1. 3인 낭독군 6회와 무음 열람 후 즉시 봉인군 8회를 비교했다. 낭독군 4/6에서 shell 추종 정렬이나 approval 접근 시도가 발생했고, 같은 표본은 17~96초 안에 summary collapse를 보였다. 무음군은 0/8에서 정렬이 발생하지 않았고, pseudo-body가 중앙값 12.4분 유지되었다."
+    },
+    {
+      "label": "EXP-194-06 / false load 결합 지속성 시험",
+      "description": "2043-08-17 14:20~16:05 KST, 격리 셀 C-194-3. [COS189 — 회청색 무재하중표](./cos189.json)가 남아 있는 shell 5점과 그렇지 않은 shell 5점을 비교했다. false load shell군은 pseudo-body 지속 시간이 중앙값 24.3분, 대조군은 7.1분이었으며, false load군 3/5는 blank digest form에 `본문 x매 / 부록 y매`를 추가 생성했다."
+    }
+  ],
+  "handlingProcedures": [
+    "pseudo-body 표면을 **본문 복구 증거로 취급하지 않는다**. page total, running header, paragraph block은 모두 shell/body 분리 상태와 별도로 판정한다.",
+    "형성 의심 시 shell, 실제 body, blank sheet, count trace를 즉시 4개 체인으로 분리하고 같은 슬리브나 트레이에 겹쳐 두지 않는다.",
+    "declared count에 맞춰 blank sheet를 삽입해 `맞추는` 시도를 금지한다. blank padding은 [COS172 — 외륜 회람띠](./cos172.json) 또는 [COS187 — 공란 경유판](./cos187.json) 분기를 증폭시킬 수 있다.",
+    "활성 반경 1 m 안에서는 page, count, appendix, review 상태를 육성으로 판독하지 않는다. 번호 패들, 수기 보드, 광신호만 사용한다.",
+    "review stand, approval desk, scan-prep queue, handoff platform에 pseudo-body shell을 올리지 않는다. 불가피한 촬영은 네트워크 분리된 상부 카메라와 무광 흑색 배경만 사용한다.",
+    "rear stop가 있는 설비를 사용할 경우 shell 말단과 정지대 사이에 15 mm 이상 스페이서를 유지하고, 경로를 30° 이상 틀어 [COS193 — 회청색 후입등재구](./cos193.json) 잔류 조건을 차단한다.",
+    "실제 body는 shell 앞이 아니라 trailing sleeve, 인접 1~3슬롯 뒤, 제습 셀, 후면 가이드에서 먼저 찾는다. shell 표면의 `1/x`는 body 현위치의 근거가 아니다.",
+    "blank citation slip, blank digest form, blank board를 주변에 방치하지 않는다. page total과 appendix number가 공란 매체로 전이될 수 있다.",
+    "오버헤드 스캔과 OCR 적용은 증거 보존보다 붕괴·전이를 자주 유발한다. 필요한 경우 still image만 확보하고 digital capture는 오프라인 단일 프레임으로 제한한다.",
+    "pseudo-body가 이미 read-state가 된 경우 `A194-read`로 재표기하고, 노출 인원은 즉시 분리하여 실제 body의 마지막 확인 위치를 먼저 재진술하게 한다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS194가 [COS190 — 회청색 무재장수표](./cos190.json)의 page total, [COS188 — 무본문 대용철](./cos188.json)의 shell 권위, [COS189 — 회청색 무재하중표](./cos189.json)의 취급 부담, [COS193 — 회청색 후입등재구](./cos193.json)의 rear-entry 조건이 blank sheet 표면으로 응축된 단계라는 것이다. 이 해석에서는 pseudo-body가 본문을 복원하는 것이 아니라, 본문이 있어야 할 구조만 page surface에 분배한다.",
+    "또 다른 가설은 [COS192 — 회청색 전면요약패](./cos192.json)의 summary line가 shell 내부 blank sheet로 확장될 때, 후행 body의 장수 정보와 결합해 `본문처럼 보이는 최소 구조`를 형성한다는 것이다. 낭독과 오버헤드 스캔이 COS194를 다시 COS192형 요약으로 붕괴시키는 점이 이를 지지한다.",
+    "확정되지 않은 대안 가설로는, 실제 body의 마지막 인증 상태가 [COS177 — 회청색 후열인계로](./cos177.json) 잔류축을 따라 뒤에 남는 동안, front shell 쪽에 구조적 그림자만 전사된다는 설명이 있다. 현재까지는 pseudo-body의 언어 내용이 단일 원본문과 일치하지 않아 `숨겨진 본문 복구` 가설은 채택하지 않는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "허위 본문 복구 오인",
+      "assessment": "매우 높음. shell과 blank sheet가 page surface를 획득하면 현장 인원은 실제 body 회수를 중단하고 pseudo-body를 복구본처럼 다루려는 경향을 보인다."
+    },
+    {
+      "category": "승인·스캔·인계 절차 오염",
+      "assessment": "높음. 실제 이미지 없이 page reservation이 닫히고, review lamp와 scan queue가 pseudo-body에 반응해 절차 완료를 오인할 수 있다."
+    },
+    {
+      "category": "실제 body 회수 지연",
+      "assessment": "높음. mishandling 사례에서 actual body 확인이 평균 21.4분, 최대 46분 지연되었다."
+    },
+    {
+      "category": "공란 매체로의 전이",
+      "assessment": "높음. blank citation slip, digest form, outer band, board가 page total과 appendix number를 이어받아 오염 범위를 넓힌다."
+    },
+    {
+      "category": "직접 신체 손상",
+      "assessment": "낮음. 현재까지 인체 직접 위해는 없었으나 잘못된 이동과 설비 오작동 가능성 때문에 수동 통제가 필요하다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초기 3건의 실패 대응은 모두 `본문이 돌아왔는지 먼저 읽어 보자`는 선택에서 시작되었다. 현재 기준으로 COS194는 읽을수록 안정되는 것이 아니라, 요약·회람·완결 외피로 더 빨리 붕괴하거나 전이한다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“페이지 수는 돌아왔지만, 페이지는 돌아오지 않았다.”** — K-04, 2043-08-12 현장 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "blank sheet를 declared count만큼 채워 넣는 방식은 한 번도 성공적으로 pseudo-body를 neutralize하지 못했다. 반대로 5회 중 4회에서 outer band, blank board, queue field로 장수값을 옮겼다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“종이를 넣었는데 본문이 채워진 것이 아니라 빈 종이가 문서인 척하기 시작했다.”** — J-11, 2043-08-05 보정 실패 기록"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-194 정식 편입",
+      "paragraphs": [
+        "2043-08-12~2043-08-15 현장 메모에서는 현상을 `pseudo-body page`, `body surrogate sheet`, `T-194`로 병기했다.",
+        "2043-08-17 대조 실험 결과, 핵심은 본문 복원이나 단순 page numbering 오류가 아니라 **empty shell과 blank sheet가 실제 body 없이 본문 구조를 대리 획득하는 현상**임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 대용본문지**로 확정하고, [COS190 — 회청색 무재장수표](./cos190.json)의 단순 부속 단계가 아닌 독립 기록-절차 복합 현상으로 재분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A194 식별 접두",
+      "paragraphs": [
+        "pseudo-body가 형성된 개별 page surface에는 `A194-sheet` 접두를, 숙주 shell에는 `A194-shell`, 실제 분리 body에는 `A194-body`, page total·appendix number·summary collapse·queue reservation처럼 파생된 흔적에는 `A194-trace` 접두를 부여한다.",
+        "음성 판독 또는 집단 노출이 발생한 표본은 `A194-read`를 추가 표기한다. `A194-shell`, `A194-body`, `A194-trace` 자료는 동일 보관 슬리브를 공유할 수 없으며, 실제 body 직접 확인 전까지 서로를 대리하지 못한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "다음 5개 조건 중 4개 이상 충족 시 COS194 의심 표본으로 취급한다: `1)` empty shell 또는 blank carrier가 숙주일 것, `2)` 상단 회청색 띠 5~8 mm가 형성될 것, `3)` blank sheet 또는 인접 slip에 `1/x`, `x매`, `부록-y`가 나타날 것, `4)` page block이 3행 이상 형성될 것, `5)` 실제 body가 다른 위치에 별도 확인될 것.",
+        "확정 판정 시에는 수기 장수 대조, borescope 또는 실제 body 확인, OCR 인식률 40% 미만, direct light에서의 contrast 감소, declared count와의 일치 여부를 함께 기록한다. page total만 존재하고 block이 형성되지 않은 경우에는 [COS190 — 회청색 무재장수표](./cos190.json) 단계로 남긴다."
+      ]
+    },
+    {
+      "title": "금지 개입 행위",
+      "paragraphs": [
+        "blank sheet 추가 삽입, page total 수기 보정, 오버헤드 스캔, 육성 낭독, edge strap 결속, flush bundling, shell-body 재결합은 모두 전이 또는 붕괴를 증폭했다. 확인된 표본에 대해 이 조치를 시행하지 않는다.",
+        "특히 `본문을 맞춰 넣기`, `장수를 맞춰 채우기`, `한 번 읽어 보면 알 수 있다`는 현장 판단은 11건 중 6건에서 오염을 확대했다. pseudo-body는 내용 확인 수단이 아니라 오염 표면으로 취급해야 한다."
+      ]
+    },
+    {
+      "title": "A194-sheet 보관 규격",
+      "paragraphs": [
+        "개별 pseudo-body sheet는 무광 흑색 backing card와 2 mm non-contact spacer를 사용해 수평 보관한다. stacking은 3장 이상 금지한다.",
+        "host shell은 평판 프레임에 단독 보관하고, 실제 body는 별도 보존함에 30 cm 이상 떨어뜨려 둔다. trace slip과 queue printout은 디지털·종이 매체를 섞지 않고 각각 개별 봉인한다."
+      ]
+    }
+  ]
+}

@@ -359,6 +359,14 @@
         "[COS189 — 회청색 무재하중표](./cos189.json)는 [COS188 — 무본문 대용철](./cos188.json)이 실제 본문 없이도 `적재된 사건철`의 하중 권위를 대신 획득할 수 있음을 보여 주었다. 2043-07-24 대조 실험에서 empty A188-shell 5점은 실제 0.214~0.417 kg에 불과했으나 모두 1.21~2.08 kg 선언 값을 유지했고, 같은 조건의 일반 binder와 plain sleeve보다 정착 시간이 길었다.",
         "이는 COS188이 본문 부재를 숨기는 외피일 뿐 아니라, COS189이 부여한 허위 하중 상태를 가장 안정적으로 붙잡는 shell 역할을 한다는 뜻이다. COS188 표본이 회청색 중량띠를 획득하면 shell을 적재본이나 핵심 원본으로 취급하지 말고, body 부재 상태와 [COS189 — 회청색 무재하중표](./cos189.json) 계량 로그를 함께 대조한다."
       ]
+    },
+    {
+      "relatedId": 194,
+      "type": "reciprocal",
+      "title": "COS194 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS188 — 무본문 대용철](./cos188.json)의 empty shell 내부에 blank sheet가 들어갔을 때 가장 자주 분기하는 후속 단계로 확인되었다. shell이 전면 사건선·책등·상단 제목을 유지한 채 inserted sheet에 `1/x`, `본문 x매 / 부록 y매`, paragraph block을 형성하더라도 실제 body는 별도 슬리브나 뒤 슬롯에 남아 있을 수 있다. COS188 자료에서 blank sheet가 본문처럼 보이기 시작하면 이를 정상화나 복구로 보지 말고, shell/body/trace 분리에 더해 COS194 전이 여부를 우선 기록한다."
+      ]
     }
   ],
   "supplementalSections": [
