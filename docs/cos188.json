@@ -367,6 +367,14 @@
       "paragraphs": [
         "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS188 — 무본문 대용철](./cos188.json)의 empty shell 내부에 blank sheet가 들어갔을 때 가장 자주 분기하는 후속 단계로 확인되었다. shell이 전면 사건선·책등·상단 제목을 유지한 채 inserted sheet에 `1/x`, `본문 x매 / 부록 y매`, paragraph block을 형성하더라도 실제 body는 별도 슬리브나 뒤 슬롯에 남아 있을 수 있다. COS188 자료에서 blank sheet가 본문처럼 보이기 시작하면 이를 정상화나 복구로 보지 말고, shell/body/trace 분리에 더해 COS194 전이 여부를 우선 기록한다."
       ]
+    },
+    {
+      "relatedId": 195,
+      "type": "reciprocal",
+      "title": "COS195 상호기록",
+      "paragraphs": [
+        "[COS195 — 회청색 현행집게](./cos195.json)는 [COS188 — 무본문 대용철](./cos188.json)의 shell을 `current copy`로 안정시키는 가장 빈번한 동반 표본으로 확인되었다. clip이 shell 상단 우측에 부착된 사례에서는 실제 body가 1~3슬롯 뒤에 남아 있어도 terminal 우선권과 검토선이 shell 쪽으로 이동했다. 따라서 COS188 shell이 비정상적으로 가볍고 선두 모서리에 회청색 clip이 있으면, shell 자체의 정본화보다 COS195 결합 여부를 먼저 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

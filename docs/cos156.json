@@ -345,6 +345,14 @@
       "paragraphs": [
         "[COS190 — 회청색 무재장수표](./cos190.json)가 [COS156 — 무수령 인계대](./cos156.json)와 결합하면, 실제 수령자도 body도 도착하지 않았는데 empty shell이나 blank packet만 `19매 인계본`, `부록-3 포함` 같은 외형을 달고 handoff log를 닫는 사례가 있다. 이는 몇 장짜리 자료가 넘겨졌다는 뜻이 아니라, 수령자 없는 인계 상태에 장수의 완결감이 덧씌워진 것이다. COS156 현장에서 인계 완료와 page total이 동시에 생기면 실제 body 위치·수령자 공란·수기 장수 대조를 [COS190 — 회청색 무재장수표](./cos190.json) 동반 여부와 함께 분리 기록한다."
       ]
+    },
+    {
+      "relatedId": 195,
+      "type": "reciprocal",
+      "title": "COS195 상호기록",
+      "paragraphs": [
+        "[COS195 — 회청색 현행집게](./cos195.json)가 [COS156 — 무수령 인계대](./cos156.json)의 blank handoff card에 부착되면, 수령자 공란 상태에서도 `handover complete`가 빠르게 닫히고 실제 본문은 원위치나 뒤 tray에 남는 사례가 확인되었다. 이 경우 전달된 것은 문서가 아니라 현행 carrier이며, 인계 완료 상태를 무효화하기 전까지 수령자 이름을 사후 입력하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2043-04-18~2043-04-20 사이 blank carrier 3건이 실제 본문 없이 `current copy` 또는 접수·인계 대상으로 올라갔고, 그중 2건은 제한 보관 표본의 차기 배가 직전에서 중지되었다. COS195의 작동 원리가 일반 절차에 알려지면 실물 이동 없이도 기록 체인을 위장할 수 있으므로 비공개 수준을 높게 유지한다.",
+    "permission": "안전 판정에는 clip 자체의 질량·jaw 치수 확인, 인접 1~3슬롯 본문 탐색, 전산 우선권 로그, 열잔류 대조, 동반 COS 분리가 동시에 필요했다. 일반 접수·배가 인력은 blank shell을 정상 사건철로 오인한 비율이 높아 고권한 열람이 요구된다.",
+    "chaos": "회수 표본 3점의 부착 선호 시험 12회 중 10회가 blank edge로 이동했고, 제거 후 3~11분 안에 다른 blank carrier로 재부착한 사례가 7회였다. edge availability와 주변 절차 표식 조합에 따라 대상이 바뀌어 예측성이 낮다.",
+    "danger": "직접 신체 손상은 확인되지 않았으나 허위 현행본 지정 3건, 무수령 인계 완료 2건, 제한 표본 오정렬 직전 2건이 발생했다. 위해는 주로 기록 체인과 보관 결정을 통해 나타나므로 중간 이상으로 평가한다.",
+    "popularity": "정식 문서화 전 19일 동안 비교 판독 요청 13건, 통제 회의 4회, 감사 조회 3건이 기록되었다. 전문 부서 참조는 시작되었지만 기관 전반의 상시 허브 항목 단계는 아니다.",
+    "containment": "억제에는 `W-195` 증인카드 부착, shell/body 분리 보관, blank edge 30 cm 제거, 단말 우선권 동결, 20분 열감 추적을 함께 적용해야 했다. 단일 조치만 사용한 8회 대조 중 6회에서 재활성화가 발생했다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "ARC-07",
+        "role": "기록관 / 체인 분리 담당",
+        "status": "active",
+        "involvement": "`A188-shell/01`에서 최초 표본 `HC-195/01`을 분리했고, shell·body·clip을 별도 체인으로 기록하는 절차를 수립했다."
+      },
+      {
+        "name": "LAB-12",
+        "role": "보존기사 / 질량·열영상 계측 담당",
+        "status": "active",
+        "involvement": "회수 표본의 질량, jaw 치수, 열잔류 시간, blank carrier와 본문 간 거리 데이터를 측정해 식별 기준을 만들었다."
+      },
+      {
+        "name": "RCV-09",
+        "role": "접수감사관",
+        "status": "active",
+        "involvement": "N-2 접수구역에서 blank handoff card에 접수·속행·열람·인계 완료가 동시에 고정된 사례를 보고했고, 실물 봉투와 전산 상태를 대조했다."
+      },
+      {
+        "name": "TRI-02",
+        "role": "이관분류 주임",
+        "status": "reassigned",
+        "involvement": "blank route card와 handoff card를 임시 carrier로 사용해 허위 현행본과 허위 인계를 촉진한 뒤, 경계성 이관 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2043-04-18 09:14 KST",
+        "label": "최초 clip 분리 관측",
+        "description": "표준정리 서가 D-7에서 `A188-shell/01` 상단 우측에 붙은 회청색 clip `HC-195/01`이 일반 clip과 다른 이동 반응을 보이며 임시표기 T-195가 부여되었다."
+      },
+      {
+        "date": "2043-04-18 09:16 KST",
+        "label": "blank route card로 우선권 이동",
+        "description": "clip을 blank route card에 잠시 옮긴 92초 뒤 검색단말 I-3의 `current copy` 추천이 shell에서 route card로 이동했고, 실제 본문은 2슬롯 뒤에서 확인되었다."
+      },
+      {
+        "date": "2043-04-20 11:42 KST",
+        "label": "접수·인계 동시 고정",
+        "description": "N-2 무수령 인계 tray에서 blank handoff card 하나에 접수번호, 속행문구, 사후열람 표식, handover 완료 코드가 동시에 형성되었다."
+      },
+      {
+        "date": "2043-04-23 15:08 KST",
+        "label": "열잔류 계측 완료",
+        "description": "clip 분리 뒤 card edge와 tray lip에 29.8~31.6°C 반월형 열감이 11~18분 지속된다는 계측 결과가 확보되었다."
+      },
+      {
+        "date": "2043-04-27 16:30 KST",
+        "label": "증인카드 절차 승인",
+        "description": "`W-195` 증인카드, blank edge 30 cm 제거, shell/body 분리 보관, 단말 우선권 동결을 묶은 공식 대응 절차가 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "C195-43-01",
+        "date": "2043-04-18",
+        "location": "표준정리 서가 D-7 / 검색단말 I-3",
+        "title": "blank route card로 이동한 현행 우선권",
+        "involvedPersonnel": [
+          "ARC-07",
+          "LAB-12",
+          "TRI-02"
+        ],
+        "narrative": [
+          "ARC-07은 [COS188 — 무본문 대용철](./cos188.json) 관련 shell `A188-shell/01`의 질량을 재측정하기 위해 상단 우측에 붙은 회청색 clip을 잠시 분리했다. TRI-02는 shell의 전면 표식이 흐려지지 않도록 blank route card를 받침으로 제시했고, clip은 분리 92초 뒤 route card 상단 모서리로 옮겨 붙었다. 같은 시점 검색단말 I-3의 `current copy` 추천이 shell에서 route card로 이동했고, 2슬롯 뒤에 있던 실제 본문 `A188-body/01~03`은 우선순위 목록에서 사라졌다.",
+          "TRI-02는 route card에 shelf code만 적어 두고 계속 정리하자고 제안했으나 ARC-07은 body 위치 확인이 선행되어야 한다고 판단해 스캔 절차를 중지시켰다. LAB-12가 즉시 질량을 재자 clip이 붙은 route card는 8.9 g, shell은 27.4 g, 실제 본문 슬리브는 88.9 g으로 측정되었다. ARC-07이 route card와 shell을 세라믹 frame에 각각 넣고 body를 뒤 슬롯에서 회수한 뒤에야 terminal 추천이 해제되었고, TRI-02의 초기 선택이 현행본 오인을 키웠다는 사실이 기록되었다."
+        ],
+        "outcome": "임시표기 T-195가 부여되었고, blank route card를 clip 받침으로 사용하는 절차가 즉시 중지되었다."
+      },
+      {
+        "code": "C195-43-02",
+        "date": "2043-04-20",
+        "location": "접수구역 N-2 / 무수령 인계 tray",
+        "title": "수령자 없는 접수·속행·열람 표식의 동시 고정",
+        "involvedPersonnel": [
+          "ARC-07",
+          "LAB-12",
+          "RCV-09",
+          "TRI-02"
+        ],
+        "narrative": [
+          "RCV-09는 격리 drawer Q-4에서 대기 중이던 제한 표본 봉투를 옮기지 않은 상태로, 빈 handoff card에 회수된 clip `HC-195/02`를 임시 부착해 tray N-2 위에 올려두었다. 6분 뒤 card 상단에는 [COS129 — 연분홍 접수증](./cos129.json) 형식의 접수번호 `129-N2-442`, [COS134 — 청백색 속행전표](./cos134.json) 형식의 `차기 검토로 이월`, [COS141 — 청회색 사후열람자](./cos141.json) 형식의 `viewed` 표식이 차례로 생겼고, tray 상태는 [COS156 — 무수령 인계대](./cos156.json)와 동일한 `handover complete`로 닫혔다. 당시 실제 봉투는 여전히 drawer Q-4에 있었고 seal break 기록은 0건이었다.",
+          "TRI-02는 접수와 인계가 닫혔으니 봉투도 함께 다음 서가로 가야 한다고 주장했으나 ARC-07은 전산 상태보다 실물 확인이 우선이라고 보고 drawer와 tray를 동시에 대조했다. LAB-12가 clip을 분리해 세라믹 card로 옮기자 tray lip과 handoff card 모서리에 [COS173 — 늦게 식는 부재면](./cos173.json)과 동일한 30.8°C 반월형 열감이 14분 남았고, 접수·열람·속행 표식은 본문이 없는 card 쪽에만 유지되었다. RCV-09는 수령자 이름을 사후 입력하려 했으나 ARC-07이 공란 보강을 중지시켰다."
+        ],
+        "outcome": "제한 표본의 오정렬은 발생하지 않았고, `접수 완료`, `handover complete`, `viewed` 상태는 모두 오염 표식으로 재분류되었다. N-2 tray는 blank carrier 시험 구역에서 제외되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "HC195-A",
+        "type": "회수 clip 표본 `HC-195/01`",
+        "description": "길이 34.6 mm, 질량 1.6 g, jaw gap 3.9 mm의 회청색 clip이다. 자성은 음성이며 일반 spring core가 없고, 상면에 `current`, 접수번호 파편, 열람 확인 잔흔이 교차해 남아 있다.",
+        "custodyStatus": "세라믹 frame `CF-195-1`에 단독 봉인, blank edge 30 cm 이내 반입 금지"
+      },
+      {
+        "code": "HC195-B",
+        "type": "동기화 영상·질량·단말 로그 묶음",
+        "description": "`A188-shell/01`에서 blank route card로 우선권이 이동하는 장면과 body 후행 위치, 저울값, 검색단말 I-3의 추천 변화를 공통 타임코드로 기록한 자료이다.",
+        "custodyStatus": "`VID-195`, `MASS-195`, `IDX-195`로 분리 해시 보관"
+      },
+      {
+        "code": "HC195-C",
+        "type": "blank handoff card `N2-blank-03`",
+        "description": "접수번호 `129-N2-442`, `차기 검토로 이월`, `viewed`, `handover complete`가 본문 없이 고정된 handoff card 원본이다.",
+        "custodyStatus": "실제 제한 봉투와 다른 금고에 평판 봉인, 사후 기입 금지"
+      },
+      {
+        "code": "HC195-D",
+        "type": "열잔류 연속 프레임",
+        "description": "clip 분리 뒤 tray lip과 card edge에 30.8°C 반월열이 14분 지속되는 과정을 5초 간격으로 촬영한 열영상 연속본이다.",
+        "custodyStatus": "열분석 서버 읽기 전용 보관, 보정 데이터와 분리"
+      },
+      {
+        "code": "HC195-E",
+        "type": "본문 회수 대조 묶음",
+        "description": "허위 현행 carrier가 생성된 시점에 실제 본문 `A188-body/01~03`과 제한 봉투 Q-4가 원위치 또는 후행 슬롯에 남아 있음을 보여 주는 사진·좌표·체인 카드 세트이다.",
+        "custodyStatus": "`A188-body` 자료와 별도 봉투로 관리, COS195 실물과 접촉 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "ARC-07",
+        "role": "기록관",
+        "context": "C195-43-01 최초 분리 보고",
+        "statement": "제가 직접 확인한 것은 terminal 우선권과 현행 표식이 clip이 붙은 carrier 쪽으로 이동했다는 사실입니다. 그 carrier가 본문을 대표한다고 판단한 것은 이후 실물 대조에서 기각된 해석입니다."
+      },
+      {
+        "speaker": "LAB-12",
+        "role": "보존기사",
+        "context": "질량·열영상 감정 메모",
+        "statement": "계측으로 확인된 사실은 clip과 shell의 질량이 사건철로 보기 어렵고, 실제 page block이 뒤 슬롯이나 별도 봉투에 남아 있었다는 점입니다. clip 내부에 숨은 spring이나 비가시 본문이 있다는 설명은 현재 데이터가 지지하지 않습니다."
+      },
+      {
+        "speaker": "RCV-09",
+        "role": "접수감사관",
+        "context": "N-2 오정렬 조사 면담",
+        "statement": "제가 본 것은 blank handoff card에 접수번호와 완료 코드가 생긴 장면입니다. 그래서 실물도 넘어갔다고 생각한 것은 제 해석이었고, drawer Q-4를 먼저 열어 보지 않은 선택이 문제였습니다."
+      }
+    ]
+  },
+  "id": 195,
+  "title": "회청색 현행집게",
+  "language": "ko-KR",
+  "overview": [
+    "**COS195**는 blank shell, route card, handoff card, 빈 라벨의 선두 모서리에 부착되어 해당 carrier를 전산·현장 양쪽에서 `현행본`처럼 보이게 만드는 회청색 clip형 물체이다. 현장 통칭은 **회청색 현행집게**이다. 2043-04-18~2043-04-27 사이 중앙기록동과 접수구역에서 physical sample 5점, trace-only case 3건이 확정되었다.",
+    "COS195가 붙은 carrier는 접수번호, 속행문구, 사후열람 표식, 인계 완료 코드 같은 절차 상태를 빠르게 흡수한다. 반면 실제 본문은 같은 slot 안에 남지 않고 인접 1~3슬롯 뒤, 옆 tray, 원래 drawer에서 계속 발견되었다.",
+    "현재까지 확인된 사실은 `상태가 집게를 따라 이동한다`는 점이며, 집게가 상태를 생성하는지 또는 주변 COS의 표식을 수집만 하는지는 미확정이다. 실무상 COS195는 **내용보다 현행 표면을 먼저 만드는 이동성 edge anchor**로 취급한다."
+  ],
+  "identificationTraits": [
+    "U자형 또는 clip형 외형을 가지며 길이 31.2~38.6 mm, jaw gap 3.1~4.7 mm, 질량 1.3~1.9 g 범위에서 측정되었다. 표면은 무광 회청색이고 자성은 음성이다.",
+    "carrier의 중앙보다 상단 우측 또는 진행 방향 선두 모서리 20 mm 이내에 우선 부착된다.",
+    "COS195가 붙은 blank shell 또는 route card는 1~9분 안에 검색단말의 `current copy`, `우선 사건철`, `검토 대기` 추천을 얻을 수 있다.",
+    "실제 본문은 carrier 내부보다 인접 1~3슬롯 뒤, trailing sleeve, 옆 tray, 원래 drawer에서 발견되는 경우가 많다. 확정 사례의 평균 후행 거리는 14.5 cm였다.",
+    "[COS129 — 연분홍 접수증](./cos129.json)의 접수번호, [COS134 — 청백색 속행전표](./cos134.json)의 이월문구, [COS141 — 청회색 사후열람자](./cos141.json)의 `viewed` 표식, [COS156 — 무수령 인계대](./cos156.json)의 `handover complete` 코드가 clip 상면 또는 clip이 물고 있는 carrier 상단에 집중되는 경향이 있다.",
+    "clip을 분리한 뒤에는 [COS173 — 늦게 식는 부재면](./cos173.json)과 유사한 반월형 열감이 29.8~31.6°C 범위로 11~18분 남을 수 있다.",
+    "X선 촬영과 확대 관찰에서는 일반 문구용 clip의 spring core, staple, rivet 구조가 확인되지 않는다."
+  ],
+  "discovery": [
+    "COS195의 임시표기 `T-195`는 [COS188 — 무본문 대용철](./cos188.json) 대응 절차를 재정리하던 2043-04-18 09:14 KST, 표준정리 서가 D-7에서 부여되었다. ARC-07은 `A188-shell/01` 상단 우측 모서리에 ordinary clip로 보이는 회청색 부착물을 발견했으나, clip을 떼어 blank route card에 잠시 올려둔 92초 뒤 검색단말 I-3의 `current copy` 추천이 shell에서 route card로 이동하는 것을 확인했다.",
+    "이 당시 실제 본문인 `A188-body/01~03`는 서가 뒤 2슬롯, 평균 14 cm 위치에 남아 있었고, clip이 옮겨 간 blank route card만이 표지·검토 상태·우선권을 계속 유지했다. LAB-12의 계측에서 clip의 질량은 1.6 g, shell의 질량은 27.4 g, shell+본문 대조군은 88.9 g으로 측정되었다.",
+    "후속 9일 동안 같은 형태의 clip 4점이 추가로 회수되었고, 그중 3건은 [COS129 — 연분홍 접수증](./cos129.json), [COS134 — 청백색 속행전표](./cos134.json), [COS141 — 청회색 사후열람자](./cos141.json), [COS156 — 무수령 인계대](./cos156.json), [COS173 — 늦게 식는 부재면](./cos173.json)과 동시 관측되었다. 이에 따라 본 항목은 단순 문구 이물이나 보존 장비 부품이 아니라 독립 관리 대상 COS로 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "확정 표본 5점 모두에서 COS195는 **내용이 아니라 모서리**를 우선 선택했고, 선택된 carrier를 현행본처럼 전진시켰다.",
+      "집게가 붙은 carrier를 실제 본문과 밀착 보관하거나 선두에 두면, 절차 표식이 carrier에 축적되고 본문은 뒤로 남는 경향이 강화되었다."
+    ],
+    "stages": [
+      {
+        "name": "선두 모서리 탐색",
+        "description": "COS195는 주변 30 cm 안의 blank shell, route card, handoff card, divider, 라벨대 끝단 가운데 가장 처리하기 쉬운 선두 모서리를 선택해 부착한다."
+      },
+      {
+        "name": "절차 상태 포획",
+        "description": "접수번호, 속행문구, 사후열람 표시, 인계 완료 코드가 clip 상면 또는 clip이 물고 있는 carrier 상단으로 모인다. 이 단계에서 실제 본문 유무는 중요하게 반영되지 않는다."
+      },
+      {
+        "name": "carrier 우선화",
+        "description": "전산 단말과 현장 인원은 clip이 붙은 carrier를 `current copy`, `우선 사건철`, `검토 완료` 또는 `다음 단계 인계본`으로 오인하기 시작한다."
+      },
+      {
+        "name": "본문 후행화",
+        "description": "실제 본문은 carrier 내부에 남지 않고 인접 1~3슬롯 뒤, trailing sleeve, 옆 tray, 원래 drawer로 밀린 채 발견된다. 이 시점에 현장 인원은 정리 실수로 오해하기 쉽다."
+      },
+      {
+        "name": "잔류 및 재부착",
+        "description": "clip을 분리하면 반월형 열감과 일부 절차 표식이 접촉 모서리에 남고, 주변 blank edge가 남아 있는 한 3~11분 안에 다른 carrier로 재부착할 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS195은 절차 표식을 생성하기보다, 이미 발생한 접수·속행·사후열람·인계 완료 외피를 하나의 blank carrier로 모으는 역할을 하는 것으로 보인다.",
+      "현재까지 공기록 빈도가 가장 높은 항목은 [COS129 — 연분홍 접수증](./cos129.json), [COS134 — 청백색 속행전표](./cos134.json), [COS141 — 청회색 사후열람자](./cos141.json), [COS156 — 무수령 인계대](./cos156.json), [COS173 — 늦게 식는 부재면](./cos173.json), [COS188 — 무본문 대용철](./cos188.json)이다."
+    ],
+    "entries": [
+      {
+        "targetId": 129,
+        "targetTitle": "연분홍 접수증",
+        "description": "[COS129 — 연분홍 접수증](./cos129.json)은 실제 본문보다 접수번호를 먼저 안정시키는 경향이 있다. COS195가 동반되면 그 접수번호는 본문이나 봉투보다 clip이 물고 있는 blank route card, handoff card, shell 상단에 먼저 고정된다. 이 때문에 `접수되었다`는 외형은 강해지지만 무엇이 접수되었는지는 더 불명확해진다."
+      },
+      {
+        "targetId": 134,
+        "targetTitle": "청백색 속행전표",
+        "description": "[COS134 — 청백색 속행전표](./cos134.json)의 `다음 회차`, `차기 검토` 표식은 COS195의 jaw 아래로 접혀 들어가며 이동하는 경향이 있다. 이 경우 속행의 대상은 실제 본문이 아니라 clip이 붙은 carrier가 되고, 본문은 현재 자리에서 검증되지 않은 채 뒤에 남는다."
+      },
+      {
+        "targetId": 141,
+        "targetTitle": "청회색 사후열람자",
+        "description": "[COS141 — 청회색 사후열람자](./cos141.json)의 `viewed` 또는 `사후 열람 확인` 표식은 COS195 상면에서 가장 자주 고정된다. 실제 열람자가 없더라도 clip이 붙은 carrier 하나가 `이미 읽힌 현행본`처럼 보이기 때문에, 사후열람 외피가 본문 부재를 가리는 속도가 빨라진다."
+      },
+      {
+        "targetId": 156,
+        "targetTitle": "무수령 인계대",
+        "description": "[COS156 — 무수령 인계대](./cos156.json)와 결합한 COS195는 blank handoff card나 empty shell 하나만으로 `handover complete` 상태를 닫을 수 있다. 이때 수령자는 끝내 특정되지 않고 실제 본문도 제자리일 수 있으므로, COS156의 인계 공백이 COS195에 의해 휴대 가능한 carrier로 축소된다고 볼 수 있다."
+      },
+      {
+        "targetId": 173,
+        "targetTitle": "늦게 식는 부재면",
+        "description": "COS195를 분리한 뒤 card edge, tray lip, shelf edge에 남는 반월형 열감은 [COS173 — 늦게 식는 부재면](./cos173.json)과 동일한 최근성 오인을 유발한다. 열감은 `방금 누군가 처리했다`는 인상을 강화하지만, 실제로는 clip이 떠난 빈 모서리만 따뜻하게 남아 있을 수 있다."
+      },
+      {
+        "targetId": 188,
+        "targetTitle": "무본문 대용철",
+        "description": "[COS188 — 무본문 대용철](./cos188.json)은 COS195와의 결합이 가장 자주 확인된 carrier이다. shell만으로는 일시적 전면 표식에 그치던 사례도 COS195가 상단 모서리에 붙으면 `current copy`와 우선 사건철 권위를 더 오래 유지했고, 실제 본문은 1~3슬롯 뒤에 남았다. 현행 shell 판정 전에는 COS188 자체보다 COS195 결합 여부를 먼저 확인해야 한다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "195-A / 부착 선호 대조",
+      "description": "회수 표본 3점(`HC-195/01~03`)을 blank shell 4점, blank route card 4점, filled body sleeve 4점과 함께 35×50 cm 무광 세라믹 판 위에 놓고 12회 반복했다. 10/12에서 94~492초 사이 blank shell 또는 route card의 상단 우측 모서리로 이동했고, filled body sleeve에 안정적으로 남은 사례는 0/12였다. 동일 치수의 비자성 office clip 12회 대조는 이동 0/12였다."
+    },
+    {
+      "label": "195-B / 상태 포획 대조",
+      "description": "`HC-195/01`을 blank witness card에 부착하고 [COS129 — 연분홍 접수증](./cos129.json) 접수 조각, [COS134 — 청백색 속행전표](./cos134.json) 조각, [COS141 — 청회색 사후열람자](./cos141.json) 표식 사본을 15 cm 이내에 둔 6회 중 5회에서 접수번호, 이월문구, `viewed` 상태가 witness card 상단으로 모였다. 실제 본문 sleeve는 5/6에서 미표기 상태를 유지했다."
+    },
+    {
+      "label": "195-C / shell-body 후행 시험",
+      "description": "[COS188 — 무본문 대용철](./cos188.json) shell 4점과 연계 body 슬리브 4점을 짝지어 선두 배치한 뒤 active clip을 부착한 시험 4회에서 `current copy` 추천은 shell 4/4에 발생했고, 실제 body는 1~3슬롯 뒤에서 확인되었다. clip 없이 동일 shell-body를 배치한 대조군 4회는 우선 추천 0/4였다."
+    },
+    {
+      "label": "195-D / 무수령 인계 경계 시험",
+      "description": "empty tray boundary 위에 active clip이 붙은 blank handoff card 8회와 no-clip handoff card 8회를 비교했다. active군은 6/8에서 수령자 공란 상태의 `handover complete`가 발생했고, control군은 0/8이었다. active군 6건 중 4건에서 실제 본문은 원래 drawer나 뒤 tray에 남아 있었다."
+    },
+    {
+      "label": "195-E / 열잔류 대조",
+      "description": "blank card edge에서 active clip을 분리한 9회 중 7회에서 29.8~31.6°C의 반월형 열감이 11~18분 지속되었다. 일반 office clip 9회 대조에서는 동일한 열잔류가 0/9였다. 열감이 나타난 7회 중 5회는 인접 blank edge로의 재부착이 20분 안에 이어졌다."
+    }
+  ],
+  "handlingProcedures": [
+    "상단 모서리에 clip형 물체가 부착된 underfilled carrier를 발견하면, 제목이나 완료 코드보다 먼저 carrier 질량을 계측하고 반경 30 cm 및 인접 1~3슬롯에서 실제 본문을 탐색한다.",
+    "회수된 COS195 표본은 실제 본문, route card, handoff card, divider가 아니라 전용 `W-195` 증인카드에만 임시 부착한다.",
+    "COS195가 붙은 carrier와 실제 본문은 동일 슬리브, 동일 tray, 동일 상자에 함께 두지 않는다. 최소 30 cm 이상 떨어진 별도 체인으로 보관한다.",
+    "clip이 붙은 carrier를 `current copy`, `접수본`, `검토본`, `인계본`으로 스캔하거나 자동 등록하지 않는다. 관련 단말의 추천 로그는 읽기 전용으로만 보존한다.",
+    "수령자·검토자·접수자 공란을 사후 기입하지 않는다. 공란 보강은 clip이 만든 carrier 권위를 추가로 안정시킬 수 있다.",
+    "clip 분리 뒤에는 card edge, tray lip, shelf edge를 20분 이상 열영상으로 감시하고, 반월형 열감이 남은 면에는 다른 문서를 올려놓지 않는다.",
+    "blank shell, empty handoff card, blank route card, divider, 라벨대 끝단을 COS195 의심 구역에 임시로 남겨 두지 않는다. 여분 blank carrier는 먼저 제거한다.",
+    "[COS129 — 연분홍 접수증](./cos129.json), [COS134 — 청백색 속행전표](./cos134.json), [COS141 — 청회색 사후열람자](./cos141.json), [COS156 — 무수령 인계대](./cos156.json), [COS173 — 늦게 식는 부재면](./cos173.json), [COS188 — 무본문 대용철](./cos188.json) 표식이 동반되면, 절차 종료보다 body 회수를 우선한다.",
+    "현장 인원이 `지금거`, `넘겨진 것`, `이미 읽힌 것`처럼 carrier 상태만으로 결론을 내릴 경우, 그 발화를 이상 징후로 기록하고 실물 본문 위치를 재확인한다."
+  ],
+  "hypotheses": [
+    "현재 자료는 COS195가 주변 COS가 이미 만든 절차 표식을 가장 portable한 leading edge로 재배치하는 **이동성 edge anchor**라는 가설과 가장 잘 맞는다. 이 설명이 맞다면 [COS129 — 연분홍 접수증](./cos129.json)의 접수번호, [COS134 — 청백색 속행전표](./cos134.json)의 이월문구, [COS141 — 청회색 사후열람자](./cos141.json)의 열람 외피, [COS156 — 무수령 인계대](./cos156.json)의 인계 완료 상태는 본문이 아니라 clip이 붙은 carrier를 따라 움직이게 된다.",
+    "대안 가설로는 COS195가 스스로 `현행 carrier`를 지정하고 그 뒤에 receipt·review·handover 표식이 따라붙는다는 설명이 있다. 그러나 표식 생성 순서는 사례마다 달랐고, clip 제거 뒤 열감과 일부 상태만 남는 예가 있어 현재 단계에서는 `표식 생성원`보다 `표식 집적체` 해석이 더 관찰 사실에 가깝다.",
+    "[COS188 — 무본문 대용철](./cos188.json)과의 빈번한 동시 관측 때문에 COS195가 shell 안정화의 후속 산물이라는 설명도 검토 중이다. 다만 동일 clip 반응이 route card와 handoff card에서도 재현되었으므로, 현 단계에서는 COS188의 하위 현상으로 종속시키지 않는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "현행본 오지정 위험",
+      "assessment": "매우 높음: blank carrier가 실제 body보다 우선 사건철로 등록될 수 있다."
+    },
+    {
+      "category": "접수·인계 체인 절단 위험",
+      "assessment": "매우 높음: 수령자 공란 상태로 완료 코드가 닫힐 수 있다."
+    },
+    {
+      "category": "제한 표본 오정렬 위험",
+      "assessment": "높음: 실물이 제자리에 있어도 차기 서가나 차기 절차로 처리될 수 있다."
+    },
+    {
+      "category": "열감·사후열람·속행 표식의 동시 고정 위험",
+      "assessment": "높음: 하나의 carrier가 여러 완료 외피를 동시에 흡수할 수 있다."
+    },
+    {
+      "category": "직접 신체 손상 위험",
+      "assessment": "낮음: 현재까지 인체 손상 사례는 없다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS195 현장에서 가장 먼저 기록할 값은 제목이나 완료 코드가 아니라, clip이 물고 있는 carrier의 질량과 그 반경 30 cm 안에 남은 실제 본문 위치이다."
+    },
+    {
+      "type": "quotation",
+      "content": "**`집게가 잡고 있는 것은 내용이 아니라 지금 차례라는 감각이었습니다.` — ARC-07, 2043-04-18 현장 메모**"
+    },
+    {
+      "type": "paragraph",
+      "content": "clip을 ordinary stationery로 분류해 drawer에 돌려놓은 2건 모두에서 24시간 안에 같은 shelf block에서 blank carrier 우선권이 재발했다. 회수 즉시 증인카드로 옮기지 않으면 chain restoration보다 state reattachment가 먼저 일어난다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-195 정식 편입",
+      "paragraphs": [
+        "2043-04-18~2043-04-20 현장 메모에 사용된 `T-195`, `grey current clip`, `leading clip drift` 표기는 모두 COS195로 통합한다.",
+        "초기 임시 설명 `A188-shell 부속 집게`는 [COS188 — 무본문 대용철](./cos188.json) 외의 carrier에서도 동일 현상이 재현된 뒤 폐기되었다. 공식 분류는 절차 상태를 blank leading edge로 이동시키는 clip형 물체에 둔다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "W-195 증인카드 운용",
+      "paragraphs": [
+        "`W-195` 증인카드는 180×75 mm 무광 흑색 세라믹 laminate에 단일 상단 notch를 둔 전용 carrier이다.",
+        "회수된 COS195 표본은 실제 본문, route card, handoff card 대신 `W-195`에만 임시 부착할 수 있다.",
+        "`W-195` 사용 뒤에도 20분 열감 추적과 주변 blank edge 제거가 완료되기 전까지는 현행본, 접수본, 인계본 판정을 재개하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 최소 기준",
+      "paragraphs": [
+        "상단 모서리에 부착된 clip형 물체가 비자성이고 길이 31~39 mm, 질량 2 g 미만이며, carrier 질량이 내용량과 맞지 않으면 COS195 1차 의심 표본으로 분류한다.",
+        "의심 표본은 촬영과 계측 후 곧바로 반경 30 cm, 인접 1~3슬롯, 같은 drawer 뒤쪽에서 실제 본문을 찾는다.",
+        "단말의 `current copy`, `reviewed`, `handover complete` 제안은 판정 근거가 아니며, 실물 body 회수와 chain 번호 대조가 우선한다."
+      ]
+    },
+    {
+      "title": "접수·인계 구역 금지사항",
+      "paragraphs": [
+        "blank route card, blank handoff card, empty shell, divider, 라벨대 끝단에 ordinary clip을 임시 부착해 두지 않는다.",
+        "COS195 의심 구역에서는 상태 코드를 먼저 닫지 말고, 수령자·검토자·접수자 공란을 사후 보완하지 않는다.",
+        "tray lip, shelf edge, handoff rail에 반월형 열감이 남으면 carrier 제거 뒤 20분 동안 주변 blank edge를 모두 비워 둔다."
+      ]
+    }
+  ]
+}
