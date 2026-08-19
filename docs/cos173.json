@@ -310,6 +310,15 @@
       "paragraphs": [
         "[COS195 — 회청색 현행집게](./cos195.json) 분리 뒤 blank card edge, tray lip, shelf edge에 29.8~31.6°C의 반월형 잔열이 11~18분 지속된 사례가 반복되었다. 이 온기는 실제 최근 열람자보다 현행집게가 떠난 선두 모서리를 강조하는 경우가 많으므로, COS173 형태의 열감이 edge 중심으로 남으면 최근 인원 접근 증거가 아니라 COS195 이탈 지점으로 우선 분류한다."
       ]
+    },
+    {
+      "relatedId": 196,
+      "type": "reciprocal",
+      "title": "COS196 상호기록",
+      "paragraphs": [
+        "[COS196 — 회청색 선행표지본](./cos196.json) 확증 사례 18건의 후행 body 좌표에서는 모두 28.8~31.6°C 범위의 직사각형 잔열이 9~18분 지속되었다. 이는 [COS173 — 늦게 식는 부재면](./cos173.json)의 최근성 외형이 실제 열람자보다 `본문이 뒤에 남아 있는 자리`를 표지하는 방향으로 사용된 대표 사례다.",
+        "COS173 잔열이 표지 없는 tray, rack 한 칸 뒤, belt 후행 좌표에서 반복되면 최근 인원 접근보다 COS196 front-body 분리를 우선 의심한다. 해당 온기를 근거로 current copy를 확정하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

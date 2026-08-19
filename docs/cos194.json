@@ -377,6 +377,15 @@
         "pseudo-body가 형성된 개별 page surface에는 `A194-sheet` 접두를, 숙주 shell에는 `A194-shell`, 실제 분리 body에는 `A194-body`, page total·appendix number·summary collapse·queue reservation처럼 파생된 흔적에는 `A194-trace` 접두를 부여한다.",
         "음성 판독 또는 집단 노출이 발생한 표본은 `A194-read`를 추가 표기한다. `A194-shell`, `A194-body`, `A194-trace` 자료는 동일 보관 슬리브를 공유할 수 없으며, 실제 body 직접 확인 전까지 서로를 대리하지 못한다."
       ]
+    },
+    {
+      "relatedId": 196,
+      "type": "reciprocal",
+      "title": "COS196 상호기록",
+      "paragraphs": [
+        "[COS196 — 회청색 선행표지본](./cos196.json) A196-front 뒤에 blank sheet 1매를 삽입한 4건 중 3건에서 `1/x` 표기와 paragraph block이 형성되어 [COS194 — 회청색 대용본문지](./cos194.json)와 동일한 pseudo-body가 생성되었다. 실제 body는 모두 후행 sleeve나 rack 뒤에 남아 있었으므로, 이 대용본문은 복원본이 아니라 선행 전면이 공란지를 본문 자리로 끌어올린 후속 분기다.",
+        "COS194 현장에서 상단 제목선은 선명하나 footer hash가 후방 body와만 일치하는 pseudo-body가 발견되면, blank sheet 자체를 body로 확정하지 말고 COS196 front-body 분리를 우선 추적한다."
+      ]
     }
   ],
   "supplementalSections": [

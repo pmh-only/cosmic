@@ -375,6 +375,15 @@
       "paragraphs": [
         "[COS195 — 회청색 현행집게](./cos195.json)는 [COS188 — 무본문 대용철](./cos188.json)의 shell을 `current copy`로 안정시키는 가장 빈번한 동반 표본으로 확인되었다. clip이 shell 상단 우측에 부착된 사례에서는 실제 body가 1~3슬롯 뒤에 남아 있어도 terminal 우선권과 검토선이 shell 쪽으로 이동했다. 따라서 COS188 shell이 비정상적으로 가볍고 선두 모서리에 회청색 clip이 있으면, shell 자체의 정본화보다 COS195 결합 여부를 먼저 기록한다."
       ]
+    },
+    {
+      "relatedId": 196,
+      "type": "reciprocal",
+      "title": "COS196 상호기록",
+      "paragraphs": [
+        "[COS196 — 회청색 선행표지본](./cos196.json) A196-front를 empty shell에 15분 노출한 9건 중 6건에서, 실제 body가 별도 sleeve에 남아 있는데도 shell이 사건철 권위를 유지하는 [COS188 — 무본문 대용철](./cos188.json)형 안정화가 발생했다. 이 결합에서는 선행 전면이 shell의 전면 제목선과 current status를 먼저 채우고, 본문 부재는 후방으로 밀려난다.",
+        "COS188 shell이 비정상적으로 가볍고 동일 footer hash의 body가 근처 다른 보관체에서 발견되면, 이를 정본화보다 COS196의 후속 고착 단계로 기록한다. shell과 body는 같은 체인 번호를 공유하더라도 서로를 대리하지 못한다."
+      ]
     }
   ],
   "supplementalSections": [

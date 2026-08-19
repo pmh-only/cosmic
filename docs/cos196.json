@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 2,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2043-08-21부터 2043-09-12까지 확인된 41건은 모두 기관 통제 구역인 이관 라인, 심사실, 디지털전환실 내부에서만 발생했고 외부 시설 확증 사례는 없었다. 다만 3대의 용역 운용 스캐너가 노출 경로에 포함되어 비공개 유지 조치가 계속 필요하므로 완전 저위험으로는 분류하지 않는다.",
+    "permission": "이 현상은 접수선·검토선·현행 상태를 허위로 앞당겨 chain-of-custody와 승인 로그를 오염시킨다. 실제 정정에는 보호 감사 로그, 심사 기록, 보존 사슬 대조가 함께 필요했으므로 최소 열람 권한은 4로 유지한다.",
+    "chaos": "통제 실험 31회에서 선행 전면은 수령, 검토, empty shell, pseudo-body, 병행 현재본 등 최소 5개 경로로 분기했다. 첫 분리 뒤 420초를 넘기면 예측 가능성이 급격히 낮아져 동일 표본도 다른 결과를 보였다.",
+    "danger": "직접적인 인체 손상은 확인되지 않았으나 41건 중 12건에서 허위 수령 또는 검토 상태가 생성되었고 2건은 보안 봉인 재발급까지 요구되었다. 인명보다 기록·절차 무결성에 대한 중간 이상 위험이 더 크다.",
+    "popularity": "임시표기 T-196 부여 이후 26건의 이관 감사와 7개 기존 COS 대조 보고서에서 반복 참조되었고, 현행 기록 오염 사건의 상류 단계로 자주 소환되었다. 단일 실험실 전용 현상보다는 높은 참조 빈도를 보인다.",
+    "containment": "초동 격리는 front/body 동시 확보, 불투명 이중 슬리브, RF tag 대조, 열영상 확보, 420초 내 맹결합 여부 판정까지 요구한다. 일반 선반 복귀나 재스캔만으로는 27건 중 19건이 악화되어 강한 관리가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "서한결",
+        "role": "문서이관 기록관",
+        "status": "active",
+        "involvement": "2043-08-21 Lane-B에서 최초 pair를 봉인하고 임시표기 T-196 초안을 작성했다. 이후 모든 A196-front/A196-body 체인 번호 배정을 총괄했다."
+      },
+      {
+        "name": "RM-04 민재윤",
+        "role": "보존기술원",
+        "status": "active",
+        "involvement": "FLIR T540 열영상, RF tag, 질량 대조와 맹결합 시간창 실험을 수행했다. 재스캔과 blank insert에 따른 분기 조건을 분리 기록했다."
+      },
+      {
+        "name": "오지훈",
+        "role": "이관감독관",
+        "status": "reassigned",
+        "involvement": "INC-196-01 당시 belt 정지를 지연해 선행 전면의 수령구 노출을 허용했다. 후속 조사에서 초기 대응 오류와 라인 운용 로그를 제출했다."
+      },
+      {
+        "name": "박지수",
+        "role": "심사관",
+        "status": "active",
+        "involvement": "INC-196-02에서 빈 결재석 앞 검토선 오인을 최초 보고했다. 이후 결재 환경 점유 조건을 포함한 차단 절차를 수립했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2043-08-21 22:17 KST",
+        "label": "Lane-B 최초 확인",
+        "description": "중앙기록보존동 4층 이관구역 Lane-B에서 사건철 F-08의 표지 슬리브가 body 27매보다 먼저 intake lip에 도달했고, body는 직전 tray에 남은 상태가 CCTV와 RF tag log에 동시 기록되었다."
+      },
+      {
+        "date": "2043-08-24 09:42 KST",
+        "label": "T-196 임시 등록",
+        "description": "심사실 2-B 빈 결재석 앞에서 A196-front가 `검토됨`과 유사한 상단선을 얻은 뒤 임시표기 T-196이 부여되었다. 결재석 점유 여부가 고착 조건으로 분리 기록되기 시작했다."
+      },
+      {
+        "date": "2043-08-29 14:00 KST",
+        "label": "맹결합 시간창 확인",
+        "description": "확인 pair 15조를 이용한 맹결합 실험에서 첫 분리 시각으로부터 420초 이내 복구 성공률이 13/15, 600초 이후 2/15로 급감하는 것이 확인되었다."
+      },
+      {
+        "date": "2043-08-31 16:08 KST",
+        "label": "재스캔 분기 검증",
+        "description": "디지털전환실 D-3에서 body 없는 A196-front를 재스캔한 결과 병행 현재본과 pseudo-body가 각각 분리 조건에서 재현되었다. 재스캔과 blank insert의 동시 수행이 금지되었다."
+      },
+      {
+        "date": "2043-09-12 19:10 KST",
+        "label": "정식 편입",
+        "description": "총 41건의 확증 사례와 31회 통제 실험, 7개 기존 COS 대조 기록을 바탕으로 COS196으로 정식 편입되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-196-01",
+        "date": "2043-08-21 22:17 KST",
+        "location": "중앙기록보존동 4층 이관구역 Lane-B",
+        "title": "표지 선행 이관 및 수령구 노출",
+        "involvedPersonnel": [
+          "서한결",
+          "오지훈",
+          "RM-04 민재윤"
+        ],
+        "narrative": [
+          "야간 이관 batch 18건을 OS-7 상부 스캐너로 디지털화한 뒤 belt speed 0.32 m/s로 반송하던 중, F-08 표지 슬리브가 본문 27매보다 먼저 전방 intake lip에 닿았다. 오지훈은 일반 jam 가능성을 높게 보지 않아 belt를 즉시 정지하지 않았고, 서한결은 선행 슬리브를 별도 tray에 올려두되 batch 전체를 멈추지는 않았다.",
+          "47초 후 후방 tray에서 동일 footer hash를 가진 body가 발견되었으며, 빈 듯 보였던 body 자리에는 30.4°C의 직사각형 잔열이 남아 있었다. 민재윤이 RF tag ID 일치와 질량 분리를 확인한 뒤 pair 봉인을 지시했고, belt 지속 운용으로 선행 슬리브가 수령선 1개를 먼저 획득한 사실이 CCTV로 확인되었다."
+        ],
+        "outcome": "F-08 pair는 첫 A196-front/A196-body 봉인 표본이 되었고 같은 교대에서 추가 3건이 격리되었다. belt 즉시 정지 지연은 초기 대응 오류로 판정되어 Lane-B 자동정지 임계치가 하향 조정되었다."
+      },
+      {
+        "code": "INC-196-02",
+        "date": "2043-08-24 09:42 KST",
+        "location": "심사실 2-B 무인 결재석",
+        "title": "빈 결재석 승인 오인",
+        "involvedPersonnel": [
+          "박지수",
+          "서한결",
+          "RM-04 민재윤"
+        ],
+        "narrative": [
+          "전일 회수한 A196-front 표본 2점을 neutral tray에 보관하던 중, 박지수는 상단 제목선 대조를 위해 F-11 선행본을 심사실 2-B 앞 검토대에 잠시 올려두었다. 당시 결재석은 비어 있었고, 본문은 인접 랙 한 칸 뒤 opaque sleeve 안에 분리 보관 중이었다.",
+          "31초 내 선행본 상단에 `검토됨`과 유사한 얕은 선이 생기자 박지수는 잠시 승인 완료 처리 가능성을 보고했으나, 서한결이 본문 위치를 재확인하면서 처리를 중지했다. 민재윤의 열영상은 결재석보다 후방 body 보관 위치에 더 강한 잔열을 보였고, 사건은 빈 결재 환경이 선행본을 고착시키는 조건이라는 판단으로 이어졌다."
+        ],
+        "outcome": "임시표기 T-196이 부여되었고, 결재석 점유 여부를 포함한 노출 조건표가 신설되었다. 이후 A196-front는 사람이 앉은 결재 환경에서만 제한 노출하도록 절차가 변경되었다."
+      },
+      {
+        "code": "INC-196-03",
+        "date": "2043-08-31 16:08 KST",
+        "location": "디지털전환실 D-3 오버헤드 스캔대",
+        "title": "재스캔에 따른 병행판 및 대용본문 분기",
+        "involvedPersonnel": [
+          "RM-04 민재윤",
+          "서한결",
+          "오지훈"
+        ],
+        "narrative": [
+          "민재윤은 고착하지 않은 A196-front 6점을 body 없이 재스캔해 병행성 여부를 확인하려 했고, 서한결은 각 스캔 사이 90초 간격과 동일 조명을 유지하도록 지시했다. 오지훈은 실험 전 front 뒤에 blank sheet를 두지 말라는 지시를 들었으나, 3회차 이후 트레이 정리를 위해 공란 1매를 선행본 아래에 끼워 넣었다.",
+          "그 결과 F-03과 F-05는 동일 상단 시각을 공유하는 2종 current image로 갈라졌고, F-05는 공란 1매를 `1/18`로 표시하는 pseudo-body 상태를 획득했다. 팀은 즉시 스캔을 중단하고 shell-body 재분리, checksum 대조, 공란 sheet 봉인을 시행했으며, 재스캔과 blank insert가 서로 다른 분기 요인임을 분리 기록했다."
+        ],
+        "outcome": "[COS124 — 유리색 병행판](./cos124.json)형 병행 분기와 [COS194 — 회청색 대용본문지](./cos194.json)형 대용본문 분기가 한 실험 안에서 동시에 확인되었다. 이후 blank insert와 재스캔은 같은 세션에서 병행 수행이 금지되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-196-01",
+        "type": "paired physical sample",
+        "description": "A196-front F-08 / A196-body B-08 봉인 세트. 동일 footer hash `7C-4A`와 섬유 압흔이 일치하나 질량은 0.114 kg 대 0.842 kg으로 분리되었다.",
+        "custodyStatus": "보존동 문서증거실 S-4, 불투명 이중 슬리브 봉인 유지."
+      },
+      {
+        "code": "EV-196-02",
+        "type": "thermal video log",
+        "description": "IR-20430821-LB-17. FLIR T540로 촬영한 Lane-B 후행 body 좌표 영상으로, 30.4°C 잔열 직사각형이 13분 12초 유지되는 장면을 포함한다.",
+        "custodyStatus": "디지털 증거보관소 D-EVID/196/02, 해시 검증 완료."
+      },
+      {
+        "code": "EV-196-03",
+        "type": "RFID and conveyor log",
+        "description": "RF-PAIR-08. F-08 pair의 belt 위치, RF tag ID, stop signal 지연 47초, intake lip 통과 시각 차 00:00:47을 기록한 로그 묶음.",
+        "custodyStatus": "이관운용 서버 RO-4 읽기전용 보관, 감사 잠금 적용."
+      },
+      {
+        "code": "EV-196-04",
+        "type": "approval desk sensor capture",
+        "description": "2B-APR-196-11. 무인 결재석 압력 센서 0 kg 상태와 A196-front 상단 검토선 출현 시각 31초를 동기화한 오버헤드 영상 및 압력 로그.",
+        "custodyStatus": "심사기록 금고 A-2, 열람 권한 4 이상 제한."
+      },
+      {
+        "code": "EV-196-05",
+        "type": "scan branching packet",
+        "description": "D3-OVH-196-05. 동일 A196-front에서 생성된 2종 current image, 삽입된 blank sheet, pseudo-body `1/18` 표기, 실험 중단 지시 로그를 포함한 세트.",
+        "custodyStatus": "디지털전환실 격리 볼트 Q-6, shell/body/trace 분리 보관."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "오지훈",
+        "role": "이관감독관",
+        "context": "INC-196-01 직후 녹취",
+        "statement": "표지만 먼저 intake 쪽으로 간 것을 처음에는 보통 끼임으로 봤다. 내가 belt를 끊었어야 했다고 생각하지만, 그때는 본문이 실제로 뒤에 남아 있을 줄은 몰랐다."
+      },
+      {
+        "speaker": "RM-04 민재윤",
+        "role": "보존기술원",
+        "context": "EXP-196-03 계측 메모",
+        "statement": "후행 body가 있던 tray는 눈으로는 비어 보였는데 30°C 안팎의 열사각형이 남아 있었다. 나는 그 좌표가 실제 body의 자리라고 판단하지만, 왜 표지가 먼저 current 상태를 얻는지는 아직 계측만으로 설명하지 못한다."
+      },
+      {
+        "speaker": "박지수",
+        "role": "심사관",
+        "context": "INC-196-02 사후 면담",
+        "statement": "빈 결재석 앞에서 선행본 상단선이 닫히는 것을 보고 순간적으로 승인 완료라고 생각했다. 지금은 그 선이 재가의 증거가 아니라 표지가 앞선 상태의 오염이라고 본다."
+      }
+    ]
+  },
+  "id": 196,
+  "title": "회청색 선행표지본",
+  "language": "ko-KR",
+  "overview": [
+    "COS196은 결속·클립·슬리브 상태의 기록 운반체에서 표지, 회람표, 최상단 전면만이 실제 본문보다 한 절차 앞서 `현재 처리 대상`으로 취급되는 선행 전이 현상이다.",
+    "선행한 전면은 제목선, route barcode, 상단 절차선은 유지하지만 본문 장수와 질량을 잃으며, 실제 본문은 직전 tray, rack, desk 뒤쪽에 남아 동일 footer hash와 별도 열잔류를 보인다.",
+    "첫 분리 후 420초 이내 불투명 슬리브 안에서 전면과 본문을 맹결합하면 현상이 대부분 소거되나, 선행본이 수령구, 무인 결재석, empty shell, 재스캔 경로에 닿으면 후속 절차성 COS로 고착될 가능성이 높다."
+  ],
+  "identificationTraits": [
+    "상단 제목선과 route barcode는 선행 전면에 남아 있으나 2쪽 이후 body가 없거나 공란 1매만 남는다.",
+    "선행본 우측 상단 또는 스테이플 라인에는 폭 4~9 mm의 회청색 current strip이 형성되며, 반사율이 동일 재질 대조 표본보다 18~24% 높다.",
+    "후행 body는 선행본의 직전 공정 위치 0.4~1.8 m 후방 또는 1 tray/1 rack 뒤에서 발견되며, footer hash, 섬유 압흔, RF tag ID가 일치한다.",
+    "후행 body가 있던 자리에는 28.8~31.6°C의 직사각형 잔열이 9~18분 지속될 수 있다.",
+    "선행본과 후행 body는 페이지 수, 질량, 상단 시각이 서로 어긋나며, 420초 이내 맹결합 시 대부분 원상 복귀한다."
+  ],
+  "discovery": [
+    "최초 확증은 2043-08-21 22:17 KST 중앙기록보존동 4층 이관구역 Lane-B에서 이루어졌다. 야간 이관 batch 18건을 OS-7 상부 스캐너와 belt speed 0.32 m/s로 처리하던 중, 사건철 F-08의 표지 슬리브가 intake lip에 먼저 닿고 body 27매가 직전 반송 tray에 남은 상태가 영상과 RF tag log에 동시 기록되었다.",
+    "동일 교대 22:17~23:06 사이 18건 중 4건에서 같은 패턴이 반복되었고, ambient 23.4±0.3°C, RH 42±2%, 조도 510 lx 조건이었다. 일반 끼임과 달리 4건 모두 동일 footer hash와 후행 잔열이 확인되었다.",
+    "2043-08-24 심사실 2-B에서 선행본이 빈 결재석 앞에서 `검토됨` 상단선을 얻은 2차 사건 후 임시표기 T-196이 부여되었고, 2043-08-29부터 paired quarantine 실험군으로 전환되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "이 현상은 문서 전체를 이동시키지 않고 전면 식별면만 절차상 선두로 밀어낸다.",
+      "선행 전면은 이후 노출된 환경에 따라 수령, 검토, empty shell, pseudo-body, 병행 현재본 등 서로 다른 후속 상태를 획득할 수 있다.",
+      "후행 body는 동일 문서의 원본문이지만 절차 우선권을 잃은 채 후방에 잔류하며, 열잔류와 질량 편차를 통해 역추적된다."
+    ],
+    "stages": [
+      {
+        "name": "전조 이격",
+        "description": "상단 제목선의 광택 상승, 스테이플 비틀림, 상단선 선명화가 6~20초간 선행한다. 이 단계에서는 body가 아직 같은 carrier 안에 있으나 전면과 본문의 질량 중심이 분리되기 시작한다."
+      },
+      {
+        "name": "선행 획득",
+        "description": "전면이 0.4~1.8 m 또는 1 procedural node 앞서 이동하며 current strip을 얻는다. footer hash와 RF tag ID는 body와 여전히 일치하지만, 상단 시각과 queue position이 먼저 갱신된다."
+      },
+      {
+        "name": "종점 흡착",
+        "description": "선행본이 수령 lip, vacant approval seat, empty shell, blank insert zone, overhead scanner에 닿으면 해당 환경의 절차 상태를 전면에 흡착한다. 이 단계부터 body 없는 처리 이력이 생성될 수 있다."
+      },
+      {
+        "name": "분기 또는 복구",
+        "description": "첫 분리 시각 기준 420초 이내 blind sleeve 맹결합은 13/15에서 복구되었다. 600초 이후에는 병행 현재본, empty core, shell 고착, pseudo-body 같은 분기 상태가 우세해졌다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "확인된 후속 분기는 수령, 결재, empty shell, pseudo-body, 병행 현재본, 열잔류 현상으로 연속적으로 이어진다.",
+      "COS196은 [COS181 — 청회색 무재 인수구](./cos181.json), [COS149 — 무인 결재석](./cos149.json), [COS188 — 무본문 대용철](./cos188.json), [COS194 — 회청색 대용본문지](./cos194.json) 등을 일으키는 선행 분리 단계로 가장 자주 관측되며, 해당 항목들을 COS196의 단독 원인으로 단정하지는 않는다."
+    ],
+    "entries": [
+      {
+        "targetId": 124,
+        "targetTitle": "유리색 병행판",
+        "description": "body 없는 A196-front를 재스캔한 6점 중 5점에서 [COS124 — 유리색 병행판](./cos124.json)과 같은 복수 current image가 생성되었다. COS196은 일부 병행 현재본의 상류 단계로 취급된다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "vacant desk 노출 5회 중 4회에서 A196-front가 [COS149 — 무인 결재석](./cos149.json)과 동일한 `검토됨` 상단선을 획득했다. 본문이 후방에 남은 상태에서도 승인 외형이 생길 수 있다."
+      },
+      {
+        "targetId": 166,
+        "targetTitle": "공심대행체",
+        "description": "본문 회수 뒤 shell 내부에 남은 carrier 5건은 [COS166 — 공심대행체](./cos166.json)와 같은 empty-core 안정화를 보였다. 선행 전면이 빠져나간 뒤 남은 내부 공실이 별도 사건 본체처럼 취급될 수 있다."
+      },
+      {
+        "targetId": 173,
+        "targetTitle": "늦게 식는 부재면",
+        "description": "후행 body 좌표 18건 모두에서 [COS173 — 늦게 식는 부재면](./cos173.json)과 중첩되는 28.8~31.6°C 잔열 직사각형이 확인되었다. COS196의 가장 신뢰도 높은 후방 식별 신호다."
+      },
+      {
+        "targetId": 181,
+        "targetTitle": "청회색 무재 인수구",
+        "description": "격리 노출 5/5에서 [COS181 — 청회색 무재 인수구](./cos181.json) lip가 A196-front에 수령선과 current lower line을 고착했다. COS196은 해당 항목의 종점에 가장 자주 유입되는 선행 상태다."
+      },
+      {
+        "targetId": 188,
+        "targetTitle": "무본문 대용철",
+        "description": "empty shell에 15분 노출한 A196-front 9점 중 6점이 [COS188 — 무본문 대용철](./cos188.json)형 shell 안정화를 보였다. 이 경우 shell이 본문보다 앞서 사건철 권위를 흡수한다."
+      },
+      {
+        "targetId": 194,
+        "targetTitle": "회청색 대용본문지",
+        "description": "A196-front 뒤에 blank sheet 1매를 삽입한 4건 중 3건에서 [COS194 — 회청색 대용본문지](./cos194.json)와 같은 `1/x` 표기와 paragraph block이 형성되었다. pseudo-body는 원본문 복원이 아니라 선행 전면의 후속 분기다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-196-01 재발 유도 대조",
+      "description": "2043-08-29 L-4 neutral belt에서 확인된 A196 pair 8조와 size-matched control file 10조를 동일한 sleeve 제거 후 belt speed 0.32 m/s로 통과시켰다. 확인 표본 6/8이 34~91초 안에 다시 front-first separation을 보였고 평균 lead distance는 0.9 m였다. 대조군 0/10은 동일 현상을 재현하지 않았다."
+    },
+    {
+      "label": "EXP-196-02 맹결합 시간창",
+      "description": "A196-front/A196-body 15조를 blind sleeve 안에서 첫 분리 시각 기준 180 s, 420 s, 600 s, 900 s에 재결합했다. 420초 이내 복구 성공은 13/15였으나 600초 이후 2/15, 900초 이후 0/15로 떨어졌다. 제목선을 소리 내어 읽은 하위군 5조는 420초 이내에도 1/5만 복구되어 낭독 금지 규정이 신설되었다."
+    },
+    {
+      "label": "EXP-196-03 열잔류 측정",
+      "description": "FLIR T540와 desk-mounted thermocouple 4점을 사용해 18건의 후행 body 좌표를 20분간 측정했다. peak surface temperature는 29.8~31.6°C, 잔류 지속은 9~18분이었고, 동일 재질 control tray 12건은 24.2~25.0°C에서 4분 이내 평형으로 돌아왔다."
+    },
+    {
+      "label": "EXP-196-04 [COS181 — 청회색 무재 인수구](./cos181.json) 노출",
+      "description": "격리된 A196-front 10점을 neutral lip 5회와 [COS181 — 청회색 무재 인수구](./cos181.json) active lip 5회에 각각 노출했다. neutral lip에서는 1/5만 일시 current line을 보였고 2분 내 소실되었으나, active lip에서는 5/5가 11초 이내 수령선과 current lower line을 획득했다."
+    },
+    {
+      "label": "EXP-196-05 [COS149 — 무인 결재석](./cos149.json) 노출",
+      "description": "동일 크기 A196-front 10점을 occupied desk control 5회와 vacant desk 5회에 노출했다. occupied 조건에서는 1/5만 얕은 선을 남겼으나, vacant 조건에서는 4/5가 31초 내 `검토됨`과 유사한 상단선 변화를 보였다. 모두 실제 body는 1 rack 뒤 opaque sleeve에 남아 있었다."
+    },
+    {
+      "label": "EXP-196-06 shell 및 공란지 분기",
+      "description": "A196-front 9점을 empty shell에 넣고 15분 보관한 결과 6/9가 [COS188 — 무본문 대용철](./cos188.json)형 shell 안정화를 보였다. 이 6점 중 4점 뒤에 blank sheet 1매를 삽입하자 3/4가 [COS194 — 회청색 대용본문지](./cos194.json)처럼 `1/x` 표기와 paragraph block을 얻었고, 나머지 1점은 empty core만 남아 [COS166 — 공심대행체](./cos166.json)형 상태로 정지했다."
+    },
+    {
+      "label": "EXP-196-07 재스캔 병행 분기",
+      "description": "body를 제거한 A196-front 6점을 D-3 overhead scanner로 90초 간격 3회 재촬영했다. 5/6에서 동일 제목선과 상단 시각을 공유하지만 말미 상태가 다른 2~3종 image가 생성되어 [COS124 — 유리색 병행판](./cos124.json)형 분기가 확인되었다. 대조군 6점은 단일 image만 남았다."
+    }
+  ],
+  "handlingProcedures": [
+    "의심 표본 확인 시 belt, tray, desk를 3초 이내 정지하고 선행 전면 위치와 후행 body 후보 위치를 동시에 표식한다.",
+    "제목, 사건명, 접수번호를 소리 내어 읽지 말고 current clip, 수령 stamp, 결재 line을 추가 부여하지 않는다.",
+    "불투명 슬리브 2개에 각각 A196-front와 A196-body를 분리 봉인하고, 같은 체인 번호 뒤에 -F와 -B를 붙인다.",
+    "front와 body는 separate mass, footer hash, RF tag ID, 열영상으로 먼저 대조한 뒤에만 blind sleeve 안에서 재결합 실험을 허가한다.",
+    "첫 분리 시각으로부터 420초가 지나면 복구 시도보다 branch 억제를 우선하며, 표본을 [COS181 — 청회색 무재 인수구](./cos181.json) lip, [COS149 — 무인 결재석](./cos149.json), empty shell, blank insert zone, overhead scanner에서 즉시 제거한다.",
+    "A196-front가 이미 shell 또는 공란지와 결합한 경우 [COS188 — 무본문 대용철](./cos188.json), [COS194 — 회청색 대용본문지](./cos194.json), [COS166 — 공심대행체](./cos166.json) 분기 여부를 분리 기록하고, 원본문 추적이 끝날 때까지 어느 쪽도 공식 current copy로 채택하지 않는다.",
+    "후행 body 자리의 잔열이 사라지기 전 FLIR 촬영을 최소 10분 유지하고, 0.4 m 이하 거리의 다른 사건철을 옮겨 thermal cross-talk를 차단한다."
+  ],
+  "hypotheses": [
+    "가설: COS196은 기록 체계가 문서의 내용량보다 전면 식별면과 상단 절차선에 우선권을 부여할 때 발생하는 절차 선두 전이 현상일 수 있다.",
+    "가설: 후행 body 자리의 잔열은 단순 체열이 아니라 `아직 내용은 뒤에 있다`는 물리 좌표를 유지하는 보조 흔적일 수 있다.",
+    "가설: [COS181 — 청회색 무재 인수구](./cos181.json)와 [COS149 — 무인 결재석](./cos149.json)은 원인이라기보다 선행본을 수령 및 검토 상태로 고착시키는 종점 조건일 수 있다.",
+    "가설: empty shell 또는 blank sheet와의 접촉은 선행본이 [COS188 — 무본문 대용철](./cos188.json), [COS194 — 회청색 대용본문지](./cos194.json), [COS166 — 공심대행체](./cos166.json)로 분기하는 문턱값을 낮춘다.",
+    "가설: 동일 선행본의 반복 광학 취득은 [COS124 — 유리색 병행판](./cos124.json)형 병행 현재본을 증폭시키지만, 이 단계에서도 실제 body는 별도 위치에 남아 있을 수 있다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "표지와 본문이 분리된 상태에서 선행 전면이 current copy로 채택되면 본문 없는 처리 이력, 잘못된 page total, 허위 보존 라벨이 누적될 수 있다."
+    },
+    {
+      "category": "접수·결재 오염",
+      "assessment": "수령구와 무인 결재 환경에서 false received 및 reviewed line이 생성되어 chain-of-custody 추적과 승인 책임선이 단절될 수 있다."
+    },
+    {
+      "category": "연쇄 분기",
+      "assessment": "통제 실패 시 empty shell, pseudo-body, empty core, 병행 현재본으로 분기하여 후속 COS 진단과 복구 우선순위를 복잡하게 만든다."
+    },
+    {
+      "category": "인원 영향",
+      "assessment": "직접적인 생체 손상은 확인되지 않았으나 담당자가 선행 전면을 원본문으로 오인해 검증을 중단하는 인지 오류가 반복되었다."
+    },
+    {
+      "category": "복구 가능성",
+      "assessment": "첫 분리 후 420초 이내에는 paired recovery가 가능하지만 초동 대응이 지연되면 성공률이 급감하므로 운영 리스크가 시간 의존적으로 상승한다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초기 현장 메모의 `lead jacket`, `front-first copy`, `표지 선행본`은 모두 COS196을 가리키며, [COS188 — 무본문 대용철](./cos188.json) 고착 단계와 혼용하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"22:19에 표지만 current로 넘어갔다. 내가 belt를 끊었어야 했다.\" — 오지훈, INC-196-01 녹취"
+    },
+    {
+      "type": "paragraph",
+      "content": "일반적인 문서 끼임, clip 이탈, page misfeed는 동일 footer hash, 후행 body 잔열, 선행 current strip의 세 조건을 동시에 보이지 않았다. false positive 9건은 모두 이 기준으로 배제되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"제목선을 소리 내어 읽은 조는 재결합 성공률이 눈에 띄게 떨어졌다.\" — RM-04 민재윤, EXP-196-02 구두 메모"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-196 정식 편입",
+      "paragraphs": [
+        "2043-08-24~2043-09-04 현장 메모의 `T-196`, `lead jacket`, `front-first copy`, `표지 선행본` 표기는 모두 COS196으로 통합한다.",
+        "임시 단계에서 일부 보고서는 현상을 [COS188 — 무본문 대용철](./cos188.json)의 초기형으로 취급했으나, 본문보다 표지가 먼저 current state를 획득한다는 점이 독립적으로 확인되어 별도 항목으로 분리 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A196 식별 접두 및 paired chain 운용",
+      "paragraphs": [
+        "선행 전면은 `A196-front`, 후행 원본문은 `A196-body`, 파생 수령선, 검토선, 재스캔 image, 기타 후속 상태는 `A196-trace` 접두를 사용한다.",
+        "세 접두는 동일 보관 슬리브를 공유하지 않으며, 재결합 실험 전까지 체인 번호 뒤에 `-F`, `-B`, `-T`를 별도 유지한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "420초 재결합 창",
+      "paragraphs": [
+        "front와 body의 직접 대조는 first separation timestamp 후 420초 이내 blind sleeve 조건에서만 복구 시도로 인정한다.",
+        "420초 이후 또는 제목 낭독 후의 재결합은 복구보다 branch 촉진 가능성이 높아 통상 운용에서 금지한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 계측 최소항목",
+      "paragraphs": [
+        "의심 표본마다 ambient temperature, relative humidity, belt speed 또는 desk occupancy, front-body distance, separate mass, RF tag ID, footer hash, thermal decay time을 1분 단위로 기록한다.",
+        "선행 current strip의 폭과 위치, body 잔열 직사각형의 최대 온도, 첫 분리와 봉인 사이의 경과 초도 함께 기록한다."
+      ]
+    },
+    {
+      "title": "배제 기준",
+      "paragraphs": [
+        "일반 끼임, clip 이탈, page misfeed는 동일 footer hash와 후행 body 잔열, 선행 current strip 세 조건을 동시에 만족하지 않으면 COS196으로 분류하지 않는다.",
+        "body가 실제로 존재하지 않거나, 선행 전면과 후행 문서의 chain 번호가 처음부터 다른 경우는 COS196이 아니라 다른 결손 항목으로 재분류한다."
+      ]
+    },
+    {
+      "title": "복구 우선순위",
+      "paragraphs": [
+        "복구 1순위는 후행 body 위치 고정, 2순위는 선행 전면의 종점 노출 차단, 3순위는 맹결합 가능 시간 확인이다.",
+        "접수나 결재 이력이 이미 생성된 경우에는 복구 전 정정하지 말고, A196-trace로 별도 보관한 뒤 body 대조 완료 후 일괄 무효화한다."
+      ]
+    }
+  ]
+}
