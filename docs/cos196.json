@@ -374,6 +374,15 @@
         "front와 body의 직접 대조는 first separation timestamp 후 420초 이내 blind sleeve 조건에서만 복구 시도로 인정한다.",
         "420초 이후 또는 제목 낭독 후의 재결합은 복구보다 branch 촉진 가능성이 높아 통상 운용에서 금지한다."
       ]
+    },
+    {
+      "relatedId": 197,
+      "type": "reciprocal",
+      "title": "COS197 상호기록",
+      "paragraphs": [
+        "선행 전면과 후행 본문이 분리된 뒤 420초 재결합 창 안에 회수되지 못한 표본은, 직전 tray나 rack 뒤 얕은 정렬면에서 [COS197 — 회청색 후행본문퇴](./cos197.json) 형태로 고착될 수 있다. 이 단계에서는 A196-front가 current state를 유지한 채 남고, 실질 body는 제목선과 수령선을 잃은 본문 묶음으로 뒤쪽에 압축된다.",
+        "따라서 본 항목의 A196-front가 비정상적으로 가볍거나 page total 대비 두께가 얇을 경우, 후행 body를 단순 지연본으로 보지 말고 [COS197 — 회청색 후행본문퇴](./cos197.json) 전이 가능성을 병기한다. blind sleeve 재결합이 실패한 표본은 rear gap 검사 전까지 완료본으로 복귀시키지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

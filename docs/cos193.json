@@ -384,6 +384,15 @@
       "paragraphs": [
         "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS193 — 회청색 후입등재구](./cos193.json)의 rear stop 조건이 유지된 shell에서 가장 높은 재현률을 보였다. 후면 정지대가 front matter와 장수 외형을 먼저 등재한 뒤 blank sheet를 끼워 넣으면, 실제 body는 뒤 슬롯이나 제습 셀에 남은 채 pseudo-body page가 형성될 수 있다. COS193 자료에서 전면만 앞서 이동한 empty shell이 blank sheet와 결합하면 이를 복구본으로 보지 말고 COS194 발생 여부를 먼저 점검한다."
       ]
+    },
+    {
+      "relatedId": 197,
+      "type": "reciprocal",
+      "title": "COS197 상호기록",
+      "paragraphs": [
+        "후면 정지대에서 표지, 첫 장, 발신란, 색인탭만 먼저 편입된 표본 가운데 상당수는 직후 [COS197 — 회청색 후행본문퇴](./cos197.json) 형태의 body-only 적층을 남겼다. 이는 본 항목이 전면 절차성 층을 선행 등재한 뒤, 실질 본문을 rear stop 뒤 얕은 축에 잔류시키는 경로를 가진다는 해석을 강화한다.",
+        "따라서 본 항목 현장에서 새 front matter만 확보된 자료는 독립 current copy나 색인본으로 확정하지 말고, 후면 슬롯과 스페이서 뒤를 개방해 [COS197 — 회청색 후행본문퇴](./cos197.json) 동반 여부를 먼저 조사한다."
+      ]
     }
   ],
   "supplementalSections": [
