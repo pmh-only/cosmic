@@ -422,6 +422,14 @@
       "paragraphs": [
         "[COS195 — 회청색 현행집게](./cos195.json)가 [COS134 — 청백색 속행전표](./cos134.json)의 `차기 검토` 표식을 blank route card에 붙잡으면, 후속 절차로 이월되는 것은 실제 본문이 아니라 그 card 자체가 된다. 현행집게를 제거한 뒤에도 본문은 원래 자리나 뒤 슬롯에 남고, 속행 외피만 다른 carrier로 이동하므로 `다음 회차` 표식이 붙은 card를 후속 문서 본체로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 198,
+      "type": "reciprocal",
+      "title": "COS198 상호기록",
+      "paragraphs": [
+        "[COS198 — 회청색 후면분리턱](./cos198.json)이 continuation slip만 전면에 남기면 아직 검토되지 않은 body가 뒤 슬롯에 머무르는데도 `다음 회차`, `후속 검토` 외피가 먼저 닫힐 수 있다. 2026-07-31 카트 C-3와 EXP-198-04에서 같은 양상이 확인되었으므로, [COS134 — 청백색 속행전표](./cos134.json) 발견 시 일정 확인과 별도로 동일 host의 rear gap, body 잔류 위치, front-only 상태를 함께 조사한다."
+      ]
     }
   ],
   "supplementalSections": []

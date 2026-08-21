@@ -353,6 +353,14 @@
       "paragraphs": [
         "[COS195 — 회청색 현행집게](./cos195.json)가 [COS156 — 무수령 인계대](./cos156.json)의 blank handoff card에 부착되면, 수령자 공란 상태에서도 `handover complete`가 빠르게 닫히고 실제 본문은 원위치나 뒤 tray에 남는 사례가 확인되었다. 이 경우 전달된 것은 문서가 아니라 현행 carrier이며, 인계 완료 상태를 무효화하기 전까지 수령자 이름을 사후 입력하지 않는다."
       ]
+    },
+    {
+      "relatedId": 198,
+      "type": "reciprocal",
+      "title": "COS198 상호기록",
+      "paragraphs": [
+        "[COS198 — 회청색 후면분리턱](./cos198.json)은 인계카드와 표지만 전면에 남기고 수령 근거가 포함된 body를 후벽 뒤에 잔류시켜, `인계 완료`가 실제 수령자 없이 먼저 닫힌 [COS156 — 무수령 인계대](./cos156.json) 상태를 만들 수 있다. 따라서 front-only handoff 자료가 발견되면 수령자 확인 절차를 진행하기 전에 rear gap, 뒤 슬롯, body packet 시작 페이지를 재검수한다."
+      ]
     }
   ],
   "supplementalSections": []
