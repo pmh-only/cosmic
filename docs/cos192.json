@@ -371,6 +371,15 @@
       "paragraphs": [
         "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS192 — 회청색 전면요약패](./cos192.json)의 summary line가 empty shell 내부 blank sheet로 확장될 때 가장 자주 나타나는 후속 단계로 확인되었다. 반대로 pseudo-body를 음성 판독하거나 오버헤드 스캔하면 page block이 다시 2~7행 요약패로 붕괴하는 사례가 반복되었다. COS192 표본이 declared count를 가진 shell과 함께 있을 때는 요약문을 본문 복구의 단서로 사용하지 말고 COS194 전이·붕괴 양쪽 가능성을 함께 기록한다."
       ]
+    },
+    {
+      "relatedId": 199,
+      "type": "reciprocal",
+      "title": "COS199 상호기록",
+      "paragraphs": [
+        "[COS199 — 회청색 이격결속띠](./cos199.json)를 180초 이상 유지한 10회 중 3회에서 front 상단에 [COS192 — 회청색 전면요약패](./cos192.json)와 동일한 1~2행 요약문이 형성되었다. 이 요약은 rear body 첫 문단을 축약하지 않았고 `경유`, `대조 필요`와 같은 절차 문구만 선행했다.",
+        "따라서 COS192 일부는 blank front나 상정대 기점뿐 아니라, COS199 후기 단계에서 내용 없는 처리 완료감이 전면에 응축되며 파생될 수 있다. COS192 표본이 rear body 분리 상태와 함께 확인되면 COS199 동반 여부를 우선 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

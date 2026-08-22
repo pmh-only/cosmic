@@ -383,6 +383,15 @@
         "선행 전면과 후행 본문이 분리된 뒤 420초 재결합 창 안에 회수되지 못한 표본은, 직전 tray나 rack 뒤 얕은 정렬면에서 [COS197 — 회청색 후행본문퇴](./cos197.json) 형태로 고착될 수 있다. 이 단계에서는 A196-front가 current state를 유지한 채 남고, 실질 body는 제목선과 수령선을 잃은 본문 묶음으로 뒤쪽에 압축된다.",
         "따라서 본 항목의 A196-front가 비정상적으로 가볍거나 page total 대비 두께가 얇을 경우, 후행 body를 단순 지연본으로 보지 말고 [COS197 — 회청색 후행본문퇴](./cos197.json) 전이 가능성을 병기한다. blind sleeve 재결합이 실패한 표본은 rear gap 검사 전까지 완료본으로 복귀시키지 않는다."
       ]
+    },
+    {
+      "relatedId": 199,
+      "type": "reciprocal",
+      "title": "COS199 상호기록",
+      "paragraphs": [
+        "[COS196 — 회청색 선행표지본](./cos196.json)은 [COS199 — 회청색 이격결속띠](./cos199.json)의 가장 흔한 전면 숙주로 재분류되었다. 현장 양성 표본 12건 모두에서 title line만 선명한 front가 먼저 current state를 얻고, 대응 body는 뒤쪽에 남아 있을 때 COS199가 형성되었다.",
+        "따라서 A196-front가 rear lip 근처에서 비정상적으로 장수·하중·수령 상태를 획득하면 단독 선행표지본으로 처리하지 말고, COS199 가교와 후행 body 위치를 함께 점검한다."
+      ]
     }
   ],
   "supplementalSections": [

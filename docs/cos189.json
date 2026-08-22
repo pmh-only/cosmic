@@ -394,6 +394,15 @@
       "paragraphs": [
         "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS189 — 회청색 무재하중표](./cos189.json)가 부여한 false load 위에 page structure까지 덧붙은 복합 단계로 분류된다. 실제 질량이 없는 empty shell이 `1/x`와 paragraph block을 동시에 얻으면, 빈 carrier는 `무겁고 동시에 완결된 본문`처럼 보이게 되어 승인·스캔·인계 오인이 급격히 쉬워진다. COS189 자료에서 declared mass와 pseudo-body sheet가 함께 확인되면 적재본 복구로 판단하지 말고, shell·body·count trace를 COS194 동반 여부와 함께 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 199,
+      "type": "reciprocal",
+      "title": "COS199 상호기록",
+      "paragraphs": [
+        "[COS199 — 회청색 이격결속띠](./cos199.json) 활성 front 10건 중 8건에서 [COS189 — 회청색 무재하중표](./cos189.json)와 같은 선언 질량이 31~74초 사이 선행 생성되었다. 실측 질량은 변하지 않았으므로, COS189의 일부 표본은 empty carrier 자체보다 front/rear body를 잇는 COS199 가교에서 먼저 전이된 하중 상태일 수 있다.",
+        "declared mass가 rear body 분리 상태와 함께 나타나면 단독 계량 이상으로 처리하지 말고, 대응 front, body, rear lip geometry를 함께 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -402,6 +402,15 @@
         "COS197에서 회수된 개별 body bundle은 대응 front shell과 별도 체인으로 `B197-body-일련번호`를 부여한다.",
         "`B197-body` 표본은 대응 front shell과 footer hash, 스테이플 간격, page total을 대조하기 전까지 원본문으로 복귀시키지 않는다."
       ]
+    },
+    {
+      "relatedId": 199,
+      "type": "reciprocal",
+      "title": "COS199 상호기록",
+      "paragraphs": [
+        "[COS197 — 회청색 후행본문퇴](./cos197.json)는 [COS199 — 회청색 이격결속띠](./cos199.json)의 가장 흔한 후면 숙주로 확인되었다. 현장 양성 표본 12건 모두에서 rear body가 COS197과 같은 후방 적층 상태를 유지한 채 front만 current state를 획득했고, COS199 제거 후에도 body는 즉시 전면으로 복귀하지 않았다.",
+        "COS197 body가 대응 front와 시간상 동시에 관측되더라도, front를 완료본으로 확정하기 전 COS199 존재와 양단 포획 흔적을 우선 조사한다."
+      ]
     }
   ],
   "supplementalSections": [

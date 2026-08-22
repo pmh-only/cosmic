@@ -376,6 +376,15 @@
       "paragraphs": [
         "[COS198 — 회청색 후면분리턱](./cos198.json) 앞 간극에 놓인 blank plaque는 실제 안건 body가 뒤에 남아 있는 동안 `현재 읽히는 전면`의 자리를 선점하여 [COS184 — 회청색 차순호명패](./cos184.json)와 같은 `다음` 권한을 획득할 수 있다. 2026-08-12~15 공동노출 시험에서 plaque 11점 중 4점이 같은 전이를 보였으므로, 차순호명패가 카트·트레이 후벽 가까이 나타나면 plaque 자체보다 [COS198 — 회청색 후면분리턱](./cos198.json) host 존재를 먼저 확인한다."
       ]
+    },
+    {
+      "relatedId": 199,
+      "type": "reciprocal",
+      "title": "COS199 상호기록",
+      "paragraphs": [
+        "[COS184 — 회청색 차순호명패](./cos184.json)를 front lip 대용 고정점으로 사용한 노출 3회에서, blank plaque와 rear body 사이에 [COS199 — 회청색 이격결속띠](./cos199.json)가 형성되어 full-size shell 없이도 양단 포획이 시작되었다. 이는 COS184의 `다음` 권한이 단순 선개방을 넘어서, 후방 body와 전면 현재성을 임시로 결속하는 COS199의 전면 앵커로 기능할 수 있음을 시사한다.",
+        "COS184 plaque가 rear lip 근처에서 고정점처럼 남아 있으면 plaque 단독 회수로 끝내지 말고, 후방 body, 간극 길이, 가교성 띠 존재를 함께 조사한다."
+      ]
     }
   ],
   "supplementalSections": [

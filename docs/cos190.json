@@ -373,6 +373,15 @@
       "paragraphs": [
         "[COS194 — 회청색 대용본문지](./cos194.json)는 [COS190 — 회청색 무재장수표](./cos190.json)의 page total이 blank sheet 표면 전체로 확장된 후속 단계로 확인되었다. empty shell에 `1/27`, `27매`, `부록-3`만 있던 상태에서 inserted blank sheet가 folio와 paragraph block을 얻기 시작하면, 장수 외형은 더 이상 단순 count trace가 아니라 pseudo-body surface를 형성한다. COS190 자료에서 count만이 아니라 읽힐 듯한 page block까지 발생하면 이를 body 복구로 채택하지 말고 COS194로 승격해 shell/body/trace를 재분리한다."
       ]
+    },
+    {
+      "relatedId": 199,
+      "type": "reciprocal",
+      "title": "COS199 상호기록",
+      "paragraphs": [
+        "[COS199 — 회청색 이격결속띠](./cos199.json) 노출 10건 중 6건에서 [COS190 — 회청색 무재장수표](./cos190.json)와 같은 `27매`, `31/31` 장수 표기가 front에 생성되었고, 2건은 실제 rear body 장수와 불일치했다. 이는 COS190의 일부 page total이 독립 shell 생성보다 먼저, front와 rear body 사이의 임시 결속층인 COS199를 따라 전면에 전이될 수 있음을 시사한다.",
+        "장수 표기가 생겼더라도 rear body 실장수를 확인하기 전에는 완결본으로 채택하지 않는다. front/page total과 body/page total은 각각 별도 체인으로 기록한다."
+      ]
     }
   ],
   "supplementalSections": [
