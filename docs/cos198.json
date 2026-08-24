@@ -386,6 +386,15 @@
         "[COS198 — 회청색 후면분리턱](./cos198.json) 모사 jig에서 rear lip 높이 9~14 mm 조건을 유지했을 때 [COS199 — 회청색 이격결속띠](./cos199.json) 양성률은 61%였고, 턱을 제거하면 0%로 떨어졌다. 이는 COS198이 단순 host를 넘어서, front와 rear body가 분리된 상태에서 COS199 가교가 안정화되는 핵심 구조 조건임을 시사한다.",
         "A198-host에서 front only 산물이 반복되면 lip 제거보다 먼저 COS199 full-span 표본 여부를 점검하고, front/body를 분리 체인으로 관리한다."
       ]
+    },
+    {
+      "relatedId": 201,
+      "type": "reciprocal",
+      "title": "COS201 상호기록",
+      "paragraphs": [
+        "[COS198 — 회청색 후면분리턱](./cos198.json)은 현재까지 [COS201 — 회청색 전면잔막](./cos201.json)의 가장 안정적인 저장 host로 확인되었다. rear lip가 body를 뒤로 남기는 동안, 전면 표지·수신카드·route card 같은 얇은 face는 COS201에 의해 먼저 현재 처리면으로 선출되어 `인계 완료`, `READ BY`, `다음` 상태를 얻을 수 있다.",
+        "따라서 [COS198 — 회청색 후면분리턱](./cos198.json) 의심 host에서 front-only 산물이 발견되면 부품 회수보다 먼저 430~450 nm 스크리닝과 후면 검색을 수행한다. rear lip를 닦거나 일반 스토퍼로 교체하려는 시도는 전이를 확대할 수 있으므로 금지하며, `A198-front` 상태 자료는 COS201 음성 확인과 body 대조가 끝나기 전까지 어떠한 절차 근거로도 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
