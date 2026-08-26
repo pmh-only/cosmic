@@ -386,6 +386,15 @@
         "[COS196 — 회청색 선행표지본](./cos196.json) A196-front 뒤에 blank sheet 1매를 삽입한 4건 중 3건에서 `1/x` 표기와 paragraph block이 형성되어 [COS194 — 회청색 대용본문지](./cos194.json)와 동일한 pseudo-body가 생성되었다. 실제 body는 모두 후행 sleeve나 rack 뒤에 남아 있었으므로, 이 대용본문은 복원본이 아니라 선행 전면이 공란지를 본문 자리로 끌어올린 후속 분기다.",
         "COS194 현장에서 상단 제목선은 선명하나 footer hash가 후방 body와만 일치하는 pseudo-body가 발견되면, blank sheet 자체를 body로 확정하지 말고 COS196 front-body 분리를 우선 추적한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS194 — 회청색 대용본문지](./cos194.json) pseudo-body는 [COS203 — 회청색 교차편철면](./cos203.json)에서 후면 구성 요소처럼 오인될 수 있다. blank sheet에 형성된 page total과 appendix 표기가 shell title과 잘 맞아 보이면, 실제 body가 회수되지 않았는데도 pseudo-body와 shell이 한 권처럼 안정화되는 사례가 확인되었다.",
+        "따라서 COS194 의심 표본은 body packet 대체물로 사용하지 않으며, shell과 같은 작업면에서 pagination 적합성만 보는 절차를 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

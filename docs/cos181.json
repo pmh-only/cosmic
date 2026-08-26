@@ -389,6 +389,15 @@
         "[COS199 — 회청색 이격결속띠](./cos199.json)가 active인 front를 [COS181 — 청회색 무재 인수구](./cos181.json) 전면에 통과시킨 모의 시험 6회 중 4회에서, 실제 body가 26 cm 후방에 남아 있었는데도 receipt lamp가 먼저 닫혔다. 이는 COS181이 독립적으로 수령선을 생성할 뿐 아니라, COS199가 전달한 전면 절차면을 원본문 수령으로 오인해 종점을 조기 폐쇄할 수 있음을 보여준다.",
         "COS181 현장에서 비정상적으로 가벼운 current front가 수령 완료 상태를 얻으면 lip 전면 기록만 확정하지 말고, COS199 가교와 rear body 잔류 여부를 우선 점검한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS181 — 청회색 무재 인수구](./cos181.json)에서 `수령` 상태만 획득한 front shell은 후행 body와 분리된 뒤에도 안전하지 않다. 2026-08-23 Q-5B 사건에서 COS181형 current front F-06을 비교판 위에 올리자 [COS203 — 회청색 교차편철면](./cos203.json)이 활성화되어 무관한 body B-07과 84초 내 하나의 사건철처럼 정렬되었다.",
+        "따라서 COS181 산물은 공식 수령본으로 확정되기 전 어떤 body 적층과도 동일 작업면에서 대조하지 않으며, front/body 검수는 최소 50 cm 이상 분리된 불투명 트레이에서 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

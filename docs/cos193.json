@@ -401,6 +401,15 @@
       "paragraphs": [
         "[COS198 — 회청색 후면분리턱](./cos198.json)은 표지, 발신란, 첫 장만 현재 슬롯 앞으로 밀어 두고 본문을 후벽 뒤 또는 바로 뒤 슬롯에 잔류시켜 [COS193 — 회청색 후입등재구](./cos193.json)와 같은 전면 선행 등재 상태를 만든다. 2026-07-14~08-16 현장 사례 12건 중 9건에서 rear lip가 함께 회수되었으므로, front matter만 확보된 표본은 독립 current copy로 확정하기 전에 후면 정지대와 0~30 mm 간극을 먼저 개방한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS193 — 회청색 후입등재구](./cos193.json) 노출 표본은 표지, 첫 장, 속행표만 앞서 등재되고 본문이 뒤에 남기 때문에, host를 벗어난 뒤 [COS203 — 회청색 교차편철면](./cos203.json)의 전면 숙주가 되기 쉽다. 2026-08-24 구성 요소 행렬에서 COS193 유래 front 5점 중 4점이 무관한 body-only 적층과 120초 이내 허위 편철을 형성했다.",
+        "번호, 속행표, 발신란이 먼저 붙은 자료는 독립 current copy로 보지 말고, 후면 body 회수와 provenance 대조 전까지 flat board 위 합본 검수를 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

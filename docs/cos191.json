@@ -416,6 +416,14 @@
         "[COS191 — 회청색 공란상정대](./cos191.json)의 digest card와 상판 전면 lip는 [COS201 — 회청색 전면잔막](./cos201.json) 양성 host 및 산물로 재평가되었다. 현재 자료는 COS191이 빈 운반체를 상정 대상으로 만드는 과정이, 연단 고유 작용만이 아니라 전면 잔막의 `앞면 선출` 작용에 의해 증폭된다는 해석과 가장 잘 맞는다.",
         "따라서 [COS191 — 회청색 공란상정대](./cos191.json)에서 생성된 front-only 요약문이나 회람띠는 닦거나 재사용하지 말고, 연단 상판과 산물을 모두 COS201 가능성 하에 별도 봉인한다. 상정 산물이 연단에서 떨어져 나간 뒤에도 유지되면 이를 단순 잔류물로 보지 말고 COS201 전이 표면으로 기록한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "2026-08-24 Q-5B 재현 9회 중 [COS191 — 회청색 공란상정대](./cos191.json) 유래 `A191-digest` 전면을 [COS197 — 회청색 후행본문퇴](./cos197.json)형 body와 22~34 cm 간격으로 비다공성 비교판에 놓았을 때 4회에서 [COS203 — 회청색 교차편철면](./cos203.json)이 형성되었다. 이때 요약문이 붙은 전면은 실제 provenance를 대체한 채 하나의 current copy처럼 page total과 binding edge를 선점했으므로, `A191-digest`를 body 결손 표본과 같은 평면에서 대조하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

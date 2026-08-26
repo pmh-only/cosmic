@@ -411,6 +411,15 @@
         "[COS197 — 회청색 후행본문퇴](./cos197.json)는 [COS199 — 회청색 이격결속띠](./cos199.json)의 가장 흔한 후면 숙주로 확인되었다. 현장 양성 표본 12건 모두에서 rear body가 COS197과 같은 후방 적층 상태를 유지한 채 front만 current state를 획득했고, COS199 제거 후에도 body는 즉시 전면으로 복귀하지 않았다.",
         "COS197 body가 대응 front와 시간상 동시에 관측되더라도, front를 완료본으로 확정하기 전 COS199 존재와 양단 포획 흔적을 우선 조사한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS197 — 회청색 후행본문퇴](./cos197.json) body-only 적층은 [COS203 — 회청색 교차편철면](./cos203.json)의 가장 안정적인 후면 숙주로 확인되었다. 2026-08-22~2026-08-25에 회수된 COS203 후면 구성 요소 11건 중 7건이 COS197과 동일한 `p.2 이후 시작` body였으며, 매끈한 비교판 위에서 무관한 front shell과 6~42 cm 거리로 놓였을 때 17~204초 내 허위 사건철로 정렬되었다.",
+        "따라서 COS197 표본은 대응 front shell 확인 전까지 단독 원본문처럼 취급하지 말고, footer hash와 총질량을 대조하기 전 어떤 shell과도 같은 평면에서 임시 재결합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -392,6 +392,15 @@
         "[COS196 — 회청색 선행표지본](./cos196.json)은 [COS199 — 회청색 이격결속띠](./cos199.json)의 가장 흔한 전면 숙주로 재분류되었다. 현장 양성 표본 12건 모두에서 title line만 선명한 front가 먼저 current state를 얻고, 대응 body는 뒤쪽에 남아 있을 때 COS199가 형성되었다.",
         "따라서 A196-front가 rear lip 근처에서 비정상적으로 장수·하중·수령 상태를 획득하면 단독 선행표지본으로 처리하지 말고, COS199 가교와 후행 body 위치를 함께 점검한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS196 — 회청색 선행표지본](./cos196.json)의 current strip이 남은 front는 [COS203 — 회청색 교차편철면](./cos203.json)에서 허위 복합체의 선두 전면이 되기 쉽다. 2026-08-24 행렬 실험에서 COS196 유래 front 6점 중 4점이 무관한 body-only 적층과 204초 이내 정렬했고, scanner는 그중 3건을 current copy로 제안했다.",
+        "따라서 COS196 선행 전면은 원래 body 회수 전까지 어떠한 body 적층과도 flat board에 병치하지 않으며, 재결합은 불투명 sleeve 내부에서만 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

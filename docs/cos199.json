@@ -368,6 +368,15 @@
         "전면 숙주 front는 `A199-front-일련번호`, 대응 rear body는 `B199-rear-일련번호`, 강제 분리 뒤 잔편은 `F199-frag-일련번호`로 별도 체인화한다.",
         "`A199-front`에 생성된 장수·질량·요약문은 `B199-rear` 대조 전까지 접수·인계·폐기 근거로 사용할 수 없다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS199 — 회청색 이격결속띠](./cos199.json) 잔편은 [COS203 — 회청색 교차편철면](./cos203.json)에서 형성된 허위 복합체의 seam을 가리는 안정화 요소로 확인되었다. 2026-08-22~2026-08-25 허위 복합체 7건 중 3건에서 6~11 mm 띠형 잔편이 interstitial gap을 덮고 있었고, 섬유 역배열과 압흔 간격이 COS199 기준 표본과 일치했다.",
+        "이 잔편이 남은 pair는 육안상 binding edge가 더 자연스럽게 보였으므로, COS199 절편이 확인된 front/body 조합은 provenance 일치 여부가 증명되기 전까지 즉시 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

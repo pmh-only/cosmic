@@ -387,6 +387,15 @@
       "paragraphs": [
         "[COS198 — 회청색 후면분리턱](./cos198.json)은 현재까지 COS201의 가장 안정적인 저장 host다. A198 rear lip에서 front/body 분리가 확인되면 부품 회수보다 먼저 [COS201 — 회청색 전면잔막](./cos201.json) 스크리닝과 후면 검색을 수행한다."
       ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "[COS201 — 회청색 전면잔막](./cos201.json)은 전면 권한만 선출하는 데 그치지 않고, 비다공성 작업면에 남았을 때 [COS203 — 회청색 교차편철면](./cos203.json)의 시드가 될 수 있음이 확인되었다. COS203 host 4면에서 채취한 PTFE 스와브 12점은 모두 442~446 nm 반사 peak와 판상 입자 형상이 COS201 기준 표본과 일치했고, 70% IPA 닦기 뒤 인접 ruler와 tray에 2차 host가 형성되었다.",
+        "따라서 COS201 양성 표면은 단순 front residue로 처리하지 말고, dry wipe나 IPA 세척 없이 판째 봉인해야 한다. 전면 잔막이 남은 비교판 위에서 shell과 body를 대조하는 절차는 COS203 유발 위험이 있다."
+      ]
     }
   ],
   "supplementalSections": [
