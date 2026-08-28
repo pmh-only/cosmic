@@ -398,6 +398,15 @@
         "[COS181 — 청회색 무재 인수구](./cos181.json)에서 `수령` 상태만 획득한 front shell은 후행 body와 분리된 뒤에도 안전하지 않다. 2026-08-23 Q-5B 사건에서 COS181형 current front F-06을 비교판 위에 올리자 [COS203 — 회청색 교차편철면](./cos203.json)이 활성화되어 무관한 body B-07과 84초 내 하나의 사건철처럼 정렬되었다.",
         "따라서 COS181 산물은 공식 수령본으로 확정되기 전 어떤 body 적층과도 동일 작업면에서 대조하지 않으며, front/body 검수는 최소 50 cm 이상 분리된 불투명 트레이에서 수행한다."
       ]
+    },
+    {
+      "relatedId": 205,
+      "type": "reciprocal",
+      "title": "COS205 상호기록",
+      "paragraphs": [
+        "[COS205 — 회청색 대조합치막](./cos205.json)은 [COS181 — 청회색 무재 인수구](./cos181.json)가 먼저 붙잡은 `A181-capture` 전면이 무관한 body packet과 비교 단계에서 같은 수령본처럼 결속되는 대표 후속 현상으로 확인되었다. 2026-08-24 Q-5B 비교실에서 active lip 유래 front F-06은 provenance가 다른 rear body B-07과 58초 내 동일 pair code `Q5B-6`와 current lower line을 공유했으나, footer hash와 실측 질량은 끝까지 불일치했다.",
+        "따라서 COS181 산물을 body packet과 대조할 때는 투명·반투명 면을 사용하지 않고, 수령선 일치만으로 정쌍을 확정하지 않는다. 동일 접수번호와 하단선이 생겨도 먼저 50 cm 분리, 불투명 트레이 재배치, footer hash·장수·스테이플 간격 재대조를 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

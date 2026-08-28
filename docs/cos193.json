@@ -410,6 +410,15 @@
         "[COS193 — 회청색 후입등재구](./cos193.json) 노출 표본은 표지, 첫 장, 속행표만 앞서 등재되고 본문이 뒤에 남기 때문에, host를 벗어난 뒤 [COS203 — 회청색 교차편철면](./cos203.json)의 전면 숙주가 되기 쉽다. 2026-08-24 구성 요소 행렬에서 COS193 유래 front 5점 중 4점이 무관한 body-only 적층과 120초 이내 허위 편철을 형성했다.",
         "번호, 속행표, 발신란이 먼저 붙은 자료는 독립 current copy로 보지 말고, 후면 body 회수와 provenance 대조 전까지 flat board 위 합본 검수를 금지한다."
       ]
+    },
+    {
+      "relatedId": 205,
+      "type": "reciprocal",
+      "title": "COS205 상호기록",
+      "paragraphs": [
+        "[COS205 — 회청색 대조합치막](./cos205.json)은 [COS193 — 회청색 후입등재구](./cos193.json)가 남긴 rear body가 비교대 위에서 전면 절차 외피와 허위 정쌍을 이루는 대표 후속 현상이다. 2026-08-24~2026-08-25 양성쌍 14건 중 8건의 body가 COS193 host rear stop 뒤에서 회수되었고, 그 가운데 6건은 [COS181 — 청회색 무재 인수구](./cos181.json) 또는 [COS204 — 회청색 보류인계슬리브](./cos204.json) 유래 front와 81초 이내 동일 pair code 또는 provisional accession을 공유했다.",
+        "번호·제목행이 앞서 등재된 표본과 뒤에 남은 body를 재결합할 때는 전면 일치감보다 후행 본문의 footer hash와 원래 chain number를 우선한다. COS193 유래 rear body는 투명 비교면에서 정쌍으로 보일 수 있으므로, front/body 재대조는 불투명 평면에서만 수행한다."
+      ]
     }
   ],
   "supplementalSections": [
