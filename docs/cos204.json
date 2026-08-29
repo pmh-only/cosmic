@@ -408,6 +408,15 @@
         "[COS205 — 회청색 대조합치막](./cos205.json)은 [COS204 — 회청색 보류인계슬리브](./cos204.json)의 전면 shell을 무관한 body와 거짓 정쌍으로 보이게 만드는 비교단계 후속 현상으로 확인되었다. 2026-08-25 표본 4점 전수에서 COS204 3~4단계 슬리브에서 꺼낸 front shell은 CP-2 무광 아크릴 비교면 0~1 mm 간격 조건에서 4/4 양성이었고, 33~74초 내 shared pair code 또는 녹색 대조 표시를 획득했다.",
         "이는 COS204가 본문을 복구하는 것이 아니라, 슬리브가 남긴 평행 간격과 보류 인계 외피가 [COS205 — 회청색 대조합치막](./cos205.json)의 초기 정렬을 안정화한다는 뜻이다. COS204 표본의 전면 단독 회수본은 body packet과 같은 슬리브나 비교판에 놓지 않으며, 본문 일치 검증 전 provisional accession 공유를 정답 쌍의 증거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS204 — 회청색 보류인계슬리브](./cos204.json)의 provisional accession은 분리 실패나 강제 재개봉 뒤에도 front shell에서 완전히 소거되지 않을 수 있으며, 정정·인계 단계에서 [COS206 — 회청색 동체인란](./cos206.json)으로 넘어가 body packet, void slip, rebag sleeve, queue preview에 같은 번호를 재부착할 수 있다. 이 경우 보류 인계 상태는 해결되지 않았는데도 하나의 체인 번호만 먼저 닫힌다.",
+        "따라서 COS204 표본에서 같은 provisional accession이 둘 이상의 host에 남아 있으면 이를 단순 잔상이나 캐시 오류로 처리하지 말고, [COS206 — 회청색 동체인란](./cos206.json) 연계 사건으로 분리 기록한다. 현장 가로지움과 즉시 재포장은 번호 전이를 늘릴 수 있으므로 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

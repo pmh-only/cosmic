@@ -404,6 +404,15 @@
         "[COS198 — 회청색 후면분리턱](./cos198.json)에서 분리된 `A198-front`와 후행 body는 host를 벗어난 뒤에도 안전하지 않다. 2026-08-22 현장과 2026-08-23 격리실 기록에서, rear lip 노출 표본을 옮겨 놓은 훈연 아크릴 비교판과 트레이 저면이 [COS203 — 회청색 교차편철면](./cos203.json) host로 전환되어 서로 다른 provenance의 front/body를 다시 한 묶음처럼 정렬시켰다.",
         "따라서 COS198 관련 표본은 host 부품 회수 후에도 flat board, scanner bed, 비교판을 별도 스크리닝해야 하며, `A198-front`와 body packet을 동일 작업면에 올려 두고 적합성만 육안 대조하는 절차를 금지한다."
       ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS198 — 회청색 후면분리턱](./cos198.json)이 만든 front/body 분리 상태를 현장에서 재수집하거나 재라벨링할 경우, 전면에 남아 있던 route card 번호나 수신선이 후행 body와 blank slip에 함께 고정되는 [COS206 — 회청색 동체인란](./cos206.json) 후속 단계가 발생할 수 있다. 이때 같은 번호는 body 회수의 증거가 아니라 분리된 host들이 하나의 절차로 닫히려는 오염 신호로 해석해야 한다.",
+        "따라서 A198-host에서 front only 산물이 발견되면 후벽 검색 완료 전까지 현장 정정, 가로지움, 재포장을 시행하지 않는다. COS198 유래 표본의 chain 정정은 [COS206 — 회청색 동체인란](./cos206.json) 전이를 고려해 remote rechain 방식으로만 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -342,6 +342,15 @@
         "양성 작업면은 `A203-host-일련번호`, 전면 구성 요소는 `A203-front-일련번호`, 후면 구성 요소는 `B203-body-일련번호`, 허위 안정 복합체는 `C203-composite-일련번호`로 각각 분리 관리한다.",
         "`C203-composite`와 이후 회수된 올바른 재결합본은 같은 증거봉투나 같은 digital chain hash를 공유하지 않는다."
       ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS203 — 회청색 교차편철면](./cos203.json)은 서로 다른 front와 body를 같은 사건철처럼 보이게 만들고, [COS206 — 회청색 동체인란](./cos206.json)은 그 거짓 복합체를 분리한 뒤에도 accession이나 pair code가 shell·body·void slip에 남도록 만든다. 즉 COS203이 시각적 오합치를 형성하면, COS206은 그 오합치를 행정 필드로 연장하는 후속 단계로 기록한다.",
+        "따라서 COS203 현장에서 false composite를 해제하더라도 번호와 하단선이 다른 host로 전이될 수 있으므로, 분리 직후의 correction mat·queue preview·blank carrier를 함께 봉인해야 한다. 같은 번호의 잔류를 provenance 회복으로 해석하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

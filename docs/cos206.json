@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2026-08-27부터 2026-10-06까지 확정된 11건 중 3건이 서로 다른 provenance의 front와 body를 하나의 체인 번호로 닫아 외부 이송, 승인, 배가 직전까지 진행되었다. 형성 조건과 정정 절차가 알려질 경우 기록 사슬을 의도적으로 혼탁화하는 데 악용될 수 있으므로 비공개 수준 4로 분류한다.",
+    "permission": "COS206 판정에는 footer hash, 실측 질량, 스테이플 간격, auto-close 로그, void queue, blank carrier 전이 여부를 함께 읽어야 한다. 일반 접수 인력은 동일 번호를 동일 기록의 증거로 오인한 비율이 높았으므로 기록감식 및 체인 정정 권한을 가진 4등급 열람이 필요하다.",
+    "chaos": "CP-2 비교면과 H-2M 인계대에서의 재현률은 각각 9/12, 6/8로 비교적 안정적이었고 검은 불투명 트레이 50 cm 분리 대조군은 24/24 음성이었다. 다만 동일 번호가 body, void slip, rebag sleeve, shelf card, blank jacket 중 어디로 옮겨붙는지는 일정하지 않아 결과 예측성은 중간 이상으로 평가한다.",
+    "danger": "INC-206-01, 02, 03에서 각각 허위 체인 병합, auto-close 인계, blank jacket 배가 직전 사례가 확인되었고 모두 실제 원본문과 다른 절차를 닫으려 했다. 직접적인 신체 손상은 없었지만 기록·시설·운용 판단에 대한 위해는 높아 4로 평가한다.",
+    "popularity": "정식 편입 전 6주 동안 체인 정정 메모 11건, 교차 대조 보고 4건, 배가·인계 재검수 요청 3건에서 COS206이 직접 참조되었다. 기관 전반의 최상위 허브 수준은 아니지만 front/body 분리 계열에서는 중간 이상 참조 빈도를 보여 3으로 분류한다.",
+    "containment": "동일 번호를 현장에서 지우거나 덮는 조치는 10회 중 7회에서 blank sleeve나 queue field로 전이를 일으켰고, 억제에는 불투명 분리 보관, auto-close 중지, remote rechain, blank carrier 반경 격리, shelf-prep 중단이 동시에 필요했다. 단순 재라벨링으로는 통제되지 않아 관리 강도 4가 요구된다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 L-11",
+        "role": "체인정정 기록관",
+        "status": "active",
+        "involvement": "2026-08-27 H-2C 체인정정대에서 최초 동일 체인 필드를 분리 기록하고 임시표기 T-206 상신을 주도했다. 이후 remote rechain 절차와 A206 접두 체계를 정리했다."
+      },
+      {
+        "name": "조사원 K-23",
+        "role": "표본 계측 및 provenance 대조 담당",
+        "status": "active",
+        "involvement": "footer hash, 질량, 스테이플 간격, page sequence를 대조해 동일 번호가 동일 원본의 증거가 아님을 반복 입증했다. M-2 봉인실과 Q-2 예비배가대 사고를 중단시켰다."
+      },
+      {
+        "name": "인계주무 M-04",
+        "role": "인계대 운용 담당",
+        "status": "reassigned",
+        "involvement": "INC-206-01에서 동일 번호를 기준으로 병합 정정을 시도했고, INC-206-02 이전까지 현장 무효화와 동일 슬리브 재사용을 허용했다. 사고 후 비교·인계 겸무에서 제외되었다."
+      },
+      {
+        "name": "서가담당 ARC-07",
+        "role": "예비배가 기록관",
+        "status": "active",
+        "involvement": "Q-2 예비배가대에서 blank jacket에 고정된 동일 체인 필드를 발견하고 광투과·질량 대조를 통해 page block 부재를 확인했다. 이후 shelf-prep 차단 절차를 작성했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-08-27 10:54 KST",
+        "label": "최초 동체인 필드 확인",
+        "description": "본부 제2보존동 2층 체인정정대 H-2C에서 [COS204 — 회청색 보류인계슬리브](./cos204.json) 유래 front shell과 무관 body packet, void slip이 동일 provisional accession `R-204-31`을 공유하는 것이 확인되었다."
+      },
+      {
+        "date": "2026-08-27 12:30 KST",
+        "label": "임시표기 T-206 부여",
+        "description": "thermal printer duplication 가설의 1차 대조군이 음성으로 나오고 동일 번호가 세 매체 이상에 남는 양상이 재확인되어 T-206이 발령되었다."
+      },
+      {
+        "date": "2026-08-28 14:32 KST",
+        "label": "현장 무효화 전이 사고",
+        "description": "봉인실 M-2에서 동일 번호를 현장에서 가로지워 무효화하려 한 뒤 blank rebag sleeve와 queue preview에 같은 번호가 전이되었다."
+      },
+      {
+        "date": "2026-09-02 11:10 KST",
+        "label": "대조 행렬 재현 성공",
+        "description": "Q-5B와 H-2M에서 false pair 12쌍, true pair 12쌍을 이용한 비교 시험이 시행되었고, false pair군에서만 동일 체인 필드가 반복 형성되었다."
+      },
+      {
+        "date": "2026-10-06 09:22 KST",
+        "label": "blank jacket 배가 직전 중단",
+        "description": "Q-2 예비배가대에서 A206-trace가 인접한 blank jacket에 현재본 체인 필드를 부여해 [COS182 — 담회색 무재 편철등](./cos182.json)과 유사한 shelf-prep 말단 고착이 확인되었다."
+      },
+      {
+        "date": "2026-10-09 16:00 KST",
+        "label": "정식 분류 승인",
+        "description": "확정 사례 11건, 부분 사례 4건, 통제 실험 32회 자료를 바탕으로 COS206 공식 조사 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-206-01",
+        "date": "2026-08-27",
+        "location": "본부 제2보존동 2층 체인정정대 H-2C",
+        "title": "분리 후에도 유지된 동일 provisional accession",
+        "involvedPersonnel": [
+          "기록관 L-11",
+          "조사원 K-23",
+          "인계주무 M-04"
+        ],
+        "narrative": [
+          "2026-08-26 [COS205 — 회청색 대조합치막](./cos205.json) 사고에서 분리한 front shell `S204-31-front`와 무관 body packet `P-11`은 각각 별도 봉투에 넣어 보관 중이었다. 2026-08-27 10:54, M-04는 정정 시간을 줄이기 위해 두 봉투와 취소 예정 slip `V-01`을 반투명 correction mat `CM-2` 위에 14 cm 간격으로 올렸다. 실내 조건은 23.7°C, 상대습도 44%, 상부 LED 5200 K 612 lx였다. 83초 뒤 front에만 남아 있던 provisional accession `R-204-31`이 body packet 우하단과 `V-01`에도 동일 형식으로 나타났고, H-2C 콘솔은 단일 체인 auto-close를 제안했다.",
+          "M-04는 같은 번호가 세 매체에 남아 있으므로 이미 정정이 끝난 것으로 판단하고 하나의 불투명 sleeve에 재봉인하려 했다. K-23는 즉시 footer hash 불일치, 168 g 질량 차, 스테이플 간격 1.6 mm 차이를 확인해 병합을 중단시켰고, L-11은 auto-close 기능을 끄고 세 매체를 60 cm 이상 떨어진 검은 트레이로 옮겼다. 이동 97초 뒤 `V-01`의 표식은 흐려졌지만 front와 body의 번호는 남아 있어, 번호 일치가 provenance 일치를 의미하지 않는다는 점이 사건 기록으로 고정되었다."
+        ],
+        "outcome": "T-206 임시표기가 발령되었고 H-2C의 auto-close 기능은 24시간 정지되었다. 동일 번호를 근거로 한 병합 정정 절차는 전면 중단되었다."
+      },
+      {
+        "code": "INC-206-02",
+        "date": "2026-08-28",
+        "location": "본부 제2보존동 1층 봉인실 M-2",
+        "title": "현장 무효화 시도 중 공란 rebag sleeve로의 번호 전이",
+        "involvedPersonnel": [
+          "기록관 L-11",
+          "조사원 K-23",
+          "인계주무 M-04"
+        ],
+        "narrative": [
+          "L-11은 동일 체인 필드를 지우는 대신 무효 표기를 남긴 채 분리 보관하는 것이 적절한지 확인하려고 했고, M-04는 기존 표본의 정리를 서두르기 위해 같은 작업대 위에서 가로지움과 재포장을 한 번에 끝내자고 제안했다. 14:32, front `A206-field-02`와 body `A206-field-03`의 기존 번호를 흑색 사선으로 가리고, 바로 옆에 두었던 blank rebag sleeve `RB-0`를 펼쳐 재포장을 준비했다. 146초 뒤 `RB-0` 개구부 상단에 24×71 mm 크기의 회청색 번호 필드가 새로 형성되었고, 같은 시각 thermal printer queue preview에도 취소한 것과 같은 번호가 다시 잡혔다.",
+          "M-04는 queue preview를 단순 캐시 잔상으로 해석하고 `RB-0` 사용을 계속하려 했으나, K-23는 preview line이 실제 print job count 0 상태에서 생성되었고 `RB-0`의 질량·page total이 여전히 공란이라는 점을 지적했다. L-11은 printer를 전원 차단하고 세 대상과 queue snapshot을 각각 봉인했다. 이 과정에서 현장 무효화가 삭제가 아니라 번호의 새로운 host 선정을 유도한다는 사실이 처음 명시적으로 입증되었다."
+        ],
+        "outcome": "현장 가로지움·재포장 동시 수행이 금지되었고, blank rebag sleeve와 printer queue는 A206-trace의 우선 감시 대상으로 지정되었다. M-04는 비교·인계 겸무에서 제외되었다."
+      },
+      {
+        "code": "INC-206-03",
+        "date": "2026-10-06",
+        "location": "Q-2 예비배가대 P-4",
+        "title": "blank jacket에 고정된 동일 체인 필드",
+        "involvedPersonnel": [
+          "서가담당 ARC-07",
+          "기록관 L-11",
+          "조사원 K-23"
+        ],
+        "narrative": [
+          "Q-2 예비배가대 P-4에서는 chain 정정이 끝난 표본을 일반 배가 라인으로 넘기기 전, void trace를 별도 박스에 넣고 blank jacket을 준비하는 작업이 진행 중이었다. ARC-07은 `A206-trace-05`를 불투명 슬리브 바깥에서 판독하기 위해 잠시 neutral board 위에 내려놓았고, 그로부터 19 cm 떨어진 곳에 무산성 blank jacket `JK-206-A`를 두었다. 11분 뒤 jacket 등면에 현재본 형식의 번호선이 생겼고, scanner preview는 이를 하나의 예비 current copy로 읽었다. apparent thickness는 7.2 mm였지만 실측 질량은 18.9 g에 그쳤다.",
+          "ARC-07은 처음에 정정이 끝난 reserved copy가 별도로 안정화된 것으로 해석해 shelf-prep를 계속하려 했다. L-11은 [COS182 — 담회색 무재 편철등](./cos182.json) 양상과의 중첩 가능성을 지적하며 광투과와 질량 대조를 요구했고, K-23가 저선량 투과광과 스테이플 간격 점검을 시행한 결과 page block은 없고 borrowed chain field만 남아 있었다. 세 사람은 `JK-206-A`를 일반 배가본으로 넘기지 않고 별도 봉인함에 넣었고, A206-trace가 blank jacket을 통한 shelf-prep 말단 고착을 일으킬 수 있다는 점을 확정했다."
+        ],
+        "outcome": "Q-2 예비배가대는 18시간 동안 중지되었고, blank jacket과 shelf card는 active A206-trace 반경 1 m 밖에서만 사용하도록 변경되었다. `JK-206-A`는 후일 COS182 연계 표본으로 교차 기록되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-206-01",
+        "type": "동일 체인 필드 삼중 표본",
+        "description": "front shell `S204-31-front`, body packet `P-11`, void slip `V-01`에 동일 provisional accession `R-204-31`이 남은 삼중 표본 세트이다. footer hash와 실측 질량은 서로 다르다.",
+        "custodyStatus": "문서증거실 S-4에서 개별 봉투로 이중 봉인, 동시 열람 금지 상태 유지"
+      },
+      {
+        "code": "EV-206-02",
+        "type": "H-2C 영상 및 auto-close 로그",
+        "description": "2026-08-27 10:53~11:09의 천장카메라 영상, correction mat 근접 사진, 단일 체인 auto-close 제안 로그를 포함한다.",
+        "custodyStatus": "디지털증거금고 DE-2 해시 고정 보관, 체인정정 권한자만 열람 가능"
+      },
+      {
+        "code": "EV-206-03",
+        "type": "rebag sleeve 및 queue preview 패킷",
+        "description": "blank rebag sleeve `RB-0`, thermal printer queue preview snapshot, 취소 직전/직후 print count 로그 묶음이다. 실제 출력 없이 동일 번호가 생성된 장면을 포함한다.",
+        "custodyStatus": "봉인실 M-2 사고증거함 AE-6에 분리 보관, printer 본체와 분리된 상태 유지"
+      },
+      {
+        "code": "EV-206-04",
+        "type": "blank jacket 및 shelf-prep scanner 로그",
+        "description": "`JK-206-A` blank jacket, apparent thickness 7.2 mm·질량 18.9 g 계측표, scanner preview와 저선량 투과광 이미지 세트이다.",
+        "custodyStatus": "Q-2 예비배가 금고 3열에 별도 봉인, 일반 shelf-prep 라인 반입 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 L-11",
+        "role": "체인정정 기록관",
+        "context": "INC-206-01 직후 진술",
+        "statement": "제가 직접 확인한 사실은 분리 보관 중이던 front와 body, 그리고 취소 slip에 같은 번호가 남았다는 점입니다. 그것이 같은 기록으로 복원되었다는 설명은 해석이며, footer hash와 질량 대조는 그 해석을 지지하지 않았습니다."
+      },
+      {
+        "speaker": "조사원 K-23",
+        "role": "표본 계측 및 provenance 대조 담당",
+        "context": "2026-08-28 계측 메모",
+        "statement": "동일 번호가 붙어 있어도 스테이플 간격, 질량, page sequence는 그대로 달랐습니다. 번호가 같아진 것이지 본문이 되돌아온 것은 아니라는 판단은 이 계측값에 근거합니다."
+      },
+      {
+        "speaker": "서가담당 ARC-07",
+        "role": "예비배가 기록관",
+        "context": "INC-206-03 사후 면담",
+        "statement": "등면 번호선이 너무 자연스러워 처음에는 정정본이 하나 더 안정화된 줄 알았습니다. 하지만 광투과에서 page block이 없다는 점을 보고, 제가 믿은 것은 내용이 아니라 번호 외피였다는 사실을 인정했습니다."
+      }
+    ]
+  },
+  "id": 206,
+  "title": "회청색 동체인란",
+  "language": "ko-KR",
+  "overview": [
+    "**COS206**은 서로 다른 provenance의 front-only 전면과 body-only 본문, 또는 그 파생 slip·라벨·queue field가 하나의 **동일 체인 번호**를 공유하도록 고정되는 회청색 기록 현상이다. 현재 통칭은 **회청색 동체인란**이다.",
+    "COS206의 핵심은 본문을 복원하거나 둘 이상의 표본을 실제로 합치는 데 있지 않다. 현상은 서로 맞지 않는 표본 이상이 `같은 사건철`, `같은 인수본`, `같은 current copy`처럼 **동일한 접수·체인 필드**를 획득하게 만들고, 그 결과 정정·인계·배가 절차가 불일치한 provenance를 기준으로 닫히게 한다.",
+    "2026-08-27부터 2026-10-06까지 확정 사례 11건, 부분 사례 4건, 통제 실험 32회 중 18건의 양성이 확인되었다. footer hash, 실측 질량, 스테이플 간격, page sequence는 원래 값을 유지한 채 번호와 하단선만 같아지는 사례가 반복되었다."
+  ],
+  "identificationTraits": [
+    "서로 다른 표본 둘 이상에 같은 provisional accession, pair code, shelf-prep chain field가 18~120초 사이 동시에 나타난다.",
+    "번호 주변에는 높이 2~4 mm의 회청색 field 또는 얕은 하단선이 생기며, 486±5 nm 부근에서 대조군보다 높은 반사 피크를 보인다.",
+    "동일 번호는 대개 front-only shell과 body-only packet에 먼저 남지만, blank rebag sleeve, void slip, queue preview, shelf card, blank jacket 중 하나가 세 번째 host로 따라붙는 경우가 많다.",
+    "양성 표본끼리는 같은 번호를 공유해도 footer hash, 실측 질량, 스테이플 간격, 시작 페이지 중 최소 두 항목 이상이 일치하지 않는다.",
+    "번호를 현장에서 지우거나 가로지우면 32~240초 내에 인접한 blank carrier 또는 대기열 필드로 다시 나타날 수 있다.",
+    "동일 번호가 유지되는 시간은 보통 6~38분이며, 그 사이 auto-close, shelf scanner, current preview가 번호만을 근거로 절차를 닫으려는 경향을 보인다.",
+    "검은 불투명 트레이에 50 cm 이상 분리한 대조군에서는 현재까지 동일 체인 필드가 자발 형성된 사례가 없다.",
+    "실제 matched front/body pair는 재정렬은 일어날 수 있으나, blank slip이나 제3 매체까지 같은 번호를 새로 퍼뜨리는 양상은 보이지 않았다."
+  ],
+  "discovery": [
+    "COS206은 2026-08-26 [COS205 — 회청색 대조합치막](./cos205.json) 사고의 사후 정정 과정에서 처음 분리되었다. [COS204 — 회청색 보류인계슬리브](./cos204.json)에서 나온 front shell과, [COS193 — 회청색 후입등재구](./cos193.json) 및 [COS197 — 회청색 후행본문퇴](./cos197.json) 계열 rear body로 분류된 packet이 각각 분리 보관된 뒤에도, 다음 날 H-2C 체인정정대에서 같은 provisional accession `R-204-31`을 공유했기 때문이다.",
+    "초기에는 thermal printer duplication, queue cache 잔상, 작업자 재부착 실수 가능성이 우선 검토되었다. 그러나 검은 불투명 트레이 대조군에서는 동일 번호의 재발이 0/24였고, 반대로 [COS198 — 회청색 후면분리턱](./cos198.json)과 [COS203 — 회청색 교차편철면](./cos203.json) 경유 표본에서는 번호가 front와 body뿐 아니라 void slip, rebag sleeve, queue preview로 확장되는 양상이 반복되었다. 이로써 COS206은 단순 출력 오류가 아니라 이미 분리된 절차 외피와 본문이 행정적으로 동일화되는 현상으로 판단되었다.",
+    "이후 봉인실 M-2에서 현장 무효화 시도가 blank rebag sleeve로 번호를 옮겼고, Q-2 예비배가대에서는 active trace 옆 blank jacket이 borrowed chain field를 획득해 [COS182 — 담회색 무재 편철등](./cos182.json)과 유사한 말단 고착을 보였다. 따라서 COS206은 [COS205 — 회청색 대조합치막](./cos205.json)의 순간적 정쌍이 분리 뒤에도 행정 필드로 남는 후속 단계로 정식 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS206은 front/body가 이미 분리되었거나 거짓 정쌍이 한 차례 형성된 뒤, 정정·인계·배가 준비 절차에서 번호와 체인 필드만 다시 수렴하는 방식으로 진행된다.",
+      "현상은 내용을 새로 만들지 않으며, 동일 번호를 공유하는 두 표본 이상이 오히려 서로 다른 질량·hash·page sequence를 유지한 채 절차만 함께 닫히게 만든다.",
+      "현장 무효화나 재라벨링은 대개 소거가 아니라 새로운 host 선정을 유도하므로, 억제에는 현장 삭제보다 분리 봉인과 remote rechain이 우선한다."
+    ],
+    "stages": [
+      {
+        "name": "분리 전제 형성",
+        "description": "[COS193 — 회청색 후입등재구](./cos193.json), [COS197 — 회청색 후행본문퇴](./cos197.json), [COS198 — 회청색 후면분리턱](./cos198.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS205 — 회청색 대조합치막](./cos205.json) 계열의 영향으로 front-only 표본과 body-only 표본, 또는 거짓 정쌍의 trace가 이미 존재하는 상태가 된다."
+      },
+      {
+        "name": "동체인 표기",
+        "description": "서로 맞지 않는 표본 둘 이상에 같은 provisional accession, pair code, chain field가 18~120초 안에 동시에 나타난다. 이 단계에서는 footer hash와 질량 차가 그대로 남아 있어도 번호만 같아진다."
+      },
+      {
+        "name": "절차 잠금",
+        "description": "auto-close, current preview, shelf scanner, handoff log가 번호 일치만을 근거로 하나의 사건철 또는 current copy처럼 절차를 닫으려 한다. 이때 실무자는 내용보다 하단선과 번호 외피를 더 먼저 믿는 경향을 보인다."
+      },
+      {
+        "name": "host 전이",
+        "description": "동일 번호를 현장에서 지우거나 덮거나 재포장하려 하면 번호가 blank slip, rebag sleeve, queue preview, shelf card, blank jacket 같은 인접 매체로 옮겨붙을 수 있다. 소거 시도는 대개 전이를 가속한다."
+      },
+      {
+        "name": "말단 고착",
+        "description": "전이된 동일 번호가 blank carrier나 shelf-prep 환경에서 안정화되면, 실제 본문 없이도 예비 current copy, 수령본, 배가본 같은 외피를 얻을 수 있다. 이 단계는 [COS182 — 담회색 무재 편철등](./cos182.json)과 같은 downstream 고착으로 이어질 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS206은 front/body가 이미 분리된 뒤 비교·인계·void·배가 정정 절차에서 생기는 **행정적 동일화 단계**로 분류된다.",
+      "시각적 false pair를 만드는 [COS203 — 회청색 교차편철면](./cos203.json)과 [COS205 — 회청색 대조합치막](./cos205.json)와 달리, COS206은 분리 이후에도 번호와 chain field가 남아 downstream 절차를 오염시킨다."
+    ],
+    "entries": [
+      {
+        "targetId": 193,
+        "targetTitle": "회청색 후입등재구",
+        "description": "[COS193 — 회청색 후입등재구](./cos193.json)는 표지, 첫 장, 발신란 같은 전면 정보를 본문보다 먼저 등재하는 상류 단계다. COS193 유래 front matter와 rear body를 정정대나 인계대에서 다시 모을 경우, 실제 provenance가 다르더라도 하나의 체인 번호가 양쪽에 남아 COS206이 형성될 수 있다."
+      },
+      {
+        "targetId": 197,
+        "targetTitle": "회청색 후행본문퇴",
+        "description": "[COS197 — 회청색 후행본문퇴](./cos197.json)의 body-only 적층은 상단 절차선이 없기 때문에 번호 외피에 더 취약하다. COS206이 발생하면 rear body는 자신의 본문 연속성을 유지한 채 무관한 front shell의 체인 번호를 이어받아, 회수 이후에도 잘못된 원본문처럼 보일 수 있다."
+      },
+      {
+        "targetId": 198,
+        "targetTitle": "회청색 후면분리턱",
+        "description": "[COS198 — 회청색 후면분리턱](./cos198.json)은 front와 body를 서로 다른 위치 상태로 분리하는 host다. COS198 유래 `A198-front`와 후행 body를 현장에서 재수집하는 과정에서 같은 수신선이나 route card 번호가 양쪽에 남으면, COS206이 그 분리를 행정적으로 하나의 체인으로 잠그는 후속 단계가 된다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json)은 서로 다른 전면과 본문을 같은 사건철처럼 보이게 만드는 작업면 현상이다. COS206은 그 거짓 복합체를 분리한 뒤에도 동일 accession이나 pair code가 shell과 body, 또는 blank slip에 남도록 만들어, 시각적 오합치를 행정적 오합치로 연장한다."
+      },
+      {
+        "targetId": 204,
+        "targetTitle": "COS204 — 회청색 보류인계슬리브",
+        "description": "[COS204 — 회청색 보류인계슬리브](./cos204.json)는 provisional accession과 회람 외피를 먼저 부여하는 대표 기점이다. COS204 표본을 분리했는데도 같은 provisional accession이 body packet, void slip, rebag sleeve에 남아 있으면 이는 COS204의 미수행 상태가 아니라 COS206의 동일 체인 필드 단계로 기록해야 한다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json)이 비교 단계에서 거짓 정쌍과 shared pair code를 만든다면, COS206은 그 shared code가 분리 이후에도 살아남아 다른 매체로 옮겨붙는 단계다. 즉 COS205가 `같아 보이게` 만든 것을, COS206은 `같은 번호로 처리되게` 만든다."
+      },
+      {
+        "targetId": 182,
+        "targetTitle": "담회색 무재 편철등",
+        "description": "blank jacket이나 shelf card에 남은 A206-trace가 예비배가 환경에서 안정화되면 [COS182 — 담회색 무재 편철등](./cos182.json)과 같은 shelf-ready shell 고착으로 이어질 수 있다. 이 경우 실제 본문 없이도 borrowed chain field와 current line만으로 담회색 편철등이 형성될 수 있으므로, COS206은 COS182의 한 말단 기점으로 기록된다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-206-01 / false pair와 true pair의 동체인 표기 대조",
+      "description": "2026-09-02 11:10~13:40, 기록무결성실 Q-5B. [COS205 — 회청색 대조합치막](./cos205.json) 및 [COS204 — 회청색 보류인계슬리브](./cos204.json)에서 분리된 false pair 12쌍과 실제 matched front/body 12쌍을 사용했다. CP-2 반투명 비교면 0~1 mm 간격, 442 nm 하부조명 438 lx 조건에서 false pair 9/12가 24~81초 내 같은 체인 필드를 두 host와 blank trace card에 동시에 생성했다. true pair는 정렬만 선명해졌을 뿐 제3 매체까지 같은 번호가 새로 퍼진 사례가 0/12였다."
+    },
+    {
+      "label": "EXP-206-02 / 현장 무효화와 remote rechain 대조",
+      "description": "2026-09-03 09:20~11:00, H-2C 체인정정대와 O-3 별도 정정실. active A206 표본 10건을 두 군으로 나눠, 5건은 같은 작업대 위에서 가로지움과 재포장을 시행하고 5건은 3.6 m 떨어진 불투명 정정실에서 새 체인 번호를 발급했다. 현장 무효화군은 7/10에서 32~146초 내 blank sleeve 또는 queue preview로 같은 번호가 전이되었고, remote rechain군은 0/10이었다."
+    },
+    {
+      "label": "EXP-206-03 / 인계 auto-close 의존성 시험",
+      "description": "2026-09-04 14:00~15:20, mock 인계대 H-2M. active false pair 8쌍을 반투명 handoff sheet 위에 배치한 군과, 같은 표본을 검은 불투명 트레이에 50 cm 이상 분리한 대조군 8회를 비교했다. active군은 6/8에서 단일 provisional barcode와 handoff auto-close가 발생했고, 분리 대조군은 0/8이었다."
+    },
+    {
+      "label": "EXP-206-04 / shelf-prep blank carrier 전이 시험",
+      "description": "2026-10-06 07:50~09:00, Q-2 예비배가대 P-4. active A206-trace 10건을 중심으로 blank jacket 10점과 shelf card 10점을 15~20 cm 거리에서 15분 노출했다. 그 결과 8/10에서 borrowed chain field가 생겼고, 그중 3/10은 current lower line과 apparent thickness 외피까지 얻었다. 같은 carrier를 검은 트레이 50 cm 분리 조건에서 노출한 대조군 20점은 모두 음성이었다."
+    },
+    {
+      "label": "EXP-206-05 / printer fault 배제 시험",
+      "description": "2026-09-05 10:10~11:30, 봉인실 M-2의 thermal printer TR-7. queue buffer를 비운 blank run 12회와 active A206 host를 30 cm 이내에 둔 run 12회를 비교했다. blank run은 duplicate preview와 spare label 생성이 0/12였고, active host 조건은 11/12에서 실제 출력 없이 같은 체인 번호가 queue preview 또는 예비 라벨에 먼저 나타났다. printer 단독 결함 가설은 이 결과로 배제되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "front-only shell과 body-only packet, 또는 [COS205 — 회청색 대조합치막](./cos205.json)·[COS204 — 회청색 보류인계슬리브](./cos204.json) 유래 표본은 최초 접수 시점부터 검은 불투명 트레이에 각각 올리고 최소 50 cm 이상 분리한다.",
+    "같은 번호가 둘 이상에 보이면 현장에서 지우거나 가로지우지 말고, 먼저 각 host의 위치·질량·footer hash·스테이플 간격을 촬영·기록한다.",
+    "auto-close, current preview, shelf scanner, handoff closure는 즉시 중지하고 수기 검증 모드로 전환한다.",
+    "footer hash, 실측 질량, 시작 페이지, 스테이플 간격 중 둘 이상이 일치하지 않으면 동일 번호가 남아 있어도 같은 chain으로 병합하지 않는다.",
+    "void slip, blank rebag sleeve, queue preview, shelf card, blank jacket은 active A206 표본 반경 1 m 밖에서만 취급한다.",
+    "재체인 필요 시에는 원래 번호가 남은 작업대에서 처리하지 않고, 3 m 이상 떨어진 remote rechain 구역에서 새로운 chain 번호를 발급한다.",
+    "[COS198 — 회청색 후면분리턱](./cos198.json), [COS193 — 회청색 후입등재구](./cos193.json), [COS197 — 회청색 후행본문퇴](./cos197.json) 경유 표본은 front 회수보다 rear body 존재 여부를 먼저 확인한다.",
+    "blank jacket이나 shelf-prep card에 current line 또는 chain field가 나타나면 일반 배가본으로 넘기지 않고 [COS182 — 담회색 무재 편철등](./cos182.json) 가능성과 함께 A206-trace로 봉인한다.",
+    "동일 번호가 생성된 두 표본을 같은 sleeve, 같은 비교판, 같은 인계대에 다시 올리지 않는다. 재대조는 불투명 개별 봉투 상태에서만 수행한다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS206이 [COS205 — 회청색 대조합치막](./cos205.json)의 shared pair code와 [COS204 — 회청색 보류인계슬리브](./cos204.json)의 provisional accession이, 분리 뒤에도 nearest host를 찾아 행정적으로 수렴한 후속 단계라는 것이다. 이 가설은 번호가 front와 body뿐 아니라 void slip, queue preview, blank sleeve로 확장되지만 footer hash와 질량은 변하지 않는다는 관찰과 부합한다.",
+    "또 다른 가설은 [COS193 — 회청색 후입등재구](./cos193.json), [COS197 — 회청색 후행본문퇴](./cos197.json), [COS198 — 회청색 후면분리턱](./cos198.json)이 만들어 놓은 front/body 분리 상태가 해소되지 않을 때, 절차 체계가 내용보다 번호를 먼저 회수하려 한다는 것이다. 이 경우 COS206은 본문 복구 현상이 아니라 `누가 무엇으로 등록되어야 하는가`를 내용보다 앞세우는 번호 수렴 현상으로 해석된다.",
+    "확정되지 않은 대안 가설로는, 동일 체인 필드가 새로운 번호를 생성하는 것이 아니라 이미 존재하던 provisional accession이나 pair code를 재사용해 다른 host에 재배치한다는 설명이 있다. 현재까지 실제로 존재하지 않던 번호가 COS206에서 단독 생성된 사례는 확인되지 않았다.",
+    "[COS182 — 담회색 무재 편철등](./cos182.json)과의 말단 중첩은 COS206이 shelf-prep 환경으로 들어가면 번호 외피만 가진 shell형 current copy를 남길 수 있음을 시사한다. 그러나 모든 COS206이 COS182로 이어지는 것은 아니며, blank jacket·shelf card·서가 lip 같은 특정 host가 필요한 것으로 보인다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "체인 번호 및 provenance 오염",
+      "assessment": "매우 높음. footer hash와 질량이 다른 표본이 같은 chain field를 획득해 하나의 사건철 또는 인수본처럼 처리될 수 있다."
+    },
+    {
+      "category": "auto-close 및 인계 절차 오판",
+      "assessment": "높음. mock H-2M 실험 8회 중 6회에서 수령자 재확인 없이 handoff closure가 발생했다."
+    },
+    {
+      "category": "배가·current copy 말단 고착",
+      "assessment": "높음. blank jacket과 shelf card가 borrowed chain field를 획득하면 실제 본문 없이도 예비 current copy처럼 보일 수 있다."
+    },
+    {
+      "category": "원본문 회수 지연",
+      "assessment": "중간 이상. 동일 번호가 외피에 남아 있으면 실무자가 번호 일치를 provenance 일치로 오인해 rear body 검색을 중단하는 경향이 있다."
+    },
+    {
+      "category": "물리 손상",
+      "assessment": "중간. 번호 필드를 잡아당기거나 현장에서 급히 떼어낼 경우 가장자리 파열과 추가 전이가 발생할 수 있다. 직접적인 생체 위해는 아직 확인되지 않았다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "일반적인 thermal printer duplicate는 COS206의 충분조건이 아니다. COS206 판정에는 최소 두 host 이상의 번호 일치, provenance 불일치, 제3 매체 전이 또는 절차 잠금 가운데 둘 이상이 함께 확인되어야 한다."
+    },
+    {
+      "type": "quotation",
+      "content": "같은 번호가 남아 있다고 해서 같은 기록이 된 것은 아닙니다. 여기서 같아진 것은 내용이 아니라 절차입니다. — 기록관 L-11, 2026-08-27 체인정정 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "현장 가로지움, 재라벨링, 같은 작업대 재포장은 대부분 소거보다 전이를 늘렸다. 현재까지 가장 안정적인 억제는 검은 불투명 트레이 분리와 remote rechain뿐이다."
+    },
+    {
+      "type": "quotation",
+      "content": "등면 번호선이 너무 자연스러워 한 번은 page block이 있을 것이라고 먼저 믿었습니다. 실제로는 번호만 서가 쪽으로 먼저 갔습니다. — 서가담당 ARC-07, 2026-10-06 면담"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-206 정식 편입",
+      "paragraphs": [
+        "2026-08-27부터 사용된 임시표기 `T-206`, `shared chain field`, `동일 provisional accession`, `공번 정정선`은 모두 COS206으로 통합한다.",
+        "초기에는 thermal printer duplication 또는 정정 slip 캐시 잔상으로 분류되었으나, 2026-09-02 대조 행렬에서 false pair군만 양성이고 true pair 및 분리 대조군이 음성임이 확인되어 독립 현상으로 재분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A206 접두 운용",
+      "paragraphs": [
+        "동일 체인 필드가 남은 front shell, body packet, slip, queue preview, blank carrier에는 각각 `A206-field`, 현장에서 전이만 남은 숫자 흔적과 하단선에는 `A206-trace`, 동일 필드가 생성된 correction mat·handoff sheet·shelf-prep board에는 `A206-host` 접두를 부여한다.",
+        "`A206-field`와 `A206-trace`는 같은 봉투, 같은 current chain, 같은 provisional accession으로 관리하지 않는다. provenance 대조가 끝날 때까지 어떤 경우에도 정식 사건철·인계본·배가본으로 승격하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 체크리스트",
+      "paragraphs": [
+        "다음 5개 조건 중 4개 이상을 만족하면 COS206 의심 표본으로 분류한다: `1)` 서로 다른 두 host 이상에 같은 번호가 있을 것, `2)` footer hash 또는 실측 질량이 불일치할 것, `3)` 번호 주변에 2~4 mm 회청색 field 또는 하단선이 있을 것, `4)` blank slip·queue preview·blank carrier 중 하나가 같은 번호를 추가 획득할 것, `5)` 검은 불투명 분리 조건에서 재현이 중단될 것.",
+        "정식 판정 시에는 번호 생성 시각, host 종류, 질량 차, 시작 페이지, 스테이플 간격, auto-close 또는 current preview 발생 여부를 함께 기록한다."
+      ]
+    },
+    {
+      "title": "remote rechain 절차",
+      "paragraphs": [
+        "기존 번호가 남은 표본을 현장 desk에서 정정하지 않는다. 각 host를 검은 불투명 트레이에 분리한 뒤 3 m 이상 떨어진 O-3형 remote rechain 구역으로 옮기고, 원래 번호를 가리지 않은 상태에서 사진과 계측을 먼저 끝낸다.",
+        "새 체인 번호는 각 host별로 별도 발급하며, queue buffer·auto-close·shelf scanner가 모두 중지된 상태에서만 적용한다. 기존 번호의 삭제나 가로지움은 remote rechain이 끝난 뒤에도 수행하지 않고, 사진 기록과 함께 무효 상태로만 보존한다."
+      ]
+    },
+    {
+      "title": "배제 기준",
+      "paragraphs": [
+        "단순 printer duplicate, queue cache 잔상, 잘못된 재라벨링은 provenance가 일치하거나 제3 매체 전이가 없을 경우 COS206으로 판정하지 않는다.",
+        "실제 matched front/body pair가 같은 번호를 유지하는 것은 정상 재결합 절차일 수 있다. 이 경우 blank carrier·queue preview·shelf card로 번호가 새로 퍼지지 않고 footer hash, 질량, page sequence가 함께 회복되어야 한다."
+      ]
+    }
+  ]
+}

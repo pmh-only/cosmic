@@ -365,6 +365,15 @@
       "paragraphs": [
         "[COS186 — 회청색 면전환대](./cos186.json)의 0° 전면 단계는 [COS182 — 담회색 무재 편철등](./cos182.json)과 동일한 front shell을 가장 직접적으로 재현한다. 다만 COS186에서는 같은 carrier가 이후 천두·후면·인용 외피로 이동할 수 있으므로, 회전 검토대에서 발생한 담회색 책등은 `A182-shell`만으로 종결하지 말고 `-F/-T/-R/-C/-D/-B` 면별 체인을 함께 유지한다."
       ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS206 — 회청색 동체인란](./cos206.json)의 `A206-trace`가 blank jacket이나 shelf card에 남은 상태에서 예비배가 절차가 진행되면, 실질 본문과 무관한 borrowed chain field만으로 [COS182 — 담회색 무재 편철등](./cos182.json)형 front shell이 고착될 수 있다. 2026-10-06 Q-2 예비배가대 사례에서 apparent thickness 7.2 mm, 질량 18.9 g의 blank jacket이 동일 chain field와 current line을 획득했으나 투과광에서는 page block이 확인되지 않았다.",
+        "따라서 COS182 의심 shell에 이미 존재하던 고유 shelf code가 아니라 인접 trace에서 옮겨온 chain field가 확인되면, 이를 독립 current copy로 보지 말고 [COS206 — 회청색 동체인란](./cos206.json) 유래 borrowed field 가능성과 함께 분리 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

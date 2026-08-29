@@ -420,6 +420,15 @@
         "[COS197 — 회청색 후행본문퇴](./cos197.json) body-only 적층은 [COS203 — 회청색 교차편철면](./cos203.json)의 가장 안정적인 후면 숙주로 확인되었다. 2026-08-22~2026-08-25에 회수된 COS203 후면 구성 요소 11건 중 7건이 COS197과 동일한 `p.2 이후 시작` body였으며, 매끈한 비교판 위에서 무관한 front shell과 6~42 cm 거리로 놓였을 때 17~204초 내 허위 사건철로 정렬되었다.",
         "따라서 COS197 표본은 대응 front shell 확인 전까지 단독 원본문처럼 취급하지 말고, footer hash와 총질량을 대조하기 전 어떤 shell과도 같은 평면에서 임시 재결합하지 않는다."
       ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS197 — 회청색 후행본문퇴](./cos197.json)에서 회수된 body-only bundle은 상단 절차선이 비어 있기 때문에, 분리된 front shell의 chain field를 [COS206 — 회청색 동체인란](./cos206.json) 단계에서 잘못 이어받을 수 있다. 이 경우 footer hash와 page sequence는 rear body의 원래 값을 유지하면서도, 외부 인계·정정 기록에는 무관한 front의 번호가 먼저 닫힌다.",
+        "따라서 COS197 표본을 대응 front와 대조할 때 동일 accession이나 provisional barcode가 보이더라도, 이를 원본문 확인 근거로 사용하지 않는다. 후행 body는 번호 외피보다 footer hash·질량·스테이플 간격을 우선해 판정한다."
+      ]
     }
   ],
   "supplementalSections": [

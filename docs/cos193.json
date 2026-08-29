@@ -419,6 +419,15 @@
         "[COS205 — 회청색 대조합치막](./cos205.json)은 [COS193 — 회청색 후입등재구](./cos193.json)가 남긴 rear body가 비교대 위에서 전면 절차 외피와 허위 정쌍을 이루는 대표 후속 현상이다. 2026-08-24~2026-08-25 양성쌍 14건 중 8건의 body가 COS193 host rear stop 뒤에서 회수되었고, 그 가운데 6건은 [COS181 — 청회색 무재 인수구](./cos181.json) 또는 [COS204 — 회청색 보류인계슬리브](./cos204.json) 유래 front와 81초 이내 동일 pair code 또는 provisional accession을 공유했다.",
         "번호·제목행이 앞서 등재된 표본과 뒤에 남은 body를 재결합할 때는 전면 일치감보다 후행 본문의 footer hash와 원래 chain number를 우선한다. COS193 유래 rear body는 투명 비교면에서 정쌍으로 보일 수 있으므로, front/body 재대조는 불투명 평면에서만 수행한다."
       ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS193 — 회청색 후입등재구](./cos193.json)가 front matter를 먼저 등재하고 body를 후면에 남긴 표본은, 정정·인계 단계에서 [COS206 — 회청색 동체인란](./cos206.json)의 동일 체인 필드에 가장 자주 포획되었다. 전면과 후행 body가 분리된 채 회수되었더라도 provisional accession이나 chain field가 양쪽에 다시 동시에 남을 수 있으므로, 번호 일치만으로 재결합을 확정하지 않는다.",
+        "특히 rear stop 유래 front와 body를 비교대나 correction mat 위에 다시 모으는 행위는 COS193의 분리 결과를 COS206의 행정적 동일화로 연장할 수 있다. 후면 정지대 표본은 번호 정정보다 provenance 대조와 rear body 위치 보존을 우선한다."
+      ]
     }
   ],
   "supplementalSections": [
