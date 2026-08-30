@@ -352,6 +352,14 @@
         "[COS205 — 회청색 대조합치막](./cos205.json)이 비교 단계에서 false pair와 shared pair code를 형성한 뒤, 표본을 분리해도 그 code나 provisional accession이 shell·body·blank slip에 남아 행정적으로 같은 체인처럼 처리되는 후속 단계가 [COS206 — 회청색 동체인란](./cos206.json)이다. COS205가 `같아 보이는` pair를 만들면 COS206은 그 pair가 `같은 번호로 닫히는` 상태를 고착시킨다.",
         "따라서 COS205 양성쌍을 해제한 뒤 shared code가 계속 남아 있더라도 provenance 회복의 징후로 보지 않는다. 비교 종료 후의 correction mat, handoff sheet, queue preview까지 함께 격리하여 COS206 전이 여부를 점검한다."
       ]
+    },
+    {
+      "relatedId": 207,
+      "type": "reciprocal",
+      "title": "COS207 상호기록",
+      "paragraphs": [
+        "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS205 — 회청색 대조합치막](./cos205.json) 해제 뒤 shell에 남은 shared pair code, 녹색 대조 표시, acceptance cue가 다음 station에서 `이미 대조가 끝난 파일`이라는 인상을 유지할 때 형성되는 후속 이동 단계로 확인되었다. false pair를 분리한 뒤에도 shell이 handoff·review·release preview를 단독 통과할 수 있으므로, shared code 잔류를 provenance 회복의 증거로 사용해서는 안 된다. COS205 양성쌍 해제 후 thin shell이 다른 carrier로 이동하면 [COS207 — 회청색 무재순환철](./cos207.json) 전이를 우선 의심하고 route freeze를 선행한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 5,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 5
+  },
+  "classificationRationale": {
+    "secrecy": "2026-10-12부터 2026-10-28까지 확정된 11건 중 3건이 release relay 또는 outgoing preview 직전까지 진행되었고, shell만으로도 현재본·인계본 외형을 유지한 채 여러 처리 지점을 통과했다. 존재와 식별 기준이 널리 알려질 경우 기관의 route closure와 current copy 판정을 외형만으로 모방하는 데 악용될 수 있어 공개 범위를 제한한다.",
+    "permission": "COS207 판정에는 front shell의 질량·두께·투과광 결과, traversed station log, origin host의 rear search, 대응 body의 footer hash와 page total을 함께 대조해야 한다. 단순 접수 인력이나 일반 보관 인력 수준에서는 오판률이 높아 기록감식과 체인정정 권한을 가진 인원만 열람해야 한다.",
+    "chaos": "같은 shell이라도 handoff, review, shelf-prep, release preview 중 어떤 순서를 닫는지가 일정하지 않았고, 22회의 통제 시험에서 0·2·3·4지점 통과가 모두 관찰되었다. 정지 시 [COS182 — 담회색 무재 편철등](./cos182.json)형 고착으로 넘어가거나 correction desk에서 [COS206 — 회청색 동체인란](./cos206.json) field duplication으로 갈라져 예측성이 매우 낮다.",
+    "danger": "확정 사례 가운데 4건은 live 승인, release, archive 준비가 body 회수보다 먼저 진행될 뻔했고, 1건은 제한등급 운영지시 shell이 release relay 40초 전에서야 중단되었다. 직접적인 인체 손상은 없었지만, 기록·지휘·보존 사슬을 동시에 왜곡할 수 있어 운영 위험이 높다.",
+    "popularity": "임시등록 뒤 17일 동안 예비배가, 체인정정, handoff, release, shelf-prep 부서에서 교차 대조 요청 19건과 route freeze 질의 8건이 발생했다. 기관 전반의 최상위 허브 수준은 아니지만 문서형 분리·고착 계열에서 반복 참조되는 중간 수준의 빈도를 보였다.",
+    "containment": "shell만 단독 격리한 5/5 대조군에서 traversed cart, queue preview, origin rear host 가운데 최소 1곳이 계속 활성 상태를 유지했다. 안정적인 억제를 위해서는 origin host, 통과 지점, 대응 body를 함께 동결하고, shell 효력 정지와 remote rechain을 동시에 수행해야 하므로 관리 강도는 최고 수준으로 판정한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "ARC-07",
+        "role": "예비배가 기록관",
+        "status": "active",
+        "involvement": "Q-2 예비배가대와 격리서가 H-3-17에서 첫 이동 shell을 식별하고, current line이 닫혀 있어도 rear search를 우선해야 한다는 초동 기준을 세웠다."
+      },
+      {
+        "name": "L-11",
+        "role": "체인정정 기록관",
+        "status": "active",
+        "involvement": "동일 accession이 여러 station에서 닫히는 양상을 기록하고, 현장 가로지움 대신 remote rechain 절차를 지휘했다."
+      },
+      {
+        "name": "LAB-12",
+        "role": "보존기사",
+        "status": "active",
+        "involvement": "질량·투과광·저선량 촬영으로 page block 부재를 확인하고 origin host와 traversed cart의 rear guide를 개방해 대응 body를 회수했다."
+      },
+      {
+        "name": "P-16",
+        "role": "회람카트 운용원",
+        "status": "reassigned",
+        "involvement": "front shell을 reserve current copy로 오인해 H-4와 R-2로 이송했고, 두 차례의 잘못된 route closure를 유발했다. 사건 뒤 relay·shelf-prep 운용에서 제외되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-10-12 09:27 KST",
+        "label": "최초 이동 shell 확인",
+        "description": "제2보존동 Q-2 예비배가대 P-4에서 thin shell `A207-shell-01`이 H-4 handoff와 D-1 review preview를 연속 통과했으나, 실제 body는 origin rear guide에서 뒤늦게 회수되었다."
+      },
+      {
+        "date": "2026-10-12 10:18 KST",
+        "label": "임시표기 T-207 부여",
+        "description": "ARC-07과 L-11이 front-only 이동 현상을 [COS182 — 담회색 무재 편철등](./cos182.json)의 정지형 말단, [COS206 — 회청색 동체인란](./cos206.json)의 field duplication과 구분해 임시표기 `T-207`, `bodyless circulation file`, `moving current shell`을 병기했다."
+      },
+      {
+        "date": "2026-10-18 14:11 KST",
+        "label": "release relay 근접 사고",
+        "description": "체인정정대 H-2에서 분리 보관 중이던 shell이 [COS204 — 회청색 보류인계슬리브](./cos204.json) 안으로 들어가 R-2 release relay 직전까지 이동했고, 대응 body는 correction mat 후미에서 발견되었다."
+      },
+      {
+        "date": "2026-10-21 09:30 KST",
+        "label": "다단계 mock route 실험 개시",
+        "description": "Q-2, H-4, D-1, S-1을 모사한 4지점 경로에서 active shell 12점과 clean control 12점을 비교한 통제 실험이 시작되었다."
+      },
+      {
+        "date": "2026-10-28 17:10 KST",
+        "label": "정지 고착 임계 확인",
+        "description": "이동 shell을 prep rack에 20분 이상 정지시키면 6건 중 4건이 [COS182 — 담회색 무재 편철등](./cos182.json)형 고정 shell로 넘어간다는 사실이 확인되었다."
+      },
+      {
+        "date": "2026-11-02 11:00 KST",
+        "label": "정식 문서화 승인",
+        "description": "확정 사례 11건, 부분 사례 5건, 통제 실험 22건의 결과를 종합해 COS207 공식 조사 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "C207-26-01",
+        "date": "2026-10-12",
+        "location": "제2보존동 Q-2 예비배가대 P-4 / H-4 중간회람카트 / D-1 사전검토 desk",
+        "title": "예비배가 shell의 다단계 route closure",
+        "involvedPersonnel": [
+          "ARC-07",
+          "LAB-12",
+          "L-11",
+          "P-16"
+        ],
+        "narrative": [
+          "09:27, P-16은 예비배가대 P-4에서 spine title과 current lower line이 남은 thin shell `A207-shell-01`을 발견했다. apparent thickness는 7.4 mm였지만 실측 질량은 24.8 g에 불과했고, registry상 동일 accession `RQ-26-441`의 기대 질량은 168 g이었다. P-16은 previous queue freeze가 해제된 뒤라는 이유로 이를 reserve current copy로 판단해 H-4 neutral tray로 옮겼고, 09:31 handoff log가, 09:36 D-1 review preview가 각각 닫혔다. page capture count는 두 지점 모두 0장이었다.",
+          "ARC-07은 D-1 전면에서 shell 내부가 투과광상 front leaf 1매만 보인다는 점을 확인하고 H-4에서 즉시 되돌려 잡는 대신, L-11에게 queue freeze를 요청해 이동 경로를 고정했다. LAB-12는 origin P-4와 H-3-17 rear guide를 개방해 1.7 m 뒤, rear gap 19 mm 위치에서 `B207-body-01` 31매와 부록 2매를 회수했다. P-16은 같은 accession이 두 지점에서 이미 닫혔다는 이유로 shell을 계속 운반하자고 제안했으나, L-11은 현장 가로지움이 [COS206 — 회청색 동체인란](./cos206.json) duplication을 늘릴 수 있다는 판단 아래 remote freeze만 유지했다."
+        ],
+        "outcome": "`A207-shell-01`과 `B207-body-01`은 별도 체인으로 봉인되었고, H-4와 D-1의 log 2건은 오염 상태로 무효화되었다. Q-2 예비배가대와 H-4 cart는 각각 12시간과 6시간 동안 폐쇄되었다."
+      },
+      {
+        "code": "C207-26-02",
+        "date": "2026-10-18",
+        "location": "체인정정대 H-2 / R-2 release relay / correction mat CM-2",
+        "title": "보류인계슬리브 경유 release relay 근접 사고",
+        "involvedPersonnel": [
+          "L-11",
+          "LAB-12",
+          "P-16",
+          "ARC-07"
+        ],
+        "narrative": [
+          "14:11, L-11은 [COS205 — 회청색 대조합치막](./cos205.json) 해제 뒤 분리 보관 중이던 front shell `A207-shell-04`와 무관 body packet `B207-body-04`의 provenance 대조를 진행하고 있었다. shift 교대 직후 P-16은 H-2 옆칸에 남아 있던 [COS204 — 회청색 보류인계슬리브](./cos204.json) `S204-clear-02`를 빈 운반체로 오인해 `A207-shell-04`를 그 안에 넣었고, shell 전면의 provisional accession과 release hold line을 본 뒤 R-2 relay 쪽으로 밀어 보냈다. 6분 52초 동안 H-2 correction queue, R-2 release preview, outgoing preparation tray가 차례로 닫혔으며, 세 지점 모두 실측 질량 입력은 공란으로 남았다.",
+          "LAB-12는 outgoing preparation tray 앞에서 shell 질량이 21.3 g으로 registry 기대치 143 g보다 지나치게 낮다는 점을 확인하고 직접 바코드를 재스캔하려 했다. ARC-07은 재스캔이 field duplication을 늘릴 수 있다고 보고 중지를 지시했고, L-11은 R-2 전원과 queue preview를 동시에 차단한 뒤 CM-2 후미 0.9 m 지점에서 `B207-body-04` 24매와 appendix 3매를 회수했다. P-16은 release line이 이미 닫혔으니 본문은 뒤에서 따라올 것이라고 주장했으나, LAB-12의 투과광 결과와 footer hash 대조는 shell 내부에 body가 없음을 재확인했다."
+        ],
+        "outcome": "외부 반출은 40초 전에서 중단되었고, R-2 relay와 CM-2는 각각 `A207-host-02`, `A207-host-03`으로 봉인되었다. P-16은 relay·shelf-prep 운용에서 재배치되었으며, H-2 및 R-2에 route freeze 우선 절차가 즉시 시행되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-207-01",
+        "type": "이동 shell 표본",
+        "description": "`A207-shell-01`과 `A207-shell-04` 전면 shell 2점. current line, provisional accession, review/release lower line이 남아 있으나 투과광과 저선량 촬영에서 page block은 확인되지 않았다.",
+        "custodyStatus": "제2보존동 문서위험물 금고 G-207-1, G-207-2에 개별 봉인. 동일 tray 반입 금지."
+      },
+      {
+        "code": "EV-207-02",
+        "type": "다지점 영상·로그 패키지",
+        "description": "Q-2, H-4, D-1, H-2, R-2, outgoing preparation tray에서 확보한 CCTV 6채널, queue preview 5건, handoff/review/release log 9건의 묶음이다. shell 이동과 body 부재가 동시에 기록되어 있다.",
+        "custodyStatus": "디지털증거 서버 `DE-207-ROUTE`에 해시 고정 저장하고, 작업용 사본은 원본 로그와 분리 보관한다."
+      },
+      {
+        "code": "EV-207-03",
+        "type": "대응 body 회수 세트",
+        "description": "`B207-body-01` 31매+부록 2매, `B207-body-04` 24매+appendix 3매와 origin rear guide 위치도, footer hash 대조표, rear gap 19 mm/17 mm 계측표이다.",
+        "custodyStatus": "저조도 보존함 LC-207-B1/B4에 개별 봉인. shell과 직접 접촉 금지."
+      },
+      {
+        "code": "EV-207-04",
+        "type": "mock route 실험 데이터",
+        "description": "2026-10-21~10-28 통제 실험 22건의 질량·두께·station closure·투과광·rear search 결과를 묶은 데이터세트이다.",
+        "custodyStatus": "분석 서버 `LAB-207-MR` 읽기 전용 저장, 인쇄본은 절차감사 금고에 별도 봉인."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "ARC-07",
+        "role": "예비배가 기록관",
+        "context": "2026-10-12 초동 보고",
+        "statement": "제가 직접 확인한 사실은 H-4와 D-1이 닫힌 뒤에도 본문이 origin rear guide에 남아 있었다는 점입니다. current line이 움직였다는 인상은 있었지만, 사건철 전체가 이동했다는 결론은 질량과 footer hash 대조로 부정되었습니다."
+      },
+      {
+        "speaker": "P-16",
+        "role": "회람카트 운용원",
+        "context": "2026-10-18 경위서",
+        "statement": "제 눈에는 제목선과 release hold line이 완결본처럼 보였고, 그래서 뒤에서 본문이 따라오고 있다고 해석했습니다. 그러나 그 해석은 제 판단이었고, 실제로는 shell 안에 body가 없었다는 점을 나중에 계측으로 확인했습니다."
+      },
+      {
+        "speaker": "L-11",
+        "role": "체인정정 기록관",
+        "context": "2026-10-21 실험 전 복기",
+        "statement": "같은 accession이 움직인다고 해서 같은 기록이 이동한 것은 아닙니다. 관찰된 사실은 번호와 하단선이 station을 닫았다는 점이며, provenance와 본문 연속성은 별도의 대조가 필요했습니다."
+      }
+    ]
+  },
+  "id": 207,
+  "title": "회청색 무재순환철",
+  "language": "ko-KR",
+  "overview": [
+    "**COS207**은 실제 본문이 분리되었거나 다른 지점에 남아 있는 front shell이 `현재본`, `인계본`, `예비배가본` 외형을 유지한 채 둘 이상의 처리 지점을 통과하는 **이동형 무재 순환 기록 현상**이다. 현재 통칭은 **회청색 무재순환철**이다.",
+    "2026-10-12부터 2026-10-28까지 확인된 11건의 확정 사례에서 shell의 apparent thickness는 4.9~13.2 mm였으나 실측 질량은 18.4~61.7 g에 그쳤다. 같은 시간대 실제 body는 0.6~3.2 m 뒤, 14~24 mm rear guide, 또는 직전 correction host에서 회수되었다.",
+    "정지된 shell이 [COS182 — 담회색 무재 편철등](./cos182.json)처럼 고정 말단으로 굳는다면, COS207은 그 이전 단계에서 shell이 [COS193 — 회청색 후입등재구](./cos193.json)·[COS198 — 회청색 후면분리턱](./cos198.json) 기원의 분리 상태와 [COS206 — 회청색 동체인란](./cos206.json)의 borrowed chain field를 유지한 채 [COS204 — 회청색 보류인계슬리브](./cos204.json) 또는 중간 회람카트를 타고 계속 이동하는 경우를 지칭한다."
+  ],
+  "identificationTraits": [
+    "A4 shell 또는 얇은 사건철 외형을 가지며 apparent thickness는 4.9~13.2 mm지만 실측 질량은 18.4~61.7 g에 머문다. registry나 expected bundle mass와의 차이는 보통 42~183 g이다.",
+    "전면과 등면에는 current line, provisional accession, handoff/review/release lower line이 남아 있으나, 투과광 또는 저선량 촬영에서는 page block이 없거나 front leaf 1~2매만 확인된다.",
+    "활성 shell은 3분 48초~17분 22초 사이에 2~4개의 station log를 연속 통과할 수 있다. 이 과정에서 page capture count는 0 또는 1에 머무는 사례가 대부분이었다.",
+    "대응 body는 현 위치 안에 숨어 있는 경우보다, origin host의 rear guide 14~24 mm 뒤, 직전 correction mat, 이전 queue tray, 또는 바로 앞 단계의 후면 정지대에서 회수되는 비율이 높았다.",
+    "가장 높은 형성률은 [COS193 — 회청색 후입등재구](./cos193.json) 또는 [COS198 — 회청색 후면분리턱](./cos198.json) 기원의 shell이 [COS206 — 회청색 동체인란](./cos206.json) trace를 유지한 채 [COS204 — 회청색 보류인계슬리브](./cos204.json)나 중간 회람카트에 들어갔을 때 관찰되었다.",
+    "비교 단계를 거친 shell은 [COS205 — 회청색 대조합치막](./cos205.json) 이후처럼 옅은 pair code 또는 녹색 대조 표시를 유지한 채 다음 지점에서 acceptance cue로 작동할 수 있다.",
+    "이동을 멈춘 shell을 prep rack이나 shelf face에 20분 이상 방치하면 [COS182 — 담회색 무재 편철등](./cos182.json)과 구별하기 어려운 고정 편철등으로 넘어가는 경우가 많다."
+  ],
+  "discovery": [
+    "COS207은 [COS182 — 담회색 무재 편철등](./cos182.json), [COS193 — 회청색 후입등재구](./cos193.json), [COS198 — 회청색 후면분리턱](./cos198.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json) 사건의 후속 기록을 재검토하는 과정에서 분리되었다. 조사팀은 front-only shell이 static shelf shell로 고정되거나 단순히 shared field만 남기는 경우와 달리, 일부 표본이 실제 handoff, review, shelf-prep 경로를 따라 움직인다는 점을 확인했다.",
+    "최초 확정 사례는 2026-10-12 09:27 KST, 제2보존동 Q-2 예비배가대 P-4에서 발생했다. `A207-shell-01`은 accession `RQ-26-441`, current lower line, prep marker를 가진 thin shell이었고, P-4를 떠난 뒤 09:31 H-4 handoff log와 09:36 D-1 review preview를 연속으로 닫았다. 그러나 page capture count는 0장이었고, 10:02 LAB-12가 H-3-17 rear guide 19 mm 뒤에서 `B207-body-01` 31매와 부록 2매를 회수했다. 이 사례는 COS207이 [COS182 — 담회색 무재 편철등](./cos182.json)의 고정 말단도, [COS206 — 회청색 동체인란](./cos206.json)의 정지 field duplication도 아니라는 사실을 처음 명확히 했다.",
+    "2026-10-18 두 번째 근접 사고에서는 [COS205 — 회청색 대조합치막](./cos205.json) 해제 뒤 남은 shell이 [COS204 — 회청색 보류인계슬리브](./cos204.json) 안으로 들어가 R-2 release relay 직전까지 이동했고, 대응 body는 correction mat 후미에서 별도로 회수되었다. 이후 11건의 확정 사례와 22건의 통제 실험이 축적되면서, 이 이동 shell 현상은 별도 항목 COS207로 정식 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS207은 본문을 복원하지 않으며, front shell이 **현재 처리 중인 기록**으로 보이는 상태만 유지한 채 실제 route를 계속 통과하게 만든다.",
+      "이동 경로의 중심은 handoff, review, shelf-prep, release preview 같은 `다음 단계로 넘길 이유가 있는 지점`이며, station이 닫힐수록 shell 자체는 더 얇고 가벼운 상태를 유지한다.",
+      "검은 불투명 tray에서 즉시 분리 봉인하면 이동이 약화되지만, same accession 정정이나 투명 sleeve 재삽입은 이동 지점 수를 늘리거나 [COS182 — 담회색 무재 편철등](./cos182.json)형 고착으로 바꾸는 경향이 있다."
+    ],
+    "stages": [
+      {
+        "name": "분리 기원",
+        "description": "front shell이 [COS193 — 회청색 후입등재구](./cos193.json) 또는 [COS198 — 회청색 후면분리턱](./cos198.json)과 유사한 rear host에서 body와 분리된 채 current line, route marker, provisional accession만 유지한다."
+      },
+      {
+        "name": "carrier 채택",
+        "description": "분리된 shell이 [COS204 — 회청색 보류인계슬리브](./cos204.json), neutral cart, prep tray 같은 이동 carrier에 올라가면 front state가 안정된다. 이 단계에서 질량 결손이 있어도 외형상 reserve current copy처럼 보일 수 있다."
+      },
+      {
+        "name": "route closure 연속화",
+        "description": "shell은 body 없이 handoff, review, shelf-prep, release preview 가운데 2~4지점을 통과한다. log는 닫히지만 page capture, 질량 입력, body confirmation은 공란이거나 최소치로 남는다."
+      },
+      {
+        "name": "borrowed field 유지",
+        "description": "이동 중 shell은 [COS206 — 회청색 동체인란](./cos206.json)과 유사한 borrowed chain field를 유지하고, [COS205 — 회청색 대조합치막](./cos205.json) 잔여 pair cue를 acceptance marker로 사용할 수 있다. 이 때문에 다음 담당자는 shell을 이미 검증된 사건철처럼 받아들이기 쉽다."
+      },
+      {
+        "name": "고착 또는 붕괴",
+        "description": "이동이 멈춘 shell은 prep rack이나 shelf face에서 [COS182 — 담회색 무재 편철등](./cos182.json)형 고정 shell로 굳을 수 있다. 반대로 rear search와 remote rechain이 즉시 개시되면 이동성은 12~60초 안에 붕괴하고, 대응 body는 origin host 또는 직전 station 뒤에서 회수되는 경우가 많다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS207은 front/body 분리 계열에서 **정지형 말단**과 **정정 field 잔류** 사이에 놓인 이동 단계로 분류된다.",
+      "관측 기록상 COS207은 [COS193 — 회청색 후입등재구](./cos193.json), [COS198 — 회청색 후면분리턱](./cos198.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json)의 선행 조건 위에서 가장 자주 시작되며, 정지하면 [COS182 — 담회색 무재 편철등](./cos182.json)으로 굳는다."
+    ],
+    "entries": [
+      {
+        "targetId": 182,
+        "targetTitle": "담회색 무재 편철등",
+        "description": "멈춘 COS207 shell은 [COS182 — 담회색 무재 편철등](./cos182.json)와 같은 고정 편철등으로 전이한다. [COS182 — 담회색 무재 편철등](./cos182.json)이 shelf face에 남는 정지형 말단이라면, COS207은 같은 shell이 route·handoff·review 상태를 안고 이동하는 단계다."
+      },
+      {
+        "targetId": 193,
+        "targetTitle": "회청색 후입등재구",
+        "description": "[COS193 — 회청색 후입등재구](./cos193.json)는 제목·번호·첫 장 같은 전면 정보를 본문보다 먼저 등재하는 상류 조건이다. COS207 확정 11건 중 6건은 rear stop 또는 후면 정지 조건이 선행 확인된 shell에서 시작되었다."
+      },
+      {
+        "targetId": 198,
+        "targetTitle": "회청색 후면분리턱",
+        "description": "[COS198 — 회청색 후면분리턱](./cos198.json)은 COS207의 가장 빈번한 물리 host다. 확정 사례 11건 중 8건에서 front only shell은 A198-host rear lip 직후 이동했고, 대응 body는 14~24 mm 뒤 rear guide 또는 직전 tray에서 회수되었다."
+      },
+      {
+        "targetId": 204,
+        "targetTitle": "COS204 — 회청색 보류인계슬리브",
+        "description": "[COS204 — 회청색 보류인계슬리브](./cos204.json)는 COS207의 가장 안정적인 이동 carrier다. active shell을 COS204 계열 sleeve에 넣은 통제 시험 6/6에서 multistation route closure가 발생했고, 검은 불투명 sleeve 대조군은 0/6이었다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json)은 이동 직전 shell에 `이미 대조가 끝난 파일`이라는 acceptance cue를 남긴다. false pair를 해제한 뒤에도 옅은 pair code와 녹색 대조 표시가 남아 있으면, 다음 station은 body 없는 shell을 정쌍처럼 받아들이기 쉽다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "[COS206 — 회청색 동체인란](./cos206.json)은 COS207의 route identity를 유지시키는 직접 원천이다. same accession이나 borrowed chain field가 남은 shell은 provenance가 회복되지 않았어도 handoff, review, shelf-prep, release preview를 같은 기록처럼 연속 통과할 수 있다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "실험 207-A / 다단계 route progression",
+      "description": "2026-10-21 09:30~12:10 KST, Q-2→H-4→D-1→S-1을 모사한 4지점 경로에서 active shell 12점과 clean front control 12점을 비교했다. active군 8/12는 2개 이상 station closure를, 3/12는 4개 전 지점 closure를 기록했으나 대응 body는 모두 origin rear host에 남아 있었다. control군은 0/12였다."
+    },
+    {
+      "label": "실험 207-B / carrier 의존성",
+      "description": "같은 active shell 6점을 [COS204 — 회청색 보류인계슬리브](./cos204.json) 계열 sleeve와 검은 불투명 sleeve에 각각 넣고 Q-2 mock queue를 통과시켰다. COS204 계열 carrier는 6/6에서 handoff와 review closure를 유발했고, 검은 불투명 sleeve는 0/6이었다."
+    },
+    {
+      "label": "실험 207-C / false-match priming",
+      "description": "[COS205 — 회청색 대조합치막](./cos205.json) 해제 뒤 남은 shell 6점과 false-match 노출이 없는 thin shell 6점을 review desk D-1에 배치했다. primed shell군은 5/6에서 90초 이내 review preview와 shelf-prep marker를 연속 획득했고, 비노출군은 1/6의 단일 preview에 그쳤다."
+    },
+    {
+      "label": "실험 207-D / rear host 의존성",
+      "description": "[COS193 — 회청색 후입등재구](./cos193.json) rear stop 기원 shell 4점과 [COS198 — 회청색 후면분리턱](./cos198.json) 기원 shell 4점, clean shell 8점을 비교했다. active host 기원군은 8점 중 7점에서 multistation 이동이 재현되었고, clean shell군은 0/8이었다."
+    },
+    {
+      "label": "실험 207-E / remote rechain 대조",
+      "description": "[COS206 — 회청색 동체인란](./cos206.json) trace가 남은 shell 10점을 두 군으로 나눠 현장 correction mat에서 바로 가로지운 군 5점과 3.6 m 떨어진 remote rechain 구역으로 옮긴 군 5점을 비교했다. 현장 가로지움군은 4/5에서 additional route closure가 이어졌고, remote rechain군은 0/5였다."
+    },
+    {
+      "label": "실험 207-F / 정지 고착 임계",
+      "description": "이동 중인 shell 6점을 prep rack에 20분 정지시키고, 다른 6점은 3분 간격으로 검은 tray 사이를 이동시켰다. 정지군은 4/6이 [COS182 — 담회색 무재 편철등](./cos182.json)과 같은 고정 shell로 넘어갔고, 이동군은 5/6이 최소 15분간 COS207 이동성을 유지했다."
+    }
+  ],
+  "handlingProcedures": [
+    "front shell의 질량이 registry 또는 expected bundle mass보다 15 g 이상 낮고 page block이 보이지 않는데 current line, handoff line, review line 중 하나 이상이 활성 상태라면 즉시 `A207-hold`를 선언한다.",
+    "현재 위치한 station과 바로 이전 두 station의 queue, tray, relay, preview를 동시에 정지한다. shell만 회수하고 route를 계속 돌리는 방식은 금지한다.",
+    "shell은 투명 sleeve나 일반 호송폴더에 넣지 않고, 무광 흑색 tray 또는 불투명 frame에 단독 수납한다.",
+    "route를 취소하기 전에 origin host의 rear guide 0~30 mm 구간, 직전 correction mat, 이전 handoff cart, shelf-prep board를 우선 검색한다. 대응 body가 회수되기 전에는 어떤 completion 상태도 확정하지 않는다.",
+    "같은 accession, pair code, current line이 남아 있더라도 shell과 body를 현장에서 재결합하지 않는다. provenance 정정은 대응 body 회수 후 remote rechain 구역에서만 수행한다.",
+    "page capture count 0 또는 1인 상태에서 handoff, review, release preview가 닫히면 이를 기계 오류로 단정하지 말고 COS207 경보로 기록한다.",
+    "shell이 prep rack이나 shelf face에서 20분 이상 정지했다면 [COS182 — 담회색 무재 편철등](./cos182.json) 전이 여부를 먼저 확인한다. 고정 shell로 굳은 뒤에는 이동성보다 rear body 검색을 우선한다.",
+    "[COS204 — 회청색 보류인계슬리브](./cos204.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json) 노출력이 있는 shell은 release, archive, shelf-prep, outgoing cart에 올리지 않는다.",
+    "경로 보존을 위해 취소 전 log와 preview를 캡처하되, 전면의 accession이나 route line을 소리 내어 읽지 않는다. verbal identification은 acceptance cue를 강화하는 사례가 있었다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS207이 [COS193 — 회청색 후입등재구](./cos193.json)와 [COS198 — 회청색 후면분리턱](./cos198.json)이 만든 front/body 분리 상태 위에, [COS205 — 회청색 대조합치막](./cos205.json)의 acceptance cue와 [COS206 — 회청색 동체인란](./cos206.json)의 borrowed chain field가 남아 있을 때 형성되는 **이동형 현재본 위장 단계**라는 것이다.",
+    "이 가설에 따르면 [COS204 — 회청색 보류인계슬리브](./cos204.json)나 neutral relay cart는 shell을 새로 만드는 host가 아니라, 이미 분리된 shell이 `다음 지점으로 가야 한다`는 절차 인상을 잃지 않도록 보존하는 carrier에 가깝다. 이동이 멈추면 같은 shell은 [COS182 — 담회색 무재 편철등](./cos182.json)처럼 정지형 말단으로 굳을 수 있다.",
+    "현재까지 COS207이 실제 missing body를 생성하거나 reliable text를 복원했다는 증거는 없다. 확인된 것은 어디까지나 **본문 없는 shell이 절차적 현재성만 유지한 채 이동한다는 사실**이며, 이동 후 닫힌 route와 current line은 내용 확인의 근거가 될 수 없다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "bodyless current copy circulation",
+      "assessment": "매우 높음. shell만으로 2~4개의 station log가 닫힐 수 있어 body 없는 현재본이 실제 동선을 점유한다."
+    },
+    {
+      "category": "live release·archive 오판",
+      "assessment": "높음. release preview, archive prep, handoff closure가 body 회수 전에 진행될 수 있으며, 제한 운영지시 shell 1건이 실제 반출 40초 전에서야 중단되었다."
+    },
+    {
+      "category": "chain-of-custody 분리",
+      "assessment": "높음. shell과 body가 서로 다른 지점·체인·시각표를 얻은 채 움직이면 provenance 복원이 지연되고, 현장 correction이 오히려 shared field duplication을 늘릴 수 있다."
+    },
+    {
+      "category": "정지 고착 전이",
+      "assessment": "중간 이상. 이동 shell을 방치하면 [COS182 — 담회색 무재 편철등](./cos182.json)형 고정 shell로 넘어가 rear body 검색이 더 늦어진다."
+    },
+    {
+      "category": "직접 신체 손상",
+      "assessment": "낮음. 현재까지 확인된 직접 외상은 없으나, rear guide 무리한 인양과 잘못된 추가 feed는 혼입과 찢김을 유발했다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "2026-10-12~2026-10-28 확정 사례 11건에서 shell의 실측 질량은 18.4~61.7 g 범위였고, 대응 body 회수 전 page capture count가 2를 넘은 사례는 없었다. `두께와 route가 맞는데 무게가 따라오지 않는다`는 징후가 가장 안정적인 현장 경보였다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“움직인 것은 철이지 사건이 아니었다.”** — ARC-07, 2026-10-12 초동 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "전면 accession이나 current line이 두 지점 이상에서 닫혀 있어도, 그것은 문서의 현재성이 아니라 shell의 현재 이동 상태를 가리킬 수 있다. COS207의 핵심 오판은 `station이 닫혔으니 본문도 함께 갔다`고 단정하는 것이다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“같은 번호가 따라왔다는 사실과, 같은 본문이 따라왔다는 사실은 다르다.”** — L-11, 2026-10-21 실험 전 복기"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-207 정식 편입",
+      "paragraphs": [
+        "2026-10-12부터 2026-10-18 사이 현장 메모에서는 현상을 `T-207`, `bodyless circulation file`, `moving current shell`, `순환 shell`로 병기했다.",
+        "통제 실험과 실제 route freeze 기록을 대조한 결과, 본 항목은 [COS182 — 담회색 무재 편철등](./cos182.json)의 정지형 말단도, [COS206 — 회청색 동체인란](./cos206.json)의 단순 field 잔류도 아닌 **이동형 무재 순환 단계**임이 확인되었다. 이에 정식 명칭을 **회청색 무재순환철**로 확정한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A207 접두 운용",
+      "paragraphs": [
+        "이동 shell은 `A207-shell-일련번호`, 대응 실제 body는 `B207-body-일련번호`, route log와 preview는 `T207-route-일련번호`, 이동 지점을 제공한 carrier와 tray는 `A207-host-일련번호`로 분리 관리한다.",
+        "`A207-shell`, `B207-body`, `T207-route`는 동일 봉투, 동일 tray, 동일 current chain으로 병합하지 않는다. 대응 body 직접 확인과 remote rechain이 끝나기 전까지 어떠한 release, archive, shelf-prep, outgoing 처리도 허용하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "다음 5개 조건 중 4개 이상을 만족하면 COS207 의심 표본으로 분류한다: `1)` shell apparent thickness가 4 mm 이상일 것, `2)` 실측 질량이 기대치보다 15 g 이상 낮을 것, `3)` page capture count가 0 또는 1일 것, `4)` handoff/review/shelf-prep/release log 가운데 2개 이상이 연속으로 닫힐 것, `5)` 대응 body가 현 위치가 아닌 rear host 또는 직전 station 뒤에서 확인될 것.",
+        "정식 판정 시에는 origin host, traversed station, 실측 질량, 투과광 결과, footer hash, page total, preview close 시각을 함께 기록한다. title line과 accession만 일치하는 경우는 COS207 확정이 아니라 보류 표본으로 유지한다."
+      ]
+    },
+    {
+      "title": "우선 검색 반경과 순서",
+      "paragraphs": [
+        "shell이 발견된 즉시 current 위치만 보지 말고 origin host, 바로 이전 두 station, rear guide 0~30 mm 구간, correction mat 후미, relay cart 저면, shelf-prep board 후연을 순서대로 검색한다. 확정 사례 11건 중 9건의 body가 이 범위 안에서 회수되었다.",
+        "후면 검색은 먼 쪽부터 평판 스패튤러와 borescope로 시행하고, shell을 current line 기준으로 먼저 잡아당기지 않는다. 근거리 견인은 혼입과 additional route closure를 동시에 늘린 사례가 있었다."
+      ]
+    }
+  ]
+}

@@ -417,6 +417,14 @@
         "[COS204 — 회청색 보류인계슬리브](./cos204.json)의 provisional accession은 분리 실패나 강제 재개봉 뒤에도 front shell에서 완전히 소거되지 않을 수 있으며, 정정·인계 단계에서 [COS206 — 회청색 동체인란](./cos206.json)으로 넘어가 body packet, void slip, rebag sleeve, queue preview에 같은 번호를 재부착할 수 있다. 이 경우 보류 인계 상태는 해결되지 않았는데도 하나의 체인 번호만 먼저 닫힌다.",
         "따라서 COS204 표본에서 같은 provisional accession이 둘 이상의 host에 남아 있으면 이를 단순 잔상이나 캐시 오류로 처리하지 말고, [COS206 — 회청색 동체인란](./cos206.json) 연계 사건으로 분리 기록한다. 현장 가로지움과 즉시 재포장은 번호 전이를 늘릴 수 있으므로 금지한다."
       ]
+    },
+    {
+      "relatedId": 207,
+      "type": "reciprocal",
+      "title": "COS207 상호기록",
+      "paragraphs": [
+        "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS204 — 회청색 보류인계슬리브](./cos204.json)가 front-only shell의 이동 carrier로 작동할 때 가장 안정적으로 재현되었다. provisional accession과 hold line이 남은 shell을 COS204 sleeve에 넣으면 body가 origin host에 남아 있어도 handoff·review·release route가 차례로 닫힐 수 있다. 따라서 COS204 표본에서 page capture 0 상태의 multistation closure가 확인되면, 이를 해결된 보류 인계로 보지 말고 COS207 이동 단계로 분리 기록하고 rear body 검색을 우선한다."
+      ]
     }
   ],
   "supplementalSections": [

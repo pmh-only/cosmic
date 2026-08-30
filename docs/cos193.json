@@ -428,6 +428,14 @@
         "[COS193 — 회청색 후입등재구](./cos193.json)가 front matter를 먼저 등재하고 body를 후면에 남긴 표본은, 정정·인계 단계에서 [COS206 — 회청색 동체인란](./cos206.json)의 동일 체인 필드에 가장 자주 포획되었다. 전면과 후행 body가 분리된 채 회수되었더라도 provisional accession이나 chain field가 양쪽에 다시 동시에 남을 수 있으므로, 번호 일치만으로 재결합을 확정하지 않는다.",
         "특히 rear stop 유래 front와 body를 비교대나 correction mat 위에 다시 모으는 행위는 COS193의 분리 결과를 COS206의 행정적 동일화로 연장할 수 있다. 후면 정지대 표본은 번호 정정보다 provenance 대조와 rear body 위치 보존을 우선한다."
       ]
+    },
+    {
+      "relatedId": 207,
+      "type": "reciprocal",
+      "title": "COS207 상호기록",
+      "paragraphs": [
+        "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS193 — 회청색 후입등재구](./cos193.json)가 표지·번호·첫 장만 먼저 등재한 뒤, 그 front shell이 단일 slot 선행에 머무르지 않고 handoff·review·release preview를 따라 계속 이동하는 후속 단계로 확인되었다. COS193 rear stop에서 전면만 회수된 자료가 이후 다른 station에서 current line이나 provisional accession을 닫더라도, 이를 독립 current copy로 보지 말고 COS207 경유 가능성을 우선 기록한다. 후입등재 직후의 shell은 다음 슬롯만이 아니라 origin host 외부의 route closure까지 일으킬 수 있으므로, rear body 위치와 traversed station log를 함께 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

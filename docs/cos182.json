@@ -374,6 +374,14 @@
         "[COS206 — 회청색 동체인란](./cos206.json)의 `A206-trace`가 blank jacket이나 shelf card에 남은 상태에서 예비배가 절차가 진행되면, 실질 본문과 무관한 borrowed chain field만으로 [COS182 — 담회색 무재 편철등](./cos182.json)형 front shell이 고착될 수 있다. 2026-10-06 Q-2 예비배가대 사례에서 apparent thickness 7.2 mm, 질량 18.9 g의 blank jacket이 동일 chain field와 current line을 획득했으나 투과광에서는 page block이 확인되지 않았다.",
         "따라서 COS182 의심 shell에 이미 존재하던 고유 shelf code가 아니라 인접 trace에서 옮겨온 chain field가 확인되면, 이를 독립 current copy로 보지 말고 [COS206 — 회청색 동체인란](./cos206.json) 유래 borrowed field 가능성과 함께 분리 기록한다."
       ]
+    },
+    {
+      "relatedId": 207,
+      "type": "reciprocal",
+      "title": "COS207 상호기록",
+      "paragraphs": [
+        "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS182 — 담회색 무재 편철등](./cos182.json)과 동일한 front-only shell이 **정지하기 전** 실제 handoff·review·shelf-prep·release 경로를 계속 통과하는 이동 단계로 확인되었다. 2026-10-12~10-28 기록에서 active shell이 여러 station을 닫은 뒤 prep rack에서 20분 이상 정지하면 COS182형 담회색 편철등으로 고정되는 사례가 반복되었다. 따라서 shelf face나 prep rack에서 발견된 thin current shell이 직전 route closure와 page capture 0 상태를 동반하면 이를 즉시 COS182로 종결하지 말고 [COS207 — 회청색 무재순환철](./cos207.json) 경유 여부와 대응 body의 rear guide 잔류를 먼저 조사한다."
+      ]
     }
   ],
   "supplementalSections": [
