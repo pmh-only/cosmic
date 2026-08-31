@@ -424,6 +424,15 @@
       "paragraphs": [
         "2026-08-24 Q-5B 재현 9회 중 [COS191 — 회청색 공란상정대](./cos191.json) 유래 `A191-digest` 전면을 [COS197 — 회청색 후행본문퇴](./cos197.json)형 body와 22~34 cm 간격으로 비다공성 비교판에 놓았을 때 4회에서 [COS203 — 회청색 교차편철면](./cos203.json)이 형성되었다. 이때 요약문이 붙은 전면은 실제 provenance를 대체한 채 하나의 current copy처럼 page total과 binding edge를 선점했으므로, `A191-digest`를 body 결손 표본과 같은 평면에서 대조하지 않는다."
       ]
+    },
+    {
+      "relatedId": 208,
+      "type": "reciprocal",
+      "title": "COS208 상호기록",
+      "paragraphs": [
+        "[COS191 — 회청색 공란상정대](./cos191.json) 유래 `A191-digest`가 연단을 벗어난 뒤 separated shell 또는 rear guide 정보와 함께 방치되면, 상정 권한을 유지하지 못하고 하단 1~3행의 [COS208 — 회청색 후열복귀표](./cos208.json)로 전이되는 사례가 6회 중 5회 확인되었다. 이 문구는 안건 설명이 아니라 `후열`, `1칸 뒤`, `복귀` 같은 회수 지시만 남긴다.",
+        "따라서 연단 유래 digest card가 회수 단계에 재사용되면 이를 단순 잔류 요약문으로 보지 말고 [COS208 — 회청색 후열복귀표](./cos208.json) 전이 가능성 아래 opaque isolation 후 body search를 별도로 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

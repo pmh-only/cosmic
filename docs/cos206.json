@@ -372,6 +372,15 @@
       "paragraphs": [
         "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS206 — 회청색 동체인란](./cos206.json)이 남긴 borrowed chain field가 단순히 여러 host에 잔류하는 데 그치지 않고, body 없는 shell을 실제 route closure와 함께 이동시키는 downstream 단계로 확인되었다. 같은 accession이나 current field가 handoff·review·shelf-prep·release preview를 차례로 닫지만 대응 body가 rear host나 직전 station 뒤에 남아 있으면, 이는 COS206의 정정 완료가 아니라 COS207의 이동성 유지이다. 동일 번호가 여러 지점을 통과한 경우 현장 가로지움 대신 route 전체 동결과 rear search를 우선한다."
       ]
+    },
+    {
+      "relatedId": 208,
+      "type": "reciprocal",
+      "title": "COS208 상호기록",
+      "paragraphs": [
+        "[COS206 — 회청색 동체인란](./cos206.json) 양성 숙주에서 분리된 shell 하단에는 [COS208 — 회청색 후열복귀표](./cos208.json)가 형성되며, borrowed accession이 `복귀 지시` 외형 안에 함께 남는 사례가 반복 확인되었다. COS208 readable 11건의 lower-right numbering은 모두 COS206 이력 host에서 발생했다.",
+        "이 상태에서 recovery note, preview field, rebag sleeve는 같은 번호를 회수 완료 지시처럼 받아들이기 쉬우므로, COS206 번호 잔류를 provenance 회복 근거로 사용하지 않는다. 복귀표가 붙은 shell은 route freeze와 scanner lockout을 우선하고, 번호는 별도 흑색 카드에만 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

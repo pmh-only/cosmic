@@ -360,6 +360,15 @@
       "paragraphs": [
         "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS205 — 회청색 대조합치막](./cos205.json) 해제 뒤 shell에 남은 shared pair code, 녹색 대조 표시, acceptance cue가 다음 station에서 `이미 대조가 끝난 파일`이라는 인상을 유지할 때 형성되는 후속 이동 단계로 확인되었다. false pair를 분리한 뒤에도 shell이 handoff·review·release preview를 단독 통과할 수 있으므로, shared code 잔류를 provenance 회복의 증거로 사용해서는 안 된다. COS205 양성쌍 해제 후 thin shell이 다른 carrier로 이동하면 [COS207 — 회청색 무재순환철](./cos207.json) 전이를 우선 의심하고 route freeze를 선행한다."
       ]
+    },
+    {
+      "relatedId": 208,
+      "type": "reciprocal",
+      "title": "COS208 상호기록",
+      "paragraphs": [
+        "[COS208 — 회청색 후열복귀표](./cos208.json) 문구를 따라 모은 pair 후보를 반투명 비교면에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 급격히 증가한다. 2026-11-06 대조에서 COS208 추종군 8쌍 중 6쌍이 33~118초 내 shared pair code 또는 false match film을 획득했고, independent footer-hash 검증군은 0/8쌍이었다.",
+        "따라서 COS205 비교 단계에서는 `복귀`, `1칸 뒤`, `대조 후` 문구를 pairing 근거로 사용하지 않는다. COS208 양성 숙주에서 나온 shell/body 후보는 서로 50 cm 이상 분리된 불투명 트레이에서만 검수한다."
+      ]
     }
   ],
   "supplementalSections": [

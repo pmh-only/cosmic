@@ -429,6 +429,15 @@
         "[COS197 — 회청색 후행본문퇴](./cos197.json)에서 회수된 body-only bundle은 상단 절차선이 비어 있기 때문에, 분리된 front shell의 chain field를 [COS206 — 회청색 동체인란](./cos206.json) 단계에서 잘못 이어받을 수 있다. 이 경우 footer hash와 page sequence는 rear body의 원래 값을 유지하면서도, 외부 인계·정정 기록에는 무관한 front의 번호가 먼저 닫힌다.",
         "따라서 COS197 표본을 대응 front와 대조할 때 동일 accession이나 provisional barcode가 보이더라도, 이를 원본문 확인 근거로 사용하지 않는다. 후행 body는 번호 외피보다 footer hash·질량·스테이플 간격을 우선해 판정한다."
       ]
+    },
+    {
+      "relatedId": 208,
+      "type": "reciprocal",
+      "title": "COS208 상호기록",
+      "paragraphs": [
+        "[COS197 — 회청색 후행본문퇴](./cos197.json) 대응 shell 하단에 [COS208 — 회청색 후열복귀표](./cos208.json)가 형성되면, 복귀 문구는 실제 본문 내용보다 rear body stack의 직전 지지 위치를 지시하는 경향이 강하다. readable 27건 중 19건에서 문구가 actual body 자체보다 rear host 또는 adjacent rear slot을 먼저 가리켰다.",
+        "따라서 COS197 body를 찾을 때 shell 하단의 복귀 문구를 1차 좌표로 사용하지 말고 footer hash, 질량 차이, staple spacing을 우선한다. COS208 문구를 따라 모은 pair 후보는 false rejoin 위험이 높다."
+      ]
     }
   ],
   "supplementalSections": [

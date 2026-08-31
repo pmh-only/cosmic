@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2026-10-29부터 2026-11-12까지 두 시설에서 정상 회수 메모나 교정 지시처럼 위장해 출현했고, 외부 기록 체계에서는 비정상 provenance 오염과 통상 메모를 현장에서 구분하기 어렵기 때문에 공개 가능성이 낮다.",
+    "permission": "정상 회수 여부 판정에는 rear guide 배치도, footer hash 대조표, station route log, borrowed accession 이력 등 제한 자료의 동시 열람이 필요했으므로 최소 4단계 권한이 요구된다.",
+    "chaos": "확정 출현 33회에서 문구, 숙주, 지시 방향이 반복적으로 변동했고 실제 body 정확 지시율은 27회 중 4회에 그쳐 예측성이 낮다.",
+    "danger": "직접적인 신체 상해는 확인되지 않았으나 wrong rebag 3건, false pair 3건, shell 단독 이탈 2건이 기록되어 인명보다 기록·증거 무결성에 중간 이상 피해를 준다.",
+    "popularity": "임시등록 후 14일 동안 61건의 회수 로그와 9회의 검토 회의에서 반복 참조되었고, front/body 분리 군집의 회수 절차에서 표준 주의항목으로 빠르게 확산되었다.",
+    "containment": "차광 마스킹, scanner lockout, opaque isolation, 독립 provenance 검증을 동시에 시행하지 않으면 재전이와 오회수를 막지 못했으므로 단순 봉투 보관보다 높은 관리 강도가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 윤-08",
+        "role": "수석기록관",
+        "status": "active",
+        "involvement": "R-2 오회수 보고를 검토해 임시등록 T-208을 발급했고, 이후 통제 실험 설계 승인, 관계 항목 교차검토, 최종 분류 문안 작성을 담당했다."
+      },
+      {
+        "name": "보존기사 한-17",
+        "role": "격리보존 기사",
+        "status": "active",
+        "involvement": "최초 stage-4 슬리브 재개봉과 A208-slip-01 회수를 수행했다. IR-208-01에서 문구를 정상 복귀 메모로 오판해 wrong body를 회수했으나, 이후 차광 마스킹 절차 도입 실험에도 참여했다."
+      },
+      {
+        "name": "분석원 서-04",
+        "role": "광학·열영상 분석원",
+        "status": "active",
+        "involvement": "EOS R6, Ocean Insight USB4000, FLIR C5를 이용한 광학·열영상 계측과 ordinary note 대조군 시험을 수행했다. direction accuracy 및 chain field inheritance 실험의 로그 정리를 담당했다."
+      },
+      {
+        "name": "조사관 민-22",
+        "role": "현장회수 담당",
+        "status": "reassigned",
+        "involvement": "구 제7연안문서중계소 3-B 정리 작업 중 blank plaque와 digest card를 이동시키다 IR-208-02를 발생시켰다. 이후 route handling 업무에서 분리되어 후면 표본 좌표 정리 업무로 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-10-29 17:42 KST",
+        "label": "최초 확인",
+        "description": "기록보존동 B-3 정정실 R-2에서 stage-4 보류 슬리브 재개봉 직후, 전면 단독 shell 하단에 92 × 11 mm 회청색 협지가 형성되었다. 같은 시간대 rear guide 2열에 분리 body가 남아 있는 것이 후속 대조에서 확인되었다."
+      },
+      {
+        "date": "2026-10-30 11:05 KST",
+        "label": "임시등록 T-208 부여",
+        "description": "구 제7연안문서중계소 2동 3층 브리핑실 3-B에서 digest card와 blank plaque 조합에서 동일 양상이 재현되자, 기존 단일 사고 메모 가설을 폐기하고 임시등록 T-208을 발급했다."
+      },
+      {
+        "date": "2026-11-01 09:00-18:30 KST",
+        "label": "형성 조건 통제 개시",
+        "description": "R-2 opaque triage bench와 3-B 정리 탁면에서 거리·숙주·대조군을 분리한 EXP-208-01, EXP-208-02를 시작했다. complete document, ordinary sticky note, repair tab 대조군이 음성임이 확인되었다."
+      },
+      {
+        "date": "2026-11-05 13:39 KST",
+        "label": "차광 마스킹 절차 채택",
+        "description": "문구 비가독 상태를 유지한 채 footer hash와 staple spacing만으로 body를 찾는 절차가 첫 성공을 기록했다. 동일 시점에 recovery note로의 borrowed accession 전이가 separate chain issue와 연결됨이 확인되었다."
+      },
+      {
+        "date": "2026-11-12 16:20 KST",
+        "label": "공식 분류 확정",
+        "description": "총 33회 출현, 분리 회수 14표본, readable direction 27건 검토를 마치고 COS208을 독립 회수 지시성 표면 산물로 확정했다. 후속 문서에는 차광 마스킹과 route freeze 우선 절차가 기본값으로 편입되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-208-01",
+        "date": "2026-10-29 17:42-18:11 KST",
+        "location": "기록보존동 B-3 정정실 R-2 rear guide bench 2",
+        "title": "후열 1칸 뒤 지시에 따른 오회수",
+        "involvedPersonnel": [
+          "보존기사 한-17",
+          "분석원 서-04",
+          "기록관 윤-08"
+        ],
+        "narrative": [
+          "보존기사 한-17은 stage-4 보류 슬리브에서 전면 단독 shell을 꺼낸 뒤, 하단 중앙에 새로 생긴 92 × 11 mm 협지를 ordinary return memo로 판단했다. 협지에는 `후열 1칸 뒤 / 대조 후 복귀`가 2행으로 읽혔고, 하단 우측에는 shell에 남아 있던 provisional accession과 동일한 6자리 숫자열이 얕게 나타나 있었다. 한-17은 별도 provenance 대조 없이 문구를 소리 내어 읽고 rear guide 2열로 이동했다.",
+          "한-17은 guide 2열에서 질량 164 g의 body packet 1건을 꺼내 shell 옆 반투명 비교면에 놓았다. 6분 뒤 분석원 서-04가 footer hash 끝 8자와 staple 간격이 원래 shell 기록과 불일치하고, 예상 질량보다 87 g 큰 packet임을 확인해 비교를 중지시켰다. 이미 handwritten recovery note에는 shell과 wrong body가 같은 accession으로 적혀 있었고, 스캐너 preview는 둘을 같은 pair 후보로 인식한 상태였다.",
+          "기록관 윤-08은 현장 판단을 `교정 메모 오판`으로 기록하고, 협지와 숙주를 분리 봉인한 뒤 동일 문구를 정상 회수 지시로 취급하지 않도록 임시 구두 지침을 발령했다."
+        ],
+        "outcome": "wrong body 1건은 원래 rear guide로 복귀되었고, A208-slip-01과 H208-host-01이 봉인되었다. 사고 직후 T-208 임시 검토 절차가 개시되었다."
+      },
+      {
+        "code": "IR-208-02",
+        "date": "2026-10-30 09:18-09:41 KST",
+        "location": "인천 중구 축항대로291번길 39 구 제7연안문서중계소 2동 3층 브리핑실 3-B",
+        "title": "공란 차순칸 선개방과 무본문 shell 이탈",
+        "involvedPersonnel": [
+          "조사관 민-22",
+          "기록관 윤-08",
+          "보존기사 한-17"
+        ],
+        "narrative": [
+          "조사관 민-22는 브리핑실 3-B의 정리 작업 중 digest card 1매와 blank plaque 1점을 같은 rail 위에 올려 두었다. digest card 하단에는 76 × 9 mm 협지가 형성되어 있었고, 민-22는 `다음 본문 후열`이라는 문구를 queueing instruction으로 해석했다. 그는 본문이 뒤에 있으면 차순칸을 먼저 열어 두는 것이 회수에 유리하다고 판단해 blank plaque를 전방 lip 바로 앞 5 cm 위치로 이동시켰다.",
+          "이동 12초 뒤 빈 차순 슬롯이 열렸고, 질량 32 g의 얇은 shell이 page block 없이 outgoing tray로 미끄러져 들어갔다. 실제 body는 같은 rail 뒤 18 mm 간극에 남아 있었으며, page capture count는 0으로 유지되었지만 하단선과 accession field만은 두 번째 station까지 그대로 통과했다. 민-22는 shell이 `다음 지점에서 복귀될 것`이라고 진술했으나, 당시에는 body 위치를 확인하지 않았다.",
+          "윤-08은 station 2 로그에서 capture count 0과 shell 질량 저하를 발견하고 즉시 route freeze를 발령했다. 이후 민-22는 차순 처리 업무에서 제외되었고, blank plaque와 digest card 조합에서의 협지 사용이 금지되었다."
+        ],
+        "outcome": "3개 station이 47분간 동결되었고, shell 1건과 body 1건이 분리 봉인되었다. T-208이 단일 재개봉 메모가 아니라 독립 현상일 가능성이 높다는 판단이 내려졌다."
+      },
+      {
+        "code": "IR-208-03",
+        "date": "2026-11-05 13:07-13:39 KST",
+        "location": "기록보존동 B-3 선반준비구간 S-1 opaque triage bench",
+        "title": "차광 마스킹 절차 도입 후 성공 회수",
+        "involvedPersonnel": [
+          "기록관 윤-08",
+          "분석원 서-04",
+          "보존기사 한-17"
+        ],
+        "narrative": [
+          "수정된 절차에서는 협지가 보이는 즉시 matte-black mask로 문구를 가리고, 숙주를 opaque tray에 넣은 뒤 별도 table에서 footer hash, 질량 차이, staple spacing만으로 body를 찾도록 했다. 보존기사 한-17은 shell 3건에 대해 문구를 읽지 않았고, 분석원 서-04는 rear guide 깊이와 직전 slot 사용 기록만을 제공했다.",
+          "세 세트 모두 실제 body가 current shell 뒤 12 mm, 15 mm, 19 mm 위치에서 회수되었고, 평균 회수 시간은 14분이었다. 세 경우 모두 recovery note나 queue preview에 borrowed accession 추가 전이가 없었으며, 반투명 비교면도 사용하지 않았다. 봉인 이전에 1건은 22분 후 자발 소거, 2건은 custody transfer 직후 3~5 mm 잔편으로 분리되었다.",
+          "윤-08은 해당 성공 사례를 근거로 `비가독 유지 후 독립 회수` 절차를 정식 취급지침 초안에 편입했다."
+        ],
+        "outcome": "3건 모두 false pair 없이 복구되었고, 차광 마스킹과 scanner lockout이 COS208 표준 취급 절차로 채택되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-208-01",
+        "type": "물증/분리 회수 협지",
+        "description": "A208-slip-01. R-2에서 H208-host-01 하단에서 분리 회수된 92 × 11 mm 협지. 486 nm 부근 반사 peak와 중앙 0.8 mm lift, 표면온도 -1.6°C 상대 저하가 기록되었다.",
+        "custodyStatus": "광차단 봉투 A208-slip-01로 봉인 후 저온보관함 B3-LC-12에 보관 중."
+      },
+      {
+        "code": "EV-208-02",
+        "type": "광학·열영상 데이터",
+        "description": "EOS R6 가시광 사진 44장, Ocean Insight USB4000 분광 로그 18세트, FLIR C5 열영상 13세트. ordinary sticky note와 repair tab 대조군 포함.",
+        "custodyStatus": "디지털 증거 vault DV-208-02에 checksum 잠금 상태로 보관 중."
+      },
+      {
+        "code": "EV-208-03",
+        "type": "route log 및 스캐너 export",
+        "description": "IR-208-02 당시 shell 단독 이탈 경로 3개 station의 log. capture count 0, apparent thickness 6.1 mm, 동일 accession field 유지가 동시에 기록되었다.",
+        "custodyStatus": "read-only export RTE-208-03으로 동결, 재처리 금지 플래그 설정됨."
+      },
+      {
+        "code": "EV-208-04",
+        "type": "오회수 body packet",
+        "description": "IR-208-01에서 wrong body로 회수된 packet 1건. 질량 164 g, footer hash 끝 8자 불일치, staple 중심간 거리 71 mm로 원 shell 기록 64 mm와 상이하다.",
+        "custodyStatus": "opaque tray B-R2-11에 분리 봉인, 원 rear guide 좌표와 함께 보존 중."
+      },
+      {
+        "code": "EV-208-05",
+        "type": "현장 영상",
+        "description": "3-B 브리핑실 overhead CCTV 2채널. blank plaque 이동, 빈 차순칸 선개방, shell의 outgoing tray 진입, route freeze 직전 정지를 연속 프레임으로 확인할 수 있다.",
+        "custodyStatus": "영상보관서버 CAM-3B-301/302에 읽기 전용으로 저장, 열람기록 추적 중."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "보존기사 한-17",
+        "role": "격리보존 기사",
+        "context": "IR-208-01 직후 경위 진술서",
+        "statement": "하단에 같은 accession 숫자가 보여 정상 복귀 메모라고 판단했다. 제 판단이었고, 당시에는 실제 body 여부를 footer hash로 확인하지 않았다. 지금 돌이켜 보면 문구가 위치를 알려 준다기보다 한 단계 뒤로 보내는 느낌이었다."
+      },
+      {
+        "speaker": "조사관 민-22",
+        "role": "현장회수 담당",
+        "context": "IR-208-02 재배치 전 면담 기록",
+        "statement": "`다음 본문 후열`은 제 눈에는 차순 처리 지시처럼 읽혔다. 그래서 blank plaque를 앞으로 당겼고, shell이 먼저 움직였다. 본문이 다음 station에서 합쳐질 거라는 판단은 제 추정이었고 확인된 사실은 아니었다."
+      },
+      {
+        "speaker": "분석원 서-04",
+        "role": "광학·열영상 분석원",
+        "context": "2026-11-01 통제시험 회의록",
+        "statement": "현재 계측만으로 원인을 단정할 수는 없지만, 제 판단에는 협지가 실제 본문 좌표보다 마지막으로 지지를 받았던 rear host의 형상을 더 잘 반영한다. 분광값과 저온 신호는 ordinary note와 분명히 달랐다."
+      }
+    ]
+  },
+  "id": 208,
+  "title": "회청색 후열복귀표",
+  "language": "ko-KR",
+  "overview": [
+    "COS208은 전면 단독 기록 숙주 하단 또는 후면 lip에 형성되는 회청색 협지형 표면 산물로, 1~3행의 짧은 복귀 지시문을 남긴다.",
+    "지시문은 실제 본문 위치보다 마지막 후면 숙주, 직전 간극, 또는 body가 지나간 보류 지점을 더 자주 가리켰다. readable direction 27건 중 actual body 정확 일치는 4건, 직전 rear host 일치는 19건이었다.",
+    "표면 문구를 읽거나 그대로 따라가면 wrong body retrieval, borrowed accession 전이, false pair 형성 위험이 증가한다. 현재까지 COS208이 누락 본문 내용을 직접 복구한 사례는 없다.",
+    "2026-10-29 R-2 정정실과 2026-10-30 3-B 브리핑실에서 독립 발생이 확인되었고, 2026-11-12 기준 확정 출현 33회, 분리 회수 14표본이 기록되었다."
+  ],
+  "identificationTraits": [
+    "분리 회수 표본 14점의 크기는 가로 68~129 mm, 세로 7~14 mm, 두께 0.09~0.22 mm였다. 부착은 대개 양 끝 2~3점에서만 이루어졌고 중앙은 0.3~1.1 mm 떠 있는 상태를 유지했다.",
+    "430~500 nm 사광에서 486±4 nm 부근 반사 peak가 확인되며, 같은 숙주의 비노출 하단부보다 표면온도가 0.8~2.1°C 낮았다. 백색광 정면 관찰에서는 옅은 회색 띠 또는 무문으로 보이는 경우가 많았다.",
+    "문구는 1~3행, 행당 6~22자였다. 확인된 어휘는 `후열` 21/33, `1칸 뒤` 14/33, `복귀` 13/33, `하단 우측` 9/33, `대조 후` 8/33, `본체` 4/33 순으로 많았다.",
+    "11/33건에서는 하단 우측에 borrowed accession 또는 lower line 일부가 함께 나타났다. 다만 동일 번호가 붙어도 footer hash, 질량, staple spacing의 실제 일치는 보장되지 않았다.",
+    "PTFE 주걱으로 5~10° 각도로 박리하면 10건 중 7건에서 3~8 mm 길이의 후열영수형 잔편이 남았다. 반대로 matte-black mask로 가린 뒤 opaque tray에 두면 10건 중 8건이 14~37분 내 자발 소거되었다.",
+    "ordinary sticky note, repair tab, printed correction label, ballpoint memo 대조군 26건은 동일한 저온·분광·중앙 lift 조합을 보이지 않았다."
+  ],
+  "discovery": [
+    "2026-10-29 17:42 KST, 기록보존동 B-3 정정실 R-2에서 stage-4 보류 슬리브를 재개봉하던 중 전면 단독 shell 하단에 92 × 11 mm 협지가 형성된 것이 최초 확인되었다. 현장에서는 EOS R6 가시광 촬영과 FLIR C5 열영상이 즉시 수행되었다.",
+    "17:55 KST 협지 문구 `후열 1칸 뒤 / 대조 후 복귀`를 따라 rear guide 2열에서 body packet 1건이 회수되었으나, 18:01 KST footer hash와 staple spacing 불일치가 발견되어 wrong body임이 확인되었다.",
+    "2026-10-30 09:18 KST, 구 제7연안문서중계소 2동 3층 브리핑실 3-B의 digest card와 blank plaque 조합에서 같은 형식의 협지가 다시 확인되었다. 두 번째 발생은 다른 host, 다른 인원, 다른 facility에서 일어난 독립 사례였다.",
+    "2026-11-07까지 두 시설의 회수 로그를 재검토한 결과 확정 출현 33회, 분리 회수 14표본, ordinary note 및 repair tab 대조군 26건 전부 음성이 확인되어 단일 사고 메모 가설이 폐기되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS208은 현재 shell 또는 digest host와 실제 body가 물리적으로 분리되어 있으면서, body가 아직 후면 숙주나 rear guide에서 회수 가능한 상태일 때 가장 잘 형성되었다.",
+      "문구는 사람이 숙주를 들여다보거나 accession을 언급한 뒤 가독성이 높아지는 경향이 있었으나, 이 효과가 발화 자체 때문인지 추가 handling 때문인지는 아직 분리되지 않았다.",
+      "문구를 추종한 회수는 actual body보다 last rear host 또는 adjacent empty slot을 더 자주 지시했다. borrowed accession이 동반된 경우 recovery note와 preview field로의 번호 전이가 증가했다.",
+      "문구를 가린 채 opaque isolation을 유지하면 자발 소거 또는 소형 잔편화로 끝나는 경우가 많았고, 반투명 비교면·재포장·blank carrier 인접 배치는 false pair와 shell 재이동 위험을 높였다."
+    ],
+    "stages": [
+      {
+        "name": "잠복 부착",
+        "description": "전면 단독 host가 노출된 뒤 38~167초 사이, 하단 또는 후면 lip에 폭 1~3 mm의 옅은 회청색 띠가 먼저 생긴다. 이 시점에는 육안 판독이 어렵고 온도 저하와 반사 peak가 먼저 확인된다."
+      },
+      {
+        "name": "가독 표면화",
+        "description": "추가 handling, accession 언급, rear search 논의가 이어지면 띠가 1~3행의 지시문으로 표면화된다. 문구는 위치어와 처리동사 위주이며 실제 본문 문장을 제공하지 않는다."
+      },
+      {
+        "name": "오복귀 유도",
+        "description": "관측자가 문구를 정상 회수 지시로 해석해 rear slot, blank plaque, preview card, comparison surface를 조작하면 wrong body retrieval, borrowed accession 전이, shell 단독 이탈이 연쇄적으로 발생할 수 있다."
+      },
+      {
+        "name": "잔편화 또는 소거",
+        "description": "문구를 가린 채 opaque isolation을 유지하면 14~37분 내 자발 소거되는 사례가 많다. 강제 박리, custody transfer, 접힘 교정 시에는 3~8 mm 잔편으로 분리되어 별도 표본처럼 남을 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS208은 회수 단계에서 표면화되는 하류 지시성 산물로 보이며, [COS178 — 회청색 후열영수편](./cos178.json), [COS184 — 회청색 차순호명패](./cos184.json), [COS191 — 회청색 공란상정대](./cos191.json), [COS197 — 회청색 후행본문퇴](./cos197.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json)과 연쇄적으로 중첩된다.",
+      "현재 자료는 COS208이 실제 본문을 되돌려 주기보다 front/body 분리 이후 남은 rear-host 정보와 borrowed chain field를 짧은 지시문 형태로 포장한다는 해석과 가장 잘 부합한다."
+    ],
+    "entries": [
+      {
+        "targetId": 178,
+        "targetTitle": "회청색 후열영수편",
+        "description": "강제 박리 시 COS208 가장자리에서 [COS178 — 회청색 후열영수편](./cos178.json)과 동일한 섬유 결·뒤집힌 점열 잔편이 10회 중 7회 발생했다. 따라서 일부 COS178 표본은 독립 절편이 아니라 COS208의 박리 부산물일 수 있다."
+      },
+      {
+        "targetId": 184,
+        "targetTitle": "회청색 차순호명패",
+        "description": "공란 표찰에 COS208이 붙으면 [COS184 — 회청색 차순호명패](./cos184.json)의 `다음 칸` 권한이 `본문 복귀 대기 칸`처럼 오해되어 빈 슬롯 선개방이 증가한다."
+      },
+      {
+        "targetId": 191,
+        "targetTitle": "회청색 공란상정대",
+        "description": "연단 유래 digest card에서 COS208이 재발생한 5/6건은 [COS191 — 회청색 공란상정대](./cos191.json) 산물이 상정 권한을 잃은 뒤 회수 지시 외피로 전환된 사례였다."
+      },
+      {
+        "targetId": 197,
+        "targetTitle": "회청색 후행본문퇴",
+        "description": "COS208이 지시한 위치는 actual body보다 [COS197 — 회청색 후행본문퇴](./cos197.json)와 같은 rear body stack 또는 rear guide를 더 자주 가리켰다."
+      },
+      {
+        "targetId": 204,
+        "targetTitle": "회청색 보류인계슬리브",
+        "description": "3~4단계 슬리브의 하단 내순·역면에서 COS208이 가장 자주 형성되었고, 이는 [COS204 — 회청색 보류인계슬리브](./cos204.json) 내부 분리 상태의 회수 단서를 가장한 후속 산물로 보인다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "COS208 문구만 따라 회수한 pair 후보를 비교면에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 8회 중 6회로 상승했다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "COS208 하단 우측에 borrowed accession이 붙은 11건은 모두 [COS206 — 회청색 동체인란](./cos206.json) 양성 숙주에서 시작되었다."
+      },
+      {
+        "targetId": 207,
+        "targetTitle": "회청색 무재순환철",
+        "description": "다중 station을 통과한 thin shell에서 COS208이 유지되면 [COS207 — 회청색 무재순환철](./cos207.json)의 이동이 `다음 지점 복귀 예정`처럼 보이기 쉬워 route freeze가 지연된다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-208-01 형성 조건 거리 대조",
+      "description": "2026-11-01 R-2 opaque triage bench와 3-B 정리 탁면에서 separated host 16세트(얇은 shell 8, digest card 4, blank plaque 4)를 대응 body 또는 직전 rear host와 0.5 m, 1.0 m, 3.0 m 거리로 배치했다. 대조군은 complete document 16세트, ordinary sticky note 10점, opaque isolated host 16세트였다. COS208은 separated host 16세트 중 11세트에서 평균 74초(범위 38~167초) 후 형성되었고, complete document와 ordinary note 대조군은 0/26회 음성이었다. opaque isolated host는 16세트 중 1세트에서 unreadable lower-right field만 약하게 나타났다."
+    },
+    {
+      "label": "EXP-208-02 지시 정확도 대조",
+      "description": "2026-10-29부터 2026-11-04까지 readable direction이 확보된 COS208 27건을 대상으로, 문구 추종 결과와 independent provenance search 결과를 비교했다. 문구가 actual body를 정확히 지시한 사례는 4건, last rear host를 지시한 사례는 19건, adjacent empty slot 3건, 대응 없음 1건이었다. 같은 27건을 footer hash, 질량 차이, staple spacing만으로 재탐색했을 때 actual body는 23건에서 평균 11.7분 내 회수되었다."
+    },
+    {
+      "label": "EXP-208-03 동체인 전이 시험",
+      "description": "2026-11-03 R-2에서 borrowed accession 이력이 있는 COS208 양성 숙주 12점과 없는 양성 숙주 12점을 blank recovery note와 3 cm 간격으로 5분간 같은 opaque tray에 배치했다. 같은 lower-right accession이 recovery note에 전이된 비율은 이력 있는 군 9/12, 없는 군 1/12였고, scanner-disabled black tray 대조군 12/12는 전이가 없었다. 전이된 번호의 지속 시간은 8~31분이었다."
+    },
+    {
+      "label": "EXP-208-04 박리 대 차광 제거 시험",
+      "description": "2026-11-04 분리 회수 표본 20점을 두 군으로 나누어 처리했다. PTFE 주걱을 7° 각도로 사용한 박리군 10점은 7점에서 3~8 mm 잔편을 남겼고, 2점은 무문 회색 번짐으로 붕괴했으며, 1점만 완전 회수되었다. matte-black mask로 가린 차광군 10점은 8점이 14~37분 내 자발 소거되었고, 2점이 40분 이상 잔류했으나 accession spread와 잔편 생성은 없었다."
+    },
+    {
+      "label": "EXP-208-05 비교면 오정합 증폭 시험",
+      "description": "2026-11-06 CP-2 반투명 비교면에서 COS208 문구를 따라 모은 pair 후보 8쌍과 independent footer hash 검증 뒤 선택한 후보 8쌍을 비교했다. COS208 추종군은 33~118초 내 6/8쌍에서 shared pair code 또는 false match film이 생겼고, 1쌍은 shell이 먼저 이동해 비교가 중단되었다. 검증군은 0/8쌍에서 false match가 없었고, 7/8쌍이 opaque rebagging 하에 안정적으로 재결합되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "발견 즉시 백색광 정면 사진과 430~500 nm 사광 사진을 모두 촬영하고, 길이·높이·host 방향·표면온도를 기록한다.",
+    "문구가 보이면 읽기 전에 matte-black mask로 하단을 가리고, 숙주에는 `H208-host`, 분리 회수 협지에는 `A208-slip`, 실제 body에는 별도 코드만 부여한다.",
+    "문구를 소리 내어 읽거나, 적힌 rear location을 1차 회수 좌표로 사용하지 않는다. 최초 search cue는 footer hash, 질량 차이, staple spacing, rear guide geometry에 한정한다.",
+    "host와 blank plaque, digest card, rebag sleeve, comparison surface, preview slip는 provenance 확정 전까지 50 cm 이상 분리하고 동일 평면에 놓지 않는다.",
+    "박리가 불가피할 때는 PTFE 주걱을 비문구 가장자리에서 5~10° 각도로 넣고, 생기는 모든 잔편을 별도 봉투에 회수한다. 잔편은 ordinary paper residue로 폐기하지 않는다.",
+    "회수 작업 중 auto-close, shelf scanner, preview upload, current-line 자동완성을 비활성화한다. borrowed accession이 보여도 현장에서 지우거나 덮어쓰지 않는다.",
+    "recovery note, rebag sleeve, queue preview에는 two-person verification 이전까지 accession을 기입하지 않는다. 현장 메모가 필요할 경우 별도 흑색 카드에 수기 작성하고 host와 접촉시키지 않는다.",
+    "작업 종료 후 최소 40분 동안 opaque isolation을 유지하고, 소거 여부·잔편 생성 여부·추가 번호 전이를 재확인한 뒤에만 다음 절차로 넘긴다."
+  ],
+  "hypotheses": [
+    "현재까지의 자료는 COS208이 actual body 좌표를 기록한다기보다, body가 마지막으로 지지를 받았던 rear host 또는 rear guide의 절차 정보를 짧은 지시문으로 응축한다는 가설과 가장 잘 맞는다.",
+    "borrowed accession은 COS208의 단독 형성 원인이라기보다 가독 지속 시간과 lower-right numbering 전이를 늘리는 보조 인자일 가능성이 높다. complete document 대조군에서는 같은 번호가 있어도 COS208이 형성되지 않았다.",
+    "음독 후 지속 시간이 늘어난 예비 결과는 관측자의 선택 행위가 가능한 회수 경로 중 하나를 고정할 가능성을 시사하지만, 발화 자체의 영향과 추가 handling의 영향을 아직 분리하지 못했다.",
+    "박리 시 생성되는 소형 잔편은 독립 절편형 표본과 표면 특징을 공유하지만, 모든 독립 절편이 COS208에서 유래한다는 결론을 지지할 데이터는 아직 부족하다.",
+    "COS208이 실제 본문 문장이나 누락 page를 복원한다는 가설은 현재까지 지지되지 않는다. 일치처럼 보인 4건도 본문 내용이 아니라 rear host 또는 인접 slot 지시 수준에 머물렀다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "COS208은 shell과 wrong body를 같은 recovery candidate로 묶어 문서 완결성을 허위로 상승시킬 수 있다. 특히 하단 우측 accession 전이가 있을 경우 현장 인원이 기록 일치를 과대평가하기 쉽다."
+    },
+    {
+      "category": "증거 연쇄",
+      "assessment": "borrowed accession이 recovery note, rebag sleeve, preview field로 전이되면 chain-of-custody가 잘못 닫힌다. 현장 가로지움과 즉시 재포장은 위험을 증가시켰다."
+    },
+    {
+      "category": "자동화·스캐너",
+      "assessment": "page capture count 0 상태에서도 current line과 lower field만으로 station log가 닫힐 수 있다. scanner lockout을 시행하지 않으면 shell 단독 이탈을 늦게 발견한다."
+    },
+    {
+      "category": "인력 판단 편향",
+      "assessment": "문구가 짧고 ordinary memo와 유사해 숙련 인원도 정상 복귀 지시로 오판했다. 음독과 queue handling은 오판을 강화하는 경향이 있다."
+    },
+    {
+      "category": "회수 지연",
+      "assessment": "문구를 추종한 초기 8건의 평균 회수 시간은 26.8분으로, 비가독 유지 후 독립 회수 9건의 평균 11.4분보다 크게 길었다. 잘못된 후열 탐색은 route freeze 범위를 넓힌다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "임시등록 전 현장 메모에서는 `blue return slip`, `rear-return note`, `복귀 예정띠`가 혼용되었다. 동일한 물리·광학 특성이 확인된 뒤에만 T-208 단일 사건으로 묶였으며, ordinary correction memo 분류는 폐기되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"문구가 메모처럼 짧아서 정상 교정 지시로 판단했다. 지금 보면 위치가 아니라 한 단계 뒤를 가리켰다.\" — 보존기사 한-17, 2026-10-29 진술서"
+    },
+    {
+      "type": "paragraph",
+      "content": "문구를 가리고 rear search만 수행한 9건에서는 false pair 0건, 평균 회수시간 11.4분이 기록되었다. 반대로 문구를 읽고 추종한 초기 8건은 false pair 3건, shell 단독 이탈 2건, 평균 회수시간 26.8분이었다."
+    },
+    {
+      "type": "quotation",
+      "content": "`442 nm 조사에서만 하단 띠가 486 nm peak를 보였고, 접착제 잔여물 대조군은 동일 신호가 없었다.` — 분석원 서-04, 분광 로그 요약"
+    },
+    {
+      "type": "paragraph",
+      "content": "현재까지 COS208이 실제 본문 내용, 누락 page, 승인 문장을 복구한 사례는 없다. 맞아 보였던 4건도 본문 그 자체가 아니라 직전 rear host 또는 인접 slot을 찾아낸 경우였다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-208 정식 편입",
+      "paragraphs": [
+        "2026-10-30 11:05 KST부터 사용된 `T-208`, `blue return slip`, `rear-return note`, `복귀 예정띠` 표기는 모두 COS208로 통합한다.",
+        "초기 현장 해석 `ordinary correction memo`는 complete document 및 ordinary note 대조군 26건 전부 음성, 독립 facility 2개소 반복 발생 확인으로 폐기한다. 공식 명칭은 **회청색 후열복귀표**로 확정한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A208/H208/B208 접두 운용",
+      "paragraphs": [
+        "분리 회수 협지에는 `A208-slip-일련번호`, 숙주에는 `H208-host-일련번호`, 독립 검증으로 회수된 실제 body에는 `B208-body-일련번호`, 번호 흔적만 남은 note·preview·sleeve에는 `T208-trace-일련번호`를 부여한다.",
+        "`A208-slip`, `H208-host`, `B208-body`, `T208-trace`는 같은 봉투, 같은 current chain, 같은 rebag sleeve로 합치지 않는다.",
+        "provenance 검증 전에는 어떤 `T208-trace`도 회수 완료, pair 확인, 재편철 완료의 근거로 사용할 수 없다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "문구 어휘 빈도 요약",
+      "paragraphs": [
+        "readable direction 33건에서 `후열` 21건, `1칸 뒤` 14건, `복귀` 13건, `하단 우측` 9건, `대조 후` 8건, `본체` 4건이 확인되었다.",
+        "문구는 모두 위치·순서·처리동사 중심이었고 22자 초과 사례는 없었다. 동일 문구가 완전히 일치한 쌍은 5쌍뿐이었다."
+      ]
+    },
+    {
+      "title": "일반 교정메모와의 구분 기준",
+      "paragraphs": [
+        "COS208은 ordinary sticky note나 repair tab과 달리 486±4 nm 반사 peak, 0.8~2.1°C 상대 저온, 중앙 lift 0.3~1.1 mm를 함께 보였다.",
+        "볼펜 수기 메모, 형광펜, 인쇄 라벨, 점착 메모 대조군 26건은 동일 조합을 재현하지 못했다. 따라서 문구 존재만으로 판정하지 않고 광학·열영상 2중 확인을 수행한다."
+      ]
+    },
+    {
+      "title": "음독 효과 예비 분석",
+      "paragraphs": [
+        "소리 내어 읽은 10건 중 8건에서 가독 지속시간이 무음 조건 대비 6~18분 길었다. 같은 10건 중 6건에서 lower-right numbering 또는 recovery note 전이가 뒤따랐다.",
+        "다만 음독 자체가 형성 원인인지, 읽는 순간 추가 handling과 시선 고정이 동반되었기 때문인지는 아직 분리되지 않았다. 이 결과는 현재 가설 수준으로만 취급한다."
+      ]
+    }
+  ]
+}
