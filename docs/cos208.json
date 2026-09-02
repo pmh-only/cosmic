@@ -375,6 +375,15 @@
         "`A208-slip`, `H208-host`, `B208-body`, `T208-trace`는 같은 봉투, 같은 current chain, 같은 rebag sleeve로 합치지 않는다.",
         "provenance 검증 전에는 어떤 `T208-trace`도 회수 완료, pair 확인, 재편철 완료의 근거로 사용할 수 없다."
       ]
+    },
+    {
+      "relatedId": 210,
+      "type": "reciprocal",
+      "title": "COS210 상호기록",
+      "paragraphs": [
+        "[COS210 — 회청색 후행응답택](./cos210.json)의 가시 문구를 음독한 숙주 5건 중 3건에서 태그 정면 문구가 희미해진 뒤 숙주 하연에 [COS208 — 회청색 후열복귀표](./cos208.json)와 동일한 길이·어휘·저온대를 가진 협지가 남았다. 특히 `후열`, `대조 후`, `복귀` 어휘가 그대로 이어지는 경향이 있었다.",
+        "이는 일부 COS208 표본이 독립 발생이 아니라 COS210 상태가 lower lip로 전이된 잔류 분기일 수 있음을 시사한다. 다만 역방향, 즉 COS208이 COS210을 재형성한 사례는 아직 확인되지 않았다."
+      ]
     }
   ],
   "supplementalSections": [

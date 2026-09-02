@@ -381,6 +381,15 @@
         "[COS206 — 회청색 동체인란](./cos206.json) 양성 숙주에서 분리된 shell 하단에는 [COS208 — 회청색 후열복귀표](./cos208.json)가 형성되며, borrowed accession이 `복귀 지시` 외형 안에 함께 남는 사례가 반복 확인되었다. COS208 readable 11건의 lower-right numbering은 모두 COS206 이력 host에서 발생했다.",
         "이 상태에서 recovery note, preview field, rebag sleeve는 같은 번호를 회수 완료 지시처럼 받아들이기 쉬우므로, COS206 번호 잔류를 provenance 회복 근거로 사용하지 않는다. 복귀표가 붙은 shell은 route freeze와 scanner lockout을 우선하고, 번호는 별도 흑색 카드에만 기록한다."
       ]
+    },
+    {
+      "relatedId": 210,
+      "type": "reciprocal",
+      "title": "COS210 상호기록",
+      "paragraphs": [
+        "[COS210 — 회청색 후행응답택](./cos210.json) 문구를 음독하거나 accession을 필사하면 같은 lower line 또는 borrowed accession이 숙주 하단선·rebag slip·queue field로 이동해 [COS206 — 회청색 동체인란](./cos206.json)과 동일한 동체인 양상을 보일 수 있다. 2026-11-08 전이 시험 7회 중 4회에서 tag 밖 host에 same lower line이 남았다.",
+        "따라서 COS210은 COS206의 유일 기원은 아니지만, 현장 필사·호명 절차를 통해 동체인란을 촉진하는 이동형 전구 표본으로 취급한다. A210-host와 `A206-field`는 같은 current chain으로 병합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

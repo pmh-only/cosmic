@@ -369,6 +369,15 @@
         "[COS208 — 회청색 후열복귀표](./cos208.json) 문구를 따라 모은 pair 후보를 반투명 비교면에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 급격히 증가한다. 2026-11-06 대조에서 COS208 추종군 8쌍 중 6쌍이 33~118초 내 shared pair code 또는 false match film을 획득했고, independent footer-hash 검증군은 0/8쌍이었다.",
         "따라서 COS205 비교 단계에서는 `복귀`, `1칸 뒤`, `대조 후` 문구를 pairing 근거로 사용하지 않는다. COS208 양성 숙주에서 나온 shell/body 후보는 서로 50 cm 이상 분리된 불투명 트레이에서만 검수한다."
       ]
+    },
+    {
+      "relatedId": 210,
+      "type": "reciprocal",
+      "title": "COS210 상호기록",
+      "paragraphs": [
+        "[COS210 — 회청색 후행응답택](./cos210.json)의 회색 완료형 문구가 shell/body 후보 사이 acceptance cue로 개입하면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 크게 증가한다. 2026-11-08 비교면 실험 6쌍 중 active tag 개입군 5쌍이 74초 이내 false pair cue를 획득했으나, unused tag군은 1/6, 무tag 분리군은 0/6이었다.",
+        "이는 COS210이 provenance를 복원하는 것이 아니라 `이미 응답되었다` 또는 `대조 후 인계 가능` 같은 완료 상태를 비교 단계에 덧씌워 허위 합치를 가속한다는 해석을 지지한다. COS205 비교면에서는 tag 문구나 lower line을 pairing 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

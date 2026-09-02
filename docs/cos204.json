@@ -434,6 +434,15 @@
         "[COS204 — 회청색 보류인계슬리브](./cos204.json) 3~4단계 표본을 재개봉하거나 front shell만 분리하면, 하단 내순 또는 역면 lip에 [COS208 — 회청색 후열복귀표](./cos208.json)가 형성되는 사례가 9회 중 6회 확인되었다. 이 복귀표는 실제 본문 회수 지시처럼 보이지만, 더 자주 stage 직전 rear host와 borrowed accession을 짧게 재포장한다.",
         "따라서 COS204 재개봉 표본에서 `후열`, `복귀`, `하단 우측` 문구가 나타나면 해당 슬리브를 회수 안내물로 사용하지 말고 matte-black mask를 적용한 뒤 body search를 독립 수행한다. lower-right accession을 recovery note나 rebag sleeve에 옮겨 적지 않는다."
       ]
+    },
+    {
+      "relatedId": 210,
+      "type": "reciprocal",
+      "title": "COS210 상호기록",
+      "paragraphs": [
+        "[COS210 — 회청색 후행응답택](./cos210.json)을 미완결 슬리브 상단 좌측에 고정하면 [COS204 — 회청색 보류인계슬리브](./cos204.json)의 회람 외피와 front-only forward 상태가 더 빨리 안정화되는 사례가 확인되었다. 2026-11-06 대조 4회에서 active tag 부착군의 외부 회람화 징후 발생 중앙값은 137초였고, 무tag 대조군은 228초였다.",
+        "그러나 COS210은 COS204의 필요조건은 아니며, tag가 없는 슬리브에서도 단계 진행은 독립적으로 발생할 수 있다. active tag가 붙은 보류 슬리브는 보완지시나 정상 안내표로 취급하지 말고, 문구가 보이면 tag와 숙주를 함께 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [
