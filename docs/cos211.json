@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-03-31 하류 절차 전이 시험에서 활성 카드 6점 중 5점이 실제 provenance 회복 없이 `대조 완료` 또는 `rechain ready` 미리보기를 생성했다. 현상 조건과 전사 산물이 외부에 알려질 경우 일반 불투명 작업면과 공란 검수카드만으로 비교 종료 외형을 위조하는 데 악용될 수 있으므로 secrecy 4로 평가한다.",
+    "permission": "COS211 판정에는 [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS208 — 회청색 후열복귀표](./cos208.json), [COS210 — 회청색 후행응답택](./cos210.json), [COS189 — 회청색 무재하중표](./cos189.json) 격리 표본과 체인 로그의 대조 열람이 필요했다. 교정감사실·재포장대·계량역행셀의 route freeze 기록까지 함께 열어야 하므로 permission 4가 필요하다.",
+    "chaos": "used opaque surface 28회 중 17회 양성, body-first 순서 12회 중 2회 약양성, shell-first 순서 12회 중 10회 강양성으로 결과가 표면 이력과 배치 순서에 크게 흔들렸다. 동일 host라도 24~93초의 발현 편차와 8~37분의 잔류 편차를 보여 예측성이 낮으므로 chaos 4로 판정한다.",
+    "danger": "직접적인 인체 손상은 없었으나 2044-03-22 재포장대 route close 오인 1건, 2044-03-29 계량역행셀 release cage 오인 1건, 교정감사실 수기 서명 직전 중단 1건이 기록되었다. 주 위험이 인명보다 기록·동선·절차에 집중되므로 danger 3으로 평가한다.",
+    "popularity": "2044-03-14부터 2044-04-05까지 COS211은 교정감사실 감사철 14건, route freeze 개정 6건, 재체인 보류 보고 5건에서 직접 참조되었다. 장기 운용 항목만큼 높지는 않지만 교차 검수 실무에서 반복 호출되어 popularity 3으로 평가한다.",
+    "containment": "활성 의심 표면은 즉시 사용 중지, 열영상 촬영, 공란 카드 전량 봉인, 스캐너 hold, neutral chain 재부여가 동시에 요구되었다. 단순 봉인만으로는 전사 산물과 하류 미리보기를 막지 못해 상시 수동 통제가 필요하므로 containment 4로 판정한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 Q-12",
+        "role": "주조사 및 교정감사 총괄",
+        "status": "active",
+        "involvement": "2044-03-14 최초 활성 사례에서 서명 직전 절차를 중단하고 T-211 임시 등록을 개설했다. 이후 교정감사실 C-4, 재포장대 R-2, 계량역행셀 W-1의 사고 기록과 하류 route freeze 조치를 총괄했다."
+      },
+      {
+        "name": "조사관 V-07",
+        "role": "교차 COS 표본 분석",
+        "status": "active",
+        "involvement": "[COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json) 격리 표본을 사용한 surface·순서·압력 시험을 설계했다. 초기 활성면을 압흔 잔상으로 오판해 blank verification card를 재투입한 당사자이기도 하다."
+      },
+      {
+        "name": "보존기사 H-19",
+        "role": "표면 격리 및 계측",
+        "status": "active",
+        "involvement": "활성 매트 회수, 열영상 촬영, 표면온도 측정, 공란 카드 봉인, 계량역행셀 W-1의 [COS189 — 회청색 무재하중표](./cos189.json) 대조 절차를 수행했다. 2044-03-22 사건에서 footer hash 재확인 전 도장을 들었다가 Q-12 지시에 따라 즉시 중단했다."
+      },
+      {
+        "name": "시설운용원 L-05",
+        "role": "하류 스캐너·route preview 관리",
+        "status": "active",
+        "involvement": "R-2 재포장대와 W-1 계량역행셀의 preview 로그, queue hold, release cage 차단을 담당했다. 2044-03-31 하류 절차 전이 시험에서 활성 카드 6점의 미리보기 반응을 기록했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-03-14 09:18 KST",
+        "label": "최초 관측",
+        "description": "중앙기록보존국 제2보존동 1층 교정감사실 C-4에서 legacy anomalous shell `A205-pair-06F`, `A206-field-04`, `B207-body-02`를 수기 재체인하던 중 black nitrile mat NM-02 위에 213×302 mm의 회청색 완료 프레임이 형성되었다."
+      },
+      {
+        "date": "2044-03-14 09:48 KST",
+        "label": "임시등록 T-211 개설",
+        "description": "stainless bench와 new PE board 대조가 음성으로 끝나자 기록관 Q-12가 현상을 압흔 잔상으로 보지 않고 T-211을 개설했다. 공란 검수카드 3매와 NM-02 모서리 절편이 봉인되었다."
+      },
+      {
+        "date": "2044-03-16 08:40~12:10 KST",
+        "label": "표면 의존성 확정",
+        "description": "used opaque surface 28회 중 17회 양성, acrylic·stainless·new PE control 22회 전부 음성이 확인되었다. COS211이 투명 비교면이 아니라 불투명 수기 작업면에서만 안정화된다는 점이 확정되었다."
+      },
+      {
+        "date": "2044-03-22 16:05~16:42 KST",
+        "label": "재포장대 route close 사고",
+        "description": "R-2 재포장대에서 [COS207 — 회청색 무재순환철](./cos207.json) shell과 [COS208 — 회청색 후열복귀표](./cos208.json) slip이 활성면을 거쳐 `검수 완료` 미리보기를 생성했고, dispatch 직전에서 중단되었다."
+      },
+      {
+        "date": "2044-03-29 01:20~01:58 KST",
+        "label": "무재하중표 결합 확인",
+        "description": "W-1 계량역행셀에서 [COS189 — 회청색 무재하중표](./cos189.json) carrier와 blank mass reconciliation slip을 active board에 놓자 실하중 부재 상태에서도 `계량 대조 완료` 외형이 형성되었다."
+      },
+      {
+        "date": "2044-04-02 18:30 KST",
+        "label": "공식 명칭 확정",
+        "description": "임시 명칭 `교정매트 잔상`, `끝난 비교판`, `T-211`을 폐기하고, 현상을 누락 본문 복구가 아닌 선행 완료 프레임으로 정의한 **회청색 선결검수면**으로 정식 명명했다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "I-211-01",
+        "date": "2044-03-14 09:18~09:48 KST",
+        "location": "중앙기록보존국 제2보존동 1층 교정감사실 C-4",
+        "title": "opaque correction mat 위 선행 완료 프레임의 최초 확인",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "조사관 V-07",
+          "보존기사 H-19"
+        ],
+        "narrative": [
+          "C-4 팀은 [COS205 — 회청색 대조합치막](./cos205.json) 해제 표본 `A205-pair-06F`, [COS206 — 회청색 동체인란](./cos206.json) 흔적 카드 `A206-field-04`, 실제 본문 `B207-body-02`를 서로 50 cm 이상 분리한 채 수기 재체인 중이었다. 투명 비교면 사용이 금지된 상태라 조사관 V-07은 기존에 쓰던 black nitrile mat NM-02를 펼치고 shell을 먼저, 12초 뒤 blank verification card `VC-01`을 올렸다.",
+          "shell 배치 31초 후, `VC-01` 배치 12초 후 NM-02 중앙에 213×302 mm의 회청색 사각 프레임이 나타났고 표면온도는 주변 22.6°C 대비 21.1°C로 떨어졌다. V-07은 이를 손압 잔상으로 오판해 매트를 180° 회전시키고 같은 카드를 다른 모서리에 다시 올렸다. 44초 뒤 동일한 프레임이 재형성되었고, 카드를 들어 올리자 좌측 3칸의 box와 하단 accession fragment `206-04`가 남아 있었다.",
+          "H-19는 표준 검수카드 간격과 동일하다고 보고 도장을 준비했으나, Q-12가 footer hash와 page count를 다시 대조해 shell과 body의 provenance가 여전히 불일치함을 확인하고 서명을 중단시켰다. stainless bench와 new PE board에 동일 순서를 반복한 대조는 0/3으로 음성이었고, 즉시 T-211이 개설되었다."
+        ],
+        "outcome": "NM-02, VC-01, 열영상 로그가 증거물로 봉인되었고 T-211이 개설되었다. 조사관 V-07의 압흔 잔상 판단은 활성면 재형성에 기여한 절차상 실수로 기록되었다."
+      },
+      {
+        "code": "I-211-02",
+        "date": "2044-03-22 16:05~16:42 KST",
+        "location": "제2보존동 1층 재포장대 R-2",
+        "title": "무재순환철 shell의 조기 검수 완료 오인",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "시설운용원 L-05"
+        ],
+        "narrative": [
+          "route freeze 중이던 [COS207 — 회청색 무재순환철](./cos207.json) shell `A207-shell-03`에는 [COS208 — 회청색 후열복귀표](./cos208.json) trace가 남아 있었고, 대응 body `B207-body-03`는 rear box에 따로 봉인되어 있었다. H-19는 slip과 shell의 직접 접촉을 피하려고 gray board GB-04 위에 blank rechain card를 먼저 깔고 그 위에 shell을 올린 뒤, 우측에 복귀표를 끼워 넣었다.",
+          "67초 뒤 rechain card 좌측에 3개의 box와 `대조 후` 문구가 형성되었고 shell 하연에도 짧은 lower line이 남았다. H-19는 두 번째 footer hash 대조 전에 이미 완료란이 보인다는 이유로 우상단에 보류도장을 찍었고, L-05의 route preview에는 `검수 완료 / next rack`가 생성되었다. rear box는 같은 시각 2.1 m 뒤 선반에 그대로 남아 있었다.",
+          "Q-12는 queue preview 시간을 보고 dispatch rack 이동을 중지시키고 rear box를 즉시 개봉해 실제 body가 이동하지 않았음을 확인했다. H-19가 찍은 도장은 현상 유발이 아니라 현상 확대에 해당하는 수동 개입으로 분류되었고, 이후 R-2 전 구역에서 active surface 의심 시 도장과 서명은 전면 금지되었다."
+        ],
+        "outcome": "실제 dispatch는 실행되지 않았고 GB-04, rechain card, preview log가 봉인되었다. COS211이 body 없는 shell에 수기 검수 종료 외형을 부여한다는 점이 확정되었다."
+      },
+      {
+        "code": "I-211-03",
+        "date": "2044-03-29 01:20~01:58 KST",
+        "location": "제2보존동 B1 계량역행셀 W-1",
+        "title": "무재하중표 carrier에 대한 계량 대조 완료 오인",
+        "involvedPersonnel": [
+          "보존기사 H-19",
+          "시설운용원 L-05",
+          "기록관 Q-12"
+        ],
+        "narrative": [
+          "W-1은 [COS189 — 회청색 무재하중표](./cos189.json) carrier의 declared mass와 실측 질량 불일치를 야간 재감사하는 구역이었다. H-19는 실측 0.139 kg, declared 1.84 kg인 `A189-carrier-05`를 used gray audit board AB-02에 올리고, 그 아래에 blank mass reconciliation slip `MR-05`를 끼워 넣었다. 목적은 slip에 직접 접촉시키지 않고 하연 번호만 확인하는 것이었다.",
+          "carrier 배치 26초 후 AB-02에 210×299 mm의 회청색 프레임이 형성되었고, 19초 뒤 `MR-05`에는 `계량 대조` lower cue와 1.84 kg fragment가 남았다. H-19는 declared mass가 아니라 verification trace만 보겠다는 의도로 slip을 release cage 바구니 위에 옮겼으나, L-05의 preview에는 `mass checked`가 떠서 빈 carrier가 다음 구역으로 넘어갈 준비 상태로 바뀌었다.",
+          "Q-12는 borescope와 MB-12 대조가 끝나지 않았는데 release preview가 생성된 점을 근거로 W-1 전체를 hold시켰고, carrier 내부에 실적재가 없음을 다시 확인했다. blank slip과 active board를 함께 사용하는 선택이 [COS189 — 회청색 무재하중표](./cos189.json)와 COS211 결합을 유도한 것으로 정리되었다."
+        ],
+        "outcome": "release cage 이동은 실행되지 않았고 W-1의 blank reconciliation slip 사용이 중지되었다. COS211이 declared mass host에 `검증 완료` 외피를 결합할 수 있음이 확인되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-211-01",
+        "type": "활성 교정매트",
+        "description": "2044-03-14 최초 활성 표면 NM-02. 520×720×3 mm black nitrile mat로, 중앙과 좌상단에 213×302 mm 및 212×301 mm의 회청색 저온 프레임 형성 이력이 남아 있다.",
+        "custodyStatus": "격리 캐비닛 C-211-1 평판 보관, 재사용 금지, 열영상 해시 등록 완료"
+      },
+      {
+        "code": "EV-211-02",
+        "type": "열영상·사광 영상 기록",
+        "description": "FLIR C5 열영상 9 Hz와 436 nm side-light 312 lx 동시 촬영본. NM-02에서 frame emergence, VC-01 전사, 회전 후 재형성을 포함한다.",
+        "custodyStatus": "보안영상금고 3호 저장, 분석용 복제본 1부만 C-4에서 열람 가능"
+      },
+      {
+        "code": "EV-211-03",
+        "type": "공란 검수카드 전사 표본",
+        "description": "최초 incident에서 사용된 `VC-01`과 `VC-02` 2매. 좌측 3칸 box, 하단 accession fragment `206-04`, 옅은 `대조 후` 문구가 남아 있으나 provenance 확인 서명은 없다.",
+        "custodyStatus": "무산소 파일 포켓 이중 봉인, 동시 열람 2인 제한"
+      },
+      {
+        "code": "EV-211-04",
+        "type": "재포장대 board 및 rechain card",
+        "description": "R-2 incident에 사용된 GB-04와 보류도장이 찍힌 blank rechain card 1매. route preview `검수 완료 / next rack` 시각과 카드 형성이 7초 이내로 일치한다.",
+        "custodyStatus": "R-2 사고증거함 AE-11 보관, scanner contact 금지"
+      },
+      {
+        "code": "EV-211-05",
+        "type": "계량 대조 slip",
+        "description": "W-1 incident의 mass reconciliation slip `MR-05`. 실제 계량 서명은 없고 `계량 대조` lower cue와 `1.84 kg` fragment만 남아 있다.",
+        "custodyStatus": "A189 표본과 분리하여 C-211-2 평판 보관, 육성 낭독 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "조사관 V-07",
+        "role": "교차 COS 표본 분석",
+        "context": "2044-03-14 최초 incident 직후 복기 인터뷰",
+        "statement": "카드를 올리기 전부터 완료칸 간격이 매트 위에 먼저 잡혀 있었습니다. 제 판단으로는 단순 압흔보다 `검수가 끝난 자리`만 남은 상태에 가까웠지만, 그 해석은 후속 대조가 필요합니다."
+      },
+      {
+        "speaker": "보존기사 H-19",
+        "role": "표면 격리 및 계측",
+        "context": "2044-03-22 R-2 incident 사후 진술",
+        "statement": "해시를 한 번 더 맞출 생각이었지만 카드에 확인칸이 먼저 떠 있으니 손이 먼저 도장으로 갔습니다. 그건 시스템이 실제로 끝났다는 뜻이 아니라 제가 그렇게 읽은 것이며, 절차 위반은 제 판단입니다."
+      },
+      {
+        "speaker": "기록관 Q-12",
+        "role": "주조사 및 교정감사 총괄",
+        "context": "2044-03-29 W-1 hold interview",
+        "statement": "실제 body와 실하중은 계속 뒤에 남아 있는데 현재 책상면의 공란 카드만 정리 완료처럼 남습니다. 그래서 COS211은 복구 현상보다 `완료의 외피를 먼저 제공하는 작업면`으로 보는 것이 현재로서는 가장 타당합니다."
+      }
+    ]
+  },
+  "id": 211,
+  "title": "회청색 선결검수면",
+  "language": "ko-KR",
+  "overview": [
+    "COS211은 provenance 불일치 자료를 수기 대조·재체인할 때, 불투명 교정매트·감사보드·공란 검수카드 위에 A4 규격에 가까운 회청색 완료 프레임이 선행 형성되는 표면 현상이다.",
+    "이 프레임은 누락 본문을 복구하거나 false pair를 정상화하지 않는다. 대신 `대조가 끝났음`이라는 절차 상태를 먼저 제공하고, blank verification card, shell 하연, rechain slip, mass reconciliation slip 같은 매체로 옮긴다.",
+    "2044-03-14~2044-04-02 교정감사실 C-4, 재포장대 R-2, 계량역행셀 W-1에서 17건의 확정 활성과 6건의 부분 활성이 확보되었다. used black nitrile·gray board surface는 17/28 양성이었고, acrylic·stainless·new PE control은 0/22였다.",
+    "현재까지 가장 안정적 숙주는 [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS208 — 회청색 후열복귀표](./cos208.json), [COS210 — 회청색 후행응답택](./cos210.json), [COS189 — 회청색 무재하중표](./cos189.json) 계열 표본이며, 구조적으로는 [COS176 — 유백색 선입면](./cos176.json)과 [COS158 — 한 칸 뒤의 회랑](./cos158.json)의 후행 수기 단계와 유사하다."
+  ],
+  "identificationTraits": [
+    "불투명 작업면 위에 208~216 mm × 297~304 mm 크기의 회청색 사각 프레임이 형성되며, 열영상에서는 주변보다 0.9~1.8°C 낮게 나타난다.",
+    "프레임 좌측에는 4~6 mm 폭의 작은 box 2~3칸이, 하단에는 6~12 mm 위쪽의 lower line 또는 accession fragment가 남는다.",
+    "shell·tag·field card를 먼저 올리고 body 또는 공란 카드를 나중에 올린 순서에서 24~93초 내 강양성이 나타나며, body-first 순서는 대부분 약양성 또는 음성이다.",
+    "blank verification card, rechain card, mass reconciliation slip을 프레임 내부에 15~52초 두면 `대조 후`, `확인`, `재체인` 같은 짧은 완료어 또는 borrowed accession fragment가 전사될 수 있다.",
+    "활성 상태에서도 footer hash, page count, 실측 질량, staple 간격, 종이 결 방향은 원래 표본 값을 유지하고 실제 body는 별도 rear box나 후면 host에 남아 있다.",
+    "표면 프레임은 host 제거 후 8~37분 사이 약화하지만, 전사된 카드·slip의 표식은 19분에서 최대 11시간까지 유지될 수 있다."
+  ],
+  "discovery": [
+    "2044-03-14 09:18 KST, 중앙기록보존국 제2보존동 1층 교정감사실 C-4에서 legacy anomalous shell `A205-pair-06F`, `A206-field-04`, 실제 body `B207-body-02`를 수기 재체인하던 중 첫 확정 사례가 발생했다. 사용 표면은 black nitrile mat NM-02(520×720×3 mm), 실내 조건은 22.6°C, 상대습도 41%, 436 nm side-light 312 lx였다.",
+    "shell을 먼저 올린 뒤 12초 후 blank verification card `VC-01`을 놓자 43초 내 213×302 mm의 회청색 프레임이 형성되었고 표면온도는 21.1°C까지 떨어졌다. 카드를 들어 올리자 좌측 box와 하단 accession fragment `206-04`가 남았으나, 대응 body와 footer hash·page count는 끝까지 일치하지 않았다.",
+    "같은 시각 stainless bench와 new PE board에 동일 순서를 반복한 대조 3회는 전부 음성이었다. 이로써 단순 압흔, 펜 번짐, 표면 오염만으로는 설명하기 어렵다는 판단이 내려졌고 09:48 KST T-211이 개설되었다.",
+    "2044-03-16 표면 의존성 시험, 2044-03-17 host 의존성 시험, 2044-03-19 순서 의존성 시험, 2044-03-31 하류 절차 전이 시험이 이어졌다. 대조 결과 COS211은 투명 비교면보다 불투명 수기 작업면에서, complete file보다 unresolved host에서, body-first보다 shell-first 배치에서 더 안정적으로 재현되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS211은 실제 provenance 회복보다 `검수가 끝났음`이라는 절차 상태를 먼저 현재 작업면에 형성한다.",
+      "활성 프레임은 공란 카드, shell 하연, slip 하단선으로 전사되며, 이후 수기 도장·서명·queue preview가 조기 종결을 따라가도록 유도한다.",
+      "표면은 투명 비교면보다 이미 사용 이력이 있는 불투명 교정매트·감사보드·uncoated archive board에서 잘 형성된다.",
+      "actual body, 실하중, 원래 footer hash는 별도 위치에 남아 있으므로, 완료 프레임과 provenance 회복은 항상 분리해서 판단해야 한다."
+    ],
+    "stages": [
+      {
+        "name": "냉각 사각",
+        "description": "host가 놓인 불투명 작업면 중앙 또는 하연 부근에 주변보다 0.9~1.8°C 낮은 사각 저온대가 먼저 형성된다. 시각적으로는 거의 보이지 않거나 436~450 nm 사광에서만 옅게 보일 수 있다."
+      },
+      {
+        "name": "완료 틀 형성",
+        "description": "저온대 가장자리에 2~3칸의 box, lower line, accession fragment, 짧은 완료어가 정렬되며 A4 규격에 가까운 프레임이 뚜렷해진다. 이 단계는 shell-first 또는 tag-first 순서에서 가장 빨리 나타난다."
+      },
+      {
+        "name": "전사",
+        "description": "blank verification card, rechain card, mass reconciliation slip, shell 하연이 프레임 위에 놓이면 15~52초 내 같은 box와 lower line을 획득한다. 실측값이나 hash는 바뀌지 않지만 완료 외형만 전사된다."
+      },
+      {
+        "name": "선결 종결",
+        "description": "도장, 서명, 스캐너 preview, queue check가 전사 산물을 실제 검수 완료 근거처럼 읽기 시작한다. 이 단계에서 route close, rechain ready, mass checked 같은 하류 상태가 가장 쉽게 발생한다."
+      },
+      {
+        "name": "잔류 퇴색",
+        "description": "host를 제거하면 작업면의 프레임은 수 분 내 옅어지지만, 전사 카드와 하단선은 더 오래 남아 후속 오판을 유발할 수 있다. 표면 소실은 provenance 회복이나 위험 해소를 의미하지 않는다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS211은 [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS208 — 회청색 후열복귀표](./cos208.json), [COS210 — 회청색 후행응답택](./cos210.json)에서 남은 `끝나야 할 절차 상태`를 불투명 작업면 위에 수기 완료 프레임으로 고정하는 후속 단계로 보인다.",
+      "구조적으로는 [COS176 — 유백색 선입면](./cos176.json)의 `내용보다 먼저 도착한 면`과 [COS158 — 한 칸 뒤의 회랑](./cos158.json)의 `실제 단계가 한 칸 뒤에 남는 구조`가 합쳐진 작업면형 잔류에 가깝다.",
+      "[COS189 — 회청색 무재하중표](./cos189.json) 결합 사례는 COS211이 종이 shell뿐 아니라 실제 내용물이 없는 carrier에도 검수 종료 외형을 부여할 수 있음을 보여준다."
+    ],
+    "entries": [
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json) 해제 표본 8쌍 중 6쌍이 투명면에서 분리된 뒤 opaque correction mat로 옮겨졌을 때 90초 이내 COS211 프레임을 형성했다. false pair가 풀렸다는 뜻이 아니라 `비교가 끝났다`는 외형만 다른 작업면에 잔류한 것으로 해석한다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "[COS206 — 회청색 동체인란](./cos206.json) `A206-field` host 6점 중 5점에서 borrowed accession fragment가 blank verification card 하단선으로 재정착했다. COS211은 same chain field를 provenance 회복이 아닌 수기 검수 완료란으로 옮겨 적는 후속 surface로 분류된다."
+      },
+      {
+        "targetId": 207,
+        "targetTitle": "회청색 무재순환철",
+        "description": "[COS207 — 회청색 무재순환철](./cos207.json) shell 6점 중 5점은 대응 body가 0.8~3.2 m 뒤 rear box에 남아 있는 동안 active surface 위에서 `검수 완료`형 card를 획득했다. body 없는 shell이 route를 계속 돌 수 있게 하는 수기 종결면으로 COS211이 작용한다."
+      },
+      {
+        "targetId": 208,
+        "targetTitle": "회청색 후열복귀표",
+        "description": "[COS208 — 회청색 후열복귀표](./cos208.json) trace가 남은 host 6점 중 4점에서 active frame 하연에 `후열`, `대조 후`, 화살표형 lower cue가 재배열되었다. 복귀 문구가 보이더라도 이는 실제 body 위치 안내보다 검수 종료 외피일 가능성이 더 높다."
+      },
+      {
+        "targetId": 210,
+        "targetTitle": "회청색 후행응답택",
+        "description": "[COS210 — 회청색 후행응답택](./cos210.json) active tag와 함께 놓인 host 6점 중 5점이 양성이었고, frame emergence 시간 중앙값은 무tag군 58초에서 active tag군 39초로 단축되었다. 완료형 절차어가 COS211의 box와 lower line을 가장 빠르게 촉진하는 표지로 보인다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json) carrier 6점에 blank mass reconciliation slip을 함께 사용한 시험에서는 4점이 양성이었다. 실하중 생성이 없는 상태에서도 `계량 대조 완료` 외형이 먼저 부여되어, COS211이 empty but authoritative host를 종결면에 올릴 수 있음이 확인되었다."
+      },
+      {
+        "targetId": 176,
+        "targetTitle": "유백색 선입면",
+        "description": "shell-first 12회 중 10회 강양성, body-first 12회 중 2회 약양성이라는 순서 의존성은 [COS176 — 유백색 선입면](./cos176.json)처럼 `내용보다 먼저 도착한 앞면`이 있어야 COS211의 완료 프레임도 안정된다는 점을 시사한다. 실제 검수보다 완료면이 먼저 오는 작업면형 선입 구조로 본다."
+      },
+      {
+        "targetId": 158,
+        "targetTitle": "한 칸 뒤의 회랑",
+        "description": "확정 활성 17건 중 11건에서 실제 body나 실하중 근거는 현재 작업면이 아니라 한 tray 뒤, rear box, 후면 host에 남아 있었다. [COS158 — 한 칸 뒤의 회랑](./cos158.json)처럼 actual resolution은 한 칸 뒤에 머무르고 proof of completion만 현재 면에 남는 구조가 반복되었다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "E-211-01 / 표면 의존성 시험",
+      "description": "2044-03-16 08:40~12:10 KST, 교정감사실 C-4. `A205-pair-06F`, `A206-field-04`, `VC` 공란 카드 조합을 used black nitrile mat 12회, used gray archive board 16회, acrylic plate 8회, stainless bench 8회, new white PE board 6회에 각각 shell-first 순서로 배치했다. used opaque surface는 17/28 양성이었고 emergence 시간은 29~88초였다. acrylic·stainless·new PE control은 0/22 음성이었으며 표면 저온대도 확인되지 않았다."
+    },
+    {
+      "label": "E-211-02 / host 의존성 시험",
+      "description": "2044-03-17 10:00~16:20 KST, C-4. [COS205 — 회청색 대조합치막](./cos205.json) 해제 shell 8점, [COS206 — 회청색 동체인란](./cos206.json) field host 6점, [COS207 — 회청색 무재순환철](./cos207.json) shell 6점, [COS208 — 회청색 후열복귀표](./cos208.json) trace host 6점, [COS210 — 회청색 후행응답택](./cos210.json) active tag host 6점, [COS189 — 회청색 무재하중표](./cos189.json) carrier 6점, complete matched file 10점을 동일 surface에 교차 배치했다. 양성률은 각각 6/8, 5/6, 5/6, 4/6, 5/6, 4/6, 0/10이었다."
+    },
+    {
+      "label": "E-211-03 / 순서 의존성 시험",
+      "description": "2044-03-19 09:30~12:30 KST. 동일 host set 12쌍을 shell-first, body-first, simultaneous 조건으로 비교했다. shell-first는 10/12 강양성, simultaneous는 4/12 부분 양성, body-first는 2/12 약양성이었고 onset 중앙값은 각각 39초, 61초, 78초였다. 이는 완료 프레임이 body보다 current shell 또는 field cue를 먼저 필요로 함을 보여준다."
+    },
+    {
+      "label": "E-211-04 / 압력·잔류 시간 시험",
+      "description": "2044-03-25 14:10~17:00 KST. active frame 위 blank verification card 27매를 놓고 tempered glass plate로 0.3 kg, 0.7 kg, 1.0 kg 압력을 30초씩 가했다. 전사 성공률은 0.3 kg 2/9(약양성), 0.7 kg 7/9, 1.0 kg 8/9였고, 표식 잔류 시간 중앙값은 각각 19분, 4시간 12분, 11시간 06분이었다. 1.0 kg 군 1매에서는 카드 모서리 1 mm 섬유 파열이 발생했다."
+    },
+    {
+      "label": "E-211-05 / 하류 절차 전이 시험",
+      "description": "2044-03-31 11:00~13:10 KST, R-2 preview terminal 및 W-1 hold console. active frame에서 전사된 card 6매와 대조군 12매를 각각 스캔하거나 preview tray에 올렸다. 활성군 5/6은 `대조 완료`, `rechain ready`, `mass checked` 중 하나의 미리보기를 생성했으나 대조군은 0/12였다. 같은 시각 actual body 위치, footer hash, 실측 질량은 모두 원래 값으로 유지되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "불투명 작업면에서 A4 규격에 가까운 회청색 프레임이나 하단 lower line이 보이면 즉시 도장·서명·스캔·preview 확인을 중지하고 COS211 의심 표면으로 분류한다.",
+    "활성 의심 표면은 host를 움직이기 전에 열영상, 사광 사진, 표면온도, 프레임 크기를 기록한다. 가능하면 436~450 nm 사광과 일반 백색광을 모두 사용한다.",
+    "shell, body, 공란 카드, slip, tag, carrier는 각각 별도 불투명 트레이로 옮기고 최소 50 cm 이상 분리한다. 특히 [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS208 — 회청색 후열복귀표](./cos208.json), [COS210 — 회청색 후행응답택](./cos210.json), [COS189 — 회청색 무재하중표](./cos189.json) 표본은 같은 작업면에 다시 올리지 않는다.",
+    "현장 운용에는 neutral chain `N-211-시퀀스`를 새로 부여하고, borrowed accession fragment나 완료어를 기존 chain에 병합하지 않는다.",
+    "active surface에 닿은 blank verification card, rechain card, mass reconciliation slip은 정상 양식으로 환원하지 않고 모두 증거물 또는 폐기 후보로 분리 봉인한다.",
+    "footer hash, page count, 실측 질량, staple 간격, 종이 결 방향, actual body 위치를 2인 이상 독립 확인하기 전 어떤 `검수 완료`, `rechain ready`, `mass checked` 미리보기도 채택하지 않는다.",
+    "표면이 사라져도 위험이 해소된 것으로 보지 않는다. 전사 카드와 shell 하연의 lower line이 남아 있을 수 있으므로 최소 24시간 flat storage 후 재확인한다.",
+    "[COS189 — 회청색 무재하중표](./cos189.json) 결합 가능성이 있는 carrier는 반드시 3중 계량과 borescope 대조를 끝낸 뒤에만 다음 구역으로 이동한다. declared mass와 수기 확인란이 동시에 나타나더라도 실적재 확인 전 release를 허용하지 않는다."
+  ],
+  "hypotheses": [
+    "작업 가설: COS211은 provenance 회복이나 body 복구를 일으키지 않고, `성공적으로 끝난 검수`의 절차 상태만 불투명 작업면에 고정한다.",
+    "작업 가설: shell-first 강양성과 body-first 약양성 차이는 [COS176 — 유백색 선입면](./cos176.json)처럼 current front 또는 field cue가 먼저 자리를 차지해야 완료 프레임이 안정된다는 점을 시사한다.",
+    "작업 가설: [COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession과 [COS210 — 회청색 후행응답택](./cos210.json)의 완료형 절차어가 COS211의 lower line·box 형성을 촉진한다.",
+    "작업 가설: [COS158 — 한 칸 뒤의 회랑](./cos158.json)과 유사하게 actual resolution은 한 tray 뒤나 rear box에 남고, proof of completion만 현재 면에 선행 잔류한다.",
+    "작업 가설: [COS189 — 회청색 무재하중표](./cos189.json) 결합 사례는 host가 실제 본문이나 실하중을 포함하지 않아도 절차 권위만 있으면 COS211이 활성될 수 있음을 보여준다.",
+    "배제 단계 가설: 단순 압흔, 열변색, 드라이이레이스 오염, 일반 탄소지 전이만으로는 COS211을 설명하기 어렵다. 투명·금속·new PE control의 반복 음성과 독립 장비 촬영 결과가 이를 뒷받침한다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 진본성",
+      "assessment": "공란 카드와 shell 하연이 `대조 완료` 외형을 얻으면 provenance가 회복되지 않은 상태에서도 정상 검수본처럼 보일 수 있다. 가장 큰 위험은 원본 불일치가 시각적으로 가려지는 점이다."
+    },
+    {
+      "category": "조기 절차 종결",
+      "assessment": "route preview, rechain queue, mass check preview가 전사 산물을 실제 완료 신호로 읽을 수 있다. 2044-03-22와 2044-03-29 사례처럼 하류 절차가 body 확인 전 닫힐 위험이 있다."
+    },
+    {
+      "category": "수색 지연",
+      "assessment": "actual body나 실하중 근거가 rear box·후면 host에 남아 있음에도 현재 작업면의 완료 프레임 때문에 후속 수색이 중단될 수 있다. 이는 장기 미회수 또는 오배치로 이어질 수 있다."
+    },
+    {
+      "category": "표면 확산",
+      "assessment": "active surface는 사용 종료 후에도 8~37분 동안 프레임을 유지할 수 있고, 전사 카드의 표식은 더 오래 남는다. 표면 자체보다 후속 blank form과 scanner preview가 확산 매개가 된다."
+    },
+    {
+      "category": "인원 판단 유도",
+      "assessment": "완료칸과 lower line은 담당자가 hash·장수·질량 재확인을 생략하게 만들 수 있다. 현재까지 확인된 사고 3건 모두에서 인원이 `이미 끝난 형식`을 먼저 읽은 것이 직접 원인이었다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "확정 활성 17건에서 프레임 크기 중앙값은 212.8×301.4 mm였다. 표준 A4보다 약간 크지만, 현장 인원은 이를 거의 예외 없이 익숙한 검수 카드 배치 크기로 인식했다."
+    },
+    {
+      "type": "quotation",
+      "content": "본문은 아직 뒤 상자에 있었는데, 완료칸이 먼저 책상에 있었다."
+    },
+    {
+      "type": "paragraph",
+      "content": "전사된 box와 lower line은 80배 현미경에서 토너 입자나 잉크 번짐으로 보이지 않았고, 447±5 nm 반사 피크와 얕은 저온대만 확인되었다. 에탄올 면봉 2회 문질러도 즉시 지워지지 않았으며 자연 약화가 더 흔했다."
+    },
+    {
+      "type": "quotation",
+      "content": "나는 해시를 확인하기 전에 도장을 집었다. 카드가 끝났다고 보였기 때문이다. — 보존기사 H-19"
+    },
+    {
+      "type": "paragraph",
+      "content": "현재까지 COS211 표식만 따라가 실제 body가 회수된 사례는 없다. 따라서 COS211 산물은 복구 실마리가 아니라 조기 종결 외피로 우선 취급한다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-211 명칭 확정",
+      "paragraphs": [
+        "2044-03-14 야간 메모와 초동 보고서에서는 현상을 `교정매트 잔상`, `끝난 비교판`, `T-211`로 병기했다.",
+        "2044-03-16~2044-03-31 대조 실험 결과, 문제의 핵심이 단순 잔상이나 표면 오염이 아니라 `검수가 끝났음`이라는 완료 프레임의 선행 형성임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 선결검수면**으로 확정하고, 누락 본문 복구가 아닌 불투명 수기 작업면의 선행 완료 현상으로 분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A211/H211/T211 접두 운용",
+      "paragraphs": [
+        "활성 작업면은 `A211-surface-일련번호`, 전사된 공란 카드·slip은 `A211-card-일련번호`, shell·carrier 등 숙주는 `H211-host-일련번호`, lower line이나 문구 흔적만 남은 하연·preview는 `T211-trace-일련번호`를 부여한다.",
+        "`A211-surface`, `A211-card`, `H211-host`, `T211-trace`는 같은 봉투나 같은 current chain으로 병합하지 않는다.",
+        "공란 양식에서 유래한 `A211-card`는 정상 검수 양식으로 환원해 재사용하지 않는다."
+      ]
+    },
+    {
+      "relatedId": 205,
+      "type": "reciprocal",
+      "title": "COS205 상호기록",
+      "paragraphs": [
+        "[COS205 — 회청색 대조합치막](./cos205.json) 해제 뒤에도 provenance 복구가 이루어지지 않았는데, 불투명 교정면 위에서 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임만 먼저 형성된 사례가 6/8회였다.",
+        "따라서 COS211은 false pair를 고치는 항목이 아니라 false pair 이후의 `끝난 비교` 외피를 보존하는 후속 수기 단계로 분류한다."
+      ]
+    },
+    {
+      "relatedId": 206,
+      "type": "reciprocal",
+      "title": "COS206 상호기록",
+      "paragraphs": [
+        "[COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession이 blank verification card 하단선으로 재정착해 수기 `대조 완료` 외형을 얻는 후속 단계가 [COS211 — 회청색 선결검수면](./cos211.json)이다.",
+        "same chain field가 현재 면에 남는다고 provenance가 회복되는 것은 아니며, 오히려 COS211이 조기 검수 종료를 고정하는 조건이 된다."
+      ]
+    },
+    {
+      "relatedId": 210,
+      "type": "reciprocal",
+      "title": "COS210 상호기록",
+      "paragraphs": [
+        "[COS210 — 회청색 후행응답택](./cos210.json)의 완료형 절차어는 COS211 frame emergence를 가장 빠르게 단축시킨 표지였다. active tag군의 onset 중앙값은 무tag군보다 19초 짧았다.",
+        "따라서 완료어가 적힌 tag가 작업면에 올라온 경우, 그 문구를 provenance 회복의 실마리로 보지 않고 COS211 촉진 인자로 먼저 분리 기록한다."
+      ]
+    },
+    {
+      "relatedId": 189,
+      "type": "reciprocal",
+      "title": "COS189 상호기록",
+      "paragraphs": [
+        "[COS189 — 회청색 무재하중표](./cos189.json) carrier와 blank mass reconciliation slip을 함께 놓은 시험에서는 4/6이 활성되어 실하중 부재 상태에서도 `계량 대조 완료` 외형이 먼저 생겼다.",
+        "declared mass와 수기 확인란이 같이 보이더라도 이는 검증 완료가 아니라 빈 carrier 위에 완료 프레임이 덧씌워진 복합 오염으로 간주한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "활성 판정 기준",
+      "paragraphs": [
+        "현장에서는 불투명 작업면 위 208~216 mm × 297~304 mm 크기의 저온 사각, 좌측 2~3칸 box, 하단 lower line 또는 accession fragment 가운데 2개 이상이 동시에 확인될 때 COS211 양성 후보로 분류한다.",
+        "표면온도 저하는 주변 대비 0.9°C 이상이어야 하며, complete matched file 대조군에서 동일 패턴이 없어야 정식 표본화한다.",
+        "실제 provenance 회복 여부는 footer hash, page count, 실측 질량, actual body 위치의 독립 대조로만 판단하며, 프레임 외형은 판정 근거에 포함하지 않는다."
+      ]
+    },
+    {
+      "title": "전사 산물 격리 기준",
+      "paragraphs": [
+        "active surface에 닿은 blank verification card, rechain card, mass reconciliation slip은 즉시 flat sleeve에 넣고 24시간 암실 보관 후 재촬영한다.",
+        "전사 산물은 scanner, preview tray, approval desk, handoff board에 재투입하지 않는다. 이미 투입된 경우 해당 terminal을 hold하고 preview 로그를 별도 증거로 추출한다.",
+        "에탄올·건식 지우개·마른 천으로 즉시 소거를 시도하지 않는다. 자연 약화 전 소거 시도는 경계 흐림만 남기고 chain fragment를 더 넓게 퍼뜨리는 경우가 있었다."
+      ]
+    }
+  ]
+}

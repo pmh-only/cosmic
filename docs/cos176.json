@@ -324,6 +324,15 @@
       "paragraphs": [
         "[COS193 — 회청색 후입등재구](./cos193.json) 현장 14례 재검토 결과, [COS176 — 유백색 선입면](./cos176.json)으로 판정된 표본 9례에서 선입 전면 형성 30분 이내에 후면 정지대의 회청색 슬롯, 0.6°C 이상 국소 냉각, 표지/본문 분리 흔적이 함께 확인되었다. 따라서 유백색 첫 층이 독립 발생한 것처럼 보여도, 먼저 본문 뒤쪽 후면 정지대와 스페이서 뒤 슬롯에서 COS193 선행 흔적을 조사한다."
       ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS176 — 유백색 선입면](./cos176.json) 자료를 교정감사실의 used opaque mat로 옮겼을 때, 내용보다 먼저 도착한 front가 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임과 결합하여 `읽기 전 접촉`뿐 아니라 `검수 완료`까지 선행 점유하는 사례가 확인되었다. 이는 본문 도착 전 완료면이 먼저 자리 잡는 수기 단계의 후속 양상으로 해석된다.",
+        "따라서 COS176 의심 front-only 표본은 body 확인 전까지 blank verification card, rechain slip, approval cover와 같은 공란 양식과 같은 작업면에 두지 않는다. 선입 front의 명료함을 검수 종료 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

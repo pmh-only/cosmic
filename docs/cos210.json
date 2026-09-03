@@ -354,6 +354,15 @@
         "실물 태그는 `A210-tag-일련번호`, tag가 붙었던 숙주는 `H210-host-일련번호`, 하연 협지·하단선 잔류·보조 slip 등 파생 산물은 `S210-trace-일련번호`를 사용한다.",
         "`A210-tag`, `H210-host`, `S210-trace`는 같은 봉투, 같은 current chain, 같은 rebag sleeve로 합치지 않는다. provenance 확인 전에는 서로를 대리할 수 없다."
       ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS210 — 회청색 후행응답택](./cos210.json)의 active tag를 unresolved host와 함께 used opaque mat에 올리면 [COS211 — 회청색 선결검수면](./cos211.json)의 frame onset이 단축되고, blank verification card나 host 하연에 회색 완료어와 수기 완료칸이 함께 남을 수 있다.",
+        "따라서 COS210 문구가 붙은 tag를 교정감사실·재체인대·mass reconciliation board에 직접 올려 두지 않는다. 완료어와 수기 완료칸이 동시에 보여도 응답·검수 완료로 채택하지 않고 tag, host, surface를 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

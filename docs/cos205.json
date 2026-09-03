@@ -378,6 +378,15 @@
         "[COS210 — 회청색 후행응답택](./cos210.json)의 회색 완료형 문구가 shell/body 후보 사이 acceptance cue로 개입하면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 크게 증가한다. 2026-11-08 비교면 실험 6쌍 중 active tag 개입군 5쌍이 74초 이내 false pair cue를 획득했으나, unused tag군은 1/6, 무tag 분리군은 0/6이었다.",
         "이는 COS210이 provenance를 복원하는 것이 아니라 `이미 응답되었다` 또는 `대조 후 인계 가능` 같은 완료 상태를 비교 단계에 덧씌워 허위 합치를 가속한다는 해석을 지지한다. COS205 비교면에서는 tag 문구나 lower line을 pairing 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS205 — 회청색 대조합치막](./cos205.json) 양성쌍을 분리한 뒤 used opaque correction mat나 audit board에 올리면, provenance 회복이 없는데도 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임이 먼저 형성되어 blank verification card와 shell 하연에 `대조 완료`형 box·lower line을 남길 수 있다.",
+        "이는 false pair의 해제가 검증 완료로 닫힌 것이 아니라, 투명 비교면의 허위 합치가 불투명 수기 작업면의 선행 완료 외피로 이행한 상태다. COS205 양성쌍 해제 후 opaque mat의 완료칸을 근거로 rechain, handoff, pair correction을 진행하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

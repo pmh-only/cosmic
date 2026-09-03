@@ -356,6 +356,15 @@
         "[COS207 — 회청색 무재순환철](./cos207.json) 이동 shell에 [COS208 — 회청색 후열복귀표](./cos208.json)가 남으면, 현장 인원은 `다음 지점에서 본문이 복귀된다`고 오판해 route freeze를 지연시키는 경향이 있다. IR-208-02와 후속 통제 로그에서 복귀표가 붙은 thin shell은 page capture 0 상태에서도 2~3개 station을 더 통과했다.",
         "따라서 COS207 shell 하단의 복귀 문구는 정상 route instruction이 아니라 후면 분리 상태를 정당화하는 외피로 취급한다. 해당 문구를 근거로 next station recovery를 기다리지 말고 현재 route 전체를 동결한 뒤 rear body를 즉시 수색한다."
       ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS207 — 회청색 무재순환철](./cos207.json) shell을 route freeze 또는 rechain audit 목적으로 used opaque board에 올리면, 대응 body가 rear host에 남아 있어도 [COS211 — 회청색 선결검수면](./cos211.json)이 body 없는 shell에 `검수 완료`형 프레임을 부여해 다음 rack 이동을 정당화할 수 있다.",
+        "따라서 COS207 shell의 수기 완료칸은 회수 완료 증거가 아니며, active audit surface와 blank rechain card를 함께 격리한다. route closure는 shell이 아니라 대응 body 직접 확인 뒤에만 허용한다."
+      ]
     }
   ],
   "supplementalSections": [

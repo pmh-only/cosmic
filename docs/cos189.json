@@ -403,6 +403,15 @@
         "[COS199 — 회청색 이격결속띠](./cos199.json) 활성 front 10건 중 8건에서 [COS189 — 회청색 무재하중표](./cos189.json)와 같은 선언 질량이 31~74초 사이 선행 생성되었다. 실측 질량은 변하지 않았으므로, COS189의 일부 표본은 empty carrier 자체보다 front/rear body를 잇는 COS199 가교에서 먼저 전이된 하중 상태일 수 있다.",
         "declared mass가 rear body 분리 상태와 함께 나타나면 단독 계량 이상으로 처리하지 말고, 대응 front, body, rear lip geometry를 함께 봉인한다."
       ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS189 — 회청색 무재하중표](./cos189.json) carrier를 used gray audit board 위에서 blank mass reconciliation slip과 함께 다루면, 실하중 생성이나 3중 계량 일치가 없는데도 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임이 형성되어 `계량 대조 완료` 외피를 먼저 부여할 수 있다.",
+        "따라서 COS189 자료의 수기 완료칸은 declared mass 검증의 증거로 사용하지 않는다. MB-12, 독립 저울, borescope 대조 종료 전에는 release cage 이동과 mass checked preview를 모두 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

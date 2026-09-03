@@ -375,6 +375,15 @@
       "paragraphs": [
         "[COS187 — 공란 경유판](./cos187.json)은 [COS158 — 한 칸 뒤의 회랑](./cos158.json)이 만든 `현재 칸의 전면 / 뒤 한 칸의 내용` 분리 구조가 운반 단계로 확장된 사례로 볼 수 있다. 실제 본문과 봉인 운반체가 뒤칸에 남아 있는 동안 공란 carrier만 앞칸의 접수·검토 절차를 통과하면, 이를 이동 완료로 처리하지 말고 후면 잔류 내용과 전면 경유판을 별도 좌표로 기록한다."
       ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS158 — 한 칸 뒤의 회랑](./cos158.json) 의심 자료를 수기 감사하면, 실제 body나 계량 근거는 rear box나 뒤 tray에 남아 있는 동안 현재 작업면에는 [COS211 — 회청색 선결검수면](./cos211.json)의 완료칸만 먼저 형성될 수 있다. 이는 `실제 해결은 한 칸 뒤`에 남고 proof of completion만 현재 면에 잔류하는 수기 교정 단계의 변형으로 분류된다.",
+        "따라서 used audit board 위의 완료 프레임을 route close 또는 rechain 완료 근거로 사용하지 않는다. rear slot, 뒤 tray, 후면 host를 먼저 수색하고 실제 body 확인 뒤에만 현재 면의 표식을 보조 참고 자료로 취급한다."
+      ]
     }
   ],
   "supplementalSections": []
