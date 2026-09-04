@@ -396,6 +396,15 @@
         "[COS201 — 회청색 전면잔막](./cos201.json)은 전면 권한만 선출하는 데 그치지 않고, 비다공성 작업면에 남았을 때 [COS203 — 회청색 교차편철면](./cos203.json)의 시드가 될 수 있음이 확인되었다. COS203 host 4면에서 채취한 PTFE 스와브 12점은 모두 442~446 nm 반사 peak와 판상 입자 형상이 COS201 기준 표본과 일치했고, 70% IPA 닦기 뒤 인접 ruler와 tray에 2차 host가 형성되었다.",
         "따라서 COS201 양성 표면은 단순 front residue로 처리하지 말고, dry wipe나 IPA 세척 없이 판째 봉인해야 한다. 전면 잔막이 남은 비교판 위에서 shell과 body를 대조하는 절차는 COS203 유발 위험이 있다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS201 — 회청색 전면잔막](./cos201.json) 양성 surface에 올려 둔 [COS212 — 회청색 두께대행판](./cos212.json) host는 plate 제거 뒤에도 12~37분 동안 edge shadow와 current front를 유지하는 사례가 확인되었다. 이는 COS212가 본문을 복원한 것이 아니라, COS201이 plate가 만들었던 전면 현재성을 잔막 형태로 붙들고 있는 상태이다.",
+        "따라서 COS212 분리 직후에도 front-only shell이 여전히 그럴듯해 보이면 안정화로 오인하지 말고, `A201` surface 자체를 봉인한 뒤 대응 body 직접 회수 여부를 별도로 확인한다."
+      ]
     }
   ],
   "supplementalSections": [

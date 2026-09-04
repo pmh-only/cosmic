@@ -421,6 +421,15 @@
       "paragraphs": [
         "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS198 — 회청색 후면분리턱](./cos198.json)에서 분리된 `A198-front`가 static shell로 마르기 전, 여러 처리 지점을 실제로 통과하는 이동형 downstream 단계다. 2026-10-12 및 2026-10-18 사건에서 rear lip 기원 shell이 handoff·review·release preview를 body 없이 닫았고, 대응 body는 14~24 mm rear guide나 직전 correction host에서 회수되었다. 따라서 A198-front가 route line을 따라 움직일 경우 이를 단순 front only 산물이나 즉시 [COS182 — 담회색 무재 편철등](./cos182.json)으로 분류하지 말고, [COS207 — 회청색 무재순환철](./cos207.json)로 별도 추적한다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS198 — 회청색 후면분리턱](./cos198.json) host에서 front-only shell이 질량 대비 과도한 page-block 음영과 두 번째 핀치 저항을 보였으나, borescope는 empty cavity를 유지하고 대응 body는 rear gap 뒤 0.5~5 m 범위에서 별도로 회수되는 사례가 확인되었다. 2026-08-28~2026-09-01 `A198-host` 9건 중 6건은 [COS212 — 회청색 두께대행판](./cos212.json) 정박 상태와 일치했다.",
+        "따라서 rear lip host에서 얇은 shell이 `내용이 돌아온 것처럼` 보이면 즉시 재삽입이나 pairing을 시도하지 말고, 먼저 COS212 triad(계량·edge borescope·5 m 후열 검색)를 시행한다. 이는 COS198의 분리 상태가 해소된 것이 아니라, 후방 body의 공간 관계가 두께로만 대행된 상태이다."
+      ]
     }
   ],
   "supplementalSections": [

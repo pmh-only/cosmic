@@ -433,6 +433,15 @@
         "[COS191 — 회청색 공란상정대](./cos191.json) 유래 `A191-digest`가 연단을 벗어난 뒤 separated shell 또는 rear guide 정보와 함께 방치되면, 상정 권한을 유지하지 못하고 하단 1~3행의 [COS208 — 회청색 후열복귀표](./cos208.json)로 전이되는 사례가 6회 중 5회 확인되었다. 이 문구는 안건 설명이 아니라 `후열`, `1칸 뒤`, `복귀` 같은 회수 지시만 남긴다.",
         "따라서 연단 유래 digest card가 회수 단계에 재사용되면 이를 단순 잔류 요약문으로 보지 말고 [COS208 — 회청색 후열복귀표](./cos208.json) 전이 가능성 아래 opaque isolation 후 body search를 별도로 수행한다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS191 — 회청색 공란상정대](./cos191.json) 유래 `A191-digest` 카드 일부는 연단을 벗어난 뒤에도 후면 11 mm 내외 간극에 [COS212 — 회청색 두께대행판](./cos212.json)이 정박하면 실제 briefing body 없이 packet과 유사한 굽힘 저항과 절단면 음영을 얻는다. 2026-09-01 A-4 stand 사건은 요약문 생성 card가 body 없는 배포본처럼 사용될 뻔한 사례로 분류한다.",
+        "따라서 COS191 산물이 `오늘 배포본` 또는 `현재 안건 묶음`처럼 과도하게 그럴듯해 보이면 요약문 내용보다 먼저 COS212 triad를 적용한다. 연단 유래 digest와 rear body 후보를 같은 stand에서 다시 닫는 절차는 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

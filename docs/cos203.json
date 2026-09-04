@@ -351,6 +351,15 @@
         "[COS203 — 회청색 교차편철면](./cos203.json)은 서로 다른 front와 body를 같은 사건철처럼 보이게 만들고, [COS206 — 회청색 동체인란](./cos206.json)은 그 거짓 복합체를 분리한 뒤에도 accession이나 pair code가 shell·body·void slip에 남도록 만든다. 즉 COS203이 시각적 오합치를 형성하면, COS206은 그 오합치를 행정 필드로 연장하는 후속 단계로 기록한다.",
         "따라서 COS203 현장에서 false composite를 해제하더라도 번호와 하단선이 다른 host로 전이될 수 있으므로, 분리 직후의 correction mat·queue preview·blank carrier를 함께 봉인해야 한다. 같은 번호의 잔류를 provenance 회복으로 해석하지 않는다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS203 — 회청색 교차편철면](./cos203.json)에서는 [COS212 — 회청색 두께대행판](./cos212.json) backing을 가진 thin shell이 unrelated body와 닫힐 때 false composite 형성이 현저히 빨라졌다. `A203-host` 4면 대조에서 backed shell 6/6이 54~93초 안에 single-file silhouette를 형성했으며, non-backed shell은 2/6만 일시 양성이었다.",
+        "따라서 두께가 그럴듯한 front-only shell은 A203 비교면 위에서 provenance 대조를 수행하지 않는다. COS212 가능성이 남아 있는 shell은 body와 같은 평면에 올리지 말고, rear search 완료 뒤 원격 재체인만 허용한다."
+      ]
     }
   ],
   "supplementalSections": [

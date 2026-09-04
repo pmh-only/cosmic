@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "현장 3건에서 비전문 인원이 COS212 활성 host를 정상 사건철로 오인했고, 2026-08-29 blind sorting에서 COS212 host 8점에 대한 64회 판정 중 51회가 완료본으로 분류되었다. 일반 공개 시 empty shell을 정상 인계본처럼 통과시키는 악용 가능성이 높아 secrecy는 4로 평가한다.",
+    "permission": "본문 복구와 단순 spacer를 구분하려면 질량, borescope, footer hash, rear search 결과를 동시에 해석해야 했고, 잘못된 재삽입은 [COS203 — 회청색 교차편철면](./cos203.json) 및 [COS205 — 회청색 대조합치막](./cos205.json)과 연계되었다. 현장 대응 요약은 축약 배포가 가능하나, 관계망과 원자료를 포함한 본 문서의 최소 열람 권한은 4로 둔다.",
+    "chaos": "활성에는 읽을 수 있는 전면 host, 5~18 mm rear gap, 5 m 이내 대응 body라는 비교적 일관된 조건이 필요했고 ordinary PET 및 acid-free spacer 대조군 18건은 모두 음성이었다. 다만 decay 시간이 90~240초로 흔들리고 [COS201 — 회청색 전면잔막](./cos201.json) 양성 표면에서 잔류 양상이 달라져 chaos는 3으로 평가한다.",
+    "danger": "피부 접촉, 휘발성, 설비 손상은 확인되지 않았으나 2026-08-28과 2026-08-30에 각각 empty shell 오인 이송과 false composite 직전 사고가 발생했다. 인명 위해보다 기록 무결성과 인수인계 오류가 주된 위협이므로 danger는 3으로 평가한다.",
+    "popularity": "2026-09-04 기준 [COS184 — 회청색 차순호명패](./cos184.json), [COS191 — 회청색 공란상정대](./cos191.json), [COS198 — 회청색 후면분리턱](./cos198.json), [COS201 — 회청색 전면잔막](./cos201.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS208 — 회청색 후열복귀표](./cos208.json) 조사에서 반복 참조되었고 rear search triad 개정의 핵심 근거가 되었다. 최근 재편철·검수 사건에서 조회 빈도가 높아 popularity는 4로 평가한다.",
+    "containment": "표본이 일반 blank divider나 PET 판과 외관상 거의 구분되지 않고, stacked carrier에 30~180초 접촉만으로 활성 host를 만들 수 있었다. opaque sleeve 분리, host/body 원격 재체인, blank carrier와 50 cm 이상 분리 보관이 요구되므로 containment는 4로 평가한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 SE-12",
+        "role": "현장 회수 및 임시 봉인 담당",
+        "status": "active",
+        "involvement": "2026-08-28 3-B 재체인 감사실에서 최초 이상 host를 이송하려다 중지되었고, A212-01 회수 및 초동 봉인 기록을 작성했다."
+      },
+      {
+        "name": "분석원 ML-07",
+        "role": "재현 실험·계측 담당",
+        "status": "active",
+        "involvement": "거리 역치 시험, blind sorting, 교차편철 유발 대조를 설계하고 COS212의 비본문성(two-plane thickness proxy) 판정을 주도했다."
+      },
+      {
+        "name": "보존기술사 한유진",
+        "role": "비파괴 검사 및 분리 수복 담당",
+        "status": "active",
+        "involvement": "2.8 mm borescope 판독으로 empty cavity와 이중 평면을 확인하고 현장 재삽입 시도를 중지시켰다."
+      },
+      {
+        "name": "경비반장 K-03",
+        "role": "통로 봉쇄 및 영상 확보 담당",
+        "status": "active",
+        "involvement": "IR-212-01 및 IR-212-02에서 rear search 구역을 봉쇄하고 카트 후면 및 스캐너 랙 주변 CCTV, 동선 로그를 확보했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-08-28 19:32 KST",
+        "label": "초동 발견",
+        "description": "서부기록별관 3-B 재체인 감사실 Q3 트레이에서 질량 8.4 g의 thin shell이 사건철 한 권과 유사한 절단면 음영과 핀치 저항을 보여 회수되었다. rear lip 14 mm 간극에서 A212-01이, 카트 후면 1.7 m 지점에서 대응 body가 발견되었다."
+      },
+      {
+        "date": "2026-08-28 22:10 KST",
+        "label": "임시등록 T-212 발령",
+        "description": "empty shell, plate, body를 분리한 뒤 같은 방에서만 두께 대행이 재현됨이 확인되어 임시등록 T-212가 발령되었다."
+      },
+      {
+        "date": "2026-08-29 10:00~18:40 KST",
+        "label": "거리 역치 및 blind sorting 검증",
+        "description": "IR-4 격리실에서 6개 plate, 6개 host, 대조 spacer 18개를 사용한 거리·차폐 시험과 숙련 인원 8명의 blind sorting이 수행되었다. body 5 m 이내 조건과 질량/borescope triad의 유효성이 확정되었다."
+      },
+      {
+        "date": "2026-08-30 16:48 KST",
+        "label": "비교판 근접 사고",
+        "description": "비교실 C-2에서 COS212 잔류 host가 unrelated body와 닫히며 false composite 직전까지 진행되었다. 판면은 이후 [COS201 — 회청색 전면잔막](./cos201.json) 양성, 가장자리는 [COS203 — 회청색 교차편철면](./cos203.json) 전구 흔적으로 재분류되었다."
+      },
+      {
+        "date": "2026-09-01 09:40 KST",
+        "label": "소형 host 재현",
+        "description": "브리핑실 A-4에서 [COS191 — 회청색 공란상정대](./cos191.json) 유래 digest card와 [COS184 — 회청색 차순호명패](./cos184.json) 크기 blank plaque에서 COS212의 소형 안정화가 확인되었다."
+      },
+      {
+        "date": "2026-09-04 14:20 KST",
+        "label": "공식 명칭 및 관리 절차 확정",
+        "description": "본문·장수·체인 번호를 생성하지 않고 분리 body의 공간 관계만 두께로 대행한다는 결론에 따라 공식 명칭을 `회청색 두께대행판`으로 확정하고 rear search triad를 현장 표준으로 편입했다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-212-01",
+        "date": "2026-08-28 19:32 KST",
+        "location": "서부기록별관 3-B 재체인 감사실 Q3 트레이",
+        "title": "Q3 트레이 empty shell 오인 이송",
+        "involvedPersonnel": [
+          "기록관 SE-12",
+          "보존기술사 한유진",
+          "경비반장 K-03"
+        ],
+        "narrative": [
+          "기록관 SE-12는 release preview 대기 중이던 H198-3F를 집어 들었다. 질량계는 8.4 g를 가리켰고 원장상 예상 질량은 242 g였으나, shell open edge에는 약 6 mm 폭의 절단면 음영과 두 번째 핀치 저항이 나타났다. SE-12는 교대 종료 직전 적체를 줄이기 위해 질량 재확인보다 촉감 판정을 우선했고, shell을 `보류 해제 전 검수대기` 트레이로 옮겼다.",
+          "보존기술사 한유진은 같은 host를 수기 검토 중 2.8 mm borescope가 edge 중앙을 바로 통과하는 점을 확인하고 이송 중지를 요구했다. 트레이 rear lip와 shell 사이 14 mm 간극에서 무지 회청색 판상체 A212-01이 회수되었고, 경비반장 K-03가 카트 후면 cable race를 봉쇄한 뒤 1.7 m 뒤쪽에서 대응 body B198-3F를 찾았다.",
+          "현장 인원은 body를 같은 트레이 위에서 재삽입해 완결 여부를 즉시 확인하려 했으나, 한유진이 재활성 및 교차편철 가능성을 이유로 중지시켰다. A212-01, empty shell, body는 서로 다른 opaque sleeve로 분리 봉인되었고, 해당 시각 19:18~20:02 CCTV와 질량 로그가 증거로 확보되었다."
+        ],
+        "outcome": "오인 이송은 검수대 진입 직전 중지되었고 임시등록 T-212가 발령되었다. Q3 트레이와 인접 rear lip 2면은 후속 [COS201 — 회청색 전면잔막](./cos201.json) 및 [COS203 — 회청색 교차편철면](./cos203.json) 스크리닝 대상으로 전환되었다."
+      },
+      {
+        "code": "IR-212-02",
+        "date": "2026-08-30 16:48 KST",
+        "location": "중앙비교실 C-2 평판 비교대",
+        "title": "비교판 false composite 근접 사고",
+        "involvedPersonnel": [
+          "분석원 ML-07",
+          "기록관 SE-12",
+          "보존기술사 한유진",
+          "경비반장 K-03"
+        ],
+        "narrative": [
+          "분석원 ML-07은 H212-host-02(empty shell)와 후보 body 두 점(B198-body-03, B203-body-01)을 평판 비교하려 했다. 전일 확보한 A212-03을 이미 분리했다고 판단한 상태였으나, host 전면은 여전히 정상 file과 유사한 굽힘 저항과 5.4 mm edge shadow를 유지했다. SE-12는 두 차례 footer hash 인식 실패 후 staple 위치와 edge silhouette를 기준으로 B203-body-01을 대응 body로 선택하는 결정을 내렸다.",
+          "선택된 pair를 같은 비교판 위에서 닫는 순간 shell과 body는 single file처럼 맞물렸고, 경비반장 K-03는 다음 station 이동 봉투를 준비했다. 한유진은 하단 좌측 abrasion pattern이 원래 H198 계열과 맞지 않는다는 점을 지적하고 이동을 중지시켰다. 비교판은 이후 442~446 nm 반사 피크를 보여 [COS201 — 회청색 전면잔막](./cos201.json) 양성이 확인되었고, 판면 가장자리에서는 [COS203 — 회청색 교차편철면](./cos203.json) 전구 흔적이 검출되었다.",
+          "실제 대응 body는 스캐너 랙 뒤 2.3 m 지점에서 lower-right `후열 복귀` trace와 함께 회수되었다. ML-07은 당시 `plate를 치웠으니 shell은 비활성일 것`이라는 가정을 세웠고, 이 판단이 잘못이었다고 사고 검토서에 명시했다."
+        ],
+        "outcome": "거짓 composite 형성은 운반 직전 차단되었다. 이후 COS212 의심 host의 pair 비교는 같은 평면에서 수행하지 않는 원격 재체인 절차로 변경되었다."
+      },
+      {
+        "code": "IR-212-03",
+        "date": "2026-09-01 09:40 KST",
+        "location": "브리핑실 A-4 아크릴 stand",
+        "title": "소형 상정 카드 오판 시도",
+        "involvedPersonnel": [
+          "분석원 ML-07",
+          "보존기술사 한유진",
+          "기록관 SE-12"
+        ],
+        "narrative": [
+          "회의 브리핑실 A-4에서 [COS191 — 회청색 공란상정대](./cos191.json) 유래 digest card 한 장이 acrylic stand 전면에 놓인 채 `오늘 배포본`으로 분류되었다. 카드 뒤 11 mm 간격에는 92×132 mm 회청색 판상체 A212-07이 끼워져 있었고, 전면 card는 실제 4.3 g임에도 여러 장의 summary packet처럼 굽힘을 버텼다. SE-12는 배포 지연을 막기 위해 card를 그대로 브리핑 더미로 옮기려 했다.",
+          "ML-07은 전일 blind sorting 결과를 근거로 즉시 계량과 edge borescope를 실시했고, card 전면과 plate 사이의 이중 평면을 확인했다. stand base 뒤 한 칸에서 실제 briefing body가 회수되었으며, 같은 구조는 [COS184 — 회청색 차순호명패](./cos184.json) 크기 blank plaque 2점에서도 반복되었다. 한유진은 small-format host에서도 COS212가 안정화된다고 판정했다."
+        ],
+        "outcome": "브리핑 오배포는 발생하지 않았고, 소형 host를 포함하는 A212 triad 점검표가 현장 배포본으로 채택되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-212-01",
+        "type": "판상체 표본",
+        "description": "A212-01. 207×294 mm, 실제 두께 0.26 mm, 질량 3.9 g의 무지 회청색 PET 판상체. 2026-08-28 19:41 KST Q3 트레이 rear lip 14 mm 간극에서 회수.",
+        "custodyStatus": "불투명 hard sleeve O-212-01에 이중 봉인 후 저광 보존함 R-2-17 수납."
+      },
+      {
+        "code": "EV-212-02",
+        "type": "host shell",
+        "description": "H212-host-01. 기존 H198-3F에서 유래한 front-only shell. 계량 8.4 g, 사선 촬영상 6.1 mm edge shadow, 2.8 mm borescope 직통 영상 포함.",
+        "custodyStatus": "opaque tray T-212-H01에 단독 보관. body 및 plate와 분리 체인 유지."
+      },
+      {
+        "code": "EV-212-03",
+        "type": "body packet",
+        "description": "B212-body-01. 카트 후면 cable race에서 회수된 대응 body. pre-separation footer hash와 일치하며 H212-host-01과 물리적으로 분리된 상태로 발견.",
+        "custodyStatus": "불투명 envelope B-212-01 봉인, 해시 대조 완료 후 보존서가 S-4 제한칸 이관."
+      },
+      {
+        "code": "EV-212-04",
+        "type": "영상·계측 묶음",
+        "description": "VID/LDS-212-C2. IR-212-02 전 과정의 overhead CCTV, laser displacement 3회, 442~446 nm 반사 스펙트럼, board swab 결과 포함.",
+        "custodyStatus": "air-gapped 저장소 V-212-C2와 광디스크 사본 2부에 분리 보존."
+      },
+      {
+        "code": "EV-212-05",
+        "type": "실험 데이터셋",
+        "description": "EXP-212-02 blind sorting 원시 판정지, 음성 녹취, 질량/borescope/해시 재판정표. 숙련 인원 8명의 오판 경향과 보정 효과가 동시에 기록됨.",
+        "custodyStatus": "문서 원본은 봉인박스 BX-212-05, 디지털 사본은 분리 해시 저장."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 SE-12",
+        "role": "현장 회수 담당",
+        "context": "IR-212-01 종료 23분 후 구두진술",
+        "statement": "질량계 값은 말이 안 됐지만 손끝으로는 분명히 안에 page block이 걸렸습니다. 그 판단을 믿고 먼저 옮긴 것은 제 선택이었고, 지금은 rear search를 먼저 했어야 했다고 봅니다."
+      },
+      {
+        "speaker": "보존기술사 한유진",
+        "role": "비파괴 검사 담당",
+        "context": "EXP-212-02 결과 검토 메모",
+        "statement": "제 판단으로는 plate가 본문을 만든 것이 아니라 open edge의 두 번째 평면만 안정화했습니다. borescope에는 끝까지 빈 cavity가 남았으므로 `복원`이라는 표현은 쓰지 않는 것이 맞습니다."
+      },
+      {
+        "speaker": "분석원 ML-07",
+        "role": "재현 실험 담당",
+        "context": "IR-212-03 이후 소형 host 판정 회의",
+        "statement": "small-format에서도 같은 현상이 난다는 점은, 이 항목이 A4 사건철만의 문제가 아니라는 뜻입니다. 제 해석으로는 [COS191 — 회청색 공란상정대](./cos191.json)나 [COS184 — 회청색 차순호명패](./cos184.json)처럼 전면만 먼저 읽히는 host가 있으면 크기와 무관하게 두께 대행이 붙습니다."
+      }
+    ]
+  },
+  "id": 212,
+  "title": "회청색 두께대행판",
+  "language": "ko-KR",
+  "overview": [
+    "COS212는 외형상 얇은 무지 판상체 또는 그 판상체가 붙은 빈 carrier에서 확인되는 기록 전이형 현상이다. 활성 상태의 표본은 실제 본문을 복원하지 않으면서 분리된 body가 아직 내부에 남아 있는 것처럼 두께, 절단면 음영, 핀치 저항을 부여한다.",
+    "확인된 활성 조건은 `읽을 수 있는 전면 host`, `host 뒤 5~18 mm 간격의 회청색 판상체`, `같은 chain에 속한 대응 body의 근거리 후방 잔류` 세 요소의 동시 존재다.",
+    "질량, direct caliper, fiber-optic edge inspection, X-ray film에서는 완결된 사건철이 아님이 유지되며, COS212 자체가 본문, 장수, 검수란, 체인 번호를 생성한 사례는 아직 없다.",
+    "본 항목은 [COS198 — 회청색 후면분리턱](./cos198.json), [COS201 — 회청색 전면잔막](./cos201.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS208 — 회청색 후열복귀표](./cos208.json), [COS184 — 회청색 차순호명패](./cos184.json), [COS191 — 회청색 공란상정대](./cos191.json) 조사에서 반복 참조되었다."
+  ],
+  "identificationTraits": [
+    "회수 표본은 76×128 mm~210×297 mm, 실제 두께 0.19~0.34 mm, 질량 1.8~5.6 g의 무지 PET 또는 종이-폴리에스터 혼합 판상체로 관찰된다. 육안상 인쇄, 압인, page number, accession field가 없다.",
+    "430~450 nm 사광 조사 시 둘레 1~3 mm 폭의 회청색 반사띠가 생기며 중심부는 무광 회색으로 남는다. 일반 divider와 달리 반사띠가 host open edge와 평행하게 정렬된다.",
+    "활성 host는 실제 caliper 수치 0.9~1.4 mm 범위인데도 사선 사진에서 3.6~11.2 mm page block 음영을 보이고, 손끝 핀치 시험에서는 4~7 mm 위치에서 두 번째 저항점이 느껴진다.",
+    "질량과 footer hash는 대응 body 쪽에 남는다. host만 계량하면 예상 총질량의 3~12% 수준에 그치는 경우가 대부분이다.",
+    "2.8 mm borescope 또는 0.5 mm feeler gauge를 open edge로 넣으면 center cavity가 비어 있거나 front와 plate 사이의 이중 평면이 확인된다.",
+    "plate를 opaque sleeve에 분리하고 대응 body를 5 m 이상 이동시키면 90~240초 안에 두께 대행 양상이 약화된다."
+  ],
+  "discovery": [
+    "2026-08-28 19:32 KST, 서부기록별관 3-B 재체인 감사실 Q3 트레이에서 H198-3F shell이 질량 8.4 g임에도 사건철 한 권과 유사한 절단면 음영을 보여 보존기술사 한유진이 수동 계수 중 이상을 보고했다.",
+    "same tray rear lip 14 mm 간극에서 207×294 mm, 0.26 mm, 3.9 g의 무지 회청색 판상체가 회수되었고, 대응 body는 같은 카트 후면 cable race 1.7 m 뒤쪽에서 발견되었다.",
+    "회수된 plate를 clean PTFE stand 위 empty shell 뒤에 다시 놓았을 때, 대응 body가 같은 방에 남아 있는 조건에서만 4/4회 두께 대행이 재현되었다. ordinary PET spacer 대조군 4/4는 모두 음성이었다.",
+    "2026-08-28 22:10 KST 임시등록 T-212가 발령되었고, 2026-08-29~2026-09-03 거리 역치·blind sorting·소형 host 재현 시험을 거쳐 공식 문서화가 승인되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS212는 단독 opaque sleeve 보관 상태에서는 일반 무지 판상체와 구분되지 않는 수동성을 보인다.",
+      "읽을 수 있는 전면 host 뒤쪽에 정렬되고 대응 body가 근거리 후열에 남아 있으면, host는 실제 본문 없이도 완결된 file과 유사한 두께감을 획득한다.",
+      "이 대행은 text나 page count를 만들지 않으며, 본문이 돌아온 것처럼 보이게 하는 비본문성 물리 신호에 가깝다.",
+      "강제 분리 뒤에는 빠르게 약화되지만, [COS201 — 회청색 전면잔막](./cos201.json) 양성 표면이나 [COS208 — 회청색 후열복귀표](./cos208.json) trace를 남기며 다른 현상으로 이행할 수 있다."
+    ],
+    "stages": [
+      {
+        "name": "수동 판상기",
+        "description": "plate가 단독 opaque sleeve 또는 light-block tray에 보관된 상태. 질량, 두께, 표면 반사 외에 활성 징후가 없다."
+      },
+      {
+        "name": "후열 정박기",
+        "description": "plate가 읽을 수 있는 전면 host 뒤 5~18 mm 간격에 정렬되고 대응 body가 5 m 이내 후방에 있을 때 둘레 반사띠가 host edge와 평행하게 안정된다."
+      },
+      {
+        "name": "두께 대행기",
+        "description": "host가 실제 body 없이도 page block 음영, 굽힘 저항, 두 번째 핀치 저항을 획득한다. 이 시기에도 borescope와 질량은 empty cavity를 유지한다."
+      },
+      {
+        "name": "이완 잔류기",
+        "description": "plate나 body를 분리한 뒤 90~240초 내 두께감이 감소하거나, 전면 current성만 남은 [COS201 — 회청색 전면잔막](./cos201.json)형 잔류와 lower-right recovery cue인 [COS208 — 회청색 후열복귀표](./cos208.json) trace로 전이된다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS212는 독립적으로 절차 text를 생성하지 않으며, 다른 항목이 이용하는 `물리적으로 그럴듯한 현재본` 층을 제공하는 경우가 많다.",
+      "rear-gap host인 [COS198 — 회청색 후면분리턱](./cos198.json)과 front-selection residue인 [COS201 — 회청색 전면잔막](./cos201.json)이 선행 조건으로 가장 자주 확인되었고, 비교면 계열인 [COS203 — 회청색 교차편철면](./cos203.json)과 [COS205 — 회청색 대조합치막](./cos205.json)은 활성 host를 가장 쉽게 오용했다.",
+      "[COS184 — 회청색 차순호명패](./cos184.json)와 [COS191 — 회청색 공란상정대](./cos191.json) 연계 사례는 COS212가 full-size 사건철에 한정되지 않음을 보여 준다."
+    ],
+    "entries": [
+      {
+        "targetId": 198,
+        "targetTitle": "회청색 후면분리턱",
+        "description": "[COS198 — 회청색 후면분리턱](./cos198.json) host 9건 중 6건에서 COS212가 rear lip 6~15 mm 간극에 정박했다. 해당 간극을 제거하거나 1 mm aluminum barrier를 끼우면 COS212의 두께 대행은 180초 이내 붕괴했다."
+      },
+      {
+        "targetId": 201,
+        "targetTitle": "회청색 전면잔막",
+        "description": "[COS201 — 회청색 전면잔막](./cos201.json) 양성 전면은 COS212가 만든 두께감을 plate 제거 후에도 12~37분 더 유지시켰다. COS212가 비본문성 두께를 만들고 COS201이 `현재 읽히는 면`을 고정하는 것으로 해석한다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json) 비교판에서는 COS212-backed shell이 unrelated body와도 정상 file silhouette를 이루어 false composite 형성이 빨라졌다. clean PTFE 보드보다 onset이 평균 41초 짧았다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json) 대조 시험에서 COS212를 둔 shell은 shared pair code 이전 단계에서 이미 `같아 보이는 edge geometry`를 제공했다. 같은 비교면에서 false match cue 양성률은 non-backed shell보다 높았다."
+      },
+      {
+        "targetId": 208,
+        "targetTitle": "회청색 후열복귀표",
+        "description": "[COS208 — 회청색 후열복귀표](./cos208.json)는 COS212 강제 박리 뒤 7회 중 5회에서 lower-right lip에 나타났다. 복귀표는 body 복귀의 증거가 아니라 분리 body가 후열에 남아 있음을 가리키는 실패 상태 외피로 본다."
+      },
+      {
+        "targetId": 184,
+        "targetTitle": "회청색 차순호명패",
+        "description": "[COS184 — 회청색 차순호명패](./cos184.json) 크기 blank plaque 4점 중 3점에서 COS212-backed host가 card 하나만으로 full case front처럼 보이는 현상이 재현되었다. 작은 전면 host도 충분한 조건이 되므로 plaque형 자료를 예외로 두지 않는다."
+      },
+      {
+        "targetId": 191,
+        "targetTitle": "회청색 공란상정대",
+        "description": "[COS191 — 회청색 공란상정대](./cos191.json) 유래 digest card는 COS212가 후면에 놓일 때 briefing packet처럼 굽힘 저항과 절단면 음영을 얻어 사용 직전까지 오판을 유도했다. 2026-09-01 사례는 small-format host의 현장 위험을 입증한다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-212-01 거리 역치 및 차폐 시험",
+      "description": "2026-08-29 IR-4 격리실에서 A212-01~06, front-only host 6점, ordinary PET/acid-free spacer 대조군 18점을 사용했다. 대응 body를 host 뒤 0.4, 1.2, 2.8, 4.8, 5.2, 8.0 m에 두고 180초 유지한 결과, plate군은 0.4~4.8 m 구간 24회 중 19회에서 3.6~9.7 mm edge shadow와 두 번째 핀치 저항을 보였고 5.2 m 이상 12회는 모두 음성이었다. 같은 구성을 1 mm aluminum barrier로 차폐한 12회도 전부 음성이었다."
+    },
+    {
+      "label": "EXP-212-02 blind acceptance 시험",
+      "description": "숙련 인원 8명이 complete file 8점, COS212 활성 host 8점, empty control 8점을 touch+oblique photo 조건으로 판정했다. COS212 host는 64회 판정 중 51회가 `완결본`으로 오분류되었고, empty control은 4/64만 오분류되었다. 같은 표본에 질량, borescope, footer hash, 5 m rear search triad를 추가했을 때 오분류는 0/192로 감소했다."
+    },
+    {
+      "label": "EXP-212-03 A201 잔류 연장 시험",
+      "description": "활성 host 8점을 [COS201 — 회청색 전면잔막](./cos201.json) 양성 보드 1면과 clean PTFE 보드 1면에 각각 10분 노출한 뒤 plate를 제거했다. A201 양성 보드군은 5/8에서 12~37분 동안 edge shadow와 전면 current성이 남았고, PTFE 군은 0/8이었다."
+    },
+    {
+      "label": "EXP-212-04 교차편철 및 false match 민감도 시험",
+      "description": "COS212-backed shell 6점과 non-backed shell 6점을 unrelated body 후보와 비교했다. [COS203 — 회청색 교차편철면](./cos203.json) 양성 비교판에서는 backed shell 6/6이 54~93초 안에 single file silhouette를 형성했고 non-backed shell은 2/6만 일시 양성을 보였다. clean PTFE 비교판의 backed shell은 1/6에서만 20초 미만의 일시 양상을 보였다."
+    },
+    {
+      "label": "EXP-212-05 본문·장수·체인 생성 음성 대조",
+      "description": "활성 host 18건을 OCR, IR, page-counter macro, 수기 accession review로 점검했다. COS212 자체가 legible body text, page total, 검수란, chain field를 생성한 사례는 0/18이었다. 단, 강제 strip 제거 7회 중 5회에서 lower-right recovery trace가 생겼고 이는 [COS208 — 회청색 후열복귀표](./cos208.json)로 분리 기록했다."
+    },
+    {
+      "label": "EXP-212-06 소형 host 재현 시험",
+      "description": "76×128 mm blank plaque 4점과 [COS191 — 회청색 공란상정대](./cos191.json) 유래 digest card 4점 뒤에 절단된 A212 plate를 놓고, 대응 body를 acrylic stand 뒤 1.0~1.6 m 지점에 두었다. 8회 중 6회에서 2.9~6.3 mm apparent thickness가 사선 사진과 촉감에서 재현되었고, ordinary acetate 대조군 8회는 모두 음성이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "질량 15 g 이하 또는 direct caliper 1.5 mm 이하인데 촉감상 완결된 file로 느껴지는 host는 즉시 COS212 의심 표본으로 분류한다.",
+    "host, 의심 plate, body 후보를 같은 평면에 놓지 않는다. 각각 불투명 sleeve 또는 opaque tray에 분리하고 동일 봉투에 병합하지 않는다.",
+    "모든 의심 표본에 대해 430~450 nm 사광 검사, 2.8 mm borescope 또는 0.5 mm feeler gauge 확인, precision scale 계량, footer hash 대조, host 뒤 5 m rear search를 한 세트로 시행한다.",
+    "rear search는 host의 현재 전면 방향을 기준으로 직선 후방 0.5~5 m를 먼저, 그다음 one-slot-back shelf, tray underside, cable race 순으로 수행한다.",
+    "plate 제거는 PTFE 집게로만 수행하고, spine 누르기·edge fan·same-surface 재삽입을 금지한다.",
+    "의심 표본이 [COS201 — 회청색 전면잔막](./cos201.json) 또는 [COS203 — 회청색 교차편철면](./cos203.json) 양성 surface에 닿았을 가능성이 있으면 판면을 닦지 말고 board 자체를 봉인한다.",
+    "plate 제거 뒤 [COS208 — 회청색 후열복귀표](./cos208.json)와 유사한 `복귀` trace가 생겨도 회수 완료로 처리하지 않는다. body 물리 회수 전까지 route freeze를 유지한다.",
+    "rechain과 reinsertion은 body 직접 확인 후 별도 평면에서 원격 절차로만 수행하며, touch/photo만으로 `완결본` 판정을 내려서는 안 된다."
+  ],
+  "hypotheses": [
+    "현재 가설은 COS212가 새로운 mass나 text를 생성하는 것이 아니라, 전면 host와 분리 body 사이의 공간 관계를 촉감·시각상의 `두께`로만 압축한다는 것이다. 이 가설은 확인된 질량 부재와 이중 평면 영상에 부합하지만, 작동 매개는 아직 불명이다.",
+    "[COS198 — 회청색 후면분리턱](./cos198.json)와 유사한 rear-gap host가 plate를 저장하거나 정박시키는 핵심 구조일 가능성이 높다. 그러나 모든 positive specimen이 A198 host에서만 시작한 것은 아니므로 독립 host 가능성도 남아 있다.",
+    "[COS201 — 회청색 전면잔막](./cos201.json)은 COS212의 본질이 아니라 plate 제거 뒤에도 전면 current성을 유지시키는 후속 안정화 층일 수 있다. 이를 분리 검증하기 위해 A201 음성 환경에서 장기 decay 시험이 추가로 필요하다.",
+    "[COS203 — 회청색 교차편철면](./cos203.json)과 [COS205 — 회청색 대조합치막](./cos205.json)은 COS212가 제공한 물리적 그럴듯함을 이용해 false composite 또는 false pair를 닫는 단계일 가능성이 있다. 이 관계는 현장·격리실 모두에서 지지되나, 인과 순서는 아직 확정하지 않는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "COS212의 핵심 위험은 empty shell이나 front-only host가 완결본처럼 보이게 되어 잘못된 보류 해제, 잘못된 편철, 잘못된 브리핑 배포로 이어지는 점이다. IR-212-01~03에서 모두 인명 위해는 없었으나 chain 손상 직전 상태가 발생했다."
+    },
+    {
+      "category": "인수인계 오판",
+      "assessment": "touch/photo만 사용하는 현장 판정은 신뢰할 수 없다. blind sorting에서 COS212 host 64판정 중 51회가 완료본으로 오분류되었으므로, triad 없이 수령·검수·배포를 닫는 절차는 금지한다."
+    },
+    {
+      "category": "검색 지연",
+      "assessment": "시간 기록이 남은 field recovery 7건에서 body 회수까지 추가 소요 시간은 17~74분, 평균 38분이었다. COS212는 body가 근처에 있음에도 `이미 안에 있다`는 오판을 유도하여 rear search 개시를 지연시킨다."
+    },
+    {
+      "category": "시설 전이",
+      "assessment": "A201 양성 surface에서 전면 current성이 12~37분 잔류했고, same-surface reinsertion은 A203/C205 연계를 촉진했다. 따라서 blank carrier 적치면과 비교판은 단순 세척이 아니라 whole-board 봉인이 필요하다."
+    },
+    {
+      "category": "인원·설비",
+      "assessment": "피부 접촉 14건, bench exposure 6건에서 호흡기·피부·전기적 위해는 확인되지 않았다. 직접 물리 위해는 낮지만, prolonged route freeze와 잘못된 재편철로 인한 운영 손실이 크다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초동 보고서의 `차 있다`, `손에 걸린다`, `한 권 같다`는 표현은 모두 촉감 기술에 해당하며, acceptance field에 기록할 정식 판정 용어로 사용하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"질량계는 8 g인데 손끝으로는 분명히 안에 page block이 걸렸다. 그 판단을 믿고 먼저 옮긴 것은 제 실수였다.\" — 기록관 SE-12, IR-212-01 종결 진술"
+    },
+    {
+      "type": "paragraph",
+      "content": "[COS198 — 회청색 후면분리턱](./cos198.json)와 [COS201 — 회청색 전면잔막](./cos201.json) 동시 양성 host에서는 COS212를 분리해도 전면 current성이 남을 수 있다. `plate를 치웠다`는 이유만으로 non-hazard 판정을 내리지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"두께가 맞는다고 body가 돌아온 것은 아니다. COS212는 빈 front를 '그럴듯한 현재본'으로 만든다.\" — 분석원 ML-07, 2026-08-31 실험 메모"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-212 명칭 확정",
+      "paragraphs": [
+        "2026-08-28 22:10 KST 부여된 임시표기 `T-212`, `rear filler`, `thickness plate`, `뒤가 차는 판`은 모두 COS212로 통합한다.",
+        "2026-08-29~2026-09-03 거리 역치, blind sorting, rear search 시험 결과 대상이 본문 복원체가 아니라 분리 body의 공간 관계를 두께로만 대행하는 판상체임이 확인되었다. 이에 공식 명칭을 **회청색 두께대행판**으로 확정한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A212/H212/B212/T212 접두 운용",
+      "paragraphs": [
+        "회수 판상체는 `A212-plate`, 활성 전면 host는 `H212-host`, 대응 실제 body는 `B212-body`, plate 제거 뒤 남은 edge shadow·핀치 cue·lower-right trace는 `T212-trace` 접두를 부여한다.",
+        "`A212-plate`, `H212-host`, `B212-body`, `T212-trace`는 같은 봉투, 같은 current chain, 같은 비교판 위에 병합하지 않는다. body 직접 확인과 remote rechain이 끝나기 전까지 어떤 host도 완결본으로 승격하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "대표 표본 치수와 계측값",
+      "paragraphs": [
+        "A212-01: 207×294 mm, 0.26 mm, 3.9 g; host H212-host-01(H198-3F 유래); body distance 1.7 m.",
+        "A212-04: 210×297 mm, 0.31 mm, 5.6 g; host H212-host-02; body distance 2.3 m; C-2 비교판 사건 관련.",
+        "A212-07: 92×132 mm, 0.22 mm, 2.1 g; host A191 digest card; body distance 1.1 m.",
+        "A212-09: 76×128 mm, 0.19 mm, 1.8 g; host blank plaque related to [COS184 — 회청색 차순호명패](./cos184.json); body distance 1.4 m."
+      ]
+    },
+    {
+      "title": "음성 대조군 요약",
+      "paragraphs": [
+        "ordinary PET divider 12점, acid-free board spacer 6점, empty shell with no nearby body 8점, true complete file 6점으로 비교했다.",
+        "ordinary spacer군은 동일 조도와 동일 사광 조건에서도 두 번째 핀치 저항과 edge shadow가 재현되지 않았다.",
+        "true complete file군은 실제 mass와 paper-block obstruction이 존재했으므로 borescope가 막혔고, COS212 특유의 이중 평면은 나타나지 않았다."
+      ]
+    },
+    {
+      "title": "현장 A212 triad 체크리스트",
+      "paragraphs": [
+        "1) 계량값이 원장 예상치의 15% 미만인지 확인한다.",
+        "2) open edge에 borescope 또는 feeler gauge를 삽입해 이중 평면 또는 empty cavity 여부를 본다.",
+        "3) footer hash와 라벨 abrasion pattern을 분리 body 후보와 대조한다.",
+        "4) host 현재 방향 기준 직후열 5 m, one-slot-back shelf, tray underside, cable race를 순서대로 검색한다.",
+        "5) same-surface reinsertion 없이 remote rechain을 시행한다."
+      ]
+    }
+  ]
+}

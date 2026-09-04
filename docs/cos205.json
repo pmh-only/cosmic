@@ -387,6 +387,15 @@
         "[COS205 — 회청색 대조합치막](./cos205.json) 양성쌍을 분리한 뒤 used opaque correction mat나 audit board에 올리면, provenance 회복이 없는데도 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임이 먼저 형성되어 blank verification card와 shell 하연에 `대조 완료`형 box·lower line을 남길 수 있다.",
         "이는 false pair의 해제가 검증 완료로 닫힌 것이 아니라, 투명 비교면의 허위 합치가 불투명 수기 작업면의 선행 완료 외피로 이행한 상태다. COS205 양성쌍 해제 후 opaque mat의 완료칸을 근거로 rechain, handoff, pair correction을 진행하지 않는다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS205 — 회청색 대조합치막](./cos205.json) 양성쌍 중 일부는 shared pair code가 생기기 전부터 [COS212 — 회청색 두께대행판](./cos212.json) backing이 만든 edge geometry를 공통 단서로 사용하고 있었다. 2026-08-30~2026-09-02 비교 시험에서 COS212-backed shell의 false match cue 양성률은 non-backed shell보다 높았다.",
+        "따라서 두께감, 절단면 음영, 촉감 일치만으로 pair 후보를 좁히지 않는다. low-mass shell이 지나치게 완결본처럼 보이면 COS205 비교를 중지하고 COS212 triad를 먼저 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

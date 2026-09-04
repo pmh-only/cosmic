@@ -393,6 +393,15 @@
         "[COS208 — 회청색 후열복귀표](./cos208.json) 문구를 따라 모은 shell·body 후보를 opaque audit board에서 검수하면, 실제 복구가 없는데도 [COS211 — 회청색 선결검수면](./cos211.json)의 `대조 후`, `확인` box와 lower line이 먼저 형성되어 복귀 문구를 회수 완료처럼 보이게 만들 수 있다.",
         "COS208 문구와 COS211 완료 프레임이 동시에 발생하면 이를 recovery success로 해석하지 말고 route freeze와 rear search를 우선한다. blank verification card나 recovery note는 별도 flat sleeve에 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS208 — 회청색 후열복귀표](./cos208.json)는 [COS212 — 회청색 두께대행판](./cos212.json) 강제 박리 뒤 가장 자주 남는 후속 trace로 확인되었다. `A212-plate` 제거 7회 중 5회에서 lower-right lip에 `후열`, `복귀`, `1칸 뒤`류 협지가 남았으나, 대응 body는 여전히 host 외부 후방에서 회수되었다.",
+        "따라서 COS208 문구는 body 복귀 완료의 증거가 아니라, COS212가 유지하던 후열 body 관계가 붕괴하면서 남는 실패 지시 외피로 취급한다. 복귀표를 따라 같은 평면에서 재삽입하거나 재대조하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

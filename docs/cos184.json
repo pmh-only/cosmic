@@ -412,6 +412,15 @@
         "[COS208 — 회청색 후열복귀표](./cos208.json)가 blank plaque 하단에 붙으면 [COS184 — 회청색 차순호명패](./cos184.json)의 `다음` 권한이 `본문 복귀 예정`으로 오해되어 빈 슬롯 선개방이 반복된다. 2026-10-30 3-B 사건에서는 하단 strip가 붙은 plaque 이동 12초 뒤 page block 없는 thin shell이 outgoing tray로 먼저 진입했다.",
         "따라서 차순호명패에 복귀·후열·하단 우측 지시문이 동반되면 plaque를 회수 좌표 표식으로 사용하지 말고, [COS208 — 회청색 후열복귀표](./cos208.json) 영향 아래 열린 빈 슬롯과 실제 rear body 좌표를 분리 기록한다."
       ]
+    },
+    {
+      "relatedId": 212,
+      "type": "reciprocal",
+      "title": "COS212 상호기록",
+      "paragraphs": [
+        "[COS184 — 회청색 차순호명패](./cos184.json) 크기 blank plaque가 후면 5~18 mm 간극과 nearby body를 가질 경우, [COS212 — 회청색 두께대행판](./cos212.json)이 plaque 한 장에 briefing packet과 유사한 thickness cue를 부여하는 사례가 확인되었다. 이때 `다음` 권한을 얻은 소형 plaque는 단순 표찰이 아니라 body 없는 current front처럼 오인되기 쉽다.",
+        "따라서 `A184-call` 표본이 비정상적으로 두껍게 느껴지거나 edge shadow를 보이면 차순 배치 전에 계량·edge borescope·rear search를 선행한다. 이는 차순호명패의 권한 강화가 아니라 COS212의 소형 host 결합일 수 있다."
+      ]
     }
   ],
   "supplementalSections": [
