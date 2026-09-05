@@ -365,6 +365,15 @@
         "[COS207 — 회청색 무재순환철](./cos207.json) shell을 route freeze 또는 rechain audit 목적으로 used opaque board에 올리면, 대응 body가 rear host에 남아 있어도 [COS211 — 회청색 선결검수면](./cos211.json)이 body 없는 shell에 `검수 완료`형 프레임을 부여해 다음 rack 이동을 정당화할 수 있다.",
         "따라서 COS207 shell의 수기 완료칸은 회수 완료 증거가 아니며, active audit surface와 blank rechain card를 함께 격리한다. route closure는 shell이 아니라 대응 body 직접 확인 뒤에만 허용한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)이 [COS207 — 회청색 무재순환철](./cos207.json) shell에 결합하면, moving shell은 handoff·review·release preview를 통과하는 동안 절단면 의심을 거의 남기지 않는다. 2044-04-11 route freeze 사례에서 active shell은 page capture 0 상태였지만 side audit만으로는 empty edge가 드러나지 않았다.",
+        "따라서 route closure가 선행된 thin shell은 current line과 accession만이 아니라 edge geometry까지 검증해야 한다. COS207 shell은 발견 즉시 213 triad를 적용하고, rear guide search 이전의 dispatch·archive·shelf-prep를 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

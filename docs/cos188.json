@@ -393,6 +393,15 @@
         "[COS188 — 무본문 대용철](./cos188.json) shell은 [COS203 — 회청색 교차편철면](./cos203.json)의 대표적 전면 구성 요소다. 실제 본문이 없는 사건철 외피가 body-only 적층 근처의 양성 작업면에 놓이면 제목선, 책등, page total 외형이 무관한 body와 결합해 완결된 파일처럼 보이기 쉽다.",
         "따라서 COS188 shell은 어떠한 body bundle과도 flat board 위에서 `맞춰 보기` 방식으로 검수하지 않고, footer hash와 질량 대조가 끝날 때까지 별도 수직 보관한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)은 [COS188 — 무본문 대용철](./cos188.json)의 empty shell이 전면·책등 권위에 더해 open edge의 cut-edge signal까지 획득한 말단 안정화 단계로 확인되었다. 2044-04-10 숙주 비교에서 `A188-shell` 6점 중 4점이 COS213 양성이었고, 이때 shell은 실제 body 없이도 측면검사에서 정상 사건철처럼 보였다.",
+        "따라서 비정상적으로 가벼운 COS188 shell이 균일한 절단면 그림자까지 보이면 정본화 완료로 보지 말고 `213 triad`를 우선 적용한다. shell 가장자리 trimming과 rolling은 COS213 절편화를 유발하므로 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

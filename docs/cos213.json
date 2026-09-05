@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-04-10 블라인드 측면검사에서 active host 12점 중 9점이 훈련 인원 다수결로 정상 완결본 판정을 받았고, 2044-04-07 표본 1건은 review queue commit 38초 전에서야 중지되었다. 절단면 외형만으로 제한 기록을 정상 packet처럼 통과시킬 수 있어 비공개 유지가 필요하다.",
+    "permission": "판정에는 질량·두께·후열 검색·micro-CT·종점 로그를 동시에 대조해야 하며, [COS188 — 무본문 대용철](./cos188.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS190 — 회청색 무재장수표](./cos190.json), [COS194 — 회청색 대용본문지](./cos194.json), [COS196 — 회청색 선행표지본](./cos196.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS212 — 회청색 두께대행판](./cos212.json) 이력 열람이 필수였다. 일반 접수·배가 인력에게 공개하면 오판률이 높아 최소 4등급 열람이 요구된다.",
+    "chaos": "형성은 주로 A212-backed host 6/6, A194 pseudo-body host 5/6, A188 shell 4/6에서 재현되어 조건성이 분명했고 clean cover 6/6은 음성이었다. 그러나 onset 27~247초와 파절 뒤 분기 양상은 크게 흔들려 안전한 예측은 가능해도 결과 편차가 커 3단계로 판정한다.",
+    "danger": "COS213는 본문 없는 shell이 검수, review, shelf-prep, release 직전까지 완결본처럼 보이게 만든다. 2044-04-09 압착 사고에서 used verification board가 `검수 완료` 외형을 선행 생성했고, 실제 body는 별도 tray에 남아 있어 기록·지휘 체계에 대한 위해가 높다.",
+    "popularity": "임시등록 후 5일 동안 후열 body 복구, page total 오염, false match 재판독, verification surface 재검수 요청 15건이 접수되었다. 후열·무재 계열에서 참조가 빠르게 늘고 있으나 기관 전체 상시 기준 항목 수준은 아니다.",
+    "containment": "host, edge cap, rear body를 별도 체인으로 유지하고 0.15 mm gauge, 2.8 mm borescope, rear search 2.5 m를 묶은 `213 triad`를 적용해야만 false acceptance가 0/12로 감소했다. trimming, rolling, clip 압착은 모두 악화 요인이어서 고강도 격리가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 Q-12",
+        "role": "교정감사 총괄 기록관",
+        "status": "active",
+        "involvement": "2044-04-07 첫 표본에서 측면 수동검사를 중지시키고 `213 triad`를 수립했다. COS213 접촉 산물을 host, cap, body로 분리 봉인하는 절차를 정리했다."
+      },
+      {
+        "name": "보존기사 H-19",
+        "role": "측면계측 및 rear search 담당",
+        "status": "active",
+        "involvement": "445 nm 사광, 질량·두께 비교, feeler gauge, borescope, micro-CT를 사용해 절단면 외형과 실제 page block 부재를 분리 입증했다."
+      },
+      {
+        "name": "조사관 V-07",
+        "role": "교차 COS 표본 분석",
+        "status": "active",
+        "involvement": "archived host 23건의 선행 이력을 대조해 COS213가 [COS188](./cos188.json)·[COS190](./cos190.json)·[COS194](./cos194.json)·[COS196](./cos196.json)·[COS205](./cos205.json)·[COS207](./cos207.json)·[COS211](./cos211.json)·[COS212](./cos212.json) 유래 숙주에서 집중된다는 점을 정리했다."
+      },
+      {
+        "name": "기록관 K-04",
+        "role": "chain 복원 및 장수 대조 담당",
+        "status": "active",
+        "involvement": "실제 body의 마지막 수기 장수, footer hash, 후열 좌표를 복원했고, pseudo-complete packet을 일반 current copy로 승격하려는 시도를 중지시켰다."
+      },
+      {
+        "name": "TRI-02",
+        "role": "이관분류 주임",
+        "status": "reassigned",
+        "involvement": "2044-04-09 edge 정규화와 압착 정리를 승인해 절편화와 허위 검수 외형을 유발했다. 사건 후 연속면 이관 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-04-07 09:26 KST",
+        "label": "최초 확인",
+        "description": "제2보존동 1층 교정감사실 C-4 측면검사대 E-4에서 archived [COS212 — 회청색 두께대행판](./cos212.json) host `H212-host-04`의 open edge에 회청색 U자형 외피가 확인되었다."
+      },
+      {
+        "date": "2044-04-07 09:48 KST",
+        "label": "임시등록 T-213",
+        "description": "실제 body `B213-body-01`이 rear guide 1.2 m 후방에서 별도 회수되고, edge 아래 hollow channel이 gauge와 borescope로 확인되어 T-213이 발령되었다."
+      },
+      {
+        "date": "2044-04-09 14:27 KST",
+        "label": "압착 정규화 사고",
+        "description": "보존기사의 steel guide·acrylic roller 사용으로 edge cap이 3개 절편으로 갈라지고, used verification board에 `검수 완료` 외형이 선행 생성되었다."
+      },
+      {
+        "date": "2044-04-10 10:00 KST",
+        "label": "숙주별 형성률 검증",
+        "description": "A212-backed host 6점, A194 pseudo-body host 6점, A188 shell 6점, clean cover 6점을 비교한 통제 실험이 완료되었고 각각 6/6, 5/6, 4/6, 0/6의 결과가 나왔다."
+      },
+      {
+        "date": "2044-04-10 16:20 KST",
+        "label": "블라인드 측면 판독 완료",
+        "description": "훈련 인원 6명이 active host 12점과 대조군 12점을 side-view만으로 판독한 결과 active 9점이 완결본으로 오분류되었고, `213 triad` 적용 뒤 오분류는 0점으로 감소했다."
+      },
+      {
+        "date": "2044-04-12 09:30 KST",
+        "label": "공식 분류 승인",
+        "description": "확정 사례 11건, 부분 사례 4건, 통제 실험 29건의 검토를 마치고 COS213 공식 조사 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-213-01",
+        "date": "2044-04-07 09:26 KST",
+        "location": "제2보존동 1층 교정감사실 C-4 측면검사대 E-4",
+        "title": "두께는 있으나 본문이 없는 절단면",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "기록관 K-04"
+        ],
+        "narrative": [
+          "Q-12와 H-19는 [COS212 — 회청색 두께대행판](./cos212.json) archived host `H212-host-04`를 재감사하고 있었다. host는 apparent thickness 8.7 mm, 우상단 `19/19`, current lower line을 유지했지만 실측 질량은 22.9 g에 불과했다. backlog가 쌓인 상태에서 H-19는 rear search보다 side-edge confirmation을 먼저 끝내고 review tray로 넘기자고 제안했고, 447 nm 사광 20° 조건에서 open edge는 281 mm 구간에 걸쳐 0.29 mm 평균 pitch의 page-cut shadow를 보였다.",
+          "Q-12는 질량 차이가 과도하다는 이유로 non-title lower edge에서 0.15 mm feeler gauge를 넣도록 지시했다. gauge는 23 mm를 마찰 없이 통과했고, 이어진 2.8 mm borescope 영상에는 leaf stack이 아니라 hollow channel만 보였다. K-04는 즉시 rear guide `RG-C4-2`를 열어 1.2 m 뒤에서 `B213-body-01` 19매와 appendix 2매를 회수했다. H-19는 shell을 `복구 완료`로 넘기기 직전이었음을 인정했고, Q-12는 queue commit 38초 전 단계에서 이동을 중지시킨 뒤 host, edge cap, actual body를 각각 다른 체인으로 봉인했다."
+        ],
+        "outcome": "`H212-host-04`는 `H213-host-01`로, 본체 edge cap은 `A213-cap-01`로, 실제 본문은 `B213-body-01`로 재분류되었다. 측면감사에서 feeler gauge와 rear search를 생략하지 않는 `213 triad`가 같은 날 임시 규정으로 시행되었다."
+      },
+      {
+        "code": "INC-213-02",
+        "date": "2044-04-09 14:27 KST",
+        "location": "제2보존동 1층 재포장대 R-2 및 used verification board V-1",
+        "title": "강제 평탄화에 따른 절편화와 허위 검수 외피",
+        "involvedPersonnel": [
+          "조사관 V-07",
+          "보존기사 H-19",
+          "기록관 Q-12",
+          "TRI-02"
+        ],
+        "narrative": [
+          "V-07는 [COS194 — 회청색 대용본문지](./cos194.json) 이력이 있는 `A194-shell-02`를 촬영하기 쉽게 만들기 위해, active edge를 steel guide에 맞춰 세우고 acrylic roller로 14초간 눌렀다. TRI-02는 이 정리를 승인했고, used verification board `A211-surface-03`를 그대로 받침대로 사용했다. 압착 직후 shell의 `24/24` 표기는 더 선명해졌고, verification board 좌측에는 옅은 `검수 완료` box가 새로 형성되었다. 실제 body `B194-body-02`는 같은 시각 opaque tray 0.9 m 뒤에 남아 있었다.",
+          "H-19가 0.33 N 인장으로 edge를 분리하자 cap은 7.1 mm, 8.8 mm, 10.2 mm의 stepped fragment 3개로 갈라졌다. 하나는 review slip에, 하나는 shell edge에, 나머지 하나는 board upper lip에 남았다. Q-12는 즉시 upload와 review lamp를 중지시키고 저선량 촬영을 시행했으며, 내부 page block이 전혀 없다는 결과를 확인했다. V-07는 `모서리만 정리하면 읽을 수 있다`고 판단했던 것이 해석이었음을 인정했고, TRI-02는 압착 정리가 일반 보존 절차라는 이유로 개입을 계속 유지한 선택이 잘못이었다는 점을 기록했다."
+        ],
+        "outcome": "steel guide, roller, rotary trim을 이용한 edge 정규화가 전면 금지되었다. `A211-surface-03`은 [COS211 — 회청색 선결검수면](./cos211.json) 연계 host로, 절편 3점은 `F213-frag-01~03`으로, shell과 body는 기존 체인에서 분리 보존되었다."
+      },
+      {
+        "code": "INC-213-03",
+        "date": "2044-04-11 08:52 KST",
+        "location": "Q-2 예비배가대 P-4 및 H-4 중간회람카트",
+        "title": "213 triad 적용으로 moving shell 차단",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "기록관 K-04",
+          "보존기사 H-19"
+        ],
+        "narrative": [
+          "Q-12 팀은 [COS207 — 회청색 무재순환철](./cos207.json) 이력이 있는 `A207-shell-03`를 route freeze 상태로 인수했다. shell은 apparent thickness 10.1 mm, 질량 29.4 g, release hold line을 유지하고 있었고, page capture count는 0이었다. 이전 사건과 달리 누구도 title line이나 page total을 소리 내어 읽지 않았고, H-19는 shell을 current tray에 올리지 않은 채 즉시 질량 대조와 feeler gauge 검사를 시행했다.",
+          "gauge는 non-title lower edge 아래 17 mm를 통과했고, K-04는 origin P-4와 직전 H-4 rear guide를 동시에 수색했다. 1.9 m 뒤 shelf-prep rear guide에서 `B207-body-03` 22매와 appendix 2매가 회수되었으며 footer hash는 shell과 일치했지만 shell 내부는 끝까지 empty였다. used audit board와 blank rechain card를 제거한 상태였기 때문에 [COS211 — 회청색 선결검수면](./cos211.json) completion frame이나 [COS205 — 회청색 대조합치막](./cos205.json) acceptance cue는 추가로 발생하지 않았다."
+        ],
+        "outcome": "A213 host를 route freeze 단계에서 식별하면 moving shell을 current copy로 승격하지 않고 immediate rear search로 전환하는 절차가 확정되었다. triad 적용군의 첫 무사고 회수 사례로 기록되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-213-01",
+        "type": "실물 edge cap",
+        "description": "`A213-cap-01`. `H213-host-01`의 open edge에서 회수한 최초 표본으로, 길이 281.4 mm, exposed depth 5.2 mm, wall thickness 0.17 mm의 U자형 외피다. micro-CT에서 hollow channel만 보이고 leaf layering은 없다.",
+        "custodyStatus": "중성 폴리에스터 edge carrier에 직선 상태로 고정한 뒤 증거금고 C-213-1 상단칸에 단독 봉인 보관."
+      },
+      {
+        "code": "EV-213-02",
+        "type": "host/body pair",
+        "description": "`H213-host-01`과 `B213-body-01`. host는 `19/19`와 current line을 유지한 shell, body는 rear guide `RG-C4-2`에서 회수된 실제 19매 본문과 appendix 2매다.",
+        "custodyStatus": "host와 body를 불투명 개별 슬리브에 분리 보관하고, 동일 봉투·동일 tray 반입을 금지한 채 paired reference만 허용."
+      },
+      {
+        "code": "EV-213-03",
+        "type": "광학·CT 분석 세트",
+        "description": "445±6 nm 사광 이미지, 200배 현미경 사진, 2.8 mm borescope 영상, micro-CT 단면 32장, gauge 통과 길이 기록표를 묶은 분석 파일이다.",
+        "custodyStatus": "분석 서버 `SPEC-213` 읽기 전용 저장과 오프라인 SSD 1식에 이중 해시로 보존."
+      },
+      {
+        "code": "EV-213-04",
+        "type": "절편 표본",
+        "description": "`F213-frag-01~03`. 2044-04-09 압착 사고에서 분리된 3개 절편으로, 길이 7.1 mm, 8.8 mm, 10.2 mm다. 2점은 [COS178 — 회청색 후열영수편](./cos178.json)과 유사한 뒤집힌 점열을 보였으나 본 항목에서는 edge cap 파절 부산물로 분류한다.",
+        "custodyStatus": "미세표본 캡슐 3개에 개별 봉인하고 shell, body, verification board와 분리 보관."
+      },
+      {
+        "code": "EV-213-05",
+        "type": "블라인드 측면 판독 및 triad 검증표",
+        "description": "active host 12점, control 12점에 대한 side-only 판독표, triad 재판정표, rear search 결과와 오분류 이력을 묶은 세트다.",
+        "custodyStatus": "감사 금고 `AUD-213`에 종이 원본과 디지털 스캔을 분리 보존하며, 교육용 사본은 chain 번호를 제거한 뒤 제한 배포."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 Q-12",
+        "role": "교정감사 총괄 기록관",
+        "context": "2044-04-07 초동 봉인 직후 진술",
+        "statement": "관찰된 사실은 질량이 비어 있는데도 옆면이 정상 사건철처럼 보였고, gauge가 23 mm를 그대로 통과했다는 점입니다. `본문이 돌아왔다`는 판단은 그 순간 누구라도 할 수 있었던 해석이지만, borescope와 rear search는 그 해석을 지지하지 않았습니다."
+      },
+      {
+        "speaker": "보존기사 H-19",
+        "role": "측면계측 및 rear search 담당",
+        "context": "2044-04-10 블라인드 판독 복기",
+        "statement": "저는 처음에 side-light만 보면 complete packet이라고 분류할 수 있었습니다. 하지만 그건 절단면 외형을 본 제 해석이었고, 실제 계측값은 질량 부족과 hollow channel을 반복해서 보여 주었습니다."
+      },
+      {
+        "speaker": "조사관 V-07",
+        "role": "교차 COS 표본 분석",
+        "context": "2044-04-09 압착 사고 경위서",
+        "statement": "edge를 정리하면 읽히는 packet으로 안정될 것이라고 판단한 것은 제 실수였습니다. 제가 실제로 확인한 것은 눌린 뒤 절편이 생기고 verification board가 먼저 닫혔다는 사실이며, 본문이 shell 안에 생겼다는 증거는 끝내 없었습니다."
+      }
+    ]
+  },
+  "id": 213,
+  "title": "회청색 절단면대행갑",
+  "language": "ko-KR",
+  "overview": [
+    "**COS213**는 body가 분리된 front shell 또는 pseudo-body host의 open edge에 형성되는 회청색 U자형 외피로, 실제 page block 없이도 정상 재단면처럼 보이게 만드는 object-hosted 현상이다.",
+    "최초 확정은 2044-04-07 제2보존동 1층 교정감사실 C-4 측면검사대 E-4에서 [COS212 — 회청색 두께대행판](./cos212.json) archived host를 재감사하던 중 이루어졌다. host는 apparent thickness 8.7 mm, 질량 22.9 g이었고 open edge 281.4 mm 구간에 균일한 page-cut shadow를 보였다.",
+    "0.15 mm feeler gauge와 2.8 mm borescope는 edge 아래 9~27 mm의 hollow channel을 반복 확인했고, micro-CT에서도 leaf layering은 검출되지 않았다. COS213는 본문이나 종이 질량을 생성하지 않고, cut-edge shadow와 pinch resistance만 대행한다.",
+    "가장 안정적인 숙주는 [COS188 — 무본문 대용철](./cos188.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS190 — 회청색 무재장수표](./cos190.json), [COS194 — 회청색 대용본문지](./cos194.json), [COS196 — 회청색 선행표지본](./cos196.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS212 — 회청색 두께대행판](./cos212.json) 유래 host였다."
+  ],
+  "identificationTraits": [
+    "길이 214~312 mm, exposed depth 4.6~8.9 mm, wall thickness 0.13~0.29 mm의 얇은 U자형 또는 C자형 edge cap으로 회수된다.",
+    "445±6 nm 사광 18~24°에서 0.23~0.61 mm pitch의 page-cut shadow가 선명해지며, host edge보다 0.6~1.4°C 낮은 냉각대를 남긴다.",
+    "0.15 mm feeler gauge를 하단 비제목 모서리에서 넣으면 9~27 mm를 마찰 없이 통과하지만, 표면 pinch resistance는 0.24~0.71 N으로 일반 empty shell보다 높다.",
+    "2.8 mm borescope와 micro-CT에서는 cap 아래 hollow channel만 보이고, cellulose leaf stack 또는 staple-through page block은 확인되지 않는다.",
+    "manual side inspection만 할 경우 apparent thickness 6.4~11.1 mm의 정상 packet처럼 보이지만, 실측 질량은 18.9~39.4 g 범위에 머문다.",
+    "steel ruler, roller, rotary trim으로 정리하면 6.4~12.1 mm stepped fragment 1~3개로 갈라지기 쉽다.",
+    "활성 host의 절단면을 정면광 650 lx 이상에서 보면 contrast가 급격히 약해지고, 전면 title line이나 current state만 부각된다.",
+    "clean empty cover, ordinary trim burr, glued plastic edge는 같은 side-light/feeler gauge triad를 동시에 만족하지 않는다."
+  ],
+  "discovery": [
+    "COS213는 2044-04-07 제2보존동 1층 교정감사실 C-4에서 archived [COS212 — 회청색 두께대행판](./cos212.json) host `H212-host-04`를 재감사하던 중 처음 분리되었다. host의 `19/19` 표기와 apparent thickness는 정상 file과 유사했지만 질량은 22.9 g에 불과했고, side-light에서만 완전한 cut-edge shadow가 유지되었다.",
+    "이후 72시간 동안 [COS188 — 무본문 대용철](./cos188.json) shell 4건, [COS190 — 회청색 무재장수표](./cos190.json) count host 3건, [COS194 — 회청색 대용본문지](./cos194.json) pseudo-body host 3건, [COS196 — 회청색 선행표지본](./cos196.json) front 2건, [COS205 — 회청색 대조합치막](./cos205.json) 해제 shell 2건, [COS207 — 회청색 무재순환철](./cos207.json) moving shell 2건, [COS211 — 회청색 선결검수면](./cos211.json) completion host 1건에서 같은 edge cap이 추가 확인되었다. clean empty cover 6건, ordinary trim burr 6건, glued plastic edge 6건은 모두 음성이었다.",
+    "공통점은 실제 body가 후열이나 별도 tray에 남아 있는데도 manual side audit만으로는 open edge의 hollow channel이 드러나지 않았다는 점이었다. 0.15 mm gauge와 2.8 mm borescope를 함께 적용한 뒤에만 page block 부재가 반복 확인되었다.",
+    "따라서 COS213는 두께, 장수, current line만으로 설명되지 않는 마지막 `절단면 외피` 단계로 분리되었고, 임시표기 T-213에서 독립 항목으로 승격되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS213는 thickness, page total, current state가 먼저 부여된 front-only host가 마지막 manual edge check를 받을 때 가장 잘 형성된다.",
+      "edge cap이 seated되면 실제 본문이 없어도 packet이 `꽉 찬 절단면`을 가진 것처럼 보이고, rear body 검색이 지연된다.",
+      "내용, 종이 질량, 섬유층은 생성되지 않으며, 대행되는 것은 cut-edge shadow, pinch resistance, inspection acceptability뿐이다.",
+      "trimming, rolling, clip 압착은 cap을 중화하지 않고 fragment와 false verification trace를 남긴다."
+    ],
+    "stages": [
+      {
+        "name": "선행 숙주 형성",
+        "description": "[COS188 — 무본문 대용철](./cos188.json) shell, [COS190 — 회청색 무재장수표](./cos190.json) count host, [COS194 — 회청색 대용본문지](./cos194.json) pseudo-body, [COS196 — 회청색 선행표지본](./cos196.json) front, [COS212 — 회청색 두께대행판](./cos212.json) backed host처럼 이미 전면 상태가 안정된 대상이 형성된다."
+      },
+      {
+        "name": "절단면 seating",
+        "description": "open edge 3~9 mm 구간에 회청색 cap이 앉으며 step shadow와 edge chill이 생긴다. 이때 body는 대개 후열 0.4~2.3 m 또는 1 slot back에 남아 있다."
+      },
+      {
+        "name": "측면 완결화",
+        "description": "manual side audit, quick pinch check, shelf-prep visual pass에서 host가 정상 page block을 가진 packet처럼 받아들여진다."
+      },
+      {
+        "name": "후행 본문 은닉",
+        "description": "acceptance가 진행될수록 actual body recovery가 늦어지고, front shell은 review/current/release 후보로 오인된다."
+      },
+      {
+        "name": "파절 및 파생",
+        "description": "강제 평탄화, trimming, audit board 접촉이 있으면 cap은 fragment, completion box, false pair cue, summary collapse로 분기한다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS213은 [COS212 — 회청색 두께대행판](./cos212.json)과 [COS190 — 회청색 무재장수표](./cos190.json)가 부여한 두께·장수 외형을, 수동 측면검사에서 통과 가능한 절단면으로 마무리하는 단계로 가장 자주 기록되었다.",
+      "이후 [COS205 — 회청색 대조합치막](./cos205.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS211 — 회청색 선결검수면](./cos211.json) 환경에서는 실제 body가 없는 packet이 검수·이관·release 직전까지 진행될 수 있었다."
+    ],
+    "entries": [
+      {
+        "targetId": 212,
+        "targetTitle": "회청색 두께대행판",
+        "description": "[COS212 — 회청색 두께대행판](./cos212.json)은 COS213의 가장 직접적인 선행 조건이다. COS212가 host에 `두께`를 부여한 뒤에도 open edge의 hollow channel이 남는데, COS213는 그 edge만 닫아 false complete packet을 완성한다."
+      },
+      {
+        "targetId": 188,
+        "targetTitle": "무본문 대용철",
+        "description": "[COS188 — 무본문 대용철](./cos188.json)의 empty shell은 COS213의 가장 안정적인 숙주 중 하나다. shell이 전면 사건선·책등·상단 제목을 유지한 채 비어 있을 때 COS213가 open edge를 덮으면 manual side check에서 page block 부재가 거의 드러나지 않는다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json)가 false load를, COS213가 cut-edge appearance를 동시에 부여하면 shell은 `무겁고 꽉 찬 철`처럼 오인된다. 실제 body recovery 전 weight와 edge를 함께 완결 증거로 사용해서는 안 된다."
+      },
+      {
+        "targetId": 190,
+        "targetTitle": "회청색 무재장수표",
+        "description": "[COS190 — 회청색 무재장수표](./cos190.json)가 `27매`, `본문 x매 / 부록 y매`를 먼저 부여한 shell에서 COS213는 그 count를 측면 shadow로 정돈한다. count-only shell이 edge inspection까지 통과하면 실제 page block 부재가 더 오래 숨겨진다."
+      },
+      {
+        "targetId": 194,
+        "targetTitle": "회청색 대용본문지",
+        "description": "[COS194 — 회청색 대용본문지](./cos194.json)의 pseudo-body는 page surface를 흉내 내지만 open edge inspection에서 붕괴하기 쉽다. COS213가 결합하면 blank sheet 묶음이 실제 재단면을 가진 본문처럼 보이지만, OCR과 body 대조는 끝까지 불안정하다."
+      },
+      {
+        "targetId": 196,
+        "targetTitle": "회청색 선행표지본",
+        "description": "[COS196 — 회청색 선행표지본](./cos196.json)의 front-only packet은 실제 body보다 앞서 current state를 얻는다. COS213는 이 front를 마지막 manual edge audit까지 통과시키는 frequent downstream stabilizer로 작동한다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json)과 접촉한 A213 host는 seam과 gap이 덜 드러나, unrelated body와의 false match acceptance가 빨라진다. 따라서 edge가 자연스럽다는 이유만으로 pair correction을 완료해서는 안 된다."
+      },
+      {
+        "targetId": 207,
+        "targetTitle": "회청색 무재순환철",
+        "description": "[COS207 — 회청색 무재순환철](./cos207.json) shell에 COS213가 붙으면 moving shell이 handoff, review, shelf-prep를 통과하면서도 빈 edge가 거의 의심되지 않는다. route closure가 body recovery보다 먼저 닫히는 이유 중 하나로 기록된다."
+      },
+      {
+        "targetId": 211,
+        "targetTitle": "회청색 선결검수면",
+        "description": "[COS211 — 회청색 선결검수면](./cos211.json) 위에서는 A213 host가 body 없는 상태에서도 `검수 완료` 외형을 얻기 쉬워진다. used audit board의 completion frame이 edge acceptance와 결합하면 false complete packet이 가장 빠르게 형성된다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-213-01 / 숙주별 형성률 시험",
+      "description": "2044-04-10 10:00~13:20, A212-backed host 6점, A194 pseudo-body host 6점, A188 shell 6점, clean empty cover 6점을 22.4°C / RH 46% / 445 nm 18° 사광에서 비교했다. COS213는 각각 6/6, 5/6, 4/6, 0/6에서 27~83초 내 형성되었다."
+    },
+    {
+      "label": "EXP-213-02 / 블라인드 측면 판독 시험",
+      "description": "훈련 인원 6명이 active host 12점과 control 12점을 side-view와 pinch check만으로 판독했다. active 12점 중 9점이 다수결로 complete packet으로 오분류되었고 control은 1점만 오분류되었다. 같은 표본에 `213 triad`를 적용하자 오분류는 0/24로 감소했다."
+    },
+    {
+      "label": "EXP-213-03 / triad와 rear search 상관 시험",
+      "description": "active triad 15건에 대해 0.15 mm gauge, 2.8 mm borescope, 2.5 m rear search를 시행했다. gauge 통과와 leaf stack 부재는 15/15에서 확인되었고, actual body는 13/15에서 0.7~2.3 m 후방 또는 1 slot back에서, 2/15에서는 correction tray 0.4 m 뒤에서 회수되었다."
+    },
+    {
+      "label": "EXP-213-04 / 정리 방식 대조",
+      "description": "PTFE wedge 분리 6회, steel ruler+roller 평탄화 6회, rotary trim 4회를 비교했다. PTFE wedge는 5/6에서 cap을 intact 상태로 회수했지만, steel flatten은 4/6에서 1~3개 절편을 남겼고, rotary trim은 3/4에서 completion box 또는 false acceptance trace를 새로 만들었다."
+    },
+    {
+      "label": "EXP-213-05 / verification surface 결합 시험",
+      "description": "active A213 host 6점을 used opaque audit board에, 같은 조건 host 6점을 inert PTFE board에 올려 10분 관찰했다. used board군은 4/6에서 `검수 완료` frame 또는 lower completion line을 생성했으나, PTFE 군은 0/6이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "절단면이 자연스럽더라도 **옆면만 보고 complete packet 판정을 내리지 않는다**.",
+    "의심 host는 즉시 `213 triad`를 적용한다: 질량 대조, 0.15 mm feeler gauge, 2.8 mm borescope, 2.5 m rear search, footer hash 재대조.",
+    "gauge는 반드시 non-title lower edge에서 넣고, title line 아래나 staple side에서 억지로 벌리지 않는다.",
+    "분리는 PTFE wedge만 사용한다. steel ruler, roller, rotary trim, clip 압착, lamination을 금지한다.",
+    "host, edge cap, actual body, count/verification trace를 각각 다른 체인으로 운영하고 같은 슬리브·같은 tray에 넣지 않는다.",
+    "active host를 review stand, release queue, shelf-prep, scan-prep에 올리지 않는다. 이미 올라갔다면 current line과 queue preview를 먼저 동결한다.",
+    "실제 body는 host 바로 앞이 아니라 rear guide, 1 slot back, correction tray 후미, cable race를 우선 검색한다.",
+    "title line, page total, review state를 육성으로 읽지 않는다. 번호 패들, 수기 보드, 광신호만 사용한다.",
+    "blank sheet 삽입, page total 보정, shell-body flush 결속을 시도하지 않는다. 이 개입은 pseudo-body, outer band, completion frame 분기를 증폭한다.",
+    "분리 뒤 20분 동안 used audit board, review slip, edge fragment 발생 여부를 재확인하고, fragment가 있으면 `F213-frag`로 즉시 별도 봉인한다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS213가 [COS212 — 회청색 두께대행판](./cos212.json)이 만든 thickness cue와 [COS190 — 회청색 무재장수표](./cos190.json)의 count cue가 이미 빈 shell에 배치된 뒤, 마지막 manual edge signal만을 보완하는 late surrogate라는 것이다.",
+    "[COS194 — 회청색 대용본문지](./cos194.json)가 blank sheet에 pseudo-page surface를 부여하더라도, 수동 검수자는 page surface보다 cut-edge를 더 신뢰한다. COS213는 이 `절단면 신뢰`를 이용해 page block이 없는데도 page block이 있는 것처럼 보이게 만드는 단계일 수 있다.",
+    "[COS205 — 회청색 대조합치막](./cos205.json)과 [COS211 — 회청색 선결검수면](./cos211.json)은 COS213를 생성한다기보다, 이미 형성된 edge cap을 근거로 false match와 premature verification을 가속하는 증폭 환경으로 보인다.",
+    "해결되지 않은 A213 host는 [COS207 — 회청색 무재순환철](./cos207.json)처럼 이동을 계속하거나 [COS188 — 무본문 대용철](./cos188.json)처럼 shell 권위만 남긴 채 고착될 수 있다. 반대로 cap 자체는 body recovery의 증거가 아니며, 실제 본문 위치를 대체하지 않는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "측면검사 오판",
+      "assessment": "매우 높음. 훈련 인원 다수결 기준 active host 12점 중 9점이 complete packet으로 오분류되었다."
+    },
+    {
+      "category": "rear body 회수 지연",
+      "assessment": "높음. mishandling 사례에서 actual body 확인 지연은 평균 18.6분, 최대 43분이었다."
+    },
+    {
+      "category": "절편 2차 오염",
+      "assessment": "높음. 강제 평탄화 뒤 생긴 `F213-frag`는 review slip과 audit board에 completion trace를 남길 수 있다."
+    },
+    {
+      "category": "검수·release 조기 폐쇄",
+      "assessment": "높음. used verification board나 route preview가 body 회수 전 `검수 완료`, `current`, `review` 상태를 닫을 수 있다."
+    },
+    {
+      "category": "직접 인체 위해",
+      "assessment": "낮음에서 중간. 주요 위험은 손끝 절상과 rear lip 과도 탐색 시의 경미한 협착이며, 직접적인 생체 유해성은 확인되지 않았다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "현장 기록에서 `가장자리만 보면 꽉 찼다`는 표현을 판정 용어로 사용하지 않는다. COS213의 가장 흔한 오판은 절단면 외형을 본문 존재와 동일시하는 것이다."
+    },
+    {
+      "type": "quotation",
+      "content": "“게이지가 너무 쉽게 들어갔는데도 옆면은 정상 사건철처럼 보였다.” — 기록관 Q-12, 2044-04-07 측면검사 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "page-cut shadow pitch 0.23~0.61 mm는 declared count와 느슨하게만 일치하며, 실제 folio 수를 역산할 근거가 되지 않는다. OCR과 수기 전사는 title, count, appendix mark에만 편중되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "“trim해서 맞추면 될 것 같았지만, 잘린 건 가장자리였고 남은 건 완료감뿐이었다.” — 조사관 V-07, 2044-04-09 경위 진술"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-213 정식 편입",
+      "paragraphs": [
+        "2044-04-07 초동 메모에서는 현상을 `T-213`, `blue edge sheath`, `cut-edge filler`, `절단면 파트`로 병기했다.",
+        "2044-04-10 숙주 비교와 블라인드 측면 판독 결과, 핵심은 접착 잔재나 trim burr가 아니라 **실제 page block 없이 cut-edge signal만 대행하는 외피**임이 확인되었다. 이에 공식 명칭을 **회청색 절단면대행갑**으로 확정한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A213/H213/B213/F213 접두 및 triad 운용",
+      "paragraphs": [
+        "edge cap 본체는 `A213-cap`, 숙주는 `H213-host`, 실제 분리 body는 `B213-body`, 절편과 completion trace는 `F213-frag` 또는 `T213-trace` 접두를 부여한다.",
+        "`A213-cap`, `H213-host`, `B213-body`, `F213-frag`, `T213-trace`는 같은 봉투, 같은 tray, 같은 current chain으로 병합하지 않는다. 모든 판정은 `213 triad` 완료 전까지 provisional 상태로만 유지한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "213 triad 현장 판정",
+      "paragraphs": [
+        "1) host의 실측 질량과 apparent thickness를 먼저 기록한다. 질량이 기대치보다 15 g 이상 낮고 두께가 6 mm 이상이면 의심 표본으로 격리한다.",
+        "2) 0.15 mm feeler gauge를 non-title lower edge에서 넣어 cap 아래 hollow channel 존재를 확인한다.",
+        "3) 2.8 mm borescope 또는 micro-CT로 leaf stack 부재를 기록한다.",
+        "4) host 기준 직후열 2.5 m, 1 slot back, rear guide, correction tray, cable race를 순서대로 수색한다.",
+        "5) footer hash와 마지막 수기 장수를 rear body와 대조하기 전에는 review, release, shelf-prep, current copy 상태를 확정하지 않는다."
+      ]
+    },
+    {
+      "title": "배제 기준",
+      "paragraphs": [
+        "ordinary trim burr, glued plastic edge, PET shim, warped cover는 side-light shadow만 보여도 gauge가 cap 아래로 장거리 통과하지 않거나, mass/thickness discrepancy와 rear body 분리가 동반되지 않으면 COS213으로 판정하지 않는다.",
+        "실제 page block이 있는 정상 문서철은 gauge가 3 mm 이상 진행하지 못하고, borescope에서 leaf layering과 staple-through paper를 보여야 한다. 이 조건이 확인되면 COS213이 아니라 일반 문서로 복귀한다."
+      ]
+    },
+    {
+      "title": "광학·미세계측 요약",
+      "paragraphs": [
+        "확정 표본 11건의 exposed depth는 4.6~8.9 mm, wall thickness는 0.13~0.29 mm, page-cut shadow pitch는 0.23~0.61 mm였다.",
+        "active edge의 반사 피크는 445±6 nm, host 대비 표면 온도차는 -0.6~-1.4°C, pinch resistance는 0.24~0.71 N 범위였다.",
+        "micro-CT 11/11과 borescope 15/15는 hollow channel만 확인했고, pseudo-paper나 hidden leaf stack은 검출하지 못했다."
+      ]
+    }
+  ]
+}

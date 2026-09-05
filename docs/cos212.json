@@ -374,6 +374,15 @@
         "회수 판상체는 `A212-plate`, 활성 전면 host는 `H212-host`, 대응 실제 body는 `B212-body`, plate 제거 뒤 남은 edge shadow·핀치 cue·lower-right trace는 `T212-trace` 접두를 부여한다.",
         "`A212-plate`, `H212-host`, `B212-body`, `T212-trace`는 같은 봉투, 같은 current chain, 같은 비교판 위에 병합하지 않는다. body 직접 확인과 remote rechain이 끝나기 전까지 어떤 host도 완결본으로 승격하지 않는다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)은 [COS212 — 회청색 두께대행판](./cos212.json) backed host의 open edge에 착좌하는 가장 전형적인 후속 외피로 확인되었다. COS212가 두께와 pinch resistance를 대행한 뒤에도 hollow channel은 남아 있으며, COS213가 그 edge shadow만 마감해 false complete packet을 만든다.",
+        "따라서 COS212 의심 host에서 thickness cue가 안정적이더라도 edge가 자연스럽다고 해서 body 복구로 판정하지 않는다. `A212-plate` 분리 후에도 213 triad를 추가 적용하고, host·plate·actual body를 같은 비교판에서 다시 닫는 절차를 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

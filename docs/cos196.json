@@ -410,6 +410,15 @@
         "[COS204 — 회청색 보류인계슬리브](./cos204.json)는 420초 재결합 창을 넘기거나 제목 음독 뒤 강제 재개봉될 때, 정면 첫 장만 전면 current state를 유지하고 본문 묶음이 뒤쪽 틈이나 후방 선반으로 물러나는 [COS196 — 회청색 선행표지본](./cos196.json)형 분기를 유발할 수 있다. 2026-08-23~2026-08-24 재결합 실패 6회 중 5회에서 전면 잔류와 후행 본문 후퇴가 동시에 확인되었다.",
         "따라서 원래 일반 슬리브로 보였던 운반체에서 전면만 회수되고 역면에 갈색 미수행열이 남아 있으면, 이를 단독 선행표지본으로 종결하지 말고 COS204 기점 분리 사례로 병기한 뒤 blind sleeve 조건에서만 재결합 여부를 판단한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)은 [COS196 — 회청색 선행표지본](./cos196.json) A196-front가 마지막 수동 측면검사까지 통과하도록 만드는 frequent downstream stabilizer로 확인되었다. 전면 current state를 먼저 획득한 front가 COS213를 얻으면 실제 body가 뒤에 남아 있어도 complete packet처럼 보인다.",
+        "따라서 비정상적으로 가벼운 A196-front가 자연스러운 page-cut shadow를 보이면 선행표지본의 해소로 오인하지 말고, rear body 수색과 feeler gauge·borescope를 먼저 시행한다. title line이나 page total을 읽으며 옆면 판독을 진행하는 절차는 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

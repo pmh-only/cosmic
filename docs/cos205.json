@@ -396,6 +396,15 @@
         "[COS205 — 회청색 대조합치막](./cos205.json) 양성쌍 중 일부는 shared pair code가 생기기 전부터 [COS212 — 회청색 두께대행판](./cos212.json) backing이 만든 edge geometry를 공통 단서로 사용하고 있었다. 2026-08-30~2026-09-02 비교 시험에서 COS212-backed shell의 false match cue 양성률은 non-backed shell보다 높았다.",
         "따라서 두께감, 절단면 음영, 촉감 일치만으로 pair 후보를 좁히지 않는다. low-mass shell이 지나치게 완결본처럼 보이면 COS205 비교를 중지하고 COS212 triad를 먼저 수행한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)이 [COS205 — 회청색 대조합치막](./cos205.json) 양성쌍의 front shell에 결합하면, seam과 cut-edge가 함께 자연스러워져 unrelated body와의 false match acceptance가 더 빨라진다. 2044-04-11 대조에서 COS213형 edge를 가진 shell은 plain front보다 pair correction 오판율이 높았다.",
+        "따라서 비교면에서 edge가 잘 맞는다는 이유로 shared pair code를 정쌍 근거로 사용하지 않는다. side edge가 지나치게 정돈된 false pair 후보는 COS205 해제보다 먼저 213 triad를 적용하고, front/body를 같은 flat board에 두지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

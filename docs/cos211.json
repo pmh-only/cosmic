@@ -423,6 +423,15 @@
         "[COS189 — 회청색 무재하중표](./cos189.json) carrier와 blank mass reconciliation slip을 함께 놓은 시험에서는 4/6이 활성되어 실하중 부재 상태에서도 `계량 대조 완료` 외형이 먼저 생겼다.",
         "declared mass와 수기 확인란이 같이 보이더라도 이는 검증 완료가 아니라 빈 carrier 위에 완료 프레임이 덧씌워진 복합 오염으로 간주한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json) host가 used audit board에 놓이면 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임과 결합해 body 없는 packet이 `검수 완료`처럼 보이는 복합 오염을 만든다. 2044-04-09 압착 사고에서 `A211-surface-03`는 actual body 부재 상태에서도 completion box를 선행 생성했다.",
+        "따라서 natural cut-edge와 완료칸이 동시에 보여도 provenance 회복이나 검수 종료의 근거로 사용하지 않는다. COS211 작업면에서 A213 host가 발견되면 blank verification card, used board, rear body를 함께 격리하고 completion state를 무효 보류한다."
+      ]
     }
   ],
   "supplementalSections": [

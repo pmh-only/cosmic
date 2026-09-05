@@ -412,6 +412,15 @@
         "[COS189 — 회청색 무재하중표](./cos189.json) carrier를 used gray audit board 위에서 blank mass reconciliation slip과 함께 다루면, 실하중 생성이나 3중 계량 일치가 없는데도 [COS211 — 회청색 선결검수면](./cos211.json)의 완료 프레임이 형성되어 `계량 대조 완료` 외피를 먼저 부여할 수 있다.",
         "따라서 COS189 자료의 수기 완료칸은 declared mass 검증의 증거로 사용하지 않는다. MB-12, 독립 저울, borescope 대조 종료 전에는 release cage 이동과 mass checked preview를 모두 금지한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)이 [COS189 — 회청색 무재하중표](./cos189.json)와 결합하면, empty carrier는 declared mass뿐 아니라 꽉 찬 재단면 외형까지 획득하여 `실적재본`처럼 오인되기 쉽다. false load가 유지된 `A189-carrier` 5점 중 3점은 open edge 445 nm 사광에서 COS213형 cut-edge shadow를 동반했다.",
+        "따라서 회청색 중량띠와 자연스러운 절단면이 동시에 보이더라도 이를 내용물 존재 근거로 사용하지 않는다. 독립 계량과 rear body 검색이 끝나기 전 release, approval, scan-prep를 허용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

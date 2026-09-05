@@ -395,6 +395,15 @@
         "[COS194 — 회청색 대용본문지](./cos194.json) pseudo-body는 [COS203 — 회청색 교차편철면](./cos203.json)에서 후면 구성 요소처럼 오인될 수 있다. blank sheet에 형성된 page total과 appendix 표기가 shell title과 잘 맞아 보이면, 실제 body가 회수되지 않았는데도 pseudo-body와 shell이 한 권처럼 안정화되는 사례가 확인되었다.",
         "따라서 COS194 의심 표본은 body packet 대체물로 사용하지 않으며, shell과 같은 작업면에서 pagination 적합성만 보는 절차를 금지한다."
       ]
+    },
+    {
+      "relatedId": 213,
+      "type": "reciprocal",
+      "title": "COS213 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json)이 [COS194 — 회청색 대용본문지](./cos194.json) pseudo-body host에 결합하면, blank sheet의 paragraph block뿐 아니라 측면 재단면까지 그럴듯해져 실제 본문 복구본처럼 보일 수 있다. 2044-04-10 숙주 비교에서 `A194-shell` 6점 중 5점이 COS213 양성이었고, OCR 불안정과 body 분리는 그대로 유지되었다.",
+        "따라서 pseudo-body가 읽힌다는 이유만으로 shell을 complete packet으로 승격하지 않는다. side-light가 정상적일수록 hollow channel 가능성을 먼저 의심하고, inserted sheet·actual body·edge cap을 각각 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [
