@@ -421,6 +421,14 @@
         "[COS213 — 회청색 절단면대행갑](./cos213.json)이 [COS189 — 회청색 무재하중표](./cos189.json)와 결합하면, empty carrier는 declared mass뿐 아니라 꽉 찬 재단면 외형까지 획득하여 `실적재본`처럼 오인되기 쉽다. false load가 유지된 `A189-carrier` 5점 중 3점은 open edge 445 nm 사광에서 COS213형 cut-edge shadow를 동반했다.",
         "따라서 회청색 중량띠와 자연스러운 절단면이 동시에 보이더라도 이를 내용물 존재 근거로 사용하지 않는다. 독립 계량과 rear body 검색이 끝나기 전 release, approval, scan-prep를 허용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 214,
+      "type": "reciprocal",
+      "title": "COS214 상호기록",
+      "paragraphs": [
+        "[COS214 — 회청색 장넘김대행막](./cos214.json)가 [COS189 — 회청색 무재하중표](./cos189.json) carrier에 결합하면, empty host는 declared mass뿐 아니라 manual leafing cue까지 획득해 가장 설득력 있는 `실적재본` 외형을 만들 수 있다. review tray와 scan-prep에서 false load alone보다 acceptance 직전 진입률이 높았으므로, 회청색 중량띠와 넘김감이 함께 나타나더라도 실제 body나 paper stack 존재 근거로 사용하지 않고 3중 계량·rear body search 종료 전 thumb-check와 page fan을 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

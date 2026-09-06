@@ -383,6 +383,14 @@
         "[COS213 — 회청색 절단면대행갑](./cos213.json)은 [COS212 — 회청색 두께대행판](./cos212.json) backed host의 open edge에 착좌하는 가장 전형적인 후속 외피로 확인되었다. COS212가 두께와 pinch resistance를 대행한 뒤에도 hollow channel은 남아 있으며, COS213가 그 edge shadow만 마감해 false complete packet을 만든다.",
         "따라서 COS212 의심 host에서 thickness cue가 안정적이더라도 edge가 자연스럽다고 해서 body 복구로 판정하지 않는다. `A212-plate` 분리 후에도 213 triad를 추가 적용하고, host·plate·actual body를 같은 비교판에서 다시 닫는 절차를 금지한다."
       ]
+    },
+    {
+      "relatedId": 214,
+      "type": "reciprocal",
+      "title": "COS214 상호기록",
+      "paragraphs": [
+        "[COS214 — 회청색 장넘김대행막](./cos214.json)은 [COS212 — 회청색 두께대행판](./cos212.json) backed host에서 가장 자주 확인된 후속 감각층이다. COS212가 분리 body의 공간 관계를 두께와 pinch resistance로만 대행한 뒤 manual thumb-check가 더해지면 실제 leaf stack 없이도 여러 장이 넘어가는 듯한 rustle과 단계적 corner lift가 발생할 수 있으므로, COS212 의심 host는 thickness cue가 있어도 넘겨 보아 확인하지 않고 body 직접 회수 전 no-leafing triad를 우선 적용한다."
+      ]
     }
   ],
   "supplementalSections": [

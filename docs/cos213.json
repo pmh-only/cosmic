@@ -391,6 +391,14 @@
         "edge cap 본체는 `A213-cap`, 숙주는 `H213-host`, 실제 분리 body는 `B213-body`, 절편과 completion trace는 `F213-frag` 또는 `T213-trace` 접두를 부여한다.",
         "`A213-cap`, `H213-host`, `B213-body`, `F213-frag`, `T213-trace`는 같은 봉투, 같은 tray, 같은 current chain으로 병합하지 않는다. 모든 판정은 `213 triad` 완료 전까지 provisional 상태로만 유지한다."
       ]
+    },
+    {
+      "relatedId": 214,
+      "type": "reciprocal",
+      "title": "COS214 상호기록",
+      "paragraphs": [
+        "[COS214 — 회청색 장넘김대행막](./cos214.json)은 [COS213 — 회청색 절단면대행갑](./cos213.json) host의 open edge에 마지막 manual review cue를 추가하는 후속 단계로 확인되었다. COS213가 cut-edge shadow와 pinch resistance를 제공한 host에 COS214가 결합하면 side inspection과 thumb-check가 모두 complete packet처럼 보이지만 gauge와 borescope는 여전히 hollow channel만 보여 주므로, 자연스러운 절단면 뒤에 장넘김감이 더해져도 body 복구로 판단하지 않고 213 triad에 no-leafing 절차를 추가 적용한다."
+      ]
     }
   ],
   "supplementalSections": [

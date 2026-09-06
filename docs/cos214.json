@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-04-16 blind leafing test에서 active host 12점 중 10점이 훈련 인원에게 완결 packet으로 판정되었고, 2044-04-18 실사례 1건은 review queue commit 38초 전에서야 중지되었다. 현상 조건이 알려지면 manual page-check만으로 제한기록 shell을 정상 packet처럼 통과시키는 악용이 가능하므로 높은 비공개가 필요하다.",
+    "permission": "판정에는 질량, 445±6 nm 사광, 접촉 마이크, 240 fps 측면 영상, footer hash, rear body 위치 대조가 동시에 필요했다. 한 가지 지표만으로는 실제 body 부재를 반복적으로 놓쳤으므로 기록감식과 체인정정 권한을 가진 인원만 열람해야 한다.",
+    "chaos": "[COS212 — 회청색 두께대행판](./cos212.json)·[COS213 — 회청색 절단면대행갑](./cos213.json) 기원 host에서 양성률은 높았지만, 마찰음 횟수는 3~18회, 지속 시간은 0.6~2.4초, 파절 잔편 수는 0~3개로 흔들렸다. handling force와 audit surface에 따라 downstream acceptance cue가 달라져 예측 곤란도가 높다.",
+    "danger": "직접적인 인체 위해는 낮았지만 bodyless host가 `검토 완료`와 review tray 이동 직전까지 진행된 2건, wrong packet 오인 3건, 파절 잔편에 의한 2차 오염 5건이 기록되었다. 위해는 주로 기록·절차 무결성에 집중되므로 중간 수준의 위험으로 판정한다.",
+    "popularity": "T-214 발령 후 10일간 side audit, route freeze, chain correction, review training 자료 18건에서 직접 참조되었고, [COS212 — 회청색 두께대행판](./cos212.json), [COS213 — 회청색 절단면대행갑](./cos213.json), [COS211 — 회청색 선결검수면](./cos211.json) 후속 검토의 기본 대조 항목이 되었다. 신규 항목이지만 내부 참조 빈도는 중간 이상이다.",
+    "containment": "host, actual body, lamella fragment, verification card를 4분리하고 no-leafing triad, 불투명 frame, used audit surface 금지, 30분 재관찰을 함께 적용해야 추가 acceptance cue가 멈췄다. 단일 봉인만으로는 억제되지 않아 강화 관리가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "Q-12",
+        "role": "교정감사 총괄 기록관",
+        "status": "active",
+        "involvement": "2044-04-14 최초 thumb-check 사고를 중지시키고 임시표기 T-214를 발령했다. 이후 no-leafing triad와 host/body/fragment 4분리 체계를 수립했다."
+      },
+      {
+        "name": "H-19",
+        "role": "측면계측 및 rear search 담당 보존기사",
+        "status": "active",
+        "involvement": "첫 사건에서 manual leafing을 제안했고, 445 nm 사광·접촉 마이크·borescope 계측과 rear guide 회수를 수행했다. 2044-04-18에는 training demo 중 금지된 thumb pass를 시행해 completion frame 선행을 유발했다."
+      },
+      {
+        "name": "V-07",
+        "role": "교차 표본 분석 조사관",
+        "status": "active",
+        "involvement": "host-origin comparison, used audit board 대조, fragment 생성 실험을 설계·기록했다. 2044-04-18 사고 뒤 steel straightening이 파절을 증폭한다는 점을 보고했다."
+      },
+      {
+        "name": "K-04",
+        "role": "체인 검증 기록관",
+        "status": "active",
+        "involvement": "모든 사건에서 footer hash, page total, 질량, actual body 좌표를 교차 대조해 false complete packet 판정을 취소했다. rear body 검색 우선 순서를 문서화했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-04-14 08:56 KST",
+        "label": "최초 확정 관측",
+        "description": "제2보존동 1층 교정감사실 C-4 측면검사대 E-6에서 front-only host H214-host-01에 11회의 장넘김 유사 마찰음과 6단계 corner lift가 확인되었다. actual body는 같은 체인의 rear guide 1.4 m 후방에서 회수되었다."
+      },
+      {
+        "date": "2044-04-14 09:34 KST",
+        "label": "임시표기 T-214 발령",
+        "description": "Q-12가 `thumb-check false packet`, `leaf-rustle host` 메모를 통합해 T-214를 개설했다. 같은 교대 2번째 host에서도 동일 양상이 확인되었다."
+      },
+      {
+        "date": "2044-04-16 12:20 KST",
+        "label": "blind leafing 오판율 확인",
+        "description": "review room 2에서 active host 12점과 control 12점을 대상으로 blind thumb-check를 시행한 결과, active host 10점이 완결 packet으로 오인되었다. no-leafing triad를 적용한 재판정에서는 오인 0건이었다."
+      },
+      {
+        "date": "2044-04-18 14:27 KST",
+        "label": "used audit board 근접 사고",
+        "description": "AB-03 감사보드 위 training demo에서 금지된 thumb pass가 시행되자 blank verification card에 completion box가 선행 생성되고, host 하단선이 darken되었다."
+      },
+      {
+        "date": "2044-04-20 11:05 KST",
+        "label": "no-leafing triad 정식 채택",
+        "description": "질량 대조, lower-edge gauge/borescope, rear search를 묶은 무넘김 판정 절차가 교정감사실, review room, chain correction desk에 동시에 배포되었다."
+      },
+      {
+        "date": "2044-04-24 16:30 KST",
+        "label": "정식 문서화 승인",
+        "description": "확정 사례 9건, 부분 사례 5건, 통제 실험 32회의 결과를 바탕으로 COS214 공식 조사 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-214-01",
+        "date": "2044-04-14",
+        "location": "제2보존동 1층 교정감사실 C-4 측면검사대 E-6",
+        "title": "manual thumb-check로 오인된 완결 packet",
+        "involvedPersonnel": [
+          "Q-12",
+          "H-19",
+          "K-04"
+        ],
+        "narrative": [
+          "H-19는 전일 격리된 front-only host H214-host-01을 측면검사대 E-6에 세우고, side-light와 질량 대조만으로는 still complete 여부가 불충분하다고 판단했다. host의 apparent thickness는 9.1 mm였지만 실측 질량은 27.6 g에 불과했다. H-19는 one-pass manual leafing으로 실제 page separation이 있는지 확인하자고 제안했고, Q-12는 240 fps 측면 카메라와 접촉 마이크가 동작하는 조건에서 lower-right edge 1회 통과만 허용했다. 0.31 N thumb pass가 가해지자 1.7초 동안 11회의 짧은 마찰음 열이 기록되었고, 앞 모서리는 6단계로 분리되는 것처럼 들렸다.",
+          "H-19는 host가 실제 본문을 되찾았을 가능성을 제기하며 review tray로 옮기려 했다. K-04는 즉시 이동을 중지시키고 0.15 mm gauge를 lower non-title edge에 넣어 19 mm 관통을 확인했으며, 이어진 borescope 영상에서 leaf stack 대신 hollow channel만 보인다고 보고했다. Q-12는 additional leafing 대신 rear guide search를 지시했고, actual body 19매와 appendix 2매는 RG-C4-4의 1.4 m 후방에서 회수되었다. 그 사이 host 내부의 회청색 lamellar sheen은 두 차례 추가 handling 뒤 7.8 mm와 9.4 mm strip 2개로 붕괴했고, 이것이 첫 A214 파절 표본으로 등록되었다."
+        ],
+        "outcome": "review tray 이동은 queue commit 38초 전에 차단되었다. T-214가 개설되었고 manual thumb-check는 모든 front-only host에서 즉시 금지되었다."
+      },
+      {
+        "code": "INC-214-02",
+        "date": "2044-04-18",
+        "location": "제2보존동 1층 교정감사실 C-4 감사보드 AB-03",
+        "title": "no-leafing 위반으로 completion frame이 선행한 사건",
+        "involvedPersonnel": [
+          "Q-12",
+          "H-19",
+          "V-07",
+          "K-04"
+        ],
+        "narrative": [
+          "V-07는 active host와 control host의 lower-edge 영상을 비교 촬영하기 위해 used opaque audit board AB-03를 준비했다. 임시 지침상 leafing은 금지되어 있었으나, H-19는 training 목적이라며 H214-host-05의 lower-right edge를 0.27 N 정도로 세 차례 가볍게 훑었다. host 옆에는 아직 사용하지 않은 verification card VC-06과 accession slip 1매가 놓여 있었다. thumb pass 후 72초가 지나자 AB-03 상에는 3칸 completion box와 얕은 lower line이 나타났고, VC-06 하단에도 같은 방향의 line이 생겼다. H-19는 장넘김 cue와 completion frame이 함께 보이므로 actual body가 복구되었을 가능성이 높다고 주장했다.",
+          "K-04는 host 질량이 23.1 g으로 expected body mass 146 g보다 지나치게 낮고, page total hash도 rear body 기록과만 일치한다는 점을 들어 이동을 중지시켰다. actual body 24매는 correction tray CT-2 후미 0.9 m 지점에서 회수되었다. V-07는 촬영 편의를 위해 steel ruler로 lower edge를 곧게 세우려 했고, 그 직후 lamellar film이 7.1 mm, 8.8 mm, 10.2 mm의 strip 3개로 파절되며 one strip에 same lower line이 잠시 남았다. Q-12는 board, host, verification card, strip 3개를 즉시 분리 봉인하고, used audit board와 steel straightening이 현상을 억제하지 않고 파절과 completion cue 전이를 증폭한다는 점을 사고 보고에 명시했다."
+        ],
+        "outcome": "completion frame과 verification card는 모두 무효 처리되었고, AB-03은 active host로 재분류되었다. used audit board 위 leafing과 steel straightening은 전면 금지되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-214-01",
+        "type": "활성 host",
+        "description": "H214-host-01. apparent thickness 9.1 mm, 실측 질량 27.6 g, lower-right 33 mm 구간에서 11회의 장넘김 유사 마찰음을 보인 최초 host이다. 445±6 nm 사광에서 4개의 parallel lamellae가 관찰되었다.",
+        "custodyStatus": "불투명 평판 frame PF-214-1에 단독 봉인, actual body 및 strip과 접촉 금지"
+      },
+      {
+        "code": "EV-214-02",
+        "type": "고속영상·접촉마이크 기록",
+        "description": "AV-214-01. 240 fps 측면 영상, 상부 정지영상, 96 kHz 접촉 마이크 3채널 기록을 묶은 세트다. 1.7초 동안 11회의 마찰음 열과 6단계 corner lift가 기록되었으나 독립 leaf displacement는 front sheet를 넘지 않았다.",
+        "custodyStatus": "증거 서버 DE-214-AV 읽기 전용 저장, 분석용 복제본 1부만 C-4에서 열람 가능"
+      },
+      {
+        "code": "EV-214-03",
+        "type": "actual body packet",
+        "description": "B214-body-01. RG-C4-4의 1.4 m 후방에서 회수된 실제 본문 19매와 appendix 2매다. footer hash와 마지막 수기 장수는 H214-host-01 원기록과 일치했다.",
+        "custodyStatus": "저조도 보존함 LC-214-B1에 개별 봉인, host와 동일 tray 반입 금지"
+      },
+      {
+        "code": "EV-214-04",
+        "type": "파절 strip 세트",
+        "description": "F214-frag-01~03. 2044-04-18 사고에서 파절된 7.1 mm, 8.8 mm, 10.2 mm strip 세트로, 일부 표면에 reverse dot-line과 lower line 잔류가 남아 있다.",
+        "custodyStatus": "미세표본 앰플 3개에 개별 봉인, host·card·body와 분리 보관"
+      },
+      {
+        "code": "EV-214-05",
+        "type": "감사보드 및 verification card",
+        "description": "AB-03과 VC-06 세트. used audit board 위에서 leafing 후 completion box와 lower line이 선행 형성된 표본이다. 실제 body와 provenance 복구 없이 검수 외형만 남았다.",
+        "custodyStatus": "crate 봉인 상태 유지, board 단독 세척·분리 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "Q-12",
+        "role": "교정감사 총괄 기록관",
+        "context": "2044-04-14 초동 봉인 직후 진술",
+        "statement": "관찰된 사실은 11회의 마찰음 열과 단계적 corner lift, 그리고 rear guide 뒤에서 회수된 actual body입니다. 그 순간 완결 packet처럼 보였다는 인상은 해석일 뿐이며, gauge와 borescope는 그 해석을 지지하지 않았습니다."
+      },
+      {
+        "speaker": "H-19",
+        "role": "측면계측 및 rear search 담당 보존기사",
+        "context": "2044-04-18 사고 경위서",
+        "statement": "제가 본 것은 가벼운 host가 여러 장처럼 넘어가고 들린다는 현상이었습니다. 그것을 body 복구 신호로 본 것은 제 판단 오류였고, 실제로는 질량도 낮았고 본문도 뒤 tray에 남아 있었습니다."
+      },
+      {
+        "speaker": "V-07",
+        "role": "교차 표본 분석 조사관",
+        "context": "2044-04-18 파절 표본 분석 메모",
+        "statement": "steel straightening 뒤 남은 것은 본문이 아니라 strip 세 개와 completion box였습니다. 따라서 이 현상은 leaf stack을 만들기보다, 마지막 수동 검사를 속일 만큼의 감각만 따로 유지하는 쪽으로 해석하는 것이 타당합니다."
+      }
+    ]
+  },
+  "id": 214,
+  "title": "회청색 장넘김대행막",
+  "language": "ko-KR",
+  "overview": [
+    "**COS214**는 실제 본문이나 leaf stack이 없는 front-only host, false-load carrier, 또는 cut-edge surrogate host 내부에서 관찰되는 얇은 회청색 장막성 현상이다. 현재 통칭은 **회청색 장넘김대행막**이다.",
+    "활성 host는 lower-right edge 또는 fore-edge를 엄지로 넘길 때 실제 종이 다발 없이도 3~18회의 연속 마찰점과 장넘김 유사 rustle음을 만든다. borescope, 질량 대조, high-speed video에 따르면 독립적인 leaf stack은 형성되지 않는다.",
+    "첫 확정 사례는 [COS212 — 회청색 두께대행판](./cos212.json)과 [COS213 — 회청색 절단면대행갑](./cos213.json) 후속 검토에서 확인되었다. 이후 [COS189 — 회청색 무재하중표](./cos189.json), [COS206 — 회청색 동체인란](./cos206.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS178 — 회청색 후열영수편](./cos178.json), [COS167 — 중량대행체](./cos167.json) 이력 host에서도 같은 감각 유도가 재현되었다.",
+    "COS214의 핵심 위험은 quick thumb-check가 actual body recovery보다 먼저 `완결된 packet` 판정을 유도한다는 점이다. 시각이 아니라 촉각과 음향을 함께 오염시키므로, no-leafing verification이 기본 절차로 채택되었다."
+  ],
+  "identificationTraits": [
+    "active host의 apparent thickness는 6.2~10.8 mm로 보이지만 실측 질량은 19.8~38.7 g에 머물렀고, 관측자는 12~31엽 상당의 넘김감을 보고했다.",
+    "445±6 nm 사광을 18~24°로 입사하면 lower-right 또는 fore-edge 28~74 mm 구간에 2~7개의 parallel lamellae가 보인다. lamella 간 간격은 0.08~0.21 mm였다.",
+    "240 fps 측면 영상에서는 모서리 들림이 0.9~2.4 mm 범위에서 4~11단계로 끊겨 보이나, front sheet를 제외한 독립 leaf displacement는 0.4 mm를 넘지 않았다.",
+    "접촉 마이크 20 cm 조건에서 43~59 dBA의 짧은 마찰음 열이 3~18회 기록되며, 주 에너지는 1.9~4.6 kHz에 집중된다. 실제 complete file에서 들리는 저주파 paper-settle 성분은 약하거나 결여된다.",
+    "0.15 mm gauge를 non-title lower edge에 넣으면 11~29 mm를 마찰 없이 통과하는 경우가 많고, borescope는 hollow channel 또는 얕은 inner film만 보여 준다.",
+    "0.48 N 이상 강한 넘김, steel ruler straightening, clip 압착 뒤에는 길이 3~11 mm의 회청색 strip이 남을 수 있으며, 일부는 reverse dot-line을 보였다.",
+    "같은 힘과 각도로 complete file 6점, clean empty cover 6점, unused low-mass shell 6점을 시험했을 때 동일한 마찰음 열과 lamellar cue가 함께 나타난 사례는 없었다.",
+    "양성 cue는 review room, chain correction desk, used audit board 같은 절차 공간에서 더 오래 유지되었고, blank verification card나 lower line이 nearby에 있으면 downstream acceptance cue가 빨리 형성되었다."
+  ],
+  "discovery": [
+    "COS214의 최초 확정은 2044-04-14 08:56 KST, 제2보존동 1층 교정감사실 C-4 측면검사대 E-6에서 [COS212 — 회청색 두께대행판](./cos212.json) 후속 검토 표본과 [COS213 — 회청색 절단면대행갑](./cos213.json) 의심 host를 no-image leafing으로 확인하려던 과정에서 이루어졌다.",
+    "host H214-host-01은 apparent thickness 9.1 mm, mass 27.6 g, lower-right edge 33 mm 구간의 parallel lamellae를 보였고, 0.31 N thumb pass 1회에 1.7초 동안 11회의 마찰음 열을 만들었다. 그러나 0.15 mm gauge는 19 mm를 통과했고, actual body 19매와 appendix 2매는 rear guide RG-C4-4의 1.4 m 후방에서 회수되었다.",
+    "이후 blind leafing 대조와 host-origin comparison에서 [COS189 — 회청색 무재하중표](./cos189.json), [COS206 — 회청색 동체인란](./cos206.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS203 — 회청색 교차편철면](./cos203.json) 이력 host가 같은 cue를 반복했고, 과도한 straightening 뒤에는 [COS178 — 회청색 후열영수편](./cos178.json)과 유사한 strip이 남았다.",
+    "감촉과 heft를 함께 사용하는 quick review에서는 [COS167 — 중량대행체](./cos167.json) 성격의 잔류 하중이 동반될수록 false acceptance가 증가했다. 이에 T-214 임시등록이 발령되고 no-leafing triad가 독립 절차로 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS214는 host 안에 새로운 본문을 만들지 않고 lower-right 또는 fore-edge의 얇은 lamellae를 통해 sequential page-turn cue만 부여한다.",
+      "trigger는 manual thumb-flip, faning, edge riffle이며, used audit surface나 borrowed chain field가 있으면 cue 뒤의 acceptance state가 더 쉽게 닫힌다.",
+      "과도한 straightening, steel contact, 반복 leafing은 cue를 중화하지 않고 strip residue와 verification trace를 남기는 경우가 많다."
+    ],
+    "stages": [
+      {
+        "name": "잠복 장막기",
+        "description": "host 내부 edge와 front sheet 사이에 눈에 잘 띄지 않는 회청색 lamellae가 정렬된 상태다. 445±6 nm 사광과 약한 저온 편차가 없으면 일반 empty host와 구분하기 어렵다."
+      },
+      {
+        "name": "촉발 미끄럼기",
+        "description": "lower-right 또는 fore-edge에 0.18~0.42 N 수준의 엄지 압력과 20~40° 각도의 짧은 넘김 동작이 가해지면 lamellae가 단계적으로 미끄러지며 짧은 마찰음 열을 만든다. 이때 실제 page stack은 아직 형성되지 않는다."
+      },
+      {
+        "name": "대행 leafing기",
+        "description": "관측자는 단계적 모서리 들림과 연속 마찰음을 `여러 장이 넘어간다`고 해석하기 쉽다. 이 단계에서 host는 complete packet처럼 손에 잡히지만 질량, borescope, rear body 대조는 여전히 body 부재를 지지한다."
+      },
+      {
+        "name": "절차 선행기",
+        "description": "leafing cue가 발생한 host가 borrowed accession, completion box, current line, review marker와 결합하면 actual body 확인 전에도 검토·수령·대조 완료 같은 절차 외형이 선행한다. used audit surface와 false-load host에서 가장 두드러졌다."
+      },
+      {
+        "name": "파절 잔류기",
+        "description": "강한 넘김, steel straightening, clip 압착 뒤에는 lamellae가 3~11 mm strip으로 파절되거나 lower line만 남기고 사라진다. cue가 소실되어도 strip과 card trace는 더 오래 남아 2차 오판을 유발할 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "[COS212 — 회청색 두께대행판](./cos212.json)과 [COS213 — 회청색 절단면대행갑](./cos213.json)가 각각 thickness와 cut-edge를 대행한다면, COS214는 review 인원의 마지막 수동 확인 단계인 thumb-flip을 대행한다.",
+      "[COS189 — 회청색 무재하중표](./cos189.json)·[COS167 — 중량대행체](./cos167.json)는 acceptance의 감각적 설득력을 높이고, [COS206 — 회청색 동체인란](./cos206.json)·[COS211 — 회청색 선결검수면](./cos211.json)는 그 감각을 same accession과 completion field로 굳힌다. [COS203 — 회청색 교차편철면](./cos203.json)과 [COS178 — 회청색 후열영수편](./cos178.json)은 각각 false composite 안정화와 파절 부산물 단계에서 자주 동반되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 167,
+        "targetTitle": "중량대행체",
+        "description": "[COS167 — 중량대행체](./cos167.json) host에서 COS214가 활성되면, 비어 있는 packet은 가벼운 실측값과 모순되게 손목 하중과 multi-page leafing cue를 동시에 준다. review 인원이 `묵직하게도 느껴지고 넘겨도 넘어간다`는 이유로 complete file로 오인한 사례가 있었으므로, heft와 rustle을 completeness 근거로 사용하지 않는다."
+      },
+      {
+        "targetId": 178,
+        "targetTitle": "회청색 후열영수편",
+        "description": "[COS178 — 회청색 후열영수편](./cos178.json)은 COS214가 파절된 뒤 남는 대표 부산물과 가장 가깝다. active host를 과도하게 넘기거나 steel straightening한 뒤 회수된 3~11 mm strip은 reverse dot-line, 섬유 결, 반사 피크가 COS178 기준 표본과 부분 일치했다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json) carrier에 COS214가 결합하면 empty host는 declared mass와 leafing cue를 함께 얻어 가장 설득력 있는 false packet이 된다. false load alone보다 review tray 진입률이 높았고, 실계량 이전의 acceptance가 더 자주 발생했다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json) 위 false composite를 수동 thumb-check로 확인하려 할 때 COS214 cue가 생기면 unrelated front와 body가 한 권처럼 더 오래 유지되었다. 즉 COS203이 시각적 정렬을 만들면 COS214는 그 정렬에 tactile plausibility를 추가한다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "[COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession만 남은 shell이 COS214를 획득하면, same chain field가 수동 leafing 검사를 통과한 것처럼 보인다. 번호 일치와 넘김감이 동시에 있어도 provenance 회복으로 간주해서는 안 된다."
+      },
+      {
+        "targetId": 211,
+        "targetTitle": "회청색 선결검수면",
+        "description": "[COS211 — 회청색 선결검수면](./cos211.json) 위에서 leafing cue가 발생하면 blank verification card와 lower line에 completion box가 조기 형성되었다. COS214는 used audit surface가 제공하는 `검수 완료` 외형을 빠르게 호출하는 촉각 트리거로 작동한다."
+      },
+      {
+        "targetId": 212,
+        "targetTitle": "회청색 두께대행판",
+        "description": "[COS212 — 회청색 두께대행판](./cos212.json)은 COS214의 가장 강한 upstream host다. thickness cue가 먼저 형성된 front-only host가 body 부재를 숨기는 동안, COS214는 그 host에 실제 문서처럼 넘겨지는 마지막 감각을 추가한다."
+      },
+      {
+        "targetId": 213,
+        "targetTitle": "회청색 절단면대행갑",
+        "description": "[COS213 — 회청색 절단면대행갑](./cos213.json)이 cut-edge shadow와 pinch resistance를 제공한다면, COS214는 그 host에 leaf-turn cue를 덧붙여 side inspection과 thumb-check를 동시에 속인다. 두 현상이 결합하면 gauge와 borescope 없이는 complete packet 오인이 급증했다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-214-01 / blind leafing 판정 시험",
+      "description": "2044-04-16 09:30~12:20 KST, review room 2. active host 12점([COS212 — 회청색 두께대행판](./cos212.json) 기원 5, [COS213 — 회청색 절단면대행갑](./cos213.json) 기원 4, [COS189 — 회청색 무재하중표](./cos189.json) 기원 3)과 control 12점(complete file 6, clean empty cover 6)을 대상으로 side-view와 one-pass thumb-check만 허용했다. active host 10/12가 complete packet으로 오인되었고 control 1/12만 오인되었다. 동일 표본에 no-leafing triad를 적용한 재판정에서는 false acceptance가 0/24였다."
+    },
+    {
+      "label": "EXP-214-02 / force-angle threshold",
+      "description": "2044-04-16 14:00~16:10 KST, C-4 side bench. active host 10점과 control 10점에 대해 0.12, 0.18, 0.30, 0.42, 0.55 N 및 20°, 35°, 50° 각도를 교차 적용했다. active군은 0.18~0.42 N·35° 조건에서 30회 중 27회가 3~18회의 마찰음 열을 보였고, control군은 30회 모두 음성이었다. 0.55 N 이상에서는 active군 10점 중 4점이 strip 파절로 전환되었다."
+    },
+    {
+      "label": "EXP-214-03 / 음향·고속영상 비교",
+      "description": "2044-04-17 09:10~11:40 KST. active host 8점과 실제 complete file 8점을 240 fps 측면 카메라와 96 kHz 접촉 마이크로 비교했다. active host는 43~59 dBA, 1.9~4.6 kHz의 짧은 burst만 보였고 front sheet 뒤 개별 leaf displacement는 0.4 mm를 넘지 않았다. complete file은 6~12장의 실제 interleaf movement와 더 넓은 cellulose scrape 대역을 보였다."
+    },
+    {
+      "label": "EXP-214-04 / host-origin comparison",
+      "description": "2044-04-17 13:20~16:30 KST. [COS203 — 회청색 교차편철면](./cos203.json) false composite remnant 6점, [COS206 — 회청색 동체인란](./cos206.json) same-field shell 6점, [COS211 — 회청색 선결검수면](./cos211.json) 노출 host 6점, neutral low-mass shell 6점을 비교했다. positive leafing cue는 각각 4/6, 5/6, 5/6, 0/6이었다. 절차 host 이력이 tactile cue의 유지 시간을 늘리는 것이 확인되었다."
+    },
+    {
+      "label": "EXP-214-05 / used audit surface와 no-leafing 대조",
+      "description": "2044-04-18 16:00~17:30 KST. active host 6점을 used opaque audit board와 inert PTFE board에 각각 배치했다. used board에서 one-pass thumb-check를 시행한 군은 5/6에서 completion box가, 3/6에서 same lower line darkening이 뒤따랐다. PTFE board에서 no-leafing triad만 시행한 군은 0/6에서 completion cue가 나타났다."
+    },
+    {
+      "label": "EXP-214-06 / 분리 방식 비교",
+      "description": "2044-04-19 10:20~12:00 KST. PTFE wedge 분리 6회와 steel ruler straightening 6회를 비교했다. PTFE군은 4/6이 strip 없이 cue를 붕괴시켰고, steel군은 5/6이 3~11 mm fragment를 남겼으며 이 중 2점은 [COS178 — 회청색 후열영수편](./cos178.json)과 유사한 reverse dot-line을 보였다."
+    }
+  ],
+  "handlingProcedures": [
+    "apparent thickness가 4 mm 이상인데 실측 질량이 registry 또는 expected bundle mass보다 15 g 이상 낮은 host는 manual thumb-flip, faning, edge riffle를 즉시 금지하고 COS214 의심 표본으로 격리한다.",
+    "초동 기록은 질량, 445±6 nm 사광 사진, 30초 passive audio, 측면 정지영상 순으로 확보한다. page-turn 가능 여부를 확인하기 위해 host를 넘기거나 두드리지 않는다.",
+    "모든 의심 표본에 대해 no-leafing triad를 적용한다: 0.15 mm gauge 또는 borescope로 lower non-title edge를 확인하고, actual body를 current host가 아닌 rear guide·직전 tray·직전 correction host에서 먼저 검색한다.",
+    "host, actual body, lamella fragment, verification card 또는 lower-line trace를 서로 다른 불투명 frame과 봉투에 4분리한다. 같은 tray, 같은 sleeve, 같은 current chain으로 병합하지 않는다.",
+    "used audit board, 반투명 비교면, false-load carrier, blank verification card, blank rebag slip를 active host 반경 50 cm 안에 두지 않는다. 기록용 받침은 inert PTFE board만 사용한다.",
+    "분리가 필요할 때는 PTFE wedge를 lower non-title edge에서만 사용한다. steel ruler, roller, clip 압착, straightening, page fan, 상단 흔들기를 금지한다.",
+    "[COS212 — 회청색 두께대행판](./cos212.json) 또는 [COS213 — 회청색 절단면대행갑](./cos213.json) 기원 host는 넘김감이 있더라도 body 복구로 판정하지 않는다. rear search와 footer hash 대조가 끝나기 전 review, release, scan-prep, shelf-prep에 올리지 않는다.",
+    "borrowed accession, lower line, completion box가 함께 보여도 acceptance의 근거로 사용하지 않는다. provenance 정정은 actual body 직접 회수 후 별도 rechain 구역에서만 수행한다.",
+    "strip이 남으면 길이, 반사 피크, reverse dot-line 유무를 기록하고 `F214-frag`로 별도 봉인한다. 파절 strip을 ordinary paper residue로 폐기하지 않는다.",
+    "격리 후 최소 30분 동안 additional cue, strip formation, lower-line darkening의 재발 여부를 재확인한다. visual silence 상태에서 cue가 사라졌더라도 rear body 확인 전까지 안전 판정을 내리지 않는다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS214가 [COS212 — 회청색 두께대행판](./cos212.json)의 thickness cue와 [COS213 — 회청색 절단면대행갑](./cos213.json)의 cut-edge cue 뒤에 형성되는 **late sensory surrogate**라는 것이다. 즉 실제 leaf stack은 없지만, 마지막 manual review 단계에서 필요한 `넘겨볼 수 있음`의 감각만 따로 유지한다.",
+    "[COS189 — 회청색 무재하중표](./cos189.json)와 [COS167 — 중량대행체](./cos167.json)는 COS214의 직접 원인이라기보다 acceptance를 강화하는 보조 요인일 가능성이 높다. false load와 잔류 하중이 있는 host는 같은 leafing cue를 더 쉽게 `진짜 문서`로 해석하게 만들었다.",
+    "[COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession과 [COS211 — 회청색 선결검수면](./cos211.json)의 completion frame은 COS214 cue가 발생한 뒤 절차를 고정하는 2차 안정화 층으로 보인다. 현재까지 same field나 completion box만으로 COS214가 단독 형성된 사례는 없다.",
+    "일부 [COS178 — 회청색 후열영수편](./cos178.json) 표본은 독립 절편이라기보다 COS214 장막의 파절 부산물일 수 있다. 반대로 [COS203 — 회청색 교차편철면](./cos203.json)은 visual alignment에 tactile cue를 추가해 false composite를 더 오래 유지시키는 증폭 환경으로 해석된다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "manual completeness check deception",
+      "assessment": "가장 높음. thumb-flip, quick page fan, lower-edge 훑기 같은 일상적 확인 절차가 actual body recovery보다 먼저 complete packet 판정을 유도한다."
+    },
+    {
+      "category": "premature procedural closure",
+      "assessment": "높음. completion box, same lower line, review tray 이동, queue commit이 body 확인 전 선행할 수 있다. used audit surface와 same-field shell에서 특히 강했다."
+    },
+    {
+      "category": "wrong body pairing and provenance delay",
+      "assessment": "중간 이상. leafing cue가 있으면 review 인원이 rear body search를 뒤로 미루고 현위치 shell을 기준으로 wrong packet을 찾는 경향이 생긴다."
+    },
+    {
+      "category": "secondary fragment contamination",
+      "assessment": "중간 이상. 과도한 straightening과 steel contact는 3~11 mm strip을 남겨 receipt-like fragment, lower-line trace, same field residue를 확산시킬 수 있다."
+    },
+    {
+      "category": "direct physical harm",
+      "assessment": "낮음. 현재까지 보고된 직접 손상은 edge straightening 중 경미한 종이 절상 1건뿐이며, 주 위험은 문서와 절차의 오판에 있다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "현장에서 가장 위험한 문장은 `넘겨 보니 여러 장이 있으니 맞는 packet이다`이다. COS214는 실제 body를 복구하지 않고도 이 판단을 가장 짧은 시간 안에 유도한다."
+    },
+    {
+      "type": "quotation",
+      "content": "“들리는 것은 여러 장인데, 카메라에는 앞장 하나만 움직였다.” — Q-12, 2044-04-14 측면검사 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "2044-04-16~2044-04-20 확정 사례에서 stable OCR 본문, 실제 page mass 증가, 독립 leaf stack 회수는 0건이었다. 따라서 장넘김 cue는 본문 존재의 증거가 아니라 감각적 오염으로 우선 처리한다."
+    },
+    {
+      "type": "quotation",
+      "content": "“넘기면 확인될 줄 알았는데, 확인된 것은 뒤에 본문이 남아 있다는 사실뿐이었다.” — H-19, 2044-04-18 사고 경위서"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-214 정식 편입",
+      "paragraphs": [
+        "2044-04-14~2044-04-18 현장 메모에서는 현상을 `T-214`, `thumb-check false packet`, `leaf-rustle host`, `넘김음 packet`으로 병기했다.",
+        "2044-04-16 blind leafing 시험과 2044-04-18 audit board 사고를 통해, 핵심이 본문 복원이나 단순 edge noise가 아니라 **실제 leaf stack 없이 manual page-turn cue를 대행하는 장막성 현상**임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 장넘김대행막**으로 확정하고, front/body 분리 계열의 late sensory surrogate 항목으로 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A214/H214/B214/F214 접두 및 no-leafing triad",
+      "paragraphs": [
+        "active host는 `H214-host`, 실제 분리 body는 `B214-body`, 파절 strip은 `F214-frag`, audio/video와 completion trace는 `A214-trace` 접두를 부여한다.",
+        "`H214-host`, `B214-body`, `F214-frag`, `A214-trace`는 같은 봉투, 같은 tray, 같은 current chain으로 병합하지 않는다.",
+        "판정은 no-leafing triad가 완료되기 전까지 provisional 상태로 유지하며, manual thumb-flip이나 page fan을 증거 보강 절차로 인정하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "no-leafing triad 현장 판정",
+      "paragraphs": [
+        "1) host의 실측 질량과 apparent thickness를 동시에 기록한다. 기대 질량 대비 15 g 이상 결손이 있고 apparent thickness가 4 mm 이상이면 COS214 의심 표본으로 격리한다.",
+        "2) 445±6 nm 사광과 측면 정지영상으로 lower-right 또는 fore-edge의 parallel lamellae 유무를 기록한다. visible cue가 약하더라도 manual leafing은 금지한다.",
+        "3) 0.15 mm gauge 또는 borescope로 lower non-title edge의 hollow channel 존재를 확인한다.",
+        "4) actual body는 current host가 아니라 rear guide 0~30 mm, 직전 tray, 직전 correction host, rear rack 0.5~2.5 m 범위에서 먼저 찾는다.",
+        "5) footer hash와 마지막 수기 장수를 actual body와 대조하기 전 review, release, scan-prep, shelf-prep 상태를 확정하지 않는다."
+      ]
+    },
+    {
+      "title": "음향·영상 판정 기준",
+      "paragraphs": [
+        "active host의 마찰음 열은 43~59 dBA, 1.9~4.6 kHz 범위에 집중되었고, pulse count는 3~18회였다. complete file의 broadband cellulose scrape와 low-frequency page-settle 성분은 대부분 결여되었다.",
+        "240 fps 기준 true complete file은 6~12장의 독립 leaf displacement를 보였으나, COS214 host는 front sheet 뒤 개별 leaf movement가 0.4 mm를 넘지 않았다. `소리가 난다`와 `page stack이 존재한다`를 같은 사실로 취급하지 않는다."
+      ]
+    },
+    {
+      "title": "숙주별 재현율 요약",
+      "paragraphs": [
+        "2044-04-16~2044-04-19 통제 실험 집계에서 [COS212 — 회청색 두께대행판](./cos212.json) 기원 host는 11/12, [COS213 — 회청색 절단면대행갑](./cos213.json) 기원 host는 9/10, [COS189 — 회청색 무재하중표](./cos189.json) 기원 host는 6/9, [COS203 — 회청색 교차편철면](./cos203.json) remnant host는 4/6, [COS206 — 회청색 동체인란](./cos206.json)·[COS211 — 회청색 선결검수면](./cos211.json) procedural host는 10/12의 양성률을 보였다.",
+        "clean empty cover, neutral low-mass shell, complete file 대조군 18점에서는 확정 양성이 0건이었다. 발생률은 host provenance와 manual handling 방식에 크게 좌우되었다."
+      ]
+    }
+  ]
+}

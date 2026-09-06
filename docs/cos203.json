@@ -360,6 +360,14 @@
         "[COS203 — 회청색 교차편철면](./cos203.json)에서는 [COS212 — 회청색 두께대행판](./cos212.json) backing을 가진 thin shell이 unrelated body와 닫힐 때 false composite 형성이 현저히 빨라졌다. `A203-host` 4면 대조에서 backed shell 6/6이 54~93초 안에 single-file silhouette를 형성했으며, non-backed shell은 2/6만 일시 양성이었다.",
         "따라서 두께가 그럴듯한 front-only shell은 A203 비교면 위에서 provenance 대조를 수행하지 않는다. COS212 가능성이 남아 있는 shell은 body와 같은 평면에 올리지 말고, rear search 완료 뒤 원격 재체인만 허용한다."
       ]
+    },
+    {
+      "relatedId": 214,
+      "type": "reciprocal",
+      "title": "COS214 상호기록",
+      "paragraphs": [
+        "[COS214 — 회청색 장넘김대행막](./cos214.json)는 [COS203 — 회청색 교차편철면](./cos203.json) 위 false composite의 tactile 후속층으로 확인되었다. 서로 다른 front와 body가 한 권처럼 정렬된 뒤 manual thumb-check를 가하면 실제 leaf stack 없이도 여러 장이 넘어가는 듯한 rustle이 생겨 허위 편철 상태가 더 오래 유지될 수 있으므로, COS203 의심 pair는 맞물려 보이더라도 넘겨 보아 판정하지 않고 양손 동시 분리와 불투명 sleeve 봉인만으로 해제한다."
+      ]
     }
   ],
   "supplementalSections": [
