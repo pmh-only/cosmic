@@ -402,6 +402,14 @@
         "[COS213 — 회청색 절단면대행갑](./cos213.json)은 [COS188 — 무본문 대용철](./cos188.json)의 empty shell이 전면·책등 권위에 더해 open edge의 cut-edge signal까지 획득한 말단 안정화 단계로 확인되었다. 2044-04-10 숙주 비교에서 `A188-shell` 6점 중 4점이 COS213 양성이었고, 이때 shell은 실제 body 없이도 측면검사에서 정상 사건철처럼 보였다.",
         "따라서 비정상적으로 가벼운 COS188 shell이 균일한 절단면 그림자까지 보이면 정본화 완료로 보지 말고 `213 triad`를 우선 적용한다. shell 가장자리 trimming과 rolling은 COS213 절편화를 유발하므로 금지한다."
       ]
+    },
+    {
+      "relatedId": 216,
+      "type": "reciprocal",
+      "title": "COS216 상호기록",
+      "paragraphs": [
+        "blank shell 10점을 [COS216 — 회청색 공석대행패](./cos216.json) 전면 30 cm 내에 배치한 시험에서 6점이 90초 이내 title/status line을 획득해 [COS188 — 무본문 대용철](./cos188.json) 양상으로 안정화되었다. 이는 COS216이 실제 body가 아니라 `현재 이 자리를 차지하는 전면 권위`만 shell에 전달하는 대표 기점임을 보여 준다. COS188 shell이 recently vacated slot의 vacancy card와 함께 발견되면 shell 자체를 정본 후보로 보지 말고 COS216 card와 rear body를 별도 체인으로 분리한다."
+      ]
     }
   ],
   "supplementalSections": [

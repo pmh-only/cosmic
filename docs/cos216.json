@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 3,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "현상은 현재까지 보존동 내부의 공석표와 출납 card에서만 확인되었지만, 2044-06-03 복제실 사고에서 파생 공보 1부가 일반 행정 복도 게시판 H-1에 9분간 노출되어 외부 부서가 실제 시행 문서로 오인한 사례가 있어 내부 일반 공개는 부적절하다.",
+    "permission": "정확한 판정에는 출납 로그, 열영상, rear-search 기록, 해시 대조, 파생 출력물의 체인 분리가 함께 필요하며, 허위 현행본을 실제 보존본으로 오인할 위험이 높아 최소 4등급 열람이 요구된다.",
+    "chaos": "최근 점유 이력이 있는 위치에 cellulose 숙주를 둔 실험 24점 중 14점만 양성으로 전환되었고, 양성 이후에도 shell 정본화, 허위 편철, 요약문 생성, 공보 생성, 선결 검수 등 분기 결과가 표본마다 달랐다.",
+    "danger": "직접적인 인체 손상은 없었으나 2044-05-18에는 unrelated body가 허위 편철본으로 보존 직전 단계까지 진행되었고, 2044-06-03에는 blank source에서 생성된 공보가 실제 시행 문서로 취급되어 증거와 업무 흐름을 오염시켰다.",
+    "popularity": "2044-08-01 기준 [COS188 — 무본문 대용철](./cos188.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS211 — 회청색 선결검수면](./cos211.json) 관련 내부 검토 23건 중 11건에서 선행 공석 card 여부를 재점검하도록 지시되었고, 격리실 교육지침 3종이 COS216 대응 절차를 반영해 개정되었다.",
+    "containment": "레이저 각인 polycarbonate 공석판으로 전환한 뒤 신규 양성은 26회 연속 0건이었지만, 이미 활성화된 card는 가시 표식이 퇴색한 뒤에도 요약문·공보·검수 파생을 남겨 rear-search, 스캔 금지, 체인 분리 조치가 계속 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "R-12 이가현",
+        "role": "기록관 / 야간 서고 감사",
+        "status": "active",
+        "involvement": "2044-05-07 최초 양성 표본을 발견했고, 이후 rear-search 표준화와 비-셀룰로오스 공석판 전환을 주도했다."
+      },
+      {
+        "name": "T-07 박도윤",
+        "role": "보존기술원 / 격리·계측",
+        "status": "active",
+        "involvement": "열영상, 질량, 보어스코프 계측과 숙주 재질 대조 실험을 수행했으며, 양성 card 격리 절차를 확립했다."
+      },
+      {
+        "name": "Q-19 정유림",
+        "role": "분석관 / 영상·해시 대조",
+        "status": "reassigned",
+        "involvement": "2044-05-18 허위 편철 직전 사고에 관여했으며, 이후 평판 비교 업무에서 제외되고 파생 trace 분리 체계 구축 업무로 재배치되었다."
+      },
+      {
+        "name": "S-08 최민혁",
+        "role": "행정서기 / 복제실 운용",
+        "status": "active",
+        "involvement": "2044-06-03 스캔 사고의 직접 조작자였으며, 이후 positive lane 스캔 차단과 파생 출력물 회수 절차 수립에 협조했다."
+      },
+      {
+        "name": "M-02 한준서",
+        "role": "경비조정관 / 게이트 로그 및 회수 지원",
+        "status": "active",
+        "involvement": "게이트 반납 이벤트 오류를 최초로 확인했고, 복도 게시 공보 회수와 현장 봉쇄를 담당했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-05-07 22:31 KST",
+        "label": "최초 양성 표본 회수",
+        "description": "제4기록보존동 지하 2층 서고 R3-07 4단에서 recently vacated slot의 blank 공석 card가 회청색으로 변한 상태로 발견되었고, 같은 시점의 게이트 로그는 질량 변화 없이 반납 이벤트를 기록했다."
+      },
+      {
+        "date": "2044-05-09 10:00 KST",
+        "label": "숙주 재질 대조 개시",
+        "description": "종이, cellulose board, Tyvek, polycarbonate, aluminum 숙주를 분리한 76회 통제 실험이 시작되었고, 최근 점유 이력이 있는 위치의 cellulose 숙주에서만 안정적 양성이 반복되었다."
+      },
+      {
+        "date": "2044-05-18 14:42 KST",
+        "label": "허위 편철 직전 사고",
+        "description": "격리실 Q-2 평판 비교대에서 양성 card를 기준으로 blank shell과 unrelated body가 같은 사건철처럼 정렬되었고, used audit board 위에서 선결 검수 프레임이 추가로 형성되었다."
+      },
+      {
+        "date": "2044-06-03 16:18 KST",
+        "label": "스캔 파생 사고",
+        "description": "복제실 PR-1에서 양성 card를 400 dpi overhead scanner로 스캔한 결과 3행 요약문과 `즉시 시행` 머리말을 가진 공보형 출력물이 생성되어 복도 게시판 H-1에 9분간 노출되었다."
+      },
+      {
+        "date": "2044-06-18 11:20 KST",
+        "label": "공식 명칭 확정",
+        "description": "임시표기 `공란 출납패`, `vacancy proxy`, `T-216`을 공식 명칭 `회청색 공석대행패`로 통합하고, 종이 공석표 사용 금지와 rear-search 우선 절차를 전 기관 보존동에 배포했다."
+      },
+      {
+        "date": "2044-08-01 09:00 KST",
+        "label": "억제 절차 1차 검증",
+        "description": "polycarbonate 공석판 전환 후 26회 연속 무발생이 확인되었으나, 기존 양성 표본 3점은 시각적 퇴색 뒤에도 파생 출력 위험을 유지해 격리 해제는 보류되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "I-216-01",
+        "date": "2044-05-07 22:14-22:47 KST",
+        "location": "제4기록보존동 지하 2층 서고 R3-07 4단",
+        "title": "빈 칸 표지 오삽입 후 허위 반납 등록",
+        "involvedPersonnel": [
+          "R-12 이가현",
+          "T-07 박도윤",
+          "M-02 한준서"
+        ],
+        "narrative": [
+          "R-12 이가현은 격리 중이던 무본문 shell 표본 1점을 자정 계량 점검으로 반출하면서, 통로 내 비-셀룰로오스 공석판이 소진된 상태라 120 g/m² blank 공석 card를 자리에 끼워 두었다. 그는 escort call에 즉시 응답해야 했기 때문에 accession 번호를 나중에 적으려 했고, 전산 출납 로그 입력도 11분 지연되었다.",
+          "22:31 KST M-02 한준서는 선반 전면에 flush하게 밀착된 card를 보고 자료가 이미 돌아온 것으로 판단해 shelf tag를 스캔했다. 게이트는 `반납 확인` 이벤트를 생성했지만 질량 변화는 0.000 kg이었다. T-07 박도윤이 FLIR C5로 확인한 결과 card 전면은 19.1°C였고 주변 선반 표면은 평균 21.4°C였다. 상단 tab에는 `44-BQ-07` 파편이 나타났으며, 실제 body sleeve는 최초 위치 뒤 0.8 m cable race 안에서 회수되었다."
+        ],
+        "outcome": "현장은 즉시 봉쇄되었고 임시등록 T-216이 부여되었다. 허위 반납 로그는 무효화되었으며, 해당 통로의 종이 공석표는 전량 회수되었다."
+      },
+      {
+        "code": "I-216-02",
+        "date": "2044-05-18 14:42-15:26 KST",
+        "location": "격리실 Q-2 평판 비교대 host-02",
+        "title": "공석대행패를 기준으로 한 허위 재편철 시도",
+        "involvedPersonnel": [
+          "Q-19 정유림",
+          "T-07 박도윤"
+        ],
+        "narrative": [
+          "Q-19 정유림은 양성 card의 상단 식별 파편을 촬영하려고, acrylic sleeve에 넣은 card를 blank shell 및 unrelated body bundle이 놓인 평판 비교대 옆 22 cm 지점에 두었다. 그는 footer hash 대조 전 단계에서 상단 네 자리가 유사하다는 이유만으로 빠른 정렬 사진을 먼저 찍으려 했고, 별도의 불투명 sleeve 분리 없이 두 표본을 같은 평면에 남겨 두었다.",
+          "73초 뒤 blank shell 전면에 card의 1행 제목선과 상태 상자가 나타났고, unrelated body bundle의 하단 장수가 이에 맞춰 정렬되었다. T-07 박도윤이 `미검증` 표시를 위해 used audit board 위로 옮기자 28초 안에 우하단 completion frame이 추가로 형성되었다. 두 사람은 업로드 직전 절차를 중단했고, opaque sleeve 분리와 해시 재대조 끝에 body의 실제 체인이 다른 사건임을 확인했다."
+        ],
+        "outcome": "허위 편철 복합체는 저장 전 단계에서 해체되었다. Q-19 정유림은 평판 비교 업무에서 제외되었고, COS216 양성 표본의 flat comparison 금지 규정이 신설되었다."
+      },
+      {
+        "code": "I-216-03",
+        "date": "2044-06-03 16:18-16:37 KST",
+        "location": "복제실 PR-1 / 행정복도 게시판 H-1",
+        "title": "스캔본 요약·공보 동시 생성",
+        "involvedPersonnel": [
+          "S-08 최민혁",
+          "R-12 이가현",
+          "M-02 한준서"
+        ],
+        "narrative": [
+          "S-08 최민혁은 red quarantine stripe가 남아 있는 acrylic-sleeved card를 `검토 완료 표지`로 오인하고, end-of-shift backlog를 줄이기 위해 400 dpi overhead scanner의 `summary + notice` preset을 선택해 스캔했다. source card에는 accession 파편과 서가 좌표 외에 본문이 없었으나, 출력물 2종 중 하나는 3행 회백색 요약문, 다른 하나는 `즉시 시행` 머리말과 내부 route code를 가진 회청색 공보 형식으로 생성되었다.",
+          "생성된 공보는 H-1 게시판에 9분간 걸려 있었고, 그 사이 빈 route slip 2장이 공보 아래에 정렬되었으며 한 부서는 해당 사건이 이미 시행 단계에 들어간 것으로 전산 메모를 남겼다. R-12 이가현이 게시물을 회수한 뒤 rear-search를 실시한 결과, 실제 body는 scanner에서 1.3 m 떨어진 intake cart rear pocket의 opaque sleeve 뒤에서 발견되었다."
+        ],
+        "outcome": "출력물 2종은 모두 파생 trace로 재분류되어 봉인되었다. 복제실의 paper/card 기반 공석표 스캔은 전면 금지되었고, scanner preset 접근 권한이 재설정되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A216-card-01",
+        "type": "물증 / 활성 공석 card",
+        "description": "I-216-01에서 회수된 97×153 mm, 두께 0.31 mm, 질량 4.8 g의 paper host. 전면 무광 회청색, 상단 tab에 `44-BQ-07` 파편과 빈 상태 상자 1개가 남아 있다.",
+        "custodyStatus": "제4격리금고 S-2, 3 mm acrylic sandwich 및 matte black sleeve 이중 봉인, 4등급 감독 열람"
+      },
+      {
+        "code": "VID-B2-0507-07",
+        "type": "영상 기록",
+        "description": "CAM-07 overhead 및 측면 카메라 동기화 영상. 22:14-22:37 KST 구간에 표본 반출, blank card 삽입, 허위 반납 스캔, rear-search 개시가 연속 기록되어 있다.",
+        "custodyStatus": "디지털 증거 vault DV-4 저장, SHA-256 봉인 완료, 복사 금지"
+      },
+      {
+        "code": "LOG-LG44-0507",
+        "type": "게이트·계량 로그",
+        "description": "R3 통로 RFID/질량 게이트 통합 로그. `반납 확인` 이벤트가 있으나 전후 질량 차가 0.000 kg으로 남아 있는 1건의 비정상 기록이 포함된다.",
+        "custodyStatus": "감사서버 AS-2 읽기 전용 보관, chain lock 활성"
+      },
+      {
+        "code": "THM-B2-0507-A",
+        "type": "열영상",
+        "description": "FLIR C5 정지화상 12장. 양성 card 전면 19.1°C, 주변 선반 평균 21.4°C, 후면 21.0°C로 전면 국한 냉각이 확인된다.",
+        "custodyStatus": "열영상 보관함 T-1 및 디지털 백업 DV-4 이중 보관"
+      },
+      {
+        "code": "A216-print-03A",
+        "type": "파생 출력물 / 요약문",
+        "description": "I-216-03에서 생성된 3행 회백색 요약문. stable body text는 없고 route code와 상태 동사만 남아 있다.",
+        "custodyStatus": "trace 봉투 T216-trace-03A, 원본 대체 사용 금지"
+      },
+      {
+        "code": "A216-print-03B",
+        "type": "파생 출력물 / 공보",
+        "description": "I-216-03에서 생성된 회청색 공보형 출력물. `즉시 시행` 머리말과 내부 route code 1개가 있으나 결재선과 본문은 결손되어 있다.",
+        "custodyStatus": "trace 봉투 T216-trace-03B, 게시·복제 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "R-12 이가현",
+        "role": "기록관 / 야간 서고 감사",
+        "context": "2044-05-08 01:10 KST 초동 면담",
+        "statement": "저는 빈 칸을 놓치지 않으려고 blank card를 꽂았고, 돌아와 보니 그 card가 아니라 이미 되돌아온 사건철의 앞면처럼 보였습니다. 뒤에서 body가 나온 뒤에야 제가 본 것이 문서가 아니라 자리였다는 판단을 하게 됐습니다."
+      },
+      {
+        "speaker": "Q-19 정유림",
+        "role": "분석관 / 영상·해시 대조",
+        "context": "2044-05-18 18:30 KST 사고 경위서",
+        "statement": "상단 네 자리가 같아서 촬영용으로만 잠깐 맞춰 본다고 생각했습니다. 제 판단으로 그 card는 본문을 주지 않았고, 대신 blank shell과 다른 body를 같은 사건처럼 붙게 하는 표면 권위만 공급했습니다."
+      },
+      {
+        "speaker": "S-08 최민혁",
+        "role": "행정서기 / 복제실 운용",
+        "context": "2044-06-03 17:05 KST 복제실 사고 진술",
+        "statement": "원본 텍스트는 없었는데 스캐너 preset 결과로 3행 요약과 `즉시 시행` 머리말이 나왔습니다. 생성 원인은 설명할 수 없고, 스캔 버튼을 누른 사람은 저였습니다."
+      }
+    ]
+  },
+  "id": 216,
+  "title": "회청색 공석대행패",
+  "language": "ko-KR",
+  "overview": [
+    "COS216은 기록물, shell, 보존상자, 봉투가 원래 있던 전면 위치에 남겨진 종이·판지 계열 공석표가 제거된 대상의 식별선과 절차 권위를 부분적으로 인계받아 현재본처럼 작동하는 현상이다.",
+    "현상은 전체 본문을 복원하지 않고 상단 제목선, accession 일부, 위치 코드, 상태 상자처럼 전면 식별 요소만 불완전하게 유지한다.",
+    "양성 card가 형성되면 실제 body는 뒤칸, 케이블 레이스, 카트 후면 pocket 등 전면 평면 뒤쪽에서 회수되는 비율이 높았다.",
+    "후속 오염은 blank shell의 정본화, unrelated body와의 교차편철, 원문 없는 요약·공보 출력, 선결 검수 완료 프레임으로 나타났다."
+  ],
+  "identificationTraits": [
+    "숙주는 90–100 × 150–160 mm 범위의 종이 또는 판지 공석표, 출납 card, 임시 자리표에서 가장 자주 확인되었다. 현재까지 polycarbonate, anodized aluminum, stainless lip marker에서는 재현되지 않았다.",
+    "양성면은 무광 회청색으로 변하고 전면 온도가 주변보다 1.8–3.2°C 낮아진다. 후면 온도 차는 ±0.4°C 이내여서 냉각이 면 한쪽에 국한된다.",
+    "가시 정보는 보통 4–12자리의 accession 파편, 1행 제목선, 서가 좌표, 비어 있는 상태 상자로 제한되며, 18자 이상 연속 본문은 안정적으로 유지되지 않았다.",
+    "평면에 밀착된 상태에서 파일이 이미 돌아온 것처럼 보이며, card 자체 질량은 4.2–6.1 g 범위를 벗어나지 않는다.",
+    "활성 card 전면 30 cm 이내에는 blank shell, audit slip, route card가 정렬되는 경향이 있다."
+  ],
+  "discovery": [
+    "최초 양성 표본은 2044-05-07 22:31 KST 제4기록보존동 지하 2층 서고 R3-07 4단에서 회수되었다. recently vacated slot의 blank card가 17분 만에 회청색으로 변했고, 상단 tab에 `44-BQ-07` 파편이 출현했다.",
+    "동일 시점의 게이트 로그는 반납 이벤트 1건을 기록했으나 질량 변화는 0.000 kg이었고, 실제 body sleeve는 원래 위치 뒤 0.8 m cable race에서 회수되었다.",
+    "2044-05-09~2044-05-12 대조 실험 76회에서, 직전까지 자료가 있던 위치에 cellulose 공석표를 남긴 조건에서만 현상이 반복되었다. 동일 재질 blank card를 빈 신규 칸에 넣은 대조군 20회는 모두 음성이었다.",
+    "현장 임시명 `공란 출납패`, `out-slot card`, `T-216`은 2044-06-18 재분류 회의에서 공식 명칭 `회청색 공석대행패`로 통합되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "현상은 빈 칸 그 자체보다 `빈 칸을 대신 설명하는 전면 card`에서 안정적으로 발생한다.",
+      "카드는 제거된 대상의 전체 내용을 재생산하지 않고, 다른 인원과 장비가 그 자리를 현재 사건본으로 오인하기에 충분한 최소 식별면만 유지한다.",
+      "이후 주변 blank 숙주에 절차 상태가 파생되어 [COS188 — 무본문 대용철](./cos188.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS211 — 회청색 선결검수면](./cos211.json)과 연동되는 경우가 잦다."
+    ],
+    "stages": [
+      {
+        "name": "공석 정착",
+        "description": "직전까지 자료가 점유하던 위치에 종이·판지 공석표가 삽입되거나 남겨진 뒤 42–196초 사이에 전면이 회청색으로 냉각된다. 동일 재질이라도 점유 이력이 없는 빈 칸에서는 같은 변화가 재현되지 않았다."
+      },
+      {
+        "name": "식별 전이",
+        "description": "card 상단에 accession 파편, 1행 제목선, 서가 좌표, 비어 있는 상태 상자가 나타난다. 본문이나 이미지가 아닌 전면 식별면만 이동하며, 후면은 대체로 원래 blank 상태를 유지한다."
+      },
+      {
+        "name": "절차 유도",
+        "description": "양성 card를 기준으로 blank shell, route slip, audit board가 정렬되고, 상황에 따라 허위 편철, 요약문, 공보, completion frame이 파생된다. 이 단계에서 실제 body는 front plane 뒤쪽에 남아 있는 경우가 많다."
+      },
+      {
+        "name": "가시 퇴색 후 지속",
+        "description": "48–72시간이 지나면 accession 파편과 제목선이 흐려질 수 있으나, 스캔·복제·평판 비교 시 2차 파생은 계속 발생할 수 있다. 시각적 퇴색은 비활성화를 의미하지 않는다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS216은 빈 지지면의 권위가 전면 card 1장에 압축되는 계열 현상으로, rear-shift 계열과 shell·검수 계열 사이의 연결점에 놓인다.",
+      "특히 [COS158 — 한 칸 뒤의 회랑](./cos158.json), [COS169 — 잔류 대좌면](./cos169.json)에서 관찰되는 `자리의 지속`이 [COS188 — 무본문 대용철](./cos188.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS211 — 회청색 선결검수면](./cos211.json) 같은 후속 오염으로 이어질 때 공통 기점으로 작동한다.",
+      "스캔·복제 단계에서는 [COS131 — 회백색 대독문](./cos131.json)과 [COS146 — 회청색 기시행공보](./cos146.json) 유사 파생물을 남길 수 있다."
+    ],
+    "entries": [
+      {
+        "targetId": 158,
+        "targetTitle": "[COS158 — 한 칸 뒤의 회랑](./cos158.json)",
+        "description": "양성 사건 19건 중 14건에서 actual body가 front plane 뒤 0.2–1.4 m 위치에서 회수되었다. COS216은 후면으로 밀린 본체와 전면에 남은 자리 권위를 분리하는 COS158의 말단 카드형 산물로 기록한다."
+      },
+      {
+        "targetId": 169,
+        "targetTitle": "[COS169 — 잔류 대좌면](./cos169.json)",
+        "description": "같은 통로에서 card 미삽입 대조군 12회는 지지면 자체만 current seat처럼 남았고, blank card 삽입군 12회는 그 권위가 card에 집중되어 COS216이 형성되었다. 빈 자리의 권위가 평면에서 표지물로 이동한 경우로 본다."
+      },
+      {
+        "targetId": 188,
+        "targetTitle": "[COS188 — 무본문 대용철](./cos188.json)",
+        "description": "blank shell 10점을 양성 card 전면 30 cm 내에 배치했을 때 6점이 90초 이내에 상단 식별선과 상태 상자를 획득했다. COS216은 shell이 실제 body 없이 current file 외형을 얻는 대표 기점이다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "[COS203 — 회청색 교차편철면](./cos203.json)",
+        "description": "평판 비교 host 실험에서 양성 card군 4/10은 54–93초 안에 unrelated front/body가 같은 사건철처럼 정렬되었고, inert plate군은 0/10이었다. COS216이 header-level 권위를 공급해 허위 편철 onset을 단축시키는 것으로 본다."
+      },
+      {
+        "targetId": 211,
+        "targetTitle": "[COS211 — 회청색 선결검수면](./cos211.json)",
+        "description": "used audit board 노출 시험에서 양성 card군 7/10이 body recovery 이전 `대조 완료` 프레임을 형성했다. COS216은 실제 회수 전 completion state를 전면화하는 수기 후속층의 선행 조건이다."
+      },
+      {
+        "targetId": 131,
+        "targetTitle": "[COS131 — 회백색 대독문](./cos131.json)",
+        "description": "400 dpi overhead scan 8회 중 3회에서 1–3행 회백색 요약문이 생성되었고, stable body text는 한 번도 복원되지 않았다. 공석대행패는 내용이 아니라 `이미 읽혔다`는 외형을 복제 단계에 전달하는 것으로 보인다."
+      },
+      {
+        "targetId": 146,
+        "targetTitle": "[COS146 — 회청색 기시행공보](./cos146.json)",
+        "description": "동일 스캔 세트 중 2회는 `즉시 시행` 머리말과 내부 route code만 남긴 공보형 출력물을 생성했다. 이는 공석대행패가 실제 결재선 없이도 이미 시행된 상태를 전면 게시물로 바꾸는 경향을 보여 준다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-216-01 숙주 재질 비교",
+      "description": "2044-05-09~05-12, recently vacated occupied positions 56개와 never-occupied empty controls 20개에 네 종류 숙주를 교차 투입했다. vacated group에서 paper/cellulose 24개 중 14개 양성, Tyvek 8개 중 3개는 냉각과 상단선만 보인 partial, 2 mm polycarbonate 12개 0양성, anodized aluminum 12개 0양성이었다. empty control 20개는 전부 음성이었다."
+    },
+    {
+      "label": "EXP-216-02 점유 이력 임계치 시험",
+      "description": "2044-05-13, `직전 점유 시간`을 변수로 분리했다. 자료를 2분만 놓았다 뺀 위치 12개에서는 1개만 약양성, 6시간 이상 점유 뒤 비운 위치 12개에서는 9개 양성이었고 onset 중앙값은 71초였다. 숙주 재질 외에 자리의 기존 점유 이력이 필요함을 시사한다."
+    },
+    {
+      "label": "EXP-216-03 rear-search 표준화",
+      "description": "2044-05-07~06-30 양성 사건 19건에 대해 FLIR C5, Teslong NTS500 borescope, 0.01 kg bench scale를 사용한 search protocol을 적용했다. actual body 14건은 뒤칸·rear stop·cable race에서 0.2–1.4 m 범위, 3건은 같은 통로 cart rear pocket에서 2.1–3.6 m 범위에서 회수되었고, 2건은 24시간 내 미회수였다."
+    },
+    {
+      "label": "EXP-216-04 절차 오염 유발 시험",
+      "description": "2044-05-18~05-21, acrylic sleeve에 넣은 양성 card 10점과 inert polycarbonate plate 10점을 각각 blank shell, unrelated body bundle, 평판 비교 host, used audit board에 노출했다. 양성 card군에서 shell 정본화 6/10, 교차편철 onset 4/10(54–93초), completion frame 7/10(18–41초)였고, inert plate군은 각각 0/10, 0/10, 1/10의 희미한 하단선만 나타났다."
+    },
+    {
+      "label": "EXP-216-05 스캔·출력 파생 시험",
+      "description": "2044-06-04, 400 dpi overhead scan 8회와 300 dpi flatbed scan 8회를 비교했다. overhead positive scan 8회 중 3회는 1–3행 요약문, 2회는 `즉시 시행` 머리말이 있는 공보형 출력, 0회는 안정적 본문 복원을 생성했다. inert plate 8회와 빈 control 8회는 모두 음성이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "양성 구역과 recently vacated slot에는 종이·판지 공석표를 사용하지 않고, 레이저 각인 2 mm polycarbonate vacancy plate만 사용한다.",
+    "자료 반출 전 front plane와 rear plane를 동시에 촬영하고, 15초 이내에 non-cellulose plate를 삽입한다.",
+    "회청색 냉각면이나 accession 파편이 확인되면 card에 필기, 스탬프, 라벨 추가, 스캔, 복사를 모두 중지한다.",
+    "양성 card는 3 mm acrylic sheets 사이에 평면 봉인한 뒤 matte black sleeve에 넣어 18±1°C, 35–40% RH 조건에서 보관한다.",
+    "rear-search는 1차로 원래 slot 뒤쪽 1.5 m 범위, 2차로 같은 통로 carts와 intake pocket 4 m 범위, 3차로 당일 사용한 평판 비교 host와 scanner rear feed pocket 순으로 수행한다.",
+    "actual body 회수 전까지 current, returned, verified 상태를 부여하지 않으며, 자동 게이트 이벤트는 모두 잠정 무효로 처리한다.",
+    "A216-card, 파생 trace 출력물, shell, recovered body는 서로 다른 증거 체인과 보관 봉투로 분리하고, 어떤 조합도 평판 위에서 맞춰 보지 않는다."
+  ],
+  "hypotheses": [
+    "관측상 COS216은 [COS169 — 잔류 대좌면](./cos169.json)의 `빈 자리 권위`가 종이 숙주 전면으로 압축된 형태일 가능성이 높다.",
+    "실제 body가 후면에서 회수되는 비율을 고려하면, COS216은 [COS158 — 한 칸 뒤의 회랑](./cos158.json)과 같은 rear-shift 현상이 남긴 공백을 전면 card로 봉합하는 말단 단계일 수 있다.",
+    "양성 card가 [COS188 — 무본문 대용철](./cos188.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS211 — 회청색 선결검수면](./cos211.json) onset을 단축시키는 점으로 보아, 이 셋은 독립 현상이라기보다 COS216이 제공한 전면 식별면을 공유하는 후속 단계일 수 있다.",
+    "복제 단계에서 [COS131 — 회백색 대독문](./cos131.json)과 [COS146 — 회청색 기시행공보](./cos146.json) 유사 산물이 먼저 생기고 본문은 끝내 복원되지 않는 점은, COS216이 `내용`이 아니라 `이미 읽히고 시행된 상태`만 전달한다는 해석을 지지한다.",
+    "숙주 의존성이 cellulose 계열에 편중되는 이유가 섬유 배열, 표면 sizing, 잔류 지문 때문인지는 아직 분리되지 않았다. 무산성 rag board와 코팅 art card를 분리한 추가 실험이 필요하다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "증거 연쇄 왜곡",
+      "assessment": "공석 card 하나가 accession과 current status를 대리하면서 실제 body, shell, trace 출력물이 같은 체인으로 잘못 합쳐질 위험이 높다."
+    },
+    {
+      "category": "보존 운영",
+      "assessment": "rear-search를 누락하면 실제 자료가 현장 0.2–3.6 m 안에 남아 있어도 분실로 오인되고, 반대로 empty current copy가 회수 완료로 처리될 수 있다."
+    },
+    {
+      "category": "정보 확산",
+      "assessment": "summary·notice 파생은 내용 복원이 아니라 절차 권위의 외형이므로, 타 부서가 사실 확인 없이 시행 문서나 브리핑본으로 수용할 위험이 있다."
+    },
+    {
+      "category": "상호오염",
+      "assessment": "평판 비교 host, used audit board, blank shell 주변에서 후속 COS로 빠르게 분기하므로, positive item을 개방 평면에 두는 행위 자체가 2차 오염을 만든다."
+    },
+    {
+      "category": "인적 안전",
+      "assessment": "직접 상해는 확인되지 않았으나 장시간 rear-search와 분실 오인으로 야간 인력의 피로, 실수, 승인 지연이 증가했다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초동 48시간 동안 현장 표기는 `vacancy proxy`, `공란 출납패`, `out-slot card`, `회청색 자리표`로 혼재했다. 본 문서에서는 모두 COS216으로 통합한다."
+    },
+    {
+      "type": "quotation",
+      "content": "`파일이 돌아온 것이 아니라 빈 칸이 돌아온 것처럼 보였다.` — 2044-05-07 R-12 이가현 야간 서고 음성메모 02:14"
+    },
+    {
+      "type": "paragraph",
+      "content": "활성 card의 가시 accession 파편은 48–72시간 사이에 흐려질 수 있으나, 동일 표본을 400 dpi 이상으로 스캔하면 새로운 식별 파편이나 절차형 파생지가 생성될 수 있어 퇴색을 비활성화로 간주하지 않는다."
+    },
+    {
+      "type": "paragraph",
+      "content": "현재까지 화학 세척, 냉동, 자외선 조사로 card 자체를 무해화한 사례는 없었다. 가장 안정적인 억제는 종이 공석표를 사용하지 않는 것이다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-216 명칭 확정",
+      "paragraphs": [
+        "2044-05-07~2044-06-17 초동 기록에서는 현상을 `공란 출납패`, `vacancy proxy`, `out-slot card`, `T-216`으로 병기했다.",
+        "2044-06-18 재분류 회의에서 현상의 핵심이 단순 공석표가 아니라 **빈 전면 자리를 대신해 절차 권위를 점유하는 회청색 card**임이 확인되어 공식 명칭을 **회청색 공석대행패**로 확정했다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A216/T216 접두 운용",
+      "paragraphs": [
+        "활성 card 자체는 `A216-card-일련번호`, card가 남긴 요약문·공보·completion frame 같은 파생물은 `T216-trace-일련번호`, rear-search로 회수된 실제 body는 원래 체인을 유지하되 `rear-recovered` 표기를 추가한다.",
+        "`A216-card`와 `T216-trace`는 같은 봉투나 동일 current chain으로 병합하지 않으며, 어떠한 파생 출력물도 원본 대체본으로 인정하지 않는다."
+      ]
+    },
+    {
+      "relatedId": 131,
+      "type": "reciprocal",
+      "title": "COS131 상호기록",
+      "paragraphs": [
+        "양성 card의 overhead scan 8회 중 3회는 [COS131 — 회백색 대독문](./cos131.json)과 동일한 1~3행 요약문을 출력했다. 이 출력물에는 stable body text나 footer hash가 없었으므로, COS131형 요약은 내용 복원이 아니라 공석대행패가 가진 전면 절차 상태의 파생으로 본다. COS216 기점 요약문은 브리핑본이나 인계본으로 채택하지 않는다."
+      ]
+    },
+    {
+      "relatedId": 146,
+      "type": "reciprocal",
+      "title": "COS146 상호기록",
+      "paragraphs": [
+        "동일 실험에서 2점은 [COS146 — 회청색 기시행공보](./cos146.json)와 같은 `즉시 시행` 공보 외피를 획득했다. 이 공보는 결재선 없이 current status만 남겨 실제 시행본처럼 보였으므로, COS216에서 파생된 게시물은 효력 문서가 아니라 trace로 취급한다."
+      ]
+    },
+    {
+      "relatedId": 158,
+      "type": "reciprocal",
+      "title": "COS158 상호기록",
+      "paragraphs": [
+        "양성 사건 19건 중 14건에서 actual body가 front plane 뒤 0.2–1.4 m에서 회수되었다. COS216은 [COS158 — 한 칸 뒤의 회랑](./cos158.json)의 후면 치우침이 빈 앞칸의 card에 응결한 말단 단계로 분류한다."
+      ]
+    },
+    {
+      "relatedId": 169,
+      "type": "reciprocal",
+      "title": "COS169 상호기록",
+      "paragraphs": [
+        "blank position에 card를 삽입하지 않은 12회는 [COS169 — 잔류 대좌면](./cos169.json)형 평면 잔류만 남겼고, same position에 blank card를 삽입한 12회는 자리 권위가 card로 이동해 COS216이 형성되었다. COS216은 COS169의 전면 표지형 응결로 본다."
+      ]
+    },
+    {
+      "relatedId": 188,
+      "type": "reciprocal",
+      "title": "COS188 상호기록",
+      "paragraphs": [
+        "blank shell 10점 중 6점이 positive card 인접 배치 90초 이내에 title/status line을 획득했다. 이는 [COS188 — 무본문 대용철](./cos188.json)이 COS216이 남긴 current slot 권위를 가장 쉽게 shell 외피로 번역함을 시사한다."
+      ]
+    },
+    {
+      "relatedId": 203,
+      "type": "reciprocal",
+      "title": "COS203 상호기록",
+      "paragraphs": [
+        "평판 비교 host 노출 실험에서 positive card군 4/10이 54–93초 안에 [COS203 — 회청색 교차편철면](./cos203.json) onset을 보였다. 공석대행패는 unrelated front/body를 하나의 current file처럼 묶는 상단 식별면을 제공한다."
+      ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "used audit board 노출 실험에서 positive card군 7/10이 actual body 회수 이전 completion box를 형성했다. 이는 [COS211 — 회청색 선결검수면](./cos211.json)이 COS216의 대표적 후속 수기 외피임을 보여 준다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "활성 판정 최소 기준",
+      "paragraphs": [
+        "직전 24시간 내 실제 자료가 점유했던 위치인지 먼저 확인하고, same-day front/rear 사진을 확보한다.",
+        "전면 온도 차가 주변 대비 -1.5°C 이하이고 accession 파편 또는 1행 제목선이 1건 이상 확인될 때만 `양성 의심`으로 표기한다.",
+        "rear-search 종료 전에는 current, returned, verified 어느 상태도 부여하지 않으며, 자동 게이트 이벤트는 모두 보조 자료로만 취급한다."
+      ]
+    },
+    {
+      "title": "권장 수색 순서",
+      "paragraphs": [
+        "1차 수색은 원래 slot 뒤칸, 선반 후면 턱, cable race, drawer rear stop 등 front plane 뒤 1.5 m 범위에서 수행한다.",
+        "2차 수색은 같은 통로의 cart rear pocket, intake pocket, opaque sleeve stack 등 4 m 범위에서 수행한다.",
+        "3차 수색은 당일 사용한 평판 비교 host, used audit board, scanner rear feed pocket을 확인한 뒤에만 인접 통로 확장 수색으로 넘어간다."
+      ]
+    },
+    {
+      "title": "사용 계측 장비",
+      "paragraphs": [
+        "열 분포 판독에는 FLIR C5 또는 동급 열화상 장비를 사용하며, 전면·후면을 같은 각도에서 연속 촬영한다.",
+        "후면 회수 수색에는 직경 8 mm 이하 borescope를 사용하고, 선반·케이블 레이스 내부는 육안 대신 영상으로 기록한다.",
+        "질량 대조는 0.01 kg 분해능 이상의 bench scale에서 shell, body, 공석표를 각각 분리 계량한다."
+      ]
+    }
+  ]
+}

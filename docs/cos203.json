@@ -368,6 +368,14 @@
       "paragraphs": [
         "[COS214 — 회청색 장넘김대행막](./cos214.json)는 [COS203 — 회청색 교차편철면](./cos203.json) 위 false composite의 tactile 후속층으로 확인되었다. 서로 다른 front와 body가 한 권처럼 정렬된 뒤 manual thumb-check를 가하면 실제 leaf stack 없이도 여러 장이 넘어가는 듯한 rustle이 생겨 허위 편철 상태가 더 오래 유지될 수 있으므로, COS203 의심 pair는 맞물려 보이더라도 넘겨 보아 판정하지 않고 양손 동시 분리와 불투명 sleeve 봉인만으로 해제한다."
       ]
+    },
+    {
+      "relatedId": 216,
+      "type": "reciprocal",
+      "title": "COS216 상호기록",
+      "paragraphs": [
+        "평판 비교 host 실험에서 [COS216 — 회청색 공석대행패](./cos216.json)를 기준으로 둔 군은 4/10이 54–93초 안에 [COS203 — 회청색 교차편철면](./cos203.json) onset을 보였고, inert plate군은 0/10이었다. 공석대행패가 accession 파편과 1행 제목선만 제공해도 unrelated front/body가 같은 current file처럼 정렬될 수 있음을 뜻한다. COS203 의심 pair 옆에 회청색 vacancy card가 있으면 hash 대조보다 먼저 그 card를 제거·봉인하고 rear-search를 선행한다."
+      ]
     }
   ],
   "supplementalSections": [

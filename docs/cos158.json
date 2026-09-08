@@ -384,6 +384,14 @@
         "[COS158 — 한 칸 뒤의 회랑](./cos158.json) 의심 자료를 수기 감사하면, 실제 body나 계량 근거는 rear box나 뒤 tray에 남아 있는 동안 현재 작업면에는 [COS211 — 회청색 선결검수면](./cos211.json)의 완료칸만 먼저 형성될 수 있다. 이는 `실제 해결은 한 칸 뒤`에 남고 proof of completion만 현재 면에 잔류하는 수기 교정 단계의 변형으로 분류된다.",
         "따라서 used audit board 위의 완료 프레임을 route close 또는 rechain 완료 근거로 사용하지 않는다. rear slot, 뒤 tray, 후면 host를 먼저 수색하고 실제 body 확인 뒤에만 현재 면의 표식을 보조 참고 자료로 취급한다."
       ]
+    },
+    {
+      "relatedId": 216,
+      "type": "reciprocal",
+      "title": "COS216 상호기록",
+      "paragraphs": [
+        "양성 사건 19건 중 14건에서 actual body가 전면 slot 뒤 0.2–1.4 m에서 회수되었고, 같은 위치 전면에는 [COS216 — 회청색 공석대행패](./cos216.json)가 current front처럼 정착했다. 이는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)이 뒤로 밀어낸 본체의 공백을 COS216이 종이 card 1장으로 봉합한 말단 단계로 해석된다. COS158 현장에서 blank vacancy card가 회청색으로 냉각되면 후면 통로가 닫힌 것으로 보지 말고, 그 card를 현행본 대신 분리 봉인한 뒤 rear-search를 지속한다."
+      ]
     }
   ],
   "supplementalSections": []

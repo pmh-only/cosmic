@@ -440,6 +440,14 @@
       "paragraphs": [
         "[COS214 — 회청색 장넘김대행막](./cos214.json) cue가 used audit board 위 host에서 발생하면, thumb-check 직후 blank verification card와 lower line에 [COS211 — 회청색 선결검수면](./cos211.json)의 completion box가 더 빨리 형성되는 사례가 확인되었다. 이는 본문 확인이 끝난 것이 아니라 `넘겨 확인했다`는 감각이 선결 검수 외형으로 전사된 상태이므로, COS211 작업면에서 page-turn cue를 들었다고 해도 검수 완료로 보지 않고 board, host, card, actual body를 분리 봉인한 뒤 no-leafing triad를 우선 적용한다."
       ]
+    },
+    {
+      "relatedId": 216,
+      "type": "reciprocal",
+      "title": "COS216 상호기록",
+      "paragraphs": [
+        "used audit board 노출 시험에서 [COS216 — 회청색 공석대행패](./cos216.json) 군 7/10은 actual body 회수 이전 18–41초 안에 [COS211 — 회청색 선결검수면](./cos211.json)의 completion box를 형성했다. 이는 COS216이 빈 전면 자리를 `이미 돌아온 current item`처럼 보이게 만든 뒤, COS211이 그 상태를 `이미 검수된 item`으로 한 단계 더 굳히는 연쇄로 해석된다. COS211 작업면에 vacancy card 기원이 의심되면 completion state를 즉시 무효 보류하고 rear-recovered body 확인 전 검수 종료를 선언하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
