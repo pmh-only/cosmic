@@ -407,6 +407,14 @@
         "[COS205 — 회청색 대조합치막](./cos205.json)은 [COS181 — 청회색 무재 인수구](./cos181.json)가 먼저 붙잡은 `A181-capture` 전면이 무관한 body packet과 비교 단계에서 같은 수령본처럼 결속되는 대표 후속 현상으로 확인되었다. 2026-08-24 Q-5B 비교실에서 active lip 유래 front F-06은 provenance가 다른 rear body B-07과 58초 내 동일 pair code `Q5B-6`와 current lower line을 공유했으나, footer hash와 실측 질량은 끝까지 불일치했다.",
         "따라서 COS181 산물을 body packet과 대조할 때는 투명·반투명 면을 사용하지 않고, 수령선 일치만으로 정쌍을 확정하지 않는다. 동일 접수번호와 하단선이 생겨도 먼저 50 cm 분리, 불투명 트레이 재배치, footer hash·장수·스테이플 간격 재대조를 수행한다."
       ]
+    },
+    {
+      "relatedId": 217,
+      "type": "reciprocal",
+      "title": "COS217 상호기록",
+      "paragraphs": [
+        "[COS217 — 회청색 선행대독면](./cos217.json)은 [COS181 — 청회색 무재 인수구](./cos181.json)의 `A181-capture` front가 본문 없는 상태에서도 구두 검토를 유발할 수 있음을 보여 주었다. 2044-04-24 Q-5B 비교실 시험에서 COS181 유래 front 6점 중 4점이 12 s 이내 존재하지 않는 본문 요약을 낭독했으므로, COS181 산물의 육성 확인은 수령 검증이 아니라 COS217 오염 개시 조건으로 분류한다."
+      ]
     }
   ],
   "supplementalSections": [

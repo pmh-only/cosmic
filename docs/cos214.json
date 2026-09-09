@@ -369,6 +369,14 @@
         "`H214-host`, `B214-body`, `F214-frag`, `A214-trace`는 같은 봉투, 같은 tray, 같은 current chain으로 병합하지 않는다.",
         "판정은 no-leafing triad가 완료되기 전까지 provisional 상태로 유지하며, manual thumb-flip이나 page fan을 증거 보강 절차로 인정하지 않는다."
       ]
+    },
+    {
+      "relatedId": 217,
+      "type": "reciprocal",
+      "title": "COS217 상호기록",
+      "paragraphs": [
+        "[COS214 — 회청색 장넘김대행막](./cos214.json)은 [COS217 — 회청색 선행대독면](./cos217.json)의 후기 지속시간을 늘리는 대표 결합항으로 확인되었다. no-leafing triad 대조에서 실제 장이 없는 host에 COS214가 결합하면 page-turn cue가 추가되어 휴지점 중앙값이 5개에서 8개로, 대독 지속시간이 18.2 s에서 31.7 s로 증가했으므로, COS214의 넘김음은 body 존재 증거가 아니라 COS217 대독 연장 신호로 본다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -374,6 +374,14 @@
         "[COS213 — 회청색 절단면대행갑](./cos213.json)이 [COS207 — 회청색 무재순환철](./cos207.json) shell에 결합하면, moving shell은 handoff·review·release preview를 통과하는 동안 절단면 의심을 거의 남기지 않는다. 2044-04-11 route freeze 사례에서 active shell은 page capture 0 상태였지만 side audit만으로는 empty edge가 드러나지 않았다.",
         "따라서 route closure가 선행된 thin shell은 current line과 accession만이 아니라 edge geometry까지 검증해야 한다. COS207 shell은 발견 즉시 213 triad를 적용하고, rear guide search 이전의 dispatch·archive·shelf-prep를 금지한다."
       ]
+    },
+    {
+      "relatedId": 217,
+      "type": "reciprocal",
+      "title": "COS217 상호기록",
+      "paragraphs": [
+        "[COS217 — 회청색 선행대독면](./cos217.json)의 최초 정식 표본은 [COS207 — 회청색 무재순환철](./cos207.json) A207-shell-04에서 확인되었다. moving shell은 `current` 외형만으로 26.4 s의 구두 인계와 허위 `검토 종료` 판단을 유발했으므로, COS207 shell에 대한 구두 인계는 route closure 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

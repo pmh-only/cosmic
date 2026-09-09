@@ -436,6 +436,14 @@
       "paragraphs": [
         "[COS207 — 회청색 무재순환철](./cos207.json)은 [COS193 — 회청색 후입등재구](./cos193.json)가 표지·번호·첫 장만 먼저 등재한 뒤, 그 front shell이 단일 slot 선행에 머무르지 않고 handoff·review·release preview를 따라 계속 이동하는 후속 단계로 확인되었다. COS193 rear stop에서 전면만 회수된 자료가 이후 다른 station에서 current line이나 provisional accession을 닫더라도, 이를 독립 current copy로 보지 말고 COS207 경유 가능성을 우선 기록한다. 후입등재 직후의 shell은 다음 슬롯만이 아니라 origin host 외부의 route closure까지 일으킬 수 있으므로, rear body 위치와 traversed station log를 함께 봉인한다."
       ]
+    },
+    {
+      "relatedId": 217,
+      "type": "reciprocal",
+      "title": "COS217 상호기록",
+      "paragraphs": [
+        "[COS217 — 회청색 선행대독면](./cos217.json)은 [COS193 — 회청색 후입등재구](./cos193.json)가 남긴 front matter가 rear body 회수 전 `이미 읽을 수 있는 사건철`처럼 작동할 수 있음을 보여 주었다. 제목선·첫 장·발신란만 먼저 등재된 shell은 0.8 m reading posture에서 5회 중 4회 구두 대독을 유발했으므로, COS193 표본은 후면 body 회수 전에 어떤 구두 심사나 요약도 시행하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
