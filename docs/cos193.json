@@ -444,6 +444,15 @@
       "paragraphs": [
         "[COS217 — 회청색 선행대독면](./cos217.json)은 [COS193 — 회청색 후입등재구](./cos193.json)가 남긴 front matter가 rear body 회수 전 `이미 읽을 수 있는 사건철`처럼 작동할 수 있음을 보여 주었다. 제목선·첫 장·발신란만 먼저 등재된 shell은 0.8 m reading posture에서 5회 중 4회 구두 대독을 유발했으므로, COS193 표본은 후면 body 회수 전에 어떤 구두 심사나 요약도 시행하지 않는다."
       ]
+    },
+    {
+      "relatedId": 218,
+      "type": "reciprocal",
+      "title": "COS218 상호기록",
+      "paragraphs": [
+        "[COS193 — 회청색 후입등재구](./cos193.json) 양성 host에서 front matter만 먼저 회수된 shell은 [COS218 — 회청색 후면청취막](./cos218.json)의 가장 높은 발생 빈도를 보였다. 2044-04-19~2044-05-03 확정 숙주 9건 중 6건에서 제목선, 승인란, 첫 장만 current 상태를 얻은 뒤 rear gap에서 대리낭독 파편이 발생했고, 실제 body는 후면 슬롯·제습 셀 뒤·adjacent rear stop에서 회수되었다.",
+        "따라서 COS193 표본이 읽히기 시작하더라도 이를 본문 복구 신호로 해석하지 않는다. front matter를 확보한 시점에서 구두 검토를 중지하고, rear stop 개방과 footer hash 대조를 선행해야 COS218 전이와 provenance 오류를 줄일 수 있다."
+      ]
     }
   ],
   "supplementalSections": [

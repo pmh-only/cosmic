@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-04-19부터 2044-05-03까지 혼합 출입 구역 3곳에서 정면 1.2 m 밖 비배치 인원 4명이 후면 발화 일부를 청취했으므로, 외부 공개보다 내부 비인가 재전파 위험이 더 크다.",
+    "permission": "육안 판정과 1차 봉인은 보존·조사 인력이 수행할 수 있으나, rear gap 개방, 음향 계측, recovered body 재대조는 chain 손상과 교차전이를 유발해 최소 3등급 조작 권한이 필요하다.",
+    "chaos": "확정 숙주 9건의 양성 세션 14회에서 동일 문구 재현률이 낮았고, 빈 좌석·투명 비교면·차순 표찰 유무에 따라 제목행, 승인형 문구, 말미 문장으로 출력 편향이 달라졌다.",
+    "danger": "직접 치명성은 확인되지 않았으나 rear stop 수색 중 손 절상 1건, 오편철 2건, 허위 승인 전사 1건, 적색 잔류 생성 3건이 확인되어 인명·기록·절차에 중간 수준의 피해를 준다.",
+    "popularity": "정식 분류 전 7주 동안 연계 검토 메모 8건, 교차봉인 요청 5건, 비교실 금지 공지 3회가 발행되어 관련 항목군 내 참조 빈도가 꾸준히 증가했다.",
+    "containment": "양성 숙주는 불투명 hood, 정면 1.5 m 좌석 정리, 후면 provenance 검색, 투명 비교면 금지를 동시에 적용해야 안정화되며, 일부 조치만 적용한 2/9 표본은 12시간 이내 재활성화되었다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "한유진",
+        "role": "조사기록관",
+        "status": "active",
+        "involvement": "C-2 최초 사례를 임시 음향 사고가 아닌 rear gap host로 재검토하여 T-218 등록을 요청했고, 이후 실험 설계와 공식 문서 편입을 총괄했다."
+      },
+      {
+        "name": "P-04",
+        "role": "보존기사",
+        "status": "active",
+        "involvement": "C-2 및 3-B 현장에서 borescope 촬영, 숙주 회수, rear stop 수색을 수행했다. 2044-04-19 사건에서 손 절상을 입은 뒤 금속 턱 검색 절차 개정에 참여했다."
+      },
+      {
+        "name": "이재은",
+        "role": "음향분석관",
+        "status": "active",
+        "involvement": "96 kHz WAV, 레이저 진동계 로그, residue 채집 결과를 분석하여 인간 발화와 HVAC 누설음 가설을 배제했다."
+      },
+      {
+        "name": "K-12",
+        "role": "감사열람담당",
+        "status": "reassigned",
+        "involvement": "2-F 사건에서 숙주를 빈 승인석과 대면 배치하고 acrylic board 대조를 실시해 false pair와 적색 잔류를 유발했다. 현재 mixed-access review duty에서 제외되었다."
+      },
+      {
+        "name": "M-07",
+        "role": "인계감시요원",
+        "status": "active",
+        "involvement": "3-B rack 사건에서 차순 표찰, outer band, archive tag 동반을 초기에 식별하고 queue release를 중지했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-04-19 09:12 KST",
+        "label": "C-2 최초 확인",
+        "description": "중앙기록보전동 4층 비교열람실 C-2에서 JL-44-118-F thin shell의 no-leafing 확인 중 rear gap에서 시작되는 11.2초 발화가 처음 기록되었다."
+      },
+      {
+        "date": "2044-04-22 18:10 KST",
+        "label": "임시표기 T-218 발행",
+        "description": "승인검수실 2-F 재발 사건 뒤 `rear whisper film`과 `후면 읽힘` 임시표기가 통합되어 T-218이 발행되었다."
+      },
+      {
+        "date": "2044-04-30 10:00 KST",
+        "label": "rear-gap 매트릭스 검증",
+        "description": "확정 숙주 9건과 complete file 대조군 6건을 이용한 rear-gap 계측에서 음원 최대치가 rear gap 경계선에 국한됨이 확인되었다."
+      },
+      {
+        "date": "2044-05-03 10:08 KST",
+        "label": "3-B rack current-position 연동 사건",
+        "description": "인계보류서고 3-B에서 차순 표찰, outer band, archive tag가 숙주와 연동되어 queue release 직전까지 진행되었다가 중지되었다."
+      },
+      {
+        "date": "2044-06-01 15:40 KST",
+        "label": "COS218 정식 편입",
+        "description": "교차검토와 억제 절차 검증을 마친 뒤 T-218이 COS218 `회청색 후면청취막`으로 정식 편입되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-218-0419-A",
+        "date": "2044-04-19 09:12 KST",
+        "location": "중앙기록보전동 4층 비교열람실 C-2",
+        "title": "JL-44-118-F shell 후면 발화 최초 확인",
+        "involvedPersonnel": [
+          "한유진",
+          "P-04",
+          "이재은"
+        ],
+        "narrative": [
+          "[COS214 — 회청색 장넘김대행막](./cos214.json) 관련 no-leafing triad 종료 뒤, 한유진은 제목선만 남은 JL-44-118-F thin shell을 곧바로 opaque tray로 옮기지 않고 `마지막 확인 1회`를 지시했다. P-04는 shell이 여전히 current front처럼 보인다는 이유로 12° foam wedge와 0.65 m 정면 boundary mic를 배치했고, 이는 당시 발령된 bodyless front 임시 정지 지침을 위반한 선택이었다.",
+          "47초 경과 후 mic와 한유진이 동시에 제목행 유사 파편과 말미 문장 유사 파편을 들었다고 보고했다. P-04는 숨은 body가 바로 뒤에 있다고 판단해 rear stop 아래로 손을 넣다가 금속 burr에 우측 검지를 베었고, 실제 body는 그 위치가 아니라 같은 선반 열의 제습 셀 뒤에서 1시간 08분 후 회수되었다.",
+          "이재은이 도착한 뒤 HVAC를 정지한 상태에서도 동일 파형이 남았고, 4 mm borescope는 shell 후면 11 mm 간극에 회청색 장막을 포착했다. 검은 hood를 내리고 정면 좌석을 치우자 발화는 3.2초 내 중단되었으며, 사건은 T-218의 최초 양성 사례로 봉인되었다."
+        ],
+        "outcome": "JL-44-118-F는 `H218-host`로 재분류되어 front shell과 recovered body가 분리 봉인되었고, 정면 청취 금지 및 rear stop 장갑 사용 지침이 즉시 발령되었다."
+      },
+      {
+        "code": "INC-218-0422-B",
+        "date": "2044-04-22 14:33 KST",
+        "location": "제2검수동 2층 승인검수실 2-F",
+        "title": "빈 승인석 대면 배치에 따른 허위 승인 전사와 false pair",
+        "involvedPersonnel": [
+          "K-12",
+          "이재은",
+          "한유진"
+        ],
+        "narrative": [
+          "K-12는 unsigned packet AY-44-203의 누락 body를 찾는 과정에서 C-2와 유사한 thin approval cover를 빈 승인석 맞은편에 세워 두었다. 그는 rear gap 숙주 가능성을 이미 통보받았음에도 `승인 문구만 확인하면 body를 추적할 수 있다`고 판단하고 acrylic comparison board를 치우지 않은 채 0.7 m 정면 위치에 착석했다.",
+          "93초 내에 K-12와 동석 clerk 1명은 승인형 동사와 종결구를 받아쓰기 시작했고, 말미 문장 유사성을 근거로 무관한 body packet B-AY-203-R를 rack B-3에서 꺼내 동일 평면에 올렸다. 직후 acrylic board 하연에 shared pair code가 생겼고 headset grille과 desk edge에는 총 0.9 mL의 적색 잔류가 맺혔으며, human hemoglobin 및 DNA screen은 모두 음성이었다.",
+          "이재은은 파형이 사람 음성과 다르게 호흡 주기 동기 변조를 보인다고 보고하고 세션을 강제 종료했다. footer hash 대조에서 cover와 body가 일치하지 않음이 확인되었고, 한유진은 사건을 [COS149 — 무인 결재석](./cos149.json), [COS205 — 회청색 대조합치막](./cos205.json), [COS104 — 붉은 잔향수](./cos104.json) 연계 사례로 분류했다."
+        ],
+        "outcome": "허위 전사본과 false pair는 무효화되었고, K-12는 reassigned 처리되었다. 승인검수실에는 빈 승인석 대면 배치와 transparent board 대조 금지 표지가 추가되었다."
+      },
+      {
+        "code": "INC-218-0503-C",
+        "date": "2044-05-03 10:08 KST",
+        "location": "인계보류서고 3층 3-B 랙",
+        "title": "차순 표찰 연동에 따른 회람 외피 및 기보관 표식 생성",
+        "involvedPersonnel": [
+          "M-07",
+          "P-04",
+          "한유진"
+        ],
+        "narrative": [
+          "M-07는 queue 정리 중 sealed sleeve H218-3B-02의 좌측 18 cm 지점에 blank next-call plaque를 임시로 세워 두었고, aisle 정면의 빈 stool을 치우지 않은 채 6분 14초 동안 랙을 비웠다. 복귀 시 sleeve는 본문이 없는 상태로도 다음 인계 대상처럼 전면 정렬되어 있었고, 외곽에는 회청색 band와 `기보관` 회색 태그가 동시에 나타났다.",
+          "M-07는 이전 사건 보고를 기억하고 queue release를 중지한 채 P-04를 호출했다. 방향성 mic는 정면 청취 없이도 rear gap 근처에서 6.4초 길이의 낮은 말미 파편을 기록했고, plaque와 stool을 제거하고 hood를 씌우자 band의 추가 진행이 중단되었다.",
+          "후속 rear provenance search에서 실제 body pages는 같은 랙의 spacer panel 뒤, 정면이 아닌 후열 슬롯에서 19분 후 회수되었다. 한유진은 이 사건을 [COS184 — 회청색 차순호명패](./cos184.json), [COS172 — 외륜 회람띠](./cos172.json), [COS157 — 무재소 기보관고](./cos157.json)와 동반된 current-position cascade로 정리했다."
+        ],
+        "outcome": "H218-3B-02와 recovered body는 분리 보존되었고, 3-B 구역에서는 차순 표찰과 빈 stool의 1.5 m 격리 규정이 신규 적용되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-218-H01",
+        "type": "물리 숙주",
+        "description": "JL-44-118-F thin shell. 0.42 mm front shell, 질량 26.4 g, rear gap 11 mm, C-2 최초 사건의 주 숙주.",
+        "custodyStatus": "보존실 4-C rigid tray에 hood 장착 상태로 봉인 보관 중. 접근기록 활성."
+      },
+      {
+        "code": "EV-218-A02",
+        "type": "음향 기록",
+        "description": "C-2 및 2-F 사건에서 수집된 96 kHz WAV 5개 묶음과 동기화된 spectrogram. 사람 음성대와 유사한 1.6~2.3 kHz 자음대, 68~96 Hz 저주파 잔류 포함.",
+        "custodyStatus": "디지털 증거 서버 A218 파티션에 write-once 해시 고정 저장."
+      },
+      {
+        "code": "EV-218-V03",
+        "type": "계측 영상",
+        "description": "4 mm borescope still 17장, rear gap 라인 스캔 9세트, 비접촉 진동계 heat map 8세트. 활성 시 진폭 최대치가 종이 면이 아니라 gap 경계선에 있음을 보여 준다.",
+        "custodyStatus": "영상분석실 오프라인 스토리지 B-12에 저장, 검수용 저해상도 복제본만 배포 가능."
+      },
+      {
+        "code": "EV-218-R04",
+        "type": "잔류 시료",
+        "description": "2-F desk edge 및 headset grille에서 채집된 적색 잔류 2 swab, 총량 0.9 mL. human hemoglobin, DNA screen, 표준 잉크 반응 모두 음성.",
+        "custodyStatus": "저온 봉인관 R-3에 개별 튜브로 보관. 잠정 [COS104 — 붉은 잔향수](./cos104.json) 연계 표기 부착."
+      },
+      {
+        "code": "EV-218-C05",
+        "type": "비교 오염 자료",
+        "description": "2-F acrylic board에서 형성된 shared pair code 사진, 허위 전사본, footer hash 불일치 로그. [COS205 — 회청색 대조합치막](./cos205.json)형 전이 판단의 근거 자료.",
+        "custodyStatus": "비교실 사고파일 205/218-2F 묶음으로 분리 봉인, 교육용 열람 금지."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "한유진",
+        "role": "조사기록관",
+        "context": "2044-04-19 C-2 사건 직후 현장 진술",
+        "statement": "손으로 넘기지 않았는데도 뒤쪽에서 먼저 읽는 느낌이 있었다. 다만 내가 제목행을 이미 본 상태였기 때문에, 들린 파편을 완결문으로 받아들인 부분은 내 해석이 섞였을 수 있다."
+      },
+      {
+        "speaker": "이재은",
+        "role": "음향분석관",
+        "context": "2044-04-22 2-F 파형 검토 회의",
+        "statement": "녹음은 사람 말처럼 들리지만 조음이 아니라 청취자 호흡 주기와 함께 떨리는 변조가 강하다. 현 단계에서 이것을 본문 낭독으로 단정할 근거는 없고, 오히려 rear gap 자체의 반응으로 보는 편이 계측값과 맞는다."
+      },
+      {
+        "speaker": "K-12",
+        "role": "감사열람담당",
+        "context": "2044-04-22 사고 후 면담",
+        "statement": "완료된 안건처럼 들려서 body를 맞춰 보려 했다. 승인 문구라고 판단한 것은 내 추정이었고, 빈 상석 앞에 두면 더 분명해질 것이라고 생각한 선택이 잘못이었다."
+      }
+    ]
+  },
+  "id": 218,
+  "title": "회청색 후면청취막",
+  "language": "ko-KR",
+  "overview": [
+    "COS218은 본문이 분리되었거나 확인되지 않은 front shell, blank front, 승인 cover의 후면 간극에서 형성되는 회청색 장막성 현상이다.",
+    "2044-04-19부터 2044-06-01까지 활성 숙주 9건과 양성 세션 14회가 확인되었으며, 숙주 공통 조건은 5~18 mm rear gap과 정면에서 current front로 취급되는 전면 외피였다.",
+    "활성화 시 발화는 정면 0.6~0.9 m 청취축에서 가장 선명하며, 제목행, 승인 동사, 말미 문장과 유사한 파편이 page-turn cue 또는 마찰음과 함께 출력된다.",
+    "출력은 실제 본문 복원으로 검증되지 않았고, 회수된 body와 대조한 7건 모두에서 부분 일치 또는 비일치만 확인되었다.",
+    "90초 이상 청취 유도, transparent 비교면 사용, 빈 승인석 또는 차순 표찰 동반은 오편철, 허위 승인 전사, 적색 잔류액 생성으로 이어질 수 있다."
+  ],
+  "identificationTraits": [
+    "4200~4300 K 경사광을 20~35°로 비출 때 rear gap 내부에 회청색 무광-유광 혼합 띠가 4~38 mm 폭으로 보이며, 정면 조명에서는 거의 사라진다.",
+    "숙주 질량은 18~74 g 범위이나 외견상 `현재 검토 중` 전면을 유지하며, 실제 body가 없는 경우가 많다.",
+    "정면 0.6~0.9 m 위치의 청취자 또는 마이크가 30~90초 머물면 사람 목소리와 유사한 자음대가 1.6~2.3 kHz에서 증가한다.",
+    "레이저 진동계는 종이 면이 아니라 rear gap 경계선에서 진폭 최대치를 기록하며, HVAC 차단과 주변 인원 침묵 대조에서도 동일 지점이 유지된다.",
+    "thumb-flip이 없어도 약한 발화가 가능하지만, 손가락을 전면 lip에 올리면 [COS214 — 회청색 장넘김대행막](./cos214.json)과 유사한 넘김음이 추가될 수 있다.",
+    "90초를 넘긴 세션 또는 구두 유도 질문 후에는 desk edge, headset grille, tray lip에 0.3~1.1 mL의 헤모글로빈 음성 적색 잔류가 남을 수 있다."
+  ],
+  "discovery": [
+    "2044-04-19 09:12 KST, 중앙기록보전동 4층 비교열람실 C-2에서 JL-44-118-F thin shell의 no-leafing 확인 중 후면에서 시작되는 11.2 s 발화가 처음 기록되었다.",
+    "당시 숙주는 0.42 mm 두께 shell, 질량 26.4 g, rear gap 11 mm였고 실제 body는 같은 선반 열의 제습 셀 뒤에서 1시간 08분 후 회수되었다.",
+    "초기에는 환기구 누설음 또는 인접 인원의 저음 발화를 의심했으나, HVAC 정지 3회 중 3회 양성, 성대접촉 마이크 대조 0/3, 4 mm borescope로 확인된 후면 장막 진동이 이를 배제했다.",
+    "2044-04-22 승인검수실 2-F, 2044-05-03 인계보류서고 3-B에서도 독립 재발이 확인되어 임시표기 T-218 `rear whisper film`이 발행되었다.",
+    "2044-05-18 교차검토에서 [COS193 — 회청색 후입등재구](./cos193.json), [COS166 — 공심대행체](./cos166.json), [COS205 — 회청색 대조합치막](./cos205.json)와의 연속성이 검토되었고, 2044-06-01 본 공식 항목으로 편입되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS218은 후면 간극이 현재 처리 전면으로 유지된 숙주에서만 안정적으로 형성되며, 실제 본문이 완비된 문서에서는 재현되지 않았다.",
+      "출력은 청취 자세와 주변 권한 표식에 영향을 받으며, 빈 승인석을 마주하면 승인·종결 어휘가, 차순 배치에서는 호출·속행 어휘가 증가한다.",
+      "청취자는 발화를 본문 복원으로 해석하려는 경향을 강하게 보이며, 이 인지 오차가 오편철과 허위 전사를 촉진한다.",
+      "불투명 차폐, 정면 의자 제거, 후면 provenance 검색을 동시 적용하면 8/8 활성 숙주에서 5초 이내 발화가 중단되었다."
+    ],
+    "stages": [
+      {
+        "name": "잠복간극",
+        "description": "front shell 또는 empty carrier의 rear gap 5~18 mm 구간에 회청색 막이 형성되나, 아직 음향 출력은 없고 경사광에서만 띠가 확인된다."
+      },
+      {
+        "name": "청취유도",
+        "description": "정면 0.6~0.9 m 축에 청취자, 마이크, 빈 좌석이 정렬되면 낮은 마찰음과 호흡 동기 진동이 시작되며, 이 단계에서 숙주는 `듣기 가능한 현재본`처럼 취급되기 시작한다."
+      },
+      {
+        "name": "대리낭독",
+        "description": "제목행, 승인 동사, 말미 문장 파편이 짧은 구절로 반복되며, thumb-flip이나 lip 접촉이 있으면 page-turn cue가 추가되어 세션이 연장된다."
+      },
+      {
+        "name": "잔향침전/절차전이",
+        "description": "90초 이상 유도되거나 transparent 비교, 빈 승인석, 차순 표찰이 동반되면 적색 잔류, false pair cue, 회람띠, 기보관 라벨 등 다른 절차성 현상으로 전이할 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS218 숙주는 대체로 전면과 본문이 분리된 계열에서 확인되며, 본문 부재를 음향으로 메우는 후속 단계로 해석된다.",
+      "transparent 비교면, 빈 권한 좌석, current-position 표식은 COS218의 발화 내용을 `이미 결정된 기록`처럼 오인하게 만드는 강화 조건이다.",
+      "적색 잔류나 허위 정쌍이 뒤따를 수 있으므로, COS218은 단독 항목보다 교차전이 허브로 취급하는 편이 실무상 안전하다."
+    ],
+    "entries": [
+      {
+        "targetId": 104,
+        "targetTitle": "붉은 잔향수",
+        "description": "세션 3건에서 90초 초과 청취 유도 후 [COS104 — 붉은 잔향수](./cos104.json)와 동일한 헤모글로빈 음성 적색 저주파 잔류가 desk edge와 headset grille에 남았다. COS218에서 생긴 적색 잔류는 본문 복원 증거가 아니라 종료 직후의 발화·마찰 리듬 침전으로 취급한다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "빈 승인석을 정면에 둔 대조 6회 중 5회에서 [COS149 — 무인 결재석](./cos149.json) 조건이 승인 동사와 종결구 비중을 높였다. COS218 숙주를 상석 또는 결재석 방향으로 정렬하지 않는다."
+      },
+      {
+        "targetId": 157,
+        "targetTitle": "무재소 기보관고",
+        "description": "2건의 현장 전사본은 실제 body 회수 전 `기보관` 처리되었고, 이후 [COS157 — 무재소 기보관고](./cos157.json)형 회색 서가 상태가 붙었다. COS218 전사본은 archive tag의 근거로 사용할 수 없다."
+      },
+      {
+        "targetId": 166,
+        "targetTitle": "공심대행체",
+        "description": "확정 숙주 9건 중 5건이 [COS166 — 공심대행체](./cos166.json)와 같은 empty carrier였다. 공심 숙주는 body 부재를 음향으로 보상하는 COS218의 안정적 host로 작동한다."
+      },
+      {
+        "targetId": 172,
+        "targetTitle": "외륜 회람띠",
+        "description": "3-B rack 사건에서 positive sleeve bundle은 실제 body 회수 전 [COS172 — 외륜 회람띠](./cos172.json)와 같은 outer band를 획득했다. 회람 외피가 생겨도 숙주는 봉인 상태를 유지한다."
+      },
+      {
+        "targetId": 184,
+        "targetTitle": "회청색 차순호명패",
+        "description": "blank plaque가 25 cm 이내 current marker로 남은 3-B 사건에서 [COS184 — 회청색 차순호명패](./cos184.json)가 bodyless sleeve를 다음 안건 전면으로 밀어 올렸다. COS218 의심숙주 주변의 차순 표찰은 즉시 제거한다."
+      },
+      {
+        "targetId": 193,
+        "targetTitle": "회청색 후입등재구",
+        "description": "확정 숙주 9건 중 6건은 [COS193 — 회청색 후입등재구](./cos193.json) 양성 host에서 front matter만 먼저 회수된 shell이었다. rear stop 뒤 본문을 찾지 않은 상태에서 COS218을 내용 판독에 사용하면 provenance 오류가 커진다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "transparent 아크릴 비교면에서는 6회 중 4회가 [COS205 — 회청색 대조합치막](./cos205.json)형 허위 정쌍을 만들었다. COS218 음향 단서와 body 후보를 같은 transparent plane에 올리지 않는다."
+      },
+      {
+        "targetId": 214,
+        "targetTitle": "회청색 장넘김대행막",
+        "description": "thumb-flip을 가했을 때 8/8 active host에서 [COS214 — 회청색 장넘김대행막](./cos214.json)과 유사한 넘김 cue가 추가되어 대리낭독 평균 지속시간이 12.1 s에서 26.8 s로 늘었다. 넘김음 증가는 본문 존재 증거가 아니다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-218-01 / rear-gap 음원 위치 대조",
+      "description": "확정 숙주 9건과 complete file 대조군 6건을 4200 K 경사광, 4 mm borescope, 비접촉 레이저 진동계, 96 kHz boundary mic로 계측했다. 발화 최대 진동점은 8/9 positive host의 rear gap 경계선에서 확인되었고 complete file 0/6, HVAC 정지 대조 3/3 양성이었다."
+    },
+    {
+      "label": "EXP-218-02 / 자세-거리 행렬",
+      "description": "0.3 m, 0.7 m, 1.5 m 정면 거리와 서서/앉아서 자세를 교차 적용했다. 0.6~0.9 m 착석 정면에서만 8/8 선명 양성, 0.3 m는 과증폭된 마찰음만 3/8, 1.5 m 이상은 0/8이었다."
+    },
+    {
+      "label": "EXP-218-03 / no-leafing 대조",
+      "description": "thumb-flip 없는 no-leafing 조건에서 7/8 active host가 발화했고, lip 접촉과 짧은 thumb-flip을 허용하자 8/8에서 page-turn cue와 함께 지속시간이 증가했다. complete file 대조군 6건은 두 조건 모두 0/6이었다."
+    },
+    {
+      "label": "EXP-218-04 / no-listening triad 억제",
+      "description": "불투명 hood, 정면 의자 제거, rear provenance search를 동시 적용한 no-listening triad를 active host 8건에 시행했다. 발화 중단 시간은 1.9~4.6 s, 평균 3.8 s였고 2시간 재노출 관찰에서 재활성은 0/8이었다."
+    },
+    {
+      "label": "EXP-218-05 / transparent 비교 오염 시험",
+      "description": "body 후보 6건을 acrylic board와 opaque tray에서 각각 비교했다. acrylic board에서는 4/6에서 shared lower line 또는 pair code가 생겼고 3/6은 footer hash 불일치 상태의 false pair까지 진전했으나 opaque tray는 0/6이었다."
+    },
+    {
+      "label": "EXP-218-06 / 권한 표식 연동 시험",
+      "description": "빈 승인석, 빈 stool, 차순호명표를 개별·복합 자극으로 걸었다. 빈 승인석 단독은 승인형 어휘 비중을 5/6에서 증가시켰고, 차순호명표 단독은 호출·속행형 어휘를 4/6에서 증가시켰으며, 두 조건 동시 적용군은 발화보다 오편철 징후가 먼저 나타나 시험을 중단했다."
+    }
+  ],
+  "handlingProcedures": [
+    "의심 숙주는 front shell과 suspected body를 즉시 분리 봉인하고, rear stop, spacer 뒤, 인접 제습 셀을 먼저 검색한다. 내용 판독보다 provenance 확보가 선행이다.",
+    "정면 1.5 m 범위의 의자, stool, 빈 결재석 대용 좌석을 모두 제거하고, [COS184 — 회청색 차순호명패](./cos184.json), 회람띠, archive tag 등 current-position 표식을 치운다.",
+    "경사광 20~35°와 4 mm 이하 borescope로 rear gap의 회청색 띠만 확인한다. 현장 판정 단계에서 live listening, 구두 유도 질문, 수기 받아쓰기, thumb-flip을 금지한다.",
+    "음향 계측이 승인된 경우에도 착석 청취자를 두지 말고, 측면 고정 마이크 또는 비접촉 진동계만 사용하며 30초 1회로 제한한다.",
+    "transparent 아크릴 비교면, 유리 scanner bed, 평판 light table에 COS218 숙주와 body 후보를 함께 올리지 않는다. 대조는 불투명 tray 위에서 footer hash와 chain number 중심으로 수행한다.",
+    "0.1 mL 이상 적색 잔류가 보이면 인체 유래로 단정하지 말고 별도 swab를 채취해 잠정 [COS104 — 붉은 잔향수](./cos104.json) 연계 시료로 봉인한다.",
+    "기보관, 승인완료, 속행, 발신완료 등 상태 표식이 추가로 나타나도 절차를 진행하지 않는다. 해당 표식은 chain number와 분리 촬영 후 무효 처리한다.",
+    "이송은 불투명 hood와 rear gap spacer guard를 장착한 rigid tray에서만 수행하며, host, trace, residue, recovered body를 같은 봉투에 합봉하지 않는다."
+  ],
+  "hypotheses": [
+    "가설: COS218은 front/body 분리로 생긴 rear gap을 숙주로 하는 얇은 장막성 구조이며, 청취축에 놓인 인체 호흡 또는 지향성 마이크의 미세 압력 변화를 구동원으로 사용할 수 있다.",
+    "가설: 산출되는 문장 파편은 실제 body 본문의 음향 복원이 아니라 제목선, 말미선, 승인 동사, route cue 같은 전면 절차 정보를 후면 간극에서 재배열한 결과이다.",
+    "가설: 90초 이상 세션 뒤 나타나는 적색 저주파 잔류는 COS218의 종료 부산물이거나 [COS104 — 붉은 잔향수](./cos104.json)로의 2차 전이이며, 두 현상이 처음부터 동일한 것은 아니다.",
+    "가설: 빈 승인석, 차순호명표, outer band가 발화 의미를 바꾸는 이유는 COS218이 누가 읽는가보다 지금 무엇으로 취급되는가에 더 민감하기 때문이다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "인지 유도",
+      "assessment": "청취자는 짧은 파편을 의미 있는 완결문으로 보완하는 경향이 강하다. 실제 body 대조 전 받아쓰기나 구두 요약을 남기면 허위 본문이 공식 기록으로 편입될 위험이 크다."
+    },
+    {
+      "category": "기록 무결성",
+      "assessment": "false pair, 허위 승인 전사, 기보관 라벨, 회람띠 등 후속 절차 오염이 6/14 positive sessions에서 동반되었다. 숙주와 recovered body의 chain 분리가 핵심이다."
+    },
+    {
+      "category": "교차전이",
+      "assessment": "COS218은 [COS205 — 회청색 대조합치막](./cos205.json), [COS149 — 무인 결재석](./cos149.json), [COS104 — 붉은 잔향수](./cos104.json)로 이어질 수 있다. 단독 봉인보다 주변 표식 제거가 우선된다."
+    },
+    {
+      "category": "물리 안전",
+      "assessment": "직접 공격성은 없으나 rear stop 수색 중 손 절상 1건이 있었고 startled reach가 반복 보고되었다. 금속 턱이 있는 rack에서는 방절 장갑과 borescope 선행이 필요하다."
+    },
+    {
+      "category": "노출 관리",
+      "assessment": "혼합 출입 구역에서 1.2 m 밖 인원이 발화를 청취한 사례가 있어, 양성 숙주는 open review room에 두지 않는다. 공개 열람 자료와 동일 선반 운용을 금지한다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "임시표기 T-218의 초기 명칭은 `rear whisper film`, `후면 읽힘`, `뒤쪽 발화`가 혼용되었다. 현재 문서에서는 후면 간극의 장막성 숙주와 청취 유도 조건을 함께 지시하는 `회청색 후면청취막`으로 통일한다."
+    },
+    {
+      "type": "quotation",
+      "content": "“손으로 넘기지 않았는데도 뒤쪽에서 먼저 읽는다. 앞장을 보고 있는데 다음 장 말미가 먼저 들린다.” — 2044-04-19 C-2 현장 메모, 한유진"
+    },
+    {
+      "type": "paragraph",
+      "content": "2044-04-22 2-F 사건의 적색 잔류 2개 swab는 benzidine 대체 시약, human hemoglobin immunoassay, DNA screen 모두 음성이었다. 음성 결과는 인체 비유래를 지지하지만, 현장에서는 항상 생물성 오염 가능성을 우선 배제한 뒤 봉인한다."
+    },
+    {
+      "type": "quotation",
+      "content": "“완료된 안건처럼 들려서 body를 맞춰 보려 했다. 그 판단이 내 해석이었다는 점은 인정한다.” — 2044-04-22 면담, K-12"
+    },
+    {
+      "type": "paragraph",
+      "content": "C-2, 2-F, 3-B 세 현장 모두에서 실제 body 위치는 정면이 아니라 후면 슬롯, adjacent rack, 제습 셀 뒤에서 회수되었다. 청취축 전면을 본문 위치로 가정하는 수색 습관은 수정되었다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-218 정식 편입",
+      "paragraphs": [
+        "2044-04-22 18:10 KST 발행된 임시표기 `T-218`, `rear whisper film`, `후면 읽힘`을 모두 COS218로 통합한다.",
+        "초기 판단이었던 환기 누설음, 인접 인원 발화, page-turn noise 단독설은 2044-04-30 rear-gap 대조와 2044-05-04 no-listening triad 검증 뒤 폐기한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "H218/A218/R218/B218 접두 및 no-listening triad",
+      "paragraphs": [
+        "active rear-gap host는 `H218-host`, 음향·진동 자료는 `A218-trace`, 적색 잔류는 `R218-residue`, 나중에 회수된 본문은 `B218-recovered-body` 접두를 부여한다.",
+        "`H218-host`, `A218-trace`, `R218-residue`, `B218-recovered-body`는 같은 봉투, 같은 transparent plane, 같은 임시 body clip으로 병합하지 않는다.",
+        "현장 억제는 no-listening triad로 통일하며, 구성 요소는 `정면 좌석 제거`, `불투명 hood 적용`, `rear provenance search 선행`의 3단계이다.",
+        "triad 중 1개라도 생략된 상태에서 확보한 전사문, 승인문, archive tag는 효력이 없다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 체크리스트",
+      "paragraphs": [
+        "- rear gap 5~18 mm 여부를 측정한다.\n- 20~35° 경사광에서 회청색 띠를 사진화한다.\n- front shell과 body 후보의 chain number를 분리 기록한다.\n- 정면 1.5 m 좌석, 표찰, transparent plane를 제거한다.\n- 청취 재현 없이 provisional `H218-host`로 봉인한다.",
+        "위 5개 중 3개 이하만 충족하면 COS218 확정이 아니라 `rear-gap anomaly pending`로 보류한다."
+      ]
+    },
+    {
+      "title": "금지 조작 및 실험실 이관 조건",
+      "paragraphs": [
+        "- 빈 승인석을 마주보게 두고 듣기\n- cue를 얻기 위한 thumb-flip, lip tap, 구두 질문\n- acrylic board 위 pair matching\n- outer band나 archive tag를 근거로 current set 판정",
+        "실험실 이관은 보호등급 3 이상, 불투명 booth, 측면 센서 rig, 30 s 단회 측정 조건이 동시에 준비된 경우에만 허용한다."
+      ]
+    }
+  ]
+}
