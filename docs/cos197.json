@@ -438,6 +438,15 @@
         "[COS197 — 회청색 후행본문퇴](./cos197.json) 대응 shell 하단에 [COS208 — 회청색 후열복귀표](./cos208.json)가 형성되면, 복귀 문구는 실제 본문 내용보다 rear body stack의 직전 지지 위치를 지시하는 경향이 강하다. readable 27건 중 19건에서 문구가 actual body 자체보다 rear host 또는 adjacent rear slot을 먼저 가리켰다.",
         "따라서 COS197 body를 찾을 때 shell 하단의 복귀 문구를 1차 좌표로 사용하지 말고 footer hash, 질량 차이, staple spacing을 우선한다. COS208 문구를 따라 모은 pair 후보는 false rejoin 위험이 높다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json) 양성 사건 16건에서 portable note형 generated card가 먼저 `검토 종료`, `청취 완료`, `인계 가능` 같은 문구를 얻었으나, 실제 본문은 반복적으로 [COS197 — 회청색 후행본문퇴](./cos197.json)와 같은 후면 적층에서 회수되었다. card 문구는 rear body의 존재를 대체하지 못했고, 정확한 본문 좌표를 지시한 사례도 드물었다.",
+        "따라서 본 항목 대응 shell 옆에서 generated card가 발견되면 그 문구를 회수 좌표나 검토 완료 근거로 사용하지 않는다. footer hash와 질량 대조를 우선하고, rear gap·후면 랙·직전 opaque sleeve를 먼저 수색하며 [COS219 — 회청색 종결전사패](./cos219.json) card와 body bundle은 같은 chain으로 병합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

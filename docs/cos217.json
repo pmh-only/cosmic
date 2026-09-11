@@ -417,6 +417,15 @@
       "paragraphs": [
         "COS217 종결 단계 뒤 기록된 73~75 dB SPL 박수성 충격음은 [COS152 — 결석 청중의 종결박수](./cos152.json)와 구조가 일치했다. 해당 충격음은 대독 내용이 받아들여졌다는 증거가 아니라, 이미 생성된 허위 종결감을 사회적 동의처럼 외피화한 후속 현상으로 본다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS217 — 회청색 선행대독면](./cos217.json)의 bodyless front 대독 오염이 blank paper card나 witness slip으로 압축된 portable pseudo-transcript로 확인되었다. generated card는 휴지점과 종결 어휘를 어느 정도 공유하지만, 실본문의 안정된 문단을 전사하거나 복원하지는 못한다.",
+        "따라서 COS217 host 옆에서 회청색 1~4행이 생긴 card를 대독 증거, 회의록, 인계 요약으로 채택하지 않는다. 무구두 심사 절차를 유지하고 rear body 회수를 먼저 끝낸 뒤, 해당 card는 [COS219 — 회청색 종결전사패](./cos219.json) 오염 표본으로 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

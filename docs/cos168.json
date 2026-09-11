@@ -335,6 +335,15 @@
         "[COS205 — 회청색 대조합치막](./cos205.json) 양성쌍은 [COS168 — 무영 압지추](./cos168.json) 조건에서 거짓 합치 잔류 시간이 뚜렷하게 늘어났다. 2026-08-25 M-2 압력 시험에서 0.7 kg 가압군의 분리 후 지속시간 중앙값은 18분 50초, 1.0 kg 가압군은 31분 12초로, 무가압 6분 40초보다 길었다.",
         "따라서 압지점 아래에서 shared pair code나 동일 provisional barcode를 획득한 표본은 실제 정쌍으로 정리하지 않고, 먼저 가압을 해제한 뒤 불투명 간격재를 삽입해 잔류 상태를 소거한다. 압지 조건에서 생긴 상단선 일치만으로 본문 복원을 판정하지 않는다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS168 — 무영 압지추](./cos168.json) 조건에서 unresolved bundle의 맨 윗장처럼 눌린 generated card가 `이미 검토된 상단 메모`로 오인되는 후속 표본으로 기록되었다. 이 card는 실제 본문을 복원하지 않으며, 오히려 rear body 수색보다 상단 note를 먼저 믿게 만드는 압지성 current 오염을 강화한다.",
+        "따라서 COS168 묶음 위에 회청색 lower line이나 check box를 얻은 card가 놓여 있어도 기준본이나 요약본으로 채택하지 않는다. generated card는 [COS219 — 회청색 종결전사패](./cos219.json) 오염 표본으로 분리 봉인하고, 하부 원문 또는 원문 부재 상태를 먼저 검증한다."
+      ]
     }
   ],
   "supplementalSections": []

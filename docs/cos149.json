@@ -437,6 +437,15 @@
         "[COS218 — 회청색 후면청취막](./cos218.json) 숙주를 빈 승인석 또는 상석 방향으로 정렬하면, 대리낭독 파편은 제목행보다 승인 동사, 종결구, `검토 완료`형 말미로 편향되는 경향이 확인되었다. 2044-04-22 2-F 사건과 후속 대조 6회 중 5회에서 실제 승인자 없이도 승인된 안건처럼 들리는 전사문이 생성되었다.",
         "이는 [COS149 — 무인 결재석](./cos149.json)이 승인 근거를 제공한 것이 아니라, 후면청취막의 청취 내용을 최종 재가가 끝난 기록처럼 닫는 방향점으로 작동한 결과로 본다. COS149 환경에서 bodyless front나 thin approval cover가 읽히기 시작하면 승인 여부를 판단하지 말고 빈 상석을 제거한 뒤 rear provenance search를 먼저 시행한다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS149 — 무인 결재석](./cos149.json) 전방 0.7~1.2 m 빈 승인축에서 가장 쉽게 승인형 문구와 check box를 획득하는 portable note형 후속 표본으로 확인되었다. 생성 card에는 `승인`, `검토 종료`, `확인`과 같은 종결 어휘가 남지만, 실제 승인자나 본문 확인은 끝내 복구되지 않는다.",
+        "따라서 무인 결재석 앞에서 blank witness card나 shorthand card가 회청색 lower line을 얻더라도 이를 상위 재가의 증거로 사용하지 않는다. 빈 승인석을 제거하고 rear provenance search를 먼저 시행하며, generated card는 [COS219 — 회청색 종결전사패](./cos219.json) 오염 표본으로 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": []

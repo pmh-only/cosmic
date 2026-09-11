@@ -393,6 +393,15 @@
         "현장 억제는 no-listening triad로 통일하며, 구성 요소는 `정면 좌석 제거`, `불투명 hood 적용`, `rear provenance search 선행`의 3단계이다.",
         "triad 중 1개라도 생략된 상태에서 확보한 전사문, 승인문, archive tag는 효력이 없다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS218 — 회청색 후면청취막](./cos218.json) rear-gap host 전방의 blank witness card에서 반복적으로 형성된 후속 표본이다. 정면 청취축의 짧은 sentence-final fragment와 approval cue가 generated card의 `청취 완료`, `승인 사유 확인` 같은 문구로 portable화되지만, 실제 본문 복원과는 일치하지 않는다.",
+        "따라서 COS218 현장에서 witness card나 note slip에 회청색 lower line이 생겨도 이를 청취 증거로 사용하지 않고 no-listening triad를 유지한다. generated card는 [COS219 — 회청색 종결전사패](./cos219.json)로, 실제 본문은 rear provenance search로 따로 회수하며 두 표본을 같은 봉투나 same current chain으로 병합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

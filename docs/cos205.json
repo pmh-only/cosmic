@@ -414,6 +414,15 @@
         "[COS218 — 회청색 후면청취막](./cos218.json)의 음향 파편을 근거로 body 후보를 acrylic board나 light table 위에 맞춰 보는 행위는 [COS205 — 회청색 대조합치막](./cos205.json) 양성을 크게 높였다. 2044-04-22 2-F 사건과 후속 transparent comparison 시험 6회 중 4회에서 shared pair code 또는 false lower line이 생겼고, opaque tray 대조군은 0/6이었다.",
         "이는 후면청취막이 본문을 알려 주는 것이 아니라, 이미 들은 말미 파편을 근거로 unrelated body를 `맞는 짝`처럼 보이게 만들기 때문이다. COS205 비교 단계에서는 COS218 전사문, 구두 청취 메모, approval cue를 pairing 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)의 lower line, check box, completion cue를 body 선택 근거로 사용해 wrong body 후보를 transparent comparison board에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 크게 증가하는 것이 확인되었다. generated card는 provenance를 복원하지 않으며, 오히려 `이미 검토가 끝난 pair`라는 acceptance cue를 제공해 false match onset을 앞당긴다.",
+        "따라서 COS205 비교 단계에서는 generated card의 문구, approval note, witness slip을 pairing 근거로 채택하지 않는다. [COS219 — 회청색 종결전사패](./cos219.json) 이력이 있는 card는 shell/body 후보와 50 cm 이상 분리한 불투명 트레이에만 둘 수 있으며, transparent plane 재노출을 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

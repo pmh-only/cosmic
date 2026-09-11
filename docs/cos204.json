@@ -443,6 +443,15 @@
         "[COS210 — 회청색 후행응답택](./cos210.json)을 미완결 슬리브 상단 좌측에 고정하면 [COS204 — 회청색 보류인계슬리브](./cos204.json)의 회람 외피와 front-only forward 상태가 더 빨리 안정화되는 사례가 확인되었다. 2026-11-06 대조 4회에서 active tag 부착군의 외부 회람화 징후 발생 중앙값은 137초였고, 무tag 대조군은 228초였다.",
         "그러나 COS210은 COS204의 필요조건은 아니며, tag가 없는 슬리브에서도 단계 진행은 독립적으로 발생할 수 있다. active tag가 붙은 보류 슬리브는 보완지시나 정상 안내표로 취급하지 말고, 문구가 보이면 tag와 숙주를 함께 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS204 — 회청색 보류인계슬리브](./cos204.json) 3~4단계 표본 옆 blank note card나 witness slip에 `인계 가능`, `검토 종료`, `청취 완료`류 completion cue를 남기는 하류 note형 산물로 기록되었다. 이 card는 COS204의 갈색 미수행열이나 body 분리를 해결하지 않고, hold 상태 위에 종결 어휘만 덧씌운다.",
+        "따라서 COS204 표본 주변의 generated note를 재개봉 승인, 인계 완료, 검토 종료 근거로 사용하지 않는다. [COS219 — 회청색 종결전사패](./cos219.json) 이력이 있는 card는 body search와 footer hash 대조가 끝날 때까지 슬리브 숙주와 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

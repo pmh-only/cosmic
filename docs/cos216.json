@@ -432,6 +432,15 @@
       "paragraphs": [
         "used audit board 노출 실험에서 positive card군 7/10이 actual body 회수 이전 completion box를 형성했다. 이는 [COS211 — 회청색 선결검수면](./cos211.json)이 COS216의 대표적 후속 수기 외피임을 보여 준다."
       ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS216 — 회청색 공석대행패](./cos216.json)와 결합할 때 빈 전면 자리에 대한 current성이 blank note card의 `반납 확인`, `검토 완료`, `현재본 확인` 같은 portable sign-off note로 압축되는 양상을 보였다. 즉 COS216이 자리의 current 권위를 front card에 부여하면, COS219는 그 current 권위를 별도 메모처럼 오인되기 쉬운 짧은 note로 남긴다.",
+        "따라서 공석대행패 주변의 blank note card나 witness slip이 lower line과 회청색 문구를 얻더라도 rear-recovered body 확인 전 검토 완료로 처리하지 않는다. generated note는 [COS219 — 회청색 종결전사패](./cos219.json) trace로 분리 봉인하고, vacancy card와 같은 current chain으로 병합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

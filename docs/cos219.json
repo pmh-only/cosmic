@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-05-08과 2044-05-11 두 사건에서 COS219 산물은 일반 속기 카드나 입회 확인지처럼 보였고, 실제 검토 기록과 함께 보관될 뻔했다. 제한 문서의 검토 종료·승인 사유가 실본문 확인 없이 카드 한 장에 남는 양상이어서 비인가 부서 노출 시 기록 오염 위험이 크다.",
+    "permission": "COS219를 실제 메모와 구분하려면 동기화 음성·영상, footer hash, rear search 결과, 오염 로그 정정 권한을 함께 검토해야 한다. 단순 현장 열람만으로는 판정이 어렵고 잘못된 card를 근거로 검토 완료를 선언할 수 있어 최소 4등급 열람이 필요하다.",
+    "chaos": "양성 노출 34회에서 문구의 행 수는 1~4행, 발생 시각은 22~93초, 지속 시간은 18~67분으로 흔들렸고, 읽기·빈 승인축·비교면 사용 여부에 따라 서로 다른 종료 문구와 lower line이 형성되었다. 발생 개시는 재현되지만 결과 형태의 예측성은 낮다.",
+    "danger": "직접적인 외상이나 독성은 확인되지 않았으나 허위 검토 종료 시도 2건, wrong body 선택 1건, 제한 자료 인계 지연 43분, custody chain 단절 11분이 기록되었다. 위해는 주로 기록·절차에 집중되므로 중간 수준으로 평가한다.",
+    "popularity": "임시표기 T-219 발령 뒤 14일 동안 기록·보존·심사·음향 부서에서 교차검토 요청 18건과 실험 회람 6건이 발생했다. 기관 전체의 최상위 참조 항목은 아니지만 front/body 분리 군집에서는 반복 참조되는 수준이다.",
+    "containment": "blank note card 금지, 불투명 봉인, matte-black mask, 빈 승인축 차폐, transparent board 금지, rear body 선회수 절차를 동시에 적용해야 억제가 가능했다. 한 요소만 생략한 12회 중 8회에서 lower line 연장 또는 false pair 유도가 재발해 고강도 관리가 요구된다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록보존관 K-27",
+        "role": "초동 회수 및 기록 봉인",
+        "status": "active",
+        "involvement": "2044-05-08 최초 generated card를 봉인하고 rear body 회수를 지휘했으며, 이후 A219/B219/T219 체인 분리 규정을 작성했다."
+      },
+      {
+        "name": "음향분석관 A-05",
+        "role": "동기화 음성·영상 계측",
+        "status": "active",
+        "involvement": "R-4, 2-F, A-3 실험에서 raw audio와 generated card 문구의 일치 여부를 검토하고 onset 시간, read-aloud 연장 효과를 계측했다."
+      },
+      {
+        "name": "현장통제관 C-09",
+        "role": "동선 차단 및 통제 실험 설계",
+        "status": "active",
+        "involvement": "빈 승인축 차폐, note-taking 금지, rear search 우선 절차를 마련했고 IR-219-02의 wrong pair 시도를 중단시켰다."
+      },
+      {
+        "name": "심사보조원 N-16",
+        "role": "검토 기록 보조",
+        "status": "reassigned",
+        "involvement": "generated card를 실제 검토 메모로 오인해 lower line을 검토 장부에 옮기고 wrong body를 선택한 뒤, 이후 구두·수기 검토 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-05-08 09:41 KST",
+        "label": "최초 generated card 확인",
+        "description": "중앙기록단지 동관 4층 구두심사실 R-4에서 bodyless front 옆 blank shorthand card에 회청색 3행과 하단 확인선이 형성되었다."
+      },
+      {
+        "date": "2044-05-08 09:58 KST",
+        "label": "rear body 회수",
+        "description": "R-4 후면 랙 R2-3 뒤 1.2 m 위치에서 대응 body `B219-body-01`이 회수되었고, generated card 문구와 실본문의 불일치가 확인되었다."
+      },
+      {
+        "date": "2044-05-11 14:26 KST",
+        "label": "승인형 문구 재발",
+        "description": "제2검수동 2층 승인검수실 2-F에서 blank witness card가 빈 승인석을 향한 축에서 `승인 사유 확인`류 문구와 check box를 획득했다."
+      },
+      {
+        "date": "2044-05-13 10:00 KST",
+        "label": "비교 실험 개시",
+        "description": "음향시험실 A-3와 비교실 Q-5B에서 bodyless front host, rear-gap host, complete packet, blank control을 나눈 통제 실험이 시작되었다."
+      },
+      {
+        "date": "2044-05-15 16:08 KST",
+        "label": "false pair 증폭 확인",
+        "description": "generated card를 transparent comparison board에서 pairing cue로 사용하자 wrong body 후보 8쌍 중 6쌍에서 [COS205 — 회청색 대조합치막](./cos205.json)형 false match onset이 재현되었다."
+      },
+      {
+        "date": "2044-05-19 11:30 KST",
+        "label": "무필기 대체 절차 시행",
+        "description": "blank note card 대신 흑색 code paddle을 사용하고 generated card를 읽지 않는 대체 기록 절차가 관련 구역 전체에 배포되었다."
+      },
+      {
+        "date": "2044-05-22 09:00 KST",
+        "label": "정식 분류 승인",
+        "description": "확정 양성 19건과 통제 실험 34회 검토 후 T-219가 COS219로 정식 편입되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-219-01",
+        "date": "2044-05-08",
+        "location": "중앙기록단지 동관 4층 구두심사실 R-4",
+        "title": "bodyless front 옆 검토 종료 카드 형성",
+        "involvedPersonnel": [
+          "기록보존관 K-27",
+          "음향분석관 A-05",
+          "현장통제관 C-09",
+          "심사보조원 N-16"
+        ],
+        "narrative": [
+          "K-27과 A-05는 실본문이 없는 얇은 전면 host를 불투명 보드 위에서 재검토하고 있었다. N-16은 승인된 흑색 code paddle 대신 줄이 인쇄된 blank shorthand card `NC-R4-03`를 host 오른쪽 18 cm 지점에 두고 시간을 기록하기 시작했다. 52초 뒤 card 상단 3분의 1에 회청색 3행과 바닥에서 6 mm 위의 lower line이 나타났고, 가독 가능한 어휘는 `검토 종료`, `인계 가능`, 제목행 파편 1개뿐이었다. host 실측 질량은 41.2 g으로 유지되었고, page capture는 0이었다.",
+          "N-16은 card를 실제 검토 메모로 해석해 lower line을 장부에 옮기고 인접 opaque sleeve를 열어 대응 packet을 가져오려 했다. A-05는 같은 시각의 raw audio를 즉시 대조한 결과, 1.9초 길이의 호흡음과 제목 파편 외에 card 3행과 일치하는 완결 문장이 없음을 확인했다. C-09는 note-taking을 중지시키고 rear search를 우선 지시했으며, 09:58에 후면 랙 R2-3 뒤 1.2 m 지점에서 `B219-body-01` 18매를 회수했다. generated card와 장부 초안은 오염 자료로 봉인되었고 `review complete` 로그 생성 직전에 절차가 중단되었다."
+        ],
+        "outcome": "generated card `A219-card-01`과 오염 장부 1면이 봉인되었고, R-4에서는 blank shorthand card 사용이 즉시 금지되었다. 대응 body는 별도 체인으로 회수되어 원본문 복귀 전까지 분리 보관되었다."
+      },
+      {
+        "code": "IR-219-02",
+        "date": "2044-05-11",
+        "location": "제2검수동 2층 승인검수실 2-F",
+        "title": "빈 승인축에서의 승인형 전사와 wrong body 선택",
+        "involvedPersonnel": [
+          "현장통제관 C-09",
+          "기록보존관 K-27",
+          "음향분석관 A-05",
+          "심사보조원 N-16"
+        ],
+        "narrative": [
+          "C-09는 생성 시점만 확인한다는 조건으로 blank witness card 1매를 rear-gap host 전방 24 cm 지점에 두는 제한 실험을 승인했다. 그러나 N-16은 가독성을 높이겠다며 card를 acrylic clip stand에 고정하고, 그 stand를 빈 승인석과 host를 잇는 정면축 0.8 m 위치에 놓았다. 38초 후 card에는 `승인 사유 확인`, `청취 완료`와 유사한 2행, 그리고 좌하단 check box가 생겼다. N-16은 lower line과 비슷한 표시를 가진 rear shelf의 packet `B-2F-17`을 대응 body로 선택했고, `승인 메모가 이미 적혔다`는 이유로 같은 세션 사진에 함께 담으려 했다.",
+          "K-27은 선택된 packet의 총질량이 기준치보다 72 g 낮고 footer hash 끝 8자가 host 기록과 일치하지 않는 점을 확인해 이동을 중지시켰다. A-05는 동시 음성 기록에서 2.3초 길이의 종결 어미 파편만 있을 뿐 card 전면 문구 전체와 대응하는 문장이 없음을 보고했다. card와 wrong body 후보가 clear plate 위에 나란히 놓인 44초 동안 body 후보는 3.6° 회전해 맞물리는 것처럼 보였으나, C-09가 즉시 plate 사용을 중지시키고 rear gap을 수색해 실제 `B219-body-02`를 17 mm 뒤 슬롯에서 회수했다. generated card는 그 자체로 승인 기록이 아니라 approval-biased trace라는 결론이 내려졌다."
+        ],
+        "outcome": "wrong pair 형성은 봉인 직전에 차단되었고, 2-F 구역에는 빈 승인석 차폐와 blank witness card 금지 규정이 추가되었다. N-16은 심사 보조 업무에서 재배치되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-219-01",
+        "type": "generated transcription card",
+        "description": "`A219-card-01`. R-4에서 회수된 92×138 mm ruled shorthand card. 회청색 3행, lower line 1개, 표면온도 20.7°C로 주변보다 1.9°C 낮았다.",
+        "custodyStatus": "문서위험물 금고 G-219-1, matte-black sleeve 이중 봉인 보관"
+      },
+      {
+        "code": "EV-219-02",
+        "type": "audio-video dataset",
+        "description": "`R4-AV-0508`. 근접 마이크 2채널, 원거리 마이크 1채널, 천장 카메라 1채널의 동기화 세트. generated card 형성 시각과 raw audio 비일치, rear body 회수 시각이 함께 기록되어 있다.",
+        "custodyStatus": "음향분석실 서버 A-05 read-only 보관, checksum 검증 완료"
+      },
+      {
+        "code": "EV-219-03",
+        "type": "approval-oriented witness card and clear-plate image set",
+        "description": "`A219-card-02`와 2-F clear plate 정지영상 14장. `승인 사유 확인`류 2행, check box, wrong body 후보와의 3.6° 회전 장면을 포함한다.",
+        "custodyStatus": "승인검수 금고 S-2 별도 보관, transparent plane 재노출 금지"
+      },
+      {
+        "code": "EV-219-04",
+        "type": "recovered body comparison set",
+        "description": "`B219-body-01`, `B219-body-02`와 각 대응 host의 footer hash, 총질량, 스테이플 간격 대조표. generated card 문구와 실본문의 비일치를 입증한다.",
+        "custodyStatus": "본문 전용 봉인함 B-219-1/B-219-2 보관, card와 동시 열람 제한"
+      },
+      {
+        "code": "EV-219-05",
+        "type": "masking and read-aloud experiment logs",
+        "description": "A-3 실험에서 생성 card 10점의 read-aloud군과 matte-black masking군 비교 로그. 지속시간, lower line darkening, 전이 여부를 포함한다.",
+        "custodyStatus": "실험기록함 LAB-219-R에 봉인, 요약본만 배포 가능"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "음향분석관 A-05",
+        "role": "동기화 음성·영상 계측",
+        "context": "IR-219-01 기술 판정 메모",
+        "statement": "관찰한 사실은 카드에 글줄이 생겼고 raw audio에는 그 전체 문장이 없었다는 점입니다. 카드가 실제 발화를 정확히 전사했다는 설명은 현재 가설일 뿐이며, 확인된 일치는 종결 어미와 제목 파편 수준에 머뭅니다."
+      },
+      {
+        "speaker": "심사보조원 N-16",
+        "role": "검토 기록 보조",
+        "context": "IR-219-02 사후 면담",
+        "statement": "저는 lower line과 check box가 있으니 이미 누군가 듣고 정리한 메모라고 해석했습니다. 그 판단은 제 추정이었고, 실제 body와 footer hash를 확인하기 전에 문구를 먼저 믿은 것이 실수였습니다."
+      },
+      {
+        "speaker": "기록보존관 K-27",
+        "role": "초동 회수 및 기록 봉인",
+        "context": "2044-05-19 절차 개정 회의",
+        "statement": "generated card는 가장 그럴듯한 증거처럼 보이지만, 실제로는 rear body가 회수되기 전 검토 종료를 앞당기는 표면입니다. 카드가 무엇을 말하는지보다 본문이 어디에 남아 있는지를 먼저 확인해야 합니다."
+      }
+    ]
+  },
+  "id": 219,
+  "title": "회청색 종결전사패",
+  "language": "ko-KR",
+  "overview": [
+    "**COS219**는 bodyless front host나 rear-gap host 옆에 놓인 blank note card, witness slip, review memo card에 형성되는 **회청색 종결 지향 전사 현상**이다. 현재 통칭은 **회청색 종결전사패**이다.",
+    "생성된 card는 1~4행의 짧은 문구와 lower line 또는 check box를 남기지만, 실본문의 안정된 문단이나 완전한 발화를 재구성하지는 않는다. 확인된 어휘는 `검토 종료`, `청취 완료`, `승인 사유`, `인계 가능`처럼 절차의 **끝부분**에 편중되었다.",
+    "현상은 주로 [COS217 — 회청색 선행대독면](./cos217.json)과 [COS218 — 회청색 후면청취막](./cos218.json) 노출 환경에서 확인되었고, 빈 승인축인 [COS149 — 무인 결재석](./cos149.json)이 함께 있으면 승인형·종결형 문구가 강화되었다.",
+    "가장 중요한 점은 generated card가 실제 검토·청취 증거가 아니라는 것이다. 실제 본문은 대개 [COS197 — 회청색 후행본문퇴](./cos197.json)와 유사한 후면 위치에서 별도로 회수되었고, generated card를 pairing 근거로 사용할 경우 [COS205 — 회청색 대조합치막](./cos205.json)형 false match가 급증했다."
+  ],
+  "identificationTraits": [
+    "숙주는 76×127 mm에서 105×148 mm 사이의 cellulose 또는 단섬유 메모 카드, witness slip, ruled shorthand card에서 가장 잘 형성된다. PET 카드, 라미네이트 양식, 두꺼운 합성판 대조군은 현재까지 0양성이었다.",
+    "활성 host 옆 12~42 cm 측방 배치 또는 rear-gap host 전방 0.6~0.9 m 청취축에서 22~93초 안에 회청색 1~4행이 나타난다. 행 높이는 3.8~6.2 mm, lower line 위치는 카드 하단에서 4~11 mm 범위였다.",
+    "문구는 제목 파편과 절차 종결 어휘에 집중되며, 27자를 넘는 안정된 단락은 확인되지 않았다. 34회 양성 노출에서 `검토`, `완료`, `승인`, `인계`, `청취` 계열 어휘가 가장 많이 반복되었다.",
+    "생성된 card의 표면온도는 형성 직후 주변보다 1.1~2.1°C 낮았고, 430~450 nm 사광에서 가장 선명한 회청색 반사띠를 보였다.",
+    "빈 승인석 또는 승인축이 card 전방 0.7~1.2 m에 있을 경우 approval-biased 문구와 check box가 증가한다. 좌석을 차폐하거나 점유하면 같은 host에서도 line 수와 종결 어휘가 감소했다.",
+    "generated card를 transparent comparison board나 clear plate에 올려 wrong body 후보와 함께 두면 false pair 정렬 가능성이 급증한다. 불투명 흑색 트레이에서는 같은 오판이 현저히 줄었다.",
+    "generated card는 실제 본문 위치를 안정적으로 알려 주지 않았다. rear body 정확 지시는 12건 중 1건에 그쳤고, 실제 본문은 0.4~1.8 m 뒤 후면 랙, 7~19 mm rear gap, 직전 opaque sleeve에서 회수되는 경우가 더 많았다.",
+    "문구를 소리 내어 읽으면 지속 시간이 늘고 lower line이 진해질 수 있다. matte-black mask로 가린 뒤 불투명 봉인하면 대개 19~33분 내 가독성이 감소했다."
+  ],
+  "discovery": [
+    "최초 확인은 2044-05-08 09:41 KST, 중앙기록단지 동관 4층 구두심사실 R-4에서 이루어졌다. 당시 K-27과 A-05는 [COS217 — 회청색 선행대독면](./cos217.json)과 유사한 bodyless front host를 무구두로 재검토하고 있었고, 줄이 인쇄된 shorthand card `NC-R4-03`가 host 오른쪽 18 cm 지점에 놓였다.",
+    "52초 뒤 card 상단에 회청색 3행과 lower line이 형성되었으나, raw audio에는 해당 문장과 일치하는 완결 발화가 존재하지 않았다. 같은 세션에서 실제 body는 R2-3 후면 1.2 m 지점에서 따로 회수되었고, 이 점에서 generated card가 원문 전사물이 아니라는 판단이 시작되었다.",
+    "두 번째 독립 사례는 2044-05-11 14:26 KST 제2검수동 2층 승인검수실 2-F에서 확인되었다. [COS218 — 회청색 후면청취막](./cos218.json)과 유사한 rear-gap host 전방에 놓인 blank witness card가 빈 승인석 축에서 `승인 사유 확인`류 문구와 check box를 획득했고, wrong body 선택이 뒤따랐다.",
+    "2044-05-13~05-15 음향시험실 A-3와 비교실 Q-5B의 통제 실험에서 bodyless front host, rear-gap host, complete packet, blank control을 분리 비교한 결과, generated card는 [COS217 — 회청색 선행대독면](./cos217.json) 및 [COS218 — 회청색 후면청취막](./cos218.json) 계열 host 근처의 blank paper 숙주에서만 안정 재현되었다. 이후 [COS149 — 무인 결재석](./cos149.json), [COS197 — 회청색 후행본문퇴](./cos197.json), [COS205 — 회청색 대조합치막](./cos205.json)와의 연쇄 관계가 정리되며 COS219로 독립 분류되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS219는 내용이 없는 card가 bodyless host 옆 note-taking 위치를 차지할 때 가장 잘 형성된다.",
+      "생성되는 것은 본문이 아니라 절차의 종결부와 확인선이며, 이 때문에 노출 인원은 `이미 검토되었음`이라는 인상을 먼저 받는다.",
+      "실제 본문은 계속 후면에 남아 있는 경우가 많고, generated card를 근거로 pairing이나 승인 판단을 진행하면 잘못된 재결합과 검토 종료가 앞당겨진다."
+    ],
+    "stages": [
+      {
+        "name": "배치 단계",
+        "description": "blank note card, witness slip, shorthand card가 bodyless front host의 측방 12~42 cm 또는 rear-gap host 전방 0.6~0.9 m 청취축에 놓인다. 이 단계에서는 육안상 변화가 거의 없고, 열영상에서만 약한 저온대가 먼저 나타날 수 있다."
+      },
+      {
+        "name": "전사 단계",
+        "description": "22~93초 안에 card 상단 또는 중앙에 1~4행의 회청색 문구가 생긴다. 문구는 제목 파편과 종결 어휘 중심이며, 실본문을 안정적으로 재현하지 않는다."
+      },
+      {
+        "name": "확인선 단계",
+        "description": "card 하단에 lower line, check box, 짧은 completion cue가 형성된다. 이 단계에서 관측자는 generated card를 실제 청취·검토 메모로 오인하기 쉽다."
+      },
+      {
+        "name": "오판 단계",
+        "description": "generated card를 읽거나 장부에 옮기거나 body 후보와 함께 같은 평면에 두면 검토 종료, 승인 사유, pair 확인을 앞당기려는 행동이 발생한다. 투명 비교면에서는 [COS205 — 회청색 대조합치막](./cos205.json)형 false match 위험이 특히 높다."
+      },
+      {
+        "name": "감쇠 또는 잔류 단계",
+        "description": "matte-black mask와 불투명 봉인을 적용하면 가독성은 19~33분 사이 약화되는 경우가 많다. 그러나 read-aloud가 있었던 card는 43~67분까지 지속될 수 있고, contaminated log나 lower line trace로 잔류한다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS219는 [COS217 — 회청색 선행대독면](./cos217.json)과 [COS218 — 회청색 후면청취막](./cos218.json)의 bodyless reading/listening 오염을 **portable note card**로 옮기는 하류 현상으로 가장 자주 확인되었다.",
+      "빈 승인축인 [COS149 — 무인 결재석](./cos149.json)은 문구를 승인·종결형으로 편향시켰고, 실제 본문은 반복적으로 [COS197 — 회청색 후행본문퇴](./cos197.json)형 후면 위치에서 회수되었다.",
+      "generated card를 pairing 근거로 투명 비교면에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) onset이 급증하므로, COS219 card는 검토 증거가 아니라 오염 표본으로만 취급한다.",
+      "공통적으로, [COS168 — 무영 압지추](./cos168.json), [COS191 — 회청색 공란상정대](./cos191.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS216 — 회청색 공석대행패](./cos216.json)은 generated card가 `이미 정리된 앞면 메모`처럼 보이도록 안정화하는 상류 또는 병행 조건으로 기록되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 149,
+        "targetTitle": "[COS149 — 무인 결재석](./cos149.json)",
+        "description": "빈 승인석 또는 빈 승인축이 card 전방 0.7~1.2 m 범위에 있을 때 approval-biased 문구와 check box가 크게 증가했다. 10회의 빈 승인축 대조에서 8회가 `승인`, `검토 종료`, `확인`류 종결구를 만들었고, 좌석을 점유하거나 차폐한 대조군은 1/10만 약양성이었다. COS219는 승인자를 만들지 않지만, [COS149 — 무인 결재석](./cos149.json)이 제공하는 빈 권한축 위에 portable sign-off note를 먼저 남길 수 있다."
+      },
+      {
+        "targetId": 197,
+        "targetTitle": "[COS197 — 회청색 후행본문퇴](./cos197.json)",
+        "description": "양성 사건 16건에서 실제 body는 generated card가 아니라 후면 랙, rear gap, opaque sleeve 뒤에서 회수되었다. 회수 거리는 0.4~1.8 m 또는 7~19 mm 간극이 가장 많았고, generated card가 정확한 본문 위치를 지시한 사례는 12건 중 1건뿐이었다. 따라서 COS219는 [COS197 — 회청색 후행본문퇴](./cos197.json)의 rear body 존재를 대체하지 못하며, card 문구보다 footer hash와 rear search가 우선한다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "[COS205 — 회청색 대조합치막](./cos205.json)",
+        "description": "generated card의 lower line이나 completion cue를 pairing 근거로 사용해 wrong body 후보를 transparent comparison board에 올리면 false match onset이 급증했다. 8쌍의 wrong candidate 실험에서 6쌍이 41~109초 안에 [COS205 — 회청색 대조합치막](./cos205.json)과 같은 정렬·shared lower cue를 보였고, 같은 표본을 불투명 트레이에 분리한 대조군은 0/8이었다. COS219 card는 pair 확인의 실마리가 아니라 false pair acceptance cue다."
+      },
+      {
+        "targetId": 217,
+        "targetTitle": "[COS217 — 회청색 선행대독면](./cos217.json)",
+        "description": "bodyless front host 옆에 놓인 blank paper card는 [COS217 — 회청색 선행대독면](./cos217.json)의 line-by-line 대독 오염을 portable pseudo-transcript로 바꾸는 경향을 보였다. 14회의 bodyless front 노출 중 11회에서 COS219 card가 형성되었고, complete packet 12회 대조에서는 0회였다. generated card의 휴지점 위치와 종결구가 COS217 host의 거짓 줄 구조를 따라 반복되는 점이 확인되었다."
+      },
+      {
+        "targetId": 218,
+        "targetTitle": "[COS218 — 회청색 후면청취막](./cos218.json)",
+        "description": "rear-gap host의 정면 청취축에 놓인 blank witness card는 visible text가 없어도 짧은 종결형 문구를 획득할 수 있었다. 12회의 rear-gap 노출 중 9회에서 card가 생성되었고, 문구는 raw audio의 완전한 전사와 일치하지 않았으며 sentence-final fragment만 공유했다. 이는 [COS218 — 회청색 후면청취막](./cos218.json)의 청취 파편이 COS219에서 portable confirmation note로 오인되는 과정을 시사한다."
+      },
+      {
+        "targetId": 168,
+        "targetTitle": "[COS168 — 무영 압지추](./cos168.json)",
+        "description": "[COS168 — 무영 압지추](./cos168.json) 조건에서는 generated card가 unresolved bundle의 맨 윗장처럼 눌려 남아, 실제 본문이나 rear body보다 `이미 정리된 상단 메모`로 먼저 취급될 가능성이 커진다. COS168이 여러 절차 외피를 한 평면에 눌러 current bundle처럼 보이게 만든다면, COS219는 그 평면 맨 위에 `이미 검토된 note`를 남겨 같은 오판을 휴대 가능한 card 수준으로 농축한다."
+      },
+      {
+        "targetId": 191,
+        "targetTitle": "[COS191 — 회청색 공란상정대](./cos191.json)",
+        "description": "[COS191 — 회청색 공란상정대](./cos191.json)에서 생성된 digest나 blank 발표 card가 연단을 벗어나 bodyless host 옆 note-taking 위치에 놓이면, 상정 권한이 `검토 종료`형 generated note로 축소·이행되는 사례가 관찰된다. COS191이 전면 상정 권한을 만든다면, COS219는 그 권한이 연단 밖에서 portable completion note로 남는 하류 단계일 수 있다."
+      },
+      {
+        "targetId": 204,
+        "targetTitle": "[COS204 — 회청색 보류인계슬리브](./cos204.json)",
+        "description": "[COS204 — 회청색 보류인계슬리브](./cos204.json) 3~4단계 표본 옆 blank note card는 실제 미수행 상태가 해소되지 않았는데도 `인계 가능`, `검토 종료`, `청취 완료`류 completion cue를 먼저 남길 수 있다. 이때 generated card는 COS204의 갈색 미수행열을 해결하지 않고, hold 상태 위에 종결 어휘만 portable note로 덧씌운다."
+      },
+      {
+        "targetId": 216,
+        "targetTitle": "[COS216 — 회청색 공석대행패](./cos216.json)",
+        "description": "[COS216 — 회청색 공석대행패](./cos216.json)가 빈 전면 자리를 current item처럼 보이게 만들면, 인접한 blank note card는 그 자리에 대한 `반납 확인`, `검토 완료`, `현재본 확인`을 적은 메모처럼 변질될 수 있다. 즉 COS216이 자리의 current성을 front card에 부여하고 COS219가 그 current성을 portable sign-off note로 압축하는 관계가 반복 확인되었다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-219-01 / host 유형 비교",
+      "description": "2044-05-13 10:00~14:20, A-3와 Q-5B에서 bodyless front host 14점, rear-gap host 12점, complete packet 12점, blank board control 12점을 비교했다. 숙주는 ruled shorthand card와 blank witness slip 26매였다. bodyless front host는 11/14, rear-gap host는 9/12에서 22~93초 안에 COS219가 형성되었고, complete packet과 blank board control은 0/24였다."
+    },
+    {
+      "label": "EXP-219-02 / card 재질 비교",
+      "description": "active host를 고정한 상태에서 short-fiber shorthand card 16매, 무산성 index card 16매, PET card 12매, laminated form 12매를 각각 180초 노출했다. shorthand card는 14/16, index card는 8/16에서 line formation이 확인되었고 PET·laminated 대조군은 0/24였다. paper 계열에서도 fiber가 짧고 표면 sizing이 약한 card가 더 높은 형성률을 보였다."
+    },
+    {
+      "label": "EXP-219-03 / 빈 승인축 영향",
+      "description": "2044-05-14 09:30~11:20, generated card host 10세트를 빈 승인석 정면 0.9 m 조건과 차폐·점유된 좌석 조건으로 나누어 시험했다. 빈 승인축 조건은 8/10에서 `승인`, `검토 종료`, check box를 형성했고, 점유·차폐 조건은 1/10의 약한 lower line만 남았다. [COS149 — 무인 결재석](./cos149.json) 기하가 approval-biased 문구를 유도하는 것으로 해석된다."
+    },
+    {
+      "label": "EXP-219-04 / rear body 거리 의존성",
+      "description": "2044-05-14 14:10~16:30, 대응 body를 host 후방 0.8 m, 1.5 m, 2.0 m, 6.0 m 위치에 두고 generated card 형성률을 비교했다. 2.0 m 이내 rear zone에서는 13/16이 full lower line과 2행 이상 문구를 보였고, 6.0 m 격리군은 2/16의 약한 제목 파편만 나타났다. 실제 body의 근거리 후열 존재가 COS219의 안정화 조건일 가능성이 높다."
+    },
+    {
+      "label": "EXP-219-05 / transparent pairing misuse",
+      "description": "2044-05-15 16:08~18:00, generated card를 pairing cue로 사용해 wrong body 후보 8쌍을 transparent comparison board에, 대조군 8쌍을 불투명 흑색 트레이에 배치했다. transparent군은 6/8이 41~109초 안에 [COS205 — 회청색 대조합치막](./cos205.json)형 정렬을 보였고, 불투명군은 0/8이었다. generated card를 body 선택 근거로 쓰는 절차가 직접적인 위험 요인으로 확인되었다."
+    },
+    {
+      "label": "EXP-219-06 / read-aloud 대 masking",
+      "description": "positive card 10점을 read-aloud군 5점과 matte-black masking군 5점으로 나누었다. read-aloud군은 지속시간 43~67분, lower line darkening 4/5, contaminated log 연장 3/5를 보였고, masking군은 19~33분 내 4/5가 자발 약화되었으며 0/5에서만 lower line 전이가 확인되었다. generated card는 읽을수록 더 안정해지는 경향을 보였다."
+    }
+  ],
+  "handlingProcedures": [
+    "bodyless front host 또는 rear-gap host 반경 1 m 안에서는 blank note card, witness slip, ruled shorthand card를 사용하지 않는다. 기록은 사전 번호가 인쇄된 흑색 code paddle과 외부 타임스탬프 보드로만 수행한다.",
+    "회청색 문구나 lower line이 보이면 즉시 낭독과 필사를 중지하고, 가시광·440 nm 사광·열영상 3조건으로 촬영한 뒤 matte-black mask로 가린다.",
+    "generated card는 `A219-card`, 대응 실제 body는 `B219-body`, contaminated log·lower line 잔류는 `T219-trace`로 따로 등록한다. 세 표본은 같은 봉투와 같은 current chain을 공유하지 않는다.",
+    "generated card를 body 선택, 승인 사유 확인, 검토 종료, 청취 완료의 근거로 사용하지 않는다. 실제 판정은 footer hash, 총질량, 스테이플 간격, rear search 결과로만 수행한다.",
+    "빈 승인석, 빈 승인대, clear acrylic stand, transparent comparison board는 양성 host 반경 2 m 밖으로 치우거나 차폐한다. 특히 [COS149 — 무인 결재석](./cos149.json) 축과 겹친 환경은 우선 해체한다.",
+    "실제 body 수색은 current host의 정면이 아니라 후면 0.3~2 m, rear gap 7~20 mm, 직전 opaque sleeve, 후면 랙 순으로 시작한다. generated card의 문구를 1차 좌표로 사용하지 않는다.",
+    "read-aloud가 이미 발생한 경우 해당 시점 이후 작성된 ledger line, approval note, review box는 모두 `T219-trace`로 재분류하고 감사서버에 수정 이력을 남긴다.",
+    "generated card를 transparent plane이나 스캐너 유리 위에 올리지 않는다. 이 조치는 [COS205 — 회청색 대조합치막](./cos205.json)형 false match를 촉진할 수 있다.",
+    "봉인 해제 전까지 generated card를 host 옆에 다시 놓지 않는다. 같은 문구를 재확인하려는 재노출은 지속시간 연장과 lower line 진화를 일으켰다."
+  ],
+  "hypotheses": [
+    "가설 1: COS219는 실본문이나 실제 발화를 충실히 전사하지 않고, bodyless review 과정에서 남는 **종결 어휘와 확인선만을 휴대 가능한 card로 압축**한다.",
+    "가설 2: [COS217 — 회청색 선행대독면](./cos217.json)과 [COS218 — 회청색 후면청취막](./cos218.json)은 COS219의 상류 host이며, generated card는 line rhythm과 sentence-final fragment를 portable note 형식으로 옮긴 결과일 수 있다.",
+    "가설 3: [COS149 — 무인 결재석](./cos149.json)과 같은 빈 권한축은 generated card의 어휘를 `승인`, `검토 종료`, `확인` 쪽으로 편향시킨다. card가 권한을 만드는 것은 아니지만, 권한이 있었던 것 같은 외형을 먼저 부여한다.",
+    "가설 4: 실제 내용과 연속성은 generated card가 아니라 [COS197 — 회청색 후행본문퇴](./cos197.json)형 후면 본문 쪽에 남는다. COS219가 강할수록 인원은 content recovery보다 portable completion note를 더 먼저 믿게 된다.",
+    "가설 5: generated card를 pairing evidence로 사용하는 행위는 [COS205 — 회청색 대조합치막](./cos205.json)의 acceptance cue를 공급하는 보조 조건일 수 있다. 따라서 COS219는 단독 현상이라기보다 front/body 분리 계열의 오판 증폭 단계로 보는 편이 현재 자료와 잘 맞는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "허위 검토·청취 기록 생성",
+      "assessment": "높음. generated card 한 장이 실제 review note나 witness slip처럼 보이며 검토 종료를 앞당길 수 있다."
+    },
+    {
+      "category": "wrong body 선택 및 false pair",
+      "assessment": "높음. transparent plane에서 generated card를 pairing cue로 사용하면 [COS205 — 회청색 대조합치막](./cos205.json)형 오정합이 빠르게 발생한다."
+    },
+    {
+      "category": "rear body 수색 지연",
+      "assessment": "높음. generated card 문구를 믿을수록 후면 본문 회수가 늦어지고 [COS197 — 회청색 후행본문퇴](./cos197.json)형 잔류가 장기화된다."
+    },
+    {
+      "category": "승인 축 오염",
+      "assessment": "중간 이상. [COS149 — 무인 결재석](./cos149.json) 환경에서는 approval-biased 문구가 강화되어 승인 근거가 있었던 것처럼 보일 수 있다."
+    },
+    {
+      "category": "오염 로그 확산",
+      "assessment": "중간. read-aloud 뒤 contaminated ledger와 lower line trace가 남아 사건 종료 후에도 잘못된 완료감이 유지될 수 있다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS219 generated card는 **전사본처럼 보이는 오염 표면**이지, 청취·검토가 실제로 수행되었다는 증거가 아니다. 문구의 그럴듯함이 높을수록 rear body 회수와 hash 대조를 더 먼저 시행해야 한다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"카드가 먼저 끝났다고 적고 있었지, 우리가 실제로 끝낸 건 아니었습니다.\" — 2044-05-11 2-F incident 직후 K-27 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "generated card는 자체적으로 완전한 본문을 만든 적이 없다. 현재까지 일치하는 것은 제목 파편과 종결 어미 정도이며, 실제 본문 연속성은 늘 별도 body에서만 확인되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"lower line이 있으니 이미 누군가 확인한 메모라고 생각했습니다. 그 판단이 제 추정이었다는 점을 인정합니다.\" — N-16 사후 면담"
+    },
+    {
+      "type": "paragraph",
+      "content": "읽지 않은 card는 대개 30분 내외에 약화되지만, 읽거나 필사한 card는 더 오래 남고 contaminated log를 추가로 낳았다. 따라서 COS219의 1차 억제는 소거가 아니라 **비가독 유지**에 있다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-219 정식 편입",
+      "paragraphs": [
+        "2044-05-08~2044-05-19 초동 기록에서는 현상을 `T-219`, `review-end note`, `hearing close slip`, `종결 메모 카드`로 병기했다.",
+        "2044-05-13~2044-05-15 통제 실험 결과, 본 항목은 실제 본문 전사보다 bodyless review의 종결 어휘와 lower line을 portable card로 옮기는 현상임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 종결전사패**로 확정하고, 검토·청취 완료 증거가 아닌 card형 오염 표본으로 분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A219/B219/T219 접두 및 무필기 규정",
+      "paragraphs": [
+        "generated card는 `A219-card-일련번호`, 실제 rear body는 `B219-body-일련번호`, contaminated log·lower line 잔류·read-aloud 뒤 trace는 `T219-trace-일련번호`를 부여한다.",
+        "`A219-card`, `B219-body`, `T219-trace`는 같은 봉투, 같은 current chain, 같은 comparison board로 병합하지 않는다.",
+        "관련 구역에서는 blank note card 대신 흑색 code paddle과 외부 타임스탬프 보드만을 사용하며, generated card의 문구를 육성으로 읽지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "다음 4개 조건 중 3개 이상을 만족하면 COS219 의심 표본으로 분류한다: `1)` blank paper card에 1~4행 회청색 문구가 형성될 것, `2)` lower line 또는 check box가 하단 4~11 mm 위치에 나타날 것, `3)` raw audio나 visible body text에 해당 문구 전체가 존재하지 않을 것, `4)` 실제 body가 rear zone에서 별도로 회수되거나 rear search 필요성이 확인될 것.",
+        "정식 판정 전에는 generated card를 메모, witness slip, approval note, review completion record로 사용하지 않는다."
+      ]
+    },
+    {
+      "title": "무필기 대체 기록 절차",
+      "paragraphs": [
+        "bodyless front host 또는 rear-gap host 반경 1 m 안에서는 종이 메모를 사용하지 않고, 사전 번호가 매겨진 흑색 code paddle과 외부 타임스탬프 모니터만 사용한다.",
+        "필요한 주석은 외부 단말에 `L1`, `L2`, `rear found`, `mask applied` 같은 비언어 코드로만 남기고, actual body 회수 뒤에만 원문 장부로 환원한다.",
+        "read-aloud나 현장 필사가 이미 발생했다면 해당 시점 이후의 수기 기록은 모두 `T219-trace`로 재분류하고 감사 로그에 정정본을 첨부한다."
+      ]
+    },
+    {
+      "title": "rear search 우선순위",
+      "paragraphs": [
+        "1차 수색은 current host 후방 0.3~2 m, rear gap 7~20 mm, 직전 opaque sleeve를 대상으로 한다.",
+        "2차 수색은 후면 랙, tray underside, cable race, 직전 station rear pocket을 대상으로 한다.",
+        "generated card의 문구와 lower line은 좌표 지시가 아니라 오염 어휘로 취급하며, 수색 순서를 바꾸는 근거로 사용하지 않는다."
+      ]
+    }
+  ]
+}
