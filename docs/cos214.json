@@ -386,6 +386,14 @@
         "[COS214 — 회청색 장넘김대행막](./cos214.json) active host를 rear-gap shell에 접촉시키거나 thumb-flip을 가하면, [COS218 — 회청색 후면청취막](./cos218.json)의 대리낭독 지속시간이 평균 12.1 s에서 26.8 s로 증가하고 휴지점 수가 늘어나는 경향이 확인되었다. 2044-04-19 C-2 사건 이후 no-leafing 대조 8회 전부에서 넘김 cue가 추가되었으나, recovered body와의 문장 일치율은 증가하지 않았다.",
         "따라서 넘김음이 들린다는 이유로 본문 존재나 페이지 순서 복원을 추정하지 않는다. COS214 숙주가 결합한 rear-gap 표본은 no-leafing triad와 [COS218 — 회청색 후면청취막](./cos218.json) no-listening triad를 동시에 적용해 분리 억제한다."
       ]
+    },
+    {
+      "relatedId": 220,
+      "type": "reciprocal",
+      "title": "COS220 상호기록",
+      "paragraphs": [
+        "[COS220 — 회청색 반출대행패](./cos220.json)는 [COS214 — 회청색 장넘김대행막](./cos214.json)의 manual page-turn cue가 마지막 확인을 통과한 것처럼 보인 직후, empty host에 최종 outbound pass가 부착되는 release 단계의 대표 후속 현상이다. 실제 body가 rear guide나 correction tray 뒤에 남아 있어도 넘김감과 route code가 함께 있으면 취급자는 `확인했고 이제 보낸다`는 잘못된 결론에 가장 쉽게 도달한다. COS214 숙주에서 회청색 lower band나 dock route가 생기면 thumb-flip 결과를 즉시 무효화하고, no-leafing triad·rear body search·[COS220 — 회청색 반출대행패](./cos220.json) pass 분리를 동시에 시행한다."
+      ]
     }
   ],
   "supplementalSections": [

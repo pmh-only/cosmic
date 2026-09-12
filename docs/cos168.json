@@ -344,6 +344,14 @@
         "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS168 — 무영 압지추](./cos168.json) 조건에서 unresolved bundle의 맨 윗장처럼 눌린 generated card가 `이미 검토된 상단 메모`로 오인되는 후속 표본으로 기록되었다. 이 card는 실제 본문을 복원하지 않으며, 오히려 rear body 수색보다 상단 note를 먼저 믿게 만드는 압지성 current 오염을 강화한다.",
         "따라서 COS168 묶음 위에 회청색 lower line이나 check box를 얻은 card가 놓여 있어도 기준본이나 요약본으로 채택하지 않는다. generated card는 [COS219 — 회청색 종결전사패](./cos219.json) 오염 표본으로 분리 봉인하고, 하부 원문 또는 원문 부재 상태를 먼저 검증한다."
       ]
+    },
+    {
+      "relatedId": 220,
+      "type": "reciprocal",
+      "title": "COS220 상호기록",
+      "paragraphs": [
+        "[COS220 — 회청색 반출대행패](./cos220.json)는 [COS168 — 무영 압지추](./cos168.json)가 상단 장에 부여한 권위를 최종 반출 card로 전환하는 downstream 단계로 기록된다. 여러 절차 외피가 한 평면에 눌려 `현재 한 묶음`처럼 보이는 상태에서 작은 release pass가 맨 위에 놓이면, 실제 본문 검증이 끝나지 않았어도 그 상단 card가 묶음 전체의 출고 허가처럼 읽힐 수 있다. COS168 자료에서 압지된 상단 card에 route code나 outbound band가 발생하면 상단 표면을 기준본으로 채택하지 말고, 하부 원문 또는 원문 부재 상태를 먼저 검증한 뒤 [COS220 — 회청색 반출대행패](./cos220.json)와의 결합 사례로 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": []

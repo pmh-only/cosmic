@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 2,
+    "containment": 5
+  },
+  "classificationRationale": {
+    "secrecy": "2044-05-03과 2044-05-07 두 차례에 실제 본문이 뒤에 남아 있는 host가 반출 게이트 G-R2와 dock pouch 단계 직전까지 진행되었고, 회청색 pass에 기록된 route code가 제한 보관 구역과 도크 경로를 직접 반영했다. 외부에 공개될 경우 기관의 최종 반출·봉인 사슬을 역이용할 수 있으므로 secrecy 4로 평가한다.",
+    "permission": "판정에는 footer hash, rear body 회수 좌표, gate PLC log, dispatch manifest, 독립 계량값, [COS214 — 회청색 장넘김대행막](./cos214.json)의 no-leafing 기록, [COS189 — 회청색 무재하중표](./cos189.json)의 declared mass 대조를 함께 열람해야 했다. 하위 운영 권한만으로는 false outbound를 되돌릴 수 없었으므로 permission 4가 필요하다.",
+    "chaos": "used release tray와 blank release stock이 함께 있을 때 active host 12점 중 10점이 58~201초 내 반응했고 control 12점은 모두 음성이었다. 다만 visible pass를 제거했을 때 전이가 인접 pouch나 slip로 이동한 사례는 6회 중 3회, 거리도 11~34 cm로 제한되어 있어 완전 무작위 수준은 아니므로 chaos 3으로 본다.",
+    "danger": "2044-05-03에는 empty host가 반출 게이트 READY 상태까지 진행되었고, 2044-05-07에는 blank dock pouch 전이 뒤 trolley latch가 해제되어 카트가 42 cm 이동했다. 직접 치명성은 낮지만 제한 기록의 오반출과 body 분리 은폐를 유발하므로 danger 4로 평가한다.",
+    "popularity": "임시등록 T-220 이후 18일 동안 release audit 5건, rechain review 4건, training dossier 4건 등 총 13건의 직접 참조가 확인되었다. 반출·교정 부서 중심의 집중 참조로, 기관 전체 상시 기준보다는 낮아 popularity 2로 판정한다.",
+    "containment": "visible pass만 떼어낸 6회 중 3회에서 adjacent blank stock으로 측방 전이가 발생했고, used release board 자체가 host로 재분류되었다. 전 구간 manual mode 전환, 70 cm blank-stock 배제, host/pass/body/log 4분리, full-tray freeze, 30분 재관찰을 동시에 유지해야 안정되므로 containment 5가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 K-04",
+        "role": "체인 검증 기록관",
+        "status": "active",
+        "involvement": "2044-05-03 최초 near-release에서 footer hash 대조와 rear body search를 지시해 wrong outbound를 중단했고, 임시등록 T-220 개설과 후속 체인 분리 규정을 승인했다."
+      },
+      {
+        "name": "보존기사 H-19",
+        "role": "release line 보존기사",
+        "status": "reassigned",
+        "involvement": "초기 사건에서 blank release pass를 active host와 같은 used tray에 두어 최초 반출대행패 형성에 관여했고, 2044-05-07 peel-transfer 사고 뒤 rear-search 전담 구역으로 재배치되었다."
+      },
+      {
+        "name": "시설운용원 M-27",
+        "role": "게이트·카트 로직 관리",
+        "status": "active",
+        "involvement": "G-R2, trolley latch, dispatch manifest의 raw log를 보존하고 모든 후속 재현 실험을 manual mode와 PLC audit 조건으로 전환했다."
+      },
+      {
+        "name": "분석관 L-31",
+        "role": "반출·재결합 분석관",
+        "status": "active",
+        "involvement": "used release surface 재현 시험과 deactivation 방법 비교를 총괄했고, 70 cm blank-stock 배제 반경과 full-tray freeze 절차를 설계했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-05-03 17:42 KST",
+        "label": "최초 near-release 확인",
+        "description": "제2보존동 1층 반출예비실 R-2의 used release tray OR-3에서 blank release pass가 73초 만에 route code와 declared mass를 얻었고, 실제 body는 correction tray 후방에 남아 있는 상태에서 gate G-R2가 READY로 전환되었다."
+      },
+      {
+        "date": "2044-05-04 09:10 KST",
+        "label": "임시등록 T-220 개설",
+        "description": "회수된 pass, gate log, rear body packet이 서로 다른 체인으로 분리 봉인되었고, `gray outbound pass`, `bodyless release card`, `T-220` 메모가 단일 현상으로 통합되었다."
+      },
+      {
+        "date": "2044-05-06 13:30~16:20 KST",
+        "label": "used release tray 재현 성공",
+        "description": "active host 12점과 control 12점을 이용한 matrix 실험에서 active 10점이 58~201초 내 회청색 반출대행패를 형성했고 control은 0건이었다."
+      },
+      {
+        "date": "2044-05-07 10:12 KST",
+        "label": "visible pass 제거 중 2차 전이",
+        "description": "deactivation 시험에서 visible pass를 떼어낸 뒤 62초 만에 adjacent blank dock pouch에 동일 lower line과 route code가 옮겨 붙고 trolley latch가 해제되었다."
+      },
+      {
+        "date": "2044-05-11 08:00 KST",
+        "label": "manual-only release protocol 발효",
+        "description": "전 release zone에 full-tray freeze, rear body 0.5~2.5 m search, blank-stock 70 cm exclusion, no-peel 규정이 동시에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-220-01",
+        "date": "2044-05-03",
+        "location": "제2보존동 1층 반출예비실 R-2 / outgoing rack O-3",
+        "title": "본문 없는 host의 반출 직전 승인",
+        "involvedPersonnel": [
+          "기록관 K-04",
+          "보존기사 H-19",
+          "시설운용원 M-27"
+        ],
+        "narrative": [
+          "H-19는 [COS214 — 회청색 장넘김대행막](./cos214.json) 후속 검토 표본 H214-host-03과 실제 본문 B214-body-03를 의도적으로 분리한 채 used release tray OR-3 위에 올려 촬영 준비를 하고 있었다. 같은 tray 위 24 cm 거리에는 아직 기록되지 않은 blank release pass P-R2-11이 놓여 있었다. 당시 실내 조건은 23.7°C, 상대습도 45%, 상부 LED 447 nm 520 lx였고, M-27은 G-R2를 HOLD에서 standby latency 시험용 READY-pending 상태로 남겨 두고 raw log를 채집 중이었다. 재접촉 없이 73초가 지나자 P-R2-11 하단에 폭 7 mm의 회청색 띠가 생기고 route code `OUT-R2-E`, declared mass `1.58 kg`, page total `23`이 나타났다. 그러나 독립 저울은 H214-host-03를 29.4 g으로, separate body packet를 148.6 g으로 기록했으며, actual body는 CT-2 후방 1.1 m 위치에 그대로 있었다.",
+          "H-19는 이전 교대의 승인 상태가 지연 반영된 것으로 해석하고 pass를 host 상단에 클립으로 고정한 뒤 gate 쪽으로 0.6 m 이동시키려 했다. 이 선택 뒤 G-R2 상태는 READY로 바뀌고 trolley latch가 해제되었다. K-04는 host의 footer hash가 공란이며 B214-body-03가 여전히 correction tray에 있다는 점을 지적하고 이동을 물리적으로 중단했다. 팀은 visible pass만 떼어내지 않고 tray 전체를 불투명 lid로 덮어 동결했으며, 이어진 독립 계량과 rear body search를 통해 complete packet이 존재하지 않음을 확정했다."
+        ],
+        "outcome": "R-2 line은 4시간 20분 정지되었고 임시등록 T-220이 개설되었다. H-19는 release line 직무에서 제외되었으며, used tray OR-3는 A220-host surface로 봉인되었다."
+      },
+      {
+        "code": "INC-220-02",
+        "date": "2044-05-07",
+        "location": "제2보존동 2층 release test cage L-2",
+        "title": "visible pass 제거 후 blank pouch로의 측방 전이",
+        "involvedPersonnel": [
+          "분석관 L-31",
+          "보존기사 H-19",
+          "시설운용원 M-27",
+          "기록관 K-04"
+        ],
+        "narrative": [
+          "L-31는 회청색 pass를 개별 봉투에 떼어 넣으면 현상이 해제되는지 확인하기 위해 used release board RB-R2-2 위에 H220-host-02와 A220-pass-03를 놓고, 우측 19 cm 위치에 blank dock pouch DP-4를 대조군으로 배치했다. M-27은 전이 경로 확인을 위해 trolley latch disable을 20초 뒤에 적용하도록 예약했고, H-19는 임시 금지 지침을 어기고 visible pass를 host에서 직접 떼어 증거 sleeve에 넣었다. pass 표면의 회청색 안료는 즉시 흐려졌으나 62초 뒤 DP-4 하단에 같은 방향의 lower line과 route code가 형성되었고, trolley latch가 해제되며 카트가 전방으로 42 cm 이동했다.",
+          "L-31는 카트를 계속 보내지 않고 wheel brake와 opaque cover를 동시에 적용해 이동을 중단시켰다. K-04는 visible pass 제거가 소거가 아니라 경로 이탈 전이를 일으켰다고 판단하고, 먼저 actual body를 찾도록 지시했다. 후속 rear search에서 본문 묶음은 CT-2 후미 0.9 m 지점에서 회수되었고, H-19가 card만 제거하면 된다고 판단한 선택이 직접적인 2차 전이 원인으로 기록되었다. 팀은 host, pouch, board, route log를 네 건의 পৃথ পৃথ chain으로 재분리했다."
+        ],
+        "outcome": "visible pass peel, relabel, route overwrite가 전면 금지되었다. used release board와 인접 blank pouch는 모두 active host로 재분류되었고, 70 cm blank-stock exclusion 반경이 도입되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A220-pass-01",
+        "type": "회청색 반출대행패 원본",
+        "description": "2044-05-03 OR-3에서 형성된 최초 pass로, 하단 7 mm 회청색 띠, route code `OUT-R2-E`, declared mass `1.58 kg`, page total `23`이 남아 있다. 독립 approval log와 수기 결재 흔적은 없다.",
+        "custodyStatus": "불투명 PTFE frame PF-220-1에 단독 봉인되었고 host·body와의 동봉이 금지되어 있다."
+      },
+      {
+        "code": "R220-log-01",
+        "type": "게이트·카트·manifest raw log",
+        "description": "G-R2의 READY 전환, trolley latch unlock, dispatch manifest line 생성 시각을 포함한 PLC log 세트다. actual body의 위치 로그와 시각상 불일치가 병기되어 있다.",
+        "custodyStatus": "시설 audit 서버 읽기 전용 저장 후 종이 추출본을 별도 금고에 분산 보관 중이다."
+      },
+      {
+        "code": "VID-220-01",
+        "type": "가시광·445 nm·열영상 합성 기록",
+        "description": "P-R2-11과 DP-4에 회청색 line이 형성되는 과정, tray 위 미세 이동, surface 저온대 형성을 3각도에서 기록한 영상 묶음이다. OR-3와 RB-R2-2 두 host surface가 모두 포함된다.",
+        "custodyStatus": "보안영상금고 3호에 원본 보관, 분석용 사본 1부만 L-2 cage에서 열람 가능하다."
+      },
+      {
+        "code": "B220-body-01",
+        "type": "rear body 회수 packet",
+        "description": "INC-220-01과 INC-220-02에서 각각 후방 correction 위치에서 회수된 actual body 묶음이다. footer hash와 마지막 수기 장수는 route pass가 주장한 값이 아니라 원기록과 일치한다.",
+        "custodyStatus": "저조도 보존함 LC-220-B에 개별 봉인되어 있으며 A220-pass 계열과 동일 tray 반입이 금지되어 있다."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 K-04",
+        "role": "체인 검증 기록관",
+        "context": "INC-220-01 중단 직후 진술",
+        "statement": "관찰된 사실은 회청색 하단띠, route code, READY 전환, 그리고 본문이 CT-2 뒤에 남아 있었다는 점이다. `반출 승인이 있었다`는 말은 해석일 뿐이며, 독립 approval log와 actual body가 이를 지지하지 않았다."
+      },
+      {
+        "speaker": "보존기사 H-19",
+        "role": "release line 보존기사",
+        "context": "직무 재배치 면담",
+        "statement": "제가 본 것은 pass가 먼저 채워지고 host가 이미 검토된 packet처럼 보였다는 현상이다. 그것을 지연 승인 반영으로 판단해 gate 쪽으로 옮긴 것은 제 선택이었고, 실제로는 본문이 뒤 tray에 남아 있었다."
+      },
+      {
+        "speaker": "시설운용원 M-27",
+        "role": "게이트·카트 로직 관리",
+        "context": "G-R2 audit memo",
+        "statement": "raw log상 G-R2와 latch는 좌석 센서나 수기 결재보다 route field와 declared mass 필드에 먼저 반응했다. 그것이 단순 PLC 버그인지의 해석은 유보하지만, 적어도 실제 body 존재를 확인한 뒤 열린 것은 아니라는 사실은 분명하다."
+      }
+    ]
+  },
+  "id": 220,
+  "title": "회청색 반출대행패",
+  "language": "ko-KR",
+  "overview": [
+    "**COS220**은 반출 승인 문서가 실제로 작성·결재되지 않았거나, 실제 본문이 뒤에 남아 있는 상태에서도 empty host·허위 복합체·bodyless carrier 앞에 **회청색 반출 카드와 출고 상태**를 먼저 형성하는 기록-설비 복합 현상이다. 현재 통칭은 **회청색 반출대행패**이다.",
+    "현상은 주로 used release tray, outgoing rack, dock pouch, blank release pass에서 발생하며, route code·page total·declared mass·`OUTBOUND READY`와 유사한 필드를 남긴다. 그러나 footer hash, 실제 질량, rear body 위치, 개봉 기록은 이를 지지하지 않는다.",
+    "COS220의 핵심은 문서를 밖으로 보내는 것이 아니라, **보내도 된다는 마지막 절차 외피를 내용 부재 쪽에 먼저 부여한다**는 점이다. 실제 본문은 보통 correction tray, rear guide, previous host 뒤 0.7~2.3 m 범위에서 따로 회수된다.",
+    "첫 확정 사례는 2044-05-03 제2보존동 1층 반출예비실 R-2에서 발생했다. 이후 재현 시험에서 active host 12점 중 10점이 58~201초 내 회청색 반출대행패를 형성했고, complete file과 inert PTFE board 대조군은 0건이었다."
+  ],
+  "identificationTraits": [
+    "blank release pass, outgoing pouch, host top card의 하단 또는 좌측에 폭 5~9 mm의 회청색 무광 띠가 40~210초 내 형성된다.",
+    "띠가 형성된 뒤 route code, dock line, provisional page total, declared mass가 먼저 채워지며, 독립 approval log와 수기 결재 흔적은 비어 있는 경우가 많다.",
+    "active host의 실측 질량은 19.8~38.7 g 또는 expected complete mass보다 현저히 낮지만, pass와 gate log는 1.21~1.63 kg 수준의 출고 가능 값을 주장할 수 있다.",
+    "actual body는 current host나 pass와 함께 있지 않고, correction tray·rear guide·previous rack 뒤 0.7~2.3 m 범위에서 별도로 회수되는 사례가 반복되었다.",
+    "445±6 nm 사광을 18~24°로 입사하면 pass 하단띠와 used release surface에 31~46 cm 길이의 회청색 반사선이 보이며, 열영상에서는 인접 면보다 0.6~1.2°C 낮게 나타난다.",
+    "visible pass를 떼어내거나 route code를 덧쓰기 하면 소거보다 인접 blank pouch·release slip·verification card 11~34 cm 범위로의 측방 전이가 더 자주 발생한다.",
+    "complete file 6점, neutral empty cover 6점, inert PTFE board 위 control run 12회에서는 동일한 route cue와 gate response가 0건이었다.",
+    "선행 표본의 다수는 [COS155 — 선열람 음영본](./cos155.json), [COS176 — 유백색 선입면](./cos176.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS214 — 회청색 장넘김대행막](./cos214.json) 징후 중 둘 이상을 이미 보유하고 있었다."
+  ],
+  "discovery": [
+    "COS220은 [COS214 — 회청색 장넘김대행막](./cos214.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS203 — 회청색 교차편철면](./cos203.json) 유래 표본을 출고 전 재봉인하던 절차에서 처음 독립 분류되었다. 당시 R-2의 used release tray OR-3에는 blank release pass P-R2-11이 24 cm 떨어져 놓여 있었고, H214-host-03와 B214-body-03는 의도적으로 분리 보관 중이었다.",
+    "2044-05-03 17:42 KST, 실내 23.7°C, 상대습도 45%, 상부 LED 447 nm 520 lx 조건에서 blank pass는 73초 만에 회청색 하단띠와 route code `OUT-R2-E`, declared mass `1.58 kg`, page total `23`을 획득했다. 그러나 독립 저울은 host 29.4 g, separate body packet 148.6 g을 기록했고, actual body는 correction tray CT-2의 1.1 m 후방에 남아 있었다.",
+    "후속 대조에서 inert PTFE board, unused release stock, complete file 12건은 모두 음성이었고, used release tray와 upstream surrogate 징후를 동시에 가진 active host에서만 반응이 안정적으로 반복되었다. 이로써 현상은 단순 spool cache, print delay, route memo 오기입과 구분되어 COS220으로 지정되었다.",
+    "재현 시험 과정에서 [COS176 — 유백색 선입면](./cos176.json)의 first layer, [COS155 — 선열람 음영본](./cos155.json)의 `이미 본 것 같은` 외피, [COS168 — 무영 압지추](./cos168.json)의 상단 권위가 결합할수록 회청색 pass가 더 빠르고 오래 유지되는 경향이 확인되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS220은 review·rechain이 끝난 것처럼 보이는 host가 used release surface와 blank outbound stock 근처에 놓일 때 가장 쉽게 발생한다.",
+      "가시적 산물은 작은 회청색 pass 또는 top card이지만, 실제 핵심은 gate, trolley latch, dispatch manifest가 그 pass를 **실제 출고 허가**처럼 취급한다는 점이다.",
+      "보이는 카드만 떼어내면 소거보다 인접 blank pouch나 release pass로의 측방 전이가 더 자주 일어난다."
+    ],
+    "stages": [
+      {
+        "name": "반출면 활성",
+        "description": "used release tray, outgoing rack lip, dock pouch, verification card 같은 최종 반출 표면이 prior use 이력을 가진 상태에서 active host와 70 cm 이내로 배치된다. 이 단계에서는 표면 저온대와 faint gray-blue reflection만 먼저 나타날 수 있다."
+      },
+      {
+        "name": "route cue 형성",
+        "description": "blank release pass 또는 host 상단 card에 회청색 lower band가 생기고 route code, dock line, declared mass, provisional page total이 순차적으로 채워진다. 생성 순서는 approval보다 route·mass 필드가 먼저다."
+      },
+      {
+        "name": "허가 외형 고정",
+        "description": "게이트, trolley latch, dispatch manifest, outgoing queue가 이 pass를 실제 반출 허가처럼 읽기 시작한다. 이때 취급자는 `이전 교대에서 이미 처리된 packet`이라는 해석을 붙이기 쉽다."
+      },
+      {
+        "name": "본문-외피 이탈",
+        "description": "반출 준비가 진행될수록 current host와 pass는 전방으로 이동하거나 이동 준비 상태가 되지만, actual body는 correction tray, rear guide, previous rack 뒤에 남는다. provenance와 body 위치의 불일치가 이 단계에서 최대가 된다."
+      },
+      {
+        "name": "전이 또는 동결",
+        "description": "visible pass를 떼어내거나 재기입하면 cue는 옆 blank pouch·verification card로 측방 전이할 수 있다. 반대로 full-tray opaque freeze와 rear body search를 먼저 시행하면 보통 30분 이내 추가 cue 형성이 멈춘다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS220은 front/body surrogate cluster의 downstream 단계로 보이며, 내용 부재를 감춘 채 마지막 반출 허가 외피를 닫는다.",
+      "현재까지 stable case는 [COS155 — 선열람 음영본](./cos155.json), [COS168 — 무영 압지추](./cos168.json), [COS176 — 유백색 선입면](./cos176.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS214 — 회청색 장넘김대행막](./cos214.json) 중 둘 이상이 선행한 표본에서 집중되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 155,
+        "targetTitle": "선열람 음영본",
+        "description": "[COS155 — 선열람 음영본](./cos155.json)이 강한 표본은 실제 개봉·검토 로그가 없는데도 `이미 읽고 되꽂힌 것`처럼 보여, COS220의 반출 외형이 가장 빠르게 붙는다. 공동 시험 6회 중 4회에서 rear read-shadow가 있는 host가 실제 열람 이전에 route pass를 먼저 끌어왔으며, 이는 COS220이 선열람 흔적을 검토 완료의 근거처럼 이용함을 시사한다."
+      },
+      {
+        "targetId": 168,
+        "targetTitle": "무영 압지추",
+        "description": "[COS168 — 무영 압지추](./cos168.json)는 상단의 작은 release pass와 하부의 미검증 bodyless bundle을 하나의 current packet처럼 눌러, COS220이 붙은 top card가 묶음 전체의 출고 허가처럼 보이게 만든다. COS168이 상단 권위를 만든 뒤 COS220이 그 표면에 마지막 반출 외피를 부착하는 순서가 2044-05-06 재현군에서 반복 확인되었다."
+      },
+      {
+        "targetId": 176,
+        "targetTitle": "유백색 선입면",
+        "description": "[COS176 — 유백색 선입면](./cos176.json)이 있는 표본에서는 실제 반출 허가 본문보다 first layer가 먼저 route code와 `OUTBOUND READY`를 받는다. 즉 COS220은 승인 내용이 아니라 **승인되어야 할 첫 면**을 점유하며, first layer만 확인한 취급자가 본문 없는 출고를 정당화하게 만들 수 있다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json)의 declared mass는 gate와 manifest가 필요로 하는 수치적 하중을 공급하고, COS220은 그 수치 위에 route code와 release state를 닫는다. false load와 outbound code가 결합한 empty carrier는 실제 본문 부재를 가장 잘 숨기는 조합으로, automatic gate 시험 6회 중 4회가 READY 단계까지 진행되었다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json)에서 형성된 false composite는 front와 body가 맞는 사건철처럼 보이는 상태에서 COS220을 획득할 수 있다. 이 경우 provenance가 틀린 묶음이 `검토 완료 후 반출` 외형까지 얻어 가장 늦은 단계에서야 오판이 드러나므로, COS220은 COS203의 시각적 오합치를 출고 절차까지 연장하는 downstream closure로 기록된다."
+      },
+      {
+        "targetId": 214,
+        "targetTitle": "회청색 장넘김대행막",
+        "description": "[COS214 — 회청색 장넘김대행막](./cos214.json)의 page-turn cue는 마지막 수동 확인을 통과한 것처럼 보이게 만들고, 그 직후 COS220이 생기면 empty host는 `넘겨보아 확인한 뒤 출고하는 완결 packet`처럼 오인되기 쉽다. release-stage false acceptance의 설득력은 현재까지 COS214와 COS220 조합에서 가장 높았으며, no-leafing triad를 생략한 군에서 오판이 집중되었다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-220-01 / used release tray matrix",
+      "description": "2044-05-06 13:30~16:20 KST, L-2 cage. upstream surrogate 징후 둘 이상을 가진 active host 12점과 control 12점(complete file 6, neutral empty cover 6)을 used release tray OR-5 위에 각각 25 cm 거리의 blank release pass와 함께 배치했다. 실내 23.8°C, 상대습도 44%, 445 nm 530 lx 조건에서 active 10/12가 58~201초 내 회청색 반출대행패를 형성했고, 1/12는 lower band만 보였으며 control 12점은 0건이었다."
+    },
+    {
+      "label": "EXP-220-02 / blank stock distance",
+      "description": "active host 5점을 기준으로 blank release pass 거리를 5 cm, 15 cm, 30 cm, 60 cm로 나누어 반복했다. full pass 형성은 각 거리에서 5/5, 4/5, 2/5, 0/5였고, 전이 후 route code 판독 가능 시간의 중앙값은 5 cm 군 184초, 30 cm 군 71초였다."
+    },
+    {
+      "label": "EXP-220-03 / gate logic response",
+      "description": "G-R2 mock line에서 A220-pass 양성 표본 6점, hand-written decoy 6점, blank control 6점을 비교했다. automatic mode에서는 양성 표본 4/6이 READY 또는 latch unlock 단계까지 진행했고 decoy와 blank는 0/12였다. manual-only mode에서는 18/18 모두 이동이 차단되어 route field만으로는 출고를 허용하지 않았다."
+    },
+    {
+      "label": "EXP-220-04 / deactivation method comparison",
+      "description": "visible pass 제거 방식과 full-tray freeze를 비교했다. opaque lid로 tray 전체를 동결한 군 6/6은 30분 내 추가 cue가 재발하지 않았고, visible pass만 peel한 군은 3/6에서 adjacent blank pouch 11~34 cm 범위로 측방 전이가 발생했다. route code를 덧쓴 군은 2/6에서 nearby verification card 하단선 darkening이 뒤따랐다."
+    },
+    {
+      "label": "EXP-220-05 / rear body recovery correlation",
+      "description": "확정 사례 11건의 rear search를 집계한 결과 actual body는 11/11에서 current host 후방 0.7~2.3 m 범위 또는 previous correction tray에서 회수되었다. outbound route, dock pouch, release rack 전방에서 body가 회수된 사례는 0건이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "COS220 의심 host는 blank release pass, dock pouch, outgoing queue card로부터 최소 70 cm 이상 분리한다.",
+    "회청색 lower band나 route code가 보이는 즉시 gate, trolley latch, dispatch manifest를 manual-only mode로 전환한다.",
+    "반출 전 삼중 판정을 시행한다. 첫째 footer hash와 last page count, 둘째 독립 질량·장수 대조, 셋째 rear body 0.5~2.5 m search가 끝나기 전 출고 상태를 확정하지 않는다.",
+    "visible pass나 top card만 떼어내지 않는다. used release surface 전체를 opaque lid로 동결하고 host·pass·body·route trace를 서로 다른 chain으로 4분리한다.",
+    "route code를 덧쓰거나 relabel하지 않는다. 재기입은 인접 blank stock으로의 측방 전이를 유발할 수 있다.",
+    "[COS189 — 회청색 무재하중표](./cos189.json) 징후가 있으면 declared mass를 무시하고 삼중 계량을 먼저 시행한다.",
+    "[COS214 — 회청색 장넘김대행막](./cos214.json) 징후가 있으면 thumb-flip, page fan, quick leafing을 금지하고 no-leafing triad를 선행한다.",
+    "[COS203 — 회청색 교차편철면](./cos203.json) 또는 [COS176 — 유백색 선입면](./cos176.json) 징후가 있으면 front/title card와 route pass를 packet identity 근거로 사용하지 않는다.",
+    "[COS155 — 선열람 음영본](./cos155.json)이나 [COS168 — 무영 압지추](./cos168.json) 징후가 있으면 `이미 검토됨`, `상단 card만 보면 됨`과 같은 판단을 이상 징후로 기록한다.",
+    "used release tray, outgoing rack lip, dock pouch가 한 번이라도 양성 host가 되면 세척보다 판째 봉인을 우선하며, 새 blank stock과 같은 cage 안에 두지 않는다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS220이 실제 반출 허가를 생성하는 현상이 아니라, **내용 부재를 외부 단계로 내보내기 위해 마지막 출고 외피만 먼저 닫는 late-stage surrogate**라는 것이다.",
+    "[COS176 — 유백색 선입면](./cos176.json)이 first surface를 제공하고, [COS155 — 선열람 음영본](./cos155.json)이 `이미 본 것 같은` 외피를 부여하며, [COS168 — 무영 압지추](./cos168.json)가 상단 card의 권위를 높이고, [COS189 — 회청색 무재하중표](./cos189.json)가 gate가 읽을 수치적 하중을 제공하며, [COS203 — 회청색 교차편철면](./cos203.json)이 wrong packet의 시각적 일체감을, [COS214 — 회청색 장넘김대행막](./cos214.json)이 마지막 수동 확인용 넘김감을 더할 때 COS220이 가장 안정적으로 형성된다는 점이 이를 뒷받침한다.",
+    "미검증 가설로, COS220의 route code는 문서 provenance보다 **직전 교대가 마지막으로 열어 본 release line 또는 가장 가까운 blank outbound stock**을 참조할 가능성이 있다. 현재 거리 실험은 이를 시사하지만, 모든 code가 가장 근접한 stock으로 이동하지는 않아 추가 검증이 필요하다.",
+    "단순 printer spool cache, PLC echo, release memo 오기입만으로는 설명이 부족하다. hand-written decoy와 inert PTFE board가 반복적으로 음성이었고, actual body는 일관되게 후방 위치에서 회수되었기 때문이다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "오반출 및 외부 인계 위험",
+      "assessment": "매우 높음"
+    },
+    {
+      "category": "본문-외피 분리 은폐 위험",
+      "assessment": "매우 높음"
+    },
+    {
+      "category": "게이트·카트 자동반응 위험",
+      "assessment": "높음"
+    },
+    {
+      "category": "인접 blank stock으로의 2차 전이 위험",
+      "assessment": "중간 이상"
+    },
+    {
+      "category": "직접 신체 손상 위험",
+      "assessment": "낮음"
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS220 현장에서 관찰 사실은 회청색 하단띠, route code, latch unlock, manifest line, rear body 위치이다. `반출 승인이 있었다`는 문장은 해석이며, 독립 approval log와 actual body가 없는 한 본 문서에서는 채택하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "나갈 준비가 된 것은 문서가 아니라, 나가도 된다는 표식뿐이었다. — K-04, 2044-05-03 사건 기록"
+    },
+    {
+      "type": "paragraph",
+      "content": "visible pass가 사라져도 same route line이 outgoing tray, dock pouch, verification card 중 하나에 남아 있으면 동일 사건의 연장선으로 간주한다. 카드 부재를 소거의 근거로 쓰지 않는다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-220 정식 편입",
+      "paragraphs": [
+        "2044-05-03~2044-05-04 초동 메모에서는 현상을 `gray outbound pass`, `bodyless release card`, `T-220`으로 병기했다.",
+        "2044-05-06 matrix 실험과 2044-05-07 peel-transfer 사고를 통해 핵심이 단순 print delay나 route memo 오기입이 아니라 **실제 본문 없이 최종 반출 허가 외피를 대행하는 회청색 pass 현상**임이 확인되었다.",
+        "이에 정식 명칭을 **회청색 반출대행패**로 확정하고, release-stage surrogate cluster의 독립 COS로 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A220/H220/B220/R220 접두 및 반출 전 삼중 판정",
+      "paragraphs": [
+        "가시적으로 형성된 pass·top card·route slip은 `A220-pass`, active host는 `H220-host`, 실제 회수 body는 `B220-body`, gate·latch·manifest·distance trace는 `R220-trace` 접두를 부여한다.",
+        "`A220-pass`, `H220-host`, `B220-body`, `R220-trace`는 같은 sleeve, 같은 tray, 같은 outbound chain으로 병합하지 않는다.",
+        "반출 전 삼중 판정은 독립 질량·장수 대조, footer hash와 body 관계 확인, rear body 0.5~2.5 m search 및 30분 재관찰을 모두 포함한다. visible pass나 route code는 이 판정의 대체물이 될 수 없다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "반출 전 삼중 판정",
+      "paragraphs": [
+        "1) expected mass와 expected page total을 독립 저울·수기 장수·footer hash로 먼저 확인한다. route code, declared mass, outbound status는 판정 근거로 사용하지 않는다.",
+        "2) actual body는 current host가 아닌 rear guide, previous correction tray, previous rack, outgoing line 후방 0.5~2.5 m 범위에서 먼저 검색한다. body가 뒤에서 회수되면 visible pass는 즉시 COS220 표본으로 전환한다.",
+        "3) used release surface와 인접 blank stock은 opaque lid로 최소 30분 동결하고 추가 line, lower band, route field의 재발 여부를 확인한다. 추가 cue가 없더라도 rear body 확인 전에는 정상 출고 판정을 내리지 않는다."
+      ]
+    },
+    {
+      "title": "used release surface host 지정 기준",
+      "paragraphs": [
+        "445±6 nm 사광에서 31 cm 이상 회청색 반사선이 보이고, 인접 면보다 0.6°C 이상 낮은 strip가 있으며, active host와 blank stock이 함께 있을 때 210초 이내 lower band가 재발하면 해당 tray·rack·pouch를 A220-host surface로 지정한다.",
+        "A220-host surface는 세척보다 판째 봉인을 우선하며, 새 blank stock, verification card, dock pouch와 같은 cage에 두지 않는다. surface 단독 이동에도 route trace가 재발할 수 있으므로 host 해제 전 재사용을 금지한다."
+      ]
+    }
+  ]
+}
