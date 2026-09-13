@@ -382,6 +382,15 @@
       "paragraphs": [
         "[COS217 — 회청색 선행대독면](./cos217.json)의 최초 정식 표본은 [COS207 — 회청색 무재순환철](./cos207.json) A207-shell-04에서 확인되었다. moving shell은 `current` 외형만으로 26.4 s의 구두 인계와 허위 `검토 종료` 판단을 유발했으므로, COS207 shell에 대한 구두 인계는 route closure 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 221,
+      "type": "reciprocal",
+      "title": "COS221 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS207 — 회청색 무재순환철](./cos207.json) moving shell이 마지막으로 획득하는 문서형 목적지 closure로 가장 자주 확인되었다. handoff·review·release preview를 통과한 thin shell이 body를 동반하지 않은 채 blank arrival receipt에 `도착`과 cabinet code를 남기면, route closure가 실제 도착으로 오인될 위험이 급격히 증가한다.",
+        "따라서 COS207 shell에 generated arrival receipt가 붙으면 next station recovery를 기다리지 말고 현재 route 전체를 동결한 뒤 origin host와 직전 station rear zone에서 actual body를 즉시 수색한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -415,6 +415,15 @@
       "paragraphs": [
         "[COS217 — 회청색 선행대독면](./cos217.json)은 [COS181 — 청회색 무재 인수구](./cos181.json)의 `A181-capture` front가 본문 없는 상태에서도 구두 검토를 유발할 수 있음을 보여 주었다. 2044-04-24 Q-5B 비교실 시험에서 COS181 유래 front 6점 중 4점이 12 s 이내 존재하지 않는 본문 요약을 낭독했으므로, COS181 산물의 육성 확인은 수령 검증이 아니라 COS217 오염 개시 조건으로 분류한다."
       ]
+    },
+    {
+      "relatedId": 221,
+      "type": "reciprocal",
+      "title": "COS221 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS181 — 청회색 무재 인수구](./cos181.json)가 blank front에 부여한 `수령` 또는 `current` 상태가 목적지 본문 없이도 blank arrival receipt로 연장되는 downstream 단계로 확인되었다. `A181-capture` 전면이 source lip를 통과한 뒤 실제 body를 동반하지 않은 상태에서도 `도착`, cabinet code, route line이 carbonless receipt에 먼저 형성될 수 있으므로, COS181의 인수 상태를 최종 도착 근거로 채택하지 않는다.",
+        "2044-05-20 대조에서는 receiving lip 비활성 조건에서도 약양성 5/8이 확인되어 COS181이 필수 기원은 아니나 도착 문구의 안정도를 높이는 강화 조건으로 기록되었다. COS181 산물에 도착 회신지가 붙으면 source/destination 양측을 동시 동결하고 rear body 확인을 우선한다."
+      ]
     }
   ],
   "supplementalSections": [

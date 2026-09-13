@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 2,
+    "containment": 5
+  },
+  "classificationRationale": {
+    "secrecy": "2044-05-18과 2044-05-23 두 사건에서 blank receipt 2매가 실제 게이트 개방이나 도착 영상 없이 `도착 확인`과 목적지 코드까지 획득했고, 1건은 manifest 부착 27초 전에서야 중단되었다. 이 정보가 외부에 공개되면 제한 기록의 반출·도착 사슬을 외피만으로 위조하는 데 악용될 수 있어 4단계 비공개가 필요하다.",
+    "permission": "판정에는 footer hash, source release log, destination dock log, rear body 회수 좌표, carbonless duplicate 구조, 독립 계량값을 함께 읽어야 했다. 2044-05-20 blind review 12회 중 9회에서 현장 보조 인원이 generated receipt를 정상 도착본으로 오인해 기록감식 권한이 있는 4등급 열람으로 제한한다.",
+    "chaos": "used arrival stock와 active host가 70cm 이내에 있을 때 12회 중 10회 양성으로 재현되었으나, 같은 필드가 top sheet, duplicate copy, blank pouch, handheld preview 중 어디에 고정될지는 일정하지 않았다. 발현 조건은 비교적 안정적이지만 결과 host 선택의 변동이 커 중간 이상 혼란도로 분류한다.",
+    "danger": "actual body가 0.9~1.9m rear zone에 남은 채 gate READY 1건, handheld `DELIVERED` preview 2건, trolley latch unlock 1건이 확인되었다. 인명 위해보다 오반출·오도착 확정 위험이 커 danger 4로 판정한다.",
+    "popularity": "임시등록 뒤 18일 동안 release audit 5건, rechain review 4건, dock training 4건 등 총 13건의 직접 참조가 확인되었다. 신규 항목치고 참조는 잦지만 기관 전반의 최상위 허브 수준은 아니므로 2로 판정한다.",
+    "containment": "blank arrival stock 70cm 배제, source/destination dual freeze, pass-host-body-log 4분리, manual-only gate 전환을 동시에 적용한 8회 억제군은 8/8 음성이었다. 한 요소라도 빠진 6회 중 4회에서 lower line 또는 route field 전이가 재발해 최고 수준의 관리 강도가 요구된다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 K-04",
+        "role": "체인 검증 기록관",
+        "status": "active",
+        "involvement": "2044-05-18 최초 near-arrival 사건에서 footer hash와 rear body 위치를 대조해 false delivery를 중단시켰다. 이후 T-221 임시등록 개설과 도착 확인 사중 판정 절차를 승인했다."
+      },
+      {
+        "name": "시설운용원 M-27",
+        "role": "게이트·도크 로직 관리",
+        "status": "active",
+        "involvement": "G-R2, D-3, handheld scanner, trolley latch의 raw log를 보존하고 모든 후속 실험을 manual-only 모드와 센서 감사 조건으로 전환했다."
+      },
+      {
+        "name": "분석관 L-31",
+        "role": "반출·도착 분석관",
+        "status": "active",
+        "involvement": "used arrival stock, carbonless duplicate, clear clipboard, blank pouch를 이용한 재현 실험과 deactivation 비교를 총괄했다. blank-stock 70cm 배제 반경과 dual freeze 조건을 설계했다."
+      },
+      {
+        "name": "도착증빙원 DCK-03",
+        "role": "도착 회신·영수 담당",
+        "status": "reassigned",
+        "involvement": "blank arrival receipt를 active host 근처에서 사용해 2건의 오도착 외피를 유발했고, generated receipt를 실제 도착본으로 오인해 장부 반영을 시도했다. 사건 뒤 구두·수기 회신 업무에서 제외되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-05-18 08:46 KST",
+        "label": "최초 도착대행패 확인",
+        "description": "제2보존동 1층 반출예비실 R-2의 dispatch binder DB-1에서 blank carbonless arrival receipt가 64초 만에 `D-3 도착`과 route code를 획득했다. 실제 body는 correction rack 후방 1.3m 위치에 남아 있었다."
+      },
+      {
+        "date": "2044-05-18 09:03 KST",
+        "label": "임시표기 T-221 부여",
+        "description": "K-04가 generated arrival receipt, gate log, rear body packet을 같은 체인으로 처리하지 말 것을 지시했고 `T-221`, `arrival reply slip`, `도착 회신지`가 임시표기로 등록되었다."
+      },
+      {
+        "date": "2044-05-20 13:30 KST",
+        "label": "used arrival stock 거리 행렬 실험 개시",
+        "description": "L-2 cage에서 active host 16회와 control 16회를 이용해 receipt stock 거리, 재질, gate mode 대조가 시작되었다. 70cm 이상 분리군은 모두 음성이었다."
+      },
+      {
+        "date": "2044-05-23 10:12 KST",
+        "label": "dock duplicate 사고",
+        "description": "도착감사실 D-3에서 clear clipboard 위 3부 carbonless receipt가 빈 승인축을 향한 상태로 `인수 완료`와 cabinet code를 획득했고, handheld preview가 `DELIVERED`로 전환되었다."
+      },
+      {
+        "date": "2044-05-27 11:00 KST",
+        "label": "도착 확인 사중 판정 시행",
+        "description": "footer hash, 독립 계량·장수, source/destination raw log, rear body 0.5~2.5m search를 묶은 사중 판정과 dual freeze 절차가 관련 구역 전체에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-221-01",
+        "date": "2044-05-18",
+        "location": "제2보존동 1층 반출예비실 R-2 / dispatch binder DB-1",
+        "title": "게이트 미통과 상태의 도착 확인 회신 생성",
+        "involvedPersonnel": [
+          "기록관 K-04",
+          "시설운용원 M-27",
+          "도착증빙원 DCK-03"
+        ],
+        "narrative": [
+          "K-04와 M-27은 [COS220 — 회청색 반출대행패](./cos220.json) 후속 감사 표본 `H220-host-04`의 route freeze 상태를 확인하고 있었다. DCK-03은 rear body search가 끝나면 바로 회신 시간을 적기 위해 2부 carbonless arrival receipt `AR-R2-01`을 used release tray OR-4 위, host에서 21cm 떨어진 dispatch binder DB-1에 끼워 두었다. card에는 어떤 필드도 미기입 상태였고, D-3 도착 코드는 인쇄만 되어 있었다. 64초 뒤 상단 3분의 1과 하단 6mm 띠에 회청색 문구가 생기며 `D-3 도착`, `OUT-R2-D3`, `08:46`이 차례로 나타났다. 같은 시각 G-R2는 HOLD 상태였고 D-3 자력 센서는 개방 0회, floor scale은 0.0kg을 유지했다.",
+          "DCK-03은 이전 교대에서 늦게 반영된 회신일 수 있다고 해석하고 receipt를 manifest에 스테이플러로 고정하려 했다. K-04는 27초 안에 동작을 중지시키고 source/destination dual freeze를 선언했으며, M-27은 PLC raw log에서 gate READY, latch unlock, dock door change가 없음을 확인했다. 이어진 rear search에서 actual body `B220-body-04` 23매와 appendix 2매는 correction rack C-2 후방 1.3m 위치에서 회수되었고, footer hash는 source 원기록과 일치했다. 팀은 card를 떼어 소거하지 않고 host, receipt, body, raw log를 네 개의 독립 chain으로 분리 봉인했다."
+        ],
+        "outcome": "T-221 임시등록이 개설되었고 OR-4, DB-1, G-R2 line은 3시간 50분 동안 동결되었다. blank arrival receipt stock은 R-2에서 전량 회수되었다."
+      },
+      {
+        "code": "IR-221-02",
+        "date": "2044-05-23",
+        "location": "제2보존동 2층 도착감사실 D-3 / receiving cage L-2",
+        "title": "clear clipboard 위 duplicate receipt의 도착 이중기록",
+        "involvedPersonnel": [
+          "분석관 L-31",
+          "기록관 K-04",
+          "시설운용원 M-27",
+          "도착증빙원 DCK-03"
+        ],
+        "narrative": [
+          "L-31는 source-side generated receipt가 destination 방향에서도 반복되는지 확인하기 위해 rear-gap shell `A207-shell-05`를 matte rack 위에 두고 제한 실험을 준비했다. 그러나 DCK-03은 가독성을 높인다는 이유로 blank 3부 carbonless receipt booklet `RC-D3-05`를 clear clipboard에 끼운 뒤 host 전방 32cm, 빈 receiving station과 host를 잇는 정면축 0.8m 위치에 놓았다. 91초 뒤 top sheet와 duplicate copy는 동시에 `인수 완료`, `D3-CAB-2`, `수령자: —`를 획득했고, handheld preview는 `DELIVERED 10:13` 상태로 전환되었다. dock camera에는 어떤 carrier도 들어오지 않았고 floor scale 변화는 0.0kg이었다.",
+          "DCK-03은 cabinet code가 맞는다는 이유로 rear shelf의 unrelated packet `P-D3-17`을 대응 body로 선택하고 generated receipt와 함께 촬영하려 했다. K-04는 총질량 차 72g과 footer hash 끝 8자 불일치를 확인해 이동을 중지시켰고, M-27은 handheld wireless sync를 차단했다. L-31는 clear clipboard를 그대로 봉인하고 rear gap 17mm 뒤 슬롯과 opaque pouch stand 후미를 수색해 실제 `B207-body-05` 17매와 appendix 1매를 회수했다. 이 과정에서 card, clipboard, pouch가 중립 사무용품이 아니라 active host surface라는 사실이 확정되었다."
+        ],
+        "outcome": "wrong body 촬영과 delivered sync는 archive intake 직전에 차단되었다. clear clipboard와 carbonless receipt booklet은 active host로 재분류되었고, blank arrival stock 70cm 배제 반경이 도입되었다. DCK-03은 도착 회신 실무에서 재배치되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-221-01",
+        "type": "도착대행패 원본",
+        "description": "`A221-pass-01`. 98×148mm 2부 carbonless arrival receipt로, 하단 6mm 회청색 띠와 `D-3 도착`, `OUT-R2-D3`, `08:46` 필드를 가진 최초 generated receipt다. 독립 필기 압력과 잉크 성분은 검출되지 않았다.",
+        "custodyStatus": "불투명 PTFE frame PF-221-1에 단독 봉인되었고 host·body와 동일 봉투 반입이 금지되어 있다."
+      },
+      {
+        "code": "EV-221-02",
+        "type": "source/destination raw log 묶음",
+        "description": "G-R2 gate PLC, D-3 door sensor, floor scale, handheld preview, dispatch manifest의 raw log 세트다. generated receipt 형성 시각과 실제 gate·dock 무반응을 같은 타임코드로 비교할 수 있다.",
+        "custodyStatus": "시설 audit 서버 `DE-221-LOG`와 종이 추출본 금고에 이중 보관하며, 수정권한 없이 읽기 전용 상태를 유지한다."
+      },
+      {
+        "code": "EV-221-03",
+        "type": "rear body 회수 세트",
+        "description": "`B220-body-04`, `B207-body-05`와 rear search 위치도, footer hash 대조표, 장수·질량 기록을 묶은 세트다. generated receipt가 주장한 도착 상태와 달리 실제 본문이 후방에 남아 있음을 입증한다.",
+        "custodyStatus": "저조도 보존함 LC-221-B1/B2에 개별 봉인되었고 `A221-pass`와의 동시 열람은 감사 입회 하에서만 허용된다."
+      },
+      {
+        "code": "EV-221-04",
+        "type": "carbonless duplicate book 및 clear clipboard",
+        "description": "`RC-D3-05` 3부 receipt booklet과 `CL-D3-02` clear clipboard 세트다. duplicate copy와 top sheet가 동시에 `인수 완료`를 획득한 2044-05-23 사건의 host surface를 포함한다.",
+        "custodyStatus": "도착감사 금고 G-221-D에 판째 봉인되었고, transparent plane 재사용이 금지되어 있다."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 K-04",
+        "role": "체인 검증 기록관",
+        "context": "IR-221-01 중단 직후 진술",
+        "statement": "제가 직접 확인한 사실은 회청색 회신지에 목적지 코드와 시간이 생겼고, 같은 시각 gate와 dock가 모두 열리지 않았으며, actual body가 뒤 rack에 남아 있었다는 점입니다. `도착 승인이 이미 있었다`는 말은 해석일 뿐이며 raw log와 rear body는 그 해석을 지지하지 않았습니다."
+      },
+      {
+        "speaker": "시설운용원 M-27",
+        "role": "게이트·도크 로직 관리",
+        "context": "2044-05-23 D-3 audit memo",
+        "statement": "raw log상 handheld와 latch는 실제 중량이나 도크 개방보다 route field와 lower line에 먼저 반응했습니다. 이것이 단순 PLC 오류인지의 해석은 유보하지만, 적어도 실제 도착물을 확인한 뒤 열린 것은 아니라는 사실은 분명합니다."
+      },
+      {
+        "speaker": "도착증빙원 DCK-03",
+        "role": "도착 회신·영수 담당",
+        "context": "직무 재배치 면담",
+        "statement": "제 눈에는 회신지가 이미 돌아온 도착본처럼 보였고, 그래서 body 확인 전에 장부를 닫아도 된다고 해석했습니다. 그 판단은 제 추정이었고, 실제로는 내용물이 뒤에 남아 있었다는 점을 나중에 hash와 계량으로 확인했습니다."
+      }
+    ]
+  },
+  "id": 221,
+  "title": "회청색 도착대행패",
+  "language": "ko-KR",
+  "overview": [
+    "**COS221**은 blank arrival receipt, dock acknowledgment copy, carbonless return slip, outgoing pouch 상단 card 같은 **도착 확인용 빈 매체**에 회청색 도착·인수 외피가 먼저 형성되는 문서-설비 복합 현상이다. 현재 통칭은 **회청색 도착대행패**이다.",
+    "COS221의 핵심은 물체나 본문을 목적지로 실제 이동시키는 것이 아니라, **도착했어야 하는 마지막 증빙만을 먼저 닫는다는 점**에 있다. generated receipt에는 `도착`, `인수 완료`, 목적지 cabinet code, route code, declared page total이 남을 수 있으나, footer hash·실측 질량·게이트 로그·도크 센서는 이를 지지하지 않는다.",
+    "2044-05-18부터 2044-05-27까지 확정 사례 9건, 부분 사례 4건이 확인되었다. 모든 확정 사례에서 actual body는 current host가 아닌 rear guide, correction tray, previous rack 뒤 0.7~2.3m 범위 또는 7~19mm rear gap에서 별도로 회수되었다."
+  ],
+  "identificationTraits": [
+    "가장 흔한 숙주는 2부 또는 3부 carbonless arrival receipt, blank dock acknowledgment copy, blank return slip, outgoing pouch 상단 card이다. 크기는 대체로 76×127mm에서 105×148mm 사이였고 PET card와 라미네이트 양식 대조군은 현재까지 0양성이었다.",
+    "active host와 blank arrival stock이 70cm 이내에 있을 때 40~210초 안에 폭 4~8mm의 회청색 lower band와 1~3행의 도착 어휘가 형성된다.",
+    "표기 어휘는 `도착`, `인수 완료`, `수령자: —`, cabinet code, route code, provisional page total처럼 **목적지의 끝단 상태**에 집중되며, 안정된 본문 단락이나 상세 설명은 확인되지 않았다.",
+    "generated receipt가 생기는 동안 gate PLC, dock door sensor, floor scale, carrier camera 중 최소 하나 이상은 **도착 부재**를 계속 기록한다. 확정 사례 9건 모두에서 완전한 물리 도착과 일치하는 센서 묶음은 없었다.",
+    "actual body는 current host나 receipt와 함께 있지 않고, correction tray·rear guide·previous rack 뒤 0.7~2.3m 또는 7~19mm rear gap에서 별도로 회수되는 경우가 반복되었다.",
+    "445±6nm 사광을 18~24°로 입사하면 receipt 하단띠와 used arrival surface에 29~44cm 길이의 회청색 반사선이 보이며, 열영상에서는 인접 면보다 0.6~1.3°C 낮게 나타난다.",
+    "visible receipt만 떼어내거나 route code를 덧쓰면 소거보다 인접 duplicate copy, blank pouch, verification slip 11~34cm 범위로의 측방 전이가 더 자주 발생한다.",
+    "generated receipt를 body 후보와 transparent plane 위에 함께 두면 [COS205 — 회청색 대조합치막](./cos205.json)형 false match onset이 급증한다. 불투명 흑색 트레이와 matte-black mask 조건에서는 같은 오판이 현저히 줄었다.",
+    "[COS181 — 청회색 무재 인수구](./cos181.json)가 없는 조건에서도 5/8 약양성이 확인되었으므로, COS221은 단순 수령 lip의 직접 부산물이 아니라 **도착 확인 문서 자체의 surrogate**로 구분된다."
+  ],
+  "discovery": [
+    "최초 확정은 **2044-05-18 08:46 KST**, 제2보존동 1층 반출예비실 **R-2 / dispatch binder DB-1**에서 이루어졌다. [COS220 — 회청색 반출대행패](./cos220.json) 후속 감사 표본 `H220-host-04`를 route freeze 상태로 보관하던 중, host에서 21cm 떨어진 blank 2부 carbonless arrival receipt `AR-R2-01`이 64초 만에 `D-3 도착`, `OUT-R2-D3`, `08:46`을 획득했다. 그러나 G-R2는 HOLD, D-3 도어 센서는 개방 0회, floor scale은 0.0kg을 유지했고 actual body는 correction rack 후방 1.3m에 남아 있었다.",
+    "초기에는 delayed manifest reflection, PLC cache echo, carbonless 압력 오염이 우선 의심되었다. 그러나 2044-05-20 거리 행렬과 재질 대조에서 **used arrival stock + active host** 조합만 안정적으로 양성이었고, complete file, inert PTFE board, blank board, PET receipt control은 모두 음성이었다.",
+    "두 번째 독립 사례는 **2044-05-23 10:12 KST**, 제2보존동 2층 도착감사실 **D-3 / receiving cage L-2**에서 확인되었다. [COS207 — 회청색 무재순환철](./cos207.json) shell 앞 clear clipboard의 3부 carbonless receipt가 `인수 완료`, cabinet code, `수령자: —`를 획득했고, handheld preview는 `DELIVERED`로 전환되었다. 그러나 actual body는 rear gap 17mm 뒤와 opaque pouch stand 후미 0.9m에서 회수되었다.",
+    "이후 본 현상은 [COS181 — 청회색 무재 인수구](./cos181.json), [COS193 — 회청색 후입등재구](./cos193.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS214 — 회청색 장넘김대행막](./cos214.json), [COS219 — 회청색 종결전사패](./cos219.json), [COS220 — 회청색 반출대행패](./cos220.json)와 이어지는 **downstream 도착 외피 단계**로 정리되며 COS221로 정식 문서화되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS221은 review·rechain·release가 끝난 것처럼 보이는 bodyless host가 used arrival stock, carbonless duplicate, blank dock pouch 근처에 놓일 때 가장 잘 형성된다.",
+      "형성되는 것은 목적지 본문이나 실제 인수 행위가 아니라, **도착 확인 문서의 마지막 필드**와 lower band이다.",
+      "generated receipt를 믿을수록 source/destination 양측은 이미 닫혔다고 느끼지만, actual body는 오히려 직전 host 뒤쪽에 더 자주 남아 있었다."
+    ],
+    "stages": [
+      {
+        "name": "상류 surrogate 축적",
+        "description": "[COS193 — 회청색 후입등재구](./cos193.json), [COS206 — 회청색 동체인란](./cos206.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS220 — 회청색 반출대행패](./cos220.json) 계열의 영향으로 front-only host 또는 route-marked shell이 실제 body와 분리된 채 current 또는 outbound 외형을 유지한다."
+      },
+      {
+        "name": "arrival stock 잠복",
+        "description": "used arrival receipt, dock acknowledgment copy, blank pouch, return slip 같은 도착 확인용 빈 매체가 active host 반경 70cm 이내에 놓인다. 이 단계에서는 회청색 반사선과 저온대만 먼저 나타나며, 게이트·도어·scale은 아직 변하지 않는다."
+      },
+      {
+        "name": "도착 필드 형성",
+        "description": "40~210초 안에 lower band와 함께 `도착`, `인수 완료`, cabinet code, route code, provisional page total이 순차적으로 생긴다. approval이나 수기 서명보다 route·destination 필드가 먼저 채워지는 경향이 있다."
+      },
+      {
+        "name": "source/destination 이중 완료",
+        "description": "source release log, destination preview, handheld `DELIVERED`, trolley latch, dispatch manifest 가운데 둘 이상이 generated receipt를 근거로 닫히기 시작한다. 이때 취급자는 `이미 도착 회신이 돌아왔다`는 해석을 붙이기 쉽다."
+      },
+      {
+        "name": "본문-회신 분리 심화",
+        "description": "절차가 닫힐수록 current host와 generated receipt는 전면으로 이동하거나 이동 준비 상태가 되지만, actual body는 correction tray·rear guide·previous rack 뒤에 남는다. provenance와 물리 위치의 불일치가 최대가 되는 단계다."
+      },
+      {
+        "name": "측방 전이 또는 동결",
+        "description": "visible receipt를 떼어내거나 덧쓰면 cue는 duplicate copy, blank pouch, verification card로 측방 전이할 수 있다. 반대로 source/destination dual freeze와 opaque full-tray cover를 먼저 적용하면 보통 30분 내 추가 cue 형성이 멈춘다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS221은 [COS220 — 회청색 반출대행패](./cos220.json)의 문서형 downstream 반응으로 가장 잘 해석된다. [COS220 — 회청색 반출대행패](./cos220.json)가 `나가도 된다`는 마지막 외피를 만들면, COS221은 `이미 도착했다`는 반대편 외피를 먼저 닫는다.",
+      "[COS181 — 청회색 무재 인수구](./cos181.json)와 달리 COS221은 physical receiving lip 없이도 발생할 수 있으며, [COS193 — 회청색 후입등재구](./cos193.json)와 [COS207 — 회청색 무재순환철](./cos207.json)이 남긴 rear body를 가장 늦은 단계에서 숨긴다. generated receipt를 pairing이나 sign-off 근거로 사용할 경우 [COS205 — 회청색 대조합치막](./cos205.json), [COS206 — 회청색 동체인란](./cos206.json), [COS214 — 회청색 장넘김대행막](./cos214.json), [COS219 — 회청색 종결전사패](./cos219.json)와의 오염이 강화된다."
+    ],
+    "entries": [
+      {
+        "targetId": 181,
+        "targetTitle": "청회색 무재 인수구",
+        "description": "[COS181 — 청회색 무재 인수구](./cos181.json)는 blank front에 `수령` 상태를 부여하는 종점 lip이지만, COS221은 그보다 한 단계 뒤에서 blank arrival receipt에 `도착 확인`을 남기는 **문서형 회신 외피**다. 2044-05-20 대조에서 COS181 lip 비활성 조건에서도 5/8 약양성이 확인되어, COS221이 COS181의 단순 반복은 아니라는 점이 확인되었다. 다만 lip가 활성일 때는 wording과 route code가 더 안정적으로 형성되므로, COS181은 COS221의 문구를 정착시키는 강화 조건으로 기록된다."
+      },
+      {
+        "targetId": 193,
+        "targetTitle": "회청색 후입등재구",
+        "description": "[COS193 — 회청색 후입등재구](./cos193.json)는 제목·번호·첫 장만 먼저 등재하고 actual body를 rear stop 뒤에 남기는 상류 조건이다. COS221 확정 사례의 rear body는 반복적으로 correction tray, rear guide, previous rack 뒤에서 회수되었으며, 이 분리 구조는 COS193 계열과 동일했다. 즉 COS221은 도착 회신을 생성하지만, 그것이 지시하는 물리 위치에는 본문이 없고, 실제 본문은 COS193이 남긴 후면 축에 머물 가능성이 높다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "generated arrival receipt의 lower line이나 cabinet code를 body 선택 근거로 투명 비교면에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) onset이 급증한다. 2044-05-15 대조에서는 wrong body 후보 8쌍 중 6쌍이 41~109초 안에 false match를 획득했고, 같은 후보를 불투명 트레이에 50cm 이상 분리한 대조군은 0/8이었다. COS221 receipt는 provenance를 복원하지 않고 `이미 도착한 짝`이라는 acceptance cue만 공급한다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "[COS206 — 회청색 동체인란](./cos206.json)은 borrowed accession과 same lower line이 front shell과 body, blank slip에 남는 행정적 동일화 단계다. COS221은 이 borrowed field가 **도착 회신지**까지 확장된 downstream 단계로 자주 관찰되었다. 같은 accession이 receipt에 남아도 provenance가 회복된 것은 아니며, source correction zone에 body가 남아 있을 수 있으므로, COS206 표본에 도착 회신이 추가되면 현장 정정보다 source/destination dual freeze를 우선한다."
+      },
+      {
+        "targetId": 207,
+        "targetTitle": "회청색 무재순환철",
+        "description": "[COS207 — 회청색 무재순환철](./cos207.json) moving shell은 handoff·review·release preview를 통과한 뒤에도 body를 동반하지 않는다. COS221은 이 moving shell이 마지막으로 `이미 목적지에 닿았다`는 문서형 회신을 획득한 상태로, route closure가 실제 도착으로 오인되는 지점이다. 따라서 COS207 shell에 generated arrival receipt가 붙으면 next station recovery를 기다리지 말고 현재 route 전체를 동결해야 한다."
+      },
+      {
+        "targetId": 214,
+        "targetTitle": "회청색 장넘김대행막",
+        "description": "[COS214 — 회청색 장넘김대행막](./cos214.json)의 manual page-turn cue는 마지막 수동 확인을 통과한 것처럼 보이게 만든다. 그 직후 COS221이 형성되면 empty host는 `넘겨 보아 확인했고, 이제 도착도 확인된 packet`처럼 오인되기 가장 쉽다. 2044-05-03 release audit의 실패 직전 판단은 이 조합에서 집중되었으므로, COS214 징후가 있는 host에서 도착 회신이 생기면 thumb-flip 결과를 즉시 무효화하고 rear body search를 다시 시행해야 한다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "[COS219 — 회청색 종결전사패](./cos219.json)는 bodyless review의 종결 어휘를 portable card로 옮기는 하류 현상이고, COS221은 그 card형 종결 외피가 `도착`, `인수 완료`, `수령자: —`와 같은 **목적지 어휘**로 바뀐 단계에 가깝다. 둘 다 짧은 lower line과 closure cue를 남기지만, 어느 쪽도 실제 본문 위치를 안정적으로 알려 주지 않는다. generated note나 arrival reply slip을 읽거나 필사할수록 오염이 길어지는 점도 공통이다."
+      },
+      {
+        "targetId": 220,
+        "targetTitle": "회청색 반출대행패",
+        "description": "[COS220 — 회청색 반출대행패](./cos220.json)는 COS221의 직접 상류 단계다. [COS220 — 회청색 반출대행패](./cos220.json)가 route code와 declared mass만 먼저 부여된 empty host에 `OUTBOUND READY`를 남긴다면, COS221은 그 반대편 blank arrival stock에 `도착`·`인수 완료`를 먼저 남긴다. 두 현상이 연결될 경우 실제 body는 correction zone이나 rear guide에 남은 채 source와 destination가 모두 완료 상태로 닫힐 수 있다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-221-01 / used arrival stock 거리 행렬",
+      "description": "2044-05-20 13:30~16:10, release test cage L-2. active host 16점(H220-host 6, A207-shell 5, A206-field shell 5)과 control 16점(complete file 8, neutral empty cover 8)을 사용했다. 2부 carbonless arrival receipt를 5cm, 20cm, 40cm, 80cm에 배치하고 445nm 530lx, 23.4°C, RH 44% 조건에서 210초 관찰한 결과, active군은 5cm 4/4, 20cm 4/4, 40cm 2/4, 80cm 0/4로 총 10/16 양성이었고 control군은 0/16이었다."
+    },
+    {
+      "label": "EXP-221-02 / receipt 재질 비교",
+      "description": "동일 active host 12점을 기준으로 2부 NCR receipt 12매, 3부 carbonless booklet sheet 12매, plain index card 12매, PET card 12매, laminated form 12매를 각각 180초 노출했다. 2부 NCR은 10/12 full pass, 3부 carbonless는 9/12 full pass, plain index card는 4/12 약한 lower line만 보였고 PET와 laminated 대조군은 0/24였다. 섬유가 짧고 표면 sizing이 약한 paper stock이 가장 민감했다."
+    },
+    {
+      "label": "EXP-221-03 / rear body 회수 선행 대조",
+      "description": "2044-05-21 09:10~11:00, Q-2 검증실. bodyless host 8점과 그 대응 body 8점을 사용해, 한 군은 rear body를 먼저 회수해 footer hash와 장수를 맞춘 뒤 노출했고 다른 군은 host만 노출했다. body unrecovered 군은 7/8에서 full arrival reply가 형성되었고, body reunified 군은 0/8이었다. weak lower band 1건도 90초 내 사라져, actual body 부재 또는 접근 불가가 핵심 조건임이 지지되었다."
+    },
+    {
+      "label": "EXP-221-04 / automatic gate·handheld 응답 비교",
+      "description": "2044-05-21 14:00~15:40, G-R2 mock line과 D-3 handheld bay. A221 양성 host 8점과 control 8점을 automatic mode와 manual-only mode로 나눠 비교했다. automatic군은 6/8에서 READY 또는 `DELIVERED` preview가 발생했고, manual-only 군은 0/8에서 closure가 발생했다. 다만 manual-only 군 2/8에서는 weak lower band만 생겨 문서 외피와 설비 closure가 분리될 수 있음이 확인되었다."
+    },
+    {
+      "label": "EXP-221-05 / peel 대 opaque freeze 비교",
+      "description": "2044-05-22 10:30~12:00, L-2 cage. visible arrival pass를 host에서 직접 떼어낸 군 6건, route code를 덧쓴 군 6건, tray 전체를 opaque lid로 동결한 군 6건을 비교했다. peel군은 3/6에서 11~34cm 옆 blank pouch로 측방 전이가 발생했고, overwrite군은 2/6에서 nearby verification slip 하단선 darkening이 뒤따랐다. opaque full-tray freeze 군은 6/6에서 30분 내 추가 cue 재발이 없었다."
+    },
+    {
+      "label": "EXP-221-06 / [COS181 — 청회색 무재 인수구](./cos181.json) 의존성 대조",
+      "description": "2044-05-24 09:20~10:50, lip mock station C-181M. active receipt stock 16매를 lip active 8회와 lip disabled 8회로 나눠 같은 active host 앞에 배치했다. lip active 군은 7/8에서 wording이 안정된 full arrival reply를, lip disabled 군은 5/8에서 shorter lower band 또는 partial cabinet code를 보였다. COS181은 COS221 형성의 필수조건은 아니지만 문구 정착을 강화하는 것으로 기록되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "bodyless host, [COS220 — 회청색 반출대행패](./cos220.json) 산물, [COS207 — 회청색 무재순환철](./cos207.json) shell 반경 1m 안에서는 blank arrival receipt, dock acknowledgment copy, witness slip, outgoing pouch top card를 사용하지 않는다.",
+    "회청색 lower band, `도착`, `인수 완료`, cabinet code, route code가 보이는 즉시 source와 destination 양측을 동시에 **dual freeze** 한다. gate, handheld preview, trolley latch, manifest closure는 모두 manual-only 모드로 전환한다.",
+    "generated receipt를 signing, stamping, photographing, pairing, 장부 반영의 근거로 사용하지 않는다. 특히 body 후보와 같은 transparent plane 위에 놓는 행위를 금지한다.",
+    "실제 판정은 **도착 확인 사중 판정**으로만 수행한다. footer hash와 last page count, 독립 질량·장수, source/destination raw log, rear body 0.5~2.5m search가 모두 끝나기 전에는 도착 상태를 확정하지 않는다.",
+    "visible receipt나 top card만 떼어내지 않는다. used arrival surface 전체를 opaque lid로 덮어 동결하고 host, generated receipt, actual body, route trace를 서로 다른 chain으로 4분리한다.",
+    "route code, cabinet code, lower line을 현장에서 덧쓰거나 가로지우지 않는다. overwrite와 peel은 duplicate copy, blank pouch, verification slip로의 측방 전이를 유발할 수 있다.",
+    "관련 구역에서는 clear clipboard, transparent comparison board, carbonless receipt booklet, blank dock pouch를 active host 반경 70cm 밖에만 둔다. 기록용 받침은 matte-black 또는 inert PTFE board만 사용한다.",
+    "generated arrival receipt에는 `A221-pass`, active host에는 `H221-host`, 실제 rear body에는 `B221-body`, gate·latch·manifest·distance trace에는 `R221-trace` 접두를 부여한다. 네 표본은 같은 봉투, 같은 tray, 같은 current chain으로 병합하지 않는다.",
+    "실제 body 수색은 current host의 정면이 아니라 correction tray, rear guide, previous rack, rear gap 7~20mm, previous pouch stand 순으로 시작한다. generated receipt의 문구를 1차 좌표로 사용하지 않는다.",
+    "dual freeze 뒤 최소 30분 동안 lower band, duplicate copy, blank pouch, handheld preview의 재발 여부를 재관찰한다. 문구가 약화되더라도 rear body 확인 전까지 안전 판정을 내리지 않는다."
+  ],
+  "hypotheses": [
+    "현재 가장 유력한 가설은 COS221이 [COS220 — 회청색 반출대행패](./cos220.json)가 만든 outbound surrogate의 **반대편 문서 외피**라는 것이다. 즉 실제 본문은 이동하지 않았는데, 도착했어야 하는 마지막 증빙만 blank arrival stock 위에 먼저 닫힌다.",
+    "또 다른 가설은 carbonless receipt와 dock acknowledgment copy가 `미래의 수령 사실`을 적기 위한 구조를 이미 갖고 있어, [COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession과 [COS219 — 회청색 종결전사패](./cos219.json)의 closure cue를 가장 쉽게 받아들인다는 것이다. 현재까지 PET와 laminated stock이 반복적으로 음성이었던 점이 이를 부분적으로 지지한다.",
+    "[COS181 — 청회색 무재 인수구](./cos181.json)가 없는데도 양성이 확인되었으므로 COS221을 단순 receiving lip의 직접 부산물로 보기는 어렵다. 다만 COS181이 함께 있을 때 wording과 destination code가 더 안정적이어서, lip는 필수조건이 아니라 강화 조건일 가능성이 높다.",
+    "실제 body가 반복적으로 rear guide, correction tray, previous rack 뒤에서 회수된 점은, route identity와 도착 증빙이 물리 내용보다 더 멀리 이동한다는 해석과 부합한다. 이 경우 [COS193 — 회청색 후입등재구](./cos193.json)와 [COS207 — 회청색 무재순환철](./cos207.json)이 남긴 분리 상태가 COS221의 전제가 된다.",
+    "현 단계에서 COS221이 신뢰 가능한 목적지 좌표를 알려 주거나 missing body를 복원했다는 증거는 없다. 확인된 것은 어디까지나 **도착했다는 증명만 먼저 남는다**는 사실이며, generated receipt의 문구는 본문 위치의 지도로 사용될 수 없다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "오도착 확정 및 체인 단절",
+      "assessment": "가장 높은 위험이다. generated receipt 한 장이 source와 destination 양쪽 절차를 동시에 닫아 실제 body가 후방에 남아 있는데도 도착이 확정된 것처럼 기록될 수 있다."
+    },
+    {
+      "category": "오반출 은폐",
+      "assessment": "높음. [COS220 — 회청색 반출대행패](./cos220.json)와 결합하면 실제 반출 실패나 body 분리를 가린 채 `도착 회신이 돌아왔다`는 이유로 source search가 중단될 수 있다."
+    },
+    {
+      "category": "wrong body 선택 및 false pair",
+      "assessment": "높음. cabinet code, lower line, completion cue를 근거로 body 후보를 선택하면 [COS205 — 회청색 대조합치막](./cos205.json)형 false match가 빠르게 강화된다."
+    },
+    {
+      "category": "설비 자동반응",
+      "assessment": "중간 이상. gate READY, handheld `DELIVERED`, trolley latch unlock, manifest closure가 route field와 lower band에 먼저 반응할 수 있어 기계적 안전장치가 문서 외피를 실제 도착으로 오인한다."
+    },
+    {
+      "category": "직접 신체 손상",
+      "assessment": "낮음. 현재까지 보고된 직접 외상은 없으며 주 위험은 문서·체인·시설 절차의 오판에 집중된다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS221 현장에서 가장 위험한 문장은 **`회신지가 돌아왔으니 source search는 끝났다`**이다. generated receipt가 먼저 생겼다는 사실은 도착이 있었다는 증거가 아니라, 도착 증빙만이 물리 내용보다 앞서 닫히고 있다는 신호로 취급해야 한다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“도착한 것은 짐이 아니라 도착했다는 증명뿐이었다.”** — 기록관 K-04, 2044-05-18 초동 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "visible receipt가 사라졌다고 해서 현상이 끝난 것은 아니다. 같은 route field와 lower line이 duplicate copy, blank pouch, handheld preview 중 하나에 남아 있으면 동일 사건의 연장선으로 간주한다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“같은 cabinet code가 적혀 있었지만, 선반에는 아무것도 들어오지 않았다.”** — 시설운용원 M-27, D-3 audit memo"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-221 정식 편입",
+      "paragraphs": [
+        "2044-05-18부터 2044-05-27 사이 현장 메모에서는 현상을 `T-221`, `arrival reply slip`, `도착 회신지`, `false delivery receipt`로 병기했다.",
+        "2044-05-20 거리 행렬과 2044-05-23 dock duplicate 사건을 통해, 핵심이 단순 delayed manifest나 carbonless 압력 오염이 아니라 **실제 본문 없이 도착 증빙 외피를 대행하는 회청색 receipt 현상**임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 도착대행패**로 확정하고, release-stage surrogate cluster의 downstream 도착 증빙 항목으로 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A221/H221/B221/R221 접두 및 도착 확인 사중 판정",
+      "paragraphs": [
+        "generated arrival receipt와 top card는 `A221-pass`, active source host는 `H221-host`, 실제 rear body는 `B221-body`, gate·latch·manifest·distance·preview trace는 `R221-trace` 접두를 부여한다.",
+        "`A221-pass`, `H221-host`, `B221-body`, `R221-trace`는 같은 sleeve, 같은 tray, 같은 current chain으로 병합하지 않는다.",
+        "도착 확인 사중 판정은 **footer hash와 last page count**, **독립 질량·장수**, **source/destination raw log**, **rear body 0.5~2.5m search 및 30분 재관찰**을 모두 포함한다. generated receipt, cabinet code, route line은 이 판정의 대체물이 될 수 없다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "도착 확인 사중 판정",
+      "paragraphs": [
+        "`1)` expected page total과 last page count를 footer hash, 수기 장수, 스테이플 간격으로 독립 확인한다. generated receipt의 page total과 cabinet code는 판정 근거로 사용하지 않는다.",
+        "`2)` expected mass와 actual mass를 source host, generated receipt, candidate body 각각에 대해 별도 계량한다. declared mass가 기입되어 있어도 gate나 도크의 준비 상태보다 독립 계량값을 우선한다.",
+        "`3)` source release log, destination dock log, gate PLC, handheld preview, floor scale, carrier camera를 같은 타임코드로 대조한다. 문서 외피와 물리 도착이 동시에 존재하지 않으면 도착 판정은 보류한다.",
+        "`4)` actual body는 current host가 아닌 correction tray, rear guide 0~30mm, previous rack, rear gap 7~20mm, previous pouch stand 0.5~2.5m 범위에서 먼저 검색한다. generated receipt가 보여 주는 cabinet code는 수색 좌표로 사용하지 않는다."
+      ]
+    },
+    {
+      "title": "blank arrival stock 배제 반경",
+      "paragraphs": [
+        "used release tray, outgoing rack, receiving cage, dock acknowledgment desk 반경 **70cm** 안에는 blank arrival receipt, carbonless duplicate book, blank dock pouch, witness slip, verification card를 두지 않는다.",
+        "투명 클립보드, clear plate, acrylic stand, transparent comparison board는 active host 근처에서 사용하지 않는다. 관련 실험에서 transparent plane은 문구 안정화와 false pair 선택을 모두 증가시켰다.",
+        "배제 반경 안에서 기록이 필요할 경우 사전 번호가 매겨진 matte-black code paddle과 외부 타임스탬프 보드만 사용한다. 종이 메모는 zone 밖에서만 작성한다."
+      ]
+    },
+    {
+      "title": "배제 기준",
+      "paragraphs": [
+        "일반적인 delayed manifest entry, 뒤늦은 dock stamp, staff backfill은 actual body가 동일 위치에 존재하고 source/destination raw log가 물리 이동을 함께 지지할 경우 COS221로 판정하지 않는다.",
+        "실제 delivered packet이 return receipt와 같은 chain, 같은 footer hash, 같은 질량 범위를 회복한 경우는 정상 절차일 수 있다. 이 경우 duplicate copy·blank pouch·handheld preview로 field가 새로 퍼지지 않아야 한다.",
+        "generated receipt가 보여 주는 어휘와 실제 raw audio, body text가 일부 일치하더라도 그것만으로 COS221을 부정하지 않는다. 본 항목의 핵심은 문구의 정확성이 아니라 **도착 증빙이 물리 내용보다 먼저 닫힌다는 점**이다."
+      ]
+    }
+  ]
+}

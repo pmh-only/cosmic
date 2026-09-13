@@ -340,6 +340,15 @@
         "`A220-pass`, `H220-host`, `B220-body`, `R220-trace`는 같은 sleeve, 같은 tray, 같은 outbound chain으로 병합하지 않는다.",
         "반출 전 삼중 판정은 독립 질량·장수 대조, footer hash와 body 관계 확인, rear body 0.5~2.5 m search 및 30분 재관찰을 모두 포함한다. visible pass나 route code는 이 판정의 대체물이 될 수 없다."
       ]
+    },
+    {
+      "relatedId": 221,
+      "type": "reciprocal",
+      "title": "COS221 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS220 — 회청색 반출대행패](./cos220.json)의 직접적인 downstream mirror로 분류된다. [COS220 — 회청색 반출대행패](./cos220.json)가 `나가도 된다`는 pass와 route code를 먼저 부여하면, COS221은 blank arrival stock에 `이미 도착했다`는 회신 외피를 먼저 남길 수 있다.",
+        "두 현상이 연결될 경우 source와 destination가 모두 완료 상태로 닫히는 반면 actual body는 correction zone이나 rear guide에 남아 있을 수 있으므로, COS220 표본에 도착 회신지가 생성되면 outbound pass와 arrival receipt를 각각 분리 봉인하고 source/destination dual freeze를 동시에 시행한다."
+      ]
     }
   ],
   "supplementalSections": [

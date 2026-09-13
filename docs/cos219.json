@@ -386,6 +386,15 @@
         "`A219-card`, `B219-body`, `T219-trace`는 같은 봉투, 같은 current chain, 같은 comparison board로 병합하지 않는다.",
         "관련 구역에서는 blank note card 대신 흑색 code paddle과 외부 타임스탬프 보드만을 사용하며, generated card의 문구를 육성으로 읽지 않는다."
       ]
+    },
+    {
+      "relatedId": 221,
+      "type": "reciprocal",
+      "title": "COS221 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS219 — 회청색 종결전사패](./cos219.json)의 portable closure cue가 목적지 어휘로 편향된 downstream 문서형 산물로 해석된다. 둘 다 1~4행의 짧은 문구와 lower line을 남기지만, COS221은 `도착`, `인수 완료`, cabinet code처럼 destination sign-off에 더 집중한다.",
+        "generated note나 arrival reply slip을 읽거나 필사할수록 오염이 길어지는 점도 공통이므로, COS219 이력이 있는 host 근처의 blank receipt는 note card와 동일하게 금지하고, 생성된 receipt를 witness slip이나 review memo로 혼용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -394,6 +394,15 @@
       "paragraphs": [
         "[COS220 — 회청색 반출대행패](./cos220.json)는 [COS214 — 회청색 장넘김대행막](./cos214.json)의 manual page-turn cue가 마지막 확인을 통과한 것처럼 보인 직후, empty host에 최종 outbound pass가 부착되는 release 단계의 대표 후속 현상이다. 실제 body가 rear guide나 correction tray 뒤에 남아 있어도 넘김감과 route code가 함께 있으면 취급자는 `확인했고 이제 보낸다`는 잘못된 결론에 가장 쉽게 도달한다. COS214 숙주에서 회청색 lower band나 dock route가 생기면 thumb-flip 결과를 즉시 무효화하고, no-leafing triad·rear body search·[COS220 — 회청색 반출대행패](./cos220.json) pass 분리를 동시에 시행한다."
       ]
+    },
+    {
+      "relatedId": 221,
+      "type": "reciprocal",
+      "title": "COS221 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS214 — 회청색 장넘김대행막](./cos214.json)의 manual page-turn cue가 마지막 확인을 통과한 것처럼 보인 직후, `이미 도착했다`는 receipt 외피까지 덧붙는 말단 단계로 확인되었다. 실제 body가 rear guide나 correction tray 뒤에 남아 있어도 넘김감과 도착 회신이 함께 있으면 취급자는 가장 쉽게 `확인했고 수령도 끝났다`는 잘못된 결론에 도달한다.",
+        "COS214 숙주에서 generated arrival receipt가 생기면 thumb-flip 결과를 즉시 무효화하고, no-leafing triad·rear body search·receipt 분리를 동시에 시행한다."
+      ]
     }
   ],
   "supplementalSections": [
