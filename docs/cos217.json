@@ -426,6 +426,15 @@
         "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS217 — 회청색 선행대독면](./cos217.json)의 bodyless front 대독 오염이 blank paper card나 witness slip으로 압축된 portable pseudo-transcript로 확인되었다. generated card는 휴지점과 종결 어휘를 어느 정도 공유하지만, 실본문의 안정된 문단을 전사하거나 복원하지는 못한다.",
         "따라서 COS217 host 옆에서 회청색 1~4행이 생긴 card를 대독 증거, 회의록, 인계 요약으로 채택하지 않는다. 무구두 심사 절차를 유지하고 rear body 회수를 먼저 끝낸 뒤, 해당 card는 [COS219 — 회청색 종결전사패](./cos219.json) 오염 표본으로 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 222,
+      "type": "reciprocal",
+      "title": "COS222 상호기록",
+      "paragraphs": [
+        "[COS222 — 회청색 속행검토틀](./cos222.json)에서는 header strip나 witness slip처럼 bodyless front를 빈 frame에 고정한 뒤, `다음`·`계속`·`첫 줄` 류 cue가 개입하면 5~31초 안에 [COS217 — 회청색 선행대독면](./cos217.json)과 동일한 선행대독이 시작되었다. 2026-11-08 E-222-03 시험에서는 추가 발화 1회만으로 3행 낭독이 형성되었다.",
+        "차이는 COS217 단독 표본이 front 자체에 current status를 획득하는 데 비해, COS222는 empty frame이 먼저 `현재 검토 자리`를 제공한다는 점이다. 빈 frame 인접 구역의 verbal handoff나 육성 검토는 COS217 onset을 가속하는 절차로 분류한다."
+      ]
     }
   ],
   "supplementalSections": [

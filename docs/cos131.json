@@ -456,6 +456,15 @@
       "paragraphs": [
         "[COS216 — 회청색 공석대행패](./cos216.json)의 overhead scan 8회 중 3회는 [COS131 — 회백색 대독문](./cos131.json)과 동일한 1~3행 요약 외피를 생성했다. source card에는 stable body text가 없고 accession 파편과 상태 동사만 남았으므로, 이 대독문은 원문 열람 결과가 아니라 빈 전면 자리가 `이미 읽혔다`는 절차 상태로 전사된 파생물로 본다. COS131이 공석표·출납 card·recently vacated slot과 함께 나타나면 브리핑 완료 근거로 쓰지 말고 COS216 rear-search를 먼저 시행한다."
       ]
+    },
+    {
+      "relatedId": 222,
+      "type": "reciprocal",
+      "title": "COS222 상호기록",
+      "paragraphs": [
+        "[COS222 — 회청색 속행검토틀](./cos222.json)을 stage 3에서 차단한 8회 중 4회에서 digest card 상단에 1~3행의 짧은 current summary가 남았고, 구조와 완료감은 [COS131 — 회백색 대독문](./cos131.json)과 일치했다. 원본문의 실재는 어느 표본에서도 복원되지 않았다.",
+        "따라서 빈 frame 인접 위치에서 회백색 요약문이 생성될 경우 이를 독립 브리핑 산물로 채택하지 말고 [COS222 — 회청색 속행검토틀](./cos222.json) 유래 잔류문 가능성을 먼저 검토한다. 요약문과 host frame은 같은 체인 번호를 공유하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

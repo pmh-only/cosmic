@@ -430,6 +430,15 @@
         "[COS184 — 회청색 차순호명패](./cos184.json)가 rear-gap host 25 cm 이내에 남아 있을 경우, [COS218 — 회청색 후면청취막](./cos218.json)의 대리낭독은 제목행보다 `다음`, `속행`, `호명 예정`과 유사한 호출 파편을 우선 출력하는 경향을 보였다. 2044-05-03 3-B 사건과 후속 대조 3회에서 blank plaque 제거 직후 발화가 5초 이내 약화된 것이 확인되었다.",
         "이는 차순호명패가 본문 순서를 복원한 것이 아니라, bodyless front를 당장 호출될 current item처럼 취급하게 만드는 방향 표식으로 작동한 결과이다. COS184 표본이 thin shell이나 empty sleeve 인접 평면에 놓여 있을 경우, rear-gap 음향 조사보다 먼저 표찰을 회수하고 host를 불투명 hood 아래로 이동한다."
       ]
+    },
+    {
+      "relatedId": 222,
+      "type": "reciprocal",
+      "title": "COS222 상호기록",
+      "paragraphs": [
+        "[COS222 — 회청색 속행검토틀](./cos222.json) 현장에서는 공란 routing card, header strip, witness slip를 빈 frame의 하단 립 또는 상단 클립에 끼운 뒤 15~48초 내에 [COS184 — 회청색 차순호명패](./cos184.json)와 동일한 `다음` 권한이 안정화되었다. 차순 표식은 독립 plaque처럼 보이지만, 실제 onset은 빈 frame이 유지하는 current position에 의존했다.",
+        "따라서 COS184 plaque가 카트형 투명 frame과 함께 확인되면 표찰만 회수하지 말고 host frame 전체를 동시에 분리 봉인한다. plaque 제거 후에도 frame이 남아 있으면 새로운 blank front가 다시 `다음 차례`를 획득할 수 있다."
+      ]
     }
   ],
   "supplementalSections": [

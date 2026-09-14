@@ -384,6 +384,15 @@
       "paragraphs": [
         "[COS220 — 회청색 반출대행패](./cos220.json)는 [COS203 — 회청색 교차편철면](./cos203.json)이 만든 허위 composite가 `검토 완료 뒤 반출` 외형까지 획득한 단계로 기록된다. 서로 다른 provenance의 front와 body가 한 권처럼 맞물린 상태에서 route pass가 생기면, 시각적 오합치는 단순 오봉인을 넘어 실제 outbound packet으로 오인될 위험이 급격히 증가한다. COS203 자료에서 false composite 위에 outbound lower band나 route code가 발생하면 해제를 늦추지 말고 양손 동시 분리·불투명 sleeve 봉인·rear body 확인을 우선하며, [COS220 — 회청색 반출대행패](./cos220.json)와의 결합 사례로 별도 체인 관리한다."
       ]
+    },
+    {
+      "relatedId": 222,
+      "type": "reciprocal",
+      "title": "COS222 상호기록",
+      "paragraphs": [
+        "[COS222 — 회청색 속행검토틀](./cos222.json) 연쇄가 선행대독 단계를 넘기면, provenance가 다른 본문 3~9장이 빈 frame 안으로 끌려와 front-only header와 한 건처럼 맞물리는 사례가 반복되었다. 이는 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite가 portable current-position host에 의해 가속된 경우로 기록한다.",
+        "E-222-04 10회 대조에서 A222-host가 있는 실험군은 6/10이 양성이었고 inert frame군은 0/10이었다. 따라서 COS203 의심 pair가 카트형 투명 frame과 함께 발견되면 front/body provenance 대조를 같은 평면에서 수행하지 말고 host를 먼저 불투명 hood 아래로 분리한다."
+      ]
     }
   ],
   "supplementalSections": [
