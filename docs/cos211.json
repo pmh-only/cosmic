@@ -448,6 +448,15 @@
       "paragraphs": [
         "used audit board 노출 시험에서 [COS216 — 회청색 공석대행패](./cos216.json) 군 7/10은 actual body 회수 이전 18–41초 안에 [COS211 — 회청색 선결검수면](./cos211.json)의 completion box를 형성했다. 이는 COS216이 빈 전면 자리를 `이미 돌아온 current item`처럼 보이게 만든 뒤, COS211이 그 상태를 `이미 검수된 item`으로 한 단계 더 굳히는 연쇄로 해석된다. COS211 작업면에 vacancy card 기원이 의심되면 completion state를 즉시 무효 보류하고 rear-recovered body 확인 전 검수 종료를 선언하지 않는다."
       ]
+    },
+    {
+      "relatedId": 225,
+      "type": "reciprocal",
+      "title": "COS225 상호기록",
+      "paragraphs": [
+        "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS211 — 회청색 선결검수면](./cos211.json)의 `검수 완료` 외형과 결합해, 아무도 받지 않은 host가 `이미 인수되었고 동시에 검수도 끝난 자료`처럼 보이게 만드는 복합 단계로 기록한다. 2026-09-06~2026-09-08 used audit board 시험에서 recipient mark가 형성된 host 8건 중 5건이 120초 이내 completion box를 추가 획득했고, 실제 body는 그 시점에도 rear position에서 분리 확인되었다.",
+        "따라서 recipient initials와 completion frame이 함께 보여도 handoff 종료나 provenance 회복의 근거로 사용하지 않는다. COS211 작업면에서 하단 서명칸이 닫히면 [COS225 — 회청색 인수대행서명](./cos225.json) 동반 사례로 우선 봉인하고, live recipient verification과 rear body search 전 검수 종료를 선언하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

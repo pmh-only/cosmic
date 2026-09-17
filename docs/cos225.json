@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "양성 표본 17건 중 9건이 일반 인계 양식, 복사지, 카트 부착 slip에서 발생했고, 2026-09-06 음성 자극 후 인접 복사지 2건에 동일 code fragment가 복제되어 외부 유출 시 기관 외부에서도 chain-of-custody 위변조와 은폐 수단으로 모방될 위험이 높다.",
+    "permission": "현장 이동 담당, 기록관, 필적 분석 담당이 같은 표본을 반복 대조해야 하므로 최상위 제한보다는 3등급 열람이 적절하나, 수령자 코드와 교대 정보가 포함되어 무제한 배포는 불가하다.",
+    "chaos": "onset가 22~94초로 넓고 recipient code, 시간 표기, 복사지 전파 여부가 일관되지 않았으며, 동일 host를 재배치해도 일부만 재현되어 예측성이 낮다.",
+    "danger": "직접적인 상해 사례는 없었으나 2026-09-02 release tray 오이동 1건과 false receipt log 2건이 발생해 기록 무결성과 증거 보존에 중간 이상의 위해를 입증했다.",
+    "popularity": "임시등록 후 11일 동안 transport/review anomaly 조회 17건에서 참조되었고 [COS177 — 회청색 후열인계로](./cos177.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS196 — 회청색 선행표지본](./cos196.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS219 — 회청색 종결전사패](./cos219.json) 연계 검토에 반복 호출되었으나 기관 전역 공통 기준이 될 정도는 아니다.",
+    "containment": "표준 봉투 보관만으로는 recipient field 노출을 막지 못해 흑색 차폐패, 복사지 분리, live receipt 검증, host/body 분리 체인 등 복합 관리가 필요하며, masking 적용 후 실험 재현률이 11/18에서 0/18로 감소했다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "K-22",
+        "role": "현장 기록관 / 주조사자",
+        "status": "active",
+        "involvement": "2026-09-02 최초 CCTV 역검토를 수행하고 release 중지, rear-body 재수색, T-225 임시등록 작성을 지시했다."
+      },
+      {
+        "name": "M-07",
+        "role": "보존기사 / 인계구 운영",
+        "status": "active",
+        "involvement": "최초 양성 host `A196-front-08`를 H-3 데스크로 이동했고, 표식 형성 직후 이를 정상 인수 서명으로 오판하여 release tray로 옮겼다가 이후 진술과 현장 복원에 협조했다."
+      },
+      {
+        "name": "H-11",
+        "role": "열영상·표면계측 분석관",
+        "status": "active",
+        "involvement": "EXP-225-01~04의 설계와 Keyence/FLIR 계측을 담당했다. 2026-09-06 generated code 육성 호명으로 secondary trace를 유발해 세션 중단 보고를 제출했다."
+      },
+      {
+        "name": "L-04",
+        "role": "보안감사 / 출입로그 대조",
+        "status": "active",
+        "involvement": "named recipient의 부재와 desk 주변 접근 로그 부재를 확인했고, generated mark를 개인 위조 정황으로 오판하지 말라는 감사 권고를 발령했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-09-02 07:42 KST",
+        "label": "최초 양성 확인",
+        "description": "서부 보존전환동 2층 인계데스크 H-3에서 `A196-front-08` 아래의 연분홍 carbon receipt recipient box에 회청색 `R17 / 07:42` 표식이 무접촉 형성되었다."
+      },
+      {
+        "date": "2026-09-02 11:10 KST",
+        "label": "T-225 임시등록",
+        "description": "CCTV·열영상 검토와 rear-body 회수 후 현상이 개별 위조가 아니라 문서-절차 복합 이상으로 판단되어 `T-225`로 임시 봉인되었다."
+      },
+      {
+        "date": "2026-09-04 09:00 KST",
+        "label": "통제 실험 개시",
+        "description": "제1격리실 Q-2에서 recipient field masking, front/body 재결합, desk 거리, 필압 비교의 4개 실험군이 개시되었다."
+      },
+      {
+        "date": "2026-09-12 16:30 KST",
+        "label": "공식 명칭 확정",
+        "description": "양성 17건과 대조 실험 결과를 바탕으로 현상의 공식 명칭을 `회청색 인수대행서명`으로 확정하고 흑색 차폐패 표준을 도입했다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-225-01",
+        "date": "2026-09-02",
+        "location": "서부 보존전환동 2층 인계데스크 H-3",
+        "title": "빈 인계 host의 무접촉 인수서명 발생",
+        "involvedPersonnel": [
+          "M-07",
+          "K-22",
+          "L-04"
+        ],
+        "narrative": [
+          "2026-09-02 07:31 KST, M-07은 랙 3-B 후방 립에서 분리된 `A196-front-08` host를 회수했다. host 전면에는 current strip와 A189 trace가 남아 있었으나 대응 body는 현장에서 발견되지 않았다. M-07은 차순 지연을 피하려고 인계데스크 H-3 위의 연분홍 receipt copy 1장을 host 아래에 넣고 recipient box를 가리지 않은 채 43초 동안 desk를 비웠다.",
+          "07:42:51, 30 fps CCTV와 FLIR C5 열영상에서 필기 동작 없이 lower-right box에 회청색 `R17 / 07:42` 형상이 한 프레임 내에 나타났다. M-07은 직전 교대자가 서명했을 가능성을 가정하고 host를 release tray로 옮겼으나, K-22가 08:06 역검토에서 무접촉 발생을 확인하고 이동을 중단했다. 08:24 rear rail 재수색에서 대응 `B196-body-08`가 같은 랙 뒤 17 cm 지점에서 회수되었고, named recipient `R-17`은 07:00~09:00 외부 진료동 체류가 출입 기록으로 확인되었다."
+        ],
+        "outcome": "release가 취소되었고, host·generated receipt·실제 body가 분리 봉인되었다. 본 사건이 COS225 임시등록의 직접 계기가 되었다."
+      },
+      {
+        "code": "INC-225-02",
+        "date": "2026-09-06",
+        "location": "제1격리실 Q-2 실험부스 B",
+        "title": "서명칸 음성 호명 중 복사지 이중 인수 흔적 발생",
+        "involvedPersonnel": [
+          "H-11",
+          "K-22",
+          "L-04"
+        ],
+        "narrative": [
+          "EXP-225-03에서 H-11은 양성 가능 host 6점과 blank receipt 6장을 0.3 m, 1.0 m 거리군에 배치하고 onset 시각을 측정했다. 사전 계획서는 generated mark를 촬영 완료 전 필사·호명하지 말도록 했으나, H-11은 필적 군집 비교를 위해 생성 중인 code 두 건을 30 cm 거리에서 육성으로 읽어 녹음했다.",
+          "호명 14초와 21초 후, 원래 blank였던 carbon copy 2장과 옆 queue ticket 1장에 동일한 code fragment가 추가로 나타났고, 한 장은 `received` lower line까지 함께 형성되었다. K-22는 세션을 즉시 중단하고 desk 위 모든 recipient field를 흑색 paddle로 차폐했으며, L-04는 해당 음성 파일을 `T225-trace-06A`로 별도 봉인했다. 실험군 내부의 실제 body packet는 사전에 별도 sleeve에 봉인되어 있어 물적 유실은 발생하지 않았다."
+        ],
+        "outcome": "generated mark의 육성 호명·필사 비교 금지 규정이 추가되었고, audio log는 독립 trace로 분리 관리되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-225-01",
+        "type": "CCTV/열영상 세트",
+        "description": "C-H3-090226-A~C 30 fps 영상 3각도와 FLIR C5 열영상. 07:42:51 frame에서 필기 동작 없는 mark onset와 0.9°C 국소 냉점을 확인할 수 있다.",
+        "custodyStatus": "원본 서버 SHA-256 고정, 읽기전용 보관"
+      },
+      {
+        "code": "EV-225-02",
+        "type": "양성 receipt slip",
+        "description": "S-225-01. H-3 desk 연분홍 carbon receipt의 lower-right recipient box에 회청색 `R17 / 07:42` 표식이 형성된 표본이다. 형성 17분 후 fibre penetration이 고정되었다.",
+        "custodyStatus": "`A225-sign-01`로 Mylar 슬리브 봉인"
+      },
+      {
+        "code": "EV-225-03",
+        "type": "대응 body packet",
+        "description": "`B196-body-08`. rear rail 17 cm 후방에서 회수된 실제 본문 묶음으로, 전면 host와 분리된 상태에서 발견되었다. 실측 질량은 0.846 kg이다.",
+        "custodyStatus": "`B225-body-01`로 냉건 보존, 원 host와 분리 체인 유지"
+      },
+      {
+        "code": "EV-225-04",
+        "type": "표면계측 및 필압 비교 로그",
+        "description": "Keyence VHX-7000 현미경 이미지 42장, Mitutoyo SJ-410 depth profile, manual writing control 6건 비교표. generated mark는 18~26 μm 균일 침하와 무가열 onset를 보였다.",
+        "custodyStatus": "분석실 이미지 저장소 및 hard copy 2중 보관"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "M-07",
+        "role": "보존기사 / 인계구 운영",
+        "context": "2026-09-02 08:41 최초 구술보고",
+        "statement": "제가 인계가 밀리지 않게 하려고 receipt를 먼저 깔아 두었습니다. 돌아와 보니 누가 사인한 것처럼 보여 한 번은 믿었습니다. 그 판단이 잘못이었고, 실제 본문은 뒤에 남아 있었습니다."
+      },
+      {
+        "speaker": "K-22",
+        "role": "현장 기록관 / 주조사자",
+        "context": "2026-09-02 09:12 CCTV 역검토 메모",
+        "statement": "화면상 접촉은 없었고, 발생 전 서명칸만 짧게 식었습니다. 제 판단으로는 누군가 대신 서명했다기보다 인수 상태만 먼저 닫힌 것입니다. 다만 마지막 문장은 아직 제 해석입니다."
+      },
+      {
+        "speaker": "L-04",
+        "role": "보안감사 / 출입로그 대조",
+        "context": "2026-09-02 09:05 교대·출입 로그 검토",
+        "statement": "R-17은 그 시간대 건물 안에 없었습니다. 따라서 책임 귀속을 개인 위조로 돌릴 근거는 없고, 현재 확인된 사실은 code가 부재자 식별자와 겹친다는 점뿐입니다."
+      },
+      {
+        "speaker": "H-11",
+        "role": "열영상·표면계측 분석관",
+        "context": "2026-09-06 실험 중단 보고",
+        "statement": "제가 code를 읽은 뒤 복사지에도 같은 조각이 생겼습니다. 음성 호명이 확산 조건인지 아직 단정할 수 없지만, 적어도 촬영 완료 전 읽지 말아야 한다는 점은 확인됐습니다."
+      }
+    ]
+  },
+  "id": 225,
+  "title": "회청색 인수대행서명",
+  "language": "ko-KR",
+  "overview": [
+    "COS225는 인수·수령을 표시하는 서명칸, 하단 receipt line, 복사지 recipient box에 회청색의 필기형 표식이 무접촉으로 형성되어, 대상이 실제 인계 없이도 `인수 완료` 상태를 얻는 문서-절차 복합 현상이다.",
+    "현재까지 확인된 양성 17건 중 14건은 content-deficient carrier, front-only host, 또는 provenance가 불완전한 packet에서 발생했다. 표식의 존재만으로 실제 수령자 접촉이나 정상 인계를 입증할 수 없다.",
+    "가장 큰 손실은 `이미 받아진 자료`라는 오판으로 후방 body 수색이 중단되는 점이며, 17건 중 9건에서 실제 본문 또는 핵심 증거물이 현재 host보다 한 단계 뒤 또는 하부 위치에서 회수되었다."
+  ],
+  "identificationTraits": [
+    "recipient signature box, lower-right receipt line, 또는 수령자 코드란이 가시 상태로 남아 있을 것.",
+    "표식 색상은 445 nm 사광에서 회청색으로 강조되고, 가시광 평균 반사 peak가 452~468 nm에 집중될 것.",
+    "형성 직전 0.8~2.1초 사이 서명칸 표면 온도가 주변보다 0.7~1.1°C 낮아지며, manual writing control에서 나타나는 국소 가열이 없을 것.",
+    "stroke depth가 18~26 μm 범위에서 비교적 균일하고, pen entry/exit 압흔이나 손바닥 접촉유가 결여될 것.",
+    "표식이 기록한 수령자 코드 또는 약자가 해당 시각의 실제 접촉자와 일치하지 않거나, named recipient가 다른 구역에 있었음이 출입 로그로 확인될 것."
+  ],
+  "discovery": [
+    "최초 확정 사례는 2026-09-02 07:42 KST, 서부 보존전환동 2층 인계데스크 H-3에서 확인되었다. 랙 3-B 후방 립에서 분리 회수된 `A196-front-08` host(실측 0.418 kg)를 연분홍 carbon receipt 위에 놓은 뒤 43초간 무인 상태로 둔 결과, recipient box에 회청색 `R17 / 07:42` 표식이 형성되었다.",
+    "당시 현장 환경은 23.8°C, 상대습도 44%, 상부 LED 480 lux, 탁면 진동 0.03 g 미만이었다. 3각도 30 fps CCTV와 FLIR C5 열영상에는 필기 도구, 손가락, 소매 접촉이 확인되지 않았다.",
+    "08:24 rear rail 재수색에서 대응 `B196-body-08`가 host 원위치 뒤 17 cm 지점에서 회수되었고, named recipient `R-17`은 07:00~09:00 외부 진료동 체류가 출입 기록으로 확인되었다. 같은 날 11:10 KST COS225가 임시등록 `T-225`로 봉인되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "양성 host는 대개 이미 `current`, `received`, `verified`류의 절차 기대를 띠고 있으나, 실제 본문·실수령자·정상 provenance 중 하나 이상이 결여되어 있다.",
+      "표식은 선을 써 내려가는 방식이 아니라 한 프레임 또는 수 초 내에 전체 형상이 동시에 안정되는 경향을 보이며, 최초 5분 내에는 섬유 상층만 착색되고 14~22분 사이에 침하가 고정된다.",
+      "표식 형성 후 인접 복사지, queue ticket, local handoff slip이 같은 수령 상태를 상속할 수 있으나, 이 전파는 모든 trial에서 발생하지 않았다.",
+      "실제 수령자가 현장에 도착해도 생성 표식을 자기 서명으로 인정하지 않는 사례가 17건 중 17건이었으며, 서명 일치도는 높지 않다."
+    ],
+    "stages": [
+      {
+        "name": "전구 노출",
+        "description": "recipient field가 가려지지 않은 상태에서 host가 인계·수령 위치에 정지한다. 열영상상 서명칸 주변에 얕은 냉점이 생기고, lower line이 주변보다 먼저 선명해진다."
+      },
+      {
+        "name": "대행서명 형성",
+        "description": "회청색 약자, 사번 일부, 또는 시각 표기가 서명칸에 동시 형성된다. 표식은 실제 필기보다 균일한 깊이를 보이고, 수기에서 흔한 시작점 잉크 과적이 없다."
+      },
+      {
+        "name": "수령상태 전파",
+        "description": "host 또는 인접 slip가 `received` 상태를 얻고, 후방 body 수색이나 재검토가 조기에 중단될 위험이 증가한다. 일부 표본에서는 carbon copy와 queue ticket에 동일 code fragment가 추가로 나타난다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS225는 [COS177 — 회청색 후열인계로](./cos177.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS196 — 회청색 선행표지본](./cos196.json) 이후 단계에서 가장 자주 확인되며, 뒤쪽에 남아 있는 실제 body 또는 미해결 인계 상태를 전면의 `인수 완료` 서명 하나로 봉합하는 경향을 보인다.",
+      "잘못 맞물린 전면/본문이 [COS203 — 회청색 교차편철면](./cos203.json)과 [COS211 — 회청색 선결검수면](./cos211.json)을 동반하면 COS225 표식은 provenance 오류를 더 오래 고정하며, [COS219 — 회청색 종결전사패](./cos219.json) 인접 시에는 종결 시각과 하단선까지 함께 닫히는 빈도가 높다."
+    ],
+    "entries": [
+      {
+        "targetId": 177,
+        "targetTitle": "회청색 후열인계로",
+        "description": "양성 17건 중 11건에서 [COS177 — 회청색 후열인계로](./cos177.json) trace가 먼저 확인되었다. 후면 인계가 닫히지 않은 carrier가 전면 recipient field에 도달할 때 COS225가 발생해, 실제 body가 뒤 경로에 남은 채 인수 상태만 전면에서 완료되는 사례가 반복되었다."
+      },
+      {
+        "targetId": 183,
+        "targetTitle": "회청색 차순정지선",
+        "description": "blank queue ticket 또는 차순 표찰이 [COS183 — 회청색 차순정지선](./cos183.json) 전방 6.4~11.2 cm 구간에 남아 있을 때 recipient initials형 표식이 4건 형성되었다. COS183이 만든 빈 차례가 COS225에서는 `다음 수령자`의 서명칸으로 기능하는 것으로 보인다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "실측 하중과 무관한 declared mass를 지닌 host 10건이 [COS189 — 회청색 무재하중표](./cos189.json)와 함께 COS225 양성을 보였다. 이 조합은 `무거운 동시에 받아진 packet`이라는 허위 완결성을 만들어 release 판정을 가장 자주 오도했다."
+      },
+      {
+        "targetId": 196,
+        "targetTitle": "회청색 선행표지본",
+        "description": "front-only host 9건은 모두 [COS196 — 회청색 선행표지본](./cos196.json)류 전면 current state를 보유하고 있었다. COS225 표식이 lower-right receipt line에 생기면 전면 shell 하나만으로 인계가 끝난 것처럼 보이므로, rear body 수색이 후순위로 밀린다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "서로 다른 provenance의 front/body가 임시로 맞물린 4건에서 [COS203 — 회청색 교차편철면](./cos203.json) 위에 COS225가 추가 발생했다. 이 경우 잘못된 composite가 실제 수령 서명을 얻은 것처럼 보이므로, 표식은 pair의 정당성을 전혀 입증하지 않는다."
+      },
+      {
+        "targetId": 211,
+        "targetTitle": "회청색 선결검수면",
+        "description": "used audit board 또는 verification mat 위에 놓인 host 8건은 [COS211 — 회청색 선결검수면](./cos211.json) completion box를 서명 후 120초 이내 동반했다. COS225와 COS211의 결합은 `누가 받았는가`와 `검수가 끝났는가`를 동시에 닫아 후속 검증을 약화시킨다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "blank note card나 closing slip이 30 cm 이내에 있었던 5건에서는 [COS219 — 회청색 종결전사패](./cos219.json)와 유사한 종결 시각 문구가 서명칸 하단에 함께 형성되었다. COS219는 COS225의 recipient code가 종결 메모의 어휘를 흡수하게 만드는 촉진 조건으로 취급된다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-225-01 / Recipient field masking",
+      "description": "2026-09-04~2026-09-05, 양성 가능 host 18점(`A196-front` 9점, empty `A189-carrier` 9점)과 pristine blank control 18점을 사용했다. Optris PI 640 열카메라, 30 fps CCTV, 445 nm 사광을 병행했다. recipient field를 노출한 positive host에서는 11/18이 22~94초 안에 stable signature를 형성했고, 같은 host에 1.2 mm 무광 흑색 paddle을 씌운 군과 pristine blank control 군은 각각 0/18, 0/18이었다."
+    },
+    {
+      "label": "EXP-225-02 / Front-body reunion control",
+      "description": "2026-09-05, 분리 회수된 front/body 쌍 10쌍을 대상으로 420초 이내 blind sleeve 재결합군과 의도적 분리 유지군을 비교했다. 재결합군 10/10은 stable signature를 형성하지 않았고, 1건에서만 일시적인 lower-line 냉점이 생겼다. 반대로 분리 유지군은 7/10에서 COS225 양성을 보였으며, 그중 5건은 실제 body가 host보다 뒤쪽 slot에서 재확인되었다."
+    },
+    {
+      "label": "EXP-225-03 / Handoff desk distance trial",
+      "description": "2026-09-06, 양성 가능 host 24점을 인계데스크 기준 0.3 m, 1.0 m, 2.5 m에 각각 8점씩 배치했다. 0.3 m 군은 6/8, 1.0 m 군은 2/8에서 onset가 발생했고 2.5 m 군은 0/8이었다. 2회차에서 generated code의 육성 호명 위반으로 carbon copy 2장과 queue ticket 1장에 secondary trace가 생겨 세션을 중단했으며, 중단 전 확보분만 통계에 포함했다."
+    },
+    {
+      "label": "EXP-225-04 / Generated mark vs manual writing comparison",
+      "description": "2026-09-07~2026-09-08, COS225 양성 6점과 동일 양식에 수기로 작성한 control 6점을 Keyence VHX-7000, Mitutoyo SJ-410, FLIR C5로 비교했다. generated mark는 33 ms 한 프레임 내에 전체 형상이 동시에 안정되고 표면 온도는 -0.7~-1.1°C 감소했으며, stroke depth는 18~26 μm로 균일했다. manual control은 0.8~2.1초에 걸친 순차 형성, +0.2~+0.5°C 가열, 9~41 μm의 진입·이탈 편차를 보였다."
+    }
+  ],
+  "handlingProcedures": [
+    "suspected host를 발견하면 recipient field, lower-right receipt line, carbon copy box를 이동 전에 즉시 무광 흑색 paddle로 가린다.",
+    "host 아래에 blank receipt, queue ticket, blank note card, unused arrival slip을 추가로 넣지 않는다. 이미 겹친 양식이 있으면 분리하지 말고 전체를 한 번에 봉인한다.",
+    "표식이 형성되면 90초 이내 445 nm 사광, 625 nm 보조광, 열영상, 정면 촬영을 끝내고, 덮어쓰기·지우기·stamp·육성 호명·필사 비교를 금지한다.",
+    "동시에 current host의 한 단계 뒤·아래 위치를 수색한다. rear gap 6~24 mm, 카트 후연, 랙 lip 뒤, tray 하부를 우선 확인하고, 발견 body는 `B225-body`로 별도 체인 부여한다.",
+    "실제 수령자 확인은 generated code를 읽지 않은 상태에서 신분 카드와 근무표로만 수행한다. named recipient를 현장에 호출할 경우 host와 1.5 m 이상 떨어진 보조 구역에서 사실 확인만 진행한다.",
+    "generated mark가 생긴 host, slip, carbon copy, audio log, thermal log는 같은 evidence envelope를 공유하지 않는다. recipient field만 절취하거나 복사지 한 장만 떼어 보관하는 절차를 금지한다.",
+    "used audit board, release tray, review end desk에서 양성이 나왔을 경우 해당 surface를 30분 이상 비우고, 다음 host를 올리기 전에 흑색 덮개와 독립 타임보드를 먼저 배치한다."
+  ],
+  "hypotheses": [
+    "확인된 사실: recipient field를 물리적으로 차폐하면 현재까지 18/18에서 stable onset가 차단되었다. 가설: COS225는 임의의 종이가 아니라 `수령을 받아들일 자리`가 남아 있는 양식에 반응한다.",
+    "확인된 사실: front/body 재결합을 420초 이내 blind sleeve에서 끝낸 10쌍은 stable signature를 형성하지 않았다. 가설: unresolved separation 또는 rear-body 잔류가 COS225 발생의 중요한 전제일 수 있다.",
+    "확인된 사실: generated code는 실제 수령자의 서명 습관과 완전히 일치하지 않고, 부재 중인 근무자 코드의 일부만 가져오는 경우가 많다. 가설: COS225는 특정 개인을 복제하기보다 인접 roster, queue, recent query에 있는 유효한 recipient 식별자를 절차적으로 차용한다.",
+    "확인된 사실: 육성 호명 후 adjacent copy 전파가 2건 발생했다. 가설: 표식을 의미 단위로 확정하려는 행위가 recipient state를 추가 매체로 확장할 수 있으나, 샘플 수가 부족해 인과는 미확정이다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록무결성",
+      "assessment": "실제 body와 무관하게 `received` 상태가 닫히면 chain-of-custody가 허위 완료되고, 이후 발견된 본문이 별도 물건처럼 분리될 수 있다."
+    },
+    {
+      "category": "운용오판",
+      "assessment": "release tray, review end desk, arrival rack 등 다음 단계로의 오이동을 유발한다. 최초 사건에서는 18분 동안 잘못된 release 상태가 유지되었다."
+    },
+    {
+      "category": "인원오인",
+      "assessment": "부재자 코드나 약자가 남아 실존 직원에게 허위 위조 혐의가 돌아갈 수 있다. disciplinary review는 CCTV·thermal·access log 동시 대조 전 개시하지 않는다."
+    },
+    {
+      "category": "전파성",
+      "assessment": "carbon copy, queue ticket, local slip로 상태가 확장될 수 있어 인접 blank form도 오염원으로 취급해야 한다. 음성 호명 후 2건의 secondary trace가 확인되었다."
+    },
+    {
+      "category": "감사·법무",
+      "assessment": "외부 감사에서 정상 서명으로 오인되면 회수·보존 결정 전체가 무효화될 수 있다. 법무 검토 전 generated mark는 genuine signature로 기재하지 않는다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "2026-09-02 08:17, L-04는 named recipient `R-17`의 출입카드가 06:48에 외부 진료동으로 이동했고 09:14까지 복귀하지 않았음을 확인했다. generated mark를 개인 위조 정황으로 단정하지 말라는 1차 감사 메모가 같은 시각 배포되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "사람이 쓴 것보다 서명칸이 스스로 닫힌 것처럼 보였습니다. — M-07, 2026-09-02 최초 구술보고"
+    },
+    {
+      "type": "paragraph",
+      "content": "필적분석실은 COS225 표본을 징계용 필적 자료와 같은 절차로 취급하지 않는다. 접촉 증거, 열영상, 주변 blank form 상태가 먼저 대조되기 전에는 generated mark를 직원 개인의 수기 산물로 분류하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "code를 읽자 아래 장도 바로 같은 상태를 얻었습니다. 필적 비교 전에 멈췄어야 했습니다. — H-11, 2026-09-06 EXP-225-03 중단 보고"
+    },
+    {
+      "type": "paragraph",
+      "content": "현장팀은 COS225 표식을 서명의 내용이 아니라 수령 상태 표지로 먼저 해석한다. 따라서 named recipient를 호출하거나 추궁하는 절차는 host/body provenance search 뒤에만 수행한다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-225 명칭 확정",
+      "paragraphs": [
+        "2026-09-02 초동 보고서와 격리라벨에서는 현상을 `빈 수령필`, `무인 인수서명`, `T-225`로 병기했다.",
+        "2026-09-04~2026-09-09 통제 실험과 필적 대조 결과, 현상은 개인 필적 복제나 단순 위조가 아니라 recipient field 자체가 인수 상태를 대행 폐쇄하는 양상으로 확인되었다.",
+        "이에 공식 명칭을 **회청색 인수대행서명**으로 확정한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A225/B225/T225 접두 및 분리 규정",
+      "paragraphs": [
+        "suspected host는 `A225-host-일련번호`, generated mark 또는 해당 slip는 `A225-sign-일련번호`, 회수된 실제 body는 `B225-body-일련번호`, carbon copy·queue ticket·audio/thermal 잔류는 `T225-trace-일련번호`를 사용한다.",
+        "네 접두 표본은 같은 봉투, 같은 current chain, 같은 verification board를 공유하지 않는다. generated mark가 형성된 recipient field는 절취하지 않고 host 전체를 first evidence로 취급한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "서명 흔적 계측값 요약",
+      "paragraphs": [
+        "2026-09-04~2026-09-09 확정 양성 11점과 manual control 6점의 공통 계측값은 아래와 같다.",
+        "| 구분 | onset | 표면 온도 변화 | stroke depth | 실제 접촉 | 결과 |\n| --- | --- | --- | --- | --- | --- |\n| COS225 양성 | 22–94초 | -0.7~-1.1°C | 18–26 μm | 미확인 | recipient state 형성 |\n| manual control | 필기 즉시 | +0.2~+0.5°C | 9–41 μm, 진입/이탈 편차 큼 | 확인됨 | 정상 수기 |",
+        "양성 표본 11점 중 9점은 14~22분 사이 fibre penetration이 고정되었고, 2점은 상층 착색만 남긴 채 30분 내 희미해졌으나 carbon copy에는 trace가 유지되었다."
+      ]
+    },
+    {
+      "title": "현장 차폐 도구 규격",
+      "paragraphs": [
+        "recipient field 차폐에는 무광 흑색 PVC paddle(두께 1.2 mm, 크기 90×140 mm 이상)을 사용한다. 투명 아크릴, 반투명 sleeve, 회색 board는 음영만 만들고 field의 경계 자체는 남겨 재현 차단 효과가 없었다.",
+        "데스크 상부 촬영은 445 nm 사광, 625 nm 보조광, 열카메라 1대를 동시에 운용한다. 인계·수령 라인이 가시 상태로 남아 있으면 host를 이동하기 전에 먼저 paddle을 내려 recipient box 전체를 가린다."
+      ]
+    }
+  ]
+}

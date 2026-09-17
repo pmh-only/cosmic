@@ -393,6 +393,15 @@
         "[COS222 — 회청색 속행검토틀](./cos222.json) 연쇄가 선행대독 단계를 넘기면, provenance가 다른 본문 3~9장이 빈 frame 안으로 끌려와 front-only header와 한 건처럼 맞물리는 사례가 반복되었다. 이는 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite가 portable current-position host에 의해 가속된 경우로 기록한다.",
         "E-222-04 10회 대조에서 A222-host가 있는 실험군은 6/10이 양성이었고 inert frame군은 0/10이었다. 따라서 COS203 의심 pair가 카트형 투명 frame과 함께 발견되면 front/body provenance 대조를 같은 평면에서 수행하지 말고 host를 먼저 불투명 hood 아래로 분리한다."
       ]
+    },
+    {
+      "relatedId": 225,
+      "type": "reciprocal",
+      "title": "COS225 상호기록",
+      "paragraphs": [
+        "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS203 — 회청색 교차편철면](./cos203.json)이 만든 false composite가 `실제로 전달·인수된 한 건`처럼 권위를 획득하는 후속 단계로 분류된다. 2026-09-08 flat board 대조에서 provenance가 다른 front/body를 임시로 맞물린 4건 중 3건이 recipient box에 회청색 initials 또는 time mark를 형성했고, 그중 2건은 used board completion cue까지 동반했다.",
+        "따라서 COS203 의심 composite에 생긴 수령 서명은 올바른 재결합이나 chain recovery의 증거가 아니다. false composite 위 recipient mark가 발생하면 즉시 양손 동시 분리와 불투명 sleeve 봉인을 시행하고, [COS225 — 회청색 인수대행서명](./cos225.json) 동반 표본으로 별도 체인 관리한다."
+      ]
     }
   ],
   "supplementalSections": [

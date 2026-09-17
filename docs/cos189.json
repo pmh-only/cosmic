@@ -437,6 +437,15 @@
       "paragraphs": [
         "[COS220 — 회청색 반출대행패](./cos220.json)는 [COS189 — 회청색 무재하중표](./cos189.json)가 제공한 declared mass 위에 route code와 release state가 추가로 닫힌 downstream closure로 분류된다. empty carrier가 실측 질량 없이도 하중 외형을 얻은 뒤 회청색 outbound pass까지 형성되면, gate와 manifest는 `무거운 동시에 나가도 되는 packet`처럼 반응할 수 있어 실제 body 부재를 더 늦게 드러낸다. COS189 자료에서 declared mass와 outbound lower band가 함께 붙은 shell은 적재본이나 승인본으로 간주하지 말고, 3중 계량·rear body search·[COS220 — 회청색 반출대행패](./cos220.json) route trace를 분리 보존한다."
       ]
+    },
+    {
+      "relatedId": 225,
+      "type": "reciprocal",
+      "title": "COS225 상호기록",
+      "paragraphs": [
+        "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS189 — 회청색 무재하중표](./cos189.json)가 부여한 declared mass 위에 `누가 받았는가`까지 닫히는 downstream closure로 기록된다. 2026-09-04~2026-09-08 양성 host 10건 중 6건에서 empty 또는 front-only carrier가 실측 질량과 무관한 하중 외형을 유지한 채 recipient initials, 사번 일부, 시각 표기를 receipt box에 형성했다.",
+        "이 조합은 비어 있는 carrier를 `무거운 동시에 이미 인수된 packet`처럼 보이게 만들어 release 오판 위험을 크게 높인다. COS189 자료에서 회청색 kg 값과 recipient mark가 함께 나타나면 실제 적재와 정상 인수를 모두 보류하고, [COS225 — 회청색 인수대행서명](./cos225.json) 동반 여부와 rear body 위치를 먼저 대조한다."
+      ]
     }
   ],
   "supplementalSections": [
