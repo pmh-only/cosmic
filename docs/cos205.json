@@ -432,6 +432,15 @@
         "[COS221 — 회청색 도착대행패](./cos221.json)의 generated receipt를 cabinet code, lower line, page total 근거로 사용해 body 후보를 transparent comparison board에 올리면 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 급증한다. 2044-05-15 비교에서 wrong body 후보 8쌍 중 6쌍이 41~109초 안에 false match onset을 보였으므로, 도착 회신지는 provenance 복원 단서가 아니라 acceptance cue로 취급한다.",
         "COS205 비교 단계에서는 generated arrival receipt, duplicate copy, delivered preview 문구를 pairing 근거로 사용하지 않으며, shell/body 후보와 50 cm 이상 분리된 불투명 트레이에서만 재대조한다."
       ]
+    },
+    {
+      "relatedId": 226,
+      "type": "reciprocal",
+      "title": "COS226 상호기록",
+      "paragraphs": [
+        "[COS226 — 회청색 계류인계포켓](./cos226.json) 뒤에서 provenance가 다른 shell/body 후보를 라이트테이블 위에 맞춰 본 6회 중 4회에서, shared provisional barcode 또는 육안상 완전 일치처럼 보이는 [COS205 — 회청색 대조합치막](./cos205.json)형 허위 정합이 90 s 이내 형성되었다. 동일 조합을 opaque tray에서 재검수한 대조군은 0/6이었다.",
+        "이는 인계포켓의 빈 전면이 `지금 맞춰야 할 문서`의 자리를 선점한 뒤 COS205를 쉽게 증폭시키는 조건으로 해석된다. COS205 비교 단계에서 empty handoff pocket이나 transparent sleeve가 배면에 남아 있으면 pairing을 중지하고 [COS226 — 회청색 계류인계포켓](./cos226.json)부터 차폐한다."
+      ]
     }
   ],
   "supplementalSections": [

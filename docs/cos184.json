@@ -439,6 +439,15 @@
         "[COS222 — 회청색 속행검토틀](./cos222.json) 현장에서는 공란 routing card, header strip, witness slip를 빈 frame의 하단 립 또는 상단 클립에 끼운 뒤 15~48초 내에 [COS184 — 회청색 차순호명패](./cos184.json)와 동일한 `다음` 권한이 안정화되었다. 차순 표식은 독립 plaque처럼 보이지만, 실제 onset은 빈 frame이 유지하는 current position에 의존했다.",
         "따라서 COS184 plaque가 카트형 투명 frame과 함께 확인되면 표찰만 회수하지 말고 host frame 전체를 동시에 분리 봉인한다. plaque 제거 후에도 frame이 남아 있으면 새로운 blank front가 다시 `다음 차례`를 획득할 수 있다."
       ]
+    },
+    {
+      "relatedId": 226,
+      "type": "reciprocal",
+      "title": "COS226 상호기록",
+      "paragraphs": [
+        "[COS226 — 회청색 계류인계포켓](./cos226.json) 개구부에 blank header tab 또는 routing card를 끼운 조건 11회 중 6회에서, 해당 tab가 주변 문서보다 먼저 집히고 `다음 것`으로 호명되는 [COS184 — 회청색 차순호명패](./cos184.json)형 반응이 확인되었다. 이때 차순 권한은 tab 단독이 아니라 빈 포켓이 차지한 전면 현재성에 의존했다.",
+        "따라서 COS184 표찰이 카트 레일의 empty pocket, 비교실 transparent sleeve, blank handoff slot에 결합되어 있으면 표찰만 회수하지 말고 [COS226 — 회청색 계류인계포켓](./cos226.json) 숙주 전체와 고정 rail을 함께 제거한다."
+      ]
     }
   ],
   "supplementalSections": [
