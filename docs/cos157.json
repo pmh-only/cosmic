@@ -370,6 +370,14 @@
         "[COS218 — 회청색 후면청취막](./cos218.json)에서 생성된 전사문이나 말미 파편을 실제 본문으로 오인해 인계 단계로 넘길 경우, 회수되지 않은 body가 남아 있는데도 `기보관`, `외부 서고 이관`, `archive pending cleared`와 같은 [COS157 — 무재소 기보관고](./cos157.json) 상태가 먼저 붙는 사례가 확인되었다. 2044-05-03 3-B 랙 사건에서는 rear-gap sleeve의 외곽 band와 회색 보관 태그가 body 회수 전 동시에 형성되었다.",
         "따라서 COS157 표식이 bodyless front, rear gap, 청취 유도 흔적과 함께 나타나면 보관 완료나 외부 이관의 증거로 쓰지 않는다. [COS218 — 회청색 후면청취막](./cos218.json) 연계 표본은 실제 body 위치를 확인하기 전까지 archive tag를 모두 무효로 유지한다."
       ]
+    },
+    {
+      "relatedId": 227,
+      "type": "reciprocal",
+      "title": "COS227 상호기록",
+      "paragraphs": [
+        "[COS157 — 무재소 기보관고](./cos157.json)의 `기보관` 또는 `외부 서고 이관` 표식이 front-only shell에 먼저 붙어 있고 실제 body가 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수되는 결합 사례가 확인되었다. 이는 보관 완료 외형이 body 이동을 증명하지 않으며, archive tag가 강할수록 후면 수색이 늦어지는 위험형이다. 회색 서가 번호가 붙은 shell이 비정상적으로 가볍거나 body count가 맞지 않으면 외부 서고 조회 전에 rear stop·blind panel·후면 랙을 우선 개방한다."
+      ]
     }
   ],
   "supplementalSections": []

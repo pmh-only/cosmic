@@ -402,6 +402,14 @@
         "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS203 — 회청색 교차편철면](./cos203.json)이 만든 false composite가 `실제로 전달·인수된 한 건`처럼 권위를 획득하는 후속 단계로 분류된다. 2026-09-08 flat board 대조에서 provenance가 다른 front/body를 임시로 맞물린 4건 중 3건이 recipient box에 회청색 initials 또는 time mark를 형성했고, 그중 2건은 used board completion cue까지 동반했다.",
         "따라서 COS203 의심 composite에 생긴 수령 서명은 올바른 재결합이나 chain recovery의 증거가 아니다. false composite 위 recipient mark가 발생하면 즉시 양손 동시 분리와 불투명 sleeve 봉인을 시행하고, [COS225 — 회청색 인수대행서명](./cos225.json) 동반 표본으로 별도 체인 관리한다."
       ]
+    },
+    {
+      "relatedId": 227,
+      "type": "reciprocal",
+      "title": "COS227 상호기록",
+      "paragraphs": [
+        "[COS203 — 회청색 교차편철면](./cos203.json)의 false composite에 사용된 wrong body 중 상당수는 [COS227 — 회청색 후면적체벽](./cos227.json) cavity 입구에서 먼저 노출된 후보였다. generated cue나 title line만 맞춰 clear board에 올리면 후면 적체의 최상단 candidate가 가장 그럴듯한 body로 소비되므로, COS203 pairing 전에 rear cavity 전체를 개별 회수·번호화해야 한다. exposed candidate를 같은 평면에서 front와 대조하는 절차는 provenance 오염을 증폭시킨다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2045-02-14 R2-3 cavity 개방 시 14개 chain prefix의 body-only 묶음 23건이 한 후면 공간에서 회수되었고, 그중 11건의 전면 shell은 다른 구역에서 이미 열람·인계·기보관 상태를 얻고 있었다. 현상 공개 시 제한 자료의 실제 본문 위치와 기관 보존 절차의 취약점이 동시에 노출되므로 secrecy 4로 유지한다.",
+    "permission": "COS227 판정에는 blind panel 개방 권한, footer hash·총질량·staple spacing 대조, 오염 장부 정정, generated card 격리까지 요구된다. 현장 열람만으로는 검증이 불가능하고 잘못된 body 회수를 되돌릴 권한도 필요하므로 permission 4가 적절하다.",
+    "chaos": "양성 rear plane 6면에서 회수된 body-only 묶음 23건 중 즉시 노출된 최상단 후보가 실제 대응 body였던 경우는 6건뿐이었다. 세척·panel 교체·transparent plane 사용 여부에 따라 인접 면으로 host가 전이되어 결과 예측성이 낮으므로 chaos 4로 평가한다.",
+    "danger": "직접적인 독성이나 치명상은 확인되지 않았으나 wrong body 재결합 시도 3건, 허위 검토 종료 시도 2건, 반출 직전 중단 1건, 좁은 후면 공간 손 끼임 1건이 발생했다. 위해는 주로 기록·설비 운영에 집중되어 danger 3으로 분류한다.",
+    "popularity": "임시표기 T-227 개설 후 14일 동안 rear search 요청 18건, 교차 검토 회람 23건, 재봉인 정정 7건이 접수되었다. front/body 분리 계열 자료에서 반복 참조되므로 popularity 4로 판정한다.",
+    "containment": "rear-plane mapping, opaque sleeve 분리, ceramic spacer, blank card 금지, transparent plane 차단, A227/B227/C227/T227 chain 분리를 동시에 적용해야 재현률이 의미 있게 감소했다. 단일 조치로는 억제가 되지 않아 containment 4가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록보존관 K-27",
+        "role": "초동 회수 및 rear search 총괄",
+        "status": "active",
+        "involvement": "반복적인 rear body 회수 패턴을 묶어 T-227 임시 등록을 개설했고, blind panel 개방·개별 봉인·체인 분리 규정을 지휘했다."
+      },
+      {
+        "name": "감식관 H-22",
+        "role": "footer hash·질량·staple spacing 감식",
+        "status": "active",
+        "involvement": "최상단 후보 body의 그럴듯한 외형을 기각하고 실제 본문과 wrong candidate를 구분하는 기준값을 제시했다."
+      },
+      {
+        "name": "음향분석관 A-05",
+        "role": "동기화 음성·영상 계측",
+        "status": "active",
+        "involvement": "rear search 중 종결음·지시 끝음의 탈락, generated card 문구와 raw audio의 비일치, code paddle 대체 절차의 유효성을 계측했다."
+      },
+      {
+        "name": "현장통제관 C-09",
+        "role": "동선 차단 및 panel 개방 통제",
+        "status": "active",
+        "involvement": "rear search grid, transparent plane 차단, 양손 동시 분리, host 표면 봉인을 현장 규정으로 고정했다."
+      },
+      {
+        "name": "심사보조원 N-16",
+        "role": "검토 기록 보조",
+        "status": "reassigned",
+        "involvement": "generated card와 최상단 후보 bundle을 실제 검토 메모 및 대응 body로 오인해 wrong pair 시도를 유발했고, 이후 수기 검토 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-02-12 17:30 KST",
+        "label": "rear recovery 패턴 재검토 개시",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json)과 [COS219 — 회청색 종결전사패](./cos219.json) 사건에서 실제 body 회수 지점이 반복적으로 후면에 몰린다는 분석이 시작되었다."
+      },
+      {
+        "date": "2045-02-14 10:12 KST",
+        "label": "R2-3 blind panel 개방",
+        "description": "중앙기록단지 동관 4층 후면통로 R2-3의 가림판 뒤 86 mm cavity에서 body-only 묶음 23건이 회수되었다."
+      },
+      {
+        "date": "2045-02-15 13:40 KST",
+        "label": "rear-plane mapping 완료",
+        "description": "443 nm 사광과 열영상으로 양성 rear plane 6면, 대조면 6면이 비교되어 회청색 무광띠와 저온대가 공식 판정 기준에 추가되었다."
+      },
+      {
+        "date": "2045-02-17 16:20 KST",
+        "label": "transparent plane wrong-pair 시험",
+        "description": "generated card와 최상단 후보를 clear board에 나란히 두었을 때 wrong body 선택이 급증하는 현상이 재현되었다."
+      },
+      {
+        "date": "2045-02-20 08:50 KST",
+        "label": "허위 기보관·무재하중표 연동 차단",
+        "description": "제2보존동 lane 2에서 false load와 archive tag를 가진 empty carrier의 반출 직전, 실제 body가 rear stop 뒤에서 회수되었다."
+      },
+      {
+        "date": "2045-02-22 09:00 KST",
+        "label": "정식 분리 규정 발효",
+        "description": "A227/B227/C227/T227 체인 분리와 무필기 rear search 절차가 관련 구역 전체에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-227-01",
+        "date": "2045-02-14",
+        "location": "중앙기록단지 동관 4층 후면통로 R2-3",
+        "title": "blind panel 개방 중 body-only 적체군 발견",
+        "involvedPersonnel": [
+          "기록보존관 K-27",
+          "감식관 H-22",
+          "음향분석관 A-05",
+          "현장통제관 C-09",
+          "심사보조원 N-16"
+        ],
+        "narrative": [
+          "K-27은 [COS203 — 회청색 교차편철면](./cos203.json)과 [COS219 — 회청색 종결전사패](./cos219.json) 사건에서 실제 body가 반복적으로 후면에서 회수된 점을 근거로, review rack R2-3의 blind panel 개방을 지시했다. H-22는 먼저 전면 shell 3점만 재대조하자고 제안했으나 C-09는 443 nm 사광과 열영상을 먼저 촬영한 뒤 패널을 열기로 결정했다. 22.9°C, 상대습도 44%, 443 nm/520 lx 조건에서 패널을 개방하자 길이 1.4 m, 최대 깊이 86 mm의 cavity에서 body-only 묶음 23건이 계단식으로 겹쳐 있었다. 앞쪽 5건은 모두 p.2 또는 appendix에서 시작했고, 14개 chain prefix가 혼재해 있었다.",
+          "N-16은 가장 앞에 드러난 묶음의 lower line과 장수 표기가 당일 R-4 host와 맞아 보인다는 이유로 즉시 matching candidate로 분류하려 했다. H-22는 footer hash 끝 8자와 총질량 73 g 부족을 근거로 선택을 중지시켰고, A-05는 같은 시각 근접 마이크에서 페이지 마찰음은 남았지만 `뒤쪽 두 번째`라는 지시의 끝 0.9초가 빠진 점을 기록했다. K-27은 묶음을 하나의 더미로 회수하지 않고 개별 봉인번호를 부여했으며, 패널과 cavity dust line도 별도 증거로 보존했다."
+        ],
+        "outcome": "R2-3는 A227-host-01로 지정되었고, misfile로 처리되던 rear recovery 설명은 공식적으로 폐기되었다. 같은 날 front-only shell 11점의 열람·보관 상태가 모두 재검토 대상으로 전환되었다."
+      },
+      {
+        "code": "INC-227-02",
+        "date": "2045-02-17",
+        "location": "서해권 보존분석소 격리동 5층 비교실 Q-5B",
+        "title": "generated card를 근거로 한 wrong body 선발",
+        "involvedPersonnel": [
+          "기록보존관 K-27",
+          "감식관 H-22",
+          "음향분석관 A-05",
+          "현장통제관 C-09",
+          "심사보조원 N-16"
+        ],
+        "narrative": [
+          "Q-5B 재현 run에서 C-09는 A203-front-07과 후면 회수 후보의 구분을 유지하기 위해 opaque tray 두 개를 준비했으나, N-16이 [COS219 — 회청색 종결전사패](./cos219.json) generated card `A219-card-03`를 참고 메모로 해석해 clear board 위에 올리고 cavity 입구에서 가장 앞에 있던 묶음 `B-cand-07`을 나란히 놓았다. 49초 뒤 lower line이 board 위 shared baseline처럼 이어지며 front와 body가 한 사건철처럼 잡혔고, N-16은 봉인 클립을 가져오려 했다.",
+          "K-27은 clip 추가 전에 양쪽을 동시에 들어 올리게 했고, H-22는 `B-cand-07`의 staple spacing이 2.1 mm 어긋나며 footer hash가 불일치한다는 점을 제시했다. A-05는 generated card에 적힌 `검토 종료` 문구 전체가 raw audio에 없고 종결 어미 파편만 일치한다는 점을 재확인했다. opaque sleeve 분리 뒤 실제 body `B227-body-07`은 rear pocket 0.9 m 뒤에서 회수되었고, clear board 위에 있던 wrong candidate는 28초 후 원래 cavity 방향으로 다시 6 mm 후퇴했다."
+        ],
+        "outcome": "Q-5B에서는 transparent plane과 generated card의 동시 사용이 금지되었고, lower line을 pairing cue로 쓰는 관행이 공식 절차에서 삭제되었다."
+      },
+      {
+        "code": "INC-227-03",
+        "date": "2045-02-20",
+        "location": "제2보존동 B1 pre-dispatch lane 2 rear stop",
+        "title": "허위 기보관·무재하중표 동반 반출 직전 중단",
+        "involvedPersonnel": [
+          "기록보존관 K-27",
+          "감식관 H-22",
+          "음향분석관 A-05",
+          "현장통제관 C-09",
+          "심사보조원 N-16"
+        ],
+        "narrative": [
+          "lane 2의 empty carrier `S-PL2-11`은 actual mass 0.29 kg이었으나 line display에는 1.47 kg가 유지되었고, front shell 상단에는 `기보관` 라벨이 남아 있었다. N-16은 해당 shell이 이미 [COS157 — 무재소 기보관고](./cos157.json) 상태로 처리된 문서의 잔류 참조본이라고 판단해 반출 대기 rack으로 넘기려 했다. K-27은 body count가 맞지 않는다고 보고 lane을 정지시켰고, C-09는 육성 page count 대신 code paddle만 사용해 rear stop 뒤를 수색하도록 했다.",
+          "H-22가 rear stop panel을 13 mm 들자 뒤 슬롯에서 body-only 묶음 1건과 [COS174 — 미열 사이장](./cos174.json) 2매가 함께 회수되었다. A-05는 line microphone에서 `열한 번`이라는 계수의 끝음이 잘리고, 대신 종이 긁힘만 길게 남은 점을 기록했다. N-16은 front shell의 archive tag와 false load를 실제 이송 증거로 본 것이 자신의 해석이었다고 인정했고, carrier는 dispatch 직전 43초 전에 회수되었다."
+        ],
+        "outcome": "lane 2 rear stop이 A227-host-06으로 추가 지정되었고, [COS157 — 무재소 기보관고](./cos157.json) 표식과 [COS189 — 회청색 무재하중표](./cos189.json) 값이 동시에 있는 shell은 rear search 음성 판정 없이 반출할 수 없도록 규정이 수정되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A227-host-01",
+        "type": "rear cavity photogrammetry set",
+        "description": "R2-3 blind panel 뒤 1.4 m cavity의 3D 사진측량 자료. 최대 깊이 86 mm, 회청색 무광띠, dust line, bundle 위치좌표를 포함한다.",
+        "custodyStatus": "A227 host 전용 금고 선반 1에 panel 본체와 분리 보관, 디지털 원본 해시 등록 완료"
+      },
+      {
+        "code": "B227-cluster-01",
+        "type": "recovered body-only bundle set",
+        "description": "14개 chain prefix에서 나온 body-only 묶음 23건의 일괄 회수 세트. 각 묶음은 p.2 시작, appendix 시작, front 결손 여부, footer hash 단편이 개별 기록되어 있다.",
+        "custodyStatus": "묶음별 봉인번호를 분리 유지하며 하나의 더미로 재적층 금지"
+      },
+      {
+        "code": "MAP-227-01",
+        "type": "443 nm·열영상 overlay",
+        "description": "양성 rear plane 6면과 대조면 6면의 443 nm 사광 영상, 8~14 μm 열영상, cavity 깊이 측정치를 한 축으로 합성한 판독 자료이다.",
+        "custodyStatus": "분석실 read-only 서버와 인쇄 필름 사본 1부로 이중 보관"
+      },
+      {
+        "code": "T227-trace-02",
+        "type": "generated card 및 오염 장부",
+        "description": "`A219-card-03`와 이에 옮겨 적힌 lower line 1면을 포함한다. wrong body 선발 직전의 completion cue 오염을 입증한다.",
+        "custodyStatus": "card와 장부를 같은 봉투에 넣지 않고 matte-black sleeve 2점으로 분리 보관"
+      },
+      {
+        "code": "VID-227-01",
+        "type": "동기화 top/side 영상 세트",
+        "description": "R2-3 개방, Q-5B clear board 정렬, lane 2 rear stop 회수까지의 3사건 동기화 영상. 최상단 후보 전진 11 mm, wrong candidate 후퇴 6 mm, rear extraction 시각이 포함된다.",
+        "custodyStatus": "보안영상금고 3호 저장, 열람 시 checksum 대조 의무화"
+      },
+      {
+        "code": "TAG-227-01",
+        "type": "UV thread migration set",
+        "description": "형광 실표지 12점과 대응 회수 지도. front-facing camera에 이동이 기록되지 않은 상태에서 rear cavity에서 실표지가 검출된 실험 자료이다.",
+        "custodyStatus": "저광량 보관함에 밀봉, 재노출 시 UV 강도 제한"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "감식관 H-22",
+        "role": "footer hash·질량·staple spacing 감식",
+        "context": "INC-227-01 1차 회수 보고",
+        "statement": "가장 앞에 나온 묶음이 제일 그럴듯해 보였다는 점은 사실입니다. 그러나 footer hash와 총질량은 그 판단을 지지하지 않았고, 제가 확인한 관찰 사실은 `맞아 보이는 위치`와 `맞지 않는 수치`가 동시에 존재했다는 것입니다."
+      },
+      {
+        "speaker": "심사보조원 N-16",
+        "role": "검토 기록 보조",
+        "context": "INC-227-02 사후 면담",
+        "statement": "저는 lower line과 장수 표기를 보고 이미 누군가 본문을 정리해 둔 메모라고 해석했습니다. 그 판단은 제 추정이었고, 실제 body와 hash를 먼저 대조하지 않은 것이 오류였습니다."
+      },
+      {
+        "speaker": "기록보존관 K-27",
+        "role": "초동 회수 및 rear search 총괄",
+        "context": "2045-02-22 절차 개정 회의",
+        "statement": "앞면은 끝난 것처럼 나오는데 본문은 늘 뒤에서 다시 세어야 했습니다. 이 문장은 해석이 아니라, generated card·archive tag·false load가 먼저 붙고 실제 body는 rear plane에서만 회수된 사례들을 정리한 실무 판단입니다."
+      }
+    ]
+  },
+  "id": 227,
+  "title": "회청색 후면적체벽",
+  "language": "ko-KR",
+  "overview": [
+    "**COS227**은 전면 shell이나 절차 외피가 현재본처럼 앞면에서 처리되는 동안, 해당 자료의 실제 본문 적층이 선반·트레이·가림판 뒤의 좁은 후면 공간에 공동으로 집적되는 현상이다. 현재 통칭은 **회청색 후면적체벽**이다.",
+    "양성 위치는 벽 자체보다 **후면 수색이 늦어지는 평면 조건**에서 잘 생기며, blind panel 뒤 6~118 mm 틈, 랙 후면 0.4~1.8 m, 트레이 rear stop 뒤 슬롯에서 body-only 묶음이 반복 회수된다.",
+    "COS227은 새로운 본문을 만들지 않는다. 대신 [COS141 — 청회색 사후열람자](./cos141.json), [COS157 — 무재소 기보관고](./cos157.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS219 — 회청색 종결전사패](./cos219.json)처럼 전면과 절차 쪽에 먼저 형성된 완료 외형 뒤로 실제 본문을 밀어 넣어, 조사자가 잘못된 후보를 회수하거나 rear search를 생략하게 만든다."
+  ],
+  "identificationTraits": [
+    "430~450 nm 사광을 20~25°로 입사하면 rear plane에 길이 34~97 cm, 폭 6~19 cm의 회청색 무광띠가 먼저 드러난다.",
+    "양성 rear plane의 표면온도는 인접 대조면보다 0.9~1.6°C 낮고, 442~446 nm 부근 반사 피크를 공통으로 보였다.",
+    "양성 cavity에서는 front가 없는 body-only 묶음이 lower edge를 비슷한 높이로 맞춘 채 적층되며, 본문 시작면은 p.2 또는 appendix 면인 경우가 많다.",
+    "전면 host나 generated card를 가까이 다루면 cavity 입구의 최상단 후보가 5~40초 안에 3~14 mm 전진하거나 1.8~4.2° 회전할 수 있다.",
+    "최상단 후보는 제목선·장수 표시가 그럴듯해 보이지만, footer hash·총질량·staple spacing은 대응 front와 자주 불일치한다.",
+    "rear search 중 page count나 위치 지시를 육성으로 말하면 근접 녹음에서 끝 0.6~1.4초가 누락되거나 종이 마찰음만 길게 남을 수 있다.",
+    "서로 다른 body 묶음 사이에는 28~31°C의 얇은 끼움층이 남을 수 있으며, 이 층에는 title fragment, lower line, archive tag 조각이 겹쳐 나타난다.",
+    "양성 rear plane 주변의 empty carrier나 front-only shell은 여전히 `기보관`, `검토 완료`, `1.12~1.88 kg` 같은 절차 외형을 유지할 수 있다."
+  ],
+  "discovery": [
+    "COS227은 [COS203 — 회청색 교차편철면](./cos203.json)과 [COS219 — 회청색 종결전사패](./cos219.json) 조사에서 실제 body 회수가 반복적으로 후면에서 이루어진 자료를 재검토하던 중 분리되었다. 당시 전면 shell 쪽에는 [COS141 — 청회색 사후열람자](./cos141.json)의 열람 완료 표식, [COS157 — 무재소 기보관고](./cos157.json)의 `기보관` 라벨, [COS189 — 회청색 무재하중표](./cos189.json)의 선언 질량이 먼저 붙어 있었고, 실제 본문은 계속 별도 위치에서 회수되었다.",
+    "결정적 발견은 2045-02-14 10:12 KST, 중앙기록단지 동관 4층 후면통로 R2-3에서 이루어졌다. 22.9°C, 상대습도 44%, 443 nm/520 lx 조건에서 blind panel을 개방하자 길이 1.4 m, 최대 깊이 86 mm의 cavity 안에서 body-only 묶음 23건이 회수되었다. 이들 묶음은 14개 chain prefix를 공유했고, 17건은 개방 직전 가장 가까이 있던 front host와 일치하지 않았다.",
+    "이후 2045-02-15 rear-plane mapping에서 양성 rear plane 6면 모두가 회청색 무광띠와 저온대를 보였고, complete packet만 보관한 대조면 6면은 전부 음성이었다. 적체된 묶음 사이에서는 [COS174 — 미열 사이장](./cos174.json)과 유사한 끼움층이 9건 확인되었고, 최상단 후보를 그대로 사용하면 [COS168 — 무영 압지추](./cos168.json)와 비슷한 상단 권위 오판이 반복되었다.",
+    "현상은 단순 오정리나 misfile로 설명되지 않았다. 양성 host를 닦아 없애려는 표준 세척은 효과가 없었고, generated card나 archive tag가 있는 front-only shell은 여전히 완료본처럼 보인 반면 실제 body는 후면 적체구에서만 회수되었다. 이 rear-side 수렴 현상이 독립된 관리 대상임이 인정되어 COS227이 부여되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS227은 front/body 분리 상태가 이미 형성된 자료군에서, 실제 body를 후면 공동 cavity 쪽으로 수렴시키는 경향을 보인다.",
+      "전면 쪽에 열람 완료, 기보관, 선언 질량, generated card 같은 완료 외형이 먼저 형성될수록 rear search가 늦어지고 적체 안정성이 높아졌다.",
+      "양성 rear plane은 올바른 대응 body를 바로 내놓지 않고, 가장 그럴듯한 최상단 후보를 먼저 전진시켜 wrong recovery를 유도한다."
+    ],
+    "stages": [
+      {
+        "name": "전면 우선화",
+        "description": "front-only shell, generated card, archive tag, declared load, upper sheet authority가 먼저 전면에서 형성된다. 이 단계에서 실제 body는 눈앞에서 사라지지 않아도 이미 절차상 뒤로 밀린 것으로 취급되기 시작한다."
+      },
+      {
+        "name": "후면 plane 활성화",
+        "description": "blind panel 뒤, 트레이 rear stop, 랙 후면 공간에 회청색 무광띠와 저온대가 형성된다. 보통 6~118 mm의 틈, 0.4~1.8 m 후면 거리, 다루기 어려운 평면 조건이 공통으로 확인된다."
+      },
+      {
+        "name": "body 집적",
+        "description": "body-only 묶음이 rear cavity에 겹쳐 쌓이며 lower edge와 page start 패턴이 비슷한 방향으로 정렬된다. 이때 front는 별도 current chain에서 유지되거나, 열람 완료·기보관 상태를 먼저 획득한다."
+      },
+      {
+        "name": "후보 전진",
+        "description": "rear search가 시작되거나 generated card·front host가 근처에 놓이면 cavity 입구의 최상단 후보가 소폭 전진·회전한다. 관측자는 이 후보를 `가장 가까운 본문`으로 해석하기 쉽지만 실제 대응 body일 확률은 낮다."
+      },
+      {
+        "name": "재압축 및 전이",
+        "description": "wrong candidate를 분리하거나 세척·panel 교체를 시도하면 적체는 재압축되거나 인접 rear plane으로 host 조건을 전이시킬 수 있다. 이 단계에서 같은 rack의 다른 슬롯이나 인접 트레이 뒤에서 새 cavity가 활성화될 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS227은 front/body 분리 계열 현상에서 실제 body가 장기 잔류하는 공통 회수 지점으로 관측되었다.",
+      "전면에서 완료 외형을 먼저 부여하는 [COS141 — 청회색 사후열람자](./cos141.json), [COS157 — 무재소 기보관고](./cos157.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS219 — 회청색 종결전사패](./cos219.json)가 강할수록 rear search가 늦어졌고, wrong pair를 유도하는 [COS168 — 무영 압지추](./cos168.json), [COS174 — 미열 사이장](./cos174.json), [COS203 — 회청색 교차편철면](./cos203.json)이 결합할수록 cavity 입구 후보의 설득력이 높아졌다."
+    ],
+    "entries": [
+      {
+        "targetId": 103,
+        "targetTitle": "무음의 군집",
+        "description": "COS227 후면 수색 8회 중 5회에서 [COS103 — 무음의 군집](./cos103.json)과 유사하게 페이지 계수, 위치 지시, 종이 마찰음의 끝 0.6~1.4초가 근접 녹음에서 탈락했다. 이 때문에 rear search는 verbal cue보다 code paddle과 외부 타임스탬프 보드를 우선해야 하며, 잘린 지시를 따라 최상단 후보를 먼저 집는 오판이 늘어난다."
+      },
+      {
+        "targetId": 141,
+        "targetTitle": "청회색 사후열람자",
+        "description": "COS227에서 회수된 body 23건 중 11건의 대응 shell은 이미 [COS141 — 청회색 사후열람자](./cos141.json)의 `열람 확인` 또는 `검토 완료` 표식을 얻고 있었다. 이는 사후 열람 외형이 실제 본문 위치를 보증하지 않음을 보여 주며, 열람 완료 상태가 강할수록 rear plane 수색이 늦어지는 경향이 있었다."
+      },
+      {
+        "targetId": 157,
+        "targetTitle": "무재소 기보관고",
+        "description": "`기보관` 또는 `오프사이트 저장` 상태를 얻은 front-only shell 6건에서 실제 body가 COS227 rear cavity에 남아 있는 것이 확인되었다. 따라서 [COS157 — 무재소 기보관고](./cos157.json)는 일부 사례에서 COS227 위에 겹쳐지는 전면 외형으로 보이며, archive tag는 body 이동의 증거가 아니라 rear search 우선 신호일 수 있다."
+      },
+      {
+        "targetId": 168,
+        "targetTitle": "무영 압지추",
+        "description": "COS227 입구의 최상단 후보는 [COS168 — 무영 압지추](./cos168.json) 아래의 상단 장처럼 `현재 검토본`으로 우선권을 얻는다. 실제 대응 body와의 일치율은 23건 중 6건에 그쳤으므로, 상단 노출 순서와 압지감을 matching 근거로 사용할 수 없다."
+      },
+      {
+        "targetId": 174,
+        "targetTitle": "미열 사이장",
+        "description": "COS227에서 회수된 body cluster 사이에서는 [COS174 — 미열 사이장](./cos174.json)과 유사한 28~31°C 끼움층이 9건 확인되었다. 이 interleaf는 title fragment, lower line, archive tag 조각을 품은 채 서로 다른 body를 한 continuum처럼 보이게 하여 provenance 판정을 흐리게 만든다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "COS227 양성 rear stop에서 회수된 body 6건의 대응 empty carrier 4건은 실제 0.21~0.34 kg인데도 1.12~1.88 kg declared mass를 유지했다. 이는 [COS189 — 회청색 무재하중표](./cos189.json)가 빈 외피를 전면 절차로 계속 보내는 동안 실제 body는 COS227 rear cavity에 남을 수 있음을 뜻한다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "COS227은 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite에 공급되는 대표적인 wrong body source로 확인되었다. generated note나 title cue를 따라 cavity 앞쪽 후보를 꺼내 clear plane에 올리면 provenance가 다른 body가 front-only shell과 수십 초 안에 한 사건철처럼 맞물릴 수 있다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "COS227 사건 19건 중 7건에서는 [COS219 — 회청색 종결전사패](./cos219.json)의 lower line 또는 종결 문구가 rear search 직전에 생성되어 실제 body 회수를 지연시켰다. generated card는 본문 위치를 알려 주지 않았고, 오히려 cavity 입구의 wrong candidate를 `이미 검토된 body`처럼 보이게 만들었다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "227-A / rear plane mapping",
+      "description": "2045-02-15 13:40~17:10, 443 nm 20° 사광과 열영상으로 suspected rear plane 6면(R2-3, R2-4, 2-F rear panel, lane 2 rear stop, Q-5B tray back, H-6 blind panel)과 대조면 6면을 비교했다. 양성 6/6은 길이 34~97 cm의 회청색 무광띠와 -0.9~-1.6°C 저온대를 보였고, complete packet만 있던 대조면 0/6은 음성이었다."
+    },
+    {
+      "label": "227-C / 형광 실표지 이동 시험",
+      "description": "UV thread 3 cm 표지를 붙인 body-only 묶음 12건과 complete packet 대조군 12건을 positive rear zone 전방 0.5~1.2 m에 두고 17~96분 관찰했다. body-only 묶음은 8/12가 허가된 재배치 로그 없이 rear cavity에서 검출되었고, complete packet은 0/12였다."
+    },
+    {
+      "label": "227-F / 최상단 후보 선택 편향",
+      "description": "footer hash를 가린 상태에서 10명의 blinded operator에게 front host와 cavity 입구 후보를 제시했다. 노출된 최상단 후보를 그대로 둔 군은 7/10이 wrong candidate를 대응 body로 선택했고, 흑색 sleeve에 개별 번호만 남긴 군은 1/10만 같은 선택을 했다."
+    },
+    {
+      "label": "227-H / generated card 간섭 시험",
+      "description": "[COS219 — 회청색 종결전사패](./cos219.json) generated card를 host 20 cm 옆에 둔 군 8회와 card 없이 rear search만 수행한 대조군 8회를 비교했다. generated card 군은 premature stop 6/8, 올바른 rear body 회수 1/8이었고, 대조군은 premature stop 1/8, 올바른 회수 6/8이었다."
+    },
+    {
+      "label": "227-K / declared load spillover",
+      "description": "rear cavity에서 body가 회수된 shell 대응 empty carrier 6건을 [COS189 — 회청색 무재하중표](./cos189.json) 양성 line에 통과시켰다. 실제 질량은 0.21~0.34 kg에 머물렀지만 4/6이 1.12~1.88 kg declared mass를 획득했고, rear search 후 same line 재통과에서는 0/6이 재현되었다."
+    },
+    {
+      "label": "227-N / verbal 대 nonverbal rear search",
+      "description": "positive rear plane 앞에서 verbal page count 8회와 code paddle 기반 nonverbal search 8회를 비교했다. verbal 군은 5/8에서 지시 끝음 또는 page count 종결음의 0.6~1.4초 탈락이 기록되었고, nonverbal 군은 0/8이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "front-only shell, generated card, archive tag, declared load 중 2개 이상이 동시에 확인되면 rear search를 전면 재결합보다 먼저 시행한다.",
+    "rear search는 후방 0.3~2 m, rear gap 7~20 mm, blind panel 뒤 cavity, tray underside, 직전 opaque sleeve 순으로 수행한다.",
+    "430~450 nm 사광과 열영상으로 rear plane을 먼저 선별하고, 길이 30 cm 이상 반사띠 또는 -0.8°C 이하 저온대가 보이면 A227-host로 지정한다.",
+    "회수 후보 body와 front shell을 같은 transparent plane, scanner glass, clear board 위에 동시에 두지 않는다.",
+    "generated card, archive tag, declared weight를 육성으로 낭독하지 않는다. 현장 기록은 흑색 code paddle과 외부 타임스탬프 보드로만 남긴다.",
+    "최상단 노출 후보는 matching evidence가 아니다. footer hash, 총질량, staple spacing이 먼저 일치해야 하며, 제목선과 장수 표기만으로 재결합하지 않는다.",
+    "후보 body는 양손 동시 인양 후 즉시 불투명 sleeve에 넣고, front shell과 A227/B227/C227/T227 체인을 분리한다.",
+    "[COS141 — 청회색 사후열람자](./cos141.json), [COS157 — 무재소 기보관고](./cos157.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS219 — 회청색 종결전사패](./cos219.json) 징후가 동반되면 approval, archive, dispatch, review completion 절차를 모두 일시 중지한다.",
+    "양성 rear plane은 IPA, 건식 천, 정전기 브러시로 닦지 않는다. 필요한 경우 panel 전체를 떼어 host째 이동한다.",
+    "rear search 음성이 확인되기 전까지 empty carrier나 front-only shell을 `잔류 참조본`, `기보관본`, `검토 완료본`으로 재분류하지 않는다."
+  ],
+  "hypotheses": [
+    "가설 1: COS227은 실제 본문을 숨기는 저장소가 아니라, 전면 외피가 절차 권위를 먼저 획득했을 때 body가 밀려 들어가는 **후면 수렴 평면**일 가능성이 높다.",
+    "가설 2: [COS141 — 청회색 사후열람자](./cos141.json), [COS157 — 무재소 기보관고](./cos157.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS219 — 회청색 종결전사패](./cos219.json)은 전면에서 `이미 끝난 것처럼 보이는 상태`를 만들고, COS227은 그 뒤에 실제 body를 공동 cavity로 남겨 두는 하류 단계일 수 있다.",
+    "가설 3: [COS168 — 무영 압지추](./cos168.json)와 [COS174 — 미열 사이장](./cos174.json)은 cavity 입구의 최상단 후보를 더 그럴듯한 current body처럼 보이게 안정화한다. [COS203 — 회청색 교차편철면](./cos203.json)은 이 후보를 false composite의 후면 공급원으로 소비한다.",
+    "가설 4: [COS103 — 무음의 군집](./cos103.json)과 유사한 종결음 탈락은 COS227의 직접 원인이라기보다 rear search를 음성으로 수행할 때 현상을 오래 유지시키는 보조 조건일 수 있다.",
+    "배제되지 않은 대안 가설: 일부 body는 인력이 실제로 잘못 옮긴 뒤 다시 후면에 반환되었을 가능성이 있다. 다만 blind cavity 내부의 bundle 수, dust line, 형광 실표지 회수 결과는 단순 반복 misfile만으로는 충분히 설명되지 않는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "wrong body 재결합 위험",
+      "assessment": "매우 높음"
+    },
+    {
+      "category": "chain-of-custody 단절 및 provenance 오염 위험",
+      "assessment": "매우 높음"
+    },
+    {
+      "category": "rear search 누락 및 허위 완료 외형 고착 위험",
+      "assessment": "높음"
+    },
+    {
+      "category": "host 전이 및 2차 적체 위험",
+      "assessment": "중간 이상"
+    },
+    {
+      "category": "협소 후면 공간 취급 부상 위험",
+      "assessment": "낮음에서 중간"
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS227 현장에서 가장 먼저 꺼낸 묶음이 정답일 확률은 현재까지 6/23에 불과했다. 가시성과 접근성은 적합성을 의미하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“앞면은 다 끝난 것처럼 나왔지만, 본문은 늘 뒤에서 다시 세어야 했습니다.” — 기록보존관 K-27**"
+    },
+    {
+      "type": "paragraph",
+      "content": "generated card, archive tag, declared weight가 함께 있을수록 rear search가 늦어졌으나, 실제 본문 회수율은 그 반대로 떨어졌다. 이 세 표식의 동시 존재는 편의를 뜻하지 않고 우선 조사 신호로 취급한다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“가장 앞에 나온 묶음이 맞는 것처럼 보였지만, hash와 질량은 한 번도 그렇게 말한 적이 없습니다.” — 감식관 H-22**"
+    },
+    {
+      "type": "paragraph",
+      "content": "complete packet 대조군과 다공성 종이 pad 위 대조에서는 동일한 적체가 확인되지 않았다. COS227은 후면 blind cavity와 front/body 분리 상태가 함께 있을 때만 안정적으로 나타난다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-227 정식 편입",
+      "paragraphs": [
+        "2045-02-14~2045-02-22 초동 기록에서는 현상을 `T-227`, `rear body wall`, `후면 적체랙`, `body-only blind cavity`로 병기했다.",
+        "후속 mapping과 rear recovery 자료를 검토한 결과, 문제의 핵심은 특정 랙이나 cavity 자체가 아니라 **전면 완료 외형 뒤로 실제 body를 집적시키는 후면 평면 조건**임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 후면적체벽**으로 확정하고, 단순 misfile·맹점 보관이 아닌 독립 COS 현상으로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A227/B227/C227/T227 체인 분리 규정",
+      "paragraphs": [
+        "양성 rear plane과 panel·tray·blind cavity는 `A227-host-일련번호`, rear zone에서 회수된 실제 body는 `B227-body-일련번호`, cavity 입구의 exposed wrong candidate 또는 body-only cluster는 `C227-candidate-일련번호`, generated card·오염 장부·read-aloud 후 lower line 잔류는 `T227-trace-일련번호`를 부여한다.",
+        "`A227-host`, `B227-body`, `C227-candidate`, `T227-trace`는 같은 봉투, 같은 transparent plane, 같은 current chain hash를 공유하지 않는다.",
+        "rear search가 끝나기 전까지 어떤 `C227-candidate`도 정식 body나 current file로 승격하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "rear search grid 규격",
+      "paragraphs": [
+        "양성 rear plane 전방 1.5 m 구역은 30×30 cm grid로 나누고 좌측 상단에서 시계 방향으로 번호를 부여한다.",
+        "회수는 상단 노출 후보부터가 아니라 grid 외곽 → 하단 → 후면 깊이 순으로 진행한다. 각 회수 전후에 cavity 깊이, dust line, 표면온도, 443 nm 반사영상을 같은 번호로 기록한다."
+      ]
+    },
+    {
+      "title": "blind panel 개방 순서",
+      "paragraphs": [
+        "panel 개방 전 상·측면 카메라를 먼저 작동시키고, 443 nm 사광·열영상 촬영 후 하단에 1.5 mm 세라믹 spacer를 삽입한다.",
+        "개방 시 한쪽 모서리만 먼저 젖히지 않는다. 좌우 동시 인양 뒤 cavity 입구의 최상단 후보를 직접 당기지 말고, 번호 부여와 촬영이 끝날 때까지 위치를 유지한다."
+      ]
+    }
+  ]
+}
