@@ -406,6 +406,14 @@
         "`A227-host`, `B227-body`, `C227-candidate`, `T227-trace`는 같은 봉투, 같은 transparent plane, 같은 current chain hash를 공유하지 않는다.",
         "rear search가 끝나기 전까지 어떤 `C227-candidate`도 정식 body나 current file로 승격하지 않는다."
       ]
+    },
+    {
+      "relatedId": 228,
+      "type": "reciprocal",
+      "title": "COS228 상호기록",
+      "paragraphs": [
+        "[COS228 — 회청색 대조대행창](./cos228.json)은 본 항목 rear zone에서 회수된 actual body와 전면 candidate 사이에 투명 host가 끼어 있을 때 자주 발생하는 전면 결합 오염으로 확인되었다. 후면적체벽 뒤 body를 acrylic shield나 scanner lid를 사이에 두고 확인하면 wrong candidate의 accession·page total과 rear body의 lower line이 같은 pane에 겹쳐 보일 수 있으므로, rear search는 불투명 divider와 흑색 tray 환경에서만 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

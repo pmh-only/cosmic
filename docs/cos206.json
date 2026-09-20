@@ -416,6 +416,14 @@
         "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession과 same lower line이 blank arrival receipt 또는 dock acknowledgment copy까지 확장된 downstream 단계로 확인되었다. 같은 accession이 회신지에 남아 있어도 provenance가 회복된 것은 아니며, source correction zone에 actual body가 남아 있을 수 있다.",
         "따라서 COS206 표본에 `도착` 또는 `인수 완료` 회신이 추가되면 현장 재라벨링보다 source/destination dual freeze를 우선하고, receipt·host·body·queue field를 서로 다른 chain으로 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 228,
+      "type": "reciprocal",
+      "title": "COS228 상호기록",
+      "paragraphs": [
+        "본 항목의 borrowed accession은 [COS228 — 회청색 대조대행창](./cos228.json) 안에서 가장 자주 오판되는 상태값으로 재분류된다. same-field shell이 transparent host 앞에 놓이고 후면에 displaced body가 있으면, COS228은 accession과 lower line만 봉합하여 provenance가 회복된 것처럼 보이게 하므로, 같은 번호가 clear pane 안에서 일치해도 correction 완료나 pair 성립 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -390,6 +390,14 @@
         "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS183 — 회청색 차순정지선](./cos183.json) 전방의 빈 차례가 recipient role을 획득한 사례로 분류된다. 2026-09-06 distance trial과 재배치 대조에서, 선분 전방 6.4~11.2 cm 구간에 남은 blank queue ticket 또는 handoff slip 4건이 실제 수령자 없이도 initials형 회청색 서명과 `received` lower line을 형성했다.",
         "따라서 COS183이 만드는 빈 차순은 단순 대기 위치가 아니라, 다음 수령자를 미리 닫아 두는 자리로 기능할 수 있다. 정지선 앞의 blank ticket나 recipient slip에 code fragment가 생기면 이를 접수 완료로 해석하지 말고 [COS225 — 회청색 인수대행서명](./cos225.json) 동반 사례로 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 228,
+      "type": "reciprocal",
+      "title": "COS228 상호기록",
+      "paragraphs": [
+        "[COS228 — 회청색 대조대행창](./cos228.json)은 본 항목이 만든 blank queue ticket이나 handoff slip를 실제 rear body와 결속된 `다음 차례`처럼 보이게 하는 전면 오염으로 확인되었다. 차순정지선 전방의 공란 표찰을 acrylic shield나 clear sleeve 너머로 확인할 경우 accession과 lower line이 후면 body와 같은 pane에 맞물려 empty slot이 이미 수령된 것처럼 보일 수 있으므로, A183-gap 표본의 pair 확인은 흑색 divider를 사이에 둔 불투명 대조로만 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

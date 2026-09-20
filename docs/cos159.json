@@ -356,6 +356,14 @@
       "paragraphs": [
         "[COS176 — 유백색 선입면](./cos176.json)은 [COS159 — 앞면 잔류막](./cos159.json)의 대표적 선행 조건으로 재분류된다. 유백색 선입면이 장기간 첫 위치를 점유하면, 실제 본문은 후면 층으로 밀려나고 남는 것은 표지·제목행·라벨 같은 전면 정보뿐이어서 결국 앞면 잔류막이 안정화될 수 있다. COS159 자료에서 표면은 유난히 선명한데 내부 내용 접근이 지속적으로 실패하면, 이를 단순 전면 외피 현상으로만 보지 말고 [COS176 — 유백색 선입면](./cos176.json)이 먼저 첫 층을 가로챘는지 함께 추적한다."
       ]
+    },
+    {
+      "relatedId": 228,
+      "type": "reciprocal",
+      "title": "COS228 상호기록",
+      "paragraphs": [
+        "[COS228 — 회청색 대조대행창](./cos228.json)은 본 항목이 남긴 전면 외피를 가장 설득력 있는 `재결합 화면`으로 바꾸는 후속 현상으로 확인되었다. 제목행과 라벨만 남은 front가 blank PET sleeve나 acrylic shield 앞에 놓이고 실제 body가 후면에 있으면, COS228은 서로 다른 표본의 accession·page total·lower line만 한 pane에 봉합해 내부가 다시 붙은 것처럼 보이게 한다. 따라서 앞면 잔류막 표본은 투명 host를 사이에 둔 대조를 금지하고, 흑색 backing 위 직접 hash 확인을 우선한다."
+      ]
     }
   ],
   "supplementalSections": []

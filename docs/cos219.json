@@ -412,6 +412,14 @@
       "paragraphs": [
         "[COS219 — 회청색 종결전사패](./cos219.json)의 generated card는 [COS227 — 회청색 후면적체벽](./cos227.json)에서 실제 body 회수를 지연시키는 대표 전면 오염으로 확인되었다. lower line과 `검토 종료`류 문구가 생기면 cavity 입구의 최상단 후보를 본문으로 오인하기 쉬워지지만, 실제 body는 후면 0.3~2 m 또는 7~19 mm rear gap에서 별도로 회수되는 경우가 더 많다. 따라서 COS219 이력이 있는 host에서 rear search를 시작할 때 generated card는 pairing clue가 아니라 탐색 방해 표본으로 봉인하고, 문구를 읽지 않은 채 후면 수색을 우선한다."
       ]
+    },
+    {
+      "relatedId": 228,
+      "type": "reciprocal",
+      "title": "COS228 상호기록",
+      "paragraphs": [
+        "[COS228 — 회청색 대조대행창](./cos228.json) 조건에서는 generated note card의 `end`·`received`류 lower line이 후면 body의 accession 또는 page total과 결합해, 아직 본문 검토가 끝나지 않았는데도 review closure가 완료된 것처럼 보일 수 있다. blank note card와 clear host를 같은 bench에 두지 않으며, 종결전사패가 보이는 상태에서 scanner lid나 acrylic shield를 사이에 둔 본문 확인을 진행하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

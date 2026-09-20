@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 3,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "현재까지 양성 사례는 기관 내부의 후면 회수실, 검수실, scanner bench, 투명 보존 슬리브에서만 확인되었으나, accession·page total·lower line만 일치시켜 허위 provenance와 조기 종결을 만들 수 있어 외부에 작동 조건이 알려질 경우 악용 가능성이 있다.",
+    "permission": "문서에는 rear search 동선, current chain 분리 기준, false pair에 사용된 실제 accession 단서와 host 차단 절차가 포함되어 있어 일반 열람권으로는 취급할 수 없고 최소 4등급 열람 통제가 필요하다.",
+    "chaos": "2045-03-12~2045-03-18 통제 68회 중 24회만 양성이었고, 같은 표본 조합도 host 재질·거리·조도·시야각에 따라 재현 여부가 달라졌다. 형성 조건이 부분적으로만 파악되어 예측 곤란도가 높다.",
+    "danger": "직접적인 인체 손상은 확인되지 않았으나 false pair 1건, 조기 종결선 기입 시도 1건, chain freeze 2회가 발생했고, 본문·footer hash가 가려진 채 기록 무결성이 손상될 수 있어 위험도를 3으로 평가한다.",
+    "popularity": "발견 후 30일 내 rear recovery 팀과 correction 팀의 교차 조회가 급증했고, [COS159 — 앞면 잔류막](./cos159.json), [COS171 — 피인용 공백면](./cos171.json), [COS183 — 회청색 차순정지선](./cos183.json), [COS194 — 회청색 대용본문지](./cos194.json), [COS206 — 회청색 동체인란](./cos206.json), [COS219 — 회청색 종결전사패](./cos219.json), [COS227 — 회청색 후면적체벽](./cos227.json)와 연동 검토가 반복되어 참조 빈도가 높다.",
+    "containment": "clear host 사용 금지, 흑색 backing tray 의무화, front/rear source 분리 보관, dual-review 재검증, 체인 동결과 trace 분리 봉인이 동시에 요구된다. 일반 문서 이상 현상보다 높은 관리 강도가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "한서윤-12",
+        "role": "현장기록관",
+        "status": "active",
+        "involvement": "INC-228-01의 chain freeze 기록과 영상 봉인을 담당했고, INC-228-02에서 조기 종결선 기입을 중단한 뒤 T-228 초동 문서를 정리했다."
+      },
+      {
+        "name": "민규호-07",
+        "role": "보존기술원",
+        "status": "active",
+        "involvement": "R-7 후면 회수 작업 중 footer hash 불일치를 지적하고, matte black card 삽입으로 COS228 붕괴를 최초 확인했다."
+      },
+      {
+        "name": "이도현-31",
+        "role": "광학분석 담당",
+        "status": "active",
+        "involvement": "EXP-228-01~04 설계와 분광 로그 취득을 담당했으며, INC-228-02에서 OCR 불일치를 근거로 종결선 기입을 중단시켰다."
+      },
+      {
+        "name": "박재린-04",
+        "role": "회수반장",
+        "status": "reassigned",
+        "involvement": "INC-228-01에서 clear shield 너머의 허위 pair를 최초 승인했고, INC-228-02에서 generated card를 bench에 남겨 pane 형성 조건을 확대했다. 이후 clear-host 대조 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-03-03",
+        "label": "최초 관측",
+        "description": "동부 제3보존단지 B2 후면 회수실 R-7에서 clear acrylic shield 너머로 front shell과 rear body의 accession·lower line이 일치하는 것처럼 보였으나, 흑색 카드 삽입 직후 footer hash mismatch가 드러났다."
+      },
+      {
+        "date": "2045-03-05",
+        "label": "T-228 임시등록",
+        "description": "V-2 scanner lid와 PET sleeve에서 2차·3차 사례가 연속 확인되면서 현상을 T-228로 임시 등록하고, clear host 사용을 잠정 금지했다."
+      },
+      {
+        "date": "2045-03-12",
+        "label": "통제 재현 성공",
+        "description": "V-2 대조 bench에서 host 재질 비교 실험을 실시해 PET sleeve와 acrylic panel에서만 재현되는 양성 pane를 확보했다."
+      },
+      {
+        "date": "2045-03-18",
+        "label": "붕괴 절차 표준화",
+        "description": "matte black card 삽입, 90° 회전, 저조도 전환의 세 가지 붕괴 절차가 검증되었고, H-228 임시 취급 지시가 발령되었다."
+      },
+      {
+        "date": "2045-04-02",
+        "label": "정식 편입",
+        "description": "68회 행렬 실험과 2건의 주요 incident 검토 후 명칭을 `회청색 대조대행창`으로 확정하고 COS228로 정식 편입했다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-228-01",
+        "date": "2045-03-03",
+        "location": "동부 제3보존단지 B2 후면 회수실 R-7",
+        "title": "아크릴 차단판 너머의 허위 pair 승인",
+        "involvedPersonnel": [
+          "박재린-04",
+          "민규호-07",
+          "한서윤-12"
+        ],
+        "narrative": [
+          "09:12 KST, 회수반은 [COS227 — 회청색 후면적체벽](./cos227.json) 의심 cavity 뒤에서 회수한 body packet `B227-body-11`을 작업대 후면 62 cm 지점에 두고, 전면에는 같은 선반에서 먼저 분리된 front shell `A206-field-3C`를 blank acrylic shield(AP-R7-02) 앞 28 mm 지점에 올려 두었다. 박재린-04는 차단판을 올린 채 accession과 lower line이 일치한다고 판단했고, 흑색 backing tray로 즉시 옮기기보다 증거 촬영을 우선하기로 선택했다. 이 선택으로 provisional pair mark가 chain slip에 먼저 기입되었다.",
+          "09:17 KST 이후 민규호-07은 pane 안에서 footer hash와 봉인손상 위치가 보이지 않는다는 점을 지적하고, 차단판 뒤에 흑색 카드 삽입을 요청했다. 카드를 넣자 회청색 pane가 약 3초 만에 붕괴했고, `A206-field-3C`와 `B227-body-11`의 hash가 서로 다른 사건임이 즉시 확인되었다. 잘못 입력된 provisional pair는 14분간 active chain에 남아 있었으며, 한서윤-12가 동기화 영상과 현장 메모를 봉인하면서 T-228 초동 표기가 개시되었다."
+        ],
+        "outcome": "false pair 1건이 취소되었고, R-7 및 인접 2개 회수실에서 clear shield 즉시 사용 중지와 black backing tray 의무화가 발령되었다."
+      },
+      {
+        "code": "INC-228-02",
+        "date": "2045-03-05",
+        "location": "동부 제3보존단지 B2 제2검수실 V-2",
+        "title": "scanner lid 위 종결선 조기 기입 시도",
+        "involvedPersonnel": [
+          "한서윤-12",
+          "이도현-31",
+          "박재린-04"
+        ],
+        "narrative": [
+          "17:34 KST, 검수실 V-2에서 [COS194 — 회청색 대용본문지](./cos194.json) 의심 `A194-sheet-02`가 든 PET sleeve를 flatbed scanner lid 위에 임시로 올려 둔 상태에서, 직전 사건에서 분리 보관 중이던 [COS219 — 회청색 종결전사패](./cos219.json) generated card 1매가 lid 오른쪽 아래에 남아 있었다. 후면 선반 1.1 m 지점에는 다른 사건의 actual body packet이 세워져 있었고, 실내 조도는 512 lx였다. 한서윤-12는 scanner preview를 열기 전 육안으로 page total과 `end` lower line이 이어진 것처럼 보아 종결란의 날짜를 미리 적기 시작했다.",
+          "이도현-31은 preview 화면에서 본문 OCR 인식률이 37%에 그치고 footer hash가 비어 있는 점을 근거로 즉시 중단을 요청했다. lid를 90° 세워 pane를 해제하자, PET sleeve의 pseudo-body와 후면 actual body는 전혀 다른 사건철임이 드러났다. 박재린-04는 generated card를 같은 bench 위에 둔 자신의 실수를 보고했고, 세 사람은 전면 source, rear source, host를 각각 분리 봉인하여 EXP-228-02의 시작 표본으로 이관했다."
+        ],
+        "outcome": "종결선 기입은 효력을 갖기 전에 무효 처리되었으며, scanner lid·PET sleeve·generated card를 같은 시야선에 두지 않는 V-2 전용 절차가 추가되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-228-01",
+        "type": "영상기록",
+        "description": "R-7 상부 4K CCTV와 bodycam 2종 동기화본. 2045-03-03 09:16:52~09:18:31 동안 acrylic shield 상의 회청색 pane 형성, provisional pair 기입, matte black card 삽입 후 붕괴 장면이 연속 기록되어 있다.",
+        "custodyStatus": "디지털 증거금고 D-4 보관, SHA-256 체크섬 봉인 완료"
+      },
+      {
+        "code": "EV-228-02",
+        "type": "물리 host",
+        "description": "아크릴 차단판 AP-R7-02, 두께 2.0 mm. 붕괴 후 lower-right 56×14 mm 회청색 trace band가 31분간 잔존한 표본이다.",
+        "custodyStatus": "보존함 H-228-1 개별 슬리브 격리, 열람 시 흑색 backing tray 동반 의무"
+      },
+      {
+        "code": "EV-228-03",
+        "type": "분리 표본 쌍",
+        "description": "`A206-field-3C` front shell 1점과 `B227-body-11` actual body packet 1점. INC-228-01에서 false pair로 임시 기재되었다가 hash mismatch 확인 후 분리 회수되었다.",
+        "custodyStatus": "이중 봉인, provenance 분리 유지, 동일 tray 배치 금지"
+      },
+      {
+        "code": "EV-228-04",
+        "type": "계측데이터",
+        "description": "EXP-228-01~04의 조도·거리·각도·분광 반사 로그 68회분과 붕괴 시간표. 491±3 nm 협대역 반사 상승과 host 재질별 재현률이 포함된다.",
+        "custodyStatus": "분석서버 AS-3 읽기 전용 보관, 외부 반출 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "박재린-04",
+        "role": "회수반장",
+        "context": "INC-228-01 직후 음성 진술, 2045-03-03 09:29 KST",
+        "statement": "거울 비침처럼 좌우가 뒤집힌 것이 아니라 번호칸하고 맨 아래 선만 한 줄로 잠겼다. 내 판단일 수 있으나 그때는 차단판을 올리면 오히려 증거가 흐려질 것 같아 그대로 pair 표시를 했다."
+      },
+      {
+        "speaker": "한서윤-12",
+        "role": "현장기록관",
+        "context": "INC-228-02 현장 메모, 2045-03-05 17:46 KST",
+        "statement": "scanner lid에서 page total이 맞는 것처럼 보여 종결란을 먼저 채우려 했다. 확인되지 않은 내 해석이지만, 보이는 줄을 소리 내어 읽을수록 팀 전체가 `이미 끝났다`는 쪽으로 더 빨리 기울었다."
+      },
+      {
+        "speaker": "이도현-31",
+        "role": "광학분석 담당",
+        "context": "EXP-228-04 종료 보고, 2045-03-18 18:07 KST",
+        "statement": "내 해석이 섞였을 수 있으나 host는 글자 전체를 보여 주지 않고 상태값이 되는 줄만 남겼다. 해시와 본문이 안 보이는데 accession과 종료어만 또렷한 조합이면 반사로 보지 않는다."
+      }
+    ]
+  },
+  "id": 228,
+  "title": "회청색 대조대행창",
+  "language": "ko-KR",
+  "overview": [
+    "COS228은 blank PET sleeve, acrylic shield, scanner lid 등 광투과 host 표면에 형성되는 회청색 pane로, 서로 분리된 front source와 rear source의 일부 상태값만 한 창 안에 맞는 것처럼 봉합한다.",
+    "현재까지 pane가 안정적으로 보존한 정보는 accession, page total, lower line, 짧은 closure/recipient cue였으며, 긴 본문 단락, footer hash, 봉인손상, 가장자리 파열은 대체로 누락되거나 잘렸다.",
+    "양성 host 24건 중 15건은 [COS227 — 회청색 후면적체벽](./cos227.json) rear search에서, 6건은 pseudo-body 또는 front shell 대조 중, 3건은 queue/citation slip 대조 중 확인되었다.",
+    "COS228 자체는 직접적인 인체 손상을 주지 않았으나, false pair 작성, 조기 종결선 기입, 잘못된 citation confirmation으로 이어질 수 있어 active chain 작업을 즉시 동결해야 한다."
+  ],
+  "identificationTraits": [
+    "광투과율 82% 이상, 두께 0.1~3.2 mm의 clear host 위에 높이 9~31 mm, 폭 22~91 mm의 회청색 직사각 pane 또는 lower-right trace band가 형성된다.",
+    "front source와 rear source를 직접 접촉시키지 않아도 18~42° 시야각과 430~620 lx 백색광에서 accession·page total·lower line 일부만 같은 line에 정렬된 것처럼 보인다.",
+    "rear text는 좌우 반전되지 않으며, conventional reflection과 달리 footer hash·body block·seal edge는 pane 밖에서 끊기거나 사라진다.",
+    "matte black card를 host 후면 2 mm 이내로 삽입하거나 host를 90° 회전시키면 2.1~5.8초 내 붕괴한다.",
+    "붕괴 뒤 13~47분 동안 lower-right 14~56 mm 폭의 옅은 회청색 trace가 남을 수 있다.",
+    "intact body 대 intact body의 direct comparison이나 opaque/frosted host 대조에서는 재현률이 현저히 낮거나 0이었다."
+  ],
+  "discovery": [
+    "2045-03-03 09:17 KST, 동부 제3보존단지 B2 후면 회수실 R-7에서 [COS206 — 회청색 동체인란](./cos206.json) 표지 shell 1점과 [COS227 — 회청색 후면적체벽](./cos227.json) rear body 1점을 아크릴 차단판 너머로 비교하던 중 최초 관측되었다. 조건은 21.4°C, 43% RH, 480 lx, 관찰 거리 0.9 m, front-host 간격 28 mm, host-rear 간격 62 cm였다.",
+    "현장 인원은 accession과 lower line이 일치한다고 보고 provisional pair를 기입했으나, 흑색 backing tray로 옮긴 뒤 footer hash mismatch가 확인되었다. false pair 1건이 14분간 active chain에 남았다.",
+    "2045-03-05 V-2 scanner lid와 blank PET sleeve에서 2차·3차 사례가 연속 확인되어 임시표기 T-228이 부여되었다.",
+    "2045-03-12~2045-03-18 통제 68회 중 24회 양성, opaque/frosted 대조군 18회 전부 음성으로 기록되면서 독립 현상으로 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS228은 새로운 본문을 안정적으로 생성하지 않고, 분리된 전면·후면 자료에서 검증에 필요한 최소 상태값만 clear host 위로 압축한다.",
+      "pane 안에서 자주 살아남는 정보는 accession, page total, lower line, short closure/recipient cue였고, 실제 본문과 footer hash는 가장 먼저 탈락했다.",
+      "양성 host를 본 인원이 즉시 pair mark나 종결선을 미리 적을수록 운영상 피해가 커졌으며, 이 조기 기입이 COS228의 지속 시간을 늘리는지는 아직 확정되지 않았다.",
+      "opaque/frosted host 교체, black backing 삽입, 90° host 회전은 대부분의 활성 pane를 수 초 내 해제했다."
+    ],
+    "stages": [
+      {
+        "name": "호스트 포획",
+        "description": "blank PET sleeve, acrylic shield, scanner lid처럼 투명하고 비기입 상태인 host가 전면의 body-결손 source와 후면의 displaced body 사이에 놓일 때 형성 준비 상태에 들어간다."
+      },
+      {
+        "name": "선택적 정렬",
+        "description": "host 표면 또는 그 바로 뒤에서 회청색 pane가 보이기 시작하며, accession·page total·lower line 등 주변부 상태값만 한 line에 맞는 것처럼 압축된다."
+      },
+      {
+        "name": "절차 대행",
+        "description": "관측자가 pane를 `일치 확인`으로 받아들이면 provisional pair, 종결선, citation 승인처럼 후속 절차가 본문 직접 확인보다 먼저 진행된다. 실제 운영 피해는 이 단계에서 발생한다."
+      },
+      {
+        "name": "잔류 추적",
+        "description": "black card 삽입, host 회전, opaque tray 이동으로 pane가 붕괴한 뒤에도 lower-right trace band가 13~47분 남을 수 있으며, 이 trace는 동일 host의 재사용을 제한하는 판단 근거가 된다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS228은 이미 분리된 front/rear 자료를 새로 이동시키기보다, 투명 host 위에서 `검증 완료`에 필요한 최소 상태값만 대리 표면으로 압축하는 경향을 보인다.",
+      "전면 source로는 [COS159 — 앞면 잔류막](./cos159.json), [COS183 — 회청색 차순정지선](./cos183.json), [COS194 — 회청색 대용본문지](./cos194.json), [COS219 — 회청색 종결전사패](./cos219.json)가 빈번했고, 후면 source로는 [COS227 — 회청색 후면적체벽](./cos227.json) 회수 body가 가장 많았다.",
+      "state field 공유와 citation 오판은 각각 [COS206 — 회청색 동체인란](./cos206.json), [COS171 — 피인용 공백면](./cos171.json)과의 결합에서 증가했다."
+    ],
+    "entries": [
+      {
+        "targetId": 159,
+        "targetTitle": "앞면 잔류막",
+        "description": "[COS159 — 앞면 잔류막](./cos159.json) 양성 front는 title·label face만 안정적으로 남아 있어 COS228의 전면 source로 반복 사용된다. rear body가 따로 있는 경우, COS228은 COS159의 앞면 정보와 후면 body의 일부 page 또는 hash segment를 같은 pane에 얹어 `겉면과 내용이 연결된다`는 허위 합치감을 만든다."
+      },
+      {
+        "targetId": 171,
+        "targetTitle": "피인용 공백면",
+        "description": "[COS171 — 피인용 공백면](./cos171.json)의 blank citation slip가 clear host 앞에 놓이면, COS228은 rear text의 일부 line과 accession만 끌어와 빈 근거면을 `출처 확인됨` 상태처럼 보이게 할 수 있다. 따라서 citation 승인 전에 opaque-backed direct source 확인이 필요하다."
+      },
+      {
+        "targetId": 183,
+        "targetTitle": "회청색 차순정지선",
+        "description": "[COS183 — 회청색 차순정지선](./cos183.json) 전방의 blank queue ticket 또는 handoff slip는 COS228에서 높은 양성률의 전면 source였다. 실제 rear body가 뒤에 있을 때 `다음 차례 ready`와 body 식별선이 한 pane 안에 겹쳐 보여, 아직 비어 있는 차순 slot을 검증된 수령 대상으로 오인하게 만든다."
+      },
+      {
+        "targetId": 194,
+        "targetTitle": "회청색 대용본문지",
+        "description": "[COS194 — 회청색 대용본문지](./cos194.json)의 pseudo-body는 COS228의 가장 안정적인 전면 source 중 하나였다. blank sheet에 형성된 page total과 paragraph block이 후면 actual body의 footer 부위와 한 pane 안에서 이어질 때, 관측자는 pseudo-body를 복구된 본문으로 오인하기 쉽다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "[COS206 — 회청색 동체인란](./cos206.json)의 same-field shell이 clear host 앞에 놓이면, COS228은 borrowed accession과 rear body의 일부 상태값만 봉합해 false pair를 `번호가 맞는 사건`처럼 보이게 한다. 이 때문에 COS206 표본의 accession 일치는 clear comparison만으로 승인하지 않는다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "[COS219 — 회청색 종결전사패](./cos219.json)의 generated card는 COS228 pane 안에서 `end`·`received`류 lower line을 제공하는 전면 source로 작동했다. rear body의 식별선과 결합하면 본문 검토가 끝나지 않았는데도 조기 종결감이 강화된다."
+      },
+      {
+        "targetId": 227,
+        "targetTitle": "회청색 후면적체벽",
+        "description": "[COS227 — 회청색 후면적체벽](./cos227.json) 회수 구역은 COS228 양성 host의 최다 발생 지점이었다. rear plane 뒤에 쌓인 actual body와 전면 candidate를 clear shield 너머로 확인하는 절차 자체가 COS228 형성 조건을 제공했다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-228-01 / host 재질 대조",
+      "description": "2045-03-12 V-2. blank PET sleeve 9매(0.12 mm), blank acrylic panel 3매(2.0 mm), frosted polypropylene board 6매를 사용했다. front source는 [COS206 — 회청색 동체인란](./cos206.json) shell 6점과 [COS194 — 회청색 대용본문지](./cos194.json) pseudo-body 6점을 교차 배치했고, rear source는 [COS227 — 회청색 후면적체벽](./cos227.json) 회수 body 12점을 host 뒤 62 cm에 두었다. 조도 470±18 lx, 시야각 31°에서 PET 6/9, acrylic 2/3 양성, frosted board 0/6 음성이었다."
+    },
+    {
+      "label": "EXP-228-02 / 전면 source 유형 비교",
+      "description": "2045-03-14~2045-03-15, 동일 host(PET sleeve)와 rear body 6점을 사용해 front source만 바꾸었다. [COS194 — 회청색 대용본문지](./cos194.json) pseudo-body 5/6, [COS159 — 앞면 잔류막](./cos159.json) front shell 4/6, [COS183 — 회청색 차순정지선](./cos183.json) 유래 blank queue ticket 4/6, [COS171 — 피인용 공백면](./cos171.json) blank citation slip 3/6이 양성이었고, intact body control 0/6이었다."
+    },
+    {
+      "label": "EXP-228-03 / rear distance matrix",
+      "description": "2045-03-17 R-7과 V-2에서 rear source를 0.25 m, 0.6 m, 1.2 m, 2.0 m에 두고 각도 0°, 15°, 30°로 나누어 24회 시험했다. [COS227 — 회청색 후면적체벽](./cos227.json) 회수 body는 0.25~1.2 m, 0~15°에서 7/9 양성이었고, 정상 배가 body 대조군은 1/9만 2초 미만의 약한 pane를 보여 rear-displaced body가 고수율 source로 추정된다."
+    },
+    {
+      "label": "EXP-228-04 / 붕괴 절차 검증",
+      "description": "2045-03-18 active host 11점에서 matte black card 삽입, 90° rotation, lux 160 이하 감광을 비교했다. black card는 2.1~5.8초(중앙값 3.4초) 내 11/11 붕괴, 90° rotation은 11/11 붕괴, 감광은 8/11 붕괴였다. visible accession을 육성으로 반복한 4회에서는 trace 지속 시간이 6~14분 길어졌으나 표본이 적어 인과로 확정하지 않는다."
+    }
+  ],
+  "handlingProcedures": [
+    "rear search와 front comparison을 같은 시야선에서 수행하지 않는다. body 회수 후 3초 이내에 불투명 흑색 backing tray로 이동한다.",
+    "clear PET sleeve, acrylic shield, scanner lid, lamination pocket, blank transparent file는 COS228 의심 표본의 직접 대조에 사용하지 않는다.",
+    "accession·page total·lower line만 보이고 footer hash·봉인번호·본문 두 문단 이상이 동시에 보이지 않으면 일치 판정이나 종결선을 승인하지 않는다.",
+    "suspected positive 발견 시 host를 움직이기 전 상부 원격촬영만 허용하며, 보이는 문자열을 소리 내어 읽거나 chain slip에 선기입하지 않는다.",
+    "matte black card 삽입, 90° 회전, opaque tray 이동 중 최소 2개 절차로 pane 붕괴 여부를 확인한다.",
+    "`A228-host`, `B228-front`, `C228-rear`, `T228-trace`는 같은 슬리브, 같은 current chain, 같은 comparison tray를 공유하지 않는다.",
+    "최종 재검증은 최초 육안 일치 판정을 내린 인원과 다른 제2검토자가 직접 footer hash, seal number, page total, body text를 대조해 수행한다."
+  ],
+  "hypotheses": [
+    "현재 가설: COS228은 최소 1개의 body-결손 전면 source와 1개의 변위된 rear source가 동시에 존재할 때만 활성화되며, intact body끼리의 direct comparison에서는 형성되지 않는다.",
+    "현재 가설: pane가 우선적으로 보존하는 accession, page total, lower line은 인원이 육안으로 먼저 확인하는 주변부 상태값이어서, 반복된 검토 절차가 현상 선택성에 영향을 준다.",
+    "현재 가설: [COS227 — 회청색 후면적체벽](./cos227.json) host에서 높은 재현률은 rear plane 자체가 원인이라기보다 clear shield와 body-in-depth 배치가 COS228 형성에 적합하기 때문일 수 있다.",
+    "현재 가설: visible line을 소리 내어 읽거나 provisional pair를 미리 적는 행위가 trace persistence를 연장할 수 있으나, 11회 표본만으로는 인과를 확정할 수 없다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "COS228은 accession·page total·lower line만 일치시켜 잘못된 pair, 잘못된 종결, 잘못된 citation confirmation을 유발한다. body text와 footer hash가 가려져도 검증이 끝났다고 판단하기 쉬워 중대한 중간 단계 오염으로 본다."
+    },
+    {
+      "category": "연쇄 인계",
+      "assessment": "current chain이 아직 분리되지 않은 상태에서 pane가 형성되면 front shell, queue ticket, generated card가 본문 대리물처럼 닫혀 잘못된 인계나 배가로 이어질 수 있다. COS206 계열 표본과 동반될 경우 위험이 상승한다."
+    },
+    {
+      "category": "조사 지연",
+      "assessment": "양성 host가 발견되면 front/rear source, host, trace를 각각 분리 봉인해야 하므로 단일 사건에도 후속 대조 시간이 수 시간에서 반나절까지 늘어난다. 그러나 지연 없이 진행할 경우 더 큰 provenance 손실이 발생한다."
+    },
+    {
+      "category": "인원 인지 편향",
+      "assessment": "관측자는 `맞는 줄이 보인다`는 이유만으로 해시와 본문 확인을 생략하고, 이미 완료된 절차를 되풀이 입력하려는 경향을 보였다. 직접적 신체 위해는 낮지만 운영 판단을 왜곡한다."
+    },
+    {
+      "category": "시설 및 장비",
+      "assessment": "scanner lid, acrylic shield, clear sleeve, lamination pocket처럼 정상 장비가 host로 전환될 수 있어 별도 격리 없이는 반복 노출이 쉽다. 장비 사용 중지 자체보다 잘못된 사용 배치가 더 큰 위험 요소다."
+    },
+    {
+      "category": "대외 악용 가능성",
+      "assessment": "작동 조건을 아는 인원이 투명 host와 분리된 자료를 의도적으로 배치하면 허위 일치 장면을 촬영·제시할 수 있다. 외부 반출물과 대외 감사용 이미지에는 opaque-backed 재검증 기록을 반드시 첨부해야 한다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초동 로그에서는 `T-228`, `clear match pane`, `투명 합치창`이 병기되었으나, 2045-03-18 이후 명칭은 `회청색 대조대행창`으로 통일한다."
+    },
+    {
+      "type": "quotation",
+      "content": "09:17:44 — \"해시는 안 보이는데 번호칸이 한 줄로 잠겼습니다. 그대로 두고 사진 먼저 찍겠습니다.\" — 박재린-04 bodycam 전사"
+    },
+    {
+      "type": "paragraph",
+      "content": "위 발화 직후 provisional pair mark가 먼저 입력되었고, 차단판 제거보다 촬영을 우선한 선택이 false pair 지속 시간을 14분으로 늘렸다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"빛이 둘을 붙인 것이 아니라 검증 절차가 먼저 붙었습니다. 본문이 안 보이면 일치가 아닙니다.\" — 이도현-31, EXP-228-04 종료 메모"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-228 정식 편입",
+      "paragraphs": [
+        "2045-03-03~2045-03-11 초동 기록에서는 현상을 `T-228`, `clear match pane`, `투명 합치창`, `window pair field`로 병기했다.",
+        "2045-03-12~2045-03-18 대조 시험 결과, 본 항목은 단순 반사나 판독 실수보다 **투명 host 위에서 분리된 front/rear 자료의 검증 상태를 대리하는 창형 현상**에 가깝다는 점이 확인되었다.",
+        "이에 공식 명칭을 **회청색 대조대행창**으로 확정하고, 광학적 오인만이 아닌 기록-절차 복합 현상으로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A228/B228/C228/T228 접두 및 차단 규정",
+      "paragraphs": [
+        "양성 투명 host는 `A228-host-일련번호`, 전면의 body-결손 source는 `B228-front-일련번호`, 후면의 실제 body 또는 rear source는 `C228-rear-일련번호`, 붕괴 후 trace와 영상 절편은 `T228-trace-일련번호`를 부여한다.",
+        "`A228-host`, `B228-front`, `C228-rear`, `T228-trace`는 같은 슬리브, 같은 current chain, 같은 comparison tray를 공유하지 않는다.",
+        "rear search 구역에서는 clear host를 검사면으로 쓰지 않고, 흑색 backing tray와 불투명 divider만 사용한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "계측 요약",
+      "paragraphs": [
+        "68회 통제 시험 중 24회 양성이었고, transparent host군 11/18, opaque/frosted 대조군 0/18, intact body direct comparison 대조군 1/12(불안정 2초 미만)이었다.",
+        "active pane의 유효 시인 범위는 시야각 18~42°, 조도 430~620 lx, front-host 간격 0~35 mm, host-rear 간격 0.25~1.2 m였다.",
+        "분광 로그에서는 491±3 nm 부근의 협대역 반사 상승이 반복되었으나, 잔류 trace만 채집된 host 4점에서는 동일 피크가 약화되었다."
+      ]
+    },
+    {
+      "title": "현장 판별 체크리스트",
+      "paragraphs": [
+        "1. clear PET sleeve, acrylic shield, scanner lid, lamination pocket 등 광투과 host가 있는지 확인한다.",
+        "2. 전면에 front shell·pseudo-body·queue ticket·citation slip·closure card처럼 body가 결손된 source가 있는지, 후면에 실제 body가 따로 놓였는지 분리 기록한다.",
+        "3. accession/page total/lower line은 보이는데 footer hash, body paragraph, 봉인손상은 보이지 않으면 즉시 COS228 의심으로 분류한다.",
+        "4. 흑색 카드 삽입, 90° 회전, 불투명 tray 이동 중 어느 하나에서 6초 이내로 pane가 붕괴하면 양성 가능성이 높다."
+      ]
+    }
+  ]
+}

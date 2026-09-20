@@ -357,6 +357,14 @@
       "paragraphs": [
         "[COS198 — 회청색 후면분리턱](./cos198.json) 전면에 citation slip만 남고 실제 근거 문단이 포함된 body가 후방에 잔류하면, 인용지는 출처 번호를 유지한 채 본문 없는 [COS171 — 피인용 공백면](./cos171.json)으로 전이될 수 있다. 인용면이 지나치게 안정적인데 원문 문장이 보이지 않으면, 빈 근거의 독립 생성으로 단정하지 말고 후벽 뒤 잔류 본문을 먼저 탐색한다."
       ]
+    },
+    {
+      "relatedId": 228,
+      "type": "reciprocal",
+      "title": "COS228 상호기록",
+      "paragraphs": [
+        "[COS228 — 회청색 대조대행창](./cos228.json)이 blank citation slip 또는 빈 근거면 앞에 형성되면, 후면 body의 accession이나 일부 lower line이 clear host 위로 끌려와 실제 본문 없이도 `출처 확인` 상태처럼 보일 수 있다. 이는 빈 인용면의 근거가 회복된 것이 아니라 후면 상태값만 빌린 경우이므로, citation 승인 전 opaque-backed direct source 확인을 의무화한다."
+      ]
     }
   ],
   "supplementalSections": []
