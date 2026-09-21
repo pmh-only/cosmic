@@ -447,6 +447,15 @@
         "[COS219 — 회청색 종결전사패](./cos219.json) 양성 사건 16건에서 portable note형 generated card가 먼저 `검토 종료`, `청취 완료`, `인계 가능` 같은 문구를 얻었으나, 실제 본문은 반복적으로 [COS197 — 회청색 후행본문퇴](./cos197.json)와 같은 후면 적층에서 회수되었다. card 문구는 rear body의 존재를 대체하지 못했고, 정확한 본문 좌표를 지시한 사례도 드물었다.",
         "따라서 본 항목 대응 shell 옆에서 generated card가 발견되면 그 문구를 회수 좌표나 검토 완료 근거로 사용하지 않는다. footer hash와 질량 대조를 우선하고, rear gap·후면 랙·직전 opaque sleeve를 먼저 수색하며 [COS219 — 회청색 종결전사패](./cos219.json) card와 body bundle은 같은 chain으로 병합하지 않는다."
       ]
+    },
+    {
+      "relatedId": 229,
+      "type": "reciprocal",
+      "title": "COS229 상호기록",
+      "paragraphs": [
+        "[COS229 — 회청색 선결봉함갑](./cos229.json) 양성 host의 다수는 실제 본문이 [COS197 — 회청색 후행본문퇴](./cos197.json)로 후방에 남은 상태에서 front shell만 닫힌 운반본처럼 굳은 사례였다. 즉 COS197이 body-only 잔류를 만들고, COS229가 남은 front 외피를 휴대 가능한 packet으로 완결시키는 순차 결합이 반복되었다.",
+        "COS197 조사 중 질량 부족 shell이 이미 sleeve나 case 안에서 닫혀 있으면 이를 복구 완료본으로 보지 말고 [COS229 — 회청색 선결봉함갑](./cos229.json) 단계로 재분류한 뒤 rear search를 선행한다."
+      ]
     }
   ],
   "supplementalSections": [

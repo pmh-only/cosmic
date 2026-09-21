@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "양성 표본 12점 중 5점이 실제 본문과 수령자 확인 없이도 `handover ready`, `rechain ready`, `next rack` 미리보기를 획득했다. 봉함선과 host 정보만으로 운반 준비 외형을 위조할 수 있어 외부 노출 시 악용 위험이 높다.",
+    "permission": "COS229 판정에는 후면 본문 수색, queue/preview 로그 열람, 질량·두께 대조, borescope 검사, [COS156](./cos156.json)·[COS184](./cos184.json)·[COS197](./cos197.json)·[COS211](./cos211.json)·[COS223](./cos223.json) 연계 기록 검토가 동시에 필요했다. 일반 취급자가 임의 개봉하거나 상태를 승인할 수 없는 수준이다.",
+    "chaos": "front-only 적재 8회 중 7회는 봉함이 형성되었지만 full-body 적재 8회는 전부 음성이었고, 개봉 후 인접 open host로의 2차 이동은 6회 중 4회에서 17~64분 사이에 발생했다. 형성 조건은 좁혀졌으나 발현 시점과 전이 대상의 편차가 커 예측성이 낮다.",
+    "danger": "직접적인 인체 손상은 확인되지 않았으나 [COS184](./cos184.json)·[COS156](./cos156.json) 결합 시험 6회 중 5회에서 수령자 없는 handoff 또는 next-slot advance가 발생했다. 본문이 후방에 남은 채 완결 packet처럼 이동할 수 있어 절차상 위해가 크다.",
+    "popularity": "임시 등록 후 5주 동안 교정감사실, 재포장대, 인계대, 보존해제 선반에서 직접 교차 조회 18건과 `229-hold` 참조 7건이 기록되었다. 상시 허브 항목은 아니지만 반복 조회 대상이다.",
+    "containment": "활성 host를 단순 개봉한 뒤 인접 open sleeve를 남겨 둔 조건에서 6회 중 4회가 17~64분 내 2차 봉함을 형성했다. host 격리, 공란 표찰 제거, 후면 수색, 90분 재점검을 함께 적용해야 안정적으로 억제된다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 Q-12",
+        "role": "주조사 기록관",
+        "status": "active",
+        "involvement": "2044-04-11 최초 봉함 host를 식별하고 heat-seal 오인 개봉을 중단시켰다. 이후 `229-hold` 기준과 후면 본문 수색 우선순위를 정리했다."
+      },
+      {
+        "name": "보존기사 H-19",
+        "role": "패킷 보존기사",
+        "status": "active",
+        "involvement": "활성 host의 질량·두께·borescope 검사를 수행하고, 개봉 방향과 불투명 트레이 분리 절차를 설계했다. 최초 사건에서는 sleeve 기억 현상으로 오판해 impulse sealer를 집으려 했다."
+      },
+      {
+        "name": "재료분석원 P-04",
+        "role": "재료·계측 분석원",
+        "status": "active",
+        "involvement": "봉함선 폭, cavity 깊이, 표면 온도, 2차 host 전이 시간을 계측했고 exterior annex 형성 실험을 설계했다."
+      },
+      {
+        "name": "시설운용원 L-05",
+        "role": "queue/preview 운영 담당",
+        "status": "reassigned",
+        "involvement": "recipientless preview와 next-slot advance를 실제 준비 완료로 읽고 packet 이동을 시도했다. 사건 뒤 하류 preview 운용에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-04-11 08:17 KST",
+        "label": "최초 선결봉함 형성",
+        "description": "제2보존동 교정감사실 부속 포장구역 C-4A에서 front shell, blank rechain card, open Tyvek sleeve가 74초 내 자봉함 상태로 전환되었다."
+      },
+      {
+        "date": "2044-04-11 08:46 KST",
+        "label": "본문 부재 확인 및 T-229 개설",
+        "description": "하단 seam borescope 검사에서 host 내부에 front shell 2매와 blank card만 남아 있고 실제 본문은 rear box에 따로 있는 것이 확인되어 T-229가 개설되었다."
+      },
+      {
+        "date": "2044-04-15 11:32 KST",
+        "label": "recipientless handoff preview",
+        "description": "H-2 인계 bench에서 양성 host가 [COS184 — 회청색 차순호명패](./cos184.json)와 [COS156 — 무수령 인계대](./cos156.json) 양상을 동시에 획득하며 next-slot advance와 `handover ready`를 생성했다."
+      },
+      {
+        "date": "2044-04-23 13:00 KST",
+        "label": "front-only host 선택성 확정",
+        "description": "front-only 적재 8회 중 7회 양성, full-body 적재 8회 전부 음성이라는 대조 결과가 확보되어 COS229가 내용보다 절차 외피를 우선 선택한다는 점이 확정되었다."
+      },
+      {
+        "date": "2044-04-29 17:14 KST",
+        "label": "2차 host 전이 및 exterior annex 확인",
+        "description": "개봉 후 인접 open host 6개 중 4개가 17~64분 내 2차 봉함을 형성했고, loose appendix slip 7개 중 5개가 exterior annex로 부착되었다."
+      },
+      {
+        "date": "2044-05-05 09:20 KST",
+        "label": "정식 조사 문서 승인",
+        "description": "임시표기 T-229를 COS229로 승격하고 `A229-case` 및 `T229-seam` 관리 접두가 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "C229-44-01",
+        "date": "2044-04-11",
+        "location": "제2보존동 교정감사실 부속 포장구역 C-4A",
+        "title": "front-only host의 최초 자봉함 형성",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "재료분석원 P-04",
+          "시설운용원 L-05"
+        ],
+        "narrative": [
+          "H-19는 후면 본문을 별도 rear box에 봉인한 뒤, front shell 표본 FS-03과 blank rechain card RC-02를 먼지 차단용으로만 open Tyvek transit sleeve TS-09 안에 넣었다. sleeve는 사용 전 봉함되지 않은 상태였고 접착 띠 보호지도 제거하지 않았다. TS-09를 used gray board GB-04 위에 놓은 지 74초 뒤, 세 변을 따라 폭 3.2mm의 회청색 seam이 형성되며 flap이 정렬되었다. 실측 질량은 61g으로 원장 예상치 184g보다 123g 낮았고, L-05의 preview terminal에는 `rechain ready`가 먼저 나타났다.",
+          "H-19는 이를 sleeve의 접힘 기억 또는 접착면 오작동으로 판단하고 impulse sealer로 다시 정식 봉함하려 했다. Q-12는 추가 열처리를 중지시키고 P-04에게 하단 seam borescope 검사를 지시했다. 검사 결과 내부에는 front shell 2매와 blank card만 있었고, 실제 본문 B197-body-31은 2.4m 뒤 rear box에 그대로 남아 있었다. Q-12는 preview 상태를 효력 정지하고 TS-09, GB-04, B197-body-31을 각각 분리 봉인했다."
+        ],
+        "outcome": "T-229가 개설되었고, open host의 선결봉함을 일반 포장 오류로 처리하지 않는 규정이 즉시 삽입되었다."
+      },
+      {
+        "code": "C229-44-02",
+        "date": "2044-04-15",
+        "location": "제2보존동 H-2 인계 bench 및 briefing rack 전면",
+        "title": "recipientless handoff와 exterior annex의 동시 발생",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "재료분석원 P-04",
+          "시설운용원 L-05"
+        ],
+        "narrative": [
+          "L-05는 양성 host A229-case-02를 다음 동작이 일어나는지 보기 위해 blank queue plaque QP-H2-04 뒤 5.6cm, 수령 lip 앞 18cm 위치에 올려두었다. host가 bench로 옮겨지기 전 resting board에는 212×301mm의 먼지 결손 직사각형이 남아 있었고 표면온도는 주변보다 1.1°C 낮았다. 33초 뒤 queue counter가 1건 증가했고, handoff console에는 수령자 공란 상태의 `handover ready`가 생성되었다. L-05는 이 변화를 실제 다음 인계 순번으로 판단해 carrier tote를 끌어왔다.",
+          "Q-12는 이동 전 질량 대조를 요구했고 H-19가 측정한 결과 A229-case-02는 manifest 246g 대비 72g에 불과했다. 그 사이 host 하단에 끼워져 있던 loose appendix slip AS-04가 위로 밀려 올라와 flap과 면을 맞췄고, 21초 뒤 좌상단 2점의 무색 관통 흔적이 생기며 exterior annex처럼 고정되었다. P-04는 인계 bench 뒤 1.8m rear tray에서 실제 본문 B197-body-33을 회수했고, Q-12는 queue advance와 handoff preview를 모두 원복시켰다."
+        ],
+        "outcome": "recipientless handoff와 exterior annex 형성이 COS229의 하류 위험으로 공식 확인되었다. L-05는 preview 운용 업무에서 재배치되었고 H-2 bench는 48시간 폐쇄되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "E229-A",
+        "type": "활성 봉함 host 원본",
+        "description": "2044-04-11 최초 사건의 Tyvek transit sleeve TS-09와 2044-04-15 사건의 A229-case-02를 포함한다. 두 host 모두 세 변의 회청색 seam과 manifest 대비 질량 부족 상태를 유지한다.",
+        "custodyStatus": "평판 격리 캐비닛 C-229-01에 개별 봉인, 재사용 금지"
+      },
+      {
+        "code": "E229-B",
+        "type": "borescope·열영상 기록",
+        "description": "하단 seam 내시경 14세트와 FLIR 열영상 11세트. cavity 깊이 4~17mm, 주변 대비 0.9~1.8°C 저온대, front-only 적재 상태가 기록되어 있다.",
+        "custodyStatus": "분석 서버 TH-229에 해시 봉인, 원본 삭제 금지"
+      },
+      {
+        "code": "E229-C",
+        "type": "질량·두께 대조 로그",
+        "description": "양성 host 12점과 대조 host 10점의 질량·두께 기록이다. 양성군은 예상 질량 대비 38~412g 부족, 두께는 등록치의 19~54%만 유지했다.",
+        "custodyStatus": "문서연속성 계측함 ML-229에 원본 보존"
+      },
+      {
+        "code": "E229-D",
+        "type": "queue·handoff preview 로그",
+        "description": "H-2 bench와 C-4A terminal의 `rechain ready`, `handover ready`, next-slot advance 기록, counter 증가 시각, 원복 시각을 묶은 자료다.",
+        "custodyStatus": "운용감사 서버 OP-229와 오프라인 저장매체에 이중 보관"
+      },
+      {
+        "code": "E229-E",
+        "type": "exterior annex 표본",
+        "description": "A229-case-02 외벽에 부착된 appendix slip AS-04, 관통 흔적 사진, slip 이동 전후 배치도, 대응 rear body 회수 시각표를 포함한다.",
+        "custodyStatus": "host와 분리된 봉투에 보관하되 동일 사건번호 아래 링크만 유지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 Q-12",
+        "role": "주조사 기록관",
+        "context": "2044-04-11 최초 사건 직후 구술 기록",
+        "statement": "제가 확인한 사실은 봉함선이 먼저 닫히고 실제 본문은 뒤 상자에 남아 있었다는 점입니다. `이미 포장 완료된 packet`이라는 인상은 이후의 해석일 뿐이며, 질량과 borescope가 그 해석을 부정했습니다."
+      },
+      {
+        "speaker": "보존기사 H-19",
+        "role": "패킷 보존기사",
+        "context": "2044-04-15 사고 경위 진술",
+        "statement": "겉보기는 분명히 닫힌 운반본이었지만 손에 들면 너무 가볍다는 것이 사실이었습니다. 그 가벼움을 sleeve 재질 문제로 돌리고 다시 봉함하려 한 판단은 제 실수였습니다."
+      },
+      {
+        "speaker": "시설운용원 L-05",
+        "role": "queue/preview 운영 담당",
+        "context": "재배치 전 면담",
+        "statement": "제가 본 사실은 queue counter 증가와 `handover ready` 문구였습니다. 그 상태가 실제 인계 준비를 뜻한다고 본 것은 제 해석이었고, 수령자와 본문이 확인된 것은 아니었습니다."
+      }
+    ]
+  },
+  "id": 229,
+  "title": "회청색 선결봉함갑",
+  "language": "ko-KR",
+  "overview": [
+    "**COS229**는 open Tyvek sleeve, 폴리에스터 보존 슬리브, 얇은 transit case 같은 host가 실제 본문이나 실질 첨부 없이도 **먼저 닫힌 운반 packet의 외형**을 획득하는 물체·현상 복합 항목이다. 현재 통칭은 **회청색 선결봉함갑**이다.",
+    "확인된 양성 host는 대부분 front shell, blank verification/rechain card, 짧은 routing slip만 내부에 포함했고, 실제 본문이나 부록은 다른 rear box, tray lip, panel gap, 기존 resting surface 뒤에 남아 있었다. COS229의 핵심은 단순 오포장이나 접착 불량이 아니라, **내용 완결 이전에 봉함 상태가 절차적으로 먼저 성립한다는 점**이다.",
+    "이 선결봉함 상태는 queue preview, handoff ready, next-slot advance, exterior annex 형성으로 이어질 수 있다. 따라서 COS229는 완성된 packet을 만드는 항목이 아니라, 미완결 자료를 완성된 packet처럼 이동시키려는 하류 절차 외피로 관리된다."
+  ],
+  "identificationTraits": [
+    "기존에 열려 있던 host의 두세 변에 폭 2.1~4.4mm의 회청색 seam이 형성되고 flap 또는 lid가 정렬된다. heat bar, 접착띠 제거, 수기 봉함 흔적은 일치하지 않는다.",
+    "manifest 또는 장수 등록치와 비교할 때 host 실측 질량이 38~412g 낮고, 전체 두께는 등록치의 19~54% 수준으로 유지된다.",
+    "하단 seam borescope 검사에서는 4~17mm의 cavity 안에 front shell 1~4매, blank card, 짧은 slip만 남고 실제 본문 연속성은 확인되지 않는다.",
+    "양성 host를 두드리면 종이 다발의 둔탁음보다 얕은 중공음이 우세하며, 같은 표면에 있었던 실제 body는 0.7~3.1m 후방의 rear box나 gap에서 회수되는 경우가 많다.",
+    "[COS184 — 회청색 차순호명패](./cos184.json) 유사 blank plaque에서 4.5~8.9cm 뒤에 놓이면 flap이 plaque 쪽을 향해 정렬되고 next-slot advance가 더 자주 발생한다.",
+    "host를 들어 옮긴 뒤 원 resting surface에는 8~29분 동안 212×301mm 전후의 먼지 결손 또는 저온 직사각형이 남을 수 있다.",
+    "loose appendix slip, blank routing card, 짧은 summary sheet가 host 하단이나 외벽에 접하면 exterior annex처럼 부착되거나 2점 관통 흔적을 얻을 수 있다."
+  ],
+  "discovery": [
+    "COS229는 2044-04-11 08:17 KST, 제2보존동 교정감사실 부속 포장구역 C-4A에서 처음 독립적으로 식별되었다. 당시 팀은 [COS197 — 회청색 후행본문퇴](./cos197.json)로 분리된 본문과 front shell을 재결합하지 않은 채, [COS211 — 회청색 선결검수면](./cos211.json) 양성이 의심된 used gray board 위에서 임시 포장 절차를 진행하고 있었다. 실내 조건은 23.1°C, 상대습도 42%, 436nm side-light 298lx였다.",
+    "실제 본문 B197-body-31은 rear box에 따로 봉인되어 있었고, front shell FS-03과 blank rechain card RC-02만 open Tyvek sleeve TS-09에 넣어 먼지 차단용으로 올려 두었다. 74초 뒤 TS-09는 세 변에 회청색 seam을 형성하며 닫혔고, manifest 184g에 비해 실측 61g의 질량만 유지했다. 하단 seam borescope 검사에서 내부가 front-only 상태임이 확인되자 임시표기 T-229가 개설되었다.",
+    "후속 추적에서 COS229는 [COS184 — 회청색 차순호명패](./cos184.json)와 [COS156 — 무수령 인계대](./cos156.json) 결합 bench에서 next-slot advance와 recipientless handoff preview를 생성했고, host를 옮긴 자리에는 [COS169 — 잔류 대좌면](./cos169.json)과 유사한 잔류 직사각형이 남았다. 또한 exterior flap에는 [COS223 — 사후 합철침](./cos223.json) 양상과 유사한 부착 흔적이 생겨 loose appendix slip이 외벽에 고정되었다. 이로써 COS229는 단순 포장 불량이 아니라, 이미 분리된 절차 외피를 휴대 가능한 packet으로 굳히는 별도 항목으로 분류되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS229는 대체로 **front-only 적재된 open host**에서 시작되며, 실제 body가 host 내부에 함께 있는 경우에는 형성률이 현저히 낮았다.",
+      "양성 host는 닫힌 외형을 획득한 직후 이동·인계·검수 완료 계열의 하류 신호를 끌어오지만, 실제 본문과 장수·질량·footer hash는 host 밖에 남는다.",
+      "개봉만으로 끝나지 않고 인접 open host나 외부 slip로 선결봉함 상태가 옮겨갈 수 있어, 현장 정리 순서 자체가 중요하다."
+    ],
+    "stages": [
+      {
+        "name": "불완전 적재",
+        "description": "front shell, blank verification/rechain card, 짧은 slip이 open sleeve 또는 transit case에 놓이지만 실제 body와 부록은 rear box, tray lip, panel gap, 다른 표면에 분리된 상태로 남는다."
+      },
+      {
+        "name": "봉함선 형성",
+        "description": "host의 flap 또는 lid가 정렬되며 두세 변에 회청색 seam이 생긴다. 이 단계에서 host는 실질 내용이 부족해도 시각적으로는 닫힌 운반본처럼 보인다."
+      },
+      {
+        "name": "하류 선택",
+        "description": "양성 host가 [COS184 — 회청색 차순호명패](./cos184.json), [COS156 — 무수령 인계대](./cos156.json) 조건에 접근하면 next-slot advance, handoff ready, rechain ready 같은 상태를 우선 획득한다."
+      },
+      {
+        "name": "외벽 첨부화",
+        "description": "loose appendix slip, routing card, summary sheet가 host 외벽에 붙거나 관통 흔적을 얻어 단일 부속서처럼 보이기 시작한다. 이 단계에서 [COS223 — 사후 합철침](./cos223.json)과의 결합이 자주 보고되었다."
+      },
+      {
+        "name": "잔류 분리",
+        "description": "host가 옮겨진 뒤에도 원 resting surface에는 직사각 잔류 자국이 남고, 실제 body는 후방 위치에 계속 남는다. 현장 인원은 종종 잔류 자리나 닫힌 host를 본문 위치보다 먼저 현재본으로 읽는다."
+      },
+      {
+        "name": "2차 전이",
+        "description": "양성 host를 개봉한 뒤 인접 open sleeve나 empty case를 남겨 두면, 선결봉함 상태가 다른 host로 17~64분 사이에 옮겨갈 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS229는 [COS197 — 회청색 후행본문퇴](./cos197.json)로 본문이 뒤에 남고, [COS211 — 회청색 선결검수면](./cos211.json)에서 완료 외피가 먼저 만들어진 표본이 실제 이동 단계로 나아갈 때 가장 안정적으로 형성되었다.",
+      "하류에서는 [COS184 — 회청색 차순호명패](./cos184.json), [COS156 — 무수령 인계대](./cos156.json), [COS169 — 잔류 대좌면](./cos169.json), [COS223 — 사후 합철침](./cos223.json)이 각각 `다음`, `전달됨`, `현재 자리`, `부속 첨부`의 외형을 보강하는 순서가 반복 확인되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 156,
+        "targetTitle": "무수령 인계대",
+        "description": "[COS156 — 무수령 인계대](./cos156.json)는 COS229의 가장 위험한 하류 경로다. 선결봉함갑은 실제 수령자와 본문이 분리된 상태에서도 `이미 넘겨진 packet`처럼 보이기 쉽고, recipientless handoff preview를 닫아 chain 종료를 위조할 수 있다."
+      },
+      {
+        "targetId": 169,
+        "targetTitle": "잔류 대좌면",
+        "description": "[COS169 — 잔류 대좌면](./cos169.json)은 COS229가 떠난 뒤 원 resting surface에 `여기가 아직 현재 자리`라는 직사각 권위를 남긴다. 그 결과 닫힌 host와 빈 자리 둘 다 현재본처럼 보이며, rear body 수색이 늦어질 수 있다."
+      },
+      {
+        "targetId": 184,
+        "targetTitle": "회청색 차순호명패",
+        "description": "[COS184 — 회청색 차순호명패](./cos184.json)는 COS229 host를 실제 안건보다 먼저 `다음 것`으로 호명하는 역할을 한다. blank plaque가 host 앞에 남아 있으면 packet의 flap 방향이 plaque 쪽으로 정렬되고 next-slot advance가 쉽게 발생한다."
+      },
+      {
+        "targetId": 197,
+        "targetTitle": "회청색 후행본문퇴",
+        "description": "[COS197 — 회청색 후행본문퇴](./cos197.json)는 COS229가 봉함하는 내용의 주요 공급원이다. 실제로 회수된 양성 host의 대부분은 front shell 1~4매만 품고 있었고, 대응 body는 rear box나 gap에서 별도 회수되었다."
+      },
+      {
+        "targetId": 211,
+        "targetTitle": "회청색 선결검수면",
+        "description": "[COS211 — 회청색 선결검수면](./cos211.json)은 COS229 seam과 lower cue의 가장 흔한 전구 단계다. used opaque surface에서 이미 `검수가 끝난 자리`가 먼저 잡힌 표본이 open host로 옮겨질 때, 그 완료 외피가 닫힌 packet 형태로 휴대 가능해지는 경향이 있다."
+      },
+      {
+        "targetId": 223,
+        "targetTitle": "사후 합철침",
+        "description": "[COS223 — 사후 합철침](./cos223.json)은 COS229 외벽에 loose appendix slip이나 summary sheet를 post-hoc로 고정해 host를 완결 부속서처럼 보이게 만든다. 이 결합이 발생하면 닫힌 host는 단순 봉함 packet이 아니라 승인 가능한 첨부철처럼 읽히기 쉽다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "229-A / host·surface 선택성 시험",
+      "description": "2044-04-19 10:00~14:20, C-4A에서 open Tyvek sleeve 10개와 open polyester sleeve 10개를 used gray board와 new PE board에 나누어 배치했다. front shell 2매와 blank card를 넣은 조건에서 used gray board는 Tyvek 7/8, polyester 4/8 양성이었고, new PE board 대조는 0/4였다. 양성 host의 onset은 24~93초였다."
+    },
+    {
+      "label": "229-C / full-body 배제 시험",
+      "description": "2044-04-23 13:00~16:10, 동일 규격 host 16개를 front-only 8개와 full-body 8개로 나누어 시험했다. front-only는 7/8에서 seam과 cavity가 형성되었고, full-body는 0/8이었다. full-body군은 manifest 질량과 두께를 유지했으며 next-preview도 생성되지 않았다."
+    },
+    {
+      "label": "229-E / queue·handoff 결합 시험",
+      "description": "2044-04-25 09:40~11:30, 양성 host 6개를 blank plaque 5~8cm 뒤, handoff lip 14~20cm 앞에 각각 배치했다. 5/6에서 next-slot advance 또는 `handover ready`가 생성되었고, 같은 host를 plaque와 45cm 이상 떨어뜨린 대조군은 1/6의 약한 counter 증가만 보였다."
+    },
+    {
+      "label": "229-G / 개봉 후 2차 전이 시험",
+      "description": "2044-04-29 15:10~18:00, 양성 host 6개를 개봉한 뒤 반경 20cm 안에 open sleeve 1개씩을 남겨 두고 90분 추적했다. 4/6에서 17~64분 사이 인접 host에 회청색 seam이 재형성되었고, 반경 50cm 이상 격리한 대조 6개는 0/6이었다."
+    },
+    {
+      "label": "229-J / exterior annex 시험",
+      "description": "2044-05-01 12:20~14:40, 양성 host 하단에 loose appendix slip 또는 blank summary card를 7회 배치했다. 5/7에서 slip이 host 외벽으로 밀려 올라오며 2점 관통 흔적 또는 flush 부착을 형성했고, 같은 slip을 50cm 떨어진 tray에 보관한 대조 7회는 전부 음성이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "회청색 seam이 보이거나 manifest 대비 질량 부족이 확인되면 즉시 `229-hold`를 선언하고 도장, 서명, scanner preview, route close, handoff 확인을 중지한다.",
+    "host를 움직이기 전에 seam 폭, host 유형, 실측 질량, 두께, 표면온도, resting surface의 잔류 직사각형 유무를 촬영·기록한다.",
+    "blank queue plaque, blank handoff card, loose appendix slip, summary card를 반경 50cm 밖으로 먼저 제거한 뒤 개봉을 시작한다. [COS184 — 회청색 차순호명패](./cos184.json)와 [COS156 — 무수령 인계대](./cos156.json) 양상이 있는 위치에서는 preview 상태를 선원복한다.",
+    "actual body 수색은 host 자체보다 먼저 rear box, tray lip, panel gap, 마지막 resting surface 뒤편을 대상으로 반경 3m 내에서 시행한다. [COS197 — 회청색 후행본문퇴](./cos197.json) chain이 있으면 rear search를 생략하지 않는다.",
+    "개봉은 120lx 이하 조도에서 하단 먼쪽 seam부터 세라믹 microspatula로 실시한다. 상단 flap 절단, 열 재봉함, 일반 금속 커터 사용은 금지한다.",
+    "host, front shell, blank card, exterior annex slip, recovered body를 각각 불투명 트레이에 분리하고 chain 번호를 공유하지 않는다. exterior annex는 [COS223 — 사후 합철침](./cos223.json) 가능성을 고려해 공식 부속서로 편입하지 않는다.",
+    "used opaque surface가 동반되면 [COS211 — 회청색 선결검수면](./cos211.json) 잔류 여부를 촬영하고, 잔류 frame이 사라질 때까지 같은 면에 다른 unresolved host를 올리지 않는다.",
+    "개봉 후 반경 20cm 내 open sleeve나 empty case를 남겨 두지 않는다. 부득이한 경우 90분 동안 15분 간격 재촬영으로 2차 전이를 감시한다.",
+    "host를 들어낸 자리의 직사각 잔류 자국은 본문 회수 완료의 증거가 아니라 후면 수색 기준점으로만 사용한다. [COS169 — 잔류 대좌면](./cos169.json) 연계 징후가 있으면 재사용을 금지한다."
+  ],
+  "hypotheses": [
+    "현재 자료는 COS229가 포장 재료의 단순 오작동이 아니라, **이미 읽히는 front 외피에 운반 가능성과 봉함 완료 상태만 먼저 응축되는 현상**이라는 해석을 가장 강하게 지지한다.",
+    "작업 가설상 [COS211 — 회청색 선결검수면](./cos211.json)은 완료 frame을, [COS197 — 회청색 후행본문퇴](./cos197.json)은 front/body 분리를, [COS184 — 회청색 차순호명패](./cos184.json)와 [COS156 — 무수령 인계대](./cos156.json)은 하류 이동 압력을, [COS169 — 잔류 대좌면](./cos169.json)은 현재 자리의 권위를, [COS223 — 사후 합철침](./cos223.json)은 exterior annex의 부속 관계를 제공한다. COS229는 이 다섯 단계가 휴대 가능한 host 하나에 묶인 상태일 수 있다.",
+    "COS229가 full-body host를 거의 선택하지 않는 점은 내용의 충실성보다 절차상 `이미 닫혀도 되는 앞면`을 우선 삼는다는 뜻으로 해석된다. 그러나 seam 형성이 접착·열·정전기 가운데 무엇을 실제 매개로 사용하는지는 아직 입증되지 않았다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "허위 봉함·반출 위험",
+      "assessment": "높음. next-slot advance와 recipientless handoff preview가 body 확인보다 먼저 생성될 수 있어 미완결 packet의 이동을 유도한다."
+    },
+    {
+      "category": "본문 미회수 및 실종 위험",
+      "assessment": "높음. 실제 body는 host 밖 후면 위치에 남는 경우가 많아, 닫힌 host만 따라가면 본문 회수가 지연되거나 누락될 수 있다."
+    },
+    {
+      "category": "첨부 관계 오염 위험",
+      "assessment": "높음. exterior annex가 형성되면 무관한 slip이나 요약지가 공식 부속서처럼 읽힐 수 있다."
+    },
+    {
+      "category": "직접 신체 위해",
+      "assessment": "낮음. 현재까지 봉함 host 자체에 의한 절상, 화상, 독성 노출은 확인되지 않았다."
+    },
+    {
+      "category": "2차 host 전이 위험",
+      "assessment": "중간 이상. 개봉 뒤 인접 open host로 선결봉함 상태가 옮겨가면 격리 범위가 빠르게 넓어진다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS229 현장에서 가장 흔한 오판은 `이미 닫혔으니 내용 점검은 끝났다`는 가정이다. 실제 관측은 그 반대였다. 닫힌 host일수록 먼저 확인해야 하는 것은 seam의 정당성보다 **host 밖에 남아 있는 본문과 수령 근거**였다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"겉보기는 완결 packet인데, 손에 들면 내용이 따라오지 않는 느낌이었습니다.\" — 보존기사 H-19, 2044-04-15"
+    },
+    {
+      "type": "paragraph",
+      "content": "현재까지 COS229 표식만 추적해 실제 body를 바로 회수한 사례는 없다. rear box, tray lip, panel gap, 원 resting surface 뒤편을 우선 수색했을 때에만 실본문 회수율이 높았다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-229 정식 편입",
+      "paragraphs": [
+        "2044-04-11 초동 보고서와 야간 메모에서는 현상을 `빈 봉함투`, `premature seal sleeve`, `T-229`로 병기했다.",
+        "2044-04-23 full-body 배제 시험과 2044-04-29 2차 host 전이 시험 이후, 핵심이 단순 sleeve 오작동이 아니라 **내용 완결 이전의 봉함 상태 선행**임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 선결봉함갑**으로 확정하고, 물체·현상 복합 항목 COS229로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A229 식별 접두",
+      "paragraphs": [
+        "양성 봉함 host 자체에는 `A229-case-일련번호`, 개봉 후 남은 seam 또는 lower trace에는 `T229-seam-일련번호`, exterior annex로 부착된 slip에는 `A229-outer-일련번호`를 부여한다.",
+        "`A229-case`, `T229-seam`, `A229-outer`, recovered body는 같은 봉투나 같은 current chain으로 병합하지 않는다.",
+        "공란 양식이 `A229-outer`로 전환된 경우 정상 appendix 양식으로 환원해 재사용하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "회청색 seam 2.1mm 이상, manifest 대비 질량 부족 30g 이상, 하단 borescope에서 front-only cavity 확인 가운데 2개 이상이 동시에 성립하면 COS229 양성 후보로 분류한다.",
+        "blank plaque 10cm 이내에서 next-slot advance 또는 `handover ready`가 함께 발생하면 우선순위를 한 단계 올려 즉시 `229-hold`를 발령한다.",
+        "실제 body 위치, footer hash, page total은 seam 외형과 독립적으로 판정한다. 봉함 host의 외형은 완결본 판정 근거에 포함하지 않는다."
+      ]
+    },
+    {
+      "title": "개봉 및 후면 수색 우선순위",
+      "paragraphs": [
+        "1차 수색은 host 내부가 아니라 rear box, tray lip, panel gap, resting surface 뒤, 인접 opaque board 순으로 진행한다.",
+        "개봉 전 blank queue plaque, blank handoff card, loose appendix slip를 모두 분리한 뒤 조도 120lx 이하에서 하단 seam을 연다.",
+        "개봉 뒤 90분 동안 인접 open host를 남겨 두지 않거나, 부득이하면 15분 간격 재촬영으로 2차 전이를 감시한다."
+      ]
+    }
+  ]
+}

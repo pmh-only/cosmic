@@ -457,6 +457,15 @@
         "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS211 — 회청색 선결검수면](./cos211.json)의 `검수 완료` 외형과 결합해, 아무도 받지 않은 host가 `이미 인수되었고 동시에 검수도 끝난 자료`처럼 보이게 만드는 복합 단계로 기록한다. 2026-09-06~2026-09-08 used audit board 시험에서 recipient mark가 형성된 host 8건 중 5건이 120초 이내 completion box를 추가 획득했고, 실제 body는 그 시점에도 rear position에서 분리 확인되었다.",
         "따라서 recipient initials와 completion frame이 함께 보여도 handoff 종료나 provenance 회복의 근거로 사용하지 않는다. COS211 작업면에서 하단 서명칸이 닫히면 [COS225 — 회청색 인수대행서명](./cos225.json) 동반 사례로 우선 봉인하고, live recipient verification과 rear body search 전 검수 종료를 선언하지 않는다."
       ]
+    },
+    {
+      "relatedId": 229,
+      "type": "reciprocal",
+      "title": "COS229 상호기록",
+      "paragraphs": [
+        "[COS229 — 회청색 선결봉함갑](./cos229.json)은 [COS211 — 회청색 선결검수면](./cos211.json)에서 먼저 형성된 완료 frame이 작업면을 떠나 실제 운반 host에 고정된 후속 단계로 확인되었다. 검수 완료 칸만 남은 surface에서 shell과 blank card가 open sleeve로 이동하면, provenance 회복 없이도 닫힌 packet 외형이 먼저 형성될 수 있다.",
+        "COS211 작업면에서 미완결 host를 치울 때는 completion frame뿐 아니라 이후 [COS229 — 회청색 선결봉함갑](./cos229.json) 전이를 감시해야 하며, rear body 확인 전 봉함 상태를 승인하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

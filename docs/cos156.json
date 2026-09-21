@@ -379,6 +379,15 @@
         "[COS205 — 회청색 대조합치막](./cos205.json) 양성쌍은 [COS156 — 무수령 인계대](./cos156.json)에서 실제 수령자 없이 `인계 완료` 상태를 닫는 강한 촉발 조건으로 확인되었다. 2026-08-26 H-2M 모의 인계대 시험 6회 중 4회에서 shared pair code를 가진 false pair가 단일 handoff log와 provisional barcode 1건을 생성했다.",
         "이는 인계가 성립했다는 뜻이 아니라 비교단계에서 생긴 거짓 정쌍이 무수령 인계대를 속여 하나의 전달 건처럼 보이게 만든 결과이다. COS156 현장에서 서로 다른 footer hash를 가진 front/body가 같은 accession을 획득하면 수령자 탐문보다 먼저 COS205 동반 여부와 원래 분리 위치를 재검증한다."
       ]
+    },
+    {
+      "relatedId": 229,
+      "type": "reciprocal",
+      "title": "COS229 상호기록",
+      "paragraphs": [
+        "[COS229 — 회청색 선결봉함갑](./cos229.json)은 [COS156 — 무수령 인계대](./cos156.json)의 `인계 완료` 외형을 휴대 가능한 packet 상태로 굳히는 후속 단계로 재분류되었다. 실제 본문과 수령자는 뒤에 남아 있는데도 front-only host가 `handover ready`를 먼저 얻는 사례가 반복 확인되었다.",
+        "COS156 자료에서 비정상적으로 가벼운 sealed sleeve나 transit case가 빈 인계대 전방에 놓여 있으면 수령자 확인보다 먼저 [COS229 — 회청색 선결봉함갑](./cos229.json) 여부와 rear body 잔류를 검사한다."
+      ]
     }
   ],
   "supplementalSections": []
