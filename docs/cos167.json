@@ -367,6 +367,15 @@
         "[COS226 — 회청색 계류인계포켓](./cos226.json) 활성 숙주 9점은 실질 질량 증가 평균 0.4 g, 최대 1.1 g에 불과했으나 전방 당김 저항은 평균 15.2 N, 최대 16.8 N을 보여 [COS167 — 중량대행체](./cos167.json) 기준 범위와 중첩되었다. 하중은 내용물 방향이 아니라 개구부 전면과 다음 이송 방향에만 집중되었다.",
         "이는 빈 인계포켓이 실문서의 무게가 아니라 `인계되어야 할 현재 사건의 부담`을 전면 저항으로 대리한 상태로 해석된다. COS167형 하중이 얇은 포켓, empty sleeve, blank route carrier에서 발생하면 숨은 본문보다 [COS226 — 회청색 계류인계포켓](./cos226.json) 숙주 여부를 먼저 점검한다."
       ]
+    },
+    {
+      "relatedId": 230,
+      "type": "reciprocal",
+      "title": "COS230 상호기록",
+      "paragraphs": [
+        "[COS230 — 회청색 호송대행슬리브](./cos230.json) 양성 host 10점은 평균 질량 43.6 g, 대조군 42.9 g으로 차이가 0.7 g에 불과했으나 15° 인출 저항은 평균 14.7 N, 최대 18.9 N까지 상승했다. 이는 empty escort sleeve가 실제 본문 무게가 아니라 `지금 전달되어야 할 current packet`의 하중을 대리해 [COS167 — 중량대행체](./cos167.json) 기준 범위와 직접 중첩된 사례다.",
+        "COS167형 하중이 clear sleeve·route jacket의 handhold corner에 집중되면 숨은 body를 곧바로 가정하지 말고 [COS230 — 회청색 호송대행슬리브](./cos230.json) 여부를 먼저 점검한다. 질량·견인값·rear body 위치를 함께 기록하지 않은 thumb-check는 무효로 처리한다."
+      ]
     }
   ],
   "supplementalSections": []

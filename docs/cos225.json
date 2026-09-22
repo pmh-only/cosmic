@@ -333,6 +333,15 @@
         "suspected host는 `A225-host-일련번호`, generated mark 또는 해당 slip는 `A225-sign-일련번호`, 회수된 실제 body는 `B225-body-일련번호`, carbon copy·queue ticket·audio/thermal 잔류는 `T225-trace-일련번호`를 사용한다.",
         "네 접두 표본은 같은 봉투, 같은 current chain, 같은 verification board를 공유하지 않는다. generated mark가 형성된 recipient field는 절취하지 않고 host 전체를 first evidence로 취급한다."
       ]
+    },
+    {
+      "relatedId": 230,
+      "type": "reciprocal",
+      "title": "COS230 상호기록",
+      "paragraphs": [
+        "[COS230 — 회청색 호송대행슬리브](./cos230.json) D-4 사건에서는 empty escort host가 outbound rack에 74 s 노출된 뒤 outer face recipient field에 initials/time mark를 획득했고, 실제 body는 3.4 m 떨어진 격리 카트에서 회수되었다. 이는 [COS225 — 회청색 인수대행서명](./cos225.json)의 인수 폐쇄 표식이 escort host 전면에 전이된 대표 사례다.",
+        "따라서 recipient mark가 생긴 clear host는 전달 완료 증거가 아니라 [COS230 — 회청색 호송대행슬리브](./cos230.json) 동반 가능성 아래 first evidence로 분리 보관한다. generated sign가 body가 아니라 host에 붙었다면 receipt close, route release, chain recovery를 모두 잠정 무효로 유지한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -451,6 +451,15 @@
         "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS191 — 회청색 공란상정대](./cos191.json)에서 생성된 digest 또는 blank 발표 card가 연단을 벗어난 뒤 bodyless host 옆 note-taking 위치에서 `검토 종료`형 portable note로 응축되는 후속 단계로 확인되었다. 상정 권한이 계속 유지되는 것이 아니라, 이미 설명과 검토가 끝난 것 같은 짧은 completion cue만 card에 남는다.",
         "따라서 COS191 유래 digest나 blank card가 회의록 메모, witness slip, 검토 노트처럼 재사용되면 이를 잔류 요약문으로 보지 말고 [COS219 — 회청색 종결전사패](./cos219.json) 전이 가능성 아래 별도 봉인한다. generated note를 브리핑 완료나 인수인계 근거로 채택하지 않는다."
       ]
+    },
+    {
+      "relatedId": 230,
+      "type": "reciprocal",
+      "title": "COS230 상호기록",
+      "paragraphs": [
+        "[COS230 — 회청색 호송대행슬리브](./cos230.json) 양성 host 6점을 acrylic stand에 30 s 노출한 대조에서 4점이 outer face 상단띠와 2~5행 digest를 획득했고, 1점은 주변 route card보다 먼저 `지금 설명할 건`으로 선출되었다. 이는 [COS191 — 회청색 공란상정대](./cos191.json)의 공란 상정 권한이 이동식 escort host 외피로 이식된 사례로 기록한다.",
+        "따라서 COS191 현장에는 empty escort sleeve, rigid route jacket, bodyless carrier를 올리지 않는다. 상정면 위에서 생성된 digest는 본문 요약이 아니라 [COS230 — 회청색 호송대행슬리브](./cos230.json) 숙주가 current briefing slot을 점유한 결과일 수 있다."
+      ]
     }
   ],
   "supplementalSections": [

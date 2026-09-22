@@ -392,6 +392,15 @@
       "paragraphs": [
         "양성 사건 19건 중 14건에서 actual body가 전면 slot 뒤 0.2–1.4 m에서 회수되었고, 같은 위치 전면에는 [COS216 — 회청색 공석대행패](./cos216.json)가 current front처럼 정착했다. 이는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)이 뒤로 밀어낸 본체의 공백을 COS216이 종이 card 1장으로 봉합한 말단 단계로 해석된다. COS158 현장에서 blank vacancy card가 회청색으로 냉각되면 후면 통로가 닫힌 것으로 보지 말고, 그 card를 현행본 대신 분리 봉인한 뒤 rear-search를 지속한다."
       ]
+    },
+    {
+      "relatedId": 230,
+      "type": "reciprocal",
+      "title": "COS230 상호기록",
+      "paragraphs": [
+        "[COS230 — 회청색 호송대행슬리브](./cos230.json) 확정 19건 중 17건에서 actual body가 rear guide·이전 tray·후방 0.3~2.4 m 구간에 남아 있는 동안, clear escort host만 current front처럼 선출되었다. 이는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)이 만든 `앞칸의 전면 / 뒤 한 칸의 내용` 분리 구조가 portable sleeve·route jacket 외피에 정착한 사례로 해석된다.",
+        "따라서 COS158 의심 자료에 empty escort sleeve나 blank route jacket가 함께 있으면, 비어 있는 외피를 현행본으로 다루지 말고 rear-search를 3 m 범위까지 선행한다. 전면에 남은 host를 다시 body와 합치면 [COS230 — 회청색 호송대행슬리브](./cos230.json) 쪽 선취 및 대리 폐쇄가 강화될 수 있다."
+      ]
     }
   ],
   "supplementalSections": []

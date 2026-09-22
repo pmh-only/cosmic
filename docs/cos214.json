@@ -403,6 +403,15 @@
         "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS214 — 회청색 장넘김대행막](./cos214.json)의 manual page-turn cue가 마지막 확인을 통과한 것처럼 보인 직후, `이미 도착했다`는 receipt 외피까지 덧붙는 말단 단계로 확인되었다. 실제 body가 rear guide나 correction tray 뒤에 남아 있어도 넘김감과 도착 회신이 함께 있으면 취급자는 가장 쉽게 `확인했고 수령도 끝났다`는 잘못된 결론에 도달한다.",
         "COS214 숙주에서 generated arrival receipt가 생기면 thumb-flip 결과를 즉시 무효화하고, no-leafing triad·rear body search·receipt 분리를 동시에 시행한다."
       ]
+    },
+    {
+      "relatedId": 230,
+      "type": "reciprocal",
+      "title": "COS230 상호기록",
+      "paragraphs": [
+        "[COS230 — 회청색 호송대행슬리브](./cos230.json) 양성 host 8점은 borescope상 공실임에도 0.9 N 이하 thumb pressure 1회에 1.8~3.9 kHz rustle 4~7회를 발생시켰다. 이는 실제 leaf stack 없이 manual page-turn cue만 남는 [COS214 — 회청색 장넘김대행막](./cos214.json)과 직접 중첩되는 양상이다.",
+        "따라서 clear escort host에서 넘김음이 들려도 body 회수 근거로 사용하지 않는다. COS214 no-leafing triad는 [COS230 — 회청색 호송대행슬리브](./cos230.json) 의심 숙주에도 동일하게 적용하며, thumb-check는 증거 보강이 아니라 증폭 행위로 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

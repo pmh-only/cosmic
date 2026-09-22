@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 3,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-06-03부터 2044-07-11까지 확정 19건이 모두 기관 내부 이관·브리핑·반출대기 구역에서만 발생했고 외부 노출은 확인되지 않았으나, 숙주가 시판 투명 슬리브와 외형상 거의 구별되지 않아 외부 반입 시 초동 탐지가 어렵기 때문에 공개 가능성은 중간 이상으로 판단해 3으로 평가한다.",
+    "permission": "outer face에 route band, digest line, recipient initials/time mark가 전이되어 다른 사건철과 COS 표본의 체인 오브 커스터디를 오염시킬 수 있으므로, 현장 운용·감사·보존 담당 외 열람을 제한할 필요가 있어 4로 평가한다.",
+    "chaos": "확정 19건에서 선취, 요약문, 하중감, 넘김음, 인수표식 등 5종의 산물이 교차 출현했고 같은 숙주도 노출면과 절차 위치에 따라 다른 반응을 보였으므로 결과 변동성과 예측 곤란도가 높아 4로 평가한다.",
+    "danger": "직접적인 인체 손상은 확인되지 않았으나 실제 본문 수색이 중지된 채 반출·인수 처리될 뻔한 사건이 3건 있었고, 기록·표본의 위치 추적이 단시간에 붕괴될 수 있어 인명보다는 기록·시설 운용 측면의 위험을 반영해 3으로 평가한다.",
+    "popularity": "임시표기 `T-230`은 39일 동안 7개 부서 문서와 교육 공지에서 37회 상호 참조되었고, G-12·S-3·D-4 절차 개정의 기준 사례로 반복 인용되었으므로 참조 빈도가 높아 4로 평가한다.",
+    "containment": "양성 외피 숙주와 실제 본문을 재삽입 없이 분리 봉인하고, 투명 작업면·아크릴 stand·thumb-check를 동시에 금지해야 안정적으로 억제되었으므로 요구 관리 강도가 높아 4로 평가한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "조사원 G-41",
+        "role": "현장 총괄 조사",
+        "status": "active",
+        "involvement": "2044-06-03 G-12 초동 정지 명령을 내리고 T-230 임시등록 요청서, 후속 격리선, `no-display / no-leafing / no-reinsert` 절차 초안을 작성했다."
+      },
+      {
+        "name": "기술원 M-07",
+        "role": "계측 및 영상 분석",
+        "status": "active",
+        "involvement": "열영상, force gauge, fiber scope, 음향 로그를 취득하고 양성 숙주 10점과 대조군 10점의 계측 비교를 수행했다."
+      },
+      {
+        "name": "기록보존관 N-12",
+        "role": "증거 체인 관리 및 정식 등록 심의",
+        "status": "active",
+        "involvement": "`A230-host / B230-body / S230-sign / T230-trace` 접두 체계를 승인하고, 숙주-본문 분리 보존 규정을 제정했다."
+      },
+      {
+        "name": "이관담당 R-08",
+        "role": "G-12 라인 운용자",
+        "status": "reassigned",
+        "involvement": "초동 사건에서 empty escort sleeve를 본문으로 오인해 recipient tray에 올렸으나, 2044-07-02 사건에서는 thickness mismatch를 보고해 반출 직전 차단에 기여했다."
+      },
+      {
+        "name": "분석관 H-03",
+        "role": "브리핑 검토 및 맹검 시험 보조",
+        "status": "active",
+        "involvement": "2044-06-21 S-3 사고에서 시각 비교를 위해 양성 숙주를 acrylic stand에 올려 확산을 유발했고, 이후 stand 노출 실험의 피험 절차를 설계했다."
+      },
+      {
+        "name": "운반보조 P-19",
+        "role": "반출 대기구역 보조 인원",
+        "status": "reassigned",
+        "involvement": "2044-07-02 D-4 사건에서 봉인 해제 후 host를 outbound rack에 걸어 인수표식 생성을 유발했으며, 이후 투명 운반체 취급 업무에서 제외되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-06-03 08:27 KST",
+        "label": "초동 발견",
+        "description": "제2보존동 3층 이관검토실 G-12 lane 2에서 clear escort sleeve 1매가 수령 완료품으로 이동했으나, 개봉 결과 3 mm EVA spacer와 공란 route insert만 포함한 상태로 확인되었다."
+      },
+      {
+        "date": "2044-06-03 08:54 KST",
+        "label": "동일일 2차 발생",
+        "description": "같은 구역 lane 4에서 두 번째 empty escort host가 본문으로 선취되자 오전 라인 43건이 전면 정지되었고, transparent escort carrier 26점이 일괄 회수되었다."
+      },
+      {
+        "date": "2044-06-04 11:10 KST",
+        "label": "임시등록 T-230",
+        "description": "기록보존관 N-12가 현상을 임시표기 `T-230`으로 등록하고 A230-host-01~06, 대응 body 6점, 영상 3세트의 분리 체인을 개시했다."
+      },
+      {
+        "date": "2044-06-10",
+        "label": "맹검 선취 시험 양성",
+        "description": "G-12 통제시험에서 전일 실제 본문을 수용했던 suspected host 12점 중 9점이 blinded handler에게 3.1~11.4초 내 `지금 처리할 건`으로 선취되었고, 미사용 대조군 12점은 0점이었다."
+      },
+      {
+        "date": "2044-06-21 15:18 KST",
+        "label": "S-3 상정면 사고",
+        "description": "브리핑실 S-3의 acrylic stand에 양성 숙주 A230-host-04를 올린 뒤 31초 이내 outer face에 3행 digest와 상단띠가 형성되었고, 무관한 annex B-17이 잘못 결합될 뻔한 사건이 발생했다."
+      },
+      {
+        "date": "2044-06-18",
+        "label": "불투명 봉인 표준화",
+        "description": "black PE evidence bag 봉인군 8/8에서 20분 관찰 동안 선취·요약·인수표식이 재현되지 않아 opaque containment가 표준 절차로 채택되었다."
+      },
+      {
+        "date": "2044-07-02 18:06 KST",
+        "label": "반출대기 대리 인수표식",
+        "description": "동관 반출대기 도크 D-4에서 봉인 해제된 host가 outbound rack에 74초 걸린 뒤 initials/time mark를 획득했고, 실제 본문은 3.4 m 떨어진 격리 카트에서 회수되었다."
+      },
+      {
+        "date": "2044-07-11",
+        "label": "정식 편입 승인",
+        "description": "총 19건의 확정 사례와 6종 통제시험 결과를 근거로 임시표기 T-230이 COS230으로 정식 편입되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "I-230-01",
+        "date": "2044-06-03 08:27 KST",
+        "location": "중앙기록보존처 제2보존동 3층 이관검토실 G-12",
+        "title": "빈 호송슬리브 인수 사건",
+        "involvedPersonnel": [
+          "조사원 G-41",
+          "기술원 M-07",
+          "이관담당 R-08",
+          "기록보존관 N-12"
+        ],
+        "narrative": [
+          "오전 이관 묶음 43건 중 J-44-061 사건철이 scanner output 쪽으로 이동하던 중, 이관담당 R-08은 outer face의 route arrow와 손에 걸리는 저항을 근거로 clear escort sleeve를 완성품으로 판단하고 recipient tray에 올렸다. 당시 G-12 라인은 7건이 누적된 상태였고, 조사원 G-41은 우선 적체 해소를 위해 즉시 cavity check를 지시하지 않았다. 42초 뒤 recipient box에 시간 스탬프가 찍히자 라인 상에는 `인수 완료`로 보이는 외형이 남았다.",
+          "M-07이 thickness mismatch를 지적하며 개봉 전 계측을 제안했고, force gauge는 14.2 N의 전방 견인을 기록했으나 질량은 41.3 g에 불과했다. fiber scope 확인 결과 내부에는 3 mm EVA spacer와 공란 route insert만 있었고, 실제 63쪽 사건철은 1.2 m 뒤 scanner rear guide에서 08:34에 회수되었다. 기록보존관 N-12는 같은 시간대 영상 3채널을 봉인하고, clear escort carrier 전량 회수를 지시했다."
+        ],
+        "outcome": "실제 본문은 회수되었고 라인은 93분 정지되었다. transparent escort sleeve 26점이 격리되었으며 현상은 임시표기 T-230으로 분류되었다."
+      },
+      {
+        "code": "I-230-02",
+        "date": "2044-06-21 15:18 KST",
+        "location": "중앙기록보존처 제2보존동 2층 브리핑실 S-3",
+        "title": "상정면 노출 후 허위 현재성 확대",
+        "involvedPersonnel": [
+          "조사원 G-41",
+          "기술원 M-07",
+          "분석관 H-03",
+          "기록보존관 N-12"
+        ],
+        "narrative": [
+          "분석관 H-03은 시각 비교를 용이하게 하겠다는 이유로 격리 표본 A230-host-04를 규정과 달리 acrylic stand 중앙에 18초 세워 두었다. stand 전면에는 당일 안건 카드 5매가 있었고, 그중 blank header tab 하나가 양성 숙주의 lip와 거의 맞닿은 위치에 있었다. 기록보존관 N-12는 사진 기록을 위해 제거를 1회 유예했으나, 31초 안에 outer face 상단에 회청색 띠와 3행 digest가 생겼고 주변 인원이 해당 host를 `다음 건`으로 호명하기 시작했다.",
+          "이어 H-03이 제목행 대조를 위해 무관한 annex B-17을 24 cm 거리까지 가져오자 M-07은 fiber scope 영상에서 cavity가 비어 있음을 확인하고 즉시 중단을 요구했다. 같은 순간 open edge에서 1회 thumb pressure가 가해졌고 2.4 kHz 중심 rustle 5회가 검출되었다. G-41은 annex와 host를 양손 동시 분리한 뒤 각각 opaque bag에 재봉인했고, stand 전면 lip는 현장에서 제거되어 증거물화되었다."
+        ],
+        "outcome": "허위 편철 직전 단계에서 차단되었으며, 이후 `no-display / no-thumb-check / no-reinsert` 조합이 현장 표준으로 채택되었다."
+      },
+      {
+        "code": "I-230-03",
+        "date": "2044-07-02 18:06 KST",
+        "location": "중앙기록보존처 동관 반출대기 도크 D-4",
+        "title": "대리 인수표식 부착 및 반출 직전 회수",
+        "involvedPersonnel": [
+          "조사원 G-41",
+          "기술원 M-07",
+          "이관담당 R-08",
+          "운반보조 P-19"
+        ],
+        "narrative": [
+          "야간 재체인 작업 중 운반보조 P-19는 검은 봉투 안의 라벨 판독이 어렵다는 이유로 A230-host-07을 잠시 꺼내 outbound rack에 걸었다. 대응 본문 B230-body-07은 규정대로 별도 보관함에 있었지만, rack 전면에 걸린 host가 route code와 handhold 저항을 유지한 탓에 현장 인원은 이를 `오늘 나갈 건`으로 받아들이기 시작했다. 74초 뒤 outer face recipient field에는 이니셜 형태의 청회색 필선과 18:08 시각표기가 생겼다.",
+          "재훈련 중이던 R-08은 외형상 완료 상태임에도 두께가 설명되지 않는다고 판단하고 sealing을 멈춘 채 G-41을 호출했다. M-07의 즉시 계측에서 host는 17.9 N의 전방 견인을 보였지만 fiber scope상 내부 적층은 없었다. 3.4 m 떨어진 격리 카트를 수색한 결과 실제 41쪽 본문은 미개봉 상태로 회수되었고, 생성된 표식은 opaque bag 재봉인 후 육안에서는 약화되었으나 4K 영상과 carbon lift에는 남았다."
+        ],
+        "outcome": "무본문 반출은 차단되었고, P-19는 투명 운반체 취급에서 제외되었다. recipient mark가 발생한 host는 별도 서명 표본으로 재분류되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-230-A01",
+        "type": "양성 숙주 실물",
+        "description": "A230-host-01. 0.15 mm PET clear escort sleeve 1매. 2044-06-03 G-12에서 회수되었으며, 내부에는 3 mm EVA spacer와 공란 route insert만 존재한다. outer face에 시간 스탬프 마찰 흔적과 5 mm 회청색 상단띠가 남아 있다.",
+        "custodyStatus": "증거실 A-6 불투명 봉인 1호, B230-body-01과 분리 보관 중."
+      },
+      {
+        "code": "EV-230-B01",
+        "type": "대응 실제 본문",
+        "description": "B230-body-01. J-44-061 사건철 실물 63쪽. 2044-06-03 08:34 KST scanner rear guide에서 회수되었고 chain tag는 온전하다. 양성 숙주와 별도 inert sleeve에 재수납되었다.",
+        "custodyStatus": "금속 서가 R-2, 비교열람 제한 상태로 보관 중."
+      },
+      {
+        "code": "EV-230-V03",
+        "type": "동기화 영상",
+        "description": "G-12 CCTV 2채널과 scanner rear camera 1채널을 2044-06-03 08:26:58~08:34:12 KST 구간에서 동기화한 4K 영상 세트. host 선취와 실제 본문 후방 잔류가 동시에 확인된다.",
+        "custodyStatus": "디지털 금고 V-230-03, checksum 봉인 및 읽기 전용 잠금 완료."
+      },
+      {
+        "code": "EV-230-M04",
+        "type": "계측 로그",
+        "description": "E230-01~E230-06 시험의 force gauge, IR, audio spectrum, borescope 캡처 통합 파일. 양성 10점과 대조군 10점의 질량-견인 불일치 자료 포함.",
+        "custodyStatus": "분석실 저장소 M-04, 원본 수정 잠금 상태."
+      },
+      {
+        "code": "EV-230-A04",
+        "type": "상정면 산물",
+        "description": "A230-host-04와 S-3 stand 전면 lip 사진 18매, outer face digest 전사본 1부, blank header tab 1점. 2044-06-21 사고 직후 회수되었다.",
+        "custodyStatus": "암실 서랍 S-3-2, tri-fold opaque mount에 개별 보관 중."
+      },
+      {
+        "code": "EV-230-S07",
+        "type": "표식 리프트",
+        "description": "D-4 사건에서 생성된 initials/time mark의 carbon lift 2매와 multispectral 이미지 세트. 육안 약화 전 상태를 보존한다.",
+        "custodyStatus": "증거봉투 S-07, A230-host-07과 분리 보관 중."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "이관담당 R-08",
+        "role": "G-12 라인 운용자",
+        "context": "I-230-01 직후 폐쇄회로 영상 대조 면담",
+        "statement": "겉면 화살표와 손에 걸리는 저항이 먼저 들어와서 안쪽 확인을 뒤로 미뤘다. 제 판단으로는 그 슬리브가 사건철을 둘러싼 표지가 아니라 사건철 자체처럼 보였고, 그래서 recipient tray에 올린 뒤에야 이상함을 느꼈다."
+      },
+      {
+        "speaker": "기술원 M-07",
+        "role": "계측 및 영상 분석",
+        "context": "E230-04 종료 후 구두 진술",
+        "statement": "fiber scope로 비어 있는 것을 본 뒤에도 thumb pressure 한 번에 넘김음이 나왔다. 내 해석으로는 본문이 되돌아온 것이 아니라, 확인 동작 자체에 외피 숙주가 반응해 `다음 장이 있다`는 감각만 대리한 것이다."
+      },
+      {
+        "speaker": "분석관 H-03",
+        "role": "브리핑 검토 보조",
+        "context": "I-230-02 사고 보고서 첨언",
+        "statement": "stand에 잠깐 세우면 더 잘 찍힐 것이라고 판단한 것이 잘못이었다. 요약문이 생긴 뒤에는 다른 카드들이 그 앞에 자연스럽게 줄을 서기 시작했고, 그때부터는 눈으로 봐도 비어 있다는 생각이 잘 들지 않았다."
+      }
+    ]
+  },
+  "id": 230,
+  "title": "회청색 호송대행슬리브",
+  "language": "ko-KR",
+  "overview": [
+    "COS230은 실제 본문을 한 차례 이상 수용한 투명 호송슬리브, rigid route jacket, 유사 외피 운반체에서 확인되는 이동식 대리 현상이다. 본문이 분리된 뒤에도 외피 숙주가 `현재 처리 중인 사건철`의 전면 지위를 유지하며 후속 절차를 끌어당긴다.",
+    "2044-06-03부터 2044-07-11까지 제2보존동 G-12, S-3, D-4에서 확정 19건, 잠정 6건이 기록되었다. 확정 건 17/19에서는 실제 본문이 양성 숙주 뒤 0.3~2.4 m 또는 한 단계 이전 위치에서 11분 이내 회수되었다.",
+    "양성 숙주 내부는 공란 route insert, 2~4 mm EVA spacer, 혹은 완전 공실뿐이었으나, 외면에는 queue 선취, 2~5행 digest, route band, recipient initials/time mark가 형성되었다.",
+    "핵심 위험은 숙주의 분실이 아니라 `숙주를 본문으로 인정하는 판단`이다. 한번 인수, 상정, 반출 절차가 숙주 쪽으로 닫히면 실제 본문 검색이 중지되거나 뒤로 밀린다.",
+    "현재 자료는 [COS158 — 한 칸 뒤의 회랑](./cos158.json), [COS184 — 회청색 차순호명패](./cos184.json), [COS191 — 회청색 공란상정대](./cos191.json), [COS214 — 회청색 장넘김대행막](./cos214.json), [COS225 — 회청색 인수대행서명](./cos225.json)과의 중첩을 시사하지만, 동일 현상으로 통합할 근거는 확보되지 않았다."
+  ],
+  "identificationTraits": [
+    "숙주는 0.12~0.18 mm 투명 PP/PET 슬리브 또는 0.7~1.2 mm rigid route jacket이며, 확정 19건 모두에서 최소 15분 이상 실제 본문을 수용했던 이력이 확인되었다.",
+    "470 nm 측면광을 비추면 open edge 또는 handhold punch 둘레에 폭 4~7 mm의 회청색 띠가 강화되며, 일반 사용흔과 달리 outer face 쪽에서만 선명하다.",
+    "질량 증가는 대조군 대비 1.2 g 이하였으나 15° 인출 시험에서 11.2~18.9 N의 전방 견인을 보였다. 대조군은 2.8~4.1 N 범위에 머물렀다.",
+    "fiber scope 또는 top-light 확인 시 내부에는 공란 buffer, 2~4 mm EVA spacer, 또는 완전 공실만 보인다. 촉감 확인과 thumb-flip은 진단 행위가 아니라 증폭 행위로 취급한다.",
+    "outer face에는 상단띠, 2~5행 digest, route arrow, recipient initials/time mark가 생길 수 있으나, inner face와 spacer 표면은 대체로 무변화 상태를 유지한다.",
+    "실제 본문은 rear guide, 이전 tray, 또는 같은 카트의 후방 0.3~2.4 m 구간에서 별도 회수되는 경향이 강하다. 양성 host만 있고 대응 body가 3 m 밖에서 발견될 경우 다른 현상을 우선 검토한다."
+  ],
+  "discovery": [
+    "2044-06-03 08:27 KST, 제2보존동 3층 이관검토실 G-12 lane 2에서 이관담당 R-08이 수령 완료품으로 올린 clear escort sleeve 1매(A230-host-01)가 실제로는 3 mm EVA spacer와 공란 route insert만 포함한 상태로 회수되었다. 동시각 실제 본문 J-44-061은 scanner rear guide에서 1.2 m 뒤로 남아 있었다.",
+    "동일일 08:54 KST lane 4에서 2차 발생(A230-host-02)이 확인되자 G-41은 오전 라인 43건 전체를 정지하고 transparent escort carrier 26점을 일괄 회수했다. 신규 미사용 슬리브 14점에서는 즉시 재현되지 않았다.",
+    "2044-06-04 11:10 KST N-12는 현상을 임시표기 `T-230`으로 등록하고 host/body 분리 체인을 개시했다. A230-host-01~06, 대응 body 6점, 영상 3세트가 최초 보존 표본으로 봉인되었다.",
+    "2044-06-10부터 2044-06-18까지 시행한 6종 통제시험에서, 실제 본문을 20분 이상 수용한 뒤 현행 전면 노출을 거친 clear host만이 선취, digest, 넘김음, 인수표식 중 1개 이상을 재현했다. 미사용 대조군 24점과 black bag 봉인군에서는 동일 산물이 유의하게 감소했다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS230은 본문을 생성하지 않는다. 이미 본문을 수용했던 외피 숙주에 `현재 전면`과 관련된 절차 신호만 남겨 이동시키는 양상으로 관측된다.",
+      "발현은 queue 선두, recipient field, acrylic stand, outbound rack처럼 `지금 처리할 것`을 정면으로 세우는 위치에서 가장 쉽게 증폭된다.",
+      "확인하려는 동작이 오히려 산물을 늘린다. 촉감 확인, thumb-check, 시각 비교용 전면 배치 뒤에 하중감, digest, 넘김음, recipient mark가 증가했다.",
+      "실제 본문을 양성 숙주에 다시 끼우거나 무관한 annex를 가까이 두면 허위 현재성, 허위 편철, 대리 인수표식이 연쇄적으로 강화된다."
+    ],
+    "stages": [
+      {
+        "name": "숙주 형성",
+        "description": "실제 본문을 최소 15분 이상 수용한 투명 외피 운반체가 queue 또는 recipient 동선에서 한 차례 이상 `현재 처리 중인 사건`의 전면으로 노출된다."
+      },
+      {
+        "name": "선행 전면화",
+        "description": "본문이 rear guide, 이전 tray, 후방 칸으로 분리된 뒤에도 외피 숙주가 먼저 집히거나 먼저 보이며, 주변 인원이 이를 본문 자체로 취급하기 시작한다."
+      },
+      {
+        "name": "감각 보강",
+        "description": "외피 숙주에 질량-견인 불일치, 회청색 상단띠, digest line, page-rustle과 같은 보조 신호가 축적되어 오인이 강화된다."
+      },
+      {
+        "name": "대리 폐쇄",
+        "description": "recipient mark, route pass, 완료 시각 같은 종료 표식이 body가 아니라 host에 붙고, 실제 본문 검색이 중단되거나 한 단계 뒤로 밀린다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "관측상 COS230은 이동식 외피 숙주에 `현재 전면`이 잔류하는 계열로 보이며, 실제 본문이 뒤로 밀리는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)과 빈 외피에 하중을 부여하는 [COS167 — 중량대행체](./cos167.json)와 중복 징후를 보인다.",
+      "대기·상정 단계에서는 [COS184 — 회청색 차순호명패](./cos184.json), [COS191 — 회청색 공란상정대](./cos191.json)의 전면 선출 효과가 outer host 쪽으로 이동하는 사례가 반복되었다.",
+      "잘못된 재삽입이나 촉감 확인은 [COS203 — 회청색 교차편철면](./cos203.json), [COS214 — 회청색 장넘김대행막](./cos214.json), [COS225 — 회청색 인수대행서명](./cos225.json)과 유사한 후속 산물을 유발했으나, 공통 원인 여부는 미확정이다."
+    ],
+    "entries": [
+      {
+        "targetId": 158,
+        "targetTitle": "한 칸 뒤의 회랑",
+        "description": "양성 숙주 19건 중 17건에서 실제 본문이 뒤 0.3~2.4 m 또는 이전 tray에서 회수되어 [COS158 — 한 칸 뒤의 회랑](./cos158.json)의 front/body 분리 양상과 겹쳤다. 차이는 COS230이 `뒤에 남은 body` 자체가 아니라 이를 둘러싸고 이동했던 escort host에 현재성이 남는다는 점이다."
+      },
+      {
+        "targetId": 167,
+        "targetTitle": "중량대행체",
+        "description": "질량 증가는 1.2 g 이하인데도 11.2~18.9 N의 견인 저항이 반복되어 [COS167 — 중량대행체](./cos167.json)와 중첩된다. 다만 COS230의 하중감은 handhold corner와 open edge에 집중되며 route code·recipient mark 동반 빈도가 높았다."
+      },
+      {
+        "targetId": 184,
+        "targetTitle": "회청색 차순호명패",
+        "description": "blank header tab가 노출된 양성 숙주 8점 중 5점이 queue line에서 먼저 집히며 `다음 건`으로 불렸다. 이는 [COS184 — 회청색 차순호명패](./cos184.json)의 차순 권한이 portable escort host 전면에 부착될 수 있음을 시사한다."
+      },
+      {
+        "targetId": 191,
+        "targetTitle": "회청색 공란상정대",
+        "description": "acrylic stand S-3 위에 올린 양성 숙주 6점 중 4점에서 outer face에 2~5행 digest와 상단띠가 형성되어 [COS191 — 회청색 공란상정대](./cos191.json)의 상정 효과와 직접 겹쳤다. 이후 양성 host의 전면 배치는 전면 금지되었다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "분리된 body 또는 무관한 annex를 양성 숙주와 같은 flat board에 놓으면 shell/body가 즉시 한 건처럼 맞물릴 위험이 증가했다. 이 양상은 [COS203 — 회청색 교차편철면](./cos203.json)의 허위 복합체 형성 조건과 일치한다."
+      },
+      {
+        "targetId": 214,
+        "targetTitle": "회청색 장넘김대행막",
+        "description": "borescope로 공실을 확인한 양성 숙주에서도 0.9 N thumb pressure만으로 1.8~3.9 kHz rustle 4~7회가 검출되었다. 이는 [COS214 — 회청색 장넘김대행막](./cos214.json)의 manual page-turn cue와 동일한 억제 절차가 필요함을 뜻한다."
+      },
+      {
+        "targetId": 225,
+        "targetTitle": "회청색 인수대행서명",
+        "description": "recipient field 또는 outer face에 initials/time mark가 전이된 3건은 [COS225 — 회청색 인수대행서명](./cos225.json)과 유사한 closure substitution을 보였다. 단, 표식이 body가 아니라 escort host에 부착된다는 점이 COS230의 식별 포인트다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "E230-01 / 맹검 선취 시험",
+      "description": "2044-06-10 G-12에서 전일 실제 사건철을 23~41 min 수용했다가 본문만 제거한 suspected host 12점과 미사용 대조군 12점을 동일 rack에 혼합했다. blinded handler 8명이 `지금 처리할 건`을 1점씩 고르자 suspected host 9/12가 3.1~11.4 s 내 선취되었고, 대조군 선취는 0/12였다. 선취 직후 fiber scope 확인에서는 24점 모두 공실 또는 blank spacer만 보였다."
+    },
+    {
+      "label": "E230-02 / 질량-견인 불일치 계측",
+      "description": "2044-06-11 계측실 M-2에서 양성 host 10점 평균 질량은 43.6 g, 대응 inert host 10점 평균 질량은 42.9 g으로 차이가 0.7 g에 그쳤다. 그러나 15° 인출 시험의 평균 견인저항은 14.7 N 대 3.4 N이었고, 저항 증가는 handhold corner 2개와 open edge 1점에 집중되었다."
+    },
+    {
+      "label": "E230-03 / 상정면 노출 시험",
+      "description": "2044-06-13 브리핑실 S-3에서 양성 host 6점과 미사용 host 6점을 acrylic stand에 30 s씩 노출했다. 양성 4/6에서 outer face 상단띠와 2~5행 digest가 형성되었고, 1점은 인접 route card보다 먼저 `다음 건`으로 집혔다. 대조군 6/6은 변화가 없었다."
+    },
+    {
+      "label": "E230-04 / 무본문 넘김음 시험",
+      "description": "2044-06-14 acoustic cell A-1에서 borescope로 공실을 확인한 양성 host 8점에 0.9 N 이하 thumb pressure를 1회씩 가하자 6/8에서 1.8~3.9 kHz rustle 4~7회가 검출되었다. 같은 압력의 control host 8점에서는 rustle이 검출되지 않았고, 이후 양성 host 2점에서 digest line이 추가 형성되어 thumb-check 금지 사유가 강화되었다."
+    },
+    {
+      "label": "E230-05 / 수령표식 전이 시험",
+      "description": "2044-06-17 recipient desk R-2에서 양성 host 8점을 본문과 분리한 채 recipient field에 90 s 두었을 때 same-room 조건 3/8에서 outer face initials/time mark가 생겼다. 대응 body를 다른 실로 이동한 대조 조건 0/8에서는 동일 표식이 발생하지 않았다."
+    },
+    {
+      "label": "E230-06 / 불투명 봉인 억제 시험",
+      "description": "2044-06-18 격리실 Q-1에서 양성 host 8점을 black PE evidence bag에 봉인한 군은 20 min 관찰 동안 선취, digest, 인수표식 재현이 0/8이었다. clear bag 봉인군 8점은 1/8에서 약한 상단띠가 재발했고, 이후 표준 억제 수단이 black opaque bag으로 확정되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "투명 escort sleeve, rigid route jacket, 유사 운반체가 빈 상태인데도 먼저 집히거나 비정상적인 견인 저항을 보이면 즉시 현재 라인을 정지하고 시각·시간·위치를 기록한다.",
+    "숙주를 손으로 눌러 확인하거나 넘겨 보지 말고, 개봉 전 정면·후면·open edge 45도·handhold corner를 4K 이상으로 촬영한다.",
+    "질량과 견인저항을 먼저 계측한다. 질량 증가가 1.2 g 이하인데 견인저항이 11 N 이상이거나 반복 선취가 있으면 잠정 양성으로 간주한다.",
+    "내부 확인은 직경 4 mm 이하 fiber scope 또는 top-light만 사용한다. finger insertion, thumb-flip, page fan, body 재삽입은 금지한다.",
+    "양성 의심 host는 black PE evidence bag 90 μm 이상에 봉인하고 `A230-host` 접두를 부여한다. 같은 시간에 실제 본문은 host를 기준으로 3 m 후방, 이전 tray, rear guide, stand 후면, outbound rack 하단을 우선 수색한다.",
+    "회수된 실제 본문은 신규 inert sleeve에 재수납해 `B230-body`로 별도 봉인한다. 원래 host와 같은 봉투, 같은 투명 tray, 같은 비교판을 사용하지 않는다.",
+    "recipient mark, digest line, route pass가 이미 붙은 경우에는 host 전체를 first evidence로 취급하고, 절취 대신 carbon lift와 multispectral 촬영을 선행한다.",
+    "양성 host가 놓였던 acrylic stand, queue lip, outbound rack는 표면 자체를 1차 host 가능성 하에 닦지 말고 분리 표식 후 후속 조사팀에 인계한다."
+  ],
+  "hypotheses": [
+    "[가설 1] COS230은 실제 본문을 수용했던 외피 운반체에 `현재 전면`만 이동식으로 잔류하는 현상이다. 본문 소실보다 본문-위치 분리를 먼저 가정해야 설명력이 높다.",
+    "[가설 2] [COS158 — 한 칸 뒤의 회랑](./cos158.json)형 후방 잔류 뒤에 [COS184 — 회청색 차순호명패](./cos184.json) 또는 [COS191 — 회청색 공란상정대](./cos191.json)의 전면 선출이 겹치면 양성률이 상승한다. 다만 세 현상의 공통 원인은 아직 입증되지 않았다.",
+    "[가설 3] thumb-check에서 발생한 rustle은 [COS214 — 회청색 장넘김대행막](./cos214.json)과 같은 sensory surrogate이며, 내용을 복원하지 않고 사용자의 확인 동작을 절차 진행 신호로 오인하게 만든다.",
+    "[가설 4] recipient mark 전이는 [COS225 — 회청색 인수대행서명](./cos225.json)과 공통된 표식 생성 메커니즘을 일부 공유할 수 있으나, host와 body를 서로 다른 실로 분리하면 0/8로 억제되어 공간적 근접 조건이 필요한 것으로 보인다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "체인 오브 커스터디",
+      "assessment": "outer face에 부착된 initials/time mark와 route band가 본문 회수 전 절차를 종료시킬 수 있다. 증거·표본·민감 기록 모두에서 가장 우선적인 관리 대상이다."
+    },
+    {
+      "category": "교차편철 및 오체인",
+      "assessment": "양성 host와 분리 body 또는 무관한 annex를 같은 flat board에 올리면 허위 복합체 형성 속도가 증가한다. provenance 대조는 숙주와 본문을 서로 다른 면에서 수행해야 한다."
+    },
+    {
+      "category": "인력 판단 오염",
+      "assessment": "무게감, digest, 넘김음은 숙련 인원에게도 `확인되었다`는 잘못된 완료감을 준다. 교육 이수 여부와 무관하게 촉감 확인 습관이 있는 인원이 더 취약했다."
+    },
+    {
+      "category": "시설 운영",
+      "assessment": "scanner rear guide, acrylic stand, outbound rack가 반복적인 증폭 지점으로 확인되었고, 확정 사건당 평균 라인 정지 시간은 71분이었다. 일상 운영 구간에서 발생하므로 간접 비용이 높다."
+    },
+    {
+      "category": "인명 및 표본 안전",
+      "assessment": "직접적인 신체 위해는 확인되지 않았으나 실제 본문 또는 관련 표본 수색 지연으로 보존, 멸균, 격리, 반출 통제가 누락될 수 있다. 내용물의 위험도를 숙주 외형이 대체하지 않도록 별도 확인이 필요하다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "2044-06-03~2044-06-05 현장 라벨 `empty escort`, `빈 호송슬리브`, `앞서 가는 clear carrier`는 모두 COS230으로 통합한다."
+    },
+    {
+      "type": "quotation",
+      "content": "안이 비었는지 손으로 확인하지 마십시오. 손가락이 들어가는 순간 슬리브 쪽 설명력이 강해집니다. — 조사원 G-41, 2044-06-14 현장 통제문"
+    },
+    {
+      "type": "paragraph",
+      "content": "A230-host 표본을 교육 시연용으로 재사용한 2회 모두 선취 편향이 재발하여, 2044-07-03 이후 실물 시연은 금지되고 영상 기록만 교육 자료로 사용된다."
+    },
+    {
+      "type": "quotation",
+      "content": "슬리브를 믿는 순간 뒤에 남은 본문은 더 멀어진다. — 기록보존관 N-12, 정식 편입 심의 메모"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-230 정식 편입",
+      "paragraphs": [
+        "2044-06-03부터 2044-07-10까지 사용된 임시표기 `T-230`, `empty escort`, `앞서 가는 clear carrier`, `빈 호송슬리브`는 모두 COS230으로 통합한다.",
+        "초기 가설 `단순 오라벨`, `미회수 본문과 무관한 빈 carrier 반복 사용`은 6종 통제시험과 확정 19건 중 17건의 rear body 회수 결과로 폐기한다. 공식 분류는 실제 본문과 분리된 외피 숙주가 현재 전면을 유지하는 이동식 대리 현상에 초점을 둔다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A230/B230/S230/T230 접두 및 분리 규정",
+      "paragraphs": [
+        "양성 outer host는 `A230-host`, 회수된 실제 body는 `B230-body`, generated mark 또는 carbon lift는 `S230-sign`, 열영상·음향·견인 계측은 `T230-trace` 접두를 부여한다.",
+        "`A230-host`와 `B230-body`는 같은 봉투, 같은 transparent tray, 같은 current chain hash를 공유하지 않는다.",
+        "회수된 body는 신규 inert sleeve에 재수납한 뒤에만 비교·열람하며, 원래 host의 재사용은 금지한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 잠정 양성 판정 triad",
+      "paragraphs": [
+        "다음 세 조건이 동시에 충족되면 `COS230 의심 양성`으로 잠정 판정한다: (1) transparent escort host가 공실, blank buffer, spacer만 포함한다. (2) 질량 증가 1.2 g 이하인데 11 N 이상 견인저항을 보이거나 queue에서 반복 선취된다. (3) 실제 body가 3 m 이내 후방 또는 이전 단계에서 별도 회수된다.",
+        "generated mark, digest line, next-call cue 중 하나만으로는 단독 양성 판정하지 않는다. 대응 body 회수 전까지는 host와 표식 모두 임시 봉인 상태로 유지한다."
+      ]
+    },
+    {
+      "title": "재수납 및 사진기록 표준",
+      "paragraphs": [
+        "양성 의심 host는 개봉 전 정면, 후면, open edge 45도, handhold corner의 네 각도를 4K 이상으로 촬영한다.",
+        "내부 확인은 직경 4 mm 이하 fiber scope만 사용하고, finger insertion, thumb-flip, page fan, body 재삽입은 금지한다.",
+        "회수된 body는 new inert sleeve에 재수납하고, original host는 black PE evidence bag 90 μm 이상으로 봉인한다."
+      ]
+    }
+  ]
+}
