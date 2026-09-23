@@ -410,6 +410,15 @@
         "2026-09-10 이후 COS226 격리는 숙주 포켓만이 아니라 숙주가 걸려 있던 rail, 빈 hook, 사건 화이트보드 사진, 스캔 화면 캡처, 비교실 투명판까지 포함한다.",
         "이 조치는 PH-3 본체 봉인 후에도 COS117형 재개봉선과 COS139형 인과봉합이 2차 매체에서 지속된 사실에 근거한다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)가 [COS226 — 회청색 계류인계포켓](./cos226.json) mouth edge나 rail jaw에 남아 있을 경우, 포켓 내부 slip이나 표제를 교체해도 `현재 계류 중인 사건`의 전면 권한이 소실되지 않는 사례가 확인되었다. 2044-06-11~2044-06-24 비교 기록 6건에서 current authority는 포켓보다 clip 잔류 여부와 더 강하게 상관했으며, clip 분리 후에도 host 잔류 효과가 6분 이상 지속되었다.",
+        "따라서 COS226 현장에서 pocket만 회수하거나 slip만 교체한 조치로 사건 종료를 판단하지 않는다. mouth edge와 rail jaw의 A231형 투명 U자걸쇠를 먼저 수색하고, clip 본체·current front·actual body를 별도 체인으로 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -454,6 +454,15 @@
       "paragraphs": [
         "[COS189 — 회청색 무재하중표](./cos189.json)가 붙은 empty carrier나 front-only shell이 line을 통과하는 동안 실제 body가 [COS227 — 회청색 후면적체벽](./cos227.json) rear stop 뒤에 남아 있는 사례가 확인되었다. 이 경우 declared mass는 적재물 존재의 증거가 아니라, 전면 외피가 계속 공정을 진행하는 동안 본문은 후면 cavity로 누적되는 결합형으로 해석한다. 회청색 중량띠와 body count 불일치가 함께 보이면 release보다 rear stop 개방과 후면 슬롯 수색을 우선한다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)와 [COS189 — 회청색 무재하중표](./cos189.json)가 결합한 3건에서는 empty front host가 actual body 없이도 declared weight 또는 14 N 이상 pull resistance를 획득했다. 실측 질량은 변하지 않았으므로, COS231은 하중 자체를 만드는 주체라기보다 COS189이 부여한 false load를 `현재 처리 중인 packet`에 고정하는 매개로 해석된다.",
+        "따라서 COS189형 중량띠가 front-only shell에서 확인되면 적재본 존재를 가정하지 말고, leading edge의 A231 clip 여부와 rear body 위치를 먼저 대조한다. 하중 외형과 current authority가 동시에 붙은 host는 approval·release line에서 즉시 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 3,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "표본과 사건은 현재까지 기관 내부 인계·검토·반출선에서만 확인되었고 일반 대중 환경 노출 사례는 없다. 다만 IR-231-03에서 empty host가 실제 body 없이 외부 반출 직전까지 진행된 만큼, 작동 조건과 식별법이 공개되면 체인 위조와 잘못된 반출 판단을 악용할 위험이 있어 secrecy 3으로 유지한다.",
+    "permission": "안전한 판독에는 rear search 기록, CCTV, dual-mic 로그, 열영상, linked host 분석이 함께 필요했다. IR-231-02에서 active host의 성격을 부분적으로만 전달받은 수습기록원이 body 재삽입을 시도해 전이 확대 직전까지 갔으므로 최소 열람 권한은 4가 필요하다.",
+    "chaos": "표본 12점은 외형이 거의 동일했지만 host 잔류 시간이 6분 03초에서 41분 12초까지 넓게 분산되었고, 투명도·전면 장력·비점유 승인축 유무에 따라 current 선점, generated note, delayed body 발생률이 크게 달랐다. 통제 조건 일부는 확보되었으나 현장 편차가 커 chaos 4로 판정한다.",
+    "danger": "직접 인체 위해는 jaw pinch 2건과 손끝 국소 냉각 0.8°C 정도에 그쳤다. 그러나 empty host가 current·검토 종료·release 상태를 선점해 실제 body 없는 승인·반출 판단을 유도한 near miss가 3건 확인되었고, 이는 인명보다 기록·시설 의사결정에 대한 위험이 높으므로 danger 4로 분류한다.",
+    "popularity": "임시등록 11일 동안 intake 7건, review 5건, audit 3건, release 2건의 교차 참조가 집계되었다. 여러 부서가 이미 참조하고 있으나 사용 맥락이 기록·인계 계통에 집중되어 기관 전반 상시 참조 수준은 아니므로 popularity 3으로 둔다.",
+    "containment": "효과적인 관리에는 clip 본체, active host, delayed body를 별도 체인으로 분리하고 3 m rear search, 불투명 EVA 카세트, PTFE jaw spacer, blank media exclusion을 동시에 적용해야 했다. 단순 분리나 종이봉투 봉인만으로는 current 상태가 host에 잔류했으므로 containment 4가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 윤서-12",
+        "role": "현장 기록관 / 2차 보존 책임",
+        "status": "active",
+        "involvement": "IR-231-01~03 현장 기록, A231/H231/B231/T231 체인 분리, 회수 표본 12점의 2차 봉인 및 비교 보존을 담당했다."
+      },
+      {
+        "name": "분류기사 민호-07",
+        "role": "B-2 인계 레일 담당",
+        "status": "active",
+        "involvement": "IR-231-01과 IR-231-03의 당직자이며 empty host current-state를 최초 보고했다. 재사용 포켓과 escort sleeve의 front-only 진행을 중단하기 전까지 line 조작을 수행했다."
+      },
+      {
+        "name": "분석관 라온-03",
+        "role": "광학·재질 분석",
+        "status": "active",
+        "involvement": "445 nm 사광 스크리닝, IR 열영상, Raman/FTIR 비교, EXP-231-01 및 EXP-231-06의 설계와 판독을 담당했다."
+      },
+      {
+        "name": "감사관 백오-21",
+        "role": "후면 검색 및 재체인 통제",
+        "status": "active",
+        "involvement": "IR-231-02와 IR-231-03에서 near-release를 중지하고 rear body search, gate lock 유지, remote rechain 절차를 수행했다."
+      },
+      {
+        "name": "수습기록원 준필-02",
+        "role": "검토보조",
+        "status": "reassigned",
+        "involvement": "IR-231-02 통제 중 generated cover를 원 packet에 재삽입하려다 제지되었다. 이후 active host 직접 취급 업무에서 제외되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-06-11 07:48 KST",
+        "label": "B-2 1차 이상 발생",
+        "description": "중앙기록단지 제2보관동 B-2 수기 인계 레일 3번에서 empty PET 포켓이 실제 body 없이 current intake 상태를 획득했고, mouth edge에 남아 있던 무표기 투명 U자형 clip이 1차 표본으로 회수되었다."
+      },
+      {
+        "date": "2044-06-12 10:32 KST",
+        "label": "추가 표본 회수",
+        "description": "검토실 C-4, 보조 rack 7A, 반출전실 E-1에서 동일 형상 표본 4점이 추가 회수되었다. 모든 회수 지점에서 front-only shell 또는 delayed body가 동반되었다."
+      },
+      {
+        "date": "2044-06-14 15:20 KST",
+        "label": "T-231 임시 등록",
+        "description": "blank pocket, blank cover, rear-search 조건을 분리한 재현 시험에서 current 선점과 body 후방 잔류가 재현되어 임시등록 T-231이 부여되었다."
+      },
+      {
+        "date": "2044-06-19 09:00 KST",
+        "label": "후면 지연 구조 확인",
+        "description": "rear lip 11 mm host와 평면 host 비교 시험에서 body recovery distance와 host 잔류 시간이 rear lip 조건에서 유의하게 증가해 전면/후면 분리 구조가 핵심 조건으로 기록되었다."
+      },
+      {
+        "date": "2044-06-22 16:13 KST",
+        "label": "무인 결재축 전이 사건",
+        "description": "행정동 4F 검토실 C-4에서 active pocket 인접 blank approval cover와 note card에 generated closure가 형성되었고, 실제 body는 직전 tray 후면 cavity에서 별도로 회수되었다."
+      },
+      {
+        "date": "2044-06-24 09:21 KST",
+        "label": "반출 예비라인 near miss",
+        "description": "E-1 출고 예비라인에서 empty escort sleeve가 declared weight와 outbound code를 획득해 외부 반출 직전까지 진행되었으나 rear body search로 중지되었다."
+      },
+      {
+        "date": "2044-06-25 18:40 KST",
+        "label": "COS231 공식 문서화",
+        "description": "표본 12점의 기본 계측, 6건의 통제 실험, 3건의 near miss 검토 후 정식 명칭을 회청색 현행점유걸쇠로 확정하고 COS231로 편입했다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-231-01",
+        "date": "2044-06-11",
+        "location": "중앙기록단지 제2보관동 B-2 수기 인계 레일 3번",
+        "title": "빈 인계포켓의 현행 선점과 본문 후방 잔류",
+        "involvedPersonnel": [
+          "분류기사 민호-07",
+          "기록관 윤서-12",
+          "분석관 라온-03"
+        ],
+        "narrative": [
+          "07:48 KST, 민호-07은 전일 사용 후 회수 대기 중이던 투명 PET 인계포켓을 재사용하면서 mouth edge에 남아 있던 무표기 U자형 clip을 제거하지 않았다. 포켓 내부에는 blank correction slip 1장만 삽입되었고, 실제 body packet은 같은 레일의 직전 슬롯에 남아 있었다. 19초 뒤 whiteboard capture와 intake preview는 포켓을 현재 처리 건으로 표기했으며, 근접 마이크 녹음에서는 `뒤 슬롯 본문 먼저 회수` 지시의 종결 1.1초가 탈락해 line log에 body 회수 지시가 남지 않았다.",
+          "민호-07은 화면상 current state를 기준으로 포켓을 review tray로 넘기려 했으나, 윤서-12가 손저울 46.2 g와 manifest 예상 418.6 g의 차이를 확인하고 이송을 중단했다. 후면 검색 결과 actual body는 0.9 m 뒤 rear lip 뒤편에서 접힌 상태로 회수되었다. 포켓에서 clip을 분리한 뒤에도 current label은 11분 24초 유지되었고, 이후 표본은 A231-01과 H231-host-01, B231-body-01로 분리 봉인되었다."
+        ],
+        "outcome": "라인 전체가 42분간 동결되었고 T-231 임시등록 절차가 개시되었다. B-2 레일에 대해 mouth edge clip screening과 rear body search가 즉시 의무화되었다."
+      },
+      {
+        "code": "IR-231-02",
+        "date": "2044-06-22",
+        "location": "행정동 4F 검토실 C-4 및 무인 결재석 전 대기대",
+        "title": "공란 결재커버로의 전이 및 종결패 생성",
+        "involvedPersonnel": [
+          "감사관 백오-21",
+          "기록관 윤서-12",
+          "분석관 라온-03",
+          "수습기록원 준필-02"
+        ],
+        "narrative": [
+          "16:13 KST, A231-01의 445 nm edge glow를 blank approval cover와 비교하는 통제 중, 준필-02가 active pocket을 대기대 위 18 cm 옆에 놓인 blank cover 쪽으로 밀어 위치시켰다. 전면의 결재석은 비어 있었으며, 28초 안에 pocket 하단의 route mark는 약화되고 blank cover에는 `검토 종료` lower line과 승인선 유사 표식이 형성되었다. 동시에 table 위 blank note card 1장에도 3행짜리 종결 문구가 생성되었다.",
+          "준필-02는 생성된 cover를 원 packet에 다시 넣어 짝을 맞추려 했으나, 백오-21이 접촉 직전에 손을 제지하고 borescope search를 시행했다. 실제 body는 직전 tray slot의 후면 cavity에서 1.4 m 떨어진 지점에서 회수되었고, generated cover와 note card는 모두 empty 상태였다. 이 사건으로 COS231이 blank cover와 note card에 current/closure 외피를 전이할 수 있음이 확인되었고, 준필-02는 active host 직접 취급 업무에서 제외되었다."
+        ],
+        "outcome": "무인 승인축 주변의 blank cover와 note card 사용이 중지되었고, COS231과 approval/closure 계열 현상 간 연계 실험이 별도 승인 없이 금지되었다."
+      },
+      {
+        "code": "IR-231-03",
+        "date": "2044-06-24",
+        "location": "반출전실 E-1 출고 예비라인",
+        "title": "전면 shell 반출 직전 중지",
+        "involvedPersonnel": [
+          "분류기사 민호-07",
+          "감사관 백오-21",
+          "기록관 윤서-12"
+        ],
+        "narrative": [
+          "09:21 KST, empty escort sleeve 1점이 line scale preview에서 1.52 kg로 표시되고 release board에는 outbound code가 선행 생성되었다. sleeve handhold에는 전날 회수하지 못한 두 번째 clear clip이 남아 있었으며, sleeve 내부에는 title front 1장만 있었다. 민호-07은 weight preview와 current route code를 근거로 적재 packet이 이미 합쳐졌다고 판단해 gate approach를 승인하려 했다.",
+          "백오-21은 manual pull resistance 16.4 N에 비해 thermal silhouette가 비어 있다는 점을 근거로 gate lock을 유지했고, 3 m rear search 끝에 actual body packet을 직전 카트 하단 포켓에서 2.1 m 뒤에서 회수했다. sleeve 내부 borescope는 empty cavity를 유지했으므로, current route code와 declared weight는 body 회수의 증거로 채택되지 않았다. A231-03 회수 뒤 같은 라인의 false load와 preview closure는 재현되지 않았다."
+        ],
+        "outcome": "외부 반출 직전 오판 1건이 방지되었다. 반출전실 전 라인에 A231 clip screening, manual pull 계측, rear body search 순서가 표준 절차로 추가되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A231-01",
+        "type": "물리표본",
+        "description": "B-2 레일 3번 mouth edge에서 회수한 투명 U자형 걸쇠. 폭 36.4 mm, 질량 3.78 g, 445 nm 사광 이중선 양성, 비자성.",
+        "custodyStatus": "보존실 K-4 불투명 EVA 카세트 봉인 / Permission 4 이상 열람"
+      },
+      {
+        "code": "A231-03",
+        "type": "물리표본",
+        "description": "E-1 출고 예비라인 escort sleeve handhold에서 회수한 두 번째 활성 표본. 질량 3.61 g, host 잔류 22분 09초.",
+        "custodyStatus": "실험실 L-2 분리 보관 / 이동 금지 / weekly integrity check"
+      },
+      {
+        "code": "V231-01",
+        "type": "동기화 영상기록",
+        "description": "IR-231-01의 CCTV 3각도, line scale overlay, whiteboard capture, 타임코드 통합 세트.",
+        "custodyStatus": "보안서버 R-9 read-only 아카이브 / checksum 고정"
+      },
+      {
+        "code": "L231-02",
+        "type": "근접·원거리 음향로그",
+        "description": "근접 마이크와 3.5 m 대조 마이크 pair. 지시 종결 0.7~1.4초 탈락 3례 포함.",
+        "custodyStatus": "음향보존실 SHA-231 봉인 / 복사본 발급 제한"
+      },
+      {
+        "code": "B231-body-01",
+        "type": "회수 본문 packet",
+        "description": "IR-231-01에서 rear lip 뒤 0.9 m 후방에서 회수한 actual body. accession hash와 pagination이 original manifest와 일치.",
+        "custodyStatus": "원본보존실 O-7 / COS231 연계 표본으로 이중 체인 관리"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "분류기사 민호-07",
+        "role": "B-2 인계 레일 담당",
+        "context": "IR-231-01 1차 서면 진술, 2044-06-11 09:10 KST",
+        "statement": "포켓을 바꿀 일이라고 생각했는데, 실제로는 clip이 남아 있었습니다. 화면에는 현재 건이 포켓으로 넘어간 것처럼 보였고 저는 본문이 이미 뒤따라온다고 판단했습니다. 이 판단은 제 추정이었고, 나중에 rear search에서 본문이 뒤 슬롯에 남아 있음을 확인했습니다."
+      },
+      {
+        "speaker": "감사관 백오-21",
+        "role": "후면 검색 및 재체인 통제",
+        "context": "IR-231-02 이후 구두 진술 녹취",
+        "statement": "빈 cover에 `검토 종료`가 붙은 순간 승인 완료처럼 보였지만, borescope에는 종이가 없었습니다. 제 판단으로는 이 표식은 본문이 아니라 현재 처리 상태를 먼저 점유한 결과였습니다. 다만 왜 비점유 결재축에서 전이가 강해졌는지는 추가 검증이 필요합니다."
+      },
+      {
+        "speaker": "분석관 라온-03",
+        "role": "광학·재질 분석",
+        "context": "EXP-231-01 예비보고서 발췌",
+        "statement": "445 nm 사광에서 보이는 회청색 이중선은 control clip 18점에서 재현되지 않았습니다. 다만 Raman/FTIR 값은 일반 polycarbonate 계열과 완전히 분리되지 않아, 재질 자체보다는 표면 상태나 부착 맥락이 더 중요하다고 봅니다. 후자의 해석은 제 실험팀 가설입니다."
+      }
+    ]
+  },
+  "id": 231,
+  "title": "회청색 현행점유걸쇠",
+  "language": "ko-KR",
+  "overview": [
+    "COS231은 문서·인계 설비에서 회수된 투명 U자형 걸쇠 표본과, 해당 표본이 부착된 전면 host가 actual body보다 먼저 `현재 처리 대상` 지위를 점유하는 복합 현상으로 구성된다.",
+    "현재까지 회수 표본 12점 중 10점에서 445 nm 사광 기준 회청색 이중선이 확인되었고, active host와의 접촉 뒤 blank pocket, approval cover, note card, front shell에 current/received/검토 종료 외피가 부여되었다.",
+    "COS231 자체가 문장 본문, 실제 서명, 또는 body를 생성한 사례는 없다. 확인된 결과는 bodyless front의 선점, body의 후방 지연, 짧은 종결 어휘 전이로 제한된다.",
+    "가장 큰 위해는 인명보다 기록 무결성과 인계·반출 판단의 오염에 있다. 실제 body가 남아 있는 동안에도 front host가 절차상 완료물처럼 취급될 수 있다."
+  ],
+  "identificationTraits": [
+    "표본은 대부분 폭 34.2~39.8 mm, depth 12.1~15.4 mm의 투명 U자형 spring clip으로 회수되며 질량은 3.36~4.11 g 범위였다. 제조사 각인, 사출번호, 절삭흔은 확인되지 않았다.",
+    "445 nm LED를 25~35° 사광으로 비출 때 내측 곡률을 따라 길이 4~9 mm의 회청색 이중선이 나타난다. 대조용 PET/PC clip 18점에서는 동일 반응이 0건이었다.",
+    "표본 12점은 모두 비자성이며 금속 검출기에 반응하지 않았다. 표면 저항은 10^10~10^11 Ω 범위로 일반 절연성 플라스틱과 유사하나, active host 접촉 뒤 손끝 국소 온도 저하 0.4~0.8°C가 반복 측정되었다.",
+    "clip을 분리한 뒤에도 host의 current/closure 잔류 효과가 6분 03초에서 41분 12초까지 지속된다. 따라서 본체 분리만으로 사건 종료를 판단할 수 없다.",
+    "actual body는 대체로 직전 슬롯, rear lip 뒤, 하부 포켓, 또는 0.2~2.4 m 후방에서 회수된다. front host는 대개 pagination과 실측 질량이 맞지 않는다.",
+    "투명 pocket mouth, blank approval cover, note card, front-only shell이 가장 높은 양성률을 보였고, matte black EVA insert는 광학 징후를 즉시 약화시켰다. 다만 host 잔류 효과까지 동시에 제거하지는 못했다."
+  ],
+  "discovery": [
+    "2044-06-11 중앙기록단지 제2보관동 B-2 수기 인계 레일에서 empty PET 포켓이 actual body 없이 current intake 상태를 획득한 사건(IR-231-01) 뒤, mouth edge에 남아 있던 무표기 투명 U자형 clip이 1차 표본으로 회수되었다.",
+    "동일일 pocket과 slip을 교체해도 현행 선점이 중단되지 않았고, clip을 분리했을 때만 전면 host 변경과 무관한 잔류 current state가 감쇠하기 시작했다.",
+    "2044-06-12~2044-06-24 사이 검토실 C-4, 반출전실 E-1, 보조 rack 7A에서 동일 형상 표본 11점이 추가 회수되었다. 회수 지점은 모두 front-only shell, delayed body, generated closure memo 중 최소 2종과 동반되었다.",
+    "2044-06-14 통제 부착 시험에서 blank pocket과 blank approval cover가 15~43초 내 current/closure 외피를 획득하는 현상이 재현되어 임시등록 T-231이 부여되었고, 후속 조사 후 COS231로 정식 편입되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS231은 front-most exposed edge나 mouth를 가진 host에 부착될 때 가장 잘 활성화되며, 내용 자체보다 `현재 처리 중`이라는 절차 우선권을 먼저 부여한다.",
+      "active host는 actual body 없이도 intake, review, approval, release line에서 current/received/검토 종료와 같은 상태를 선점할 수 있으며, matching body는 보통 직전 슬롯이나 후면 cavity에서 회수된다.",
+      "clip 분리 후에도 host 잔류 효과가 6분 03초~41분 12초 지속되므로, 본체 분리만으로 사건이 종료된 것으로 판단해서는 안 된다.",
+      "blank note card, approval cover, transparent pocket 같은 얇은 전면 매체가 10~40 cm 내에 추가되면 짧은 종결 문구나 하단선이 그쪽으로 전이될 수 있다."
+    ],
+    "stages": [
+      {
+        "name": "부착 대기",
+        "description": "표본이 rail lip, pocket mouth, cover edge 등에 물리적으로 고정되어 있으나 current-state 전이가 아직 관찰되지 않는 단계. 445 nm 회청색 이중선만 확인되며 generated note나 delayed body는 없다."
+      },
+      {
+        "name": "현행 선점",
+        "description": "접촉한 전면 host가 current/received/review status를 우선 획득하는 단계. blank slip, front cover, pocket mouth, title front가 actual body보다 먼저 절차 권위를 얻는다."
+      },
+      {
+        "name": "본문 지연",
+        "description": "matching accession body가 이전 슬롯, rear lip 뒤, 하부 포켓, 또는 0.2~2.4 m 후방에서 회수되는 단계. 전면 host는 route code, approval line, false load, pull resistance 같은 2차 외형을 얻을 수 있다."
+      },
+      {
+        "name": "전이 봉합",
+        "description": "active host와 새로운 blank surface가 접촉하거나 적층될 때 종료·승인·인수 어휘가 새 host로 옮겨붙는 단계. generated note card, blank approval cover, current shell이 형성되며 본문 회수는 추가로 지연된다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS231은 단독으로 문서를 구성하기보다 기존 `front-only / current-state` 계열 현상을 장시간 고정하는 물리 매개체로 보인다.",
+      "가장 강한 상관은 [COS226 — 회청색 계류인계포켓](./cos226.json), [COS198 — 회청색 후면분리턱](./cos198.json), [COS207 — 회청색 무재순환철](./cos207.json), [COS219 — 회청색 종결전사패](./cos219.json)와 확인되었다.",
+      "approval closure, false load, end-word loss는 각각 [COS149 — 무인 결재석](./cos149.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS103 — 무음의 군집](./cos103.json)과 결합할 때 강화되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 226,
+        "targetTitle": "회청색 계류인계포켓",
+        "description": "[COS226 — 회청색 계류인계포켓](./cos226.json) 양성 host 6건에서 A231 clip이 mouth edge 또는 rail jaw에 남아 있었다. pocket이나 slip만 교체해도 current authority가 지속된 반면 clip 분리 후에야 잔류 시간이 감소했으므로, COS231은 COS226 host의 전면 권한을 물리적으로 고정하는 매개로 분류된다."
+      },
+      {
+        "targetId": 198,
+        "targetTitle": "회청색 후면분리턱",
+        "description": "[COS198 — 회청색 후면분리턱](./cos198.json) rear lip 11 mm host와 함께 있을 때 body recovery distance가 평균 1.34 m로 늘어났다. front-only shell이 lip 뒤의 actual body와 장시간 분리되는 양상은 COS231이 COS198의 분리 구조를 안정화함을 시사한다."
+      },
+      {
+        "targetId": 158,
+        "targetTitle": "한 칸 뒤의 회랑",
+        "description": "[COS158 — 한 칸 뒤의 회랑](./cos158.json)에서 기술되는 `한 칸 뒤` 회수 양상은 A231 부착 host 5건에서 직접 재현되었다. clip이 leading face에 남아 있으면 host 교체 후에도 actual body가 직전 슬롯에서 발견되는 경향이 강했다."
+      },
+      {
+        "targetId": 176,
+        "targetTitle": "유백색 선입면",
+        "description": "[COS176 — 유백색 선입면](./cos176.json)처럼 first layer만 먼저 current front가 되는 사례는 COS231 부착 직후 15~43초 안에 반복되었다. 다만 COS231은 선입된 front를 안정화하는 쪽에 가깝고, 독립적으로 본문을 생성하거나 복구하지는 않았다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "[COS189 — 회청색 무재하중표](./cos189.json)와 중첩된 3건에서 blank host는 실측 질량과 무관한 declared weight 또는 강한 pull resistance를 획득했다. false load는 COS231 단독보다 COS189 결합 조건에서 뚜렷했다."
+      },
+      {
+        "targetId": 207,
+        "targetTitle": "회청색 무재순환철",
+        "description": "[COS207 — 회청색 무재순환철](./cos207.json)과 유사한 moving current shell 2건은 모두 A231 clip이 제거되지 않은 front host에서 발생했다. clip 회수 후 같은 line에서 bodyless circulation이 재현되지 않아, COS231은 COS207형 이동 shell의 선행 고정 조건일 가능성이 높다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "[COS219 — 회청색 종결전사패](./cos219.json)와 같은 1~4행 종결 card는 active host가 blank note card와 30 cm 이내로 접근했을 때만 생성되었다. generated card는 본문 전사가 아니라 current/closure field의 전이로 해석된다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "[COS149 — 무인 결재석](./cos149.json) 전 대기대에 blank approval cover를 둔 비점유 조건에서 generated approval line 양성률이 5/8로 가장 높았다. 빈 승인축은 COS231이 선점한 front host에 `이미 결재가 끝난 듯한` 외형을 더 강하게 부여했다."
+      },
+      {
+        "targetId": 103,
+        "targetTitle": "무음의 군집",
+        "description": "[COS103 — 무음의 군집](./cos103.json)과의 직접 동형성은 미확정이지만, IR-231-01 포함 3건에서 근접 마이크만 지시 종결 0.7~1.4초를 잃었고 대조 마이크에는 문장 일부가 남았다. 현재는 조건부 동반 현상으로 분류한다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-231-01 기초 치수·광학 조사",
+      "description": "회수 표본 12점(A231-01~12)과 시중 PET/PC 문서클립 18점을 22.1°C, 48% RH에서 비교했다. A231 표본은 폭 34.2~39.8 mm, 질량 3.36~4.11 g, 445 nm 30° 사광에서 내측 곡률을 따라 회청색 2중선이 나타났고 대조군은 0/18이었다."
+    },
+    {
+      "label": "EXP-231-02 투명 인계포켓 선점 시험",
+      "description": "빈 PET 포켓 24점에 actual body packet을 0.8 m 뒤 슬롯에 둔 상태로 clip 부착군 12회, 무부착군 12회를 수행했다. 부착군 9/12에서 포켓이 15~43초 내 current label을 획득했고 body는 평균 0.92 m 뒤에서 회수되었다. 무부착군은 0/12였다."
+    },
+    {
+      "label": "EXP-231-03 후면 지연 거리 및 lip 영향",
+      "description": "rear lip 11 mm host와 평면 host 각각 10회를 비교했다. lip host+clip 조합에서 body 회수 거리는 평균 1.34 m, 평면+clip에서는 0.41 m였으며 current front 잔류 시간은 각각 18분 12초, 6분 03초였다."
+    },
+    {
+      "label": "EXP-231-04 무인 결재축 전이 시험",
+      "description": "blank approval cover를 active pocket에서 18 cm에 두고 결재석 점유/비점유 조건 각 8회를 비교했다. 비점유 조건 5/8에서 `검토 종료` 또는 승인선 하단 closure가 cover에 형성되었고, 점유 조건은 1/8, 무clip 대조군은 0/8이었다."
+    },
+    {
+      "label": "EXP-231-05 종결전사패 동반 시험",
+      "description": "blank note card 16장을 active host 주변 10~40 cm에 노출했다. 6/16에서 1~4행의 짧은 종결 문구가 생성되었고, 모두 actual body 부재 상태였다. generated card를 읽지 않은 군은 추가 문구 연장이 0/6이었다."
+    },
+    {
+      "label": "EXP-231-06 격리 재질 비교",
+      "description": "matte black EVA, clear acrylic, 종이봉투, PTFE-spaced cassette에 각 4시간 보관했다. EVA+불투명 외피군은 재활성까지 평균 27분이 필요했고, clear acrylic군은 보관 중 3/5 spontaneous transfer가 발생했으며, 종이봉투군은 hold time 감소 없이 유지되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "active 의심 clip이 확인되면 host를 이동하지 말고 전후 3 m line을 즉시 동결한다.",
+    "clip 본체는 `A231-clip`, current front는 `H231-host`, recovery된 actual body는 `B231-body`, generated note/review/route 산물은 `T231-trace`로 분리 표기하고 동일 봉투·동일 tray에 넣지 않는다.",
+    "이동 전 445 nm 25~35° 사광, IR 8–12 µm 열영상, handhold 저항값을 순서대로 기록한다.",
+    "rear search는 항상 진행 방향의 반대쪽부터 실시하며, 직전 슬롯·rear lip 뒤·하부 포켓·1 slot back guide를 우선 개방한다.",
+    "blank note card, approval cover, correction slip, empty transparent pocket, clear acrylic board는 active host 1 m 이내에 두지 않는다.",
+    "clip 분리는 matte black EVA 카세트 내부에서만 수행하고, jaw 사이에 2.0 mm PTFE spacer를 삽입한 뒤 불투명 2차 봉투에 봉인한다.",
+    "generated `current`, `received`, `검토 종료`, route code, declared weight는 actual body 회수 또는 검토 완료의 근거로 사용하지 않는다.",
+    "active host와 candidate body를 현장에서 재삽입·재결합하지 말고, remote rechain 후 분리된 comparison bench에서만 대조한다.",
+    "근접 음성 지시의 종결부가 탈락하면 즉시 음성 지시를 중단하고 code paddle 또는 외부 timestamp board로 전환한다.",
+    "generated note/review card는 펼치거나 육성으로 읽지 않는다. 사진 촬영 후 불투명 슬리브에 단독 봉인한다."
+  ],
+  "hypotheses": [
+    "가설 1: COS231의 핵심 효과는 내용 생성이 아니라 `현행 처리권`의 점유이며, text·weight·approval 같은 2차 표지는 점유된 host에서 후행적으로 형성된다.",
+    "가설 2: rear lip, one-slot gap, empty pocket mouth와 같은 전면/후면 분리 구조가 있을 때 actual body 지연이 안정화된다. 평면 host 단독에서는 hold time이 짧고 body recovery distance가 감소했다.",
+    "가설 3: blank note card와 approval cover에 나타난 종결 문구는 독립 필기 현상이 아니라 active host가 closure field를 전이한 결과다.",
+    "가설 4: 근접 마이크에서만 반복된 지시 종결부 탈락은 [COS103 — 무음의 군집](./cos103.json)과의 조건부 중첩일 수 있으나, 현재 sample 3건으로는 단정할 수 없다.",
+    "가설 5: false load와 manual pull resistance는 COS231 단독 효과가 아니라 [COS189 — 회청색 무재하중표](./cos189.json) 또는 인접 하중 대리 현상과 결합할 때 강화된다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "높음. actual body 없는 front host가 current, 검토 종료, route code를 선점해 잘못된 인용, 승인, 인계, 반출 결정을 유도할 수 있다."
+    },
+    {
+      "category": "인계·반출 오판",
+      "assessment": "높음. IR-231-03에서 external gate approach 직전까지 진행되었고, manual weight check 단독으로는 식별 실패 가능성이 확인되었다."
+    },
+    {
+      "category": "전이 가능성",
+      "assessment": "중간~높음. active host와 blank pocket, note card, approval cover가 10~40 cm 내에 적층될 때 generated closure가 추가되었으며, clear acrylic storage는 3/5 spontaneous transfer를 보였다."
+    },
+    {
+      "category": "인원 직접 위해",
+      "assessment": "낮음~중간. 직접 위해는 pinch 2건, 손끝 국소 냉각, 절차 오판으로 인한 스트레스 보고에 제한되었으나, 잘못된 승인·반출 결정의 간접 위해는 무시할 수 없다."
+    },
+    {
+      "category": "복구 난이도",
+      "assessment": "중간. actual body는 현재까지 100% 회수되었지만, current/closure overlay가 남은 host를 body와 재결합하면 provenance가 다시 오염될 수 있어 복구 절차가 길다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "A231-06과 A231-09는 제조사 각인, 사출 자국, 잔류 접착제가 모두 없었고, 일반 문구류 유통망 조회에서도 동일 형상을 찾지 못했다."
+    },
+    {
+      "type": "quotation",
+      "content": "`clip을 떼었는데도 포켓이 한동안 현재 건으로 남아 있었다.` — IR-231-01 현장 메모, 윤서-12"
+    },
+    {
+      "type": "paragraph",
+      "content": "비점유 승인축 조건에서 generated cover 비율이 높았으나, 승인축 자체가 필수 조건인지는 아직 확인되지 않았다. occupied desk에서도 1/8 양성례가 있었다."
+    },
+    {
+      "type": "quotation",
+      "content": "`무게는 앞에 걸렸는데 본문은 뒤에서 나왔다. 둘을 같은 물건으로 보지 말라.` — 백오-21, 반출전실 안전브리핑"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-231 정식 편입",
+      "paragraphs": [
+        "2044-06-11~2044-06-14 현장 메모에는 현상을 `current clip`, `투명 rail jaw`, `T-231`로 병기했다.",
+        "대조 실험 결과 문제의 핵심은 기계적 고정력이 아니라 front host가 `현재 처리 대상` 지위를 점유하는 현행 선점 작용임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 현행점유걸쇠**로 확정하고, 단일 문구 생성체가 아닌 object-host hybrid 항목으로 분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A231/H231/B231/T231 접두 및 이중체인 규정",
+      "paragraphs": [
+        "회수된 clip 본체는 `A231-clip-일련번호`, 현행 선점을 보인 전면 host는 `H231-host-일련번호`, recovery된 actual body는 `B231-body-일련번호`, generated note/review/route 산물은 `T231-trace-일련번호`를 부여한다.",
+        "`A231`, `H231`, `B231`, `T231` 체인은 같은 봉투·같은 tray·같은 comparison board로 병합하지 않는다.",
+        "remote rechain 종료 전까지 generated current/closure 표식을 본문 확인, 승인 완료, 반출 준비의 근거로 사용할 수 없다."
+      ]
+    },
+    {
+      "relatedId": 226,
+      "type": "reciprocal",
+      "title": "COS226 상호기록",
+      "paragraphs": [
+        "[COS226 — 회청색 계류인계포켓](./cos226.json) host 6건에서 A231 clip이 mouth edge 또는 rail jaw에 남아 있어 pocket 교체만으로는 current authority가 소실되지 않았다. COS226 line 점검에서는 pocket 회수 전에 A231 clip screening을 선행한다."
+      ]
+    },
+    {
+      "relatedId": 198,
+      "type": "reciprocal",
+      "title": "COS198 상호기록",
+      "paragraphs": [
+        "[COS198 — 회청색 후면분리턱](./cos198.json) rear lip가 있는 host에서 A231 clip은 front-only shell의 잔류 시간을 늘리고 actual body를 후면에 붙잡는 경향을 보였다. COS198 현장에서는 lip 제거보다 먼저 clip 본체와 delayed body를 별도 체인으로 분리 봉인한다."
+      ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json) generated card 6건은 모두 active A231 host와 blank note card의 근접 후에 형성되었다. 따라서 COS219형 short closure card가 나타나면 note card 자체보다 인접 front host의 A231 여부를 먼저 조사한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "회수 표본 기본 계측",
+      "paragraphs": [
+        "`A231-01` 36.4 mm / 3.78 g / B-2 rail 3 / host 잔류 11분 24초.",
+        "`A231-03` 35.9 mm / 3.61 g / E-1 escort sleeve / pull resistance 16.4 N / host 잔류 22분 09초.",
+        "`A231-07` 39.2 mm / 4.11 g / C-4 review tray / generated cover 동반 / host 잔류 31분 45초.",
+        "표본 12점 중 10점이 445 nm 회청색 이중선 양성이었고, 2점은 육안·촉감은 동일했으나 active hold time이 3분 미만이었다."
+      ]
+    },
+    {
+      "title": "현장 판정 체크리스트",
+      "paragraphs": [
+        "1. 전면 host가 current/received/검토 종료를 획득했는데 실측 질량, pagination, accession hash가 맞지 않으면 clip search를 선행한다.",
+        "2. 진행 방향 반대 3 m, 직전 슬롯, rear lip 뒤, 하부 포켓 순으로 actual body를 찾는다.",
+        "3. blank note card, approval cover, clear acrylic board를 제거하고 generated lower line을 육성으로 읽지 않는다.",
+        "4. clip 본체와 host를 현장에서 재결합하지 않고 remote rechain을 사용한다."
+      ]
+    },
+    {
+      "title": "격리 카세트 규격",
+      "paragraphs": [
+        "권장 1차 용기는 불투명 matte black EVA insert가 있는 hard case이며, jaw 사이에는 2.0 mm PTFE spacer를 넣는다.",
+        "clear lid, transparent bag, PET sleeve는 사용하지 않는다. 4시간 보관 시험에서 clear acrylic군 5점 중 3점이 자발 전이를 보였다.",
+        "host 잔류 effect가 남아 있을 수 있으므로 clip 회수 직후에도 body 검색과 route freeze를 해제하지 않는다."
+      ]
+    }
+  ]
+}

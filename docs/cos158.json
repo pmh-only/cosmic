@@ -401,6 +401,15 @@
         "[COS230 — 회청색 호송대행슬리브](./cos230.json) 확정 19건 중 17건에서 actual body가 rear guide·이전 tray·후방 0.3~2.4 m 구간에 남아 있는 동안, clear escort host만 current front처럼 선출되었다. 이는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)이 만든 `앞칸의 전면 / 뒤 한 칸의 내용` 분리 구조가 portable sleeve·route jacket 외피에 정착한 사례로 해석된다.",
         "따라서 COS158 의심 자료에 empty escort sleeve나 blank route jacket가 함께 있으면, 비어 있는 외피를 현행본으로 다루지 말고 rear-search를 3 m 범위까지 선행한다. 전면에 남은 host를 다시 body와 합치면 [COS230 — 회청색 호송대행슬리브](./cos230.json) 쪽 선취 및 대리 폐쇄가 강화될 수 있다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json) 부착 host 5건에서는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)과 동일한 `앞칸의 전면 / 뒤 한 칸의 본체` 분리 양상이 직접 재현되었다. clip이 leading face에 남은 동안 current front는 교체된 pocket이나 cover에도 유지되었고, actual body는 직전 슬롯 또는 rear guide 뒤에서 회수되었다.",
+        "따라서 COS158 의심 자료에서 전면만 현재성을 강하게 주장할 경우, 후면 심도만이 아니라 앞면 edge의 A231형 clip 여부를 함께 조사한다. clip을 제거한 뒤에도 전면 current가 즉시 소실되지 않을 수 있으므로 rear-search를 중단하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

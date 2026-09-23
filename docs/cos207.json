@@ -391,6 +391,15 @@
         "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS207 — 회청색 무재순환철](./cos207.json) moving shell이 마지막으로 획득하는 문서형 목적지 closure로 가장 자주 확인되었다. handoff·review·release preview를 통과한 thin shell이 body를 동반하지 않은 채 blank arrival receipt에 `도착`과 cabinet code를 남기면, route closure가 실제 도착으로 오인될 위험이 급격히 증가한다.",
         "따라서 COS207 shell에 generated arrival receipt가 붙으면 next station recovery를 기다리지 말고 현재 route 전체를 동결한 뒤 origin host와 직전 station rear zone에서 actual body를 즉시 수색한다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)가 제거되지 않은 front host 2건은 [COS207 — 회청색 무재순환철](./cos207.json)과 동일한 moving current shell로 진행했다. thin shell은 handoff와 review를 통과했으나 actual body는 직전 host의 rear zone에서 회수되었고, clip 회수 후 같은 line에서는 bodyless circulation이 재현되지 않았다.",
+        "따라서 COS207 shell이 발견되면 route log만 보지 말고 handhold corner와 mouth edge의 A231형 clip 존재를 먼저 확인한다. moving shell을 body와 현장에서 재결합하지 말고 route 전체를 동결한 뒤 rear body를 별도 회수한다."
+      ]
     }
   ],
   "supplementalSections": [

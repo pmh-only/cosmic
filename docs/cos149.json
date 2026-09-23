@@ -446,6 +446,15 @@
         "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS149 — 무인 결재석](./cos149.json) 전방 0.7~1.2 m 빈 승인축에서 가장 쉽게 승인형 문구와 check box를 획득하는 portable note형 후속 표본으로 확인되었다. 생성 card에는 `승인`, `검토 종료`, `확인`과 같은 종결 어휘가 남지만, 실제 승인자나 본문 확인은 끝내 복구되지 않는다.",
         "따라서 무인 결재석 앞에서 blank witness card나 shorthand card가 회청색 lower line을 얻더라도 이를 상위 재가의 증거로 사용하지 않는다. 빈 승인석을 제거하고 rear provenance search를 먼저 시행하며, generated card는 [COS219 — 회청색 종결전사패](./cos219.json) 오염 표본으로 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)는 [COS149 — 무인 결재석](./cos149.json)의 빈 승인축에서 blank approval cover에 `검토 종료` 또는 승인선 유사 closure를 형성하는 경향을 보였다. 2044-06-22 통제에서는 비점유 결재석 조건 8회 중 5회가 양성이었고, 점유 조건은 1회에 그쳤다.",
+        "이는 실제 승인자가 생긴 것이 아니라, A231이 선점한 current authority가 빈 승인축을 따라 결재 외형으로 전이된 결과로 해석된다. COS149 현장에서 이름 없는 approval cover가 갑자기 현재 안건처럼 보이면 상석 해석보다 A231형 clip과 delayed body 여부를 먼저 점검한다."
+      ]
     }
   ],
   "supplementalSections": []

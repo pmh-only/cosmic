@@ -430,6 +430,15 @@
         "[COS198 — 회청색 후면분리턱](./cos198.json) host에서 front-only shell이 질량 대비 과도한 page-block 음영과 두 번째 핀치 저항을 보였으나, borescope는 empty cavity를 유지하고 대응 body는 rear gap 뒤 0.5~5 m 범위에서 별도로 회수되는 사례가 확인되었다. 2026-08-28~2026-09-01 `A198-host` 9건 중 6건은 [COS212 — 회청색 두께대행판](./cos212.json) 정박 상태와 일치했다.",
         "따라서 rear lip host에서 얇은 shell이 `내용이 돌아온 것처럼` 보이면 즉시 재삽입이나 pairing을 시도하지 말고, 먼저 COS212 triad(계량·edge borescope·5 m 후열 검색)를 시행한다. 이는 COS198의 분리 상태가 해소된 것이 아니라, 후방 body의 공간 관계가 두께로만 대행된 상태이다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)는 [COS198 — 회청색 후면분리턱](./cos198.json)이 만든 front/body 분리 구조를 장시간 유지시키는 고정 매개로 확인되었다. rear lip가 있는 host에서 A231 clip이 leading edge에 남아 있으면 front-only shell의 current 상태는 강화되고 actual body는 0.9~2.1 m 후방에서 회수되는 경향이 반복되었다.",
+        "따라서 COS198 현장에서 front only 산물이 발견되면 rear lip 제거를 먼저 시도하지 말고, leading edge의 A231형 clip 존재 여부를 확인한다. clip 본체를 분리하더라도 host 잔류 효과가 남을 수 있으므로 `A198-front`와 대응 body를 즉시 재결합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

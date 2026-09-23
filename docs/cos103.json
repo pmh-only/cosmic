@@ -501,6 +501,15 @@
       "paragraphs": [
         "[COS227 — 회청색 후면적체벽](./cos227.json) rear search 8건 중 5건에서는 page count와 위치 지시의 끝음 0.6~1.4초가 근접 녹음에서 누락되었고, 가장 앞에 드러난 body-only 묶음이 실제 대응본으로 오인되었다. 이는 [COS103 — 무음의 군집](./cos103.json)이 후면 cavity 수색 중 숫자·지시 종결부만 선택적으로 절단해 COS227의 wrong recovery 위험을 높이는 결합형으로 해석되므로, 두 현상이 동반될 때는 육성 page count를 중지하고 비음성 code paddle로만 위치를 기록한다."
       ]
+    },
+    {
+      "relatedId": 231,
+      "type": "reciprocal",
+      "title": "COS231 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json) 관련 사건 3건에서는 근접 마이크 녹음에서만 지시 종결 0.7~1.4초가 선택적으로 탈락하고 3.5 m 대조 마이크에는 문장 일부가 남았다. 양상은 [COS103 — 무음의 군집](./cos103.json)의 절차 발화 종결부 절단 사례와 유사하지만, 현재 표본 수는 제한적이며 A231 host의 current 선점과 직접 인과가 입증되지는 않았다.",
+        "따라서 COS103형 무음 절단이 front-only host, delayed body, generated closure와 동반될 때는 음향 복원보다 A231 clip search와 rear body search를 먼저 시행한다. 현 단계에서는 조건부 동반 현상으로만 분류한다."
+      ]
     }
   ],
   "supplementalSections": []
