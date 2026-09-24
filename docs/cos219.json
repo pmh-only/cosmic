@@ -429,6 +429,14 @@
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json) active host가 blank note card와 10~40 cm 범위에서 근접할 때, [COS219 — 회청색 종결전사패](./cos219.json)와 같은 1~4행 종결 card가 생성되는 사례가 확인되었다. 생성 문구는 actual body 본문을 반영하지 않았고, `검토 종료`, `received`, lower line과 같은 closure field만을 portable card로 옮겼다.",
         "따라서 COS219형 generated card를 발견하면 card 자체를 본문 전사 또는 review memo로 사용하지 말고 인접 front host의 A231 여부를 먼저 조사한다. 생성 card를 육성으로 읽거나 현장에서 원 packet에 끼워 넣는 조치는 금지한다."
       ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS219 — 회청색 종결전사패](./cos219.json) generated card가 남긴 `검토 종료`, `인계후`, `참조용` 어휘가 rear recovery된 actual body 가장자리로 이동한 형태로 확인되었다. generated card 근처에서 회수된 본문에 late band가 생기면 그 card가 본문을 설명한 것으로 보지 말고, card와 body를 분리 봉인한 뒤 후착띠를 review completion 근거에서 제외한다."
+      ]
     }
   ],
   "supplementalSections": [

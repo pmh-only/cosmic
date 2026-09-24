@@ -419,6 +419,14 @@
         "[COS230 — 회청색 호송대행슬리브](./cos230.json)에서는 실제 body와 분리된 clear host를 flat board 위에서 다시 맞대면, unrelated annex 또는 뒤에 남은 body가 하나의 사건철처럼 닫히는 허위 복합체가 빠르게 형성되었다. 2044-06-21 S-3 사고에서 empty host와 annex B-17이 24 cm까지 접근했을 때, open edge 1회 압박 뒤 current-file silhouette가 시작된 것이 확인되었다.",
         "이는 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite 형성 조건이 portable escort host에서도 재현된 사례로 보아야 한다. COS203 의심 pair 옆에 clear host가 있으면 provenance 대조를 같은 평면에서 수행하지 말고, host와 body를 각각 opaque bag에 분리한 뒤 rear-search를 먼저 완료한다."
       ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS203 — 회청색 교차편철면](./cos203.json) false composite를 해제한 뒤 배제된 actual body가 `후착`, `참조용` 표식을 획득해 wrong body보다 오히려 부속처럼 보이는 후속 단계로 확인되었다. COS203 현장에서 provenance가 맞는 body가 뒤늦게 회수되더라도 late band를 근거로 supplementary body로 내리지 않고, clear board 해제 시각·rear cavity 회수 좌표·footer hash를 함께 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -404,6 +404,14 @@
         "`A230-host`와 `B230-body`는 같은 봉투, 같은 transparent tray, 같은 current chain hash를 공유하지 않는다.",
         "회수된 body는 신규 inert sleeve에 재수납한 뒤에만 비교·열람하며, 원래 host의 재사용은 금지한다."
       ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS230 — 회청색 호송대행슬리브](./cos230.json) empty escort host 뒤 0.3~2.4 m에서 회수된 actual body가 `인계후`, `참조용` 표식을 얻어, 이동해야 할 current packet이 아니라 늦게 따라온 부속서처럼 읽히게 만드는 하류 단계로 확인되었다. COS230 host와 body를 같은 bench에 재배치해 생긴 late band는 route close나 release completion 근거로 사용하지 말고, body hash·pagination이 manifest와 일치하면 host보다 body를 primary chain에 복귀시킨다."
+      ]
     }
   ],
   "supplementalSections": [

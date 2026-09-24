@@ -414,6 +414,14 @@
       "paragraphs": [
         "[COS228 — 회청색 대조대행창](./cos228.json)은 본 항목 rear zone에서 회수된 actual body와 전면 candidate 사이에 투명 host가 끼어 있을 때 자주 발생하는 전면 결합 오염으로 확인되었다. 후면적체벽 뒤 body를 acrylic shield나 scanner lid를 사이에 두고 확인하면 wrong candidate의 accession·page total과 rear body의 lower line이 같은 pane에 겹쳐 보일 수 있으므로, rear search는 불투명 divider와 흑색 tray 환경에서만 수행한다."
       ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수된 actual body를 `뒤늦게 나온 부속`처럼 보이게 만들어, 최상단 후보가 아니라 올바른 본문을 회수한 뒤에도 primary chain 복귀를 지연시키는 하류 현상으로 확인되었다. COS227 현장에서 body recovery 직후 가장자리에 `후착`류 띠가 생기더라도 cavity 회수 시각과 hash 일치가 late band보다 우선하며, recovered body를 candidate cluster나 appendix tray로 내려보내지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

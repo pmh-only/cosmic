@@ -341,6 +341,14 @@
         "`A228-host`, `B228-front`, `C228-rear`, `T228-trace`는 같은 슬리브, 같은 current chain, 같은 comparison tray를 공유하지 않는다.",
         "rear search 구역에서는 clear host를 검사면으로 쓰지 않고, 흑색 backing tray와 불투명 divider만 사용한다."
       ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS228 — 회청색 대조대행창](./cos228.json) pane가 붕괴한 뒤 실제 rear body에 `참조용`, `후착본문` 띠를 남겨, clear host 안에서 먼저 맞아 보였던 state field가 해제 뒤에도 actual body를 secondary source처럼 보이게 만드는 후속 단계로 기록한다. COS228 현장에서 pane 해제 직후 발견된 late band는 match failure의 표식이지 appendix 승인 근거가 아니며, rear body는 opaque-backed direct source로만 재확인한다."
+      ]
     }
   ],
   "supplementalSections": [

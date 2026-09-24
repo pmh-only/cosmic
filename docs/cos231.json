@@ -422,6 +422,14 @@
       "paragraphs": [
         "[COS219 — 회청색 종결전사패](./cos219.json) generated card 6건은 모두 active A231 host와 blank note card의 근접 후에 형성되었다. 따라서 COS219형 short closure card가 나타나면 note card 자체보다 인접 front host의 A231 여부를 먼저 조사한다."
       ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS231 — 회청색 현행점유걸쇠](./cos231.json) active host가 current/received 상태를 선점한 뒤 recovery된 actual body에 `후착`, `검토후`, `참조용` 띠를 남겨, 진짜 본문이 늦게 합류한 보충물처럼 보이게 만드는 후속 단계로 확인되었다. COS231 현장에서는 clip 회수 후에도 host 잔류 current가 남을 수 있으므로, late band가 붙은 body를 blank cover나 note card와 근접시키지 말고 remote rechain 전까지 primary body chain을 유지한다."
+      ]
     }
   ],
   "supplementalSections": [
