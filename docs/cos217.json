@@ -435,6 +435,14 @@
         "[COS222 — 회청색 속행검토틀](./cos222.json)에서는 header strip나 witness slip처럼 bodyless front를 빈 frame에 고정한 뒤, `다음`·`계속`·`첫 줄` 류 cue가 개입하면 5~31초 안에 [COS217 — 회청색 선행대독면](./cos217.json)과 동일한 선행대독이 시작되었다. 2026-11-08 E-222-03 시험에서는 추가 발화 1회만으로 3행 낭독이 형성되었다.",
         "차이는 COS217 단독 표본이 front 자체에 current status를 획득하는 데 비해, COS222는 empty frame이 먼저 `현재 검토 자리`를 제공한다는 점이다. 빈 frame 인접 구역의 verbal handoff나 육성 검토는 COS217 onset을 가속하는 절차로 분류한다."
       ]
+    },
+    {
+      "relatedId": 234,
+      "type": "reciprocal",
+      "title": "COS234 상호기록",
+      "paragraphs": [
+        "[COS217 — 회청색 선행대독면](./cos217.json) host에서 발생한 선행대독 run은 본문 없는 front만으로도 구두 검토를 유도했으나, 대응 body는 이후 [COS234 — 회청색 본문회수반](./cos234.json)에서 확인되는 사례가 반복되었다. 이는 육성 전사나 `검토 종료` 로그보다 rear body 회수가 우선이라는 점을 다시 입증한다. COS217 오염 host를 심사했다면 대독 내용을 근거로 결재·인계를 진행하지 말고 COS234 기준 후면 수색으로 실제 본문 위치를 먼저 확정한다."
+      ]
     }
   ],
   "supplementalSections": [

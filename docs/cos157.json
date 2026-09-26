@@ -378,6 +378,14 @@
       "paragraphs": [
         "[COS157 — 무재소 기보관고](./cos157.json)의 `기보관` 또는 `외부 서고 이관` 표식이 front-only shell에 먼저 붙어 있고 실제 body가 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수되는 결합 사례가 확인되었다. 이는 보관 완료 외형이 body 이동을 증명하지 않으며, archive tag가 강할수록 후면 수색이 늦어지는 위험형이다. 회색 서가 번호가 붙은 shell이 비정상적으로 가볍거나 body count가 맞지 않으면 외부 서고 조회 전에 rear stop·blind panel·후면 랙을 우선 개방한다."
       ]
+    },
+    {
+      "relatedId": 234,
+      "type": "reciprocal",
+      "title": "COS234 상호기록",
+      "paragraphs": [
+        "[COS157 — 무재소 기보관고](./cos157.json) 표식이 붙은 front-only shell 또는 `외부 서고 이관` packet 일부는 실제 body가 현장 후면 service channel의 [COS234 — 회청색 본문회수반](./cos234.json)에서 회수되는 결합 사례를 보였다. 이는 기보관 상태가 실제 이동이나 외부 보존을 증명하지 않으며, COS157이 장소 외피를 부여하는 동안 COS234가 같은 건물 rear zone에 본문을 수합할 수 있음을 뜻한다. 회색 서가 번호가 붙은 자료가 비정상적으로 가볍거나 current front만 남으면 외부 서고 조회보다 먼저 COS234 기준 rear-search를 시행한다."
+      ]
     }
   ],
   "supplementalSections": []

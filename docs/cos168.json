@@ -360,6 +360,14 @@
       "paragraphs": [
         "[COS168 — 무영 압지추](./cos168.json) 조건에서는 [COS227 — 회청색 후면적체벽](./cos227.json) cavity 입구의 최상단 후보가 `현재 검토본`처럼 눌려 가장 먼저 집히는 경향을 보였다. 그러나 exposed top candidate 6/23만 실제 대응 body였으므로, 상단 노출 순서와 압지감은 matching 근거가 될 수 없다. 후면 적체가 의심될 때는 상단 장·generated card·release pass를 먼저 치우지 말고, 가압을 해제한 뒤 cavity 전체를 번호화하여 개별 회수한다."
       ]
+    },
+    {
+      "relatedId": 234,
+      "type": "reciprocal",
+      "title": "COS234 상호기록",
+      "paragraphs": [
+        "[COS168 — 무영 압지추](./cos168.json)로 current 상단 장만 눌러 둔 묶음을 해체했을 때, 실제 하부 body가 bench 뒤·service channel 뒤의 [COS234 — 회청색 본문회수반](./cos234.json)에서 회수된 사례가 확인되었다. 이 조합에서 압지추는 상단 current를 현장에 붙잡아 두고, COS234는 뒤로 밀린 body를 후면 집하시설처럼 모은다. 따라서 압지 묶음에서 상단 장이 지나치게 완결돼 보이면 상단본을 기준본으로 삼지 말고 가압 해제 후 COS234 rear-search를 먼저 수행한다."
+      ]
     }
   ],
   "supplementalSections": []

@@ -351,6 +351,14 @@
         "`A229-case`, `T229-seam`, `A229-outer`, recovered body는 같은 봉투나 같은 current chain으로 병합하지 않는다.",
         "공란 양식이 `A229-outer`로 전환된 경우 정상 appendix 양식으로 환원해 재사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 234,
+      "type": "reciprocal",
+      "title": "COS234 상호기록",
+      "paragraphs": [
+        "[COS229 — 회청색 선결봉함갑](./cos229.json)의 front-only 봉함 host에서 seam이 완결본 외형을 획득하더라도, 실제 body는 rear box뿐 아니라 [COS234 — 회청색 본문회수반](./cos234.json)에서 혼합 상태로 회수되는 사례가 확인되었다. 이는 선결봉함갑의 seam이 contents completeness를 증명하지 않으며, 봉함 host와 recovered body가 서로 다른 current chain을 요구할 수 있음을 뜻한다. COS229 양성 host는 handoff preview보다 COS234 rear-search를 먼저 시행하고, 같은 회수반에서 나온 body라도 footer hash 대조 전까지 합철하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

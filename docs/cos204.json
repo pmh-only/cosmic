@@ -452,6 +452,14 @@
         "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS204 — 회청색 보류인계슬리브](./cos204.json) 3~4단계 표본 옆 blank note card나 witness slip에 `인계 가능`, `검토 종료`, `청취 완료`류 completion cue를 남기는 하류 note형 산물로 기록되었다. 이 card는 COS204의 갈색 미수행열이나 body 분리를 해결하지 않고, hold 상태 위에 종결 어휘만 덧씌운다.",
         "따라서 COS204 표본 주변의 generated note를 재개봉 승인, 인계 완료, 검토 종료 근거로 사용하지 않는다. [COS219 — 회청색 종결전사패](./cos219.json) 이력이 있는 card는 body search와 footer hash 대조가 끝날 때까지 슬리브 숙주와 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 234,
+      "type": "reciprocal",
+      "title": "COS234 상호기록",
+      "paragraphs": [
+        "[COS204 — 회청색 보류인계슬리브](./cos204.json) 420초 초과 표본과 재결합 실패 표본의 일부는 정면 first sheet를 슬리브 안에 남긴 채, 실제 본문이 후면 service channel의 [COS234 — 회청색 본문회수반](./cos234.json)에서 회수되었다. 따라서 COS204의 전면 단독 회수는 결손 복구가 아니라 front-body 분리의 중간 상태로 보아야 하며, 갈색 미수행열이나 회람띠가 남아 있으면 rear-search를 먼저 시행한다."
+      ]
     }
   ],
   "supplementalSections": [
