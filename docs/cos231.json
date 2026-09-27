@@ -430,6 +430,15 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS231 — 회청색 현행점유걸쇠](./cos231.json) active host가 current/received 상태를 선점한 뒤 recovery된 actual body에 `후착`, `검토후`, `참조용` 띠를 남겨, 진짜 본문이 늦게 합류한 보충물처럼 보이게 만드는 후속 단계로 확인되었다. COS231 현장에서는 clip 회수 후에도 host 잔류 current가 남을 수 있으므로, late band가 붙은 body를 blank cover나 note card와 근접시키지 말고 remote rechain 전까지 primary body chain을 유지한다."
       ]
+    },
+    {
+      "relatedId": 235,
+      "type": "reciprocal",
+      "title": "COS235 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)가 남아 있는 front host는 current authority를 잃지 않아 [COS235 — 회청색 본문귀속궤](./cos235.json)의 onset과 잔류 시간을 현저히 늘렸다. 2044-07-09 대조 10회에서 clip 잔류군은 평균 궤 길이 63 cm, 양성 7/10이었고, clip 제거군은 평균 21 cm, 양성 1/10에 그쳤다.",
+        "따라서 rail·tray lip 위의 active A231 host는 actual body 검색 전에 절대 후보 묶음과 같은 경로를 공유시키지 않는다. current clip이 붙은 host 옆에서 lower band나 route fragment가 나타나면 [COS235 — 회청색 본문귀속궤](./cos235.json) 연계를 우선 기록하고, clip·host·capture를 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

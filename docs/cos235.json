@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-07-03부터 2044-07-21까지 확인된 현장 표본 14건 중 6건에서 외형상 손상이나 봉인 파손 없이 무관한 묶음이 다른 host의 도착·인계 상태를 승계했다. 이 특성이 외부에 알려질 경우 현재 운용 중인 이송·도착 검수 절차의 취약점과 탐지 한계가 그대로 노출된다.",
+    "permission": "445 nm 사광, 열화상, footer hash·장수·질량 대조만으로 현장 확인이 가능해 도착검수, 체인감사, 분석부서가 공동 열람해야 한다. 다만 재현과 차단이 특정 경로와 장비에 국한되어 최고 등급 전용 열람까지는 요구되지 않았다.",
+    "chaos": "발현률은 정지 시간, clip 잔류 여부, 레일 길이, 첫 통과 순서에 크게 좌우되었다. 같은 80 g/m² 용지군에서도 180초 정지 조건의 capture 성공률이 1/10에서 7/10까지 흔들려 예측성이 낮았다.",
+    "danger": "직접적인 중상자는 없었으나, false arrival 2건, lateral spread 1건, 낮은 견인력으로 인한 18장 묶음 낙하 1건이 발생했다. 인명 피해보다 기록 오인계, 민감 자료의 잘못된 도착 선언, 후면 body 은폐 위험이 더 크므로 중간 등급 이상으로 본다.",
+    "popularity": "2044-08-02 기준 내부 참조는 19건으로, 도착검수 2개 팀·회수구획 1개 팀·체인감사 1개 팀에서 반복적으로 호출되었다. 기관 전체의 상시 참조 항목은 아니지만 transfer-stage 이상 현상군에서는 중간 이상 빈도로 재검토되고 있다.",
+    "containment": "효과적인 차단에는 seed host의 45초 이내 이탈, 후보 body와의 2.5 m 분리, 활성 surface의 lift-off 또는 불투명 차단, host·capture·actual body의 삼중 체인 분리가 모두 필요했다. 단순 세척이나 재정렬만으로는 통제가 되지 않아 높은 관리 강도가 요구된다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 오민서-7",
+        "role": "도착검수 기록관",
+        "status": "active",
+        "involvement": "2044-07-03 초동 사건에서 footer hash 불일치를 최초 확인하고 수령대 D-4를 봉쇄했으며, T-235 임시등록 요청서를 기안했다."
+      },
+      {
+        "name": "운용원 H-23",
+        "role": "이송카트 운용 담당",
+        "status": "active",
+        "involvement": "초동 사건과 재현 실험에서 카트·tray 이동을 수행했고, 거리 단축 시도와 건식 세척 전 이동 순서를 직접 실행했다."
+      },
+      {
+        "name": "분석관 박재현-2",
+        "role": "현상계측 책임 분석관",
+        "status": "active",
+        "involvement": "445 nm 사광 촬영, 열화상, 견인력 측정, 표면 분광 대조를 담당하며 발현 조건과 차단 조건을 정리했다."
+      },
+      {
+        "name": "감사관 Q-11",
+        "role": "체인 대조 및 로그감사 담당",
+        "status": "active",
+        "involvement": "arrival preview, route code, footer hash, last page count, 질량 로그를 대조해 오귀속 사례와 정상 이송 사례를 분리 판정했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-07-03 06:52 KST",
+        "label": "초동 발견 및 임시등록",
+        "description": "동관 2층 도착검수복도 C-17에서 body가 분리된 host 인근 레일을 지난 무관한 11장 부속철이 seed host의 route code와 arrival time을 승계했다. 현장은 즉시 봉쇄되었고 임시 코드 T-235가 부여되었다."
+      },
+      {
+        "date": "2044-07-04 11:20 KST",
+        "label": "연속 재발 확인",
+        "description": "동일 복도와 인접 수령대에서 2차·3차 재발이 확인되었다. 사광과 열화상으로 길이 22~61 cm의 회청색 평행선과 0.4~0.6°C의 국소 냉각이 기록되었다."
+      },
+      {
+        "date": "2044-07-05 15:10 KST",
+        "label": "격리 재현 성공",
+        "description": "격리재현실 R-5에서 front-only host 12점과 inert 대조군 12점을 비교한 결과, active 조건 6점에서 우선 포획이 재현되었고 대조군에서는 0점이었다."
+      },
+      {
+        "date": "2044-07-09 14:18 KST",
+        "label": "current clip·선결봉함 연계 확인",
+        "description": "clip 잔류 host와 선결봉함 host를 분리 시험한 결과, current authority가 유지된 host에서 평균 궤 길이와 잔류 시간이 모두 증가했다. 임시 2.5 m 분리 권고가 발령되었다."
+      },
+      {
+        "date": "2044-07-14 09:00 KST",
+        "label": "현장 차단 규정 시행",
+        "description": "개방형 레일 45초 제한, rear search 2.5 m 규정, surface lift-off 우선 원칙이 동관과 서측 회수구획에 동시에 적용되었다."
+      },
+      {
+        "date": "2044-08-02",
+        "label": "정식 편입",
+        "description": "초동 표본, 대조 실험, 관련 COS 상호기록 검토가 완료되어 COS235 정식 문서가 확정되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-235-01",
+        "date": "2044-07-03 06:52 KST",
+        "location": "동관 2층 도착검수복도 C-17 / 수령대 D-4",
+        "title": "무관 부속철의 본문 오귀속",
+        "involvedPersonnel": [
+          "기록관 오민서-7",
+          "운용원 H-23",
+          "감사관 Q-11"
+        ],
+        "narrative": [
+          "야간 교대 직후 운용원 H-23은 body가 회수되지 않은 host 1점을 투명 카트 상부 레일에 둔 채 queue 적체를 줄이기 위해 다른 batch의 11장 부속철을 같은 레일로 먼저 보냈다. seed host는 312초 동안 레일 위에 정지해 있었고, 당시 후면 body 수색은 wheel stop 뒤 3.4 m 지점에서 진행 중이었다.",
+          "부속철의 선행 모서리가 레일 홈을 지난 뒤 약 21초 후 수령대 D-4 preview에는 seed host의 route code가 표시되었고, 하단 6 mm 폭의 회청색 band가 형성되었다. 기록관 오민서-7은 표시된 slot code와 달리 footer hash `7C-41-9A` 및 장수 11장이 seed host 기록과 일치하지 않는 점을 확인하고, 봉함 직전 절차를 중단시켰다.",
+          "감사관 Q-11은 false arrival로 분류하고 D-4와 rear bin 구간을 봉쇄했다. 실제 body는 14분 뒤 wheel stop 후면에서 회수되었으나 어떤 도착 상태도 획득하지 못한 채 분리 보관되었다."
+        ],
+        "outcome": "외부 반출은 발생하지 않았으나 generated arrival slip 1건이 출력되었고, host·capture·actual body 삼중 분리 절차와 T-235 임시등록이 시작되었다."
+      },
+      {
+        "code": "INC-235-03",
+        "date": "2044-07-09 14:18 KST",
+        "location": "격리재현실 R-5",
+        "title": "거리 단축 재현 중 이중 오귀속 발생",
+        "involvedPersonnel": [
+          "분석관 박재현-2",
+          "운용원 H-23",
+          "감사관 Q-11"
+        ],
+        "narrative": [
+          "임시 권고된 2.5 m 분리를 단축해 최소 형성 거리를 확인하기 위해 분석관 박재현-2는 clip 잔류 host와 후보 묶음 사이 거리를 1.2 m로 설정했다. 정지 시간은 180초였고, 후보는 7장 dummy bundle과 18장 actual body였다.",
+          "운용원 H-23은 작업면을 비우기 위해 dummy bundle을 먼저 이동시키는 선택을 했고, 이 묶음은 순방향 개시 견인력 0.44 N 조건에서 즉시 포획되었다. 58초 뒤 actual body가 같은 레일을 지났지만 primary 지위를 회복하지 못했고, preview에는 dummy만 본문으로 유지되었다.",
+          "감사관 Q-11은 실험을 중지시키고 레일 segment 전체를 lift-off 한 뒤 R-5를 6시간 폐쇄했다. 이후 어떤 후보 묶음도 rear search 종료 전 레일을 선행 통과시켜서는 안 된다는 조항이 추가되었다."
+        ],
+        "outcome": "실제 body의 우선권이 자동 회복되지 않는다는 사실이 확인되었고, 거리 단축 재현은 즉시 금지되었다."
+      },
+      {
+        "code": "INC-235-05",
+        "date": "2044-07-12 10:41 KST",
+        "location": "서측 회수구획 B-2 / 이동식 선반 3열",
+        "title": "건식 세척 후 lateral spread",
+        "involvedPersonnel": [
+          "운용원 H-23",
+          "기록관 오민서-7",
+          "분석관 박재현-2"
+        ],
+        "narrative": [
+          "서측 회수구획 B-2에서 31 cm 길이의 회청색 평행선이 발견되었을 때, 현장 인원은 이를 코팅 잔사로 오인해 마른 무섬유 천으로 닦아내려 했다. seed host는 같은 선반 상단에서 0.9 m 떨어진 위치에 여전히 남아 있었다.",
+          "닦음 직후 평행선은 사라지지 않고 선반 lip를 따라 총 74 cm까지 연장되었으며, 원래 선을 직접 지나지 않은 9장짜리 후보 묶음까지 route fragment를 얻었다. 분석관 박재현-2는 표면 마찰 변화가 선형에서 측면으로 확장되었음을 force gauge 3회 측정으로 확인했다.",
+          "오민서-7은 세척을 중단시키고 선반 lip 전체를 분리 회수했다. 이후 서측 회수구획에서는 모든 양성 surface에 대해 세척 전 영상 확보와 segment lift-off가 의무화되었다."
+        ],
+        "outcome": "건식 세척이 중화가 아니라 확장 요인이 될 수 있음이 확인되었고, 현장 세척권은 분석부서 승인 대상으로 제한되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-235-01",
+        "type": "영상 기록",
+        "description": "2044-07-03 06:52~07:09 C-17 고정 CCTV와 휴대형 445 nm 사광 영상. 11장 부속철의 이동, D-4 preview 변환, 하단 band 형성, rear body 회수 시점이 동기화되어 있다.",
+        "custodyStatus": "디지털 원본 해시 고정 완료, 기록보존동 포렌식 저장소 F-2에 격리 보관 중"
+      },
+      {
+        "code": "EV-235-02",
+        "type": "열화상 세트",
+        "description": "2044-07-04와 2044-07-05에 확보한 활성 레일 8건의 열화상. 비활성 인접면 대비 0.3~0.8°C 저하가 반복 확인되며, 최대 길이 94 cm 표본을 포함한다.",
+        "custodyStatus": "IR 원본 및 교정값 봉인 완료, 분석부 냉보관 캐비닛 T-IR-3에 보관 중"
+      },
+      {
+        "code": "EV-235-03",
+        "type": "포획 표본",
+        "description": "C235-capture-01로 분리된 11장 부속철. 하단 6 mm 회청색 band, seed host route fragment, footer hash 불일치가 동시에 존재한다.",
+        "custodyStatus": "이중 슬리브 봉인 상태로 체인 분리 보관 중, actual body와 동일 tray 공유 금지"
+      },
+      {
+        "code": "EV-235-04",
+        "type": "계측 로그",
+        "description": "R-5 및 B-2 실험에서 수집한 force gauge·길이 측정·표면 분광 로그 37건. 순방향과 역방향 개시 견인력 차이 및 clip 잔류군의 평균 길이 차이를 포함한다.",
+        "custodyStatus": "원본 로그와 파생 그래프 분리 보관, 감사용 읽기 전용 사본만 배포"
+      },
+      {
+        "code": "EV-235-05",
+        "type": "분리 surface segment",
+        "description": "2044-07-12 B-2 선반 lip 분리편. 건식 세척 후 74 cm로 연장된 평행선과 미세 입자 이동 흔적이 남아 있다.",
+        "custodyStatus": "불투명 케이스 내 격리 보관, 세척·마찰 시험 중지 상태"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 오민서-7",
+        "role": "도착검수 기록관",
+        "context": "INC-235-01 직후 음성기록 전사",
+        "statement": "내 판단이지만 내가 본 것은 단순한 오편철이 아니었다. 같은 힘으로 밀린 11장 묶음이 레일 홈에 닿자마자 저항이 갑자기 사라졌고, D-4는 그 묶음을 원래 기다리던 본문처럼 받아들였다."
+      },
+      {
+        "speaker": "운용원 H-23",
+        "role": "이송카트 운용 담당",
+        "context": "INC-235-03 사실확인서",
+        "statement": "queue를 비우려는 내 선택으로 dummy를 먼저 보냈다. 처음에는 접착제 자국이라고 생각했지만, 그 선 위에서만 손가락 감각이 달라졌고 뒤에 보낸 actual body는 같은 취급을 받지 못했다."
+      },
+      {
+        "speaker": "감사관 Q-11",
+        "role": "체인 대조 및 로그감사 담당",
+        "context": "2044-07-10 감사 메모",
+        "statement": "로그상 barcode mismatch와 footer hash 불일치는 끝까지 남았다. 내 추정으로는 입력 실수나 scanner 오동작이 아니라, 이동 경로에서 이미 어떤 묶음이 primary body로 고정된 뒤에 도착 절차가 뒤따른 것이다."
+      }
+    ]
+  },
+  "id": 235,
+  "title": "회청색 본문귀속궤",
+  "language": "ko-KR",
+  "overview": [
+    "COS235는 current·closure·arrival 외피를 먼저 얻은 front-only host가 개방형 레일, 카트 턱, 수령대 홈 위에 90초 이상 정지한 뒤 형성되는 방향성 회청색 이송 현상이다.",
+    "형성된 궤 위를 가장 먼저 통과한 1~32장 묶음은 실제 본문 여부와 무관하게 host의 도착·인계·현행 상태 일부를 승계하며, destination pocket 선택과 보조 slip 생성이 왜곡된다.",
+    "확인된 현장 표본 14건 중 11건은 body 분리 상태의 봉함 host, current clip 부착 host, 또는 보류인계 sleeve와 동반되었다.",
+    "현재까지 발현은 [COS229 — 회청색 선결봉함갑](./cos229.json), [COS231 — 회청색 현행점유걸쇠](./cos231.json), [COS204 — 회청색 보류인계슬리브](./cos204.json)과 결합한 host에서 가장 자주 시작되었다."
+  ],
+  "identificationTraits": [
+    "445 nm 사광 또는 30° 백색 사광에서만 안정적으로 보이는 회청색 평행선 2개가 카트 레일·tray lip·수령대 홈에 18~94 cm 길이로 나타난다. 선간 간격은 3.8~6.4 mm였다.",
+    "활성 궤 표면 온도는 인접 비활성 면보다 0.3~0.8°C 낮고, 80 g/m² 용지 8~12장 묶음의 순방향 개시 견인력은 평균 0.42 N, 역방향은 평균 1.79 N이었다.",
+    "궤를 먼저 지난 묶음의 하단 또는 선행 모서리에는 4~9 mm 폭의 회청색 band, route fragment, time mark 중 하나 이상이 15~40초 내에 형성된다.",
+    "건식 닦음으로는 즉시 제거되지 않으며, surface segment를 lift-off 하거나 불투명 neoprene pad로 완전히 차단할 때만 추가 포획이 중단되었다."
+  ],
+  "discovery": [
+    "2044-07-03 06:52 KST, 동관 2층 도착검수복도 C-17에서 A229-case-04와 H231-host-02가 실린 투명 카트가 312초 정지해 있던 중, 무관한 11장 부속철이 같은 레일을 따라 수령대 D-4로 이동한 뒤 seed host의 route code와 arrival time을 승계했다.",
+    "기록관 오민서-7은 destination preview에 표시된 slot code가 seed host와 일치하는 반면 footer hash와 장수는 전혀 맞지 않는 것을 확인하고 현장을 봉쇄했다.",
+    "동일 표면에서 36시간 내 3회 추가 재발이 확인되었고, 2044-07-05 격리재현실 R-5 대조 실험 24회 중 active 조건 12회, 대조군 0회로 재현되어 임시등록 T-235가 공식 조사로 전환되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS235는 host가 먼저 현행·봉함·도착 외피를 얻은 뒤, 실제 body가 비어 있거나 후면에 지연된 상태에서 이송면으로 방향성을 방출하는 것으로 관측된다.",
+      "포획은 항상 `첫 통과` 우선순위를 보였으며, 한번 capture가 성립하면 뒤늦게 회수된 실제 body가 primary 지위를 회복한 사례는 아직 없다.",
+      "형성 후 7~33분 동안 추가 포획 가능성이 남았고, seed host 제거 뒤에도 평균 207초 동안 잔류 방향성이 유지되었다."
+    ],
+    "stages": [
+      {
+        "name": "잠복 정지",
+        "description": "front-only host 또는 body가 분리된 host가 개방형 레일·tray lip 위에 90초 이상 정지한다. 이 단계에서는 시각적 선이 희미하지만 445 nm 사광에서 냉각된 평행선이 간헐적으로 관찰된다."
+      },
+      {
+        "name": "우선 포획",
+        "description": "가장 먼저 선을 따라 이동한 1~32장 묶음이 낮은 견인력으로 미끄러지며, 하단 band·route fragment·time mark를 획득한다. 실제 본문 여부는 이 단계의 선별 기준으로 확인되지 않았다."
+      },
+      {
+        "name": "귀속 고정",
+        "description": "destination preview, arrival slip, 수령 pocket, 임시 chain note가 capture된 묶음을 primary body처럼 취급한다. 뒤늦게 회수된 실제 본문은 별도 부속 또는 후속 검토물처럼 밀려난다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS235는 [COS229 — 회청색 선결봉함갑](./cos229.json) 또는 [COS231 — 회청색 현행점유걸쇠](./cos231.json)로 current 권위를 먼저 얻은 host에서 가장 쉽게 시작되며, [COS204 — 회청색 보류인계슬리브](./cos204.json)이 정지 시간을 늘리면 capture window가 길어진다.",
+      "[COS203 — 회청색 교차편철면](./cos203.json)이 같은 평면에서 false composite를 완성하는 단계라면, COS235는 그보다 앞선 이송 경로에서 잘못된 body를 먼저 선택하고, [COS221 — 회청색 도착대행패](./cos221.json)은 그 오선택이 도착 완료처럼 닫히는 후속 단계에 해당한다."
+    ],
+    "entries": [
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json)은 front와 body가 같은 평면에서 직접 맞물릴 때 false composite가 안정화되지만, COS235는 그 이전 단계에서 이송 경로를 통해 잘못된 body를 먼저 선택한다. COS235로 capture된 묶음이 비교면에 오르면 COS203 오합치가 더 짧은 시간에 닫히는 경향이 있다."
+      },
+      {
+        "targetId": 204,
+        "targetTitle": "회청색 보류인계슬리브",
+        "description": "[COS204 — 회청색 보류인계슬리브](./cos204.json)은 seed host의 정지 시간을 늘리고 개구부 방향을 고정해 COS235 발현 빈도를 높였다. 2044-07-08 대조 6회 중 4회에서 sleeve mouth에서 recovery tray 방향으로 궤가 연장되었다."
+      },
+      {
+        "targetId": 221,
+        "targetTitle": "회청색 도착대행패",
+        "description": "[COS221 — 회청색 도착대행패](./cos221.json)은 capture된 묶음이 destination pocket에 도달한 뒤 잘못된 도착 완료를 닫는 후속 단계로 확인되었다. active delivery 8회 중 5회에서 footer hash 불일치가 남은 상태로 arrival receipt만 생성되었다."
+      },
+      {
+        "targetId": 229,
+        "targetTitle": "회청색 선결봉함갑",
+        "description": "[COS229 — 회청색 선결봉함갑](./cos229.json) host는 실제 contents가 비어 있어도 봉함 상태를 먼저 획득하므로, 첫 통과 묶음을 `원래 들어 있었어야 할 본문`처럼 받아들이는 COS235 seed로 자주 기능했다."
+      },
+      {
+        "targetId": 231,
+        "targetTitle": "회청색 현행점유걸쇠",
+        "description": "[COS231 — 회청색 현행점유걸쇠](./cos231.json) clip이 남은 host는 current 권위를 잃지 않아 rail length와 잔류 시간이 길었다. clip 부착군 10회 중 7회가 양성이었고, 제거군은 1회만 양성이었다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-235-01 레일 형성 최소 정지시간",
+      "description": "front-only host 12점(A229-case 6, H231-host 6)을 알루미늄 레일 위에 30초, 90초, 180초, 360초씩 정지시켰다. 445 nm 사광과 열화상으로 확인한 결과 30초군 0/3, 90초군 1/3, 180초군 2/3, 360초군 3/3에서 궤가 형성되었고, 같은 표면에 inert envelope를 둔 대조군 12회는 0/12였다."
+    },
+    {
+      "label": "EXP-235-02 방향성 견인력 측정",
+      "description": "80 g/m² 모의본문 10묶음(각 8~12장)을 활성 궤 순방향, 역방향, 90° 교차 방향으로 각각 3회씩 당겨 개시 견인력을 측정했다. 순방향 평균은 0.42 N, 역방향은 1.79 N, 교차 방향은 1.68 N이었고, 비활성 대조면 평균은 1.83 N이었다."
+    },
+    {
+      "label": "EXP-235-03 current clip 영향 비교",
+      "description": "clip 잔류 host 10점과 clip 제거 host 10점을 180초 정지시킨 뒤 평균 궤 길이와 capture 성공률을 비교했다. clip 잔류군은 평균 63 cm, 양성 7/10이었고 제거군은 평균 21 cm, 양성 1/10이었다."
+    },
+    {
+      "label": "EXP-235-04 도착 대행 연계 시험",
+      "description": "capture된 7~12장 묶음 8점과 동일 장수 대조군 8점을 수령대 D-4로 이송했다. active군 5/8에서 40초 이내 generated arrival receipt가 생성되었고, 대조군은 0/8이었다. 모든 active군에서 footer hash 불일치는 계속 남았다."
+    },
+    {
+      "label": "EXP-235-05 우선 포획 대 actual body 후발 회수",
+      "description": "실제 body 6점과 무관한 dummy bundle 6점을 준비해 교차 순서를 바꿔 이동시켰다. dummy를 먼저 보낸 경우 4/6에서 dummy가 primary로 고정되었고 뒤늦게 통과한 actual body는 본문 지위를 회복하지 못했다. actual body를 먼저 보낸 경우 5/6에서는 추가 포획이 발생하지 않았다."
+    }
+  ],
+  "handlingProcedures": [
+    "seed host로 의심되는 봉함 갑, current clip 부착 host, 보류인계 sleeve는 개방형 레일·tray lip·수령대 홈 위에 45초 이상 정지시키지 않는다.",
+    "활성 가능 surface를 발견하면 445 nm 사광 사진, IR 열화상, 길이·간격 측정을 먼저 수행하고, 건식 닦음·습식 세척·손끝 추적을 금지한다.",
+    "rear search 동안 seed host와 모든 후보 body 사이의 최소 직선거리를 2.5 m 이상 유지하고, 동일 레일·카트·tray를 공유하지 않는다.",
+    "capture가 의심되는 묶음은 `C235-capture` 접두로 즉시 분리하고, seed host(`H235-host`) 및 나중에 회수된 actual body(`B235-body`)와 같은 봉투·같은 tray·같은 current chain으로 병합하지 않는다.",
+    "arrival slip, route code, preview slot, lower band가 일치하더라도 footer hash, last page count, 독립 질량, raw 이동로그 4항목을 모두 대조하기 전까지 도착·인계·승인을 선언하지 않는다.",
+    "활성 궤가 형성된 surface는 segment 전체를 lift-off 하거나 불투명 neoprene pad로 차단한 뒤 30분 재관찰한다. 부분 가림, 테이프 부착, 현장 세척은 허용하지 않는다.",
+    "실제 body로 확인되지 않은 dummy, annex, correction mat, blank slip을 활성 의심 레일 위로 먼저 이동시키지 않는다.",
+    "현장 운영상 우회가 불가피할 경우 카트 wheel stop 전후 0.5 m 구간을 폐쇄하고, 통과한 모든 묶음에 대해 강제 rear-search를 즉시 시작한다."
+  ],
+  "hypotheses": [
+    "가설 1: COS235는 body가 비어 있거나 지연된 host가 이미 획득한 current·closure·arrival 권위를 이송 경로로 선형 배출하는 현상이다.",
+    "가설 2: 포획 대상의 선택은 내용보다 선행 모서리 형상, 장수 범위(1~32장), 이동 순서에 더 크게 좌우되며, `첫 통과` 효과가 핵심 트리거일 수 있다.",
+    "가설 3: current clip, 보류인계 sleeve, 선결봉함 host는 현상을 직접 생성한다기보다, host가 primary 지위를 잃지 않게 유지해 capture window를 연장한다.",
+    "가설 4: 열저하와 낮은 순방향 견인력은 표면 마찰 변화 자체라기보다 provenance 검증 단계가 표면에 선취되어 생기는 부수 신호이며, 윤활물질이나 냉매 잔류로는 설명되지 않는다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "provenance 오염",
+      "assessment": "가장 높은 위험이다. wrong body가 primary chain을 선점하면 actual body는 후면에 남거나 별도 부속으로 밀려나며, 이후 correction 이전까지 여러 COS 후속 현상을 유발할 수 있다."
+    },
+    {
+      "category": "도착·인계 오판",
+      "assessment": "generated arrival slip과 preview slot이 실제 확인보다 먼저 닫힐 수 있어, footer hash 대조를 생략한 팀에서 false receipt가 발생할 가능성이 높다."
+    },
+    {
+      "category": "운영 지연",
+      "assessment": "양성 구간은 평균 38분, 최장 6시간 폐쇄되었다. 경로를 단순 우회하면 capture가 다른 레일로 확장될 수 있어 무계획 우회는 오히려 위험하다."
+    },
+    {
+      "category": "물리적 안전",
+      "assessment": "직접적 상해 가능성은 낮지만 순방향 개시 견인력이 급감해 얇은 묶음이 손에서 빠지거나 트레이 끝으로 밀려날 수 있다. 얇은 증거물의 낙하와 모서리 손상이 반복 보고되었다."
+    },
+    {
+      "category": "연쇄 상호작용",
+      "assessment": "current·closure·arrival 외피를 먼저 가진 host와 결합할 때 위험이 커진다. 관련 COS와 동반되면 단일 오편철이 아니라 다단계 false chain으로 진전할 가능성이 높다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초기 현장표기는 `route line`, `body rail`, `귀속선`, `blue track residue`로 혼재했으나, 2044-07-05 재현에서 단순 표면 오염이 아니라 body 귀속을 선점하는 현상임이 확인되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"레일이 문서를 끌어간 것이 아니라, 이 묶음이 원래 여기 와 있어야 했던 것처럼 수령대가 먼저 받아들였다.\" — 기록관 오민서-7, 2044-07-03 현장 음성기록"
+    },
+    {
+      "type": "paragraph",
+      "content": "2044-07-12 건식 세척 시도 이후 line이 31 cm에서 74 cm로 연장되었으므로, 접착제 잔여물이나 카트 코팅 벗겨짐으로 분류하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"barcode mismatch는 끝까지 남았다. 맞은 것은 preview slot과 arrival time뿐이었다.\" — 감사관 Q-11, 2044-07-10 로그 감사 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "현재까지 인체 조직, 혈액, 상용 윤활제, 냉각제, 일반 접착성 수지에 대한 현장 반응 검사는 모두 음성이었다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-235 정식 편입",
+      "paragraphs": [
+        "2044-07-03~2044-07-05 초동 메모에서는 현상을 `route line`, `body rail`, `귀속선`, `T-235`로 병기했다.",
+        "대조 실험 결과 핵심이 단순 레일 마모나 cart coating 손상이 아니라, 분리된 body 대신 첫 통과 묶음에 primary body 지위를 부여하는 방향성 이송 현상임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 본문귀속궤**로 확정하고, transfer-stage body misattribution cluster의 독립 항목으로 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A235/H235/C235/B235 접두 및 사중 분리 규정",
+      "paragraphs": [
+        "활성 surface 자체에는 `A235-rail-일련번호`, seed host에는 `H235-host-일련번호`, 첫 포획 묶음에는 `C235-capture-일련번호`, 나중에 회수된 실제 본문에는 `B235-body-일련번호`를 부여한다.",
+        "`A235`, `H235`, `C235`, `B235` 체인은 같은 봉투, 같은 tray, 같은 digital current chain으로 병합하지 않는다.",
+        "capture 여부 판정은 **footer hash와 last page count**, **독립 질량**, **raw 이동로그**, **rear search 2.5 m/30분 재관찰**의 네 항목을 모두 포함한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "표준 계측 범위",
+      "paragraphs": [
+        "2044-07-03~2044-07-21 양성 표본 14건의 궤 길이는 18~94 cm, 선간 간격은 3.8~6.4 mm, 표면 온도 저하는 0.3~0.8°C였다.",
+        "seed host 제거 후 잔류 방향성은 최소 41초, 최대 312초, 평균 207초 유지되었다.",
+        "활성 표면의 순방향 개시 견인력은 평균 0.42 N, 비활성 대조면은 1.83 N이었다."
+      ]
+    },
+    {
+      "title": "현장 판정 우선순위",
+      "paragraphs": [
+        "route code, arrival slip, lower band, preview slot은 보조 신호로만 취급하며, provenance 판정의 1차 기준은 footer hash와 last page count이다.",
+        "실제 body가 즉시 보이지 않을 경우 빈 host 근처 묶음을 앞서 이동시키지 말고, wheel stop 뒤 0.5~2.5 m 구간을 먼저 수색한다.",
+        "lift-off 전에는 사광 영상과 열화상을 반드시 확보하고, 세척이나 접착테이프 부착으로 line을 문지르지 않는다."
+      ]
+    }
+  ]
+}

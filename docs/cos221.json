@@ -363,6 +363,15 @@
         "`A221-pass`, `H221-host`, `B221-body`, `R221-trace`는 같은 sleeve, 같은 tray, 같은 current chain으로 병합하지 않는다.",
         "도착 확인 사중 판정은 **footer hash와 last page count**, **독립 질량·장수**, **source/destination raw log**, **rear body 0.5~2.5m search 및 30분 재관찰**을 모두 포함한다. generated receipt, cabinet code, route line은 이 판정의 대체물이 될 수 없다."
       ]
+    },
+    {
+      "relatedId": 235,
+      "type": "reciprocal",
+      "title": "COS235 상호기록",
+      "paragraphs": [
+        "[COS235 — 회청색 본문귀속궤](./cos235.json)에서 first-passage capture가 먼저 성립한 묶음은 destination pocket 도달 뒤 [COS221 — 회청색 도착대행패](./cos221.json)의 generated arrival receipt를 후속 획득할 수 있다. 2044-07-03 초동 사건과 2044-07-11 수령대 대조 8회 중 5회에서 receipt, cabinet code, route line은 일치했지만 footer hash와 last page count는 끝까지 불일치했다.",
+        "따라서 [COS221 — 회청색 도착대행패](./cos221.json) 표본에 lower band, rail-direction mark, rear body 미회수 상태가 함께 보이면 단독 도착 사건으로 판정하지 말고 COS235 선행 가능성을 우선 검토한다. generated receipt를 capture bundle의 provenance 회복 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

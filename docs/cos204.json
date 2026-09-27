@@ -460,6 +460,15 @@
       "paragraphs": [
         "[COS204 — 회청색 보류인계슬리브](./cos204.json) 420초 초과 표본과 재결합 실패 표본의 일부는 정면 first sheet를 슬리브 안에 남긴 채, 실제 본문이 후면 service channel의 [COS234 — 회청색 본문회수반](./cos234.json)에서 회수되었다. 따라서 COS204의 전면 단독 회수는 결손 복구가 아니라 front-body 분리의 중간 상태로 보아야 하며, 갈색 미수행열이나 회람띠가 남아 있으면 rear-search를 먼저 시행한다."
       ]
+    },
+    {
+      "relatedId": 235,
+      "type": "reciprocal",
+      "title": "COS235 상호기록",
+      "paragraphs": [
+        "[COS204 — 회청색 보류인계슬리브](./cos204.json)의 front-only shell이 개방형 레일 또는 tray lip 위에서 90~420초 정지하면, 개구부 방향으로 [COS235 — 회청색 본문귀속궤](./cos235.json)가 연장되는 사례가 확인되었다. 2044-07-08~2044-07-14 연계 표본 6건 중 4건에서 sleeve mouth와 같은 방향의 평행선이 형성되었고, first-passage bundle이 provisional accession과 arrival preview를 선점했다.",
+        "따라서 COS204 표본을 rail이나 tray lip에 장시간 두지 않으며, 하단 band가 붙은 타 묶음을 `원래 슬리브 contents`로 재편철하지 않는다. hold sleeve, capture bundle, actual body를 같은 tray에 재집합시키는 절차는 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

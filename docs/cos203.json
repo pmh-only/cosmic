@@ -427,6 +427,15 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS203 — 회청색 교차편철면](./cos203.json) false composite를 해제한 뒤 배제된 actual body가 `후착`, `참조용` 표식을 획득해 wrong body보다 오히려 부속처럼 보이는 후속 단계로 확인되었다. COS203 현장에서 provenance가 맞는 body가 뒤늦게 회수되더라도 late band를 근거로 supplementary body로 내리지 않고, clear board 해제 시각·rear cavity 회수 좌표·footer hash를 함께 봉인한다."
       ]
+    },
+    {
+      "relatedId": 235,
+      "type": "reciprocal",
+      "title": "COS235 상호기록",
+      "paragraphs": [
+        "[COS235 — 회청색 본문귀속궤](./cos235.json)에서 먼저 포획된 `C235-capture` 묶음을 front-only host와 같은 비교면에 올리면, provenance가 다른 body라도 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite 형성이 평소보다 빠르게 닫히는 사례가 확인되었다. 2044-07-15 교차 대조 4회 중 3회에서 19~52초 내 lower line과 title fragment가 합치했으나, footer hash와 last page count는 끝까지 복구되지 않았다.",
+        "따라서 capture 의심 묶음은 body candidate가 아니라 COS235가 선점한 이동 산물로 취급하며, [COS203 — 회청색 교차편철면](./cos203.json) 비교면에 올리기 전 rear-search와 독립 체인 대조를 먼저 끝내야 한다. 빠른 정렬이나 제목 합치는 provenance 회복의 근거가 되지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
