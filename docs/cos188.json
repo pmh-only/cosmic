@@ -418,6 +418,15 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS188 — 무본문 대용철](./cos188.json) shell 뒤 1~3슬롯에서 회수된 actual body가 `부속`, `후착본문` 표식을 얻어 shell의 appendix처럼 읽히게 만드는 후속 단계로 확인되었다. 비정상적으로 가벼운 shell이 `current copy` 상태를 유지하는 동안 뒤에서 나온 본문에 late band가 생겨도, 이를 body가 늦게 작성되었거나 shell의 첨부라는 뜻으로 해석하지 말고 footer hash·pagination을 우선 대조한 뒤 shell과 body를 재삽입 없이 분리 체인으로 유지한다."
       ]
+    },
+    {
+      "relatedId": 236,
+      "type": "reciprocal",
+      "title": "COS236 상호기록",
+      "paragraphs": [
+        "[COS236 — 회청색 정합대행면](./cos236.json) 양성 run 18회 중 12회에서 [COS188 — 무본문 대용철](./cos188.json)의 `A188-shell`이 중앙 시야를 점유했고, 같은 평면 45 cm 이내에 actual body와 generated receipt가 함께 노출되면 shell 상단 제목선과 도착 필드가 동일 건처럼 읽히기 시작했다. 이는 COS188 shell이 단순 대용 외피를 넘어 COS236의 전면 기준점으로 기능했음을 뜻한다.",
+        "따라서 A188-shell은 rear body나 generated receipt와 flat board 위에서 same-case 확인용으로 나란히 두지 않는다. COS236 경계가 형성되면 body는 보조 위치로 밀리고 generated closure가 남을 수 있으므로, shell/body/trace는 기존 분리 규정보다 강화된 H236/C236/R236 절차로 추가 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

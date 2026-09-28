@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2045-05-14와 2045-06-04 사건에서 외부 개입 없이도 종결서명, OCR intake log, route label이 남았고, 같은 절차가 외부 유출 시 기록 위조·증거 혼입 수법으로 악용될 가능성이 확인되었으므로 공개 가능성은 낮게 평가해 4로 책정한다.",
+    "permission": "현상 판정에는 footer hash, 마지막 쪽수, raw transfer log, rear body provenance와 연계 COS의 체인 규정을 함께 읽어야 했고, 초기 노출 인원 5명 중 3명이 정합을 실제 일치로 오판했으므로 최소 열람 권한을 4로 설정한다.",
+    "chaos": "거리 임계 시험, 표면 재질 시험, 시야 차단 시험에서 45 cm 이하의 평평한 host surface와 직접 비교 상황이 있을 때만 안정적으로 재현되었고, 형성까지의 시간은 18~210초 범위로 변동했으나 조건 자체는 비교적 좁게 묶였으므로 3으로 평가한다.",
+    "danger": "직접적인 조직 손상이나 시설 파손은 없었으나, actual body가 부속물로 강등되고 `조치 완료`형 기록과 종결서명이 생성되어 기록과 시행 판단에 고위험 영향을 주었으므로 4로 평가한다.",
+    "popularity": "임시등록 후 31일 동안 provenance conflict 재검토 17건, 위성 거점 재점검 4건, 기존 연계 COS 재대조 6건에서 반복 참조되었으므로 참조 빈도는 높은 편으로 보고 4를 부여한다.",
+    "containment": "단순 보관만으로 억제되지 않았고, 불투명 분리, 2.5 m 이격, 빈 승인축 차단, 오프라인 4항 대조를 동시에 요구했으므로 필요한 관리 강도를 4로 책정한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 K-17",
+        "role": "선임 기록분석관",
+        "status": "active",
+        "involvement": "2045-05-14 최초 양성 장면을 기록하고 C236-I01 서명오류 무효화 보고서를 작성했다. 이후 거리 임계 시험과 표준 격리 절차 초안을 주도했다."
+      },
+      {
+        "name": "보존기사 M-04",
+        "role": "격리보관동 운용기사",
+        "status": "active",
+        "involvement": "측면 촬영, 열화상 측정, 분리 이송을 담당했다. 초기 사건과 후속 시험에서 경계 온도 상승과 generated trace 잔류를 최초로 지적했다."
+      },
+      {
+        "name": "감사분석관 R-09",
+        "role": "체인오브커스터디 감사관",
+        "status": "active",
+        "involvement": "C236-I01에서 잘못된 종결서명 1건을 남긴 뒤 이를 자진 보고했다. 이후 감사 관점에서 종결 압력과 서명 유도 조건 재평가에 참여했다."
+      },
+      {
+        "name": "실험담당 P-03",
+        "role": "광학계측 연구원",
+        "status": "active",
+        "involvement": "470 nm side light, 열화상, OCR 잔류 대조 시험을 설계했다. 표면 재질과 시야 차단 조건에서 COS236 재현 여부를 검증했다."
+      },
+      {
+        "name": "현장요원 N-11",
+        "role": "남부 회수거점 인수 담당",
+        "status": "active",
+        "involvement": "C236-I02에서 backlog 해소를 위해 표본 3점을 동일 counter에 임시 배치했다. 재발 조건 제공 사실을 인정하고 이후 위성 거점 분리 촬영 지침 작성에 협조했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-05-14 21:12",
+        "label": "최초 현장 발생",
+        "description": "중앙기록보존동 2층 재결합실 C-4, H236-host-01 아크릴 대조판에서 shell 1점, actual body 1점, generated arrival receipt 1점, discrepancy sheet 1매를 동일 평면에 놓은 뒤 74초 후 최초 양성이 기록되었다."
+      },
+      {
+        "date": "2045-05-15",
+        "label": "임시등록 T-236 발급",
+        "description": "서명오류 양식, 측면 4K 영상, 열화상 비교 검토 결과 단순 OCR 오독이나 반사광이 아닌 독립 현상으로 판단되어 T-236이 발급되었다."
+      },
+      {
+        "date": "2045-05-17",
+        "label": "거리 임계치 재현",
+        "description": "간격 15, 30, 45, 60 cm 통제 24회에서 45 cm 이하 배치만 양성이었고 60 cm군과 비이상 대조군 8회는 전부 음성이었다."
+      },
+      {
+        "date": "2045-05-26",
+        "label": "증폭 조건 확인",
+        "description": "빈 승인석과 집행 잔선 표본을 하류 0.8~1.2 m에 둔 시험에서 median persistence가 4분 12초에서 17분 06초로 증가했다."
+      },
+      {
+        "date": "2045-06-04",
+        "label": "위성 거점 재발",
+        "description": "남부 회수거점 S-2 white melamine counter에서 same-surface 촬영 중 C236-I02가 발생했고 OCR intake log 1건과 route label 1장이 잘못 생성되었다."
+      },
+      {
+        "date": "2045-06-12",
+        "label": "표준 격리 시행",
+        "description": "불투명 분리, 2.5 m 이격, 빈 승인축 차단, 4항 판정 체크리스트를 포함한 COS236 전용 절차가 전체 회수·보존 거점에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "C236-I01",
+        "date": "2045-05-14",
+        "location": "중앙기록보존동 2층 재결합실 C-4",
+        "title": "가짜 종결서명 발생",
+        "involvedPersonnel": [
+          "기록관 K-17",
+          "보존기사 M-04",
+          "감사분석관 R-09"
+        ],
+        "narrative": [
+          "21:12부터 21:19까지 K-17은 분리 봉인되어 있던 shell 1점, actual body 1점, generated arrival receipt 1점을 다음 감사 회차 전에 한 번에 정리하기 위해 H236-host-01 아크릴 대조판(58 × 42 cm) 위에 올려놓았다. 세 표본의 간격은 18 cm, 23 cm, 31 cm였고, K-17은 임시 메모에 `같은 건인지 한 판에서 끝내자`라고 적은 뒤 discrepancy sheet 1매를 같은 평면 우측 상단에 추가했다. 이는 당시 임시 지침이 권고하던 불투명 분리 상태를 유지하지 않은 선택이었다.",
+          "21:19:14, 측면 카메라에 47 × 31 cm 크기의 회청색 직사각 경계가 잡혔다. receipt 상단 route code와 shell 책등 번호가 동일하게 읽히기 시작했고, R-09는 footer hash와 독립 질량 대조가 끝나지 않았음에도 양식의 `불일치 해소`란을 채우고 서명했다. 같은 시각 M-04는 비접촉 IR 계측값이 22.4°C에서 23.1°C로 상승한 것을 보고 body를 먼저 분리하려 했으나, K-17은 사진 증거 확보를 우선한다며 1분가량 배치를 유지했다.",
+          "21:27 이후 표본을 각기 불투명 sleeve로 되돌리고 2.5 m 이상 이격하자 경계 광택은 21:34에 소실되었다. 그러나 서명된 양식과 스캔 미리보기 파일은 원상복구되지 않았고, body는 이미 우하단 보조 트레이로 옮겨진 상태였다. 사후 검토에서 footer hash, 마지막 쪽수, 질량은 끝까지 일치하지 않은 것으로 확인되었다."
+        ],
+        "outcome": "서명본은 R236-trace-01로 분리 봉인되었고, C-4 대조판은 H236-host-01로 지정되었다. T-236 임시등록이 다음 날 발급되었으며 K-17과 R-09의 종결 권한은 72시간 동안 정지되었다."
+      },
+      {
+        "code": "C236-I02",
+        "date": "2045-06-04",
+        "location": "남부 회수거점 S-2 인수대",
+        "title": "same-surface 촬영 중 정상 인수 오인",
+        "involvedPersonnel": [
+          "현장요원 N-11",
+          "기록관 K-17",
+          "실험담당 P-03",
+          "보존기사 M-04"
+        ],
+        "narrative": [
+          "남부 회수거점 S-2는 당시 backlog 11건을 처리 중이었고, N-11은 shell형 전면 packet 1점, rear-recovered body 1점, generated arrival receipt 1점을 `확인 사진 한 장만 먼저 남기고 곧 분리하겠다`는 판단 아래 white melamine counter(120 × 60 cm) 위에 함께 올려놓았다. 세 표본의 간격은 22~29 cm였고, counter 우측에는 아직 비어 있는 정상 인수 슬롯과 blank closure form 2매가 남아 있었다.",
+          "배치 52초 후 chain number와 destination code가 일치해 보이면서 intake terminal 미리보기 창에 `정상 인수` flag가 선행 생성되었다. K-17은 body를 부속 슬리브로 내리려 했고 N-11은 route label 출력 버튼을 눌렀다. P-03이 측면 단말에서 footer hash 불일치를 확인하고 음성 지시 대신 적색 정지등을 점등해 동작을 멈추게 했으며, M-04는 blank closure form을 즉시 제거하고 표본을 수직 rack로 이격했다.",
+          "광택 경계는 분리 개시 후 6분 09초에 소실되었지만 OCR intake log 1건과 route label 1장은 잔류했다. 외부 반출은 실시되지 않았고, counter는 사후 분석에서 H236-host-03로 지정되었다. 사건 당시 인원이 선택한 `같이 놓고 먼저 찍기` 절차가 직접적인 재발 조건으로 기록되었다."
+        ],
+        "outcome": "외부 반출은 발생하지 않았고 생성된 intake log와 route label은 무효 처리되었다. H236-host-03가 신규 격리되었으며 위성 거점에서의 same-surface 촬영이 전면 금지되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "E236-01",
+        "type": "4K 측면 영상",
+        "description": "V236-0514-C4. 2045-05-14 21:19:14~21:27:03 사이 H236-host-01 상에서 형성된 47 × 31 cm 회청색 경계와 R-09의 종결서명 동작이 연속 기록된 파일.",
+        "custodyStatus": "디지털 증거 금고 D-11 오프라인 저장, SHA-256 고정"
+      },
+      {
+        "code": "E236-02",
+        "type": "서명 양식",
+        "description": "R236-trace-01. `불일치 해소`가 기입된 서명본 원지. footer hash 불일치가 사후 붉은 검증선으로 표시되어 있다.",
+        "custodyStatus": "격리 문서함 G-4 봉인, 열람 시 불투명 커버 사용"
+      },
+      {
+        "code": "E236-03",
+        "type": "열화상 세트",
+        "description": "IR236-0526-B. 22.3°C 실내에서 경계 내부 표면이 배경보다 최대 0.7°C 높게 측정된 18장 연속 열화상과 온도 로그.",
+        "custodyStatus": "열화상 전용 저장매체 T-2 보관, 외부 네트워크 미연결"
+      },
+      {
+        "code": "E236-04",
+        "type": "전산 로그 추출본",
+        "description": "LOG236-0604-S2. 분리 후에도 남은 `정상 인수` flag, route label 생성 시각, 수기 무효 처리 시각을 포함한 intake terminal raw export.",
+        "custodyStatus": "전산격리 노드 N-5 읽기전용 보관, 추출 원본과 분리 해시 보관"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "감사분석관 R-09",
+        "role": "체인오브커스터디 감사관",
+        "context": "C236-I01 종료 43분 후 자필 진술",
+        "statement": "서명할 때는 해소 근거가 충분하다고 느꼈다. 지금 다시 보면 내가 확인한 것은 번호와 배치뿐이었고, footer hash와 질량 대조를 기다리지 않은 판단은 전적으로 내 책임이다."
+      },
+      {
+        "speaker": "보존기사 M-04",
+        "role": "격리보관동 운용기사",
+        "context": "2045-05-26 증폭 시험 직후 구술 기록",
+        "statement": "무게와 장수는 끝까지 안 맞는데, 눈은 맞다고 읽는다. 내 해석일 수 있으나 blank form이 시야에 남아 있을수록 손이 먼저 종결 쪽으로 움직였다."
+      },
+      {
+        "speaker": "현장요원 N-11",
+        "role": "남부 회수거점 인수 담당",
+        "context": "C236-I02 직후 자필 진술",
+        "statement": "사진 한 장만 먼저 찍고 분리하려 했다. 셋을 같이 놓는 순간 정상 인수로 정리될 것처럼 보여 route label까지 출력했고, 그 선택이 재발 조건을 만든 점을 인정한다."
+      }
+    ]
+  },
+  "id": 236,
+  "title": "회청색 정합대행면",
+  "language": "ko-KR",
+  "overview": [
+    "COS236은 provenance conflict가 있는 기록 표본 2종 이상을 같은 평면에서 `한 건`으로 취급할 때 형성되는 일시적 회청색 평면 현상이다.",
+    "현상 내부에서는 accession, route code, arrival status, completion cue 등 전면 판독 필드가 상호 정합되거나 그렇게 보이며, 이에 기초한 generated closure slip·OCR log가 남을 수 있다.",
+    "footer hash, 마지막 쪽수, 독립 질량, raw transfer log는 현재까지 단 한 번도 COS236에 의해 물리적으로 일치한 사례가 없다.",
+    "표본 자체의 자발적 이동은 확인되지 않았고, true body의 보조 위치 이동과 서명 행위는 모두 노출 인원의 선택으로 기록되었다."
+  ],
+  "identificationTraits": [
+    "평평하고 단단한 host surface 위에 provenance conflict가 있는 표본 2종 이상이 45 cm 이하 간격으로 노출되어 있고, 비교자가 이를 같은 건으로 가리키거나 판단하려는 상황에서 가장 자주 형성된다.",
+    "호스트 표면을 15~25° 측면 각도에서 보거나 470 nm side light를 비출 때, 대체로 41~63 cm × 24~37 cm 크기의 회청색 직사각 경계가 먼저 관찰된다.",
+    "형성 40~90초 후 경계 내부 표면 온도는 배경보다 0.4~0.8°C 높게 측정되는 경우가 많다.",
+    "경계 내부에서는 상단 제목선, route code, 인수 상태, 종결란과 같은 노출 필드가 서로 일치해 보이거나 신규 양식과 OCR 미리보기에 동일 값으로 복사된다.",
+    "노출 인원은 대조 항목을 줄이고 서명, 라벨 출력, 보조 슬롯 이동을 먼저 수행하는 경향을 보이며, actual body는 육체적 이동이 확인될 경우 거의 항상 인원에 의해 우하단 또는 후면 보조 위치로 옮겨진다."
+  ],
+  "discovery": [
+    "2045-05-14 21:12~21:34, 중앙기록보존동 2층 재결합실 C-4의 H236-host-01 아크릴 대조판(58 × 42 cm) 위에서 최초 확인되었다.",
+    "당시 서로 다른 chain bag에 있던 shell 1점, actual body 1점, generated arrival receipt 1점과 discrepancy sheet 1매를 31 cm 이하 간격으로 배치하자 74초 후 회청색 직사각 경계가 측면 카메라와 육안에서 동시에 관측되었다.",
+    "독립 질량(0.316 kg 대 1.842 kg), footer hash, 마지막 쪽수는 끝까지 일치하지 않았으나 현장 인원 2명이 양식을 `동일 건 해소`로 판독하고 서명 절차를 시작했다.",
+    "2045-05-15 임시등록 T-236이 발급되었고, 2045-05-17부터 2045-06-04까지 진행된 5계열 통제 시험에서 재현성이 확인되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "형성에는 평평한 host surface, 45 cm 이하 근접 배치, 표면 가시성, 그리고 비교·일치 판단이 동시에 필요했다.",
+      "경계 형성 뒤에는 title line, route code, intake flag, completion field처럼 종결에 유리한 표면 정보가 우선적으로 읽히거나 복사되었다.",
+      "노출 인원은 대조 항목을 줄이고 서명, slot 이동, 보조 분류를 먼저 수행하는 경향을 보였으며, 이는 2045-05-14와 2045-06-04 사건에서 직접 기록되었다.",
+      "분리 후 시각·열 경계는 3~17분 사이에 소실되지만, 그동안 생성된 양식과 전산 흔적은 자연 소거되지 않았다."
+    ],
+    "stages": [
+      {
+        "name": "후보 집적",
+        "description": "provenance conflict가 있는 표본 2종 이상이 같은 평면에 45 cm 이하 간격으로 놓이고, 비교자가 이를 `같은 건`으로 맞추려는 상황이 형성된다."
+      },
+      {
+        "name": "경계 형성",
+        "description": "15~25° 측면 시야 또는 470 nm side light에서 회청색 직사각 경계가 나타나고, host surface의 국소 온도가 0.4~0.8°C 상승한다."
+      },
+      {
+        "name": "정합 대행",
+        "description": "노출 필드가 서로 일치해 보이거나 신규 양식·OCR 미리보기에 동일 값이 채워진다. 이 단계에서 종결서명, route label 출력, actual body의 보조 위치 이동이 가장 자주 발생한다."
+      },
+      {
+        "name": "잔류 종결",
+        "description": "표본을 불투명 sleeve로 되돌리고 2.5 m 이상 이격하면 경계 자체는 소실되지만, 노출 중 생성된 slip, log, route label, appendix designation은 독립 trace로 남는다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS236은 단독 표본보다 [COS188 — 무본문 대용철](./cos188.json), [COS221 — 회청색 도착대행패](./cos221.json), [COS232 — 회청색 후착본문띠](./cos232.json)처럼 서로 다른 전면·도착·실본문 흔적이 동시에 노출될 때 가장 안정적으로 형성되었다.",
+      "[COS203 — 회청색 교차편철면](./cos203.json)은 잘못 맞물린 front/body를 제공했고, [COS149 — 무인 결재석](./cos149.json)과 [COS137 — 녹흑색 집행잔선](./cos137.json)은 정합의 종결 압력을 증폭했다."
+    ],
+    "entries": [
+      {
+        "targetId": 188,
+        "targetTitle": "무본문 대용철",
+        "description": "[COS188 — 무본문 대용철](./cos188.json)의 `A188-shell`은 COS236 양성 run 18회 중 12회에서 중앙 시야를 점유한 전면 표본이었다. shell이 중심에 남으면 actual body가 분리된 상태에서도 receipt와 discrepancy form 상단 항목이 같은 건처럼 읽혀 정합대행이 시작되었다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "[COS203 — 회청색 교차편철면](./cos203.json)이 false composite를 형성한 뒤 COS236가 이어지면, 잘못 맞물린 front와 body뿐 아니라 종결 slip과 OCR log까지 같은 chain으로 닫히는 경향이 있다. 이 조합은 시각적 오합치가 행정 종결로 확장되는 대표 사례로 분류한다."
+      },
+      {
+        "targetId": 221,
+        "targetTitle": "회청색 도착대행패",
+        "description": "[COS221 — 회청색 도착대행패](./cos221.json)의 generated arrival receipt는 COS236 내부에서 가장 자주 기준선 역할을 했다. 도착 증빙이 앞서 보이면 rear body가 아직 미회수 상태여도 인수 완료와 불일치 해소가 같은 단계로 읽히는 경우가 많았다."
+      },
+      {
+        "targetId": 232,
+        "targetTitle": "회청색 후착본문띠",
+        "description": "[COS232 — 회청색 후착본문띠](./cos232.json)가 붙은 actual body는 COS236 형성 시 lower-right 보조 위치로 밀려나는 경향을 보였다. 이때 후착띠는 늦은 도착의 근거가 아니라 true body를 부속물처럼 격하시키는 표시로 작동했다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "[COS149 — 무인 결재석](./cos149.json)이 시야 하류 1.2 m 이내에 있을 때 COS236 지속 시간이 현저히 늘었다. 빈 승인축은 정합 경계를 `서명만 남은 종결` 상태로 닫는 증폭점으로 취급한다."
+      },
+      {
+        "targetId": 137,
+        "targetTitle": "녹흑색 집행잔선",
+        "description": "[COS137 — 녹흑색 집행잔선](./cos137.json)의 `집행됨` 흔적이 경계 내부에 포함되면 discrepancy sheet에 `조치 완료 후 보완`류 문구가 생성될 수 있다. 이 결합은 provenance conflict를 해결하는 것이 아니라 미해결 상태를 시행 완료처럼 오독하게 만든다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-236-01 거리 임계 시험",
+      "description": "2045-05-17, H236-host-01 아크릴 대조판 위에 shell, actual body, generated arrival receipt 3점을 놓고 간격을 15, 30, 45, 60 cm로 나누어 24회 반복했다. 15 cm군 5/6, 30 cm군 4/6, 45 cm군 3/6에서 완전 양성이었고 median onset은 68초였다. 60 cm군 6회와 비이상 matched file 대조군 8회는 전부 음성이었다."
+    },
+    {
+      "label": "EXP-236-02 표면 재질 시험",
+      "description": "2045-05-18, 동일 표본군을 clear acrylic, white melamine, black rubber mat, stainless mesh에 각각 6회 배치했다. clear acrylic 5/6, white melamine 4/6, black rubber mat 1/6 partial onset, stainless mesh 0/6으로 기록되었다. 개방된 평면과 연속적인 표면이 형성에 필요할 가능성이 높다."
+    },
+    {
+      "label": "EXP-236-03 시야 차단 및 자세 시험",
+      "description": "2045-05-19, 표본을 불투명 sleeve에 넣거나 vertical rack에 세운 조건 16회는 전부 음성이었다. direct view 없이 overhead monitor만 본 조건 6회 중 2회는 partial onset만 발생했고 generated closure trace는 남지 않았다. 물리적 host surface와 직접 비교 시야가 모두 필요한 것으로 보인다."
+    },
+    {
+      "label": "EXP-236-04 언어 프레이밍 시험",
+      "description": "2045-05-22, 동일 배치에서 운용자가 `같은 건인지 맞춰 보겠다`고 발화한 6회는 모두 양성이었고, 코드번호만 호명한 6회는 2회 양성, 무언 발화 차단군 6회는 1회 partial onset에 그쳤다. 발화 내용이 직접 trigger인지 보조 요인인지는 아직 확정되지 않았다."
+    },
+    {
+      "label": "EXP-236-05 증폭 시험",
+      "description": "2045-05-26, 빈 승인석과 COS137 집행 잔선 표본을 하류 0.8~1.2 m에 두고 6회 반복했다. baseline median persistence 4분 12초가 17분 06초로 증가했고, 동일 배치에서 빈 승인석을 32 kg dummy와 차광판으로 점유한 대조군 6회는 3분 08초로 감소했다."
+    }
+  ],
+  "handlingProcedures": [
+    "provenance conflict가 있는 표본은 4항 판정이 끝날 때까지 서로 2.5 m 이상 이격하고, 각기 불투명 sleeve 또는 불투명 box에 보관한다.",
+    "shell, actual body, generated receipt, discrepancy form, route label 후보를 같은 flat board나 같은 counter 위에 동시에 올려놓지 않는다. 비교가 불가피하면 수직 rack 또는 mesh separator를 사용한다.",
+    "운용자는 표본을 `같은 건`, `맞는 것`, `한 판에서 끝낸다`와 같은 표현으로 지칭하지 않고 코드번호만 사용한다.",
+    "승인석, 서명패드, blank closure form, 정상 인수 슬롯을 표본 시야 하류에 비워 두지 않는다. 고정 구조물인 경우 차광판으로 가리고, 의자는 인원 또는 30 kg 이상 비활성 더미로 점유한다.",
+    "회청색 경계, 국소 온도 상승, 동일 route code 오독이 확인되면 즉시 음성 비교를 중지하고 측면 카메라 촬영을 유지한 채 두 명의 운용자가 표본을 중심에서 바깥쪽으로 동시에 분리한다.",
+    "노출 중 생성된 slip, OCR log, route label, appendix designation은 모두 `R236-trace`로 분리 봉인하며 원래 chain으로 되돌리지 않는다.",
+    "release 전에는 footer hash, 마지막 쪽수, 독립 질량·장수 계수, source·destination raw log의 4항 대조를 분리 상태에서 다시 시행하고, 30분 재관찰 후에도 동일 결과가 유지되는지 확인한다."
+  ],
+  "hypotheses": [
+    "COS236은 단일 표본이 스스로 생성하는 현상이 아니라, 서로 다른 provenance 표본이 하나의 절차 종결 위치를 두고 경쟁할 때 형성되는 2차 평면 현상일 가능성이 있다.",
+    "direct view와 sameness language 의존성 때문에, 현상의 일부는 기록 물성보다 `같은 건으로 묶는 행위` 자체의 절차 구조를 매개로 할 수 있다.",
+    "actual body는 형성 개시 단계의 anchor 역할을 할 수 있으나, once boundary forms, front-facing shell·receipt·closure field가 우세해져 body가 보조물로 밀리는 것으로 보인다.",
+    "빈 승인축과 집행 흔적이 persistence를 늘린 사실은 authority vacancy와 completion cue가 COS236 안정화 요인임을 시사하지만, 양자 사이의 직접 인과는 아직 입증되지 않았다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "가장 높은 위험 범주다. 완전 양성 run과 2건의 실사건 모두에서 미해결 provenance conflict가 `해소` 또는 `정상 인수`로 닫히는 기록이 생성되었다. generated trace는 자연 소거되지 않으므로 사후 감사가 없으면 오판이 누적된다."
+    },
+    {
+      "category": "절차 승인",
+      "assessment": "서명, 인수, 부속 분류, route label 출력이 대조 완료보다 앞서 일어나는 경향이 뚜렷하다. 승인석이나 blank closure form이 시야 하류에 있을수록 위험이 상승한다."
+    },
+    {
+      "category": "집행 전이",
+      "assessment": "직접 집행 명령을 만들지는 않았으나, 집행 잔선과 결합하면 `조치 완료 후 보완`류 문구가 생성되어 후속 시행 판단을 앞당길 수 있다. 시행 근거로 사용될 경우 2차 사고로 이어질 가능성이 있다."
+    },
+    {
+      "category": "전산 보존",
+      "assessment": "OCR 미리보기, intake terminal flag, route label 생성 모듈이 표면 정합에 동조해 잘못된 값을 기록할 수 있다. raw export와 수기 무효 처리 시간을 별도로 봉인해야 한다."
+    },
+    {
+      "category": "물리적 확산성",
+      "assessment": "거친 표면, mesh, 수직 rack, 불투명 sleeve에서는 안정적 재현이 확인되지 않았다. 공간적 확산성은 제한적이지만, 회수·대조·감사처럼 평면 비교가 잦은 구역에서는 재발 가능성이 높다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "현재까지 COS236 노출 중 표본 자체의 자발적 이동, 질량 변화, footer hash 변조는 확인되지 않았다. 문제는 표본의 내용 변화가 아니라, 노출 인원과 보조 시스템이 종결에 유리한 표면 정보를 우선 채택한다는 점이다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"같은 건이면 한 판에서 끝내자.\" — C236-I01 개시 38초 전 현장 음성기록. 동일 또는 유사 발화는 이후 언어 프레이밍 실험의 양성 조건으로 사용되었다."
+    },
+    {
+      "type": "paragraph",
+      "content": "가장 큰 문제는 경계 자체보다, 경계 노출 중 생성된 `R236-trace`가 일반 서식처럼 남아 사후 감사 없이는 구별되지 않는다는 점이다. 생성 시각과 노출 배치를 모르면 일반 절차 기록과 구분이 어렵다."
+    },
+    {
+      "type": "quotation",
+      "content": "\"무게와 장수는 안 맞는데, 눈은 맞다고 읽습니다.\" — 보존기사 M-04, 2045-05-26 구술 기록"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-236 정식 편입",
+      "paragraphs": [
+        "2045-05-15부터 2045-06-12까지 현장 메모에 사용된 `T-236`, `false reconciliation plane`, `정합대행대`, `same-case surface` 표기는 모두 COS236으로 통합한다.",
+        "통제 시험 결과 본 항목의 핵심은 단순 반사, 시각 피로, OCR 오독이 아니라 서로 다른 provenance 표본을 한 건으로 종결시키는 회청색 평면 현상임이 확인되었다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "H236/C236/R236 접두 및 재대조 금지 규정",
+      "paragraphs": [
+        "정합이 형성된 host surface는 `H236-host-일련번호`, 경계 내부에 배치된 표본군은 `C236-set-일련번호`, 노출 중 생성된 종결 slip·OCR log·route label은 `R236-trace-일련번호` 접두를 부여한다.",
+        "`H236`, `C236`, `R236`은 같은 tray, 같은 same-case bag, 같은 digital reconciliation folder를 공유하지 않는다. 해시·쪽수·질량·source/destination raw log의 4항 대조가 끝나기 전까지 generated closure는 원본 증거로 사용하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 4항 판정 체크리스트",
+      "paragraphs": [
+        "1) footer hash와 마지막 쪽수를 분리 상태에서 대조한다. 2) 독립 질량과 수기 장수 계수를 확인한다. 3) source·destination raw log를 오프라인으로 비교한다. 4) 30분 이격 재관찰 뒤 동일 결론이 유지되는지 확인한다.",
+        "네 항목 중 하나라도 불일치하면 generated closure, arrival confirmation, appendix designation을 모두 무효로 표기하고 `R236-trace`로 분리 봉인한다."
+      ]
+    },
+    {
+      "title": "권장 관측 세팅",
+      "paragraphs": [
+        "측면 카메라는 host surface 기준 20°±5° 낮은 위치, 1.8 m 거리, 4K/30 fps 이상으로 설치한다. 상부 조명은 470 nm side light 1기와 4000 K 확산광 1기를 병용한다.",
+        "비접촉 IR thermometer 또는 열화상 카메라로 경계 내부와 외부의 ΔT를 30초 간격으로 측정한다. ΔT 0.4°C 이상 또는 회청색 직사각 경계 판독 시 즉시 separation protocol을 시행한다."
+      ]
+    }
+  ]
+}

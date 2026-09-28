@@ -372,6 +372,15 @@
         "[COS235 — 회청색 본문귀속궤](./cos235.json)에서 first-passage capture가 먼저 성립한 묶음은 destination pocket 도달 뒤 [COS221 — 회청색 도착대행패](./cos221.json)의 generated arrival receipt를 후속 획득할 수 있다. 2044-07-03 초동 사건과 2044-07-11 수령대 대조 8회 중 5회에서 receipt, cabinet code, route line은 일치했지만 footer hash와 last page count는 끝까지 불일치했다.",
         "따라서 [COS221 — 회청색 도착대행패](./cos221.json) 표본에 lower band, rail-direction mark, rear body 미회수 상태가 함께 보이면 단독 도착 사건으로 판정하지 말고 COS235 선행 가능성을 우선 검토한다. generated receipt를 capture bundle의 provenance 회복 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 236,
+      "type": "reciprocal",
+      "title": "COS236 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json)의 generated arrival receipt는 [COS236 — 회청색 정합대행면](./cos236.json)에서 가장 흔한 정합 기준점으로 작동했다. 2045-05-14와 2045-06-04 사건을 포함한 11회 관측 중 8회에서 receipt의 route line과 destination code가 shell 전면보다 먼저 current file처럼 읽혔고, 그 직후 actual body가 `후착` 또는 `부속` 위치로 재배치되었다.",
+        "따라서 COS221 receipt가 actual body 회수 이전에 나타나면 도착 확인을 진행하지 말고 COS236 동반 여부를 먼저 점검한다. generated arrival receipt와 closure slip이 같은 평면에 놓인 상태에서 서명, 인수 버튼 입력, route label 출력을 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

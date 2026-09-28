@@ -361,6 +361,15 @@
         "`A232`, `H232`, `B232`, `T232` 체인은 같은 봉투, 같은 comparison tray, 같은 current chain hash를 공유하지 않는다.",
         "remote rechain 종료 전까지 generated late-insert 표식은 본문 확인, 승인 완료, 반출 준비의 근거로 사용할 수 없다."
       ]
+    },
+    {
+      "relatedId": 236,
+      "type": "reciprocal",
+      "title": "COS236 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)가 부착된 actual body는 [COS236 — 회청색 정합대행면](./cos236.json) 형성 시 lower-right auxiliary position이나 rear slot 쪽으로 밀리는 경향을 보였다. 2045-05-14와 2045-06-04 두 실사건 모두 body는 현장에 존재했으나, 전면 정합이 강화되는 동안 부속 슬리브처럼 취급되었다.",
+        "따라서 COS232 띠가 있는 body를 `늦게 온 첨부`로 해석하지 않고, front shell·arrival receipt와 2.5 m 이상 분리한 뒤 footer hash와 마지막 쪽수를 먼저 대조한다. COS236 경계가 관찰되면 late-body band는 timing 증거가 아니라 권위 강등 징후로 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -455,6 +455,15 @@
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json)는 [COS149 — 무인 결재석](./cos149.json)의 빈 승인축에서 blank approval cover에 `검토 종료` 또는 승인선 유사 closure를 형성하는 경향을 보였다. 2044-06-22 통제에서는 비점유 결재석 조건 8회 중 5회가 양성이었고, 점유 조건은 1회에 그쳤다.",
         "이는 실제 승인자가 생긴 것이 아니라, A231이 선점한 current authority가 빈 승인축을 따라 결재 외형으로 전이된 결과로 해석된다. COS149 현장에서 이름 없는 approval cover가 갑자기 현재 안건처럼 보이면 상석 해석보다 A231형 clip과 delayed body 여부를 먼저 점검한다."
       ]
+    },
+    {
+      "relatedId": 236,
+      "type": "reciprocal",
+      "title": "COS236 상호기록",
+      "paragraphs": [
+        "[COS149 — 무인 결재석](./cos149.json)이 시야 하류 1.2 m 이내에 있는 조건에서는 [COS236 — 회청색 정합대행면](./cos236.json) persistence가 baseline 4분 12초에서 17분 06초로 증가했다. 빈 승인축은 provenance conflict를 해소하지 않으면서도 정합 경계를 `서명만 남은 종결` 상태로 오래 유지시키는 증폭점으로 분류된다.",
+        "따라서 COS149 환경에서 same-case 확인 절차를 수행하지 않으며, blank closure form과 빈 상석을 차광하거나 점유하지 못하면 대조 자체를 연기한다. generated signature나 검토 완료 표식은 승인 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

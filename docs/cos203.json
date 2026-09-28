@@ -436,6 +436,15 @@
         "[COS235 — 회청색 본문귀속궤](./cos235.json)에서 먼저 포획된 `C235-capture` 묶음을 front-only host와 같은 비교면에 올리면, provenance가 다른 body라도 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite 형성이 평소보다 빠르게 닫히는 사례가 확인되었다. 2044-07-15 교차 대조 4회 중 3회에서 19~52초 내 lower line과 title fragment가 합치했으나, footer hash와 last page count는 끝까지 복구되지 않았다.",
         "따라서 capture 의심 묶음은 body candidate가 아니라 COS235가 선점한 이동 산물로 취급하며, [COS203 — 회청색 교차편철면](./cos203.json) 비교면에 올리기 전 rear-search와 독립 체인 대조를 먼저 끝내야 한다. 빠른 정렬이나 제목 합치는 provenance 회복의 근거가 되지 않는다."
       ]
+    },
+    {
+      "relatedId": 236,
+      "type": "reciprocal",
+      "title": "COS236 상호기록",
+      "paragraphs": [
+        "[COS203 — 회청색 교차편철면](./cos203.json)의 false composite에 discrepancy sheet나 arrival receipt가 추가되면, 시각적 오합치가 [COS236 — 회청색 정합대행면](./cos236.json)의 행정 종결 단계로 이행하는 사례가 확인되었다. 2045-05-17~2045-05-26 교차 대조 8회 중 5회에서 wrong front/body 정렬 뒤 `해소`, `정상 인수`형 필드가 같은 평면에서 생성되었다.",
+        "따라서 COS203 해제 작업은 flat board 위에 추가 양식이나 receipt를 펼쳐 둔 채 진행하지 않는다. false composite를 발견하면 즉시 양손 동시 분리 뒤 receipt·closure form·actual body를 각각 불투명 sleeve로 나누고, generated closure를 provenance 회복의 증거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
