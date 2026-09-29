@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 3,
+    "danger": 4,
+    "popularity": 5,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2045-07-18 발견 이후 실시한 모의 인계 3회 중 2회에서 front shell만으로 1차 dispatch cage 진입 직전까지 절차가 진행되었다. 생성 조건과 분리 절차가 외부에 알려질 경우 민감 기록의 provenance 은닉, 허위 도착 증빙, 오인 인수 유도에 악용될 가능성이 높아 secrecy 4로 판정한다.",
+    "permission": "판별에는 430~450 nm 경사광, 열화상, footer hash 대조, 2.5 m rear-search, 분리 봉인 절차가 함께 요구된다. 다만 전 기관 차원의 최고 등급 승인까지는 필요하지 않았고, 현재는 현장 archive floor supervisor급 17명에게만 운용 교육이 배포되어 있어 permission 3으로 제한한다.",
+    "chaos": "형성 조건은 90~420 s 정지, 42~51% RH, front shell과 actual body가 같은 host에 공존하는 구조, 0.7 kg 이상 가압 여부 등으로 상당 부분 좁혀졌다. 통제 시험 22회 중 14회가 양성으로 재현되어 완전 난수성은 아니나, host 구조와 취급 방식에 따라 결과 편차가 커 chaos 3으로 평가한다.",
+    "danger": "직접 생체 위해는 경미했으나 positive run 9회 중 5회에서 front-only host가 인계 또는 도착 절차를 먼저 닫았고, 실제 본문 2건은 30분 이상 `후착` 취급으로 밀려났다. 인명보다 기록 무결성, 보관 동선, 승인 체계에 대한 위해가 큰 유형으로 danger 4를 부여한다.",
+    "popularity": "임시등록 T-237 배포 후 41일 동안 E-2, H-1, D-3 세 구역의 재검토 27건, 관련 항목 검토 7건, 교육용 브리핑 4회에서 반복 참조되었다. 현재 진행 중인 front-only closure cluster의 선별 기준으로 가장 자주 호출되는 기록 중 하나이므로 popularity 5로 판정한다.",
+    "containment": "활성 host는 front shell, actual body, separator/trace를 각각 분리 봉인하고, 2.5 m rear-search, 30분 재관찰, 비언어 취급, 광차폐 보관을 동시 적용해야 한다. 관리 강도는 높지만 고정 격리실 외에서도 통제 가능하므로 containment 4로 평가한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 R-17",
+        "role": "사건 기록 및 비교검토 담당",
+        "status": "active",
+        "involvement": "2045-07-18 초동 발견 이후 T-237 임시등록을 승인했고, 후속 43건의 재현 및 대조 자료를 취합하여 COS237 공식 편입 초안을 작성했다."
+      },
+      {
+        "name": "현장보존관 K-12",
+        "role": "인계전실 초동 대응",
+        "status": "active",
+        "involvement": "제3기록보존동 B1 인계전실 E-2에서 최초 양성 host H237-01을 취급했다. 초기 오인 인수 직전 단계에서 절차를 중지하고, 이후 현장 비언어 취급 지침 시범 운용에 참여했다."
+      },
+      {
+        "name": "계측분석관 M-04",
+        "role": "열화상·질량·광학 계측",
+        "status": "active",
+        "involvement": "FLIR C5 열화상, 445 nm 경사광, 질량 대조 로그, RH 변화 시험을 설계·운용했다. rear cold rectangle과 persistence time의 계측 기준을 확정했다."
+      },
+      {
+        "name": "보존기술사 L-31",
+        "role": "분리 회수 및 격리 프로토콜 보정",
+        "status": "active",
+        "involvement": "0.4 mm 무광 흑색 PET separator 삽입 각도를 표준화했고, 2045-08-07 재배치 사고 이후 `동일 tray 재집합 금지` 조항을 작성했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-07-18 21:36 KST",
+        "label": "초동 발견",
+        "description": "제3기록보존동 B1 인계전실 E-2 receiving tray R-4에서 [COS204 — 회청색 보류인계슬리브](./cos204.json)형 hold sleeve 표본 H237-01 개봉 중 front shell과 actual body가 분리 반응을 보인 첫 양성이 확인되었다."
+      },
+      {
+        "date": "2045-07-21 14:10 KST",
+        "label": "재현 성공",
+        "description": "격리관찰실 I-3에서 E-2 유래 suspect host 6건과 신규 control 6건을 비교한 결과, suspect 5건에서만 rear gap, 회청색 edge sheen, cold rectangle이 동시 재현되었다."
+      },
+      {
+        "date": "2045-08-03 18:40 KST",
+        "label": "변수 통제 시험",
+        "description": "가압·무가압, 음독·비음독, RH 상승군을 나눈 24 run 시험에서 persistence time, mark darkening, rear-body displacement가 정량화되었다. 이때부터 단순 정전기나 sleeve residue 가설이 보류되었다."
+      },
+      {
+        "date": "2045-08-14 10:25 KST",
+        "label": "연계 항목 검토",
+        "description": "비교검토 회의에서 [COS156 — 무수령 인계대](./cos156.json), [COS168 — 무영 압지추](./cos168.json), [COS177 — 회청색 후열인계로](./cos177.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS221 — 회청색 도착대행패](./cos221.json), [COS233 — 사후 목격삼각](./cos233.json)과의 공발생 양상이 정리되었다."
+      },
+      {
+        "date": "2045-08-28 09:00 KST",
+        "label": "공식 편입",
+        "description": "임시등록 T-237이 `회청색 본문유예막`으로 정식 편입되었고, E-2·H-1·D-3 구역에 표준 분리 봉인 및 rear-search 절차가 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-237-01",
+        "date": "2045-07-18",
+        "location": "제3기록보존동 B1 인계전실 E-2, receiving tray R-4",
+        "title": "front shell 단독 도착 오인 및 본문 지연 회수",
+        "involvedPersonnel": [
+          "현장보존관 K-12",
+          "계측분석관 M-04",
+          "기록관 R-17",
+          "보존기술사 L-31"
+        ],
+        "narrative": [
+          "K-12는 rail H-2에서 넘어온 [COS204 — 회청색 보류인계슬리브](./cos204.json)형 표본 H237-01을 일반 도착본으로 처리하려 했다. front face에는 cabinet code와 arrival line이 보였고 외형상 loose page도 없었다. 그러나 bench scale 실측값은 0.118 kg였고, 표면 printed value는 0.642 kg로 불일치했다. M-04는 이 수치를 단순 라벨 오류로 보지 않고 FLIR C5 열화상을 요청했으며, 그 결과 front sheet 뒤 9 mm 위치에 23.4×31.1 cm 직사각형 냉점이 face 대비 -1.3°C로 확인되었다.",
+          "K-12가 임시 accession을 구두로 확인하자 약 6초 뒤 arrival line이 더 진하게 변했고, front shell 하단이 tray lip에 붙듯 고정되었다. R-17은 음성 로그를 중지시키고 손신호 체계로 전환했으며, L-31이 0.4 mm 무광 흑색 PET strip를 하단 우측 12° 각도로 삽입했다. 삽입 깊이 31 mm 지점에서 저항이 급격히 줄었고, 그 뒤 23쪽 body packet이 손상 없이 분리 회수되었다.",
+          "회수된 body에는 upstream scan과 일치하는 footer hash와 last page count가 있었으나 arrival mark는 없었다. 반대로 front shell에는 generated arrival line과 cabinet code가 남았다. 현장 표준 도착 절차는 즉시 무효화되었고, host는 T-237로 임시 등록된 뒤 front shell·body·trace 3분리 보관으로 전환되었다."
+        ],
+        "outcome": "T-237 임시등록 승인, E-2 구역 전수 재검사 11건 시행, 일반 음성 호출 절차 일시 중지."
+      },
+      {
+        "code": "INC-237-04",
+        "date": "2045-08-07",
+        "location": "격리관찰실 I-3 인접 촬영대 C-1",
+        "title": "동일 tray 재배치로 인한 후착 강등 사건",
+        "involvedPersonnel": [
+          "보존기술사 L-31",
+          "계측분석관 M-04",
+          "기록관 R-17"
+        ],
+        "narrative": [
+          "L-31은 이미 분리 회수된 양성 host H237-06의 비교 촬영을 위해 recovered body packet을 front shell에서 약 18 mm 위쪽에 같은 무광 tray 위에 임시 배치했다. 당시 실내 조건은 20.1°C, RH 47%, overhead LED와 440 nm 보조광이 켜진 상태였다. 이는 초안 지침상 금지된 `동일 tray 재집합`에 해당했으나, L-31은 짧은 사진 촬영만으로 영향이 없을 것이라 판단했다.",
+          "재배치 96초 뒤 front shell 하단에는 destination preview와 유사한 lower band가 다시 나타났고, body packet 우상단에는 희미한 `후착-참조` 띠가 형성되었다. M-04는 sliding을 막기 위해 0.9 kg 유리 block으로 body를 눌렀으나, 이는 분리를 돕지 못하고 persistence를 28분 11초까지 연장했다. body packet은 결국 촬영대 뒤 service gap S-1에서 1.2 m 후방 위치로 이동한 채 재발견되었다.",
+          "그 사이 같은 station에 있던 control envelope 1건이 front shell의 preview mark를 따라 accompanying appendix로 잘못 분류되었다. R-17은 즉시 단일 촬영대 운용을 중단하고, front shell과 body를 서로 다른 station에서 opaque divider와 함께 촬영하도록 절차를 개정했다."
+        ],
+        "outcome": "C-1 촬영대 48시간 폐쇄, `동일 tray 재집합 금지` 조항 신설, 영향 표본 4건 재해시 및 rear-search 재실시."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A237-F01",
+        "type": "물증-광차폐 슬리브",
+        "description": "2045-07-18 R-4에서 회수한 회청색 막편 34 mm와 분리에 사용된 0.4 mm 무광 흑색 PET strip. 445 nm 경사광에서만 간헐적 iridescence가 보였으며 FTIR 재검 2회에서는 일관된 폴리머 피크가 확인되지 않았다.",
+        "custodyStatus": "광차폐 개별 봉인, 보존실 Q-2 4°C 저장, 열람 시 10분 제한"
+      },
+      {
+        "code": "V237-T04",
+        "type": "영상-이중스펙트럼",
+        "description": "INC-237-01 전 과정의 열화상/가시광 동시 녹화 파일. front shell 뒤 9 mm 냉점, 음독 직후 line darkening, 분리 순간의 저항 소실이 60 fps로 기록되어 있다.",
+        "custodyStatus": "읽기전용 서버 ARC-I3/V237 보관, hash verified 3회"
+      },
+      {
+        "code": "L237-M08",
+        "type": "계측로그",
+        "description": "2045-08-03~2045-08-04 변수 시험 24 run raw log. persistence time, RH, 질량, 발화 시점, cold rectangle 크기, rear-search 회수 좌표를 포함한다.",
+        "custodyStatus": "분석실 M-04 원본 보관, 사본은 사건 파일 부록으로 분리"
+      },
+      {
+        "code": "S237-B02",
+        "type": "보어스코프 정지영상",
+        "description": "H237-06 rear gap 12 mm 지점에서 촬영한 body edge와 lower band 비부착 상태 정지영상 7장. same-tray 재배치 전후 위치 차이가 프레임별로 확인된다.",
+        "custodyStatus": "차광 인화본 1부와 원본 파일 분리 봉인"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "현장보존관 K-12",
+        "role": "초동 대응자",
+        "context": "2045-07-18 E-2 discovery after-action interview",
+        "statement": "손으로 들었을 때는 분명 한 묶음이 이미 도착한 것처럼 느껴졌다. 내가 입으로 번호를 확인한 뒤부터는 앞장이 더 완결본처럼 보였고, 뒤에 body가 남아 있다는 경고를 놓칠 뻔했다. 막이 문서를 만든다고 보지는 않지만, 앞장을 완결본으로 믿게 만드는 힘은 있었다는 것이 내 판단이다."
+      },
+      {
+        "speaker": "계측분석관 M-04",
+        "role": "열화상 및 질량 계측",
+        "context": "2045-08-03 variable test debrief",
+        "statement": "양성 표본 14회에서 cold rectangle과 footer hash 불일치가 함께 나왔고, 무가압 대조군에서는 같은 조합이 보이지 않았다. 나는 이것이 정전기 잔상이나 단순 비닐 잔류만은 아니라고 본다. 다만 arrival line이나 weight mark를 스스로 생성하는지는 아직 증명되지 않았다."
+      },
+      {
+        "speaker": "보존기술사 L-31",
+        "role": "분리 회수 담당",
+        "context": "2045-08-07 incident review",
+        "statement": "검은 PET를 아래 오른쪽에서 넣을 때만 저항이 두 번 느껴졌다. 위쪽에서 넣으면 front만 꺾이고 body를 찾지 못했다. 비교 촬영을 위해 둘을 같은 tray에 둔 것은 내 실수였고, 그 뒤 `후착` 띠가 생긴 것은 조작이 아니라 현장 반응이었다."
+      }
+    ]
+  },
+  "id": 237,
+  "title": "회청색 본문유예막",
+  "language": "ko-KR",
+  "overview": [
+    "COS237은 문서형 host의 front shell과 actual body 사이에 형성되는 얇은 회청색 유예막 또는 그에 의해 생기는 지연 간극을 가리킨다. 활성 시 front shell이 현재본·도착본·인계본처럼 우선 인식되고, actual body는 같은 host에 속하면서도 한 단계 늦은 부속물처럼 취급된다.",
+    "2045-07-18 제3기록보존동 B1 인계전실 E-2의 receiving tray R-4에서 처음 확인되었고, 2045-07-21~2045-08-27 통제 시험 43건 중 17건에서 양성 판정이 내려졌다.",
+    "계측상 핵심 지표는 430~450 nm 경사광에서 보이는 1~4 mm edge sheen, front face 뒤 3~18 mm 지연 간극, -0.8~-1.8°C 냉점, footer hash 또는 last page count가 actual body에만 남는 이중 상태다.",
+    "현재까지 확보된 기록에서 COS237은 [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS221 — 회청색 도착대행패](./cos221.json), [COS189 — 회청색 무재하중표](./cos189.json)와 빈번히 결합하며, front-only closure를 설명하는 상위 선행 조건 후보로 검토 중이다.",
+    "확인된 사실은 front shell 우선화와 body 지연이다. arrival line, weight mark, recipient code 등의 외피가 COS237 단독 생성인지 인접 항목에서 전이된 결과인지는 아직 확정하지 않는다."
+  ],
+  "identificationTraits": [
+    "host 하단 우측 또는 상단 lip에서 폭 1~4 mm의 회청색 sheen이 430~450 nm 경사광에서만 간헐적으로 보이고, 일반 백색광 정면 관찰에서는 단순 광택으로 보이거나 사라진다.",
+    "whole-host를 independent scale로 계량했을 때 visible paper 수에 비해 과소 또는 과대 판정이 나며, 양성 표본 17건 중 12건은 declared mass와 actual mass 차이가 0.25 kg 이상이었다.",
+    "열화상에서 front face 바로 뒤 23~31 cm 폭의 직사각형 냉점이 주변보다 0.8~1.8°C 낮게 나타난다.",
+    "0.4 mm 무광 흑색 PET strip를 하단 우측 10~15° 각도로 삽입하면 25~40 mm 깊이에서 1차 저항 뒤 2차 연질 저항이 느껴지고, 그 이후 actual body edge가 분리되기 시작한다.",
+    "front shell에는 destination line, arrival preview, hold band 등의 절차 외피가 남는 반면 actual body에는 footer hash, last page count, staple shadow, upstream fiber damage 같은 원본문 지표가 남는다.",
+    "host를 같은 tray에 재배치하거나 0.7 kg 이상으로 누르면 persistence가 증가하며, 인계번호·도착지·수령확인 같은 발화를 하면 front shell 쪽 외피가 더 선명해지는 경향이 있다."
+  ],
+  "discovery": [
+    "2045-07-18 21:36 KST, 제3기록보존동 B1 인계전실 E-2 receiving tray R-4에서 [COS204 — 회청색 보류인계슬리브](./cos204.json)형 hold sleeve 표본 H237-01 개봉 중 첫 양성이 확인되었다. 전면 first sheet는 cabinet code와 arrival line을 보였지만 whole-host 질량은 0.118 kg로 printed 0.642 kg와 불일치했다.",
+    "같은 표본에 대해 FLIR C5 열화상과 2.8 mm 보어스코프를 적용한 결과, front shell 뒤 9 mm 위치에 23쪽 body packet 가장자리가 확인되었고 표면 온도는 face 대비 -1.3°C였다.",
+    "2045-07-21 격리관찰실 I-3 재현 시험에서 E-2 유래 suspect host 6건 중 5건이 양성, 동일 규격 신규 control 6건은 전부 음성이었다. 양성군에서만 하단 우측 sheen, rear gap, footer/body 분리가 동반되었다.",
+    "2045-08-03 변수 시험에서 0.9 kg 가압군의 median persistence는 25분 56초, 무가압군은 8분 42초였고, 번호·도착지 음독군 12회 중 7회에서 front shell 외피가 강화되었다. 이 결과 이후 임시등록 T-237이 독립 항목 검토로 상향되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS237은 새 본문을 만들지 않고, 이미 존재하는 host 내부에서 `무엇이 현재본으로 읽히는가`를 front shell 쪽으로 편향시킨다.",
+      "활성 직후 front shell은 도착·인계·검토 완료 같은 절차 외피를 먼저 얻거나 유지하고, actual body는 같은 공간에 있더라도 `후착`, `참조용`, `별첨`으로 강등되기 쉽다.",
+      "가압, 동일 tray 재배치, 상단에서의 강제 박리, 발화 기반 확인 절차는 지속시간을 늘리거나 body의 후면 이탈을 가속한다.",
+      "비언어 분리, 하단 우측 접근, rear-search 병행, RH 65~68% 완만 상승은 해소율을 높였으나 100% 확실하지는 않았다."
+    ],
+    "stages": [
+      {
+        "name": "형성 전 대기",
+        "description": "host가 rail, tray lip, sleeve mouth, 촬영대 전면에 90~420초 정지하면 edge sheen이 간헐적으로 형성되고 front/body 식별감이 둔해진다."
+      },
+      {
+        "name": "전면 shell 선점",
+        "description": "front shell이 current host로 우선 취급되며 arrival line, hold band, recipient field 같은 외피가 shell 쪽에 집중된다. 이 단계에서 actual body는 같은 host 내에 있어도 촉각·광학적으로 한 단계 늦게 반응한다."
+      },
+      {
+        "name": "본문 유예 및 후면 이탈",
+        "description": "rear gap 3~18 mm가 확인되거나, actual body가 0.5~2.5 m 후방 slot·service gap·recovery rack에서 회수된다. front shell만 남은 절차 종결이 가장 많이 발생한다."
+      },
+      {
+        "name": "해소 또는 강등 고착",
+        "description": "무광 흑색 separator, humidity rise, 개별 봉인으로 분리가 이루어지면 body가 회수된다. 분리 전 closure가 먼저 닫히면 body는 `후착` 또는 `부속` 지위로 고착될 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "현재 자료는 COS237을 다수의 front-only closure 현상에 앞서 관찰되는 공통 중간층으로 보여 주지만, 각 항목의 직접 원인으로 단정할 근거는 아직 부족하다.",
+      "[COS204 — 회청색 보류인계슬리브](./cos204.json), [COS221 — 회청색 도착대행패](./cos221.json), [COS189 — 회청색 무재하중표](./cos189.json)와의 공발생 빈도가 특히 높았고, [COS168 — 무영 압지추](./cos168.json)는 persistence를 유의하게 연장했다.",
+      "[COS156 — 무수령 인계대](./cos156.json), [COS177 — 회청색 후열인계로](./cos177.json), [COS233 — 사후 목격삼각](./cos233.json)은 COS237 이후에 나타나는 절차 종결·후면 이동·목격 귀속 오류의 대표 후속 양상으로 기록되었다."
+    ],
+    "entries": [
+      {
+        "targetId": 156,
+        "targetTitle": "무수령 인계대",
+        "description": "양성 host 17건 중 6건은 front shell만으로 인계 완료가 닫히는 [COS156 — 무수령 인계대](./cos156.json) 양상을 보였다. actual body 회수 전의 handoff closure는 COS156 독립 발생이 아니라 COS237이 front/body를 임시 분리한 뒤 수령자 없는 종결이 덧붙은 결합형일 가능성이 높다."
+      },
+      {
+        "targetId": 168,
+        "targetTitle": "무영 압지추",
+        "description": "0.9 kg 가압군에서 persistence가 8분 42초에서 25분 56초로 증가했고 rear-body displacement도 늘었다. [COS168 — 무영 압지추](./cos168.json)는 COS237을 유발한다기보다 이미 형성된 유예막을 상단 권위 아래 안정화하는 증폭 조건으로 판정된다."
+      },
+      {
+        "targetId": 177,
+        "targetTitle": "회청색 후열인계로",
+        "description": "rear gap 또는 delayed body가 0.5~2.5 m 후방 경로로 이동한 5건은 [COS177 — 회청색 후열인계로](./cos177.json) trace와 같은 방향성을 보였다. body가 분리된 뒤 front shell이 제자리에 남고 body만 후면 경로를 따르는 경우 COS177 전이 가능성을 먼저 조사한다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "declared mass와 actual mass 차이가 0.25 kg 이상인 12건 중 9건에서 [COS189 — 회청색 무재하중표](./cos189.json)와 동등한 하중 외피가 front shell에만 부착되었다. 이는 하중 생성보다 `현재 처리 대상`의 전면 선점이 선행될 수 있음을 시사한다."
+      },
+      {
+        "targetId": 204,
+        "targetTitle": "회청색 보류인계슬리브",
+        "description": "confirmed 17건 중 11건의 host가 [COS204 — 회청색 보류인계슬리브](./cos204.json) 내부 또는 바로 이후 단계에서 수집되었다. COS204 sleeve는 COS237의 유일한 원인은 아니지만 가장 높은 host 발생률을 보인 운반체다."
+      },
+      {
+        "targetId": 221,
+        "targetTitle": "회청색 도착대행패",
+        "description": "generated arrival receipt가 actual body보다 front shell에 먼저 고착된 7건은 [COS221 — 회청색 도착대행패](./cos221.json)와 구조적으로 동일했다. COS237이 있으면 receipt를 body provenance의 증거로 사용할 수 없다."
+      },
+      {
+        "targetId": 233,
+        "targetTitle": "사후 목격삼각",
+        "description": "세 꼭짓점 목격 배치에서 front shell만 확인한 관찰자가 whole-host 검증을 주장한 2건은 [COS233 — 사후 목격삼각](./cos233.json)과 유사했다. COS237이 있는 host는 사후 목격 배치 자체를 증거 강화로 취급하지 않는다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-237-01 / E-2 유래 host 재현",
+      "description": "2045-07-21 격리관찰실 I-3에서 E-2 유래 suspect host 6건과 신규 control 6건을 같은 tray 규격, 19.8°C, RH 46%, 445 nm 18° 경사광 조건에 420초 정지시켰다. suspect 5/6이 양성이었고 control 0/6이었다. 양성군에서만 rear gap 6~14 mm와 cold rectangle이 동시 검출되었다."
+    },
+    {
+      "label": "EXP-237-02 / 가압 지속시간 대조",
+      "description": "2045-08-03~2045-08-04 양성 host 8건을 무가압과 0.9 kg 유리 block 가압 조건으로 반복 운용했다. persistence median은 무가압 8분 42초, 가압 25분 56초였고, rear-body displacement는 무가압 1/8, 가압 4/8로 증가했다. 동일 규격 음성 host 4건에서는 유의한 변화가 없었다."
+    },
+    {
+      "label": "EXP-237-03 / 발화-비발화 확인 비교",
+      "description": "번호·도착지 음독군 12회, 손신호군 12회, 무관 문구 음독 대조군 6회를 비교했다. 음독군 7/12에서 4~11초 내 front-shell mark darkening 또는 route-line extension이 발생했고, 손신호군은 2/12의 약한 변화만 보였다. 무관 문구 대조군은 0/6이었다."
+    },
+    {
+      "label": "EXP-237-04 / 습도 상승 해소 시험",
+      "description": "분리 봉인 전 단계의 양성 host 10건을 RH 68%까지 120초 동안 완만하게 상승시킨 뒤 opaque divider를 삽입했다. 8/10에서 3분 40초 이내 edge sheen 붕괴와 gap 감소가 관찰되었고, 2건은 tray 교체 후에만 해소되었다. RH 45% 유지 대조군은 모두 지속되었다."
+    },
+    {
+      "label": "EXP-237-05 / rear-search 거리 시험",
+      "description": "양성 host 9건에 대해 rear-search 반경을 단계적으로 확대했다. body 회수 위치는 0.5 m 이내 3건, 0.5~1.5 m 4건, 1.5~2.5 m 2건, 2.5 m 초과 0건이었다. 이에 따라 표준 rear-search 반경 2.5 m와 30분 재관찰이 채택되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "front-only current mark, generated arrival receipt, 질량 불일치가 동시에 보이면 host를 즉시 `잠정 COS237`로 표지하고 일반 인계·도착 절차를 중지한다.",
+    "430~450 nm 경사광과 열화상으로 하단 우측 sheen 및 rear cold rectangle을 먼저 확인한다. 백색광 정면 관찰만으로 음성 판정을 내리지 않는다.",
+    "host를 들기 전 whole-host 질량, visible page count, footer hash 존재 여부를 각각 기록한다. front shell과 actual body를 현장에서 즉시 같은 accession으로 확정하지 않는다.",
+    "분리는 0.4 mm 무광 흑색 PET strip를 하단 우측 10~15° 각도로 삽입하는 방식만 허용한다. 상단 박리, 손톱 사용, 투명 필름, 금속 spatula 사용은 금지한다.",
+    "front shell, recovered body, separator/trace는 각각 `A237-front`, `B237-body`, `R237-trace` 접두로 분리 봉인하고 같은 tray, 같은 sleeve, 같은 사진 프레임에 재배치하지 않는다.",
+    "2.5 m rear-search와 30분 재관찰을 의무화한다. service gap, rear rack, tray rear lip, rail 뒤 슬롯을 우선 수색한다.",
+    "인계번호, 도착지, 수령확인, `완료`, `도착`, `인계` 등 host 지위를 확정하는 발화는 분리 완료 전 금지한다. 필요한 지시는 손신호 또는 사전 정의된 비음성 패들로 대체한다.",
+    "분리가 실패하면 RH 65~68% 구간으로 120초 완만 상승시키고 opaque divider를 삽입한 뒤 재시도한다. 가압으로 안정화하려 하지 않는다."
+  ],
+  "hypotheses": [
+    "COS237의 핵심은 actual body 이동 자체보다 `현재본으로 읽힐 권위`가 front shell에 먼저 귀속되는 인터페이스일 가능성이 있다.",
+    "가압과 지위 확정 발화가 persistence를 늘리는 이유는 물리 접착 그 자체보다 절차적 우선권을 front shell에 고정하기 때문일 수 있다.",
+    "[COS204 — 회청색 보류인계슬리브](./cos204.json), [COS221 — 회청색 도착대행패](./cos221.json), [COS189 — 회청색 무재하중표](./cos189.json)는 COS237이 충분히 오래 유지될 때 나타나는 하류 산물일 가능성이 있으나, 단독 발생 사례가 있어 일방향 인과로 확정할 수 없다.",
+    "[COS177 — 회청색 후열인계로](./cos177.json)에서 회수되는 delayed body 일부는 별개 이동이 아니라 COS237 해소 후 드러나는 후면 지연 본문일 수 있다. 현 단계에서는 동일 집단 여부를 확인하기 위해 footer hash와 fiber damage 비교가 필요하다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "인명",
+      "assessment": "직접 생체 위해는 낮다. 다만 high shelf rear-search 중 손 끼임 1건과 과도한 가압으로 인한 유리 block 미끄럼 1건이 보고되어 보조자 없는 단독 회수는 금지한다."
+    },
+    {
+      "category": "기록 무결성",
+      "assessment": "위험도 높음. front shell가 arrival, handoff, closure를 선점하면 actual body가 `후착`, `부속`, `참조용`으로 강등되어 원문 provenance와 chain-of-custody가 손상된다."
+    },
+    {
+      "category": "시설 운용",
+      "assessment": "중~고위험. 양성 host 1건당 평균 38분의 라인 중지와 2~5개 인접 tray 재검수가 필요했으며, dispatch cage와 imaging station 운용이 반복적으로 지연되었다."
+    },
+    {
+      "category": "연쇄 연동",
+      "assessment": "위험도 높음. [COS156 — 무수령 인계대](./cos156.json), [COS177 — 회청색 후열인계로](./cos177.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS221 — 회청색 도착대행패](./cos221.json)와 결합하면 허위 종결이 강화된다."
+    },
+    {
+      "category": "외부 노출",
+      "assessment": "위험도 높음. 생성 조건과 분리 절차가 유출되면 의도적 front-body 분리와 허위 receipt 유도가 가능하므로 운용 상세는 비공개 유지가 필요하다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "야간 인계일지 2045-07-18 21:54 항목에는 `앞장은 도착했는데 본문이 아직 도착하지 않은 것처럼 보인다. 그러나 열화상으로는 둘이 같은 tray 안에 있다`고 기록되어 있다."
+    },
+    {
+      "type": "quotation",
+      "content": "“번호를 입으로 확인한 뒤부터 앞장이 더 완결본처럼 보였다. 내가 확인을 도운 것이 아니라 고착시킨 것 같았다.” — 현장보존관 K-12, 초동면담 2045-07-18"
+    },
+    {
+      "type": "paragraph",
+      "content": "2045-08-07 사건 이후 I-3와 C-1 촬영대에는 `같은 tray 위에서 front/body 재집합 금지` 표지가 상시 부착되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "“막이 문서를 만든다는 증거는 없다. 우리가 현재본으로 읽는 순서를 바꾸고 있을 뿐일 수 있다.” — 기록관 R-17, 2045-08-14 비교검토 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "2045-07-21~2045-08-27 음성 대조군 18건에서는 rear gap, cold rectangle, generated closure가 동시에 나타난 사례가 없었다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-237 정식 편입",
+      "paragraphs": [
+        "2045-07-18 야간 인계전실 초동 보고에서는 현상을 `front-body delay film`, `회청 막층`, `T-237`로 병기했다.",
+        "2045-07-21~2045-08-03 통제 실험 결과, 핵심이 단순 비닐 잔류나 정전기 부착이 아니라 front shell과 actual body 사이의 지연 간극 형성과 절차 외피 편향임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 본문유예막**으로 확정하고, front-only closure cluster의 독립 항목으로 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A237/B237/R237 접두 및 분리봉인 기준",
+      "paragraphs": [
+        "front shell과 first visible host는 `A237-front`, 실제 회수된 body packet은 `B237-body`, separator·막편·rear-search trace는 `R237-trace` 접두를 사용한다.",
+        "세 접두 자료는 같은 sleeve, 같은 tray, 같은 provisional accession 보관란을 공유하지 않는다. 사진 촬영 시에도 한 프레임 안에 직접 접촉 상태로 배치하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "표준 현장 판별 시퀀스",
+      "paragraphs": [
+        "1) whole-host 질량 측정 → 2) 445 nm 경사광으로 하단 우측 sheen 확인 → 3) 열화상으로 rear cold rectangle 확인 → 4) footer hash·last page count 대조 → 5) 하단 우측 PET separator 삽입 → 6) rear-search 2.5 m 및 30분 재관찰 순으로 진행한다.",
+        "판별 중에는 host 지위를 확정하는 발화를 사용하지 않고, 결과 기록은 시간 스탬프 카드와 비음성 패들, 열화상 캡처 번호로 남긴다."
+      ]
+    },
+    {
+      "title": "배제 기준 및 음성 대조 조건",
+      "paragraphs": [
+        "신규 무인쇄 blank stock, RH 65% 이상 보관 직후 host, front/body가 이미 불투명 divider로 분리된 host, 금속 clip이 없는 단면less sheet는 현재까지 전부 음성이었다.",
+        "arrival line 또는 weight mark만 단독으로 있다고 해서 COS237로 판정하지 않는다. rear gap, cold rectangle, front/body 지표 분리 중 최소 2개 이상이 동시에 확인되어야 한다."
+      ]
+    }
+  ]
+}

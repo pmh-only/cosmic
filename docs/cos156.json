@@ -396,6 +396,15 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS156 — 무수령 인계대](./cos156.json)에서 `인계 완료`가 먼저 닫힌 자료의 실제 본문이 뒤늦게 회수될 때, 그 본문에 `후착`, `참조용`, `인계후` 같은 띠를 부여해 appendix나 late insert로 강등시키는 하류 단계로 확인되었다. 무수령 인계대 현장에서 뒤 슬롯·후면 포켓·rear guide에서 본문이 회수되더라도 late band를 인계 순서의 증거로 해석하지 말고, 최초 보유자·수령자 공란·body 회수 좌표를 함께 봉인한다."
       ]
+    },
+    {
+      "relatedId": 237,
+      "type": "reciprocal",
+      "title": "COS237 상호기록",
+      "paragraphs": [
+        "[COS237 — 회청색 본문유예막](./cos237.json) 양성 host에서는 인계 완료 상태가 actual body가 회수되기 전 front shell에 먼저 닫히는 사례가 반복 확인되었다. 2045-07-18~2045-08-27 대조 17건 중 6건은 recipient field가 닫혔으나 body는 같은 tray 후면 또는 2.5 m rear-search 구역에서 뒤늦게 회수되었고, 공통적으로 front/body 사이 3~18 mm 지연 간극과 rear cold rectangle이 선행되었다.",
+        "이는 [COS156 — 무수령 인계대](./cos156.json)가 독립적으로 수령자 공란을 만드는 경우 외에, COS237이 먼저 `현재 인계본`의 자리를 front shell에 귀속시킨 뒤 무수령 종결이 덧붙는 결합형이 존재함을 뜻한다. COS156 현장에서 whole-host 질량이 visible page 수와 맞지 않거나 front-only handoff가 과도하게 빨리 닫히면 recipient 확인보다 COS237 분리 절차와 2.5 m rear-search를 우선 시행한다."
+      ]
     }
   ],
   "supplementalSections": []

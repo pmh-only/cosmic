@@ -463,6 +463,15 @@
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json)와 [COS189 — 회청색 무재하중표](./cos189.json)가 결합한 3건에서는 empty front host가 actual body 없이도 declared weight 또는 14 N 이상 pull resistance를 획득했다. 실측 질량은 변하지 않았으므로, COS231은 하중 자체를 만드는 주체라기보다 COS189이 부여한 false load를 `현재 처리 중인 packet`에 고정하는 매개로 해석된다.",
         "따라서 COS189형 중량띠가 front-only shell에서 확인되면 적재본 존재를 가정하지 말고, leading edge의 A231 clip 여부와 rear body 위치를 먼저 대조한다. 하중 외형과 current authority가 동시에 붙은 host는 approval·release line에서 즉시 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 237,
+      "type": "reciprocal",
+      "title": "COS237 상호기록",
+      "paragraphs": [
+        "[COS189 — 회청색 무재하중표](./cos189.json)로 보였던 declared mass 일부는 [COS237 — 회청색 본문유예막](./cos237.json)이 front shell를 현재본으로 선점한 뒤 형성된 하류 외피일 가능성이 높다. COS237 양성 17건 중 12건은 visible paper 수와 실측 질량이 어긋났고, 그중 9건에서 kg 값 또는 weight line이 actual body가 아니라 front shell 면에만 남았다.",
+        "따라서 COS189 현장에서 회청색 하중 표식이 있으나 footer hash와 page count가 전면에서 확인되지 않으면 적재 오류만으로 처리하지 않는다. whole-host 계량, 하단 우측 sheen 확인, rear body search를 실시해 COS237 선행 여부를 먼저 배제한다."
+      ]
     }
   ],
   "supplementalSections": [

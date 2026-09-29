@@ -399,6 +399,15 @@
         "[COS225 — 회청색 인수대행서명](./cos225.json)은 [COS177 — 회청색 후열인계로](./cos177.json)의 후면 인계 상태가 전면 recipient field에서 `수령 완료`로 닫히는 대표적 말단 분기로 확인되었다. 2026-09-02 H-3 desk 사건과 2026-09-04~2026-09-06 통제 실험에서, 후열 trace를 지닌 front-only host 11건 중 7건이 실제 body를 뒤 경로에 남긴 채 회청색 recipient code 또는 시각 표식을 획득했다.",
         "이는 COS177이 빈 인계 절차를 뒤쪽으로 운반한 뒤, [COS225 — 회청색 인수대행서명](./cos225.json)이 그 절차의 도착·수령 상태만 전면 서명칸에 고정한 결과로 해석한다. COS177 자료가 인계데스크, release tray, handoff desk에 놓였을 때 recipient box가 노출되어 있으면, 해당 host를 정상 인수 대기본으로 취급하지 말고 COS225 분기 가능성을 우선 점검한다."
       ]
+    },
+    {
+      "relatedId": 237,
+      "type": "reciprocal",
+      "title": "COS237 상호기록",
+      "paragraphs": [
+        "[COS177 — 회청색 후열인계로](./cos177.json)로 분류된 일부 rear-line 회수본은 독립적인 후면 인계 경로 산물이 아니라 [COS237 — 회청색 본문유예막](./cos237.json)에서 유예된 actual body가 전면 shell과 분리된 뒤 뒤쪽 동선을 따라 드러난 사례로 재검토되고 있다. 2045-07-21~2045-08-27 양성 표본 5건에서 front shell은 원위치에 남았고, body만 0.5~2.5 m 후방 rail·service gap·rear rack에서 회수되었다.",
+        "따라서 COS177 현장에서 질량이 비정상적으로 낮은 front-only host와 footer hash를 유지한 delayed body가 한 쌍으로 발견되면, 후열 경로 단독 발생으로 확정하지 말고 COS237 선행 여부를 함께 대조한다. rear path 자체를 본문 provenance의 유일 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

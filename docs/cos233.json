@@ -308,6 +308,15 @@
       "paragraphs": [
         "후속 시험에서 COS233 중심점 점유자는 [COS109 — 회색 응답역](./cos109.json)의 무질문 응답문과 동일하게 질문 원문 없이 답변 형식만 남기는 양상을 보였다. 이는 COS109가 답변 형식을 먼저 만들고, COS233이 그 답변을 실제로 말한 사람 또는 장비가 있었던 것처럼 보이게 하는 물리적 목격 위치를 제공할 가능성을 시사한다. 따라서 COS233 진술서는 질문 원문 부재 기록과 분리하지 않고 함께 봉인한다."
       ]
+    },
+    {
+      "relatedId": 237,
+      "type": "reciprocal",
+      "title": "COS237 상호기록",
+      "paragraphs": [
+        "[COS233 — 사후 목격삼각](./cos233.json) 배치에서는 [COS237 — 회청색 본문유예막](./cos237.json) 양성 host의 front shell이 whole-host 전체로 오인될 위험이 증가한다. 2045-08-12, 2045-08-19 두 차례 검토에서 세 꼭짓점 관찰자는 모두 같은 front sheet를 `도착본 전부`로 진술했으나, 445 nm 경사광과 rear-search 결과 actual body가 후방 slot에서 추가 회수되었다.",
+        "따라서 COS233 환경에서 얻은 일치 진술은 front-body 일체성의 증거가 아니다. 삼각 목격이 형성된 host는 발화 진술보다 질량, footer hash, rear cold rectangle을 먼저 대조하고, 중심점 점유자의 단정적 `전부 확인` 진술은 증거 채택 전에 COS237 판별을 거친다."
+      ]
     }
   ],
   "supplementalSections": [

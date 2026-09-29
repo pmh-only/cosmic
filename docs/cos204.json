@@ -469,6 +469,15 @@
         "[COS204 — 회청색 보류인계슬리브](./cos204.json)의 front-only shell이 개방형 레일 또는 tray lip 위에서 90~420초 정지하면, 개구부 방향으로 [COS235 — 회청색 본문귀속궤](./cos235.json)가 연장되는 사례가 확인되었다. 2044-07-08~2044-07-14 연계 표본 6건 중 4건에서 sleeve mouth와 같은 방향의 평행선이 형성되었고, first-passage bundle이 provisional accession과 arrival preview를 선점했다.",
         "따라서 COS204 표본을 rail이나 tray lip에 장시간 두지 않으며, 하단 band가 붙은 타 묶음을 `원래 슬리브 contents`로 재편철하지 않는다. hold sleeve, capture bundle, actual body를 같은 tray에 재집합시키는 절차는 금지한다."
       ]
+    },
+    {
+      "relatedId": 237,
+      "type": "reciprocal",
+      "title": "COS237 상호기록",
+      "paragraphs": [
+        "[COS204 — 회청색 보류인계슬리브](./cos204.json)는 [COS237 — 회청색 본문유예막](./cos237.json)의 가장 흔한 host 운반체로 재분류되었다. 2045-07-18~2045-08-27 확정된 COS237 표본 17건 중 11건이 COS204 2~4단계 슬리브 내부 또는 개구 직후 상태에서 채집되었고, 공통적으로 first visible sheet가 sleeve mouth 쪽 current front를 선점했다.",
+        "그러나 COS204가 곧바로 COS237을 의미하지는 않는다. hold sleeve에서 front-only current mark, 질량 불일치, rear cold rectangle이 동시에 보이면 일반 재포장보다 COS237 분리 절차와 body search를 먼저 시행한다. 슬리브 mouth와 같은 tray에 front shell과 recovered body를 재집합시키는 조작은 금지한다."
+      ]
     }
   ],
   "supplementalSections": [
