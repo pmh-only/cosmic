@@ -346,6 +346,14 @@
         "정합이 형성된 host surface는 `H236-host-일련번호`, 경계 내부에 배치된 표본군은 `C236-set-일련번호`, 노출 중 생성된 종결 slip·OCR log·route label은 `R236-trace-일련번호` 접두를 부여한다.",
         "`H236`, `C236`, `R236`은 같은 tray, 같은 same-case bag, 같은 digital reconciliation folder를 공유하지 않는다. 해시·쪽수·질량·source/destination raw log의 4항 대조가 끝나기 전까지 generated closure는 원본 증거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 238,
+      "type": "reciprocal",
+      "title": "COS238 상호기록",
+      "paragraphs": [
+        "[COS236 — 회청색 정합대행면](./cos236.json) 노출 뒤 표본을 분리하면, unresolved conflict를 `해소 후 복귀`처럼 보이게 하는 [COS238 — 회청색 정본귀속패](./cos238.json)가 이어질 수 있다. generated 복귀표는 same-case conflict를 해결한 증거가 아니라, unresolved 표본을 primary body로 마무리하고 싶은 절차 압력의 산물로 취급한다."
+      ]
     }
   ],
   "supplementalSections": [

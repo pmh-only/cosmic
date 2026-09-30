@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 4,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2025-09-03과 2025-09-14 두 사건에서 실제 본문 검증 전에도 blank 복귀표가 `정본 복귀` 외형을 획득해 잘못된 chain 복원을 유도했다. 이 절차가 외부에 알려질 경우 회수본·증거물의 진정성을 `복구된 정본`이라는 명목으로 위장할 수 있어 높은 비공개 관리가 필요하다.",
+    "permission": "판정에는 rear-search 좌표, footer hash, 마지막 쪽수, 독립 질량·스테이플 간격, upstream host 기록, generated trace를 동시에 읽어야 했다. 부분 자료만 본 인원은 실제로 wrong candidate를 정본으로 올리려 했으므로 최소 열람 권한은 4가 적절하다.",
+    "chaos": "형성 자체는 `recovered body + blank rechain medium + unresolved upstream current cue` 조건에서 재현되었으나, onset는 34~412초로 넓게 흔들렸고 문구는 `정본 복귀`, `본문 본체`, `우선 복귀`, `검토후 정본` 사이에서 변동했다. 혼합 candidate가 있을 때는 어떤 body가 선택되는지 예측성이 특히 낮았다.",
+    "danger": "직접적인 생체 손상은 확인되지 않았지만, wrong body 1건이 정본 후보로 승격될 뻔했고 1건은 rear-search 종료를 19분 늦췄으며, release·arrival freeze 해제 시도가 2회 발생했다. 기록 무결성과 후속 운영 판단에 대한 위해가 높으므로 4로 분류한다.",
+    "popularity": "임시등록 T-238 발령 후 29일 동안 rear recovery, rechain audit, provenance correction 회의에서 직접 참조 19건이 기록되었다. front/body 분리 계열의 핵심 교정 단계에서 자주 호출되지만 기관 전체 최상위 허브 수준은 아니므로 3으로 평가한다.",
+    "containment": "양성 body를 회수 30초 내 불투명 sleeve로 격리하고, blank 복귀표를 1m 밖으로 배제하며, upstream host와 3m 이상 분리하고, 4항 검증이 끝날 때까지 remote rechain만 허용해야 안정적으로 억제되었다. 개별 조치만 적용한 군에서는 재형성 또는 trace 전이가 반복되어 관리 강도는 4가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 K-17",
+        "role": "선임 기록분석관",
+        "status": "active",
+        "involvement": "Q-6 rear rechain bench 최초 사건을 봉인하고 generated 복귀표를 정본 증거가 아닌 하류 외피로 분류했다. 이후 T-238 임시등록과 4항 검증 절차를 승인했다."
+      },
+      {
+        "name": "보존기사 L-31",
+        "role": "격리보관동 운용기사",
+        "status": "active",
+        "involvement": "445 nm 사광·열영상·질량 대조를 수행하고, 30초 opaque isolation과 3m 분리 규칙을 실험적으로 검증했다."
+      },
+      {
+        "name": "감사분석관 R-09",
+        "role": "체인오브커스터디 감사관",
+        "status": "active",
+        "involvement": "초기 사건에서 generated 복귀표를 보고 정본 복귀를 승인하려 했으나 hash 대조 전 서명한 판단을 자진 보고했다. 이후 source/destination freeze 해제 기준 재설계에 참여했다."
+      },
+      {
+        "name": "재체인보조 P-11",
+        "role": "rear-search 분류 보조",
+        "status": "reassigned",
+        "involvement": "혼합 candidate를 같은 재체인 tray에 올려 잘못된 정본 후보 지정을 유발했고, 이후 active recovery 표본 직접 취급 업무에서 제외되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-09-03 19:04 KST",
+        "label": "최초 정본귀속패 확인",
+        "description": "중앙기록보존동 3층 remote rechain room Q-6에서 [COS227 — 회청색 후면적체벽](./cos227.json) 회수군과 [COS237 — 회청색 본문유예막](./cos237.json) 분리 host를 재체인하던 중 blank 복귀표 `RS-Q6-03`에 `정본 복귀 / 41p`가 형성되었다."
+      },
+      {
+        "date": "2045-09-05 08:40 KST",
+        "label": "두 번째 독립 사례",
+        "description": "제2보존동 1층 release audit cage L-2에서 [COS220 — 회청색 반출대행패](./cos220.json)와 [COS221 — 회청색 도착대행패](./cos221.json) 연계 사건의 recovered body 옆 blank 복귀 창이 `원본문 우선 / 인계후 복귀`를 획득해 dual freeze 해제가 시도되었다."
+      },
+      {
+        "date": "2045-09-09 13:00 KST",
+        "label": "통제 실험 개시",
+        "description": "Q-6 격리 bench에서 blank rechain slip 거리, candidate 수, opaque isolation 시간, closure cue 영향, same-tray 재집합 금지 조건을 비교하는 5계열 실험이 시작되었다."
+      },
+      {
+        "date": "2045-09-14 16:22 KST",
+        "label": "혼합 candidate 오지정 near miss",
+        "description": "release audit L-2에서 mixed recovery cluster 2건 중 wrong candidate가 generated 복귀표에 의해 primary body로 선택될 뻔한 사건이 발생했고, 4항 검증이 즉시 의무화되었다."
+      },
+      {
+        "date": "2045-09-21 11:05 KST",
+        "label": "30초 opaque isolation 검증 완료",
+        "description": "양성 예상 recovered body를 회수 30초 내 black PE sleeve로 격리하고 upstream host와 3m 이상 분리한 군 10건에서 재형성 0건이 확인되었다."
+      },
+      {
+        "date": "2045-10-01 09:30 KST",
+        "label": "정식 편입안 승인",
+        "description": "확정 사례 13건과 통제 실험 50회를 바탕으로 T-238이 `회청색 정본귀속패`로 정식 편입되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-238-01",
+        "date": "2045-09-03",
+        "location": "중앙기록보존동 3층 remote rechain room Q-6",
+        "title": "혼합 rear candidate에 대한 잘못된 정본 후보 지정",
+        "involvedPersonnel": [
+          "기록관 K-17",
+          "보존기사 L-31",
+          "감사분석관 R-09",
+          "재체인보조 P-11"
+        ],
+        "narrative": [
+          "Q-6로 이송된 표본군은 [COS237 — 회청색 본문유예막](./cos237.json) host `A237-front-05`, rear-search에서 회수된 실제 body `B237-body-05`, 그리고 같은 cavity에서 함께 나온 `C227-candidate-03`으로 구성되어 있었다. K-17은 세 표본을 서로 다른 불투명 tray에 유지한 채 remote rechain을 진행하려 했으나, P-11은 `사진 한 장만 먼저 찍고 분리하겠다`며 matte black rechain mat 위에 `B237-body-05`와 `C227-candidate-03`를 11 cm 간격으로 올리고 blank 복귀표 `RS-Q6-03`를 그 사이 14 cm 지점에 두었다. 위쪽 26 cm에는 `A237-front-05`가 여전히 보이는 상태로 남아 있었다. 57초 뒤 `RS-Q6-03` 하단 6 mm에 회청색 띠가 생기고 `정본 복귀 / 41p / -05`가 읽혔다.",
+          "P-11은 lower edge가 더 가지런하고 front shell과 가까운 `C227-candidate-03`를 우선 후보로 판단해 slip를 그 위에 올리려 했고, R-09는 같은 문구를 보고 `primary restored` 기입을 시작했다. L-31은 footer hash 끝 8자와 마지막 쪽수 41이 candidate와 맞지 않는다는 점을 지적하고 물리 접촉을 중단시켰다. 이어진 대조에서 `C227-candidate-03`는 39쪽에서 끝나고 hash가 `B237-body-05`와 불일치했으며, 실제 `B237-body-05`만이 original manifest와 일치했다. generated 복귀표는 wrong candidate를 검증한 것이 아니라 가장 current하게 보이는 body를 선택한 것으로 판단되었다."
+        ],
+        "outcome": "wrong candidate의 정본 승격은 직전에 차단되었다. `RS-Q6-03`은 `A238-pass-01`, wrong candidate는 `C238-candidate-01`, true body는 `B238-body-01`로 분리 봉인되었고, T-238 임시등록이 발령되었다."
+      },
+      {
+        "code": "INC-238-02",
+        "date": "2045-09-05",
+        "location": "제2보존동 1층 release audit cage L-2",
+        "title": "복귀표에 의한 조기 freeze 해제 시도",
+        "involvedPersonnel": [
+          "기록관 K-17",
+          "보존기사 L-31",
+          "감사분석관 R-09"
+        ],
+        "narrative": [
+          "L-2 사건은 [COS220 — 회청색 반출대행패](./cos220.json) `A220-pass-02`, [COS221 — 회청색 도착대행패](./cos221.json) `A221-pass-03`, 그리고 후방 correction guide에서 회수된 `B220-body-04`를 동시에 재감사하던 중 발생했다. K-17은 source/destination dual freeze를 유지한 상태에서 actual body를 별도 확인하려 했으나, R-09는 조치 시간을 줄이기 위해 blank 복귀 창 `RL-L2-11`을 body 오른쪽 19 cm 위치에 두고 generated arrival receipt를 27 cm 후방에 남겨 두었다. 88초 뒤 `RL-L2-11`에는 `원본문 우선 / 인계후 복귀`가, body 왼쪽 아래에는 약한 4.8 mm 회청색 띠가 동시에 나타났다.",
+          "R-09는 이를 근거로 source freeze를 먼저 해제하고 body를 main chain으로 되돌리려 했으나, L-31은 generated 문구의 page total `23`이 arrival receipt와 같고 actual body의 마지막 쪽수 `21`과는 다르다는 점을 보고 동작을 멈추게 했다. 2.5 m rear-search를 재개한 결과, 빠져 있던 마지막 2쪽과 appendix 1매가 1.6 m 뒤 correction pouch 후미에서 별도로 회수되었다. `B220-body-04`가 primary body인 것은 맞았지만, generated 복귀표는 recovery가 끝나기도 전에 `정본 복귀 완료` 외형을 먼저 닫아 수색을 19분 일찍 끝낼 뻔했다."
+        ],
+        "outcome": "dual freeze는 유지되었고 `RL-L2-11`은 `A238-pass-02`로 봉인되었다. 이 사건 뒤 `정본 복귀` 문구가 나타나더라도 rear-search 2.5 m와 4항 검증 종료 전에는 어떠한 freeze도 해제할 수 없도록 규정이 개정되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "A238-pass-01",
+        "type": "generated rechain pass",
+        "description": "Q-6 사건에서 형성된 blank 복귀표 `RS-Q6-03` 원본. 하단 6 mm 회청색 띠와 `정본 복귀 / 41p / -05` 표기가 남아 있으며 필압, 토너, 수기 잉크는 검출되지 않았다.",
+        "custodyStatus": "불투명 PTFE frame PF-238-1에 단독 봉인, body·host와 동봉 금지"
+      },
+      {
+        "code": "V238-01",
+        "type": "4K·445nm·열영상 동기화 세트",
+        "description": "INC-238-01과 INC-238-02의 측면 4K 영상, 445 nm 사광 영상, 열화상 파일. 복귀표 onset, wrong candidate 쪽 lower-edge 정렬, 2.5 m 재수색 전후 배치가 같은 타임코드로 기록되어 있다.",
+        "custodyStatus": "영상금고 D-12 read-only 보관, 해시 고정 및 외부 복제 금지"
+      },
+      {
+        "code": "B238-set-01",
+        "type": "candidate/actual body comparison set",
+        "description": "`B237-body-05`, `C227-candidate-03`, `B220-body-04`와 각 original manifest의 footer hash, 마지막 쪽수, 실측 질량, staple interval 대조표를 묶은 자료. generated 복귀표의 지정과 실제 provenance가 일치하지 않거나 불완전함을 입증한다.",
+        "custodyStatus": "본문 전용 보존함 B-238-1/2/3에 개별 봉인, 한 tray 동시 반출 금지"
+      },
+      {
+        "code": "R238-trace-02",
+        "type": "freeze/route/arrival trace logs",
+        "description": "L-2 사건의 dual freeze 유지 로그, source·destination raw logs, generated arrival receipt 사본, 복귀표 발생 후 attempted release cancel 기록을 포함한다.",
+        "custodyStatus": "감사서버 AUD-238 read-only 보관, 원본 로그와 추출본 분리"
+      },
+      {
+        "code": "T238-aux-01",
+        "type": "blank restoration media set",
+        "description": "양성에 사용된 blank rechain slip 12점, label window 8점, pouch card 6점의 재질·치수·반응 로그 묶음. paper, carbonless, Tyvek 계열 중 blank window와 rechain slip에서만 안정 양성이 관찰되었다.",
+        "custodyStatus": "재현실 Q-6 잠금 캐비닛 3호 보관, active body와 1 m 이내 반입 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 K-17",
+        "role": "선임 기록분석관",
+        "context": "INC-238-01 직후 봉인 메모",
+        "statement": "내가 본 사실은 blank 복귀표가 먼저 정본을 지정했고, 그 지정을 따르려던 candidate의 hash와 쪽수가 맞지 않았다는 점이다. `정본 복귀`라는 문구를 보고 실제 복구가 완료되었다고 느낀 것은 해석이지 검증 결과가 아니었다."
+      },
+      {
+        "speaker": "보존기사 L-31",
+        "role": "격리보관동 운용기사",
+        "context": "2045-09-21 억제 시험 종료 보고",
+        "statement": "이 표식은 body를 찾는 것이 아니라 이미 current해 보이는 것을 골라 붙인다. 가장자리와 거리에는 민감했지만 hash에는 민감하지 않았다. 이 문장은 내 해석이지만, 현재까지의 대조값은 그 해석을 반박하지 못했다."
+      },
+      {
+        "speaker": "감사분석관 R-09",
+        "role": "체인오브커스터디 감사관",
+        "context": "INC-238-02 사후 자필 진술",
+        "statement": "복귀표가 뜬 순간 freeze를 풀어도 된다고 판단했다. 그 판단은 내 추정이었고, 나중에 보니 문구가 맞춘 것은 route와 page total 일부뿐이었다. 실제 본문 회수가 끝났다는 사실은 그 문구만으로 확인되지 않았다."
+      }
+    ]
+  },
+  "id": 238,
+  "title": "회청색 정본귀속패",
+  "language": "ko-KR",
+  "overview": [
+    "**COS238**은 rear-search로 회수된 actual body 옆의 blank rechain slip, pouch label window, 복귀표 카드에 형성되는 **회청색 정본 지정 표식**이다. 현재 통칭은 **회청색 정본귀속패**이다.",
+    "표식은 `정본 복귀`, `본문 본체`, `우선 복귀`, `검토후 정본`처럼 1~2행의 짧은 문구와 lower band로 나타나며, 특정 recovered body를 원사슬의 primary body로 되돌린 것처럼 보이게 만든다. 그러나 현재까지 확인된 사례에서 COS238는 provenance를 검증하지 않았고, mixed recovery cluster에서는 wrong candidate를 선택하거나 rear-search를 조기 종료시키는 방향으로만 작동했다.",
+    "2045-09-03부터 2045-10-01까지 확정 사례 13건, 잠정 사례 4건이 기록되었다. 확정 사례 중 8건은 [COS227 — 회청색 후면적체벽](./cos227.json) 또는 [COS234 — 회청색 본문회수반](./cos234.json) rear recovery 뒤에, 5건은 [COS237 — 회청색 본문유예막](./cos237.json) 분리 host 교정 과정에서 발생했다."
+  ],
+  "identificationTraits": [
+    "형성 숙주는 blank rechain slip, opaque pouch의 label window, blank body-return card처럼 **본문이 없는 복귀용 매체**였다. 크기는 76×127 mm에서 102×152 mm 사이가 가장 흔했고, plain paper와 carbonless stock에서 재현률이 높았다.",
+    "445±5 nm 사광에서 하단 4~8 mm의 회청색 띠가 먼저 나타나고, 1~2행의 짧은 문구가 34~412초 사이에 안정된다. 가시광만으로는 흐릿한 회색 밴드처럼 보이는 경우가 많다.",
+    "문구는 `정본 복귀`, `원본문 우선`, `본문 본체`, `검토후 정본`, accession 말미 2~4자리, page total 일부에 집중되며, 안정된 단락이나 footer hash 전체는 형성되지 않았다.",
+    "generated 복귀표는 pen pressure, 토너 축적, 필기 진입·이탈 압흔을 남기지 않았다. 현미경 대조에서 manual writing과 달리 획 깊이는 17~24 μm 범위로 균일했고 시작점 잉크 과적이 없었다.",
+    "mixed candidate가 둘 이상 있을 때는 footer hash보다 lower-edge 정렬과 blank medium과의 거리(대체로 35 cm 이하)에 민감했다. 올바른 body 선택률은 7회 중 2회에 그쳤다.",
+    "actual body를 회수 30초 내 black PE sleeve에 넣고 upstream host와 3m 이상 분리하면 현재까지 10/10에서 재현이 억제되었다."
+  ],
+  "discovery": [
+    "2045-09-03 19:04 KST, 중앙기록보존동 3층 remote rechain room Q-6에서 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity 회수군을 정리하던 중 blank 복귀표 `RS-Q6-03`에 `정본 복귀 / 41p / -05`가 형성되었다. 당시 같은 room에는 [COS237 — 회청색 본문유예막](./cos237.json) host `A237-front-05`, true body `B237-body-05`, mixed candidate `C227-candidate-03`이 30 cm 이내로 동시에 노출되어 있었다.",
+    "초기에는 recovered body를 식별하기 위한 내부 정리 메모가 뒤늦게 드러난 것으로 해석되었으나, 현장 4K/IR 동기화 영상과 수기 기록을 대조한 결과 문구는 blank slip에 무접촉으로 형성되었고, 지시 대상이 된 candidate는 true body와 footer hash가 일치하지 않았다. 즉 표식은 복구 결과가 아니라 복구 판단을 먼저 닫고 있었다.",
+    "두 번째 독립 사례는 2045-09-05 L-2 release audit cage에서 확인되었다. [COS220 — 회청색 반출대행패](./cos220.json)와 [COS221 — 회청색 도착대행패](./cos221.json) 연계 사건의 recovered body 옆 blank 복귀 창에 `원본문 우선 / 인계후 복귀`가 형성되었고, 2.5 m 재수색 전 freeze 해제가 시도되었다. 이 사례로 COS238은 [COS232 — 회청색 후착본문띠](./cos232.json)처럼 actual body의 지위를 지연·강등하는 현상이 아니라, **지연된 body를 premature하게 복권하는 하류 외피**로 잠정 구분되었다.",
+    "2045-09-09~2045-09-21 통제 실험에서 단일 body보다 mixed rear recovery cluster, blank return medium, upstream current cue가 함께 있을 때 양성률이 높아 독립 항목으로 정식 승격되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS238은 `body가 회수되었다`는 사실보다 `이 body를 이제 primary로 돌려도 된다`는 절차 결론을 먼저 생성한다.",
+      "표식은 actual body 그 자체보다 body 옆의 blank 복귀 매체에서 시작되는 경우가 많았고, 이 때문에 운영자는 generated slip를 교정 도구로 오인하기 쉽다.",
+      "wrong body 지정, rear-search 조기 종료, source/destination freeze 조기 해제가 가장 큰 실무 위험으로 확인되었다."
+    ],
+    "stages": [
+      {
+        "name": "후면 회수 완료 직후 노출",
+        "description": "actual body 또는 candidate body가 rear cavity, recovery tray, delay host에서 회수된 뒤 opaque isolation 전에 blank rechain slip·label window·복귀 카드와 같은 매체와 같은 시야선에 놓인다."
+      },
+      {
+        "name": "우선 body 선택",
+        "description": "mixed candidate가 있을 경우 hash와 관계없이 lower edge가 더 가지런하거나 current cue에 더 가까운 body가 blank medium의 기준점처럼 작동한다."
+      },
+      {
+        "name": "정본귀속패 형성",
+        "description": "blank medium에 회청색 lower band와 `정본 복귀`, `원본문 우선`, accession 말미, page total 일부가 1~2행으로 형성된다. 이 단계에서 운영자는 selected body를 primary body로 되돌리고 싶다는 압력을 강하게 느낀다."
+      },
+      {
+        "name": "조기 복구 압력",
+        "description": "rechain, source/destination freeze 해제, route closure 정리, late-body flag 해제 같은 후속 절차가 실제 rear-search와 4항 검증보다 먼저 시도된다. 일부 사례에서는 wrong candidate가 이 단계에서 선택되었다."
+      },
+      {
+        "name": "분리 또는 전이",
+        "description": "불투명 격리와 거리 이격을 적용하면 표식은 3~17분 안에 약화되지만, 이미 생성된 slip, label, console trace는 자연 소거되지 않는다. 단순 차폐나 same-tray 재집합은 [COS205 — 회청색 대조합치막](./cos205.json)이나 [COS236 — 회청색 정합대행면](./cos236.json) 재발을 촉진할 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS238의 가장 흔한 upstream source는 [COS227 — 회청색 후면적체벽](./cos227.json), [COS234 — 회청색 본문회수반](./cos234.json), [COS237 — 회청색 본문유예막](./cos237.json)에서 회수된 delayed actual body였다.",
+      "wording과 closure pressure는 [COS219 — 회청색 종결전사패](./cos219.json), [COS220 — 회청색 반출대행패](./cos220.json), [COS221 — 회청색 도착대행패](./cos221.json), [COS232 — 회청색 후착본문띠](./cos232.json), [COS236 — 회청색 정합대행면](./cos236.json), [COS205 — 회청색 대조합치막](./cos205.json)와 결합할 때 가장 강해졌다."
+    ],
+    "entries": [
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json)으로 형성된 false pair를 해제한 뒤에도 wrong body와 front shell 근처에 blank 복귀표가 남아 있으면 COS238이 wrong candidate를 `정본 복귀` 대상으로 다시 선택할 수 있다. 즉 COS205가 `같아 보이는 쌍`을 만들고, COS238은 그 잘못된 쌍을 `이제 복구된 정본`처럼 닫는 후속 단계가 된다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "[COS219 — 회청색 종결전사패](./cos219.json) generated card가 20 cm 이내에 있을 때 COS238 문구는 `검토후 정본`, `청취후 복귀`, `종결 후 본체`처럼 종결 어휘를 더 자주 포함했다. 이는 COS219가 closure cue를 제공하고 COS238가 이를 recovered body의 primary status로 오인시키는 구조를 시사한다."
+      },
+      {
+        "targetId": 220,
+        "targetTitle": "회청색 반출대행패",
+        "description": "[COS220 — 회청색 반출대행패](./cos220.json)의 outbound route field와 declared mass가 nearby source로 남아 있을 때 COS238는 `복귀 완료`, `재반출 본체`와 같은 표현을 획득했다. 이 조합은 wrong outbound 이후 actual body가 정말 복구되었는지와 무관하게 source 쪽 절차를 먼저 닫게 만든다."
+      },
+      {
+        "targetId": 221,
+        "targetTitle": "회청색 도착대행패",
+        "description": "[COS221 — 회청색 도착대행패](./cos221.json) generated arrival receipt가 nearby cue로 존재하면 COS238는 `원본문 우선`, `인수후 복귀`, cabinet code 일부를 가져올 수 있다. source와 destination가 모두 closure 외피를 가진 상태에서 COS238가 형성되면 body 회수가 끝났는지와 무관하게 end-to-end completion처럼 보이는 위험한 조합이 된다."
+      },
+      {
+        "targetId": 227,
+        "targetTitle": "회청색 후면적체벽",
+        "description": "[COS227 — 회청색 후면적체벽](./cos227.json)은 COS238의 가장 흔한 upstream source였다. rear cavity에서 회수된 mixed candidate cluster는 실제 본문과 wrong candidate를 함께 노출시키므로, blank 복귀표가 가장 먼저 `그럴듯한` body를 primary candidate로 지명하기 쉽다."
+      },
+      {
+        "targetId": 232,
+        "targetTitle": "회청색 후착본문띠",
+        "description": "[COS232 — 회청색 후착본문띠](./cos232.json)가 붙은 actual body를 `원본문으로 되돌리기` 위해 blank 복귀표를 근처에 두면 COS238가 높은 빈도로 발생했다. 그러나 이 경우 late-body band가 해결된 것이 아니라, `늦은 본문`이라는 강등 외피가 `복귀된 정본`이라는 반대 외피로 이동했을 뿐일 수 있다."
+      },
+      {
+        "targetId": 234,
+        "targetTitle": "회청색 본문회수반",
+        "description": "[COS234 — 회청색 본문회수반](./cos234.json)에서 회수된 body는 같은 tray 출신이라는 이유만으로 하나의 current body 후보군으로 오인되기 쉽다. COS238는 이 mixed recovery 환경에서 first-exposed body나 lower-edge가 가지런한 body를 정본 후보로 지정해, 실제 provenance 대조를 더 어렵게 만든다."
+      },
+      {
+        "targetId": 236,
+        "targetTitle": "회청색 정합대행면",
+        "description": "[COS236 — 회청색 정합대행면](./cos236.json)에서 provenance conflict를 같은 건처럼 읽은 뒤 표본을 분리하면, blank rechain slip 위에 COS238가 형성되어 `해소 후 정본 복귀`처럼 보일 수 있다. 즉 COS236가 unresolved conflict를 closure 쪽으로 기울이고, COS238는 그 closure를 primary body 확정으로 잘못 마무리한다."
+      },
+      {
+        "targetId": 237,
+        "targetTitle": "회청색 본문유예막",
+        "description": "[COS237 — 회청색 본문유예막](./cos237.json) 분리 host에서 회수된 actual body는 front shell과 같은 공간에 여전히 current cue를 남긴다. 이 상태에서 blank 복귀표를 두면 COS238가 body를 복권하는 것이 아니라 `front shell의 current authority를 body에 붙여넣은 것처럼` 보이게 하므로, 분리 완료 전 rechain을 서두르면 위험하다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-238-01 / blank 복귀표 거리 행렬",
+      "description": "2045-09-09~09-10, Q-6 격리 bench에서 rear-recovered body 12건과 blank rechain slip 24장을 사용해 5 cm, 15 cm, 30 cm, 60 cm 거리군을 비교했다. 445 nm 510 lx, 22.1°C, RH 46% 조건에서 5 cm군 5/6, 15 cm군 4/6, 30 cm군 2/6이 양성이었고 60 cm군은 0/6이었다. complete packet 대조군 12회는 전부 음성이었다."
+    },
+    {
+      "label": "EXP-238-02 / 단일 body vs mixed candidate 시험",
+      "description": "single recovered body 8회와 mixed rear-recovery candidate 2개 이상을 포함한 군 8회를 비교했다. single body군은 2/8에서 약한 `본문` 표식만 나타났고 wrong nomination은 0건이었으나, mixed군은 7/8에서 full pass가 형성되었고 그중 5건은 footer hash가 다른 candidate를 먼저 지명했다. COS238는 body 존재 자체보다 경쟁 후보가 있는 상황에서 강해졌다."
+    },
+    {
+      "label": "EXP-238-03 / 30초 opaque isolation 검증",
+      "description": "양성 예상 body 10건을 회수 즉시 30초 내 black PE sleeve에 넣은 군과 90초 노출군 10건, 180초 노출군 10건으로 나누었다. 30초군은 0/10, 90초군은 8/10, 180초군은 9/10에서 복귀표가 형성되었다. 30초군에서도 body 자체의 hash와 pagination은 유지되어 suppression은 provenance 손상을 유발하지 않았다."
+    },
+    {
+      "label": "EXP-238-04 / closure cue 영향 시험",
+      "description": "[COS219 — 회청색 종결전사패](./cos219.json) generated card 근접군 6회, [COS220 — 회청색 반출대행패](./cos220.json)/[COS221 — 회청색 도착대행패](./cos221.json) trace 근접군 6회, blank control 6회를 비교했다. 종결패 근접군은 4/6에서 `검토후 정본`, 반출·도착 trace 근접군은 5/6에서 `복귀 완료`, `인수후 복귀` 계열 문구를 보였고, blank control은 1/6의 약한 lower band만 나타났다."
+    },
+    {
+      "label": "EXP-238-05 / same-tray 재집합 금지 시험",
+      "description": "generated 복귀표가 형성된 body와 front shell을 같은 tray에 다시 올린 군 6회와 서로 다른 station에서 remote rechain한 군 6회를 비교했다. same-tray 군은 4/6에서 [COS205 — 회청색 대조합치막](./cos205.json) 또는 [COS236 — 회청색 정합대행면](./cos236.json) 재발이 확인되었고, remote 군은 0/6이었다. generated 복귀표를 근거로 한 현장 재삽입은 금지해야 함이 확인되었다."
+    }
+  ],
+  "handlingProcedures": [
+    "rear-search로 회수된 actual body는 blank rechain slip, pouch label window, approval cover, note card와 1 m 이내에 두지 않는다.",
+    "actual body를 회수한 뒤 30초 내 black PE evidence sleeve에 넣고, upstream front shell·generated closure card·arrival/outbound pass와 3 m 이상 분리한다.",
+    "generated `정본`, `본문 본체`, `우선 복귀` 문구는 그 자체로 primary chain 복귀의 근거가 아니다. 우선 `A238-pass`로 분리 봉인하고 body는 `B238-body`로 별도 보존한다.",
+    "정본 복귀 여부는 4항 검증으로만 판정한다. `1)` footer hash, `2)` 마지막 쪽수와 pagination, `3)` 독립 질량·staple interval, `4)` rear-search 회수 좌표와 source/destination raw log가 모두 일치해야 한다.",
+    "wrong candidate 가능성이 있는 mixed cluster는 same-tray 위에 펼쳐 놓지 않고 번호가 매겨진 불투명 tray에 하나씩 분리한다. 가장 앞에 나온 body나 lower-edge가 가지런한 body를 우선 후보로 삼지 않는다.",
+    "[COS220 — 회청색 반출대행패](./cos220.json) 또는 [COS221 — 회청색 도착대행패](./cos221.json) trace가 nearby cue로 있으면 source/destination freeze를 유지한 채 body 검색을 먼저 끝낸다. generated 복귀표를 근거로 freeze를 해제하지 않는다.",
+    "[COS232 — 회청색 후착본문띠](./cos232.json)가 있는 body는 `late` 표식을 지우거나 가리지 말고 body 전체를 opaque sleeve로 옮긴다. 차폐 strip만 붙이면 late cue가 slip·tray label로 이동할 수 있다.",
+    "generated 복귀표의 문구를 현장에서 소리 내어 읽거나 chain slip에 그대로 옮겨 적지 않는다. 기록은 code paddle과 타임스탬프만 사용하고, 문구 판독은 별도 광학 판독실에서 실시한다.",
+    "분리 또는 해제 뒤 30분 동안 rear zone과 nearby blank stock을 재관찰해 second pass가 형성되지 않는지 확인한다. 추가 cue가 없더라도 4항 검증이 끝날 때까지 remote rechain 외 조치를 금지한다."
+  ],
+  "hypotheses": [
+    "가설 1: COS238은 rear-recovered body를 올바르게 확인하는 현상이 아니라, `이제 이 body를 원래 자리로 돌려야 한다`는 **교정 절차의 기대**가 blank 매체에 먼저 외피로 응결한 결과일 수 있다.",
+    "가설 2: [COS227 — 회청색 후면적체벽](./cos227.json)과 [COS234 — 회청색 본문회수반](./cos234.json)이 mixed candidate cluster를 공급하고, [COS237 — 회청색 본문유예막](./cos237.json)과 [COS232 — 회청색 후착본문띠](./cos232.json)가 current body의 지위를 흔들어 놓을 때 COS238 형성률이 가장 높았다. 즉 COS238는 body recovery 자체보다 `recovery를 정리하려는 순간`에 강해진다.",
+    "가설 3: generated 복귀표가 선택하는 기준은 provenance보다 lower-edge 정렬, page total 일부, route/closure cue proximity일 가능성이 높다. mixed군 7회 중 5회에서 wrong candidate를 고른 점은 이 가설을 지지하지만, 아직 결정 규칙을 수식화할 만큼 표본이 충분하지 않다.",
+    "가설 4: [COS219 — 회청색 종결전사패](./cos219.json), [COS220 — 회청색 반출대행패](./cos220.json), [COS221 — 회청색 도착대행패](./cos221.json) 같은 downstream closure cue는 COS238의 wording을 바꾸지만, true body를 고르는 정확도를 높이지 않는다. 따라서 generated 복귀표는 corrective note가 아니라 corrective pressure의 부산물일 수 있다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "wrong primary body 지정 위험",
+      "assessment": "매우 높음. mixed recovery cluster에서 generated 복귀표는 hash가 맞지 않는 body도 `정본`으로 승격할 수 있다."
+    },
+    {
+      "category": "rear-search 조기 종료 위험",
+      "assessment": "높음. `원본문 우선` 또는 `복귀 완료` 문구가 나타나면 남은 body·appendix 수색을 끝냈다고 느끼기 쉬우며, 실제로 1건에서 마지막 2쪽 회수가 19분 지연되었다."
+    },
+    {
+      "category": "체인 오브 커스터디 조기 정상화 위험",
+      "assessment": "높음. source/destination freeze 해제, rechain 승인, appendix 해제가 4항 검증 전에 진행될 수 있다."
+    },
+    {
+      "category": "same-tray 재집합에 따른 재오염 위험",
+      "assessment": "중간 이상. generated 복귀표가 있는 상태에서 body와 front shell을 같은 tray에 다시 올리면 [COS205 — 회청색 대조합치막](./cos205.json) 또는 [COS236 — 회청색 정합대행면](./cos236.json) 재발 가능성이 높다."
+    },
+    {
+      "category": "운영자 신뢰 편향 위험",
+      "assessment": "높음. 표식이 교정용 문구처럼 보이기 때문에 숙련 인원도 `위험 표식`보다 `해결 표식`으로 읽는 경향이 강하다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS238에서 가장 위험한 순간은 오류가 발생할 때가 아니라 **오류가 해결된 것처럼 보일 때**다. generated 복귀표는 교정 절차를 끝내라는 압력을 만들지만, 현재까지 그것만으로 provenance를 정확히 복원한 사례는 없다."
+    },
+    {
+      "type": "quotation",
+      "content": "`정본 복귀 / 41p / -05`"
+    },
+    {
+      "type": "paragraph",
+      "content": "위 문구가 처음 기록된 Q-6 사건에서는 실제로 page 41이 wrong candidate에 존재하지 않았다. 숫자와 복귀 어휘가 함께 있다고 해서 true body와 일치하는 것은 아니다."
+    },
+    {
+      "type": "quotation",
+      "content": "“복구된 것처럼 보이는 표식이 제일 위험했다. 찾았다는 확신이 검색을 멈추게 했기 때문이다.” — 기록관 K-17, 2045-09-05 교정 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "2045-10-01까지 4항 검증을 통과한 generated 복귀표는 0건이다. COS238는 아직 한 번도 단독으로 `정본`을 입증하지 못했다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-238 정식 편입",
+      "paragraphs": [
+        "2045-09-03~2045-09-30 현장 기록에서는 현상을 `T-238`, `primary return slip`, `정본 복귀표`, `body restore card`로 병기했다.",
+        "통제 실험과 incident 검토 결과, 본 항목의 핵심은 actual body의 provenance 복원이 아니라 **복원 판단을 먼저 닫는 회청색 귀속패** 형성임이 확인되었다. 이에 공식 명칭을 **회청색 정본귀속패**로 확정하고 독립 항목으로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A238/H238/B238/T238 접두 및 4항 검증 규정",
+      "paragraphs": [
+        "generated 복귀표와 label window는 `A238-pass`, 형성 host surface는 `H238-host`, designated actual body 또는 candidate body는 `B238-body`, console·label·freeze·route 잔류는 `T238-trace` 접두를 부여한다.",
+        "`A238-pass`, `H238-host`, `B238-body`, `T238-trace`는 같은 tray, 같은 rechain bag, 같은 current chain hash를 공유하지 않는다.",
+        "정본 복귀 판단은 **footer hash**, **마지막 쪽수와 pagination**, **독립 질량·staple interval**, **rear-search 회수 좌표 및 source/destination raw log**의 4항이 모두 일치할 때만 승인한다. generated 복귀표는 이 판정의 대체물이 될 수 없다."
+      ]
+    },
+    {
+      "relatedId": 205,
+      "type": "reciprocal",
+      "title": "COS205 상호기록",
+      "paragraphs": [
+        "[COS205 — 회청색 대조합치막](./cos205.json)으로 false pair가 형성되거나 해제된 직후, wrong body와 front shell 근처에 blank 복귀표가 남아 있으면 [COS238 — 회청색 정본귀속패](./cos238.json)가 wrong candidate를 `정본 복귀` 대상으로 다시 지정할 수 있다. 따라서 false pair를 풀어냈다는 사실만으로 정본 복귀를 허용하지 않고, COS238 generated pass가 생긴 경우 hash·쪽수·회수 좌표를 다시 처음부터 대조한다."
+      ]
+    },
+    {
+      "relatedId": 219,
+      "type": "reciprocal",
+      "title": "COS219 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json) generated card가 recovered body 근처에 남아 있으면 [COS238 — 회청색 정본귀속패](./cos238.json)의 문구는 `검토후 정본`, `종결 후 복귀`처럼 종결 편향을 띠기 쉽다. 이때 generated card는 복귀 근거가 아니라 wording 증폭 조건이므로, COS238 현장에서 종결전사패를 먼저 제거·봉인한 뒤 body와 3 m 이상 분리한다."
+      ]
+    },
+    {
+      "relatedId": 220,
+      "type": "reciprocal",
+      "title": "COS220 상호기록",
+      "paragraphs": [
+        "[COS220 — 회청색 반출대행패](./cos220.json)의 outbound route field가 nearby cue로 남아 있는 상태에서 [COS238 — 회청색 정본귀속패](./cos238.json)가 형성되면, wrong outbound 뒤 `복귀 완료`가 즉시 닫힌 것처럼 보일 수 있다. source pass와 generated 복귀표가 동시에 존재할 경우 이는 교정 완료 증거가 아니라 미해결 release-chain conflict의 신호이므로, source freeze를 유지하고 rear body search 및 4항 검증을 먼저 끝낸다."
+      ]
+    },
+    {
+      "relatedId": 221,
+      "type": "reciprocal",
+      "title": "COS221 상호기록",
+      "paragraphs": [
+        "[COS221 — 회청색 도착대행패](./cos221.json) generated arrival receipt와 [COS238 — 회청색 정본귀속패](./cos238.json)가 함께 나타나면 source와 destination 양쪽이 모두 정상화된 것처럼 보이는 `end-to-end closure`가 생성될 수 있다. 그러나 실제 본문은 여전히 rear zone에 남아 있거나 불완전할 수 있으므로, arrival receipt와 복귀표를 각각 독립 trace로 분리하고 source/destination dual freeze를 동시에 유지한다."
+      ]
+    },
+    {
+      "relatedId": 227,
+      "type": "reciprocal",
+      "title": "COS227 상호기록",
+      "paragraphs": [
+        "[COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수된 mixed candidate cluster는 [COS238 — 회청색 정본귀속패](./cos238.json)의 가장 흔한 upstream source였다. 생성된 복귀표가 지목한 candidate가 가장 앞에 노출된 묶음이더라도 이를 actual body로 확정하지 않고, cavity provenance와 footer hash가 먼저 일치하는지 확인해야 한다."
+      ]
+    },
+    {
+      "relatedId": 232,
+      "type": "reciprocal",
+      "title": "COS232 상호기록",
+      "paragraphs": [
+        "[COS232 — 회청색 후착본문띠](./cos232.json)를 없애거나 무효화하려는 목적으로 blank 복귀표를 body 근처에 두면 [COS238 — 회청색 정본귀속패](./cos238.json)가 높은 빈도로 형성되었다. late-body band가 사라지거나 약화되어도 그것이 해결을 뜻하지 않을 수 있으므로, COS232와 COS238는 상쇄 관계가 아니라 지위 외피의 이동 가능성으로 함께 기록한다."
+      ]
+    },
+    {
+      "relatedId": 234,
+      "type": "reciprocal",
+      "title": "COS234 상호기록",
+      "paragraphs": [
+        "[COS234 — 회청색 본문회수반](./cos234.json)에서 나온 body가 하나의 tray에 함께 놓였다는 사실은 같은 사건의 본문이라는 증거가 아니다. mixed recovery tray에서 blank 복귀표가 형성될 경우 [COS238 — 회청색 정본귀속패](./cos238.json)는 가장 그럴듯한 묶음을 `정본`으로 지정해 same-tray recovery를 false provenance로 굳힐 수 있으므로, tray 출처 대신 hash와 page total을 우선한다."
+      ]
+    },
+    {
+      "relatedId": 236,
+      "type": "reciprocal",
+      "title": "COS236 상호기록",
+      "paragraphs": [
+        "[COS236 — 회청색 정합대행면](./cos236.json) 노출 뒤 표본을 분리하면, unresolved conflict를 `해소 후 복귀`처럼 보이게 하는 [COS238 — 회청색 정본귀속패](./cos238.json)가 이어질 수 있다. generated 복귀표는 same-case conflict를 해결한 증거가 아니라, unresolved 표본을 primary body로 마무리하고 싶은 절차 압력의 산물로 취급한다."
+      ]
+    },
+    {
+      "relatedId": 237,
+      "type": "reciprocal",
+      "title": "COS237 상호기록",
+      "paragraphs": [
+        "[COS237 — 회청색 본문유예막](./cos237.json) 분리 host에서 actual body를 회수한 직후 blank 복귀표를 가까이 두면 [COS238 — 회청색 정본귀속패](./cos238.json)가 front shell의 current authority를 body 쪽에 덧씌운 것처럼 보일 수 있다. 이는 body가 truly restored 되었다는 뜻이 아니라 separation을 너무 빨리 닫으려는 sign이므로, COS237 판정이 끝나기 전에는 generated 복귀표를 재체인 근거로 사용하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "정본 4항 검증표",
+      "paragraphs": [
+        "`1)` footer hash와 마지막 쪽수를 분리 상태에서 대조한다.\n`2)` 독립 질량·staple interval·page total을 확인한다.\n`3)` rear-search 회수 좌표와 source/destination raw log를 같은 타임코드로 비교한다.\n`4)` 30분 이격 재관찰 뒤에도 추가 candidate나 pass가 생성되지 않는지 확인한다.",
+        "네 항목 중 하나라도 불일치하면 generated 복귀표는 `A238-pass`로만 봉인하고 body는 primary chain 승인 없이 `B238-body` 상태로 유지한다."
+      ]
+    },
+    {
+      "title": "억제 조건 검증 요약",
+      "paragraphs": [
+        "회수 30초 내 black PE sleeve 격리, upstream host 및 closure cue 3 m 이상 분리, blank 복귀표·label window·approval cover 1 m 배제, 무구두 code paddle 운용을 동시에 적용한 군에서는 10/10 음성이었다.",
+        "반대로 same-tray 재집합, generated 문구 육성 판독, blank rechain medium 근접 배치, release/arrival trace 방치가 포함된 군에서는 20회 중 15회가 양성이었다. 현재까지 가장 강한 억제 수단은 `즉시 격리 + 거리 분리 + blank medium 배제` 조합이다."
+      ]
+    }
+  ]
+}

@@ -422,6 +422,14 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수된 actual body를 `뒤늦게 나온 부속`처럼 보이게 만들어, 최상단 후보가 아니라 올바른 본문을 회수한 뒤에도 primary chain 복귀를 지연시키는 하류 현상으로 확인되었다. COS227 현장에서 body recovery 직후 가장자리에 `후착`류 띠가 생기더라도 cavity 회수 시각과 hash 일치가 late band보다 우선하며, recovered body를 candidate cluster나 appendix tray로 내려보내지 않는다."
       ]
+    },
+    {
+      "relatedId": 238,
+      "type": "reciprocal",
+      "title": "COS238 상호기록",
+      "paragraphs": [
+        "[COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수된 mixed candidate cluster는 [COS238 — 회청색 정본귀속패](./cos238.json)의 가장 흔한 upstream source였다. generated 복귀표가 지목한 candidate가 가장 앞에 노출된 묶음이더라도 이를 actual body로 확정하지 않고, cavity provenance와 footer hash가 먼저 일치하는지 확인해야 한다."
+      ]
     }
   ],
   "supplementalSections": [

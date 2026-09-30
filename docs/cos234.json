@@ -363,6 +363,14 @@
         "`A234-tray`, `A234-body`, `A234-outer`는 같은 봉투나 같은 current chain으로 병합하지 않는다.",
         "rear-search 결과가 확정되기 전까지 `A234-body`는 source front의 회수 완료 증거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 238,
+      "type": "reciprocal",
+      "title": "COS238 상호기록",
+      "paragraphs": [
+        "[COS234 — 회청색 본문회수반](./cos234.json)에서 나온 body가 하나의 tray에 함께 놓였다는 사실은 같은 사건의 본문이라는 증거가 아니다. mixed recovery tray에서 blank 복귀표가 형성될 경우 [COS238 — 회청색 정본귀속패](./cos238.json)는 가장 그럴듯한 묶음을 `정본`으로 지정해 same-tray recovery를 false provenance로 굳힐 수 있으므로, tray 출처 대신 hash와 page total을 우선한다."
+      ]
     }
   ],
   "supplementalSections": [

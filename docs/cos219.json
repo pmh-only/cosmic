@@ -437,6 +437,14 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS219 — 회청색 종결전사패](./cos219.json) generated card가 남긴 `검토 종료`, `인계후`, `참조용` 어휘가 rear recovery된 actual body 가장자리로 이동한 형태로 확인되었다. generated card 근처에서 회수된 본문에 late band가 생기면 그 card가 본문을 설명한 것으로 보지 말고, card와 body를 분리 봉인한 뒤 후착띠를 review completion 근거에서 제외한다."
       ]
+    },
+    {
+      "relatedId": 238,
+      "type": "reciprocal",
+      "title": "COS238 상호기록",
+      "paragraphs": [
+        "[COS219 — 회청색 종결전사패](./cos219.json) generated card가 recovered body 근처에 남아 있으면 [COS238 — 회청색 정본귀속패](./cos238.json)의 문구는 `검토후 정본`, `종결 후 복귀`처럼 종결 편향을 띠기 쉽다. generated card는 복귀 근거가 아니라 wording 증폭 조건이므로, COS238 현장에서는 종결전사패를 먼저 제거·봉인한 뒤 body와 3 m 이상 분리한다."
+      ]
     }
   ],
   "supplementalSections": [

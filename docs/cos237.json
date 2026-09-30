@@ -349,6 +349,14 @@
         "front shell과 first visible host는 `A237-front`, 실제 회수된 body packet은 `B237-body`, separator·막편·rear-search trace는 `R237-trace` 접두를 사용한다.",
         "세 접두 자료는 같은 sleeve, 같은 tray, 같은 provisional accession 보관란을 공유하지 않는다. 사진 촬영 시에도 한 프레임 안에 직접 접촉 상태로 배치하지 않는다."
       ]
+    },
+    {
+      "relatedId": 238,
+      "type": "reciprocal",
+      "title": "COS238 상호기록",
+      "paragraphs": [
+        "[COS237 — 회청색 본문유예막](./cos237.json) 분리 host에서 actual body를 회수한 직후 blank 복귀표를 가까이 두면 [COS238 — 회청색 정본귀속패](./cos238.json)가 front shell의 current authority를 body 쪽에 덧씌운 것처럼 보일 수 있다. 이는 body가 truly restored 되었다는 뜻이 아니라 separation을 너무 빨리 닫으려는 sign이므로, COS237 판정이 끝나기 전에는 generated 복귀표를 재체인 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

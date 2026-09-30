@@ -349,6 +349,14 @@
         "[COS221 — 회청색 도착대행패](./cos221.json)는 [COS220 — 회청색 반출대행패](./cos220.json)의 직접적인 downstream mirror로 분류된다. [COS220 — 회청색 반출대행패](./cos220.json)가 `나가도 된다`는 pass와 route code를 먼저 부여하면, COS221은 blank arrival stock에 `이미 도착했다`는 회신 외피를 먼저 남길 수 있다.",
         "두 현상이 연결될 경우 source와 destination가 모두 완료 상태로 닫히는 반면 actual body는 correction zone이나 rear guide에 남아 있을 수 있으므로, COS220 표본에 도착 회신지가 생성되면 outbound pass와 arrival receipt를 각각 분리 봉인하고 source/destination dual freeze를 동시에 시행한다."
       ]
+    },
+    {
+      "relatedId": 238,
+      "type": "reciprocal",
+      "title": "COS238 상호기록",
+      "paragraphs": [
+        "[COS220 — 회청색 반출대행패](./cos220.json)의 outbound route field가 nearby cue로 남아 있는 상태에서 [COS238 — 회청색 정본귀속패](./cos238.json)가 형성되면, wrong outbound 뒤 `복귀 완료`가 즉시 닫힌 것처럼 보일 수 있다. source pass와 generated 복귀표가 동시에 존재할 경우 이는 교정 완료 증거가 아니라 미해결 release-chain conflict의 신호이므로, source freeze를 유지하고 rear body search 및 4항 검증을 먼저 끝낸다."
+      ]
     }
   ],
   "supplementalSections": [
