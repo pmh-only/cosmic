@@ -357,6 +357,15 @@
       "paragraphs": [
         "[COS237 — 회청색 본문유예막](./cos237.json) 분리 host에서 actual body를 회수한 직후 blank 복귀표를 가까이 두면 [COS238 — 회청색 정본귀속패](./cos238.json)가 front shell의 current authority를 body 쪽에 덧씌운 것처럼 보일 수 있다. 이는 body가 truly restored 되었다는 뜻이 아니라 separation을 너무 빨리 닫으려는 sign이므로, COS237 판정이 끝나기 전에는 generated 복귀표를 재체인 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json)은 [COS237 — 회청색 본문유예막](./cos237.json)의 front-body delay를 재현하는 대표 상류 표면으로 확인되었다. body를 챔퍼 후축 0.5~2.7 m에 둔 active run 20회 중 18회에서 front host가 current front를 선점했고, actual body는 0.8~1.9 m rear axis에서 별도 회수되었다.",
+        "따라서 COS237 현장에서 front-only shell이 반복되면 비닐이나 sleeve 자체만 조사하지 말고, 그 아래 또는 인접 bench에 COS239와 같은 proxy plate가 존재하는지 먼저 확인한다. plate를 제거하지 않은 채 front와 body를 재집합하면 delay cluster가 다시 닫힐 수 있다."
+      ]
     }
   ],
   "supplementalSections": [

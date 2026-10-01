@@ -478,6 +478,15 @@
         "[COS204 — 회청색 보류인계슬리브](./cos204.json)는 [COS237 — 회청색 본문유예막](./cos237.json)의 가장 흔한 host 운반체로 재분류되었다. 2045-07-18~2045-08-27 확정된 COS237 표본 17건 중 11건이 COS204 2~4단계 슬리브 내부 또는 개구 직후 상태에서 채집되었고, 공통적으로 first visible sheet가 sleeve mouth 쪽 current front를 선점했다.",
         "그러나 COS204가 곧바로 COS237을 의미하지는 않는다. hold sleeve에서 front-only current mark, 질량 불일치, rear cold rectangle이 동시에 보이면 일반 재포장보다 COS237 분리 절차와 body search를 먼저 시행한다. 슬리브 mouth와 같은 tray에 front shell과 recovered body를 재집합시키는 조작은 금지한다."
       ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json) 위에 놓인 clear sleeve와 hold sleeve는 실제 body가 같은 선상 뒤축에 남아 있어도 first visible sheet를 `현재 회수본`처럼 선출하는 경향을 보였다. 2045-09-05~2045-09-10 연계 시험 20회 중 14회에서 sleeve mouth 쪽 front shell이 먼저 current authority를 획득했고, actual body는 0.8~2.1 m rear axis에서 별도 회수되었다.",
+        "따라서 [COS204 — 회청색 보류인계슬리브](./cos204.json) 현장에서 front-only shell과 장수 불일치가 함께 나타나면, 단순 hold 상태로 보지 말고 COS239의 상류 표면 개입을 먼저 의심한다. sleeve 개구 방향이 챔퍼 후축과 일치할 경우 재포장보다 rear-search와 footer hash 대조를 우선한다."
+      ]
     }
   ],
   "supplementalSections": [

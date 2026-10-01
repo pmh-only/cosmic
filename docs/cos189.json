@@ -472,6 +472,15 @@
         "[COS189 — 회청색 무재하중표](./cos189.json)로 보였던 declared mass 일부는 [COS237 — 회청색 본문유예막](./cos237.json)이 front shell를 현재본으로 선점한 뒤 형성된 하류 외피일 가능성이 높다. COS237 양성 17건 중 12건은 visible paper 수와 실측 질량이 어긋났고, 그중 9건에서 kg 값 또는 weight line이 actual body가 아니라 front shell 면에만 남았다.",
         "따라서 COS189 현장에서 회청색 하중 표식이 있으나 footer hash와 page count가 전면에서 확인되지 않으면 적재 오류만으로 처리하지 않는다. whole-host 계량, 하단 우측 sheen 확인, rear body search를 실시해 COS237 선행 여부를 먼저 배제한다."
       ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json) 위에서 current authority를 얻은 front host에는 [COS189 — 회청색 무재하중표](./cos189.json)가 높은 빈도로 뒤따랐다. 2045-09-05~2045-09-10 연계 시험 20회 중 12회에서 declared mass 0.64~1.91 kg가 host에 부여되었으나, 실제 host 질량은 28~86 g이었고 actual body는 rear axis에서 따로 회수되었다.",
+        "이는 COS189의 false load가 독립 하중 생성이라기보다, COS239가 `현재 본문`으로 선출한 얇은 host 위에 절차적 무게가 덧씌워진 하류 외피일 수 있음을 시사한다. COS189 현장에서 front-only host와 rear body 분리가 의심되면 저울값보다 COS239 plate 존재 여부와 후축 검색을 먼저 시행한다."
+      ]
     }
   ],
   "supplementalSections": [

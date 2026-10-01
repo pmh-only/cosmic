@@ -445,6 +445,15 @@
       "paragraphs": [
         "[COS219 — 회청색 종결전사패](./cos219.json) generated card가 recovered body 근처에 남아 있으면 [COS238 — 회청색 정본귀속패](./cos238.json)의 문구는 `검토후 정본`, `종결 후 복귀`처럼 종결 편향을 띠기 쉽다. generated card는 복귀 근거가 아니라 wording 증폭 조건이므로, COS238 현장에서는 종결전사패를 먼저 제거·봉인한 뒤 body와 3 m 이상 분리한다."
       ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json) 활성면 주변 30 cm 이내의 blank note card와 witness slip에는 [COS219 — 회청색 종결전사패](./cos219.json)형 lower line과 `검토 종료`, `인계 가능` 같은 짧은 closure cue가 집중되었다. 이는 actual body를 읽은 결과가 아니라, COS239가 전면 host를 현재 본문으로 오인시키는 동안 review closure만 주변 card로 흘러나온 것으로 해석된다.",
+        "따라서 COS219 generated card가 front-only host 근처에서 발견되면 종결 메모로 쓰지 말고, 먼저 COS239 plate의 존재와 rear body 위치를 확인한다. card 문구를 낭독하거나 host와 같은 sleeve에 재삽입하는 조치는 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

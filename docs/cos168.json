@@ -377,6 +377,15 @@
         "[COS168 — 무영 압지추](./cos168.json)는 [COS237 — 회청색 본문유예막](./cos237.json)의 지속시간을 유의하게 늘리는 증폭 조건으로 확인되었다. 2045-08-03~2045-08-04 대조에서 0.9 kg 유리 가압군의 persistence 중앙값은 25분 56초였고, 무가압군은 8분 42초였다. 가압군 4/8은 actual body가 rear slot 또는 service gap으로 추가 이탈했다.",
         "따라서 COS168 눌림이 있는 front-only host를 완결본으로 읽지 말고, 상단 장을 먼저 펼치거나 눌러 평탄화하는 조작을 금지한다. 압지점 아래에서 회청색 edge sheen이 확인되면 이를 단순 정리 압착이 아닌 COS237 지속 신호로 분리 기록한다."
       ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json) 위 host에 유리 추나 flat cover를 가하면, 전면 host가 본문을 대행하는 상태가 길게 유지되며 [COS168 — 무영 압지추](./cos168.json)와 유사한 상단 권위 고정이 반복되었다. 1.0 kg 가압군의 proxy state 지속시간 중앙값은 28분 14초로, 무가압군 9분 32초보다 길었다.",
+        "이는 COS168이 독립적으로 current bundle을 만들었다기보다, COS239가 먼저 선택한 front host를 상단 장으로 눌러 고정한 결합형일 가능성을 시사한다. 따라서 압지된 front-only host가 비정상적으로 완결돼 보이면 상단본을 기준본으로 채택하지 말고 COS239 plate와 rear body를 먼저 확인한다."
+      ]
     }
   ],
   "supplementalSections": []

@@ -317,6 +317,15 @@
         "[COS233 — 사후 목격삼각](./cos233.json) 배치에서는 [COS237 — 회청색 본문유예막](./cos237.json) 양성 host의 front shell이 whole-host 전체로 오인될 위험이 증가한다. 2045-08-12, 2045-08-19 두 차례 검토에서 세 꼭짓점 관찰자는 모두 같은 front sheet를 `도착본 전부`로 진술했으나, 445 nm 경사광과 rear-search 결과 actual body가 후방 slot에서 추가 회수되었다.",
         "따라서 COS233 환경에서 얻은 일치 진술은 front-body 일체성의 증거가 아니다. 삼각 목격이 형성된 host는 발화 진술보다 질량, footer hash, rear cold rectangle을 먼저 대조하고, 중심점 점유자의 단정적 `전부 확인` 진술은 증거 채택 전에 COS237 판별을 거친다."
       ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json) 주변에 1.5~1.7 m 간격의 3인 관찰점을 배치하면, front-only host를 whole packet으로 보는 만장일치 진술이 유의하게 증가했다. 2045-09-12 대조 시험에서 정삼각 관찰군 5회 중 4회가 서로 다른 chain의 front/body를 같은 packet으로 진술했고, 단독관찰 대조군은 0/5였다.",
+        "이는 [COS233 — 사후 목격삼각](./cos233.json)이 COS239가 만든 전면 본문 편향을 증언 단계에서 더 강하게 닫아 버리는 결합형으로 해석된다. COS233 양상이 active plate 근처에서 형성되면 일치 진술보다 footer hash, page count, rear-search를 먼저 채택한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 3,
+    "popularity": 4,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "E239-01은 일반 보호판이나 작업대 보강판으로 쉽게 위장될 수 있고, 단일 물리 표본만으로도 보존 사슬·인계 로그·장비 계측을 동시에 왜곡했다. 외부 공개 시 반입 또는 모사 시도가 현실적으로 가능하므로 비공개 유지가 필요하다.",
+    "permission": "COS239 판정에는 장비 로그, rear-search, footer hash 대조, 연계 COS 판별을 함께 다뤄야 하며, 부분 정보만 열람하면 front-only host를 정상 packet으로 오인할 위험이 높다. 최소 4등급 열람이 필요하다.",
+    "chaos": "활성은 무광면 상향 여부, host 두께, 챔퍼 후축 거리, 불투명 차단재 유무에 따라 비교적 일정한 경향을 보였다. 다만 현장 배치가 조금만 달라도 하류 현상의 종류와 지속시간 편차가 커서 예측 곤란도는 중간 이상으로 평가한다.",
+    "danger": "직접적인 생체 위해는 확인되지 않았으나, front-only host가 인계·종결·무게 체인을 잘못 닫아 실제 body 회수를 지연시키고 기록 무결성을 손상시켰다. rear-search 지연으로 인한 추가 오인 인계와 문서 소실 위험이 반복 확인되었다.",
+    "popularity": "2045-09-21 기준 H-3/H-4 line audit, [COS204 — 회청색 보류인계슬리브](./cos204.json)·[COS237 — 회청색 본문유예막](./cos237.json) 재검토, 교육 절차 개정에서 반복 참조되고 있다. 연계 기록의 교차 인용 빈도가 높아 참조도는 4로 산정한다.",
+    "containment": "알려진 확정 표본은 1점이지만, portable하며 일반 flat bench와 clear sleeve만으로 재현된다. 투명 cover가 차단재로 기능하지 않아 수직 불투명 보관, 후축 통제, rear-search 절차를 동시에 유지해야 하므로 관리 강도는 높다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "윤-11",
+        "role": "야간 현장조사관",
+        "status": "active",
+        "involvement": "2045-09-03 H-3B 초동 대응을 담당했다. ACC-H3-45-117/119/121의 장수 불일치와 rear body 회수를 최초 기록하고, 자동 인계 line 중지를 요청했다."
+      },
+      {
+        "name": "한-04",
+        "role": "보존기술사",
+        "status": "active",
+        "involvement": "E239-01의 계측, FTIR·열화상·표면 실험을 총괄했다. 2045-09-06 clear-lid 보관 실패 사고 후 비활성화 및 격리 절차를 개정했다."
+      },
+      {
+        "name": "박-19",
+        "role": "설비기술원",
+        "status": "active",
+        "involvement": "찢어진 정전기 방지 매트를 해체해 E239-01을 물리 회수했다. H-3B 작업대 rear cable race와 rack 하부 치수를 제공했다."
+      },
+      {
+        "name": "서-02",
+        "role": "기록관",
+        "status": "active",
+        "involvement": "오인 인계 로그 정정, 증거 사슬 재설정, 연계 COS 검토와 본 문서 편입을 담당했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-09-03 22:14 KST",
+        "label": "초동 발견",
+        "description": "제2보존동 B1 동측 인계전실 H-3B에서 회수 슬리브 3건이 front-only 상태인데도 완결 packet처럼 계측되는 사건이 발생했다."
+      },
+      {
+        "date": "2045-09-03 23:38 KST",
+        "label": "물리 표본 회수",
+        "description": "찢어진 정전기 방지 매트 아래에서 308.4 × 220.7 × 2.2 mm의 loose plate 1점이 분리되었고, 임시등록 T-239가 부여되었다."
+      },
+      {
+        "date": "2045-09-05",
+        "label": "대조 재현 성공",
+        "description": "B1-07 표면실험실에서 E239-01 active face와 일반 polycarbonate 대조판을 비교한 20:20 시험이 시행되었고, active plate에서만 front host current authority 선점이 18회 재현되었다."
+      },
+      {
+        "date": "2045-09-06",
+        "label": "격리 실패 및 규정 개정",
+        "description": "clear polycarbonate lid를 통한 2차 허위 인계가 발생해 flat 보관과 투명 lid 사용이 금지되었다."
+      },
+      {
+        "date": "2045-09-12",
+        "label": "증언 편향 확인",
+        "description": "witness bay 2의 정삼각 배치 시험에서 front shell과 무관한 body packet을 동일 packet으로 보는 일치 진술이 반복되어 [COS233 — 사후 목격삼각](./cos233.json)형 편향이 확인되었다."
+      },
+      {
+        "date": "2045-09-21",
+        "label": "공식 편입",
+        "description": "COS204, COS156, COS168, COS177, COS189, COS219, COS233, COS237과의 상호 기록 검토가 완료되어 COS239 공식 문서가 확정되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "I-239-01",
+        "date": "2045-09-03 22:14-23:44 KST",
+        "location": "제2보존동 B1 동측 인계전실 H-3B",
+        "title": "front-only 회수 슬리브 3건과 평판 회수",
+        "involvedPersonnel": [
+          "윤-11",
+          "박-19",
+          "서-02"
+        ],
+        "narrative": [
+          "야간 교대는 field return sleeve 6건을 순차 인계 중이었다. 윤-11은 ACC-H3-45-117을 게이트 저울에 올렸을 때 1.81 kg이 표시되고 handoff preview에도 완결 packet 윤곽이 떠오르자, 처음에는 clear sleeve를 개봉하지 않고 outbound tray로 넘기기로 결정했다. 그러나 sleeve를 손으로 집었을 때 장력이 지나치게 낮아 수기 장수 대조를 추가했고, 그 결과 실제 손에 걸리는 것은 first sheet 1장뿐이었다.",
+          "같은 교대 안에 119번과 121번도 동일 양상을 보이자 윤-11은 line을 41분 중지하고 rear-search를 요청했다. rear-search 1차에서는 body가 보이지 않았으나, 천장 카메라를 끈 채 재포장을 시작하려던 시점에 서-02가 이를 제지하고 FLIR T540 열화상 촬영을 먼저 지시했다. 촬영 결과 torn antistatic mat 아래에 31.0 × 22.1 cm 저온 사각이 확인되었고, body 3점은 그 축의 뒤쪽에서 차례로 회수되었다.",
+          "박-19는 매트를 그대로 덮어두고 shift 종료 후 해체하자는 제안을 했으나, 추가 오인 인계를 막기 위해 현장 해체가 승인되었다. 23:38 loose plate 1점이 분리되자 인접 작업대에 같은 방향으로 올려둔 blank routing slip이 53초 뒤 current preview를 획득했고, 이 재현으로 T-239 임시등록이 발부되었다."
+        ],
+        "outcome": "인계 line 41분 중지, body 3점 전량 회수, E239-01 확보, 해당 교대의 자동 인계 로그 3건 보류."
+      },
+      {
+        "code": "I-239-02",
+        "date": "2045-09-06 09:12-10:01 KST",
+        "location": "B1-07 표면실험실 증거보관 drawer D-11",
+        "title": "투명 lid 보관 실패와 2차 허위 인계",
+        "involvedPersonnel": [
+          "한-04",
+          "서-02"
+        ],
+        "narrative": [
+          "한-04는 촬영 연속성을 이유로 E239-01을 drawer D-11 내부에 flat 상태로 두고, 그 위 clear polycarbonate lid를 닫은 뒤 lid 상면에 blank digest card 1장을 체인 표지용으로 올려두었다. 이 선택은 `직접 접촉만 피하면 된다`는 초동 가정을 따른 것이었고, 당시 불투명 차단재 준비가 늦어진 상태였다.",
+          "19분 후 adjacent bench scale은 lid 위 digest card에 대해 1.24 kg를 기록했고, handoff preview는 recipient 공란 상태의 `인계 완료`를 표시했다. 한-04는 처음에 scale drift를 의심해 card만 치우려 했으나, 서-02가 drawer를 열지 않은 채 thermal sweep을 실시하게 했고, 저온 사각이 lid를 통해 상면에 투영된 사실이 확인되었다.",
+          "drawer 내부의 E239-01은 위치를 거의 바꾸지 않았으며, 허위 인계가 붙은 것은 lid 위 card였다. 이 사건 이후 모든 flat 보관과 clear lid 사용이 금지되었고, vertical opaque sleeve와 3 mm nitrile pad가 표준 격리구성으로 지정되었다."
+        ],
+        "outcome": "false handoff 1건과 false load log 1건을 무효화하고, 투명 차단 실패를 공식 확인했다."
+      },
+      {
+        "code": "I-239-03",
+        "date": "2045-09-12 14:00-15:26 KST",
+        "location": "B1-07 표면실험실, witness bay 2",
+        "title": "정삼각 관찰 배치에서의 오인 정합 시도",
+        "involvedPersonnel": [
+          "윤-11",
+          "한-04",
+          "서-02"
+        ],
+        "narrative": [
+          "blind matching 시험에서 한-04는 A239-H06 front shell과 footer hash가 다른 body packet B239-C03를 active plate 양쪽에 분리 배치하고, 관찰자 세 명을 plate 중심에서 1.6 m 반경의 정삼각 점에 세웠다. 세 관찰자는 서로 대화하지 말라는 지시를 받았으나, 모두 90초 이내에 `같은 packet이 맞다`는 요지의 서면 진술을 제출했다.",
+          "윤-11은 세 진술의 일치도를 근거로 잠정 재결합을 승인하려 했고, staple test tray까지 host를 이동시켰다. 서-02는 staple 직전 footer hash와 page count 원본 대조를 다시 요구했고, 대조 결과 front shell은 H06 set, body는 C03 set으로 서로 다른 체인임이 즉시 확인되었다. actual body H06는 같은 bay rear rack 하단 1.1 m 지점에서 12분 뒤 별도로 회수되었다.",
+          "세 관찰자의 선택은 단독관찰 대조군 4회에서 한 번도 나오지 않았으며, 정삼각 배치만이 일관된 오인 정합을 만들었다. 이후 witness bay 2의 삼각 표식을 제거하고, COS239 active run에서는 인적 일치 진술보다 footer hash와 rear-search를 우선하도록 절차가 개정되었다."
+        ],
+        "outcome": "staple 전 재결합을 중지했고, [COS233 — 사후 목격삼각](./cos233.json)형 증언 편향을 COS239 하위 위험으로 편입했다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "E239-01",
+        "type": "물리 표본",
+        "description": "H-3B 작업대 하부에서 회수된 반투명 polycarbonate 계열 평판. 308.4 × 220.7 × 2.2 mm, 184.2 g, 짧은 변 한쪽 4 mm 챔퍼 가공이 있다.",
+        "custodyStatus": "Vault B-12, `A239-plate-01` 봉인명으로 수직 보관 중."
+      },
+      {
+        "code": "V239-02",
+        "type": "열영상/가시광 동기화 기록",
+        "description": "2045-09-03 22:21-23:44 KST FLIR T540 열화상과 천장 고정카메라 영상. 저온 사각 형성과 ACC-H3-45-117/119/121 rear body 회수 과정을 포함한다.",
+        "custodyStatus": "Digital Vault DV-4 해시 잠금, view-only."
+      },
+      {
+        "code": "L239-03",
+        "type": "장비 통합 로그",
+        "description": "H-3B bench scale, handoff preview, barcode read, gate status 로그 묶음. front-only host에 declared mass와 current preview가 부여된 3건 및 일반 대조 run 3건이 포함된다.",
+        "custodyStatus": "감사 서버 미러 및 cold backup 동시 보관."
+      },
+      {
+        "code": "P239-07",
+        "type": "재질/표면 계측 자료",
+        "description": "E239-01의 FTIR 스펙트럼, 표면 현미경 사진, 표면저항 측정, 열감쇠 곡선, 일반 polycarbonate 대조판과의 비교표.",
+        "custodyStatus": "Materials Lab ML-2 및 DV-4에 원본 분리 보관."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "윤-11",
+        "role": "야간 현장조사관",
+        "context": "2045-09-03 23:05 KST, H-3B rear-search 직후 구술기록",
+        "statement": "저울값과 preview가 동시에 맞아떨어져 처음에는 개봉 없이 넘기려 했다. 손에 잡힌 장력이 이상해서 멈춘 것이고, 내 판단으로는 판이 내용을 만든 것이 아니라 앞에 놓인 한 장을 계속 전부처럼 밀어 올렸다."
+      },
+      {
+        "speaker": "박-19",
+        "role": "설비기술원",
+        "context": "2045-09-03 23:41 KST, H-3B 매트 해체 직후 진술",
+        "statement": "매트를 들추자 같은 크기의 얇은 판이 따로 놀고 있었고, 챔퍼 난 변이 rear rack 쪽을 보고 있었다. 일반 보강판 같지는 않았고, 차갑다는 인상은 제 개인 판단이지만 손에 닿는 감각이 주변보다 분명히 낮았다."
+      },
+      {
+        "speaker": "한-04",
+        "role": "보존기술사",
+        "context": "2045-09-06 10:20 KST, clear-lid 보관 실패 사고 debrief",
+        "statement": "투명 lid면 충분할 것이라고 판단한 것은 내 실수다. 지금 단계에서 말할 수 있는 것은 접촉 차단보다 배치와 시야 연속성이 더 중요해 보인다는 점이며, 그 해석 자체는 아직 내 기술적 추정에 가깝다."
+      }
+    ]
+  },
+  "id": 239,
+  "title": "회청색 본문대행판",
+  "language": "ko-KR",
+  "overview": [
+    "COS239는 2045-09-03 제2보존동 B1 동측 인계전실 H-3B 작업대 하부에서 회수된 투회청색 평판 1점(E239-01)과 동일 활성을 보이는 면 배치 현상을 가리킨다.",
+    "무광면을 위로 한 수평 배치 상태에서 1.5 mm 이하의 얇은 host를 올려놓으면, host는 실제 body packet과 무관하게 `현재 처리 대상` 또는 `본문`에 준하는 절차 권위를 획득한다.",
+    "이때 body가 판의 챔퍼 처리된 단변 뒤축 0.3~2.7 m 범위에 분리되어 있으면, host에 [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS189 — 회청색 무재하중표](./cos189.json), [COS156 — 무수령 인계대](./cos156.json), [COS219 — 회청색 종결전사패](./cos219.json) 계열 후속 현상이 집중되고 실제 body는 후면 탐색으로 회수된다.",
+    "확인된 기능은 내용 생성이 아니라 `무엇이 현재의 본문으로 취급되는가`를 전면의 얇은 host로 치우치게 만드는 귀속 편향이다."
+  ],
+  "identificationTraits": [
+    "확정 표본 E239-01은 308.4 × 220.7 × 2.2 mm, 184.2 g의 반투명 polycarbonate 계열 평판이다. 네 모서리는 반경 6 mm로 둥글고, 짧은 변 한쪽만 4 mm 챔퍼가 있어 방향 식별이 가능하다.",
+    "유광면은 일반적인 보호판과 유사하나, 무광면을 445 nm 경사광으로 비추면 외곽에서 2~4 mm 안쪽에 회청색 띠가 연속적으로 드러난다.",
+    "무광면을 수평 배치하면 40~90 s 이내 중심부 29~31 cm × 20~22 cm 구역이 주변 작업면보다 0.8~1.6°C 낮아지는 저온 사각이 형성된다.",
+    "활성은 1.5 mm 이하, 95 g 이하의 얇은 host에서 가장 강하며, binder clip이 없는 단독 표지, clear sleeve 내부 first sheet, blank digest card, routing slip에서 빈도가 높다.",
+    "실제 body packet은 챔퍼가 난 단변의 연장선 뒤쪽 0.5~3.0 m 범위, 특히 tray rear lip, cable race, service gap, rear rack 하단에서 회수될 가능성이 높다.",
+    "불투명 steel plate 또는 흑색 ABS 차단판을 host-후축 사이에 세우면 활성 빈도가 급감한다. 투명 아크릴은 차단 효과가 없다."
+  ],
+  "discovery": [
+    "2045-09-03 22:14 KST, 제2보존동 B1 동측 인계전실 H-3B에서 회수 슬리브 ACC-H3-45-117이 1.81 kg로 계측되고 handoff preview에는 완결 packet으로 표시되었으나, 수기 장수 대조에서는 1장만 잡혔다.",
+    "같은 교대 22:14~23:02 사이 ACC-H3-45-119, 121에서도 동일 양상이 반복되었고, 실제 body 3점은 각각 작업대 뒤 cable race 1.6 m, rear rack 하단 2.2 m, service gap 0.9 m 지점에서 회수되었다.",
+    "윤-11의 요청으로 FLIR T540 열화상과 445 nm 경사광을 적용한 결과, 찢어진 정전기 방지 매트 아래에서 31.0 × 22.1 cm의 저온 사각과 회청색 외곽띠가 확인되었다.",
+    "설비기술원 박-19가 매트를 들어 올리자 loose plate 1점이 분리되었고, 23:38 동일 방향으로 인접 대조 작업대에 재배치한 3회 시험에서 front-only current authority가 3/3 재현되었다. 이 시점에 임시등록 T-239가 부여되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS239는 수직 보관, 불투명 피복, 또는 무광면 하향 상태에서는 비활성에 가깝다. 알려진 활성은 모두 무광면 상향 수평 배치에서 발생했다.",
+      "활성 시 판 위의 얇은 host가 먼저 `현재본`으로 선출되고, 실제 body는 같은 작업 흐름에서 뒤로 밀리거나 후면에서 재회수된다.",
+      "판 자체가 텍스트, 질량, 서명, page count를 독립 생성했다는 증거는 없다. 다만 판 위 host에 대해 [COS189 — 회청색 무재하중표](./cos189.json), [COS156 — 무수령 인계대](./cos156.json), [COS219 — 회청색 종결전사패](./cos219.json)와 같은 하류 폐쇄 현상의 발생률이 유의하게 상승한다.",
+      "유리 추나 평평한 압착물이 host 위에 놓이면 상태 지속시간이 늘어나 [COS168 — 무영 압지추](./cos168.json)와 유사한 상단 권위 고정이 동반된다.",
+      "3인 관찰을 정삼각으로 배치하면 front-only host를 `완결본 전체`로 진술하는 경향이 증가하여 [COS233 — 사후 목격삼각](./cos233.json)과 유사한 증언 왜곡이 생긴다."
+    ],
+    "stages": [
+      {
+        "name": "배향 단계",
+        "description": "무광면이 위를 향해 수평 배치되고 챔퍼 단변의 방향이 고정되면 40~90 s 내 저온 사각과 회청색 외곽띠가 나타난다. 이 단계만으로는 하류 인계 표식이 발생하지 않았다."
+      },
+      {
+        "name": "대행 host 고정 단계",
+        "description": "1.5 mm 이하의 얇은 host가 활성면 위에 놓이면 host가 current front처럼 읽히기 시작한다. 같은 시점에 실제 body가 존재해도 host의 시각·절차 우선권이 먼저 상승한다."
+      },
+      {
+        "name": "후면 body 이탈 단계",
+        "description": "실제 body가 챔퍼 후축 0.3~2.7 m 범위에 있으면 tray rear lip, cable race, rear rack 하단, service gap 방향으로 분리 회수되는 비율이 높아진다. host는 현장에 남고 body만 뒤로 밀리거나 뒤늦게 회수된다."
+      },
+      {
+        "name": "하류 폐쇄 집중 단계",
+        "description": "active host에 declared mass, false handoff, generated closure note가 집중되고, 인적 관찰은 front-only host를 완결 packet으로 받아들이는 쪽으로 편향된다. 이 단계에서 재포장 또는 대조를 서두르면 잘못된 결합이 닫히기 쉽다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS239는 단독으로 `본문`을 만들기보다, 무엇이 `본문으로 취급되는가`를 앞면 얇은 host로 이동시키는 상류 배치로 보인다. 이 점에서 [COS237 — 회청색 본문유예막](./cos237.json), [COS204 — 회청색 보류인계슬리브](./cos204.json), [COS189 — 회청색 무재하중표](./cos189.json)의 발생 전 단계로 자주 기록된다.",
+      "또한 후면 회수축의 형성은 [COS177 — 회청색 후열인계로](./cos177.json)와, 종결·인계·목격 외피의 부착은 [COS156 — 무수령 인계대](./cos156.json), [COS219 — 회청색 종결전사패](./cos219.json), [COS233 — 사후 목격삼각](./cos233.json)와 밀접하게 연결된다."
+    ],
+    "entries": [
+      {
+        "targetId": 204,
+        "targetTitle": "회청색 보류인계슬리브",
+        "description": "투명 sleeve 또는 hold sleeve가 COS239 위에 놓이면 sleeve 내부 first sheet가 [COS204 — 회청색 보류인계슬리브](./cos204.json)의 front shell처럼 안정화된다. 개구부가 COS239의 챔퍼 후축을 향할수록 본문 지연과 rear recovery 빈도가 증가했다."
+      },
+      {
+        "targetId": 237,
+        "targetTitle": "회청색 본문유예막",
+        "description": "COS239는 [COS237 — 회청색 본문유예막](./cos237.json)의 front-body 지연을 연장하는 대표 표면이다. 1.2 m rear 조건 20회 중 18회에서 front host가 current front를 선점했고, body는 후면에서 별도 회수되었다."
+      },
+      {
+        "targetId": 189,
+        "targetTitle": "회청색 무재하중표",
+        "description": "활성면 위 host에는 [COS189 — 회청색 무재하중표](./cos189.json)가 20회 중 12회 발생했다. declared mass는 0.64~1.91 kg였으나 실측은 28~86 g이었다."
+      },
+      {
+        "targetId": 156,
+        "targetTitle": "무수령 인계대",
+        "description": "판 위 host를 인계대로 이동시키면 [COS156 — 무수령 인계대](./cos156.json)형 `인계 완료`가 body 회수 전 닫힐 수 있다. recipient field 공란 유지 사례가 20회 중 9회였다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "판 주변 30 cm 내 blank note card는 [COS219 — 회청색 종결전사패](./cos219.json)형 lower line과 `검토 종료` 문구를 획득했다. 이는 본문 검토 완료 근거가 아니었다."
+      },
+      {
+        "targetId": 177,
+        "targetTitle": "회청색 후열인계로",
+        "description": "챔퍼 단변 뒤축을 따라 형성되는 body 회수선은 [COS177 — 회청색 후열인계로](./cos177.json)의 rear line과 각도·종점이 유사했다. 후축 15° 이내에서 회수율이 가장 높았다."
+      },
+      {
+        "targetId": 168,
+        "targetTitle": "무영 압지추",
+        "description": "host 위에 1.0 kg 유리 추를 120 s 가하면 [COS168 — 무영 압지추](./cos168.json)와 유사한 상단 권위 고정이 동반되어 proxy state 지속시간 중앙값이 9분 32초에서 28분 14초로 늘었다."
+      },
+      {
+        "targetId": 233,
+        "targetTitle": "사후 목격삼각",
+        "description": "활성면 주위에 1.5~1.7 m 간격의 3인 관찰을 배치하면 [COS233 — 사후 목격삼각](./cos233.json)과 유사하게 front-only host를 완결 packet으로 오인하는 일치 진술이 증가했다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-239-01 | 표본 E239-01 재현 시험",
+      "description": "2045-09-05 B1-07 표면실험실에서 single cover sheet(0.18 mm, 14 g)와 matching body packet(27매, 6.3 mm, 412 g)을 사용했다. body를 챔퍼 후축 1.2 m 지점에 두고 active plate 20회, 일반 polycarbonate 대조판 20회를 비교한 결과, active plate는 18/20에서 front host에 current preview를 부여했고 대조판은 0/20이었다. rear body 회수는 active plate군 17/20에서 0.8~1.9 m 뒤에서 이루어졌고, 대조군은 0/20이었다."
+    },
+    {
+      "label": "EXP-239-02 | 후축 거리 시험",
+      "description": "2045-09-07 같은 실험실에서 body를 챔퍼 후축 0.2, 0.5, 1.0, 2.0, 3.0, 4.0 m에 두고 각 10회 시험했다. proxy host 고정은 각각 2/10, 8/10, 9/10, 7/10, 1/10, 0/10으로 관측되었다. 0.5~2.7 m 범위가 실질 유효거리로 판정되었고, 동일 배치를 대조판에 적용했을 때 양성은 전 구간 0/60이었다."
+    },
+    {
+      "label": "EXP-239-03 | host 두께·질량 상한 시험",
+      "description": "2045-09-08 host를 single cover sheet(0.18 mm, 14 g), sleeve+front sheet(0.9 mm, 31 g), digest card(1.4 mm, 42 g), bound packet(4.8 mm, 286 g)으로 나누어 각 10회 시험했다. active plate 양성은 순서대로 9/10, 8/10, 5/10, 0/10이었다. 두께 1.5 mm 또는 질량 95 g을 넘는 host에서는 current authority 선점이 안정적으로 유지되지 않았다."
+    },
+    {
+      "label": "EXP-239-04 | 불투명/투명 차단 비교",
+      "description": "2045-09-09 host와 rear body 사이에 3 mm 흑색 ABS 판, 3 mm clear acrylic, 무차단 조건을 두고 각 10회 시험했다. 양성 빈도는 흑색 ABS 1/10, clear acrylic 7/10, 무차단 8/10이었다. 투명 매질은 차단재로 기능하지 않았고, 불투명 차단재만 유의미한 억제 효과를 보였다."
+    },
+    {
+      "label": "EXP-239-05 | 가압 지속시간 시험",
+      "description": "2045-09-10 active host 위에 1.0 kg 유리 추를 120 s 가한 군과 무가압 군을 비교했다. proxy state 지속시간 중앙값은 가압군 28분 14초, 무가압군 9분 32초였고, 가압군 10회 중 6회에서 [COS168 — 무영 압지추](./cos168.json)형 눌림이 동반되었다. rear body 회수 거리는 두 군 모두 0.7~2.0 m 범위로 크게 다르지 않았다."
+    },
+    {
+      "label": "EXP-239-06 | 3인 관찰 배치 시험",
+      "description": "2045-09-12 witness bay 2에서 footer hash가 다른 front shell/body 쌍을 active plate 주변에 배치하고 단독관찰 5회, 정삼각 3인 관찰 5회를 비교했다. 단독관찰군은 0/5에서만 동일 packet 진술이 제출되었으나, 3인 관찰군은 4/5에서 만장일치 오인 정합이 발생했다. 동일 배치를 대조판에서 실시했을 때 만장일치 오인 정합은 0/5였다."
+    }
+  ],
+  "handlingProcedures": [
+    "E239-01은 `A239-plate-01` 명칭으로 3 mm nitrile pad로 무광면을 덮은 뒤 수직 보관한다. flat tray, clear lid, 투명 sleeve 내부 평치 운반을 금지한다.",
+    "현장 또는 실험실에서 COS239가 의심되면, 판 위에서 회수된 전면 host는 `B239-host`, 후면에서 추가 회수된 actual body는 `R239-body`, false load·false handoff·generated note는 `T239-trace`로 즉시 분리 태깅한다.",
+    "판 주변 30 cm 이내에서 생성된 declared mass, receipt, handoff close, review close, summary line은 footer hash와 수기 장수 대조가 끝나기 전까지 증거로 채택하지 않는다.",
+    "rear-search는 챔퍼 단변 연장선을 `rear axis 0°`로 두고 좌우 ±45° 범위를 25 cm 격자로 수색한다. 445 nm 경사광, 열화상, 손전등 사광을 병행하고, cable race·rear rack 하단·service gap을 우선 조사한다.",
+    "불투명 steel plate 또는 흑색 ABS 차단판을 host와 rear body 사이에 세우기 전에는 재포장, stapling, sleeve 재삽입, 인계 desk 이동을 수행하지 않는다. 투명 아크릴 차단판은 대체재로 사용하지 않는다.",
+    "유리 추, 평평한 문진, 스캐너 lid, clear acrylic cover를 active host 위에 직접 올리지 않는다. 상단 가압이 필요하면 suspended frame 또는 가장자리 클램프만 사용한다.",
+    "정삼각 3인 관찰 배치는 금지한다. COS239 의심 run에서는 인적 일치 진술보다 footer hash, 장수, rear-search 결과를 우선하고 generated note card를 현장에서 낭독하지 않는다."
+  ],
+  "hypotheses": [
+    "COS239는 `본문 생성`이 아니라 `본문 귀속`의 선점 현상일 수 있다. 실제 body가 rear axis 안에 있을 때 양성 빈도와 지속시간이 급증한 점이 이를 지지한다.",
+    "챔퍼 단변의 후축 편향은 제작 흔적 또는 장기간 장착 방향에서 비롯된 이방성일 수 있으나, 동일 치수의 일반 polycarbonate 대조판에서는 재현되지 않았다.",
+    "불투명 차단재만 유의미한 억제 효과를 보인 점으로 보아 광학 또는 시야 연속성 요소가 관여할 가능성이 있으나, 현재까지의 표면저항·정전기·열감쇠 수치만으로 현상을 설명하기에는 부족하다.",
+    "[COS189 — 회청색 무재하중표](./cos189.json), [COS156 — 무수령 인계대](./cos156.json), [COS219 — 회청색 종결전사패](./cos219.json)는 COS239가 선정한 proxy host를 기준으로 하류 절차가 닫힌 결과일 가능성이 높다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "높음. front-only host가 whole packet처럼 취급되어 footer hash, 장수, 체인 로그가 잘못 닫힌다. 통제실험에서 mismatch correction까지 평균 27분이 추가 소요되었다."
+    },
+    {
+      "category": "보존 사슬",
+      "assessment": "높음. declared mass와 false handoff가 함께 붙으면 실제 body가 rear search 대상임에도 이미 전달된 자료로 오인되기 쉽다. 회수된 body가 부록 또는 후착물로 강등될 위험이 있다."
+    },
+    {
+      "category": "인적 안전",
+      "assessment": "중간. 직접적인 생체 위해는 없으나, rear-search 지연 시 cable race와 rack 하단 재수색이 반복되어 절단·낙상·과신전 위험이 증가한다."
+    },
+    {
+      "category": "시설 전이",
+      "assessment": "중간 이상. COS239는 portable하며 clear lid와 일반 작업대를 통해 2차 오인을 만들 수 있다. 불투명 격리 없이 부서 간 이동할 경우 다른 line에 동일 배치가 재현될 수 있다."
+    },
+    {
+      "category": "증언 신뢰성",
+      "assessment": "중간 이상. 정삼각 3인 관찰에서 front-only host를 완결 packet으로 보는 일치 진술이 증가해 인적 검토가 오히려 오인 정합을 강화할 수 있다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초동 메모에는 `H-3 underlay`, `blue proxy plate`, `current board`, `T-239`가 혼용되었다. 2045-09-05 대조 재현 전까지는 단순 보강판 또는 비정상 저온면으로 분류되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "슬리브는 비어 있었는데 카메라와 저울은 꽉 찬 걸로 봤다. 내가 손으로 잡아 보지 않았으면 그냥 넘겼을 것이다."
+    },
+    {
+      "type": "paragraph",
+      "content": "첫 봉인 실패는 plate를 clear lid 아래에 평치한 상태에서 발생했다. 이후 `투명 덮개는 차단재가 아니다`가 별도 안전 규정으로 승격되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "판이 본문을 만든다고 보지는 않는다. 내 판단으로는 앞에 놓인 얇은 한 장을 계속 본문으로 밀어 올린다."
+    },
+    {
+      "type": "paragraph",
+      "content": "2045-09-12 이후 H-3, H-4, B1-07 작업대는 모두 rear-axis 표시선과 불투명 drop screen을 상시 구비한다."
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-239 명칭 확정",
+      "paragraphs": [
+        "2045-09-03 초동 메모에는 `H-3 underlay`, `blue proxy plate`, `current board`, `T-239`가 병기되었다. 2045-09-05~2045-09-12 통제 시험에서 핵심이 단순 보강판이 아니라 front host에 본문 권위를 대행시키는 평판임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 본문대행판**으로 확정하고, rear-search를 요구하는 물리 표본형 COS로 분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A239/B239/R239 접두 및 수직보관 기준",
+      "paragraphs": [
+        "`A239-plate`는 물리 표본, `B239-host`는 판 위에서 current authority를 획득한 전면 host, `R239-body`는 후면 회수된 actual body, `T239-trace`는 false load·false handoff·generated note를 포함한 하류 흔적에 사용한다.",
+        "E239-01은 무광면을 3 mm nitrile pad로 덮은 상태로만 수직 보관하며, clear lid·flat tray·투명 sleeve를 포함한 평치 운반을 금지한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "다음 5개 조건 중 3개 이상이 동시에 확인되면 COS239 양성 의심으로 분류한다: 1) 무광면 상향 flat plate 존재, 2) 445 nm 경사광에서 회청색 외곽띠 확인, 3) 주변 대비 0.8°C 이상 낮은 저온 사각, 4) 1.5 mm 이하 front-only host의 current authority 선점, 5) rear axis 상 body 추가 회수.",
+        "host와 body가 같은 tray에 잠정 재집합된 직후에는 양성 판정을 보류한다. 반드시 footer hash, 수기 장수, rear-search 원위치 좌표를 먼저 확보한다."
+      ]
+    },
+    {
+      "title": "표본 접두 및 검색축",
+      "paragraphs": [
+        "`A239-plate`는 판 자체, `B239-host`는 판 위에서 current authority를 획득한 전면 host, `R239-body`는 후면 회수된 actual body, `T239-trace`는 false load·receipt·generated note와 같은 하류 흔적에 부여한다.",
+        "챔퍼 단변이 향한 방향을 `rear axis 0°`로 기록하고, 좌우 ±45°까지 25 cm 격자로 수색한다. rear rack 하단, cable race, service gap, tray rear lip를 우선 기록 지점으로 사용한다."
+      ]
+    }
+  ]
+}
