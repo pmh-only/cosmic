@@ -389,6 +389,15 @@
         "[COS137 — 녹흑색 집행잔선](./cos137.json)의 `집행됨` 흔적이 same-surface 대조 구역 시야에 포함되면, [COS236 — 회청색 정합대행면](./cos236.json)에서 `조치 완료 후 보완`, `정상 처리 후 재확인`류 문구가 generated closure form에 남는 사례가 확인되었다. 이는 provenance conflict가 해결된 것이 아니라 미해결 상태가 시행 완료 외형으로 오염된 것이다.",
         "따라서 COS137 trace가 있는 환경에서는 receipt·shell·body의 동시면 비교를 금지하고, 이미 생성된 completion field는 즉시 `R236-trace`로 재분류한다. 집행선과 정합 경계의 동시 출현은 후속 조치의 근거가 될 수 없다."
       ]
+    },
+    {
+      "relatedId": 240,
+      "type": "reciprocal",
+      "title": "COS240 상호기록",
+      "paragraphs": [
+        "[COS240 — 회청색 전후분기레일](./cos240.json)이 front-only 전달표나 시행 cover를 먼저 current zone에 남기면, 실제 body가 rear axis에 분리된 상태에서도 [COS137 — 녹흑색 집행잔선](./cos137.json)의 `집행됨` 외형이 전면 host에 우선 형성될 수 있다. 이는 명령도 본문도 없는 집행이 아니라, 분기된 앞면이 사후 조치 완료본처럼 오인된 상태로 분류한다.",
+        "따라서 얇은 front host에 녹흑색 집행선이 생겼더라도 rear body 회수와 footer hash 대조가 끝나기 전에는 집행 근거로 사용하지 않는다. COS137 현장에서 챔퍼 후축 방향 rear-search가 필요할 경우 [COS240 — 회청색 전후분기레일](./cos240.json) 연계를 함께 기록한다."
+      ]
     }
   ],
   "supplementalSections": []

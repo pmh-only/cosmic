@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 3,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2045-09-24 현장 3건과 2045-09-26 통제 20건 중 18건에서, 완전한 packet이 front-only host와 rear body로 갈라진 뒤 전면 host만 정상 인계·검토 대상처럼 보였다. 실물이 일반 edge trim이나 작업대 가이드 부품으로 위장될 수 있어 외부 유입·모사 위험이 높다.",
+    "permission": "COS240 판정에는 rear-search, footer hash·장수·staple spacing 대조, 장비 로그 정정, 하류 상태 오염 판독이 함께 필요했다. 부분 정보만으로는 front-only host를 정상 packet으로 오인하기 쉬워 최소 4등급 권한이 요구된다.",
+    "chaos": "활성은 무광면 상향, 챔퍼 후축 정렬, 1.5 mm 이하 host, 0.5~2.7 m rear axis라는 조건에서 비교적 안정적으로 재현되었다. 다만 그 뒤에 붙는 보류·승인·집행·허위 결합의 형태는 배치와 절차 환경에 따라 달라져 변동성은 중간 이상이다.",
+    "danger": "현재까지 독성이나 직접적 중상은 확인되지 않았지만, front-only host의 오인 인계 3건, 허위 재결합 시도 1건, false pending/approval/execution 외형 9건이 기록되었다. 위해는 주로 기록 무결성과 보존 사슬 손상에 집중된다.",
+    "popularity": "임시등록 T-240 개설 후 9일 동안 H-3/H-4 line audit, rear-search 정정, 표면실험실 회람, 교육 절차 개정에서 직접 참조 21건이 기록되었다. 신규 항목이지만 내부 참조 빈도는 이미 중간 수준을 넘었다.",
+    "containment": "flat 보관, clear lid, 투명 board 분리만으로는 억제되지 않았고, 수직 불투명 보관·rear axis 차단·즉시 분리 태깅·무슬라이드 절차를 함께 적용해야 재현이 멈췄다. 관리 강도는 상시 높은 수준이 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "윤-11",
+        "role": "야간 현장조사관",
+        "status": "active",
+        "involvement": "H-4A 초동 대응을 담당했다. 장비 계측값과 손감의 불일치를 근거로 line 중지를 요청하고 첫 rear body 회수를 기록했다."
+      },
+      {
+        "name": "한-04",
+        "role": "보존기술사",
+        "status": "active",
+        "involvement": "E240-01의 재질·열계측, 배향 시험, 불투명 차단 시험을 수행했고 flat 보관 금지 규정을 작성했다."
+      },
+      {
+        "name": "박-19",
+        "role": "설비기술원",
+        "status": "active",
+        "involvement": "찢어진 edge trim 아래에서 E240-01을 물리 회수했고 H-4A cable race·service gap 치수와 설치 상태를 제공했다."
+      },
+      {
+        "name": "서-02",
+        "role": "기록관",
+        "status": "active",
+        "involvement": "오인 인계 로그 정정, 증거 사슬 재설정, 실험 산물 분리 태깅과 본 문서 편입을 담당했다."
+      },
+      {
+        "name": "감식관 H-22",
+        "role": "문서감식관",
+        "status": "active",
+        "involvement": "footer hash, 장수, staple spacing을 대조해 false recombination을 차단했고 rear candidate와 actual body를 구분하는 기준값을 확정했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-09-24 22:14 KST",
+        "label": "초동 발견",
+        "description": "제2보존동 B1 서측 재포장대 H-4A에서 intact packet 3건이 preview와 계측상 완결본처럼 보였으나, 개봉 시 front-only host만 남고 실제 body는 후면에서 회수되었다."
+      },
+      {
+        "date": "2045-09-24 23:38 KST",
+        "label": "물리 표본 회수 및 임시등록",
+        "description": "박-19가 torn edge trim 아래에서 회청색 rail형 부품 1점을 분리 회수했고, adjacent bench 재현 3/3이 확인되어 임시표기 T-240이 부여되었다."
+      },
+      {
+        "date": "2045-09-26 13:00 KST",
+        "label": "배향·거리 재현 시험 완료",
+        "description": "B1-07 표면실험실에서 무광면 상향, 챔퍼 후축, 0.5~2.7 m rear axis 조건이 양성 조건으로 정리되었다."
+      },
+      {
+        "date": "2045-09-27 15:22 KST",
+        "label": "투명 비교면 사고",
+        "description": "front-only host와 rear candidate를 clear board 위에 함께 둔 실험에서 false recombination이 74초 안에 형성되어 즉시 중지되었다."
+      },
+      {
+        "date": "2045-10-02 09:10 KST",
+        "label": "수직 불투명 보관 전환",
+        "description": "flat tray와 clear lid가 차단재로 기능하지 않는다는 결론에 따라 수직 opaque sleeve, rear-axis 차단판, 무슬라이드 절차가 표준화되었다."
+      },
+      {
+        "date": "2045-10-02 17:40 KST",
+        "label": "공식 문서화 승인",
+        "description": "T-240이 COS240으로 정식 편입되었고 관련 line audit 및 rear-search 규정이 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-240-01",
+        "date": "2045-09-24",
+        "location": "제2보존동 B1 서측 재포장대 H-4A",
+        "title": "intact packet 3건의 연속 분기와 line 중지",
+        "involvedPersonnel": [
+          "윤-11",
+          "박-19",
+          "서-02"
+        ],
+        "narrative": [
+          "야간 교대는 field return sleeve 6건을 재슬리브한 뒤 인계 게이트로 넘기고 있었다. 22:14 KST, 윤-11은 ACC-H4-52-031이 bench scale에서 1.76 kg로 표시되고 handoff preview에도 complete packet silhouette가 떠오르자 처음에는 개봉 없이 다음 단계로 넘기려 했다. 그러나 sleeve를 집어 올렸을 때 장력과 두께감이 계측값에 비해 지나치게 약하다고 판단해 수기 장수 대조를 추가했고, 실제로는 first sheet와 front shell만 손에 걸렸다. 교대 압박 때문에 그는 첫 건을 우연한 mis-load로 보고 line을 계속 돌렸지만, 22:27과 22:41에 032번과 034번이 같은 방식으로 `앞만 남고 body가 사라진` 상태를 반복하자 line을 41분 중지시켰다.",
+          "윤-11은 처음에는 rear rack 재적층 오류를 의심해 육안 수색만 하려 했으나, 서-02가 장비 로그 정지와 열화상 촬영을 먼저 지시했다. 박-19가 torn edge trim을 들추자 31.2 × 21.8 cm 저온 사각과 함께 회청색 rail형 부품 1점이 드러났고, 같은 축 뒤쪽 cable race 1.3 m, rear rack 하단 2.1 m, service gap 0.8 m 지점에서 body 3점이 차례로 회수되었다. 현장 선택의 핵심 오류는 첫 불일치 뒤에도 line을 유지한 것이었고, 올바른 대응은 handfeel 불일치가 생기는 즉시 rear-search와 edge trim 제거를 우선하는 것이었다."
+        ],
+        "outcome": "인계 line은 41분 정지되었고 body 3점은 전량 회수되었다. rail형 부품은 E240-01로 봉인되었으며 해당 교대의 자동 handoff close 3건은 모두 보류·정정되었다."
+      },
+      {
+        "code": "INC-240-02",
+        "date": "2045-09-27",
+        "location": "B1-07 표면실험실 비교실 Q-5B",
+        "title": "투명 비교면 위 false recombination 직전 중지",
+        "involvedPersonnel": [
+          "한-04",
+          "감식관 H-22",
+          "서-02"
+        ],
+        "narrative": [
+          "한-04와 H-22는 COS240이 실제로 front/body를 가르는지 확인하기 위해 matched packet P-06을 E240-01 위로 한 번 통과시켜 front-only host `B240-host-06`과 rear 회수 후보 2건을 확보했다. 이후 H-22가 footer hash 원본을 가져오는 동안, 한-04는 상대 위치를 보존한다는 이유로 `B240-host-06`과 cavity 입구 최상단 후보 `C240-cand-06A`를 clear acrylic board 위에 나란히 놓았다. 74초 뒤 두 표본은 좌측 lower edge를 공유하는 것처럼 6 mm 접근했고, 보드 옆 blank note card 하단에 얕은 종결선이 생겼다. 한-04는 실험이 `재결합 양상까지` 보여 준다고 해석해 클립 봉인을 준비했다.",
+          "서-02는 clip 추가 전 H-22의 수치 대조를 다시 기다리자고 제지했고, 복귀한 H-22는 candidate의 staple spacing이 2.3 mm 어긋나며 footer hash 끝 8자가 불일치한다고 보고했다. 세 사람은 즉시 양손 동시 인양으로 host와 candidate를 분리해 불투명 sleeve에 넣었고, 이후 true body `R240-body-06`은 rear shield 뒤 1.3 m 지점에서 회수되었다. 현장의 실수는 `상대 위치를 보존한다`는 명분으로 transparent plane을 허용한 것이었고, 이후 규정은 재현 여부 확인보다 즉시 분리 봉인을 우선하도록 개정되었다."
+        ],
+        "outcome": "false recombination 1건은 clip 봉인 직전 차단되었고, clear board는 COS240 실험에서 금지되었다. blank note card에 남은 lower line은 T240-trace-04로 분리 봉인되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "E240-01",
+        "type": "물리 표본",
+        "description": "회청색 rail형 부품 1점. 길이 294.8 mm, 폭 18.9 mm, 두께 6.4 mm, 질량 92.3 g이며 짧은 변 한쪽에 11° 챔퍼가 있다. underside에는 2줄의 foam adhesive 잔사가 남아 있다.",
+        "custodyStatus": "Vault B-12의 opaque slot `A240-rail-01`에 수직 봉인 보관 중"
+      },
+      {
+        "code": "E240-02",
+        "type": "동기화 고속영상 세트",
+        "description": "2045-09-24 H-4A와 2045-09-27 Q-5B의 top/side 240 fps 영상. intact packet이 rail을 지난 뒤 front shell만 current zone에 남고 body가 rear axis 쪽으로 분리되는 과정이 기록되어 있다.",
+        "custodyStatus": "보안영상금고 DV-7 read-only 저장, checksum 검증 완료"
+      },
+      {
+        "code": "E240-03",
+        "type": "분기 packet 증거 세트",
+        "description": "ACC-H4-52-031/032/034에서 회수된 front-only host 3건과 대응 rear body 3건. front에는 current preview 흔적이 남고, body는 rear rack·service gap에서 회수되었다.",
+        "custodyStatus": "`B240-host`와 `R240-body` 체인으로 완전 분리 봉인, 같은 tray 사용 금지"
+      },
+      {
+        "code": "E240-04",
+        "type": "재질·표면 계측 기록",
+        "description": "E240-01의 FTIR 스펙트럼, 표면 저항, 445 nm 반사 영상, 열감쇠 곡선, inert aluminum trim 및 일반 polycarbonate strip과의 비교표이다.",
+        "custodyStatus": "Materials Lab ML-4와 cold backup에 원본 분리 저장"
+      },
+      {
+        "code": "E240-05",
+        "type": "통합 line 로그",
+        "description": "H-4A bench scale, handoff preview, gate status, 수기 장수 대조, rear-search 시각을 합친 감사 로그이다. false complete 3건과 정정 시점이 포함된다.",
+        "custodyStatus": "감사 서버와 수기 원본 장부를 분리 보존"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "윤-11",
+        "role": "야간 현장조사관",
+        "context": "2045-09-24 H-4A 초동 보고",
+        "statement": "저울과 preview는 완결 packet이라고 말했지만, 손으로 집었을 때는 첫 장밖에 잡히지 않았습니다. rail이 본문을 만든다는 뜻은 아니고, 제 판단으로는 앞에 놓인 얇은 부분만 계속 current packet처럼 밀어 올렸습니다."
+      },
+      {
+        "speaker": "박-19",
+        "role": "설비기술원",
+        "context": "2045-09-24 rail 회수 직후 진술",
+        "statement": "처음에는 찢어진 trim에서 떨어진 보강부품이라고 봤습니다. 다만 챔퍼 방향이 rear rack을 향하고 있었고, 들춰낸 직후 옆 bench에서도 같은 양상이 재현된 것은 관찰 사실입니다."
+      },
+      {
+        "speaker": "한-04",
+        "role": "보존기술사",
+        "context": "2045-09-27 containment debrief",
+        "statement": "투명 board 위에 그대로 두면 정렬을 더 잘 볼 수 있다고 판단한 것은 제 실수였습니다. 지금 확인된 사실은 clear plane이 차단재가 아니고, front-only host를 더 그럴듯한 한 건처럼 보이게 만든다는 점입니다."
+      }
+    ]
+  },
+  "id": 240,
+  "title": "회청색 전후분기레일",
+  "language": "ko-KR",
+  "overview": [
+    "**COS240**은 완전한 packet, 회수 슬리브, 또는 표지+본문이 함께 있는 문서를 얇은 전면 host와 후면 body로 갈라 놓는 rail형 물체 및 그 배치 현상이다. 현재 통칭은 **회청색 전후분기레일**이다.",
+    "COS240는 텍스트, 장수, 서명을 직접 생성하지 않는다. 대신 intact packet이 processing line을 지나는 순간 `앞면이 현재본으로 취급되어야 한다`는 권위를 전면에 부여하고, 실제 body는 챔퍼 후축 방향의 rear axis로 밀어낸다.",
+    "현재까지 확정된 물리 표본은 1점(E240-01)이며, 2045-09-24 현장 3건과 2045-09-26 이후 통제시험 18건에서 동일한 front/body 분기 양상이 기록되었다. 활성 뒤에는 보류, 승인, 집행, 허위 재결합, rear-body 적체와 같은 하류 현상이 자주 따라붙었다."
+  ],
+  "identificationTraits": [
+    "E240-01은 길이 294.8 mm, 폭 18.9 mm, 두께 6.4 mm, 질량 92.3 g의 반투회청색 rail형 부품이다. 짧은 변 한쪽에 11° 챔퍼가 있으며 underside에는 끊어진 foam adhesive 2줄이 남아 있다.",
+    "무광면을 위로 하고 챔퍼가 향한 방향을 후축으로 두면, 40~90 s 내 중심부 28~31 cm × 20~22 cm 범위가 주변보다 0.8~1.6°C 낮아지는 저온 사각이 형성된다.",
+    "445±6 nm 사광을 18~24°로 비추면 rail 외곽 2~4 mm 안쪽에서 회청색 연속띠와 길이방향 미세 선조가 드러난다.",
+    "1.5 mm 이하, 95 g 이하의 얇은 host가 rail을 지날 때 양성이 가장 높다. single cover sheet, clear sleeve 내부 front sheet, routing slip, blank digest card가 대표 숙주다.",
+    "intact packet이 active rail을 넘은 뒤 전면 host만 current zone에 남고, 실제 body는 후축 0.5~2.7 m 범위의 rear rack 하단, cable race, service gap, tray rear lip에서 회수될 가능성이 높다.",
+    "불투명 steel plate 또는 흑색 ABS 차단판을 host와 후축 사이에 세우면 활성 빈도가 크게 줄어든다. clear acrylic은 차단재로 기능하지 않았다.",
+    "가압 추, flat scanner lid, 유리 문진을 host 위에 올리면 전면 host의 유지시간이 늘어나고, rear body 회수는 더 늦어지는 경향을 보였다.",
+    "단독관찰보다 3인 합의 관찰에서 front-only host를 완결 packet으로 진술할 가능성이 높았으며, 이 진술 일치도는 수치 대조보다 먼저 형성되었다."
+  ],
+  "discovery": [
+    "COS240은 [COS239 — 회청색 본문대행판](./cos239.json)과 [COS227 — 회청색 후면적체벽](./cos227.json)을 재검토하는 과정에서 분리되었다. 두 항목의 영향이 없는 것으로 보이는 재포장대에서도 intact packet이 반복적으로 front-only host와 rear body로 갈라졌기 때문이다.",
+    "2045-09-24 22:14 KST, 제2보존동 B1 서측 재포장대 H-4A에서 ACC-H4-52-031/032/034가 scale과 preview상 완결 packet으로 보였으나 개봉 시 front shell만 남고 actual body는 후면에서 회수되었다. 열화상과 445 nm 경사광을 적용하자 torn edge trim 아래에 저온 사각과 회청색 rail형 부품 1점이 확인되었다.",
+    "23:38 KST, 박-19가 해당 부품을 분리한 뒤 adjacent bench에서 같은 방향으로 재배치한 즉시 3/3 재현이 확인되었다. 이후 rail이 먼저 intact packet을 가르고, 그 전면 host가 [COS239 — 회청색 본문대행판](./cos239.json)형 current authority, [COS112 — 자색 유예종](./cos112.json)형 보류, [COS149 — 무인 결재석](./cos149.json)형 승인 대기, [COS137 — 녹흑색 집행잔선](./cos137.json)형 집행 외피로 이어질 수 있다는 자료가 축적되었다.",
+    "같은 조사 주기에서 rail이 만든 front-only host를 [COS203 — 회청색 교차편철면](./cos203.json) 위 wrong body와 접촉시키면 허위 복합체가 빠르게 닫히는 반면, 분리된 body는 [COS227 — 회청색 후면적체벽](./cos227.json)과 같은 rear cavity 쪽으로 집적되는 경향이 확인되었다. 이로써 COS240은 `이미 갈라진 표본을 안정화하는 현상`이 아니라, front/body 분기를 만드는 상류 물체로 분류되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS240의 핵심 작용은 완전한 packet에서 `현재 처리될 앞면`을 먼저 떼어 내고, 실제 body를 후축으로 미뤄 rear-search 대상으로 바꾸는 것이다.",
+      "활성은 rail의 배향과 host의 두께에 강하게 의존했고, 분기 후 하류에는 current preview, pending, blank approval, execution trace, false recombination, rear-body accumulation 중 일부가 선택적으로 따라붙었다."
+    ],
+    "stages": [
+      {
+        "name": "배향 형성",
+        "description": "무광면이 위를 향하고 챔퍼가 후축을 향한 상태로 rail이 평면 위에 놓인다. 이 단계에서 저온 사각과 회청색 외곽띠가 먼저 형성된다."
+      },
+      {
+        "name": "초기 접촉",
+        "description": "intact packet 또는 얇은 carrier가 rail을 가로질러 미끄러질 때 전면 host와 body 사이의 장력 분포가 갑자기 달라진다. 외관상 큰 파손이나 새로운 천공은 거의 남지 않는다."
+      },
+      {
+        "name": "전면 선점",
+        "description": "front shell, first sheet, digest card 같은 얇은 부분이 current zone에 남아 우선적으로 읽힌다. 장비 preview와 인적 시선은 이 전면 host를 완결 packet처럼 취급하기 시작한다."
+      },
+      {
+        "name": "후면 이탈",
+        "description": "실제 body는 rear axis 쪽으로 밀려나 rack 하단, rear lip, cable race, blind gap 같은 후면 위치에서 뒤늦게 회수된다. 이때 front와 body는 같은 체인처럼 보이지만 물리적으로 분리되어 있다."
+      },
+      {
+        "name": "하류 폐쇄",
+        "description": "분리된 front host는 보류, 승인, 집행, 허위 결합 같은 절차 외피를 빠르게 흡착한다. rear-search가 늦어질수록 actual body는 부속 또는 후착물처럼 보이기 쉬워진다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS240은 front/body 분리 계열에서 상류 물체로 작동하며, 전면 host를 현재본처럼 밀어 올리고 actual body를 후면 검색 대상으로 남긴다.",
+      "현재까지 안정적으로 확인된 연계는 [COS112 — 자색 유예종](./cos112.json), [COS137 — 녹흑색 집행잔선](./cos137.json), [COS149 — 무인 결재석](./cos149.json), [COS203 — 회청색 교차편철면](./cos203.json), [COS227 — 회청색 후면적체벽](./cos227.json), [COS239 — 회청색 본문대행판](./cos239.json)이다."
+    ],
+    "entries": [
+      {
+        "targetId": 112,
+        "targetTitle": "자색 유예종",
+        "description": "COS240가 만든 front-only host가 보류랙이나 review hold 구역에 먼저 놓이면, 실제 body가 후면에 남은 채 [COS112 — 자색 유예종](./cos112.json)의 `결정 전 대기` 상태를 front host만 획득할 수 있다. 이 경우 유예된 것은 사건 전체가 아니라 rail이 떼어낸 앞면일 수 있으므로 rear-search 전까지 pending front를 완결 packet으로 취급하지 않는다."
+      },
+      {
+        "targetId": 137,
+        "targetTitle": "녹흑색 집행잔선",
+        "description": "front-only host가 route slip, 전달표, 시행 cover의 형태를 띨 때, COS240는 body 없는 앞면에 [COS137 — 녹흑색 집행잔선](./cos137.json)의 집행 외피가 붙을 수 있는 조건을 만든다. 실제 body가 후면에 남아 있어도 `이미 보냈다` 또는 `이행됨` 상태가 전면에서 먼저 닫힐 수 있다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "COS240가 만든 approval cover나 얇은 상신 front는 [COS149 — 무인 결재석](./cos149.json) 앞에서 실제 본문 없이도 재가 대기본처럼 정지하기 쉽다. 빈 승인축은 front host에만 권위를 주고 body는 계속 rear axis에 남겨, 승인 공백과 본문 공백을 동시에 은폐할 수 있다."
+      },
+      {
+        "targetId": 203,
+        "targetTitle": "회청색 교차편철면",
+        "description": "COS240의 전면 분기 뒤 가장 가까운 rear candidate를 끌어와 clear plane에 올리면 [COS203 — 회청색 교차편철면](./cos203.json)의 false composite가 빠르게 형성된다. 따라서 COS240는 COS203이 소비하는 잘못된 front/body pair의 대표적 upstream source로 분류된다."
+      },
+      {
+        "targetId": 227,
+        "targetTitle": "회청색 후면적체벽",
+        "description": "COS240가 후축 방향으로 밀어낸 actual body는 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에 집적되기 쉽다. 현장 3건과 통제 18건에서 body 회수 축이 모두 rail의 챔퍼 후축과 15° 이내로 일치해, COS240가 COS227 rear cluster의 공급원 역할을 한다는 자료가 축적되었다."
+      },
+      {
+        "targetId": 239,
+        "targetTitle": "회청색 본문대행판",
+        "description": "COS240는 intact packet에서 front-only host를 먼저 만들어 내고, [COS239 — 회청색 본문대행판](./cos239.json)은 그 host를 더 오래 `현재의 본문`처럼 유지시키는 하류 단계로 보인다. 실제로 COS240로 분기된 front를 COS239 active plate에 옮겼을 때 current preview 지속시간이 크게 증가했고 rear body 회수 지연도 길어졌다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-240-01 | intact packet 분기 기준 시험",
+      "description": "2045-09-26 13:00~15:20 KST, B1-07 표면실험실. cover+본문 18~32매로 구성된 matched packet 20건(총질량 286~428 g)을 E240-01 active orientation 위로 4.5 cm/s 속도로 1회 통과시켰다. 18/20에서 front-only host가 current zone에 남고 actual body는 후축 0.6~1.9 m에서 회수되었다. 동일 치수 inert aluminum trim 대조군 20건은 0/20이었다."
+    },
+    {
+      "label": "EXP-240-02 | 배향·면 방향 행렬",
+      "description": "무광면 상향/하향, 챔퍼 후축/전축, 수직 배치/flat 배치를 10회씩 비교했다. 무광면 상향+챔퍼 후축 조건은 9/10 양성, 무광면 상향+챔퍼 전축은 2/10 약양성, 무광면 하향은 0/10, 수직 배치는 0/10이었다. 활성은 rail의 면 방향과 후축 배향에 의존했다."
+    },
+    {
+      "label": "EXP-240-03 | 불투명/투명 차단 비교",
+      "description": "host와 rear body 사이에 3 mm 흑색 ABS 판, 3 mm clear acrylic, 무차단 조건을 두고 각 10회 시험했다. 양성 분기 빈도는 흑색 ABS 1/10, clear acrylic 7/10, 무차단 8/10이었다. 투명 매질은 차단재로 기능하지 않았고, 불투명 차단재만 rear body 분기를 억제했다."
+    },
+    {
+      "label": "EXP-240-04 | [COS239 — 회청색 본문대행판](./cos239.json) 하류 지속 시험",
+      "description": "COS240로 생성한 front-only host 8건을 [COS239 — 회청색 본문대행판](./cos239.json) active plate와 inert tray에 각각 올려 current preview 지속시간을 비교했다. active plate군은 7/8에서 17~31분 동안 front authority가 유지되었고, inert tray군은 1/8만 4분 이내 약반응을 보였다. rear body는 두 군 모두 후면에서 회수되었으나 active plate군의 회수 지연이 더 길었다."
+    },
+    {
+      "label": "EXP-240-05 | [COS203 — 회청색 교차편철면](./cos203.json) 허위 결합 가속 시험",
+      "description": "COS240로 생성한 front-only host 8건을 가장 가까운 rear candidate와 함께 [COS203 — 회청색 교차편철면](./cos203.json) host 위에 올리고, opaque separated verification군 8회와 비교했다. COS203 host군은 6/8에서 90초 이내 false composite가 형성되었고, opaque verification군은 0/8이었다. 잘못된 rear candidate가 `원래부터 같은 한 건`처럼 보이는 속도가 분명히 증가했다."
+    },
+    {
+      "label": "EXP-240-06 | 절차 외피 흡착 시험",
+      "description": "COS240로 생성한 front-only host 6건을 각각 [COS112 — 자색 유예종](./cos112.json) reference hold rack, [COS149 — 무인 결재석](./cos149.json) approval axis, [COS137 — 녹흑색 집행잔선](./cos137.json) trace board 조건에 5분씩 노출했다. 4/6에서 `결정 전 대기`, 3/6에서 blank approval line, 2/6에서 녹흑색 전달선이 형성되었고, intact packet 대조군 6건은 0/6이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "완전한 packet, clear sleeve, cover sheet를 출처 불명 rail, trim, chamfered strip 위로 미끄러뜨리지 않는다. edge repair 전에는 line을 정지하고 물리 부품을 먼저 확인한다.",
+    "COS240가 의심되면 rail의 챔퍼 방향을 `rear axis 0°`로 기록하고, 후축 0.5~3.0 m 범위를 25 cm 격자로 rear-search한다.",
+    "front-only host가 계측상 완결본처럼 보여도 handfeel이 얇거나 장력이 낮으면 즉시 gate close를 보류하고 footer hash·장수·rear-search를 우선한다.",
+    "front host는 `B240-host`, 후면 회수 body는 `R240-body`, false load·false handoff·generated note는 `T240-trace`로 분리 태깅한다. 같은 tray, 같은 transparent sleeve, 같은 current chain에 병합하지 않는다.",
+    "host와 rear body 사이에는 흑색 ABS 또는 steel 차단판만 사용한다. clear acrylic, glass lid, scanner lid, 투명 sleeve를 차단재로 사용하지 않는다.",
+    "E240-01은 3 mm nitrile pad로 active face를 덮은 상태로 수직 보관한다. flat tray, drawer floor, clear lid 아래 평치 보관을 금지한다.",
+    "host 위에 유리 추, 문진, flat weight를 직접 올리지 않는다. 상단 가압이 필요하면 suspended frame 또는 가장자리 클램프만 사용한다.",
+    "3인 합의 관찰 또는 육성 page count를 pairing 근거로 사용하지 않는다. 수치 대조와 rear-search가 끝나기 전까지 generated note, declared mass, approval line, execution trace는 모두 잠정 상태로 둔다."
+  ],
+  "hypotheses": [
+    "가설 1: COS240는 `본문이 어디에 있는가`를 바꾸기보다 `무엇이 현재의 본문으로 취급되는가`를 앞면 얇은 host로 이동시키는 상류 분기 물체일 가능성이 높다.",
+    "가설 2: rail의 챔퍼 후축은 단순한 기하학적 편의가 아니라, actual body를 후면 search 공간으로 밀어 넣는 방향성을 제공한다. 같은 치수의 일반 trim에서는 재현되지 않았으므로 형태만으로 설명되지는 않는다.",
+    "가설 3: [COS239 — 회청색 본문대행판](./cos239.json), [COS227 — 회청색 후면적체벽](./cos227.json), [COS203 — 회청색 교차편철면](./cos203.json)은 COS240가 먼저 만든 front/body 분기를 각각 `현재본 유지`, `후면 집적`, `잘못된 재결합`으로 증폭하는 하류 단계일 수 있다.",
+    "가설 4: [COS112 — 자색 유예종](./cos112.json), [COS149 — 무인 결재석](./cos149.json), [COS137 — 녹흑색 집행잔선](./cos137.json)에 붙는 절차 외피는 rail 자체의 직접 산물이 아니라, 분기된 front host가 body 부재를 숨긴 채 절차선 위에 먼저 놓인 결과일 가능성이 높다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "front-only current authority 오인",
+      "assessment": "높음. 얇은 host가 actual body 없이도 current packet으로 취급되어 line close와 handoff preview가 먼저 닫힐 수 있다."
+    },
+    {
+      "category": "rear body 회수 지연",
+      "assessment": "높음. 후축 rear-search를 생략하면 실제 body가 rear rack·service gap·cable race에 남아 appendix나 후착물로 오인될 수 있다."
+    },
+    {
+      "category": "하류 절차 오염",
+      "assessment": "중간 이상. pending, approval, execution, false recombination이 front host 쪽에 집중되어 기록 사슬을 잘못 닫는다."
+    },
+    {
+      "category": "현장 재포장·재결합 오류",
+      "assessment": "중간 이상. generated note, lower line, preview silhouette만 보고 재포장하면 잘못된 candidate와 clip 봉인이 이루어질 위험이 있다."
+    },
+    {
+      "category": "직접 물리 위해",
+      "assessment": "낮음에서 중간. rear-search 중 rack 하단·cable race를 반복 확인하면서 손 끼임, 허리 과신전, 절상 위험이 증가한다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "초동 메모에는 `blue trim`, `split rail`, `under-edge guide`, `T-240`가 혼용되었다. 2045-09-26 통제시험 전까지는 torn edge trim의 일부 또는 비정상 저온 표면으로 오인되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "“저울과 preview는 다 들어왔다고 했는데, 손에는 첫 장만 남아 있었습니다.” — 윤-11, 2045-09-24 H-4A 구술기록"
+    },
+    {
+      "type": "paragraph",
+      "content": "투명 덮개는 차단재가 아니었다. 2045-09-27 이전의 flat 보관 영상은 모두 참고자료로만 남기고, 이후 재현·보관·교육에는 수직 불투명 구성을 표준으로 적용한다."
+    },
+    {
+      "type": "quotation",
+      "content": "“판이 본문을 만드는 게 아니라, 앞에 놓인 얇은 한 장을 계속 본문처럼 취급하게 만듭니다.” — 한-04, 2045-09-27 debrief"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-240 정식 편입",
+      "paragraphs": [
+        "2045-09-24 초동 기록에는 `blue trim`, `split rail`, `under-edge guide`, `T-240`가 병기되었다.",
+        "2045-09-26 이후 통제시험에서 핵심이 단순 trim 파손이 아니라 intact packet을 front host와 rear body로 가르는 rail형 물체임이 확인되어, 공식 명칭을 **회청색 전후분기레일**로 확정한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A240/B240/R240/T240 접두 및 rear axis 표기",
+      "paragraphs": [
+        "rail 물리 표본은 `A240-rail`, rail 위에서 current authority를 선점한 전면 host는 `B240-host`, 후축 rear-search로 회수된 actual body는 `R240-body`, false load·false handoff·generated note·lower line 잔류는 `T240-trace`로 표기한다.",
+        "챔퍼가 향한 방향을 `rear axis 0°`로 기록하고, 모든 rear-search·열영상·사광 사진은 이 축을 기준으로 좌우 각도를 병기한다.",
+        "`B240-host`와 `R240-body`는 같은 transparent plane, 같은 tray, 같은 current chain hash를 공유하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "rear axis 수색 규격",
+      "paragraphs": [
+        "rear axis 0°를 중심으로 좌우 ±45° 범위를 25 cm 격자로 나눈다.",
+        "수색 우선순위는 rear lip → cable race → rack 하단 → service gap → blind panel 뒤 cavity 순으로 유지한다.",
+        "각 격자에서 445 nm 경사광, 열영상, 수기 장수 대조 시각을 같은 번호로 기록하고, first visible candidate를 바로 당기지 않는다."
+      ]
+    },
+    {
+      "title": "초동 line 중지 기준",
+      "paragraphs": [
+        "bench scale과 preview가 complete를 표시해도 handfeel이 비정상적으로 얇거나 장력이 약하면 즉시 line을 중지한다.",
+        "front shell만 남은 것으로 의심될 때는 개봉보다 rear-search와 edge trim 확인을 먼저 수행한다.",
+        "clear lid, scanner glass, acrylic board 위에서 임시 대조하지 않는다. initial comparison은 흑색 불투명 tray와 차단판 환경에서만 시행한다."
+      ]
+    }
+  ]
+}

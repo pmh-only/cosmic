@@ -453,6 +453,15 @@
       "paragraphs": [
         "[COS203 — 회청색 교차편철면](./cos203.json)의 false composite를 해제한 뒤에도 wrong body와 front shell 근처에 blank 복귀표가 남아 있으면 [COS238 — 회청색 정본귀속패](./cos238.json)가 wrong candidate를 `정본 복귀` 대상으로 다시 지정할 수 있다. 따라서 false pair를 풀어냈다는 사실만으로 정본 복귀를 허용하지 않고, generated 복귀표가 생긴 경우 hash·쪽수·회수 좌표를 처음부터 다시 대조한다."
       ]
+    },
+    {
+      "relatedId": 240,
+      "type": "reciprocal",
+      "title": "COS240 상호기록",
+      "paragraphs": [
+        "[COS240 — 회청색 전후분기레일](./cos240.json)은 [COS203 — 회청색 교차편철면](./cos203.json)이 소비하는 대표적 upstream source로 확인되었다. rail이 intact packet을 front-only host와 rear body로 먼저 갈라 놓은 뒤, 가장 가까운 rear candidate를 clear plane에 올리면 false composite 형성이 현저히 빨라졌다.",
+        "따라서 COS203 의심 pair에서 front가 비정상적으로 얇거나 rear axis를 따라 actual body가 별도 회수되면, 단순 provenance 불일치보다 [COS240 — 회청색 전후분기레일](./cos240.json) 선행 가능성을 우선 검토한다. rail 연계 사건에서는 exposed candidate를 같은 평면에서 front와 대조하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

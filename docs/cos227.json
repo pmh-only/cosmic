@@ -430,6 +430,15 @@
       "paragraphs": [
         "[COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수된 mixed candidate cluster는 [COS238 — 회청색 정본귀속패](./cos238.json)의 가장 흔한 upstream source였다. generated 복귀표가 지목한 candidate가 가장 앞에 노출된 묶음이더라도 이를 actual body로 확정하지 않고, cavity provenance와 footer hash가 먼저 일치하는지 확인해야 한다."
       ]
+    },
+    {
+      "relatedId": 240,
+      "type": "reciprocal",
+      "title": "COS240 상호기록",
+      "paragraphs": [
+        "[COS240 — 회청색 전후분기레일](./cos240.json)이 intact packet을 front-only host와 rear body로 분기시키면, 후축 방향으로 밀려난 actual body는 [COS227 — 회청색 후면적체벽](./cos227.json) cavity의 공급원으로 자주 확인되었다. 현장과 통제 기록에서 rear body 회수축이 rail 챔퍼 후축과 15° 이내로 일치하는 사례가 반복되었다.",
+        "따라서 COS227 rear plane에서 body-only cluster가 회수될 때 인접 line이나 작업대에서 rail형 분기 물체 존재를 함께 조사한다. 후축이 일치하는 경우 최상단 candidate를 우선 body로 확정하지 말고 [COS240 — 회청색 전후분기레일](./cos240.json) upstream 분리 사건으로 분류한다."
+      ]
     }
   ],
   "supplementalSections": [

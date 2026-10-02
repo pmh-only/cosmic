@@ -464,6 +464,15 @@
         "[COS149 — 무인 결재석](./cos149.json)이 시야 하류 1.2 m 이내에 있는 조건에서는 [COS236 — 회청색 정합대행면](./cos236.json) persistence가 baseline 4분 12초에서 17분 06초로 증가했다. 빈 승인축은 provenance conflict를 해소하지 않으면서도 정합 경계를 `서명만 남은 종결` 상태로 오래 유지시키는 증폭점으로 분류된다.",
         "따라서 COS149 환경에서 same-case 확인 절차를 수행하지 않으며, blank closure form과 빈 상석을 차광하거나 점유하지 못하면 대조 자체를 연기한다. generated signature나 검토 완료 표식은 승인 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 240,
+      "type": "reciprocal",
+      "title": "COS240 상호기록",
+      "paragraphs": [
+        "[COS240 — 회청색 전후분기레일](./cos240.json)이 만든 approval cover형 front-only host는 실제 본문이 후면에 남아 있어도 [COS149 — 무인 결재석](./cos149.json) 앞에서 상신 대기본이나 재가 대기본처럼 정지하는 경향이 확인되었다. 이 경우 빈 승인축은 승인자의 부재뿐 아니라 본문 부재까지 동시에 가려, 전면 shell에만 과도한 결재 권위를 부여한다.",
+        "COS149 현장에서 얇은 current front가 상석 앞에서 비정상적으로 안정되면 승인선 확인보다 rear provenance search를 먼저 시행한다. front와 body가 분리 회수되면 이를 [COS240 — 회청색 전후분기레일](./cos240.json) 연계 승인 공백 사례로 봉인한다."
+      ]
     }
   ],
   "supplementalSections": []
