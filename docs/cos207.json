@@ -400,6 +400,14 @@
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json)가 제거되지 않은 front host 2건은 [COS207 — 회청색 무재순환철](./cos207.json)과 동일한 moving current shell로 진행했다. thin shell은 handoff와 review를 통과했으나 actual body는 직전 host의 rear zone에서 회수되었고, clip 회수 후 같은 line에서는 bodyless circulation이 재현되지 않았다.",
         "따라서 COS207 shell이 발견되면 route log만 보지 말고 handhold corner와 mouth edge의 A231형 clip 존재를 먼저 확인한다. moving shell을 body와 현장에서 재결합하지 말고 route 전체를 동결한 뒤 rear body를 별도 회수한다."
       ]
+    },
+    {
+      "relatedId": 241,
+      "type": "reciprocal",
+      "title": "COS241 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json)는 moving shell이 route edge만 current 상태로 유지한 채 actual body를 뒤에 남겼을 때 형성되는 후속 추적선으로 확인되었다. shell 하단에서 시작한 회청색 띠는 레일, 캐비닛 모서리, 반송함 접합선을 따라 rear body 잔류 위치까지 이어질 수 있으므로, route freeze 직후 thin shell만 발견되면 다음 station recovery를 기다리지 말고 [COS241 — 회청색 본문유도띠](./cos241.json) 절차에 따라 origin 구역과 인접 rear zone을 수색한다. generated arrival receipt나 lower line은 종점 확정 근거가 아니며, 오히려 유도띠의 분기 교란원으로 분리 봉인해야 한다."
+      ]
     }
   ],
   "supplementalSections": [

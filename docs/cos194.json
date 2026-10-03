@@ -412,6 +412,14 @@
       "paragraphs": [
         "[COS228 — 회청색 대조대행창](./cos228.json)은 pseudo-body가 실제 body를 복구한 것처럼 보이게 만드는 대표적 외부 host 조건이다. blank sheet에 형성된 paragraph block과 page total이 투명 host 위에서 후면 actual body의 footer 부위와 이어질 때, 서로 다른 사건의 표본도 하나의 본문처럼 읽히므로, A194-sheet는 clear host를 통한 preview만으로 body 승격하지 않고 흑색 backing 위 direct hash와 문단 연속성을 재확인한다."
       ]
+    },
+    {
+      "relatedId": 241,
+      "type": "reciprocal",
+      "title": "COS241 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json)는 pseudo-body가 실제 body와 경쟁하는 상황에서 허위 종점과 진짜 종점을 구분하는 핵심 보조 지표로 확인되었다. 본 항목 표본이 같은 작업면에 있을 때 유도띠는 pseudo-body로 자기회귀하거나 분기할 수 있으므로, 먼저 A194-sheet를 불투명 차폐판 뒤로 분리한 뒤 경로를 다시 확인한다. 유도띠가 pseudo-body 하단에서 멈추더라도 footer hash와 실측 질량이 일치하지 않으면 종점으로 채택하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

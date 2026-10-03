@@ -454,6 +454,14 @@
         "[COS239 — 회청색 본문대행판](./cos239.json) 활성면 주변 30 cm 이내의 blank note card와 witness slip에는 [COS219 — 회청색 종결전사패](./cos219.json)형 lower line과 `검토 종료`, `인계 가능` 같은 짧은 closure cue가 집중되었다. 이는 actual body를 읽은 결과가 아니라, COS239가 전면 host를 현재 본문으로 오인시키는 동안 review closure만 주변 card로 흘러나온 것으로 해석된다.",
         "따라서 COS219 generated card가 front-only host 근처에서 발견되면 종결 메모로 쓰지 말고, 먼저 COS239 plate의 존재와 rear body 위치를 확인한다. card 문구를 낭독하거나 host와 같은 sleeve에 재삽입하는 조치는 금지한다."
       ]
+    },
+    {
+      "relatedId": 241,
+      "type": "reciprocal",
+      "title": "COS241 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json) 활성 구간에서 generated card를 읽거나 가리키면 origin 또는 분기부가 축소·회귀하는 교란이 반복 확인되었다. 본 항목의 `검토 종료`, `received`, lower line은 본문 회수 단서가 아니라 회청색 유도띠를 자기회귀시키는 허위 종점 표지로 취급해야 한다. 따라서 COS241 trace가 확인된 현장에서는 generated card를 즉시 불투명 차폐판 뒤로 이동시키고, 문구 낭독과 현장 삽입을 금지한다."
+      ]
     }
   ],
   "supplementalSections": [

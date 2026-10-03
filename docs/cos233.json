@@ -326,6 +326,14 @@
         "[COS239 — 회청색 본문대행판](./cos239.json) 주변에 1.5~1.7 m 간격의 3인 관찰점을 배치하면, front-only host를 whole packet으로 보는 만장일치 진술이 유의하게 증가했다. 2045-09-12 대조 시험에서 정삼각 관찰군 5회 중 4회가 서로 다른 chain의 front/body를 같은 packet으로 진술했고, 단독관찰 대조군은 0/5였다.",
         "이는 [COS233 — 사후 목격삼각](./cos233.json)이 COS239가 만든 전면 본문 편향을 증언 단계에서 더 강하게 닫아 버리는 결합형으로 해석된다. COS233 양상이 active plate 근처에서 형성되면 일치 진술보다 footer hash, page count, rear-search를 먼저 채택한다."
       ]
+    },
+    {
+      "relatedId": 241,
+      "type": "reciprocal",
+      "title": "COS241 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json)는 관찰자 3인이 분기부를 둘러싸고 동시에 종점을 합의할 때 정확도가 급감했다. 2026-09-19 현장 사건과 후속 통제 시험에서는 정삼각에 가까운 배치가 형성되면 유도띠가 허위 후보나 generated card 쪽으로 전환되는 경향을 보였으므로, 본 항목의 일치 진술은 COS241 종점 판정에서 보조 근거로만 사용한다. COS241 trace가 분기하면 삼각 배치를 즉시 해체하고 단일 추적자 1인만 남긴 뒤 경로를 재확인한다."
+      ]
     }
   ],
   "supplementalSections": [
