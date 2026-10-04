@@ -443,6 +443,15 @@
       "paragraphs": [
         "[COS217 — 회청색 선행대독면](./cos217.json) host에서 발생한 선행대독 run은 본문 없는 front만으로도 구두 검토를 유도했으나, 대응 body는 이후 [COS234 — 회청색 본문회수반](./cos234.json)에서 확인되는 사례가 반복되었다. 이는 육성 전사나 `검토 종료` 로그보다 rear body 회수가 우선이라는 점을 다시 입증한다. COS217 오염 host를 심사했다면 대독 내용을 근거로 결재·인계를 진행하지 말고 COS234 기준 후면 수색으로 실제 본문 위치를 먼저 확정한다."
       ]
+    },
+    {
+      "relatedId": 242,
+      "type": "reciprocal",
+      "title": "COS242 상호기록",
+      "paragraphs": [
+        "[COS217 — 회청색 선행대독면](./cos217.json) host를 줄 단위로 육성 판독할 때 [COS242 — 회청색 무인서명란](./cos242.json) 길이와 연속성이 증가했다. body 없는 front가 먼저 읽히면 `이미 검토했다`는 구두 구조가 sign-off field를 닫는 방향으로 안정화된다.",
+        "따라서 COS217 오염 host 옆에 witness slip이나 수령란이 있는 양식을 두지 않으며, generated sign-off가 나타나도 대독 완료 증거로 채택하지 않는다. rear body 회수 전 구두 확인과 서명 대조를 모두 중지한다."
+      ]
     }
   ],
   "supplementalSections": [

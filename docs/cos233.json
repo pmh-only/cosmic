@@ -334,6 +334,15 @@
       "paragraphs": [
         "[COS241 — 회청색 본문유도띠](./cos241.json)는 관찰자 3인이 분기부를 둘러싸고 동시에 종점을 합의할 때 정확도가 급감했다. 2026-09-19 현장 사건과 후속 통제 시험에서는 정삼각에 가까운 배치가 형성되면 유도띠가 허위 후보나 generated card 쪽으로 전환되는 경향을 보였으므로, 본 항목의 일치 진술은 COS241 종점 판정에서 보조 근거로만 사용한다. COS241 trace가 분기하면 삼각 배치를 즉시 해체하고 단일 추적자 1인만 남긴 뒤 경로를 재확인한다."
       ]
+    },
+    {
+      "relatedId": 242,
+      "type": "reciprocal",
+      "title": "COS242 상호기록",
+      "paragraphs": [
+        "[COS233 — 사후 목격삼각](./cos233.json) 정삼각 관찰 배치 9회 중 8회에서 [COS242 — 회청색 무인서명란](./cos242.json)이 2개 이상 sign-off field를 동시에 폐합했다. 세 관찰자는 실제 서명자를 보지 않았는데도 `모두 확인했다`는 높은 확신을 보고했다.",
+        "따라서 COS233 배치가 witness line·receipt slip 주변에 형성되면 일치 진술을 sign-off 진정성 근거로 사용하지 않는다. 삼각 배치를 즉시 해체하고 단일 관찰자 1인만 남긴 뒤 generated mark와 actual body를 각각 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

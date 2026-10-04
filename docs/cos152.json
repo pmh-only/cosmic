@@ -342,6 +342,15 @@
       "paragraphs": [
         "[COS217 — 회청색 선행대독면](./cos217.json) 종결 단계 뒤 기록된 73~75 dB SPL의 박수성 충격음 2회는 [COS152 — 결석 청중의 종결박수](./cos152.json)와 구조가 일치했다. 이는 대독 내용이 승인되었음을 뜻하지 않고, COS217이 만든 허위 종결감을 사회적 동의처럼 외피화한 후속 단계로 보아야 하므로 박수 직후 생성된 `검토 종료`류 로그는 별도 봉인한다."
       ]
+    },
+    {
+      "relatedId": 242,
+      "type": "reciprocal",
+      "title": "COS242 상호기록",
+      "paragraphs": [
+        "[COS152 — 결석 청중의 종결박수](./cos152.json) 현장 7건 중 2건은 [COS242 — 회청색 무인서명란](./cos242.json)으로 sign-off field가 먼저 닫힌 뒤 30 s 이내 71~75 dB SPL 박수성 충격음이 뒤따랐다. 이 조합은 누가 서명했는지, 누가 수락했는지 모르는 상태에서 절차가 사회적으로 끝난 것처럼 보이게 한다.",
+        "따라서 박수 직전 또는 직후 폐합된 witness line, receipt line, initials box는 실제 참석자 동의로 해석하지 말고, body search·저각 사진·출입 로그를 함께 봉인한다."
+      ]
     }
   ],
   "supplementalSections": []
