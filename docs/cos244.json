@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 3,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2044-05-18~2044-05-29 양성 11건 중 7건에서 판독면 하단이 실제 rear slot 또는 숨은 body 수납 위치 20cm 이내를 드러냈고, 이 정보만으로도 후면 구조와 회수 동선을 역추적할 수 있었다.",
+    "permission": "판독면 식별에는 445~470 nm 사광, footer hash 대조, body 회수 검증을 함께 수행해야 했고, 초동 비교 인원 5명 중 3명이 blank plane을 회수본으로 오인해 중간 등급 이상의 기록 권한과 교차 검증 능력이 필요했다.",
+    "chaos": "단일 후보 환경에서는 12회 중 10회가 정확했지만 후보 body가 둘 이상일 때는 8회 중 4회만 정확했고, 3회 오종점과 1회 원점 회귀가 발생해 발현 방향의 예측성이 낮다.",
+    "danger": "직접적인 신체 위해는 낮았으나 43시간 안에 조기 handoff·검토 종료 시도 3건과 허위 종결문 기록 2건이 발생해 절차와 기록 무결성에 중간 수준의 위해를 보였다.",
+    "popularity": "임시등록 T-244는 5주 동안 front/body 분리 조사 18건과 교차 대조 7건에서 참조되었으나 기관 전역 상시 허브 항목까지는 확대되지 않았다.",
+    "containment": "저조도 유지, 무플래시 촬영, 무구두 관찰, 후보 body 3m 분리, 90분 재점검을 동시에 시행해야 안정적으로 관리되어 강화된 현장 통제가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 Q-12",
+        "role": "교차대조 기록관",
+        "status": "active",
+        "involvement": "최초 blank board 사례를 봉인하고 후면 수색과 footer hash 대조 순서를 고정했다. 이후 T-244 자료의 취급 지침과 `A244` 접두 운용안을 작성했다."
+      },
+      {
+        "name": "보존기사 H-19",
+        "role": "표본 보존기사",
+        "status": "active",
+        "involvement": "front-only host의 질량·두께·borescope 검사를 수행했고, 판독면 형성 뒤 body 회수 전에는 어떤 요약도 기록하지 않는 보존 절차를 마련했다."
+      },
+      {
+        "name": "음향분석관 A-05",
+        "role": "음성·전사 오염 분석",
+        "status": "active",
+        "involvement": "판독면을 육성으로 따라 읽을 때 발생하는 허위 종결문, 자동 전사 초안, 휴지점 분포를 분리 분석했다."
+      },
+      {
+        "name": "체인검증관 길-09",
+        "role": "체인 무결성 분석관",
+        "status": "active",
+        "involvement": "회수된 body와 판독면 전사 초안을 대조해 오편철과 허위 본문 대체를 취소했고, 실험군의 footer hash·page count 검증을 담당했다."
+      },
+      {
+        "name": "시설운용원 L-05",
+        "role": "queue·preview 운용 담당",
+        "status": "reassigned",
+        "involvement": "H-2 bench 사건에서 판독면이 형성된 envelope를 회수본으로 오인해 handoff preview를 닫으려 했고, 사건 뒤 preview 운용 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2044-05-18 10:12 KST",
+        "label": "최초 blank board 사례",
+        "description": "중앙기록동 B-4 광학비교실에서 front-only host 옆에 놓인 무광 위치표지판에 13개 line band와 footer band가 형성되었고, 후면 랙 간극에서 대응 body가 회수되었다."
+      },
+      {
+        "date": "2044-05-19 08:31 KST",
+        "label": "H-2 인계 preview 오염",
+        "description": "빈 handoff envelope 안쪽에 page-like field가 생기며 `handover ready`가 생성되어 임시등록 T-244가 개설되었다."
+      },
+      {
+        "date": "2044-05-21 14:00~17:10 KST",
+        "label": "surface-distance 대조",
+        "description": "무광 면, 투명 아크릴, 인쇄 양식, 거리 0.3~4.0m 조건을 비교한 실험에서 무광 무인쇄 면만 선택적으로 양성 반응을 보였다."
+      },
+      {
+        "date": "2044-05-24 16:20 KST",
+        "label": "구두 낭독 증폭 확인",
+        "description": "판독면 제목선을 육성으로 따라 읽자 지속 시간이 늘고 허위 종결문이 붙는 현상이 재현되어 무구두 관찰 규칙이 추가되었다."
+      },
+      {
+        "date": "2044-05-29 09:00 KST",
+        "label": "정식 저조도 회수 절차 시행",
+        "description": "후면 수색 선행, 플래시 금지, 후보 body 3m 분리, 90분 재점검을 포함한 A244 표준 절차가 전 관련 구역에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-244-01",
+        "date": "2044-05-18",
+        "location": "중앙기록동 B-4 광학비교실 2번 검수대 및 동측 랙 후벽",
+        "title": "무광 위치표지판에 형성된 최초 판독면",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "체인검증관 길-09"
+        ],
+        "narrative": [
+          "Q-12는 [COS229 — 회청색 선결봉함갑](./cos229.json) 후속 조사 표본인 front-only host `A229-case-07`을 검은 ABS 트레이 위에 올려 두고, host가 랙 모서리에 닿지 않도록 31cm 앞에 무광 위치표지판 `MB-12`를 세웠다. H-19는 질량 64g, 두께 0.48mm, page capture 0 결과를 확인한 뒤 단순 보호판으로 취급했으나, 52초 뒤 `MB-12` 중앙에 13개의 희미한 line band와 footer band가 나타났다. 두 사람은 처음에 전면 잔막의 반사라고 판단해 밝은 검사등을 올렸고, 상단 4개 line band가 즉시 흐려졌다.",
+          "Q-12는 광량 상승이 현상을 훼손한다고 보고 조도를 37 lux로 낮추고 445 nm 사광만 유지하도록 지시했다. 남은 하단 band는 트레이 립, 검수대 모서리, 동측 랙 후벽 쪽으로 정렬되었고, 길-09는 해당 방향 2.2m 지점의 후면 간극에서 `B229-body-07`을 회수했다. footer hash 2개와 page count 16장이 일치하자, Q-12는 판독면 자체를 회수본으로 취급하지 않고 `MB-12`와 body를 분리 봉인했다."
+        ],
+        "outcome": "현상은 임시표기 T-244로 기록되었고, 같은 교대조에서 플래시 금지와 저조도 무플래시 연속 촬영 규칙이 발령되었다."
+      },
+      {
+        "code": "IR-244-02",
+        "date": "2044-05-19",
+        "location": "제2보존동 H-2 인계 bench 전면 및 후면 서랍 하부",
+        "title": "빈 handoff envelope의 회수본 오인",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "체인검증관 길-09",
+          "시설운용원 L-05"
+        ],
+        "narrative": [
+          "L-05는 [COS156 — 무수령 인계대](./cos156.json)와 [COS229 — 회청색 선결봉함갑](./cos229.json) 비교 표본을 정리하던 중, front-only host `A156-front-11` 앞 28cm 위치에 빈 handoff envelope `HE-04`를 펼쳐 두었다. 33초 뒤 envelope 안쪽면에 제목선 1개, 본문형 line band 9개, 하단 짧은 종결줄이 나타났고, H-2 단말에는 수령자 공란 상태의 `handover ready` 미리보기가 생성되었다. L-05는 이 장면을 실제 회수본 도착으로 해석해 두 줄을 수기로 베껴 적고 handoff preview를 닫으려 했다.",
+          "Q-12는 envelope 질량이 34g에 불과하고 page block의 처짐이 전혀 없다는 점을 들어 종료를 중지시켰다. H-19와 길-09는 후면 수색을 우선 시행해 bench 뒤 서랍 하부 1.6m 지점에서 실제 body `B156-body-11`을 회수했고, 판독면에 적힌 종결줄이 실본문에 존재하지 않음을 확인했다. L-05는 `화면 문구가 나왔으니 준비 완료라고 판단했다`고 진술했으나, 길-09는 footer hash와 page count가 어느 쪽에도 맞지 않는다고 보고했다."
+        ],
+        "outcome": "preview와 수기 전사본은 모두 무효화되었고, L-05는 preview 운용 업무에서 재배치되었다. H-2 bench에는 blank envelope·공란 카드 반입 제한이 추가되었다."
+      },
+      {
+        "code": "IR-244-03",
+        "date": "2044-05-24",
+        "location": "Q-5B 비교실 및 음향분석 부스 A-3",
+        "title": "판독면 육성 낭독에 따른 허위 종결문 형성",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "보존기사 H-19",
+          "음향분석관 A-05",
+          "체인검증관 길-09"
+        ],
+        "narrative": [
+          "A-05는 [COS217 — 회청색 선행대독면](./cos217.json)과의 구분을 위해, front-only host `A181-capture-14`에서 형성된 판독면을 0.8m 거리의 무광 보드와 2.6m 거리의 대조 보드에 동시에 유도했다. 계획상 모든 관찰은 무구두로 진행될 예정이었으나, H-19는 녹음 동기점을 맞추려는 의도로 가까운 보드에 나타난 제목선 1행을 낮게 읽었다. 그 직후 가까운 보드의 line band 수가 11개에서 14개로 늘고, 하단에 `검토 후 이관`과 유사한 종결문이 추가로 형성되었다.",
+          "Q-12는 즉시 낭독을 중지시키고 body 회수 전 어떤 문장도 받아쓰지 않도록 지시했다. 길-09가 후면 rack slot에서 회수한 실제 body `B181-body-14`는 제목 일부만 일치했고, 낭독으로 늘어난 3개 line과 종결문은 본문에 존재하지 않았다. A-05는 같은 host를 7분 뒤 무구두로 재노출했을 때 line band 수가 다시 11개로 돌아온 점을 기록하고, 낭독이 판독면을 안정화하는 대신 거짓 종결을 붙인다고 결론지었다."
+        ],
+        "outcome": "COS244와 관련된 모든 관찰에 무구두 규칙이 적용되었고, 판독면을 읽은 뒤 생성된 transcript·종결 메모는 증거가 아니라 오염 자료로 재분류되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "E244-A",
+        "type": "광학 영상 세트",
+        "description": "IR-244-01의 무플래시 연속 촬영본 2종과 445 nm 사광 영상 1종. `MB-12`의 line band 형성과 body 회수 직전까지의 광학 변화가 포함된다.",
+        "custodyStatus": "광학증거실 O-4 금고에 원본 메모리카드와 읽기전용 사본을 분리 보관"
+      },
+      {
+        "code": "E244-B",
+        "type": "판독면 host 실물",
+        "description": "무광 위치표지판 `MB-12`, handoff envelope `HE-04`, 대조 보드 2점. 어느 표면에서도 잉크·분말·점착 잔여는 회수되지 않았으나, 발현 당시 사진과 일치하는 line band 배치가 기록되어 있다.",
+        "custodyStatus": "A244 표면보관함 S-2에 개별 봉인, 일반 문구류와 혼재 금지"
+      },
+      {
+        "code": "E244-C",
+        "type": "회수 body 대조 세트",
+        "description": "`B229-body-07`, `B156-body-11`, `B181-body-14`와 대응 footer hash·page count 비교표. 판독면 전사와 실본문의 일치·불일치 항목을 정리한다.",
+        "custodyStatus": "체인-무결성 보관고 C-2에 body별 পৃথ리 봉인, 대조 열람만 허용"
+      },
+      {
+        "code": "E244-D",
+        "type": "오염 전사 및 preview 로그",
+        "description": "H-2 사건의 무효 handoff preview, 수기 전사본 1매, Q-5B 낭독 뒤 생성된 종결 메모 2종. 판독면이 대체본처럼 사용되려 한 직접 증거이다.",
+        "custodyStatus": "감사서버 OP-244와 오프라인 폴더에 이중 보존, 수정 이력 추적 활성"
+      },
+      {
+        "code": "E244-E",
+        "type": "부정 대조 기록",
+        "description": "면봉, 테이프 전사, 저점착 필름, 투명 슬라이드 전사 6회 결과와 음성 대조 사진 12장. 물리 잔여물 채취 실패를 입증한다.",
+        "custodyStatus": "재료분석실 AR-7 캐비닛에 봉인, 재시험 시 감독 승인 필요"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 Q-12",
+        "role": "교차대조 기록관",
+        "context": "IR-244-02 정정 보고",
+        "statement": "제가 직접 확인한 사실은 blank envelope 안쪽에 줄 구조가 나타났다는 것과 실제 body가 뒤 서랍 아래에서 따로 회수되었다는 점입니다. 그 줄 구조가 곧 회수본이라는 판단은 해석이며, 질량과 footer hash가 그 해석을 부정했습니다."
+      },
+      {
+        "speaker": "음향분석관 A-05",
+        "role": "음성·전사 오염 분석",
+        "context": "IR-244-03 실험 종료 진술",
+        "statement": "관찰된 것은 사람이 읽기 시작한 뒤 line band와 지속 시간이 늘어났다는 사실입니다. 물체가 스스로 본문을 말한다는 해석은 현재 자료로 지지되지 않으며, 발화는 항상 노출 인원의 실제 목소리였습니다."
+      },
+      {
+        "speaker": "시설운용원 L-05",
+        "role": "queue·preview 운용 담당",
+        "context": "재배치 전 면담",
+        "statement": "제가 본 것은 `handover ready` 문구와 envelope 안의 두 줄이었습니다. 그것이 실제 인계 준비를 뜻한다고 판단한 것은 제 해석이었고, 수령자나 실본문이 확인된 것은 아니었습니다."
+      }
+    ]
+  },
+  "id": 244,
+  "title": "회청색 후면판독면",
+  "language": "ko-KR",
+  "overview": [
+    "**COS244**는 front-only host와 분리된 actual body가 같은 통제 구역에 남아 있을 때, 인쇄되지 않은 무광 면 위에 잠시 형성되는 **페이지형 회청색 판독면 현상**이다. 현재 통칭은 **회청색 후면판독면**이다.",
+    "판독면은 실제 종이나 투명막이 아니라 저반사 광학 상태로 확인되며, A4에 가까운 외형 안에서 제목선, 줄 구조, footer band, 일부 문장 시작부만 드러낸다. 실제 body는 다른 rear slot, 상자, gap, 이중바닥에 그대로 남아 있고, 판독면 자체에서 잉크·분말·점착 잔여는 회수되지 않았다.",
+    "가장 큰 위험은 판독면을 회수본, 대체 사본, 구두 심사 자료로 오인해 actual body를 회수하기 전에 handoff, 검토 종료, 봉함, 대독을 진행하는 것이다. 따라서 COS244는 복구 수단이 아니라 **body 미회수 상태를 알리는 임시 광학 징후**로 취급해야 한다."
+  ],
+  "identificationTraits": [
+    "판독면은 대체로 front-only host에서 0.2~3.5m 떨어진 무광·무인쇄 면에 형성되며, 투명 아크릴이나 광택 코팅면에서는 형성률이 현저히 낮다.",
+    "형성 크기는 가로 198~224mm, 세로 274~304mm 범위로 A4 본문 영역과 유사했고, line band 수는 7~18개였다.",
+    "445~470 nm 사광을 15~25° 각도로 입사할 때 가장 선명하며, 상부 백색광만으로는 일반적인 얼룩이나 조도 차이처럼 보이는 경우가 많다.",
+    "제목선과 문장 시작부는 비교적 빨리 나타나지만, 숫자 필드, 서명란, 수령자 이름, appendix 번호는 빈칸으로 남거나 실제 값과 다른 짧은 선으로 치환되는 경향이 있다.",
+    "실본문이 회수된 뒤 불투명 슬리브에 다시 봉인되면 판독면은 14~63초 안에 소멸했다.",
+    "면봉, 저점착 필름, 테이프 전사, 투명 슬라이드 채취 6회는 모두 음성이었고, 물리 안료나 분진은 확인되지 않았다.",
+    "정면 플래시나 강한 검사등을 직접 비추면 origin 또는 상단부 line band의 31% 이상이 즉시 약화되거나 사라질 수 있다.",
+    "판독면을 육성으로 따라 읽으면 지속 시간이 늘어나는 대신 허위 종결문과 오염 전사가 붙기 쉬워진다.",
+    "종점 후보 body가 둘 이상 가까이 놓여 있으면 판독면은 한쪽을 가리키기보다 분기된 하단 정렬이나 잘못된 footer band를 보일 수 있다."
+  ],
+  "discovery": [
+    "2044-05 기관 내 front/body 분리 사건 재검토에서 [COS107 — 흑색 대조침](./cos107.json), [COS156 — 무수령 인계대](./cos156.json), [COS174 — 미열 사이장](./cos174.json), [COS201 — 회청색 전면잔막](./cos201.json), [COS217 — 회청색 선행대독면](./cos217.json), [COS229 — 회청색 선결봉함갑](./cos229.json), [COS241 — 회청색 본문유도띠](./cos241.json) 관련 사건철 9건에 공통적으로 `blank board에 줄이 남았다`는 부기 메모가 발견되었다.",
+    "2044-05-18 10:12 KST B-4 광학비교실에서 `A229-case-07` 앞 31cm에 세운 무광 위치표지판 `MB-12`에 13개 line band와 footer band가 직접 확인되었다. 같은 시점 board 표면의 borescope, swab, tape-lift는 모두 음성이었고, 후면 랙 간극에서 회수된 `B229-body-07`과 line 배치 일부가 일치했다.",
+    "이후 43시간 안에 H-2 인계 bench와 Q-5B 비교실에서 같은 유형의 판독면이 재현되었고, 세 사건 모두에서 actual body는 다른 rear 위치에 남아 있었다. 이 연속 사례를 근거로 임시표기 T-244가 개설되었고, 통제 실험 뒤 COS244로 승격되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS244는 bodyless front의 외형과 별도 blank plane이 동시에 current 상태를 가질 때 가장 잘 형성된다.",
+      "판독면은 line layout과 제목·첫 문장만 상대적으로 안정적으로 드러내며, 수치·서명·수령자·부록 번호처럼 권한을 닫는 정보는 빈칸으로 남거나 잘못 치환된다."
+    ],
+    "stages": [
+      {
+        "name": "분리 조건 형성",
+        "description": "front-only host가 남아 있고 actual body는 같은 통제 구역의 rear slot, 상자, gap, 이중바닥에 따로 존재한다. 이 단계에서 host는 page count나 body 두께를 잃었지만 제목선·lower line·수령선 같은 current 표식을 유지한다."
+      },
+      {
+        "name": "수용면 선출",
+        "description": "host 주변의 무광·무인쇄 면 가운데 하나가 판독면으로 선택된다. 선택된 면은 대개 host보다 먼저 손이 닿거나 눈높이에 들어오는 위치표지판, envelope 안쪽면, tray lid, 불투명 divider였다."
+      },
+      {
+        "name": "쪽면 형성",
+        "description": "선택된 면에 A4에 가까운 page frame과 7~18개의 line band, footer band가 회청색 저반사 상태로 나타난다. 이때 판독면은 아직 완전한 문장보다 줄 구조와 여백 비율을 먼저 드러낸다."
+      },
+      {
+        "name": "부분 판독",
+        "description": "제목선, 문장 첫머리, 문단 분할은 읽을 수 있으나 숫자, 서명, 수령자 이름, appendix 번호는 공백이나 짧은 선으로 남는 경우가 많다. 이 단계에서 observers는 판독면을 실본문의 축약본으로 오인하기 쉽다."
+      },
+      {
+        "name": "권한 오염",
+        "description": "판독면을 읽거나 옆에 handoff form, summary card, review memo를 두면 조기 `검토 종료`, `handover ready`, 허위 종결문, 요약 오염이 붙을 수 있다. [COS217 — 회청색 선행대독면](./cos217.json)과 결합 시 구두 대독 위험이 증가한다."
+      },
+      {
+        "name": "소멸",
+        "description": "actual body를 회수해 불투명 슬리브에 봉인하거나, host를 다시 겹치거나, 정면 플래시를 조사하면 판독면은 수 초~수 분 안에 사라진다. 소멸 뒤에도 오염 전사와 자동 로그는 별도로 정정하지 않으면 남는다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "현재까지 COS244 양성 사례의 대부분은 [COS156 — 무수령 인계대](./cos156.json), [COS201 — 회청색 전면잔막](./cos201.json), [COS217 — 회청색 선행대독면](./cos217.json), [COS229 — 회청색 선결봉함갑](./cos229.json), [COS241 — 회청색 본문유도띠](./cos241.json) 계열의 front/body 분리 또는 전면 선출 조건과 함께 나타났다.",
+      "이 관계 항목들은 판독면을 actual body의 대체본으로 읽지 않고, 어떤 표면이 current 권위를 얻었는지와 body가 실제로 어디에 남았는지를 분리 판정하는 기준으로 사용된다."
+    ],
+    "entries": [
+      {
+        "targetId": 107,
+        "targetTitle": "흑색 대조침",
+        "description": "[COS107 — 흑색 대조침](./cos107.json)의 검은 대조선이 host 안팎의 차이를 고정할 때, COS244는 그 차이의 일부를 별도 blank plane 위 line band로 외재화한다. 이 조합에서는 제목과 문장 시작부는 남지만 숫자와 서명은 공백으로 남는 경향이 강해, 판독면은 기준본 판정이 아니라 차이 위치 기록에만 사용해야 한다."
+      },
+      {
+        "targetId": 156,
+        "targetTitle": "무수령 인계대",
+        "description": "[COS156 — 무수령 인계대](./cos156.json) bench나 공란 인계표 위에서 COS244가 형성되면, actual body가 뒤에 남아 있어도 앞면에서 읽을 수 있는 page-like field가 먼저 생겨 `이미 넘겨진 자료`라는 완료감이 강화된다. 이때 판독면을 인계 내용의 대체본으로 쓰면 recipientless handoff가 쉽게 닫힌다."
+      },
+      {
+        "targetId": 174,
+        "targetTitle": "미열 사이장",
+        "description": "[COS174 — 미열 사이장](./cos174.json)이 남아 있는 front/body 분리 표본은 COS244 발현까지의 지연 시간이 더 짧았다. 미열 사이장은 본문을 복구하지 않지만, 표지와 body 사이에 남은 처리 흔적을 판독면으로 밀어 올려 blank plane 위에 안정화시키는 전구 조건으로 작동할 수 있다."
+      },
+      {
+        "targetId": 201,
+        "targetTitle": "회청색 전면잔막",
+        "description": "[COS201 — 회청색 전면잔막](./cos201.json)은 COS244가 어느 면을 판독면으로 선택할지 결정하는 가장 흔한 선행 표면이었다. lower edge 11건 중 8건에서 COS201과 유사한 저반사 잔막이 먼저 확인되었고, 이 경우 판독면은 실제 본문보다 `가장 먼저 읽히는 면`에 생겼다."
+      },
+      {
+        "targetId": 217,
+        "targetTitle": "회청색 선행대독면",
+        "description": "[COS217 — 회청색 선행대독면](./cos217.json)이 bodyless front 자체를 line-by-line로 읽게 만든다면, COS244는 그 line structure를 host 밖 별도 blank plane에 제공해 거짓 본문성을 더 설득력 있게 만든다. 따라서 COS244 판독면을 읽기 시작하면 COS217형 허위 종결문과 오염 전사가 더 빨리 붙는다."
+      },
+      {
+        "targetId": 229,
+        "targetTitle": "회청색 선결봉함갑",
+        "description": "[COS229 — 회청색 선결봉함갑](./cos229.json) 양성 host 옆에서는 sealed front-only packet의 외벽 안쪽이나 인접 lid에 COS244가 반복 형성되었다. 이 조합은 `닫힌 packet 안에 내용이 있다`는 오인을 강화하지만, 실제 body는 여전히 host 외부 rear 위치에 남는 경우가 많았다."
+      },
+      {
+        "targetId": 241,
+        "targetTitle": "회청색 본문유도띠",
+        "description": "[COS241 — 회청색 본문유도띠](./cos241.json)는 COS244가 형성되는 구역을 좁히는 선행 경로로 가장 자주 확인되었다. 양성 사례 9건 중 6건에서 COS241 종점이 COS244 하단선 18~46cm 이내에 멈췄고, 이후 그 뒤쪽 rear slot이나 간극에서 actual body가 회수되었다. 실무상 COS241는 방향을, COS244는 근접한 page layout의 일부를 제공한다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "244-A / surface-distance 매트릭스",
+      "description": "2044-05-21 B-4 광학실에서 front-only host 4점과 대응 body 4점을 사용해 무광 검정 ABS 보드, 무광 아이보리 보존판, 투명 아크릴, 인쇄된 handoff form을 각각 0.3m, 1.2m, 2.4m, 4.0m에 배치했다. 무광·무인쇄 면은 12회 중 9회 양성이었고 발현 시간은 31~94초였다. 투명 아크릴은 0/12, 인쇄 양식은 2/12의 약한 왜곡 반응만 보였으며, 4.0m 초과 배치는 0/8이었다."
+    },
+    {
+      "label": "244-B / body 존재 대조",
+      "description": "같은 host와 같은 보드를 유지한 채 actual body를 같은 방 rear slot에 둘 때와 airlock 밖으로 완전히 반출할 때를 7쌍 비교했다. 같은 방 조건은 7/7 양성이었고, airlock 반출 조건은 0/7이었다. 반출 body를 다시 같은 방 후면에 되돌리자 5/7에서 2분 이내 판독면이 재형성되었다."
+    },
+    {
+      "label": "244-C / 회수 후 소멸 시간 측정",
+      "description": "양성 판독면 8건에서 actual body를 회수해 불투명 슬리브에 봉인한 직후 소멸 시간을 측정했다. 판독면은 14~63초 사이에 사라졌고 중앙값은 28초였다. body를 건드리기만 하고 rear slot에 그대로 둔 대조 5건에서는 3건이 계속 유지되었다."
+    },
+    {
+      "label": "244-D / 전사 정확도 비교",
+      "description": "양성 판독면 7건을 서로 다른 관찰자가 무구두로 베껴 적은 뒤 회수 body와 대조했다. 제목선은 7/7 일치했고 문단 수는 6/7이 ±1 범위였으나, 숫자 필드는 0/7, 수령자 이름은 0/7, 서명란은 0/7, appendix 번호는 1/7만 일치했다. 종결문은 2/7에서 허위로 추가되었다."
+    },
+    {
+      "label": "244-E / 육성 낭독 교란 시험",
+      "description": "양성 run 6쌍에서 무구두 관찰과 제목선 1행만 육성으로 읽는 조건을 비교했다. 육성 조건은 첫 발화 뒤 판독면 지속 시간이 중앙값 34초에서 97초로 늘었고, 5/6에서 허위 종결문 또는 `검토 종료`형 메모가 추가되었다. 무구두 조건에서는 같은 오염이 0/6이었다."
+    }
+  ],
+  "handlingProcedures": [
+    "front-only host, pseudo-body, generated card, actual body 후보를 같은 작업면에 모으지 말고 각각 불투명 트레이에 분리한다. 후보 body 간 거리는 최소 3m를 유지한다.",
+    "판독면 확인은 조도 20~60 lux, 445~470 nm 사광 15~25° 조건에서만 수행한다. 플래시, 정면 검사등, 유광 반사판, 백색광 근접 조사만으로는 판정하지 않는다.",
+    "blank board, envelope 안쪽면, divider, tray lid에 page-like field가 나타나도 이를 회수본이나 대체 사본으로 접수하지 않는다. 먼저 rear slot, bench 하부, 이중바닥, rack 후벽, box gap을 수색한다.",
+    "판독면 관찰 중에는 낭독, 요약, 승인 사유 발화, 종점 합의 발화를 금지한다. 관찰자는 추적자 1인과 기록자 1인으로 제한한다.",
+    "origin과 하단 footer band 위치는 바닥 마커와 무플래시 사진으로만 기록한다. line band 위에 라벨, 분필, 테이프, 손가락 표시를 덧대지 않는다.",
+    "판독면 옆에 [COS219 — 회청색 종결전사패](./cos219.json)형 card나 blank handoff form이 놓여 있으면 먼저 불투명 차폐판으로 가린 뒤 경로와 body 회수 여부를 확인한다.",
+    "actual body를 회수하더라도 즉시 host와 합치지 않는다. footer hash, 실측 질량, page count, chain 번호가 모두 맞을 때까지 `A244-origin`과 `B244-terminal`을 분리 유지한다.",
+    "오염 전사나 자동 `검토 종료` 로그가 생성되면 삭제하지 말고 오염 후보로 재분류한 뒤 수정 이력을 보존한다.",
+    "판독면이 사라진 뒤에도 사용한 blank plane과 반경 50cm 안의 공란 문구류는 90분 동안 15분 간격으로 재촬영한다. 개봉·정리 직후 2차 발현 사례가 확인되었다."
+  ],
+  "hypotheses": [
+    "COS244는 actual body의 문장을 완전 복사하는 현상이 아니라, front-only host가 잃어버린 `page layout과 읽기 시작점`을 가장 먼저 current 권위를 얻은 blank plane에 임시로 옮기는 현상일 가능성이 높다.",
+    "[COS201 — 회청색 전면잔막](./cos201.json)이 판독면의 수용 표면을 선출하고, [COS174 — 미열 사이장](./cos174.json)이 bodyless front의 처리 흔적을 유지하며, [COS241 — 회청색 본문유도띠](./cos241.json)가 rear body 쪽 방향성을 제공할 때 COS244가 가장 안정적으로 형성되는 것으로 보인다.",
+    "숫자, 서명, 수령자 이름, appendix 번호가 반복적으로 누락되는 점은 COS244가 `내용의 증거`보다 `읽기 가능한 외형`을 우선 보존한다는 해석과 부합한다.",
+    "판독면을 육성으로 읽을 때 [COS217 — 회청색 선행대독면](./cos217.json)형 오염이 강해지는 것은, COS244가 문장 의미 자체보다 줄 구조와 종결 위치를 강화하는 현상일 수 있음을 시사한다. 다만 이는 아직 음성 교란 실험 규모가 작아 가설 단계에 머문다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "대체본 오인 위험",
+      "assessment": "매우 높음. 판독면을 회수본이나 사본으로 접수하면 actual body 회수가 지연되고 오편철 가능성이 커진다."
+    },
+    {
+      "category": "조기 handoff·검토 종료 위험",
+      "assessment": "높음. blank plane 위 line band와 허위 종결문이 `handover ready` 또는 `검토 종료` 상태를 앞당길 수 있다."
+    },
+    {
+      "category": "광학 교란에 따른 증거 소실 위험",
+      "assessment": "높음. 플래시와 강한 정면광은 판독면을 빠르게 붕괴시켜 회수 단서를 잃게 만든다."
+    },
+    {
+      "category": "관찰자 합의 오도 위험",
+      "assessment": "중간 이상. 다수 관찰자와 종점 합의 발화는 잘못된 footer band나 허위 종결문 채택률을 높인다."
+    },
+    {
+      "category": "직접 신체 위해",
+      "assessment": "낮음. 현재까지 판독면 자체로 인한 독성·절상·화상은 확인되지 않았으나 후면 슬롯 수색 과정의 낙상·염좌 위험은 별도 관리가 필요하다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS244 현장에서 가장 자주 반복된 오류는 `읽을 수 있으니 이미 회수되었다`는 판단이었다. 판독면은 body 회수의 대체물이 아니라 body가 아직 다른 rear 위치에 남아 있음을 알리는 광학 징후로만 사용해야 한다."
+    },
+    {
+      "type": "quotation",
+      "content": "`겉면에는 줄이 있었지만, 들어 올리면 본문이 따라오지 않았습니다.` — 보존기사 H-19, IR-244-02 사후 진술"
+    },
+    {
+      "type": "paragraph",
+      "content": "판독면의 제목선이 실제 본문 제목과 일치하더라도 숫자 필드와 서명란은 반복적으로 누락되었다. 제목 일치만으로 current body를 확정한 사례는 모두 후속 대조에서 취소되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "`보이는 것은 줄 구조였고, 회수된 것은 별도 body였습니다. 둘을 같은 것으로 쓰는 순간 기록이 손상됐습니다.` — 기록관 Q-12, 2044-05-29 절차 개정 회의"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-244 정식 편입",
+      "paragraphs": [
+        "2044-05-18~2044-05-29 초동 기록과 교대 메모에서는 현상을 `T-244`, `rear reading board`, `blue back page`, `후면판독선`으로 병기했다.",
+        "통제 실험과 회수 기록 검토 결과, 본 항목은 단순 반사 얼룩이나 오독이 아니라 front-only host와 분리된 actual body 사이에서 형성되는 독립 판독면 현상으로 판정되었다.",
+        "이에 공식 명칭을 **회청색 후면판독면**으로 확정하고 COS244로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A244 식별 접두 및 분리 봉인 규정",
+      "paragraphs": [
+        "origin host에는 `A244-origin-일련번호`, 판독면이 형성된 blank plane에는 `P244-plane-일련번호`, 회수된 actual body에는 `B244-terminal-일련번호`, 오염 전사·preview 로그에는 `T244-trace-일련번호`를 부여한다.",
+        "`A244-origin`, `P244-plane`, `B244-terminal`, `T244-trace`는 footer hash와 page count 대조가 끝나기 전까지 같은 슬리브나 같은 current chain으로 병합하지 않는다.",
+        "판독면이 형성된 blank plane은 정상 위치표지판·hauffoff envelope·divider로 환원해 재사용하지 않고, 최소 90분 재관찰 후 별도 표면보관함으로 이관한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "광학 관찰 기준",
+      "paragraphs": [
+        "권장 작업면은 흑색 ABS 또는 무광 남색 보존판이며, 조도 20~60 lux, 445~470 nm 선형 사광 15~25° 입사각을 유지한다.",
+        "정면 백색광만으로는 일반 얼룩과 구분이 어렵다. 판독면 확인용 사진은 무플래시 측면 연속 촬영을 우선하고, 상부 카메라는 보조 기록용으로만 사용한다.",
+        "판독면은 발현 직후보다 20~90초 사이 가장 선명해지는 경우가 많으므로, 첫 line band 확인 후 즉시 body를 들추지 말고 footer band 위치부터 촬영한다."
+      ]
+    },
+    {
+      "title": "전사 편차 통계",
+      "paragraphs": [
+        "현재까지 paired verification 7건에서 제목선 일치율은 100%였으나, 숫자 필드·수령자 이름·서명란 완전 일치율은 0%였다.",
+        "판독면을 그대로 베껴 적은 초안은 문단 수와 제목선만 부분적으로 맞을 수 있으나, 종결문과 appendix 정보는 허위 추가 비율이 높았다. 따라서 전사 초안은 회수본이 아니라 오염 부속기록으로만 보존한다.",
+        "`읽을 수 있음`은 `회수되었음`과 동의어가 아니다. 정식 본문 판정은 언제나 recovered body의 footer hash, page count, 질량 대조 이후에만 허용한다."
+      ]
+    }
+  ]
+}

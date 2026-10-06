@@ -452,6 +452,15 @@
         "[COS217 — 회청색 선행대독면](./cos217.json) host를 줄 단위로 육성 판독할 때 [COS242 — 회청색 무인서명란](./cos242.json) 길이와 연속성이 증가했다. body 없는 front가 먼저 읽히면 `이미 검토했다`는 구두 구조가 sign-off field를 닫는 방향으로 안정화된다.",
         "따라서 COS217 오염 host 옆에 witness slip이나 수령란이 있는 양식을 두지 않으며, generated sign-off가 나타나도 대독 완료 증거로 채택하지 않는다. rear body 회수 전 구두 확인과 서명 대조를 모두 중지한다."
       ]
+    },
+    {
+      "relatedId": 244,
+      "type": "reciprocal",
+      "title": "COS244 상호기록",
+      "paragraphs": [
+        "[COS244 — 회청색 후면판독면](./cos244.json)은 [COS217 — 회청색 선행대독면](./cos217.json)의 거짓 줄 구조를 host 밖 별도 blank plane에 제공하는 외부 증폭면으로 확인되었다. 판독면 자체를 육성으로 따라 읽기 시작하면 bodyless front가 없더라도 line-by-line 대독, 허위 종결문, 오염 전사가 더 빠르게 형성될 수 있다.",
+        "COS217 host 옆에 page-like field가 생기면 이를 보조 읽기판이나 회의용 요약면으로 사용하지 않는다. 발화와 자동 전사를 즉시 중단하고 rear body 회수를 먼저 끝낸 뒤, 판독면은 사진 기록만 남기고 별도 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

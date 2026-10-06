@@ -414,6 +414,15 @@
         "[COS239 — 회청색 본문대행판](./cos239.json) 위에서 current authority를 얻은 얇은 host는 실제 수령자와 actual body가 분리된 상태에서도 `이미 넘겨진 packet`처럼 취급되기 쉬웠다. 2045-09-05~2045-09-09 모의 handoff 20회 중 9회에서 recipient field 공란 상태의 [COS156 — 무수령 인계대](./cos156.json)형 closure가 형성되었고, corresponding body는 rear axis 0.7~1.9 m에서 뒤늦게 회수되었다.",
         "따라서 COS156 양상이 front-only host, false load, rear cold rectangle과 함께 나타나면 인계 desk 자체보다 COS239의 상류 평판을 먼저 탐색한다. 수령 완료 문구나 preview는 actual body 확인 전까지 인계 증거로 채택하지 않는다."
       ]
+    },
+    {
+      "relatedId": 244,
+      "type": "reciprocal",
+      "title": "COS244 상호기록",
+      "paragraphs": [
+        "[COS244 — 회청색 후면판독면](./cos244.json)이 [COS156 — 무수령 인계대](./cos156.json) 전면에 형성되면, 공란 인계표·blank envelope·bench lid가 실제 수령본처럼 읽히면서 recipientless handoff를 더 쉽게 닫을 수 있다. 그러나 확인된 사례에서 actual body는 계속 rear slot, bench 하부, 후면 gap에 남아 있었고, 판독면에는 제목선과 줄 구조만 있을 뿐 수령자 정보와 footer hash는 안정적으로 남지 않았다.",
+        "인계 bench에서 page-like line band가 보이더라도 이를 인계 내용의 대체본으로 접수하지 않는다. handoff preview를 먼저 원복한 뒤 후면 수색을 시행하고, blank plane·front host·recovered body를 각각 별도 체인으로 유지한다."
+      ]
     }
   ],
   "supplementalSections": []

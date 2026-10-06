@@ -372,6 +372,15 @@
         "`A241-origin`, `B241-terminal`, `T241-trace`는 대조 완료 전까지 동일 슬리브나 동일 current chain으로 병합하지 않는다.",
         "분기부가 확인된 사건은 추가로 `T241-branch`를 부여하고, branch 표본은 교정 완료 전 교육용 재현 실험에 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 244,
+      "type": "reciprocal",
+      "title": "COS244 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json) 종점 18~46 cm 전후에서 [COS244 — 회청색 후면판독면](./cos244.json)이 형성되는 사례가 반복 확인되었다. COS241가 actual body가 있는 방향을 먼저 좁히면, COS244는 그 근처 blank plane에 제목선과 줄 구조를 남겨 회수 직전의 page layout 일부를 외재화한다.",
+        "이 조합은 회수 보조에는 유용하지만 판독면을 대체본으로 오인하게 만들 위험이 크다. 띠와 판독면이 동시에 있으면 먼저 body를 회수하고, line layout은 사진으로만 보존하며, 판독면 내용을 근거로 footer hash나 종결 상태를 확정하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

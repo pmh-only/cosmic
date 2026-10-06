@@ -368,6 +368,15 @@
         "[COS229 — 회청색 선결봉함갑](./cos229.json)의 front-only 봉함 host는 개봉 파손 없이 contents completeness를 먼저 외형화하므로, 개방형 레일·cart lip에서 [COS235 — 회청색 본문귀속궤](./cos235.json)의 seed host로 반복 확인되었다. 2044-07-03~2044-07-18 연계 표본 5건 모두에서 wrong bundle이 `원래 봉함 내부에 있었던 body`처럼 받아들여졌으나, recovered actual body는 후면 search 구역에서 따로 회수되었다.",
         "따라서 COS229 seam이 intact하더라도 first-passage bundle을 내부 contents로 합철하지 않으며, capture bundle·sealed host·recovered body를 별도 체인으로 유지한다. 봉함 외형은 contents provenance의 근거가 되지 않는다."
       ]
+    },
+    {
+      "relatedId": 244,
+      "type": "reciprocal",
+      "title": "COS244 상호기록",
+      "paragraphs": [
+        "[COS244 — 회청색 후면판독면](./cos244.json)은 [COS229 — 회청색 선결봉함갑](./cos229.json) 양성 host의 외벽 안쪽, lid, 인접 blank board에 반복 형성되었다. 이 조합은 `닫힌 packet 안에 읽을 내용이 있다`는 인상을 강화하지만, 확인된 사례에서 actual body는 여전히 rear box나 gap에 남아 있었고 line band는 footer hash와 장수 정보를 완전하게 제공하지 못했다.",
+        "선결봉함갑 주변에 판독면이 생기더라도 이를 contents confirmation으로 사용하지 않는다. host와 blank plane을 분리 봉인하고 rear body 수색을 우선 시행하며, 판독면 전사본이나 preview 문구는 완결 packet의 증거로 채택하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
