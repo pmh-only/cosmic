@@ -351,6 +351,15 @@
         "`A242-line`은 길이 15 mm 이상 연속 곡선형 서명흔에, `A242-box`는 initials box·check box 내부 발생형에, `A242-slip`은 독립 witness/receipt slip에서 회수된 host 전체에 부여한다.",
         "같은 사건에서 2개 이상의 sign-off field가 동시에 폐합되면 사건 코드는 유지하되 host별로 `-1`, `-2`, `-3`를 분기한다. generated mark를 OCR 이름값으로 저장하지 않는다."
       ]
+    },
+    {
+      "relatedId": 245,
+      "type": "reciprocal",
+      "title": "COS245 상호기록",
+      "paragraphs": [
+        "[COS245 — 회청색 전면종결곽](./cos245.json)은 [COS242 — 회청색 무인서명란](./cos242.json)의 generated sign-off가 단독으로 보일 때보다 훨씬 높은 오판 위험을 만든다. blank sign-off field가 page-like blank plane과 recipientless handoff preview까지 동시에 획득하면, 현장 인원은 진서명 여부를 따지기 전에 `이미 수령·확인·검토가 끝난 packet`으로 받아들이기 쉽다.",
+        "따라서 COS242 사건에서 generated mark가 보일 경우 주변 2m 안의 blank plane과 handoff 상태를 함께 조사한다. [COS245 — 회청색 전면종결곽](./cos245.json) 징후가 동반되면 sign-off 오염을 단일 host 사건으로 기록하지 말고 convergence event로 상향 분류하며, actual body rear-search를 최우선으로 둔다."
+      ]
     }
   ],
   "supplementalSections": [

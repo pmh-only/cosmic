@@ -402,6 +402,15 @@
         "[COS219 — 회청색 종결전사패](./cos219.json)는 [COS218 — 회청색 후면청취막](./cos218.json) rear-gap host 전방의 blank witness card에서 반복적으로 형성된 후속 표본이다. 정면 청취축의 짧은 sentence-final fragment와 approval cue가 generated card의 `청취 완료`, `승인 사유 확인` 같은 문구로 portable화되지만, 실제 본문 복원과는 일치하지 않는다.",
         "따라서 COS218 현장에서 witness card나 note slip에 회청색 lower line이 생겨도 이를 청취 증거로 사용하지 않고 no-listening triad를 유지한다. generated card는 [COS219 — 회청색 종결전사패](./cos219.json)로, 실제 본문은 rear provenance search로 따로 회수하며 두 표본을 같은 봉투나 same current chain으로 병합하지 않는다."
       ]
+    },
+    {
+      "relatedId": 245,
+      "type": "reciprocal",
+      "title": "COS245 상호기록",
+      "paragraphs": [
+        "[COS245 — 회청색 전면종결곽](./cos245.json)은 [COS218 — 회청색 후면청취막](./cos218.json) active rear-gap host 주위에 blank sign-off field와 blank plane이 남아 있을 때, 청취 파편을 즉시 절차 종결 외형으로 바꾸는 결합형으로 확인되었다. rear-gap에서 들리는 짧은 종결 파편이 generated sign-off와 handoff preview를 동시에 붙이면, 실제 body 미회수 상태에서도 `이미 읽고 확인했다`는 잘못된 확신이 빠르게 고착된다.",
+        "따라서 COS218 현장에서 no-listening triad를 적용할 때 sign-off field와 blank plane 제거를 동시에 포함한다. [COS245 — 회청색 전면종결곽](./cos245.json) 징후가 보이면 generated note나 witness line을 청취 증거로 사용하지 말고, rear provenance search와 footer hash 대조를 우선한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -359,6 +359,15 @@
         "챔퍼가 향한 방향을 `rear axis 0°`로 기록하고, 모든 rear-search·열영상·사광 사진은 이 축을 기준으로 좌우 각도를 병기한다.",
         "`B240-host`와 `R240-body`는 같은 transparent plane, 같은 tray, 같은 current chain hash를 공유하지 않는다."
       ]
+    },
+    {
+      "relatedId": 245,
+      "type": "reciprocal",
+      "title": "COS245 상호기록",
+      "paragraphs": [
+        "[COS245 — 회청색 전면종결곽](./cos245.json)은 [COS240 — 회청색 전후분기레일](./cos240.json)이 intact packet을 front-only host와 rear body로 갈라 놓은 뒤 가장 자주 형성된 말단 수렴 구역이다. rail이 actual body를 후축으로 밀어낸 상태에서 blank sign-off field와 blank plane이 front host 주변에 남으면, front-only host는 단순 current authority를 넘어서 `읽힘·서명·인계 준비가 모두 끝난 한 건`처럼 보이게 된다.",
+        "따라서 COS240 현장에서 front host만 남았을 때는 generated sign-off와 page-like field를 body 회복의 증거로 채택하지 않는다. [COS245 — 회청색 전면종결곽](./cos245.json) 가능성을 우선 점검하고, rear axis 0° 기준 수색을 끝낼 때까지 handoff preview와 sign-off field를 모두 잠정 상태로 둔다."
+      ]
     }
   ],
   "supplementalSections": [

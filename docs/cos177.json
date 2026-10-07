@@ -417,6 +417,15 @@
         "[COS239 — 회청색 본문대행판](./cos239.json)의 챔퍼 단변 후축을 따라 회수된 actual body는 [COS177 — 회청색 후열인계로](./cos177.json)의 rear line과 각도·종점이 자주 겹쳤다. 연계 표본 12건 중 10건에서 body 회수선이 rear axis 기준 ±15° 안에 형성되었고, 종점은 cable race·rear rack 하단·service gap에 집중되었다.",
         "따라서 COS177 현장에서 질량이 부족한 front host나 전면 shell이 함께 발견되면 rear line 자체를 독립 provenance로 단정하지 않는다. COS239가 먼저 전면 본문 권위를 선점한 뒤 body를 후열 축으로 밀어낸 상류 배치인지 함께 대조해야 한다."
       ]
+    },
+    {
+      "relatedId": 245,
+      "type": "reciprocal",
+      "title": "COS245 상호기록",
+      "paragraphs": [
+        "[COS245 — 회청색 전면종결곽](./cos245.json)은 [COS177 — 회청색 후열인계로](./cos177.json)가 만든 front-only current 상태 위에 blank sign-off field와 blank readout plane이 남을 때 반복적으로 뒤따랐다. 후열인계로가 비어 있는 절차를 rear axis로 운반한 뒤, COS245는 그 말단에서 읽힘·서명·인계 준비를 한 구획에 모아 `이미 닫힌 사건철`처럼 보이는 종결 외형을 만든다.",
+        "따라서 COS177 현장에서 후면 편이만 확인되었다고 해서 단일 rear-line 사건으로 종결하지 않는다. front host 주변 2m 안의 blank slip과 무광 plane을 함께 조사해 [COS245 — 회청색 전면종결곽](./cos245.json) 수렴 여부를 점검하고, generated sign-off와 handoff preview는 rear body 회수 전까지 모두 잠정 상태로 유지한다."
+      ]
     }
   ],
   "supplementalSections": [

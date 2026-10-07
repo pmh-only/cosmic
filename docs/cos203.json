@@ -462,6 +462,15 @@
         "[COS240 — 회청색 전후분기레일](./cos240.json)은 [COS203 — 회청색 교차편철면](./cos203.json)이 소비하는 대표적 upstream source로 확인되었다. rail이 intact packet을 front-only host와 rear body로 먼저 갈라 놓은 뒤, 가장 가까운 rear candidate를 clear plane에 올리면 false composite 형성이 현저히 빨라졌다.",
         "따라서 COS203 의심 pair에서 front가 비정상적으로 얇거나 rear axis를 따라 actual body가 별도 회수되면, 단순 provenance 불일치보다 [COS240 — 회청색 전후분기레일](./cos240.json) 선행 가능성을 우선 검토한다. rail 연계 사건에서는 exposed candidate를 같은 평면에서 front와 대조하지 않는다."
       ]
+    },
+    {
+      "relatedId": 245,
+      "type": "reciprocal",
+      "title": "COS245 상호기록",
+      "paragraphs": [
+        "[COS245 — 회청색 전면종결곽](./cos245.json)은 [COS203 — 회청색 교차편철면](./cos203.json) false composite 직전 단계에서 가장 위험한 배치 조건으로 확인되었다. front-only host, blank sign-off field, blank plane이 한 곽 안에서 동시에 닫히면 wrong body를 open rear side에 넣는 순간 false composite가 `이미 읽히고 인수된 packet`처럼 보여, provenance 불일치 검증보다 clip 봉인과 인계 종료가 먼저 시도될 수 있다.",
+        "따라서 COS203 의심 pair 주변에 generated sign-off나 page-like blank plane이 동반되면 이를 단순 교차편철로 축소하지 않는다. [COS245 — 회청색 전면종결곽](./cos245.json) 결합 사례로 재분류하고, wrong candidate를 같은 평면에 올리기 전에 rear-search와 footer hash 대조를 끝내야 한다."
+      ]
     }
   ],
   "supplementalSections": [
