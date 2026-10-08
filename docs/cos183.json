@@ -398,6 +398,15 @@
       "paragraphs": [
         "[COS228 — 회청색 대조대행창](./cos228.json)은 본 항목이 만든 blank queue ticket이나 handoff slip를 실제 rear body와 결속된 `다음 차례`처럼 보이게 하는 전면 오염으로 확인되었다. 차순정지선 전방의 공란 표찰을 acrylic shield나 clear sleeve 너머로 확인할 경우 accession과 lower line이 후면 body와 같은 pane에 맞물려 empty slot이 이미 수령된 것처럼 보일 수 있으므로, A183-gap 표본의 pair 확인은 흑색 divider를 사이에 둔 불투명 대조로만 수행한다."
       ]
+    },
+    {
+      "relatedId": 246,
+      "type": "reciprocal",
+      "title": "COS246 상호기록",
+      "paragraphs": [
+        "[COS246 — 회청색 중간확인판](./cos246.json) 양성 host를 카트 전연이나 handoff lip에 90 s 이상 방치하면, 전방 5.8~10.9 cm 구간에 [COS183 — 회청색 차순정지선](./cos183.json)과 동일한 회청색 선분이 형성될 수 있다. 이는 plate 위에 남은 `다음으로 넘길 수 있다`는 중간확인 권위가 실제 body 없이도 빈 차례를 먼저 닫는 하류 단계로 해석된다.",
+        "따라서 COS246 유래 front host를 전연에 임시 적치하지 않는다. 정지선이 생긴 경우 queue ticket·recipient slip·front host를 같은 current chain으로 합치지 말고 각각 분리 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

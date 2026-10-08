@@ -410,6 +410,15 @@
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json) 부착 host 5건에서는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)과 동일한 `앞칸의 전면 / 뒤 한 칸의 본체` 분리 양상이 직접 재현되었다. clip이 leading face에 남은 동안 current front는 교체된 pocket이나 cover에도 유지되었고, actual body는 직전 슬롯 또는 rear guide 뒤에서 회수되었다.",
         "따라서 COS158 의심 자료에서 전면만 현재성을 강하게 주장할 경우, 후면 심도만이 아니라 앞면 edge의 A231형 clip 여부를 함께 조사한다. clip을 제거한 뒤에도 전면 current가 즉시 소실되지 않을 수 있으므로 rear-search를 중단하지 않는다."
       ]
+    },
+    {
+      "relatedId": 246,
+      "type": "reciprocal",
+      "title": "COS246 상호기록",
+      "paragraphs": [
+        "[COS246 — 회청색 중간확인판](./cos246.json) 양성 run 41건 중 29건은 front host가 plate 위 현재 면에 남는 동안 actual body가 직전 slot·rear guide·후방 선반 0.3~2.14 m 구간으로 밀려나는 구조를 보였다. 이는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)의 `앞칸의 전면 / 뒤 한 칸의 내용` 분리 구조가 물리 plate 위에서 조기 형성된 사례로 분류한다.",
+        "따라서 COS246 현장에서 얇은 current front만 남았더라도 본문 소실로 판정하지 말고 rear-search를 우선한다. COS158형 후면 분리를 해소하기 전 front host를 현행본으로 재분류하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

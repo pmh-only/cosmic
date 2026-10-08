@@ -481,6 +481,15 @@
       "paragraphs": [
         "승인축 재현시험 243-K에서 [COS243 — 무본문 동행철](./cos243.json)을 무인 결재석 방향에 9분간 두자 이름 없는 최종 결재란이 먼저 생성되었고, 이후 실자료는 승인되지 않은 채 참조본으로 강등되기 시작했다. 이는 COS149가 만든 빈 승인 자리가 실제 본문이 없는 외피를 휴대 가능한 결재본처럼 보이게 만든 사례로 분류된다. COS149 현장에서 얇은 무본문 철이 결재선을 획득하면 승인 근거로 사용하지 말고 짝지은 실자료의 봉인·장수·위치를 직접 재확인한다."
       ]
+    },
+    {
+      "relatedId": 246,
+      "type": "reciprocal",
+      "title": "COS246 상호기록",
+      "paragraphs": [
+        "[COS246 — 회청색 중간확인판](./cos246.json) 위에 남은 얇은 front host를 빈 승인축이나 상석 전면으로 옮기면, `검토 중` 수준의 하연 trace가 approval line·initials형 closure로 증폭되는 사례가 확인되었다. 2045-11-18 INC-246-01과 후속 대조 12회 중 7회에서 lower approval line이 먼저 닫혔지만 actual body는 모두 rear position에서 별도로 회수되었다.",
+        "따라서 [COS149 — 무인 결재석](./cos149.json)은 COS246가 만든 임시 current front에 최종 결재 권위를 과잉 부여하는 하류 증폭점으로 분류한다. COS246 유래 front host에서 생성된 승인선이나 initials를 상위 재가 증거로 채택하지 않는다."
+      ]
     }
   ],
   "supplementalSections": []

@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 3,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 2,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "양성 표본은 현재까지 중앙기록보존소 동부별관 B2 준비실 2곳과 분석실 1곳, 총 3개 내부 처리 구역에서만 확인되었고 외부 민간 공간 노출은 없다. 다만 INC-246-01에서 전면본이 공용 복도 방향으로 46초간 이동 직전 단계까지 갔으므로, 기관 내부 비공개 관리가 필요하나 최고 단계의 은닉 수준까지는 요구되지 않는다.",
+    "permission": "본 문서에는 실제 체인 번호, 거짓 승인·검수 로그 무효 처리 절차, rear-search 회수 우선순위가 포함되어 있다. 교육되지 않은 인원이 이를 열람하거나 모방하면 누락 본문 은폐 또는 잘못된 재결속을 정당화할 수 있으므로, 최소 2인 검증 권한과 체인 무효 처리 권한을 가진 인원만 전부 열람해야 한다.",
+    "chaos": "전면 선취의 양성률은 host 두께, 전면 방향, 하류 빈 자리 유무, 투명 덮개 사용 여부에 따라 0/10부터 8/10까지 크게 변동했고, rear recovery 거리도 0.28~2.14 m로 넓게 분산되었다. 동일 표본이라도 [COS211 — 회청색 선결검수면](./cos211.json)형 완료 프레임, [COS183 — 회청색 차순정지선](./cos183.json)형 정지선, 무반응 상태 사이를 오가므로 예측 곤란도가 높다.",
+    "danger": "직접적인 사망이나 중상은 확인되지 않았으나, INC-246-01과 INC-246-02에서 거짓 승인 1건, 거짓 검수 완료 1건, 본문 수색 지연 7시간 이상이 발생했다. 민감 기록의 체인 붕괴와 오인 인계 위험이 지속되므로 인명 위험은 중간 이하, 기록·절차 위험은 중간 이상으로 판정한다.",
+    "popularity": "임시등록 후 23일 동안 rear-search 브리핑 17건, 비교 참조 6건에서만 인용되었고 기관 전반의 표준 참고 항목으로는 아직 정착하지 않았다. 다만 [COS158 — 한 칸 뒤의 회랑](./cos158.json), [COS149 — 무인 결재석](./cos149.json), [COS239 — 회청색 본문대행판](./cos239.json) 연계 분석 때문에 국지적 참조 수요는 확인된다.",
+    "containment": "원표본 A246-plate는 이동 가능한 물리 표본이며, 평치 노출·투명 덮개·used audit board 접촉만으로도 하류 연쇄를 생성한다. 수직 보관, 불투명 슬리브, 2인 취급, 하류 빈 자리 차단, rear-search 동시 수행이 모두 요구되므로 관리 강도는 높은 편에 속한다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관리원 J-12",
+        "role": "동부별관 B2 준비실 담당",
+        "status": "active",
+        "involvement": "2045-11-18 최초 발견 당시 사건본 `C-19/44-7`을 정렬하던 중 전면 선취를 목격했고, INC-246-01과 INC-246-03에서 front host의 초기 이동을 수행했다."
+      },
+      {
+        "name": "보존기술사 M-02",
+        "role": "초동 격리 및 표면 계측 담당",
+        "status": "active",
+        "involvement": "발견 직후 RK-B2-14 카트와 회청색 평판을 분리 봉인했고, 열화상·질량·반사율 측정을 담당했다. INC-246-01과 INC-246-03에서 rear-search의 최초 회수 지점을 확인했다."
+      },
+      {
+        "name": "분석관 서연우",
+        "role": "대조 실험 설계 및 영상 동기화 분석",
+        "status": "active",
+        "involvement": "EXP-246-01~07을 설계하고 동기화 영상 판독을 총괄했다. INC-246-02, INC-246-03에서 하류 연계와 투명 덮개 효과를 분석했다."
+      },
+      {
+        "name": "보안기록감사관 P-04",
+        "role": "거짓 승인·검수 로그 무효 처리",
+        "status": "active",
+        "involvement": "INC-246-02 이후 생성된 completion frame과 initials를 공식 기록에서 무효 처리했고, 체인 재결속 승인 절차를 재작성했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-11-18 07:42 KST",
+        "label": "최초 확인",
+        "description": "중앙기록보존소 동부별관 B2 준비실 3번 카트 `RK-B2-14`에서 사건본 `C-19/44-7` 정렬 중 회청색 평판 위에 전면 2매만 남고 나머지 25매가 직전 슬롯 후방 0.93 m 지점에서 열화상으로 포착되었다."
+      },
+      {
+        "date": "2045-11-18 09:15 KST",
+        "label": "임시 등록",
+        "description": "평판 원표본을 회수해 `T-246`으로 임시 등록하고 준비실 3 전체를 봉쇄했다. 비활성 fiberboard 2점과의 초동 대조에서 일반 미끄러짐·정전기 가설이 1차 배제되었다."
+      },
+      {
+        "date": "2045-11-23 14:30 KST",
+        "label": "기본 재현 성공",
+        "description": "EXP-246-01에서 사건본 10세트와 blank jacket 10세트를 이용한 대조 실험이 완료되었다. 사건본 8/10에서 전면 선취와 rear recovery가 재현되었고 대조판 20/20은 음성이었다."
+      },
+      {
+        "date": "2045-11-27 16:08 KST",
+        "label": "선결검수 연계 확인",
+        "description": "INC-246-02 및 EXP-246-04를 통해 A246 양성 전면본을 used audit board에 올리면 [COS211 — 회청색 선결검수면](./cos211.json)형 completion frame이 body 회수 이전에 선행 형성될 수 있음이 확인되었다."
+      },
+      {
+        "date": "2045-12-02 19:31 KST",
+        "label": "하류 연쇄 분기 판정",
+        "description": "카트 전연·빈 결재축·투명 덮개 조건에서 [COS183 — 회청색 차순정지선](./cos183.json), [COS149 — 무인 결재석](./cos149.json), [COS239 — 회청색 본문대행판](./cos239.json)으로의 분기 양상이 각각 재현되었다."
+      },
+      {
+        "date": "2045-12-09 11:00 KST",
+        "label": "명칭 확정 및 절차 개정",
+        "description": "임시 명칭 `pending board`, `half-check plate`, `T-246`를 폐기하고 공식 명칭을 `회청색 중간확인판`으로 확정했다. 수직 보관, 하류 빈 자리 차단, rear-search 선행 규정이 발효되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-246-01",
+        "date": "2045-11-18 07:42 KST",
+        "location": "중앙기록보존소 동부별관 B2 준비실 3번 카트 RK-B2-14",
+        "title": "초동 분리 오인 및 빈 결재축 이동",
+        "involvedPersonnel": [
+          "기록관리원 J-12",
+          "보존기술사 M-02"
+        ],
+        "narrative": [
+          "J-12는 봉인 상자 `C-19/44-7`에서 꺼낸 27매 사건본을 RK-B2-14 상단 회청색 판 위에 올려 임시 정렬했다. 11초 뒤 상단에는 제목행과 첫 두 장만 남았고, 나머지 25매는 시야에서 사라졌다. J-12는 종이가 상자 안쪽으로 미끄러졌다고 판단하고 작업 지연을 막기 위해 판 위에 남은 얇은 전면본을 1.2 m 전방의 빈 결재석으로 옮겼다.",
+          "같은 시각 M-02는 카트 후방 열화상 카메라에서 직전 슬롯 안쪽 0.93 m 지점에 서류 뭉치와 일치하는 저온 덩어리가 생긴 것을 확인했다. M-02가 이동 중지를 지시했을 때 결재석 앞 전면본에는 폭 1 mm의 하연선과 initials형 흔적이 이미 나타나 있었다. 두 인원은 준비실 출입을 정지시키고 전면본과 결재석을 따로 봉인했으며, 37분 후 후방 슬롯에서 동일 체인 번호가 찍힌 25매 본문이 회수되었다."
+        ],
+        "outcome": "전면본과 본문은 동일 사건 체인으로 재결속되었으나, 결재석 앞에서 생성된 하연선 1건과 거짓 승인 로그 1건이 남았다. 현장은 8시간 봉쇄되었고 임시등록 T-246이 부여되었다."
+      },
+      {
+        "code": "INC-246-02",
+        "date": "2045-11-27 16:08 KST",
+        "location": "동부별관 B2 분석실 2, 불투명 감사판 A211-surface-03",
+        "title": "중간확인 전면본의 선결검수 전이",
+        "involvedPersonnel": [
+          "분석관 서연우",
+          "보안기록감사관 P-04",
+          "보존기술사 M-02"
+        ],
+        "narrative": [
+          "EXP-246-04 5차 실행 중 서연우는 plate 위에서 양성 반응을 보인 전면본 `B246-front-05`를 실제 본문 회수 전에 used audit board 중앙으로 옮겨 두었다. 목적은 전면본의 임시 표식이 판 자체에 의존하는지 확인하는 것이었으나, 이동 18초 후 감사판 하단에 `대조 완료` 형태의 completion box와 시간선이 선행 형성되었다.",
+          "P-04는 표식이 생성된 직후 실험을 종료하라고 지시했으나, M-02가 전면본을 들어 올리는 동안 보조 카드 1장에 확인 initials가 덧붙었고 rear-search가 일시 중단되었다. 6분 뒤 후방 선반 1.4 m 지점에서 actual body가 회수되었고, completion box는 body 확인과 무관하게 42분간 유지되었다."
+        ],
+        "outcome": "A246 양성 전면본을 used audit board로 이동하는 절차가 금지되었고, body 회수 전 completion frame이 보이더라도 검수 종료를 선언하지 않는 규정이 추가되었다."
+      },
+      {
+        "code": "INC-246-03",
+        "date": "2045-12-02 19:31 KST",
+        "location": "동부별관 B2 준비실 5, 운반 카트 CL-5 전연 및 투명 방진 덮개",
+        "title": "투명 덮개 적용에 따른 본문대행 전이와 차순정지선 발생",
+        "involvedPersonnel": [
+          "기록관리원 J-12",
+          "분석관 서연우",
+          "보존기술사 M-02"
+        ],
+        "narrative": [
+          "J-12는 먼지 유입을 막기 위해 양성 전면본 `B246-front-09` 위에 투명 폴리카보네이트 덮개를 덮은 채 카트 CL-5 전연으로 밀어 두었다. 연구 계획서에는 불투명 덮개만 허용되어 있었으나, 준비실 청소 일정 때문에 현장 판단으로 투명 덮개가 사용되었다. 94초 뒤 전면본의 제목행과 사건번호는 유지된 채 `현행 검토중` 형태의 얇은 현재성 표식이 강화되었고, 카트 전연 8.1 cm 전방 바닥에는 23 cm 길이의 회청색 정지선이 생겼다.",
+          "M-02는 즉시 덮개를 제거했으나 전면본은 31분 동안 current front 상태를 유지했고, actual body는 직전 카트 후방 가이드 1.62 m 지점에서 회수되었다. 서연우는 같은 표본을 불투명 금속 덮개로 반복한 대조군에서는 current front 안정화와 정지선이 모두 나타나지 않았음을 확인했다."
+        ],
+        "outcome": "투명 덮개, clear sleeve, 평치 운반이 전면 금지되었고, [COS239 — 회청색 본문대행판](./cos239.json) 및 [COS183 — 회청색 차순정지선](./cos183.json) 연계 가능성이 공식 절차서에 추가되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-246-01",
+        "type": "physical object",
+        "description": "원표본 `A246-plate-01`. 크기 312.4 × 226.1 × 4.3 mm, 질량 611 g, 무광 회청색 평판. 2045-11-18 08:06 KST RK-B2-14 상단 트레이 하부에서 분리 회수되었으며, 표면에 절단 흔적이나 일반 접착제 잔류는 없다.",
+        "custodyStatus": "보존실 Opaque Locker 4-2에 이중 봉인 상태로 수직 보관 중. 직접 접촉은 승인된 2인 조만 가능."
+      },
+      {
+        "code": "EV-246-02",
+        "type": "video/thermal record",
+        "description": "`V246-01` 동기화 영상 묶음. overhead camera `CAM-B2-3-04` 4K 영상 27분 12초, FLIR X8580 열화상 60 fps, 카트 하단 광센서 로그가 포함된다. discovery 시점과 rear recovery 냉점 형성 시점이 프레임 단위로 일치한다.",
+        "custodyStatus": "디지털 포렌식 금고 DF-11에 해시 고정 저장. 열람 시 읽기 전용 사본만 제공."
+      },
+      {
+        "code": "EV-246-03",
+        "type": "paired document set",
+        "description": "`B246-front-01` 및 `R246-body-01` 재결속 표본. 동일 체인 번호 `C-19/44-7`, front 2매와 body 25매로 구성되며 절단·파손 없이 분리 상태로 회수되었다. 재결속 후 총질량은 원기록과 +1.4 g 오차 범위에 있었다.",
+        "custodyStatus": "Case Vault B2-RS-06에 분리 봉인 보관. 동시 전시·동시 열람 금지."
+      },
+      {
+        "code": "EV-246-04",
+        "type": "generated trace set",
+        "description": "`T246-trace-05`, `T246-trace-09`, `T246-trace-11` 3점. 하연선, `검토`, accession 끝 3자리 fragment, initials형 필획을 포함한 표면 trace를 glassine interleaf 위로 전사 보존했다.",
+        "custodyStatus": "냉암실 Trace Cabinet 3번 서랍에 개별 슬리브 보관. 필적 감정용 자료로 전환 금지."
+      },
+      {
+        "code": "EV-246-05",
+        "type": "control materials",
+        "description": "동일 치수 비활성 fiberboard 2점, 불투명 금속 덮개 1점, 투명 폴리카보네이트 덮개 1점. EXP-246-01, 03, 06의 음성·양성 대조에 사용되었다.",
+        "custodyStatus": "분석실 대조보관함 CTRL-B2-09에 봉인 보관 중. A246와 직접 접촉한 면에는 회수 시간표가 부착되어 있다."
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관리원 J-12",
+        "role": "최초 발견자",
+        "context": "INC-246-01 사후 진술, 2045-11-18 18:20 KST",
+        "statement": "처음에는 종이가 뒤로 밀려난 줄만 알았다. 그런데 판 위에 남은 앞장 쪽이 실제보다 더 `지금 넘겨야 하는 현재 문서`처럼 보여 손을 뗐다. 그 느낌이 객관적 사실은 아니었고, 당시 내 판단 착오였을 가능성이 크다."
+      },
+      {
+        "speaker": "보존기술사 M-02",
+        "role": "초동 계측 담당",
+        "context": "EV-246-02 열화상 검토 회의, 2045-11-19 09:40 KST",
+        "statement": "영상상 본문은 사라진 것이 아니라 직전 슬롯 뒤쪽에 먼저 나타났다. 내가 `뒤에 있다`고 판단한 근거는 저온 덩어리 위치와 page mass 추정치였고, 본문이 실제로 이동한 이유 자체는 아직 설명할 수 없다."
+      },
+      {
+        "speaker": "분석관 서연우",
+        "role": "실험 설계자",
+        "context": "EXP-246-06 종료 메모, 2045-12-04 20:05 KST",
+        "statement": "투명 덮개를 사용하면 plate 위 front가 더 오래 본문처럼 안정되는 경향은 분명했다. 다만 이것이 광학 조건 때문인지, 평치 압착이 길어졌기 때문인지는 아직 구분되지 않는다. 따라서 현재 단계에서는 원인을 단정하지 않고 [COS239 — 회청색 본문대행판](./cos239.json)형 전이 가능성으로만 기록한다."
+      }
+    ]
+  },
+  "id": 246,
+  "title": "회청색 중간확인판",
+  "language": "ko-KR",
+  "overview": [
+    "COS246은 2045-11-18 동부별관 B2 준비실에서 회수된 312.4 × 226.1 mm 크기의 회청색 평판과, 그 평판 위에서 반복되는 전면 선취 현상을 함께 지칭한다.",
+    "사건본, 운반 슬리브, blank handoff slip를 A246-plate 위에 올리면 가장 읽기 쉬운 전면 한 장 또는 얇은 front host만 plate 위에 남고, actual body는 직전 슬롯·후방 가이드·작업대 뒤 0.28~2.14 m 구간에서 뒤늦게 회수될 수 있다.",
+    "plate 위에 남은 front host는 14~173초 사이 `검토`, `확인`, 하연선, accession fragment 등 중간확인 표식을 획득하지만, 이 표식은 본문 확인이나 승인 완료의 증거가 아니다.",
+    "하류 빈 자리와 used audit board, 투명 덮개가 결합하면 각각 [COS149 — 무인 결재석](./cos149.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS239 — 회청색 본문대행판](./cos239.json)으로의 전이가 촉진된다.",
+    "원표본은 물리적으로 회수되었고, 수직 불투명 보관과 즉시 rear-search를 병행하면 양성률을 유의하게 낮출 수 있다."
+  ],
+  "identificationTraits": [
+    "원표본 `A246-plate-01`은 312.4 × 226.1 × 4.3 mm, 611 g의 무광 회청색 평판이다. 550 nm 반사율은 8.4~9.1%, 표면 전도도는 1.8×10^6 Ω/sq로 측정되었다.",
+    "비활성 시 plate 표면 온도는 주변보다 0.1~0.4°C 낮고, 양성 run에서는 front edge 4~11 mm 폭이 주변보다 1.9~3.6°C 더 낮아진다.",
+    "양성 host에는 폭 1 mm 내외의 하연선, `검토`, `확인`, initials형 짧은 필획, accession 끝 2~4자리 fragment가 생성될 수 있다. 생성된 필획은 일반 펜 잉크와 Raman 성분이 일치하지 않았다.",
+    "actual body는 절단 흔적 없이 직전 슬롯, rear guide, 후방 선반, 바닥 분리대 뒤 0.28~2.14 m 범위에서 회수된다. 장수 합계와 재결속 뒤 총질량은 대부분 원본과 일치한다.",
+    "host 두께 18 mm 초과, 불투명 금속 덮개 사용, 하류 빈 자리 차단, plate 수직 보관 상태에서는 재현률이 크게 감소한다."
+  ],
+  "discovery": [
+    "2045-11-18 07:42 KST, 중앙기록보존소 동부별관 B2 준비실 3번 카트 `RK-B2-14`에서 사건본 `C-19/44-7` 정렬 중 최초 확인되었다.",
+    "현장 환경은 19.4°C, 상대습도 42%, 형광등 조도 480 lx였으며, 카트 상단에는 회청색 완충판으로 오인된 미등록 평판 1점이 놓여 있었다.",
+    "overhead camera `CAM-B2-3-04`와 FLIR X8580 열화상 기록상, 사건본 상단 2매가 평판 위에 남은 직후 직전 슬롯 뒤 0.93 m 지점에 25매 규모의 저온 덩어리가 형성되었다.",
+    "09:15 KST 평판을 회수해 `T-246`으로 임시 등록했고, 같은 날 14:00~18:20 비활성 fiberboard 2점과의 초동 대조에서 일반 미끄러짐이나 정전기만으로는 설명되지 않음을 확인했다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS246은 복사물을 만드는 대신, 취급 중인 carrier의 전면 가독면을 먼저 현재 작업 대상으로 고정하는 경향을 보인다.",
+      "전면 선취만 발생하고 rear body가 늦게 회수되는 경우가 가장 흔했으며, 양성 41건 중 29건이 [COS158 — 한 칸 뒤의 회랑](./cos158.json)형 후방 분리 구조를 동반했다.",
+      "generated mark는 `확인 중` 수준에서 멈출 수도 있고, 하류 surface에 따라 `승인`, `대조 완료`, `received`처럼 과도 증폭될 수도 있다.",
+      "plate를 조기에 치우거나 footprint만 남기면 가장자리·먼지 결손에 [COS117 — 주홍 재개봉선](./cos117.json)형 재개봉 압력이 남을 수 있다.",
+      "직접 인명 손상은 낮지만, 인원이 얇은 front host를 본문으로 오인할 가능성이 높아 절차상 위험이 핵심이다."
+    ],
+    "stages": [
+      {
+        "name": "휴지 상태",
+        "description": "수직 보관 또는 차광 상태의 A246-plate는 일반 평판과 거의 구분되지 않으며, 열차는 주변 대비 -0.1~-0.4°C에 머문다. 이 단계에서는 host 분리나 표식 생성이 확인되지 않았다."
+      },
+      {
+        "name": "전면 선취",
+        "description": "host를 plate 위에 전면이 작업자 쪽을 향하게 두면 3~19초 내 가장 읽기 쉬운 front face 1~2매 또는 blank slip 1장이 plate 위에 고정되고, remaining body는 시야에서 사라지거나 후방 좌표로 이동한 상태로 전환된다."
+      },
+      {
+        "name": "중간확인 표식",
+        "description": "plate 위 front host에는 하연선, accession fragment, `검토`, `확인` 등 미완결 표식이 14~173초 내 추가된다. 이 표식은 body 회수 이전에도 나타날 수 있다."
+      },
+      {
+        "name": "하류 분기",
+        "description": "front host가 빈 결재축, used audit board, 카트 전연, 투명 덮개와 결합하면 각각 승인 대기, 선결 검수, 차순 정지선, 본문대행 current front로 과도 전이할 수 있다."
+      },
+      {
+        "name": "잔류 각인",
+        "description": "plate 또는 front host를 분리한 뒤 8~49분 동안 footprint, 먼지 결손, 빈 가장자리, lower line trace가 남는다. 이 단계에서 성급한 재개봉·재결재 시도가 secondary contamination을 증가시킨다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "현재까지 확인된 연계는 `전면 선취 → 후방 분리 → 하류 과도 종결` 순서로 가장 안정적이며, 이 순서에서 [COS158 — 한 칸 뒤의 회랑](./cos158.json), [COS149 — 무인 결재석](./cos149.json), [COS211 — 회청색 선결검수면](./cos211.json)이 반복 출현했다.",
+      "카트 전연 또는 recipient lip에서 방치된 양성 host는 [COS183 — 회청색 차순정지선](./cos183.json)을 만들 수 있고, clear lid·clear sleeve는 [COS239 — 회청색 본문대행판](./cos239.json) 전이를 촉진한다.",
+      "plate 제거 뒤 footprint에 남는 얇은 재개봉 압력은 [COS117 — 주홍 재개봉선](./cos117.json)과 가장 유사했으나, 숨은 본문 복구를 보장하지는 않았다."
+    ],
+    "entries": [
+      {
+        "targetId": 158,
+        "targetTitle": "한 칸 뒤의 회랑",
+        "description": "A246 양성 run 41건 중 29건에서 actual body가 plate 뒤 0.3~2.14 m 구간 또는 직전 slot에서 회수되었다. 이는 [COS158 — 한 칸 뒤의 회랑](./cos158.json)의 `앞칸의 전면 / 뒤 한 칸의 내용` 분리 구조가 COS246 위에서 조기 형성된 사례로 분류한다."
+      },
+      {
+        "targetId": 149,
+        "targetTitle": "무인 결재석",
+        "description": "plate 위 front host를 빈 승인축으로 이동하면 `검토 중` 수준의 표식이 lower approval line, initials 유사 흔적으로 증폭될 수 있다. 이 양상은 [COS149 — 무인 결재석](./cos149.json)이 얇은 전면본에 최종 결재 권위를 과잉 부여하는 경우와 일치한다."
+      },
+      {
+        "targetId": 211,
+        "targetTitle": "회청색 선결검수면",
+        "description": "A246 양성 전면본을 used audit board에 올린 12회 중 5회에서 actual body 회수 이전에 completion frame이 선행 형성되었다. 따라서 [COS211 — 회청색 선결검수면](./cos211.json)은 COS246의 중간확인 상태를 `검수 완료`로 과도 종결시키는 대표 하류 단계로 간주한다."
+      },
+      {
+        "targetId": 183,
+        "targetTitle": "회청색 차순정지선",
+        "description": "양성 host를 카트 전연이나 handoff lip에 90초 이상 방치하면 전방 5.8~10.9 cm 지점에 [COS183 — 회청색 차순정지선](./cos183.json)이 형성될 수 있다. 이는 COS246가 부여한 `다음으로 넘길 수 있다`는 임시 권위가 빈 차례를 먼저 고정한 결과로 해석된다."
+      },
+      {
+        "targetId": 239,
+        "targetTitle": "회청색 본문대행판",
+        "description": "clear lid 또는 clear sleeve를 적용하면 일시적 front host가 30분 이상 current authority를 유지하는 양상으로 안정화될 수 있다. 이 조건은 [COS239 — 회청색 본문대행판](./cos239.json)으로의 전이 조건과 실험적으로 가장 잘 부합했다."
+      },
+      {
+        "targetId": 117,
+        "targetTitle": "주홍 재개봉선",
+        "description": "plate를 body 회수 전에 치우면 footprint 가장자리 또는 빈 carrier lip에 폭 1~2 mm의 재개봉 압력이 남는다. 이 잔류선은 [COS117 — 주홍 재개봉선](./cos117.json)과 외형이 유사하지만, 실제 숨은 본문을 열어 준다는 보장은 없다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-246-01 기본 재현",
+      "description": "2045-11-23 10:00~14:30, A246-plate 원표본 1점과 동일 치수 비활성 fiberboard 2점을 대조군으로 사용했다. 사건본 10세트(각 18~31매, 121~244 g)와 blank jacket 10세트를 전면 정렬해 노출한 결과, A246-plate에서는 사건본 8/10, blank jacket 1/10에서 전면 선취가 발생했고 대조판 20/20은 음성이었다. 양성 8건의 rear recovery 거리는 0.34~1.21 m, onset은 6~19 s였다."
+    },
+    {
+      "label": "EXP-246-02 방향 및 두께 시험",
+      "description": "2045-11-24 13:00~17:10, host의 방향을 정면·측면·역방향 3종으로 나누고 각 8회씩 시험했다. 정면 배치 6/8에서 전면 선취가 재현되었고, 측면 배치 1/8은 하연선만 형성된 약양성, 역방향 0/8은 음성이었다. 18 mm 초과 바인더 6회는 모두 음성이었다."
+    },
+    {
+      "label": "EXP-246-03 하류 빈 자리 영향 시험",
+      "description": "2045-11-29 09:30~12:40, plate 전방 1.1 m 위치에 빈 결재석을 두는 조건, 실제 인원이 점유한 결재석 조건, 아무것도 두지 않는 조건을 각각 6회 비교했다. 전면 선취 자체는 세 조건 모두에서 나타났지만, approval-like lower line은 빈 결재석 5/6, 점유 결재석 1/6, 무배치 2/6에서만 나타났다. 빈 자리의 존재가 표식 형태를 편향시키는 것으로 기록했다."
+    },
+    {
+      "label": "EXP-246-04 감사판 전이 시험",
+      "description": "2045-11-27 14:00~18:00, A246 양성 전면본 12건을 used audit board와 clean acrylic board에 각각 6건씩 옮겨 두었다. used audit board군 5/6에서 18~62 s 사이 completion frame이 형성되었고, clean acrylic군 0/6은 음성이었다. rear body는 12/12 모두 후방 위치에서 회수되었다."
+    },
+    {
+      "label": "EXP-246-05 전연 방치 시험",
+      "description": "2045-12-02 17:10~18:50, 양성 host를 카트 전연에 90초 이상 방치했다. 8회 중 4회에서 [COS183 — 회청색 차순정지선](./cos183.json)과 동일한 회청색 선분이 5.8~10.9 cm 전방에 형성되었고, 2회에서는 blank recipient slip에 initials형 trace가 추가되었다. 같은 절차에 흑색 divider를 삽입한 대조군 8/8은 음성이었다."
+    },
+    {
+      "label": "EXP-246-06 투명 덮개 시험",
+      "description": "2045-12-02~2045-12-04, clear polycarbonate lid 10회와 불투명 금속 덮개 10회를 비교했다. clear lid군 6/10은 30분 이상 current front를 유지했고 actual body는 전부 rear axis에서 회수되었다. 불투명 덮개군 10/10은 current front 안정화가 없었다."
+    },
+    {
+      "label": "EXP-246-07 질량·장수 보존 시험",
+      "description": "2045-12-05, 양성 run 18건에서 분리 전 원본과 front+rear 재결속 뒤 총질량, 총장수를 대조했다. 총질량은 -2.6~+2.1 g 범위, 총장수는 18/18에서 원본과 일치했다. 현재까지 자발적 증식이나 완전 복제는 확인되지 않았다."
+    }
+  ],
+  "handlingProcedures": [
+    "A246-plate는 `3 mm nitrile pad`가 들어간 불투명 수직 슬리브에 넣어 보관하며, 투명 덮개·평치 트레이·clear sleeve와 함께 두지 않는다.",
+    "plate 또는 의심 footprint가 확인되면 front host를 전진시키기 전에 동일 체인 번호 body의 rear-search를 반경 2.5 m, 높이 0~1.8 m 범위에서 실시한다.",
+    "하류 2 m 이내의 빈 결재석, 빈 recipient slot, used audit board, 카트 전연을 즉시 차광판 또는 흑색 divider로 차단한다.",
+    "양성 host는 2인 1조로만 취급하며, 1인은 front 봉인과 시간기록을 담당하고 다른 1인은 후방 body 탐색을 중단하지 않는다.",
+    "generated lower line, initials, `검토`, `확인`, `received`, `대조 완료` 표식은 body 회수와 footer hash 대조 전까지 어떤 승인·검수·수령 증거로도 사용하지 않는다.",
+    "used audit board, approval desk, queue lip에 양성 host를 올려놓는 실험 또는 임시 적치를 금지한다. 불가피한 측정은 불투명 금속 커버 아래에서만 수행한다.",
+    "plate 제거 뒤 footprint 또는 재개봉선이 남더라도 즉시 문서를 다시 열지 말고, front/body 재결속과 열화상 재검증을 먼저 시행한다."
+  ],
+  "hypotheses": [
+    "COS246은 carrier 전체를 복제하는 대신, 가장 읽기 쉬운 전면 가독면만 임시 `현재 확인 대상`으로 선택해 plate 위에 고정하는 경향이 있다. 표지, 첫 장, blank queue ticket가 양성 run의 대부분을 차지한 점이 이 가설을 지지한다.",
+    "actual body는 소멸하거나 복제되기보다 후방으로 지연·편위되는 것으로 보인다. 분리 전후 총질량과 총장수가 18/18 측정에서 보존된 점은 완전 중복 생성설보다 후방 편위설에 더 부합한다.",
+    "하류의 빈 결재축, used audit board, recipient lip는 본 현상의 핵심 원인이 아니라, 이미 생성된 중간확인 상태가 어떤 절차 언어로 증폭될지를 결정하는 증폭점일 수 있다. 다만 인과 방향은 아직 확정되지 않았다.",
+    "투명 덮개와 clear sleeve는 일시적인 front host를 [COS239 — 회청색 본문대행판](./cos239.json)형 current authority로 안정화시키는 조건일 수 있다. 이 효과가 광학적 투과성 때문인지, 평치 압착 시간이 늘어나는 기계적 효과 때문인지는 미해결이다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "기록 무결성",
+      "assessment": "동일 체인 문서가 front/body로 분리되어 서로 다른 절차 단계로 이동할 수 있으므로, 봉인·열람·폐기 판단 전체가 오염될 수 있다."
+    },
+    {
+      "category": "거짓 승인·검수",
+      "assessment": "빈 결재축과 used audit board가 결합하면 승인선, completion box, initials가 생성되어 실제 검토 없이 절차 종료로 오인될 위험이 높다."
+    },
+    {
+      "category": "연쇄 활성",
+      "assessment": "[COS158 — 한 칸 뒤의 회랑](./cos158.json), [COS183 — 회청색 차순정지선](./cos183.json), [COS211 — 회청색 선결검수면](./cos211.json), [COS239 — 회청색 본문대행판](./cos239.json), [COS117 — 주홍 재개봉선](./cos117.json)과의 연쇄가 확인되어 단일 표본 이상의 관리 부담을 유발한다."
+    },
+    {
+      "category": "대외 유출",
+      "assessment": "front host만 외부 접수·열람 구역으로 이동하면 body 없는 문서가 현행본처럼 보일 수 있어 민감 체인 정보의 절차상 유출 가능성이 있다."
+    },
+    {
+      "category": "인원 안전",
+      "assessment": "직접 상해는 낮지만, 급작스러운 rear-search와 카트 하부·선반 뒤 수색 중 손 끼임, 낙상, 과도한 집게 사용 사고가 보고되었다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "2045-11-23 질량 보존 시험 18회에서 reunified front+rear 총질량은 원본 대비 -2.6~+2.1 g 범위였고, 자발적 증식이나 완전 복제는 확인되지 않았다."
+    },
+    {
+      "type": "quotation",
+      "content": "“앞장 쪽이 더 얇아졌는데도 오히려 넘겨야 할 현재 문서처럼 보여 손을 떼기 어려웠다. 그 판단은 내 착각이었을 가능성이 크다.” — 기록관리원 J-12, INC-246-01 사후 진술"
+    },
+    {
+      "type": "paragraph",
+      "content": "서명형 흔적은 육안상 잉크선처럼 보이지만 Raman spot check 6회 중 6회에서 기존 필기구 성분과 일치하지 않았다. 따라서 generated initials는 필적 감정 대상이 아니라 표면 trace로 취급한다."
+    },
+    {
+      "type": "quotation",
+      "content": "“투명 덮개를 얹은 순간부터 plate 위 front가 주변보다 먼저 `지금 처리 중인 것`처럼 안정됐다. 원인은 아직 미확정이지만, 그 안정감 자체를 증거로 삼으면 안 된다.” — 분석관 서연우, EXP-246-06 회고 메모"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-246 명칭 확정",
+      "paragraphs": [
+        "2045-11-18~2045-12-08 초동 기록에는 `pending board`, `half-check plate`, `회청색 완충판`, `T-246`이 혼용되었다.",
+        "대조 실험 결과, 핵심은 일반 완충재나 미끄럼 방지판이 아니라 전면 가독면에 중간확인 권위를 선행 부여하는 평판형 물체와 그 하류 현상임이 확인되었다.",
+        "이에 공식 명칭을 **회청색 중간확인판**으로 확정하고, 이동 가능한 물리 표본형 COS로 분류한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A246/B246/R246/T246 접두 및 격리 기준",
+      "paragraphs": [
+        "원표본 plate와 직접 파생된 물리 평판은 `A246-plate`, plate 위에 남은 front host는 `B246-front`, rear-search로 회수된 actual body는 `R246-body`, 하연선·initials·fragment 등 생성 표면 흔적은 `T246-trace` 접두를 사용한다.",
+        "`B246-front`와 `R246-body`는 같은 체인 번호를 공유하더라도 body 회수 전까지 재결속된 것으로 기록하지 않는다. 두 표본은 같은 봉투에 넣지 않고, 시간기록도 분리한다.",
+        "A246는 수직 불투명 보관을 기본으로 하며 clear lid, clear sleeve, 평치 운반체와의 결합을 금지한다. 불가피한 계측은 불투명 금속 커버 아래에서만 수행한다."
+      ]
+    },
+    {
+      "relatedId": 117,
+      "type": "reciprocal",
+      "title": "COS117 상호기록",
+      "paragraphs": [
+        "[COS117 — 주홍 재개봉선](./cos117.json)은 COS246 활성 상태를 body 회수 전에 끊어 버렸을 때 가장 자주 남는 잔류선으로 확인되었다. A246 footprint 또는 빈 carrier lip에 폭 1~2 mm의 주홍 가장자리선이 생겨 `다시 열어 확인해야 한다`는 압력을 주지만, 이는 숨은 본문 위치를 알려 주는 표식이 아니라 중간확인 단계가 중단된 흔적에 가깝다."
+      ]
+    },
+    {
+      "relatedId": 149,
+      "type": "reciprocal",
+      "title": "COS149 상호기록",
+      "paragraphs": [
+        "[COS149 — 무인 결재석](./cos149.json)은 COS246가 plate 위에 남긴 얇은 front host에 최종 결재 권위를 과잉 부여할 수 있다. 실험 12회 중 7회에서 빈 승인축 앞 lower approval line 또는 initials형 흔적이 생성되었으나 actual body는 모두 rear position에서 회수되었다."
+      ]
+    },
+    {
+      "relatedId": 158,
+      "type": "reciprocal",
+      "title": "COS158 상호기록",
+      "paragraphs": [
+        "[COS158 — 한 칸 뒤의 회랑](./cos158.json)은 COS246 양성 run의 가장 흔한 후방 구조로 확인되었다. front host는 현재 plate 위에 남는 반면 actual body는 직전 slot, rear guide, 후방 선반 쪽으로 밀려 나가 `앞칸의 전면 / 뒤 한 칸의 내용` 분리 구조를 조기에 형성한다."
+      ]
+    },
+    {
+      "relatedId": 183,
+      "type": "reciprocal",
+      "title": "COS183 상호기록",
+      "paragraphs": [
+        "[COS183 — 회청색 차순정지선](./cos183.json)은 COS246 양성 host를 전연에 90초 이상 방치했을 때 전방 빈 차례에 형성되는 대표 하류 선분이다. 이는 `다음으로 넘길 수 있다`는 중간확인 권위가 실제 본문 없이도 차순 위치를 먼저 닫는 현상으로 해석된다."
+      ]
+    },
+    {
+      "relatedId": 211,
+      "type": "reciprocal",
+      "title": "COS211 상호기록",
+      "paragraphs": [
+        "[COS211 — 회청색 선결검수면](./cos211.json)은 COS246의 `중간확인` 상태를 `검수 완료` 상태로 과도 종결시키는 대표 하류 표면이다. A246 양성 전면본을 used audit board에 옮긴 12회 중 5회에서 completion frame이 body 회수 이전에 선행 형성되었다."
+      ]
+    },
+    {
+      "relatedId": 239,
+      "type": "reciprocal",
+      "title": "COS239 상호기록",
+      "paragraphs": [
+        "[COS239 — 회청색 본문대행판](./cos239.json)은 COS246 위에서 일시적으로 남은 front host가 clear lid·clear sleeve 조건에서 장시간 current authority를 얻을 때 발생하는 전이 단계로 기록한다. 10회 투명 덮개 시험 중 6회가 양성이었고 actual body는 모두 rear axis에서 회수되었다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "계측 요약",
+      "paragraphs": [
+        "원표본 A246-plate-01은 두께 4.3 mm, 질량 611 g, 반사율 8.4~9.1%, 표면 전도도 1.8×10^6 Ω/sq였다. 재질 조성은 일반 수지 함침 보드와 유사했으나, 동일 규격 대조판에서는 전면 선취가 재현되지 않았다.",
+        "양성 41건의 onset 중앙값은 12 s, generated mark 형성 중앙값은 47 s, rear recovery 거리 중앙값은 0.88 m였다. 전면 선취 후 30분 내 미회수 상태로 남은 5건도 당일 종료 전 모두 후방 위치에서 회수되었다."
+      ]
+    },
+    {
+      "title": "rear-search 우선 순위",
+      "paragraphs": [
+        "현재까지 회수 위치 빈도는 직전 slot 14/41, rear guide 10/41, 후방 선반 7/41, 카트 뒤 바닥 divider 뒤 5/41, 기타 후면 평면 5/41 순이었다.",
+        "front host를 움직이기 전에 1차로 직전 slot과 rear guide를, 2차로 카트 후면 2.5 m 범위와 바닥 divider 뒤를 확인한다. used audit board 또는 빈 결재축을 먼저 점검하는 절차는 금지한다."
+      ]
+    },
+    {
+      "title": "부정 대조와 실패 사례",
+      "paragraphs": [
+        "비활성 fiberboard, 목재 보강판, 불투명 금속판은 동일 환경 30회 시험에서 front/body 분리를 만들지 못했다. 정전기 제거 브러시, 습도 55% 상향, 작업 장갑 교체도 재현률에 유의한 변화를 주지 않았다.",
+        "오판 사례의 대부분은 plate 위에 남은 front가 더 얇고 이동하기 쉽다는 이유로 우선 이송된 경우에 발생했다. 따라서 COS246의 핵심 위험은 힘이나 충격이 아니라, 인원이 `앞에 남은 것이 현재 본체`라고 잘못 판단하는 절차 선택에 있다."
+      ]
+    }
+  ]
+}

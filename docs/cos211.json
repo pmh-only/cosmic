@@ -466,6 +466,15 @@
         "[COS229 — 회청색 선결봉함갑](./cos229.json)은 [COS211 — 회청색 선결검수면](./cos211.json)에서 먼저 형성된 완료 frame이 작업면을 떠나 실제 운반 host에 고정된 후속 단계로 확인되었다. 검수 완료 칸만 남은 surface에서 shell과 blank card가 open sleeve로 이동하면, provenance 회복 없이도 닫힌 packet 외형이 먼저 형성될 수 있다.",
         "COS211 작업면에서 미완결 host를 치울 때는 completion frame뿐 아니라 이후 [COS229 — 회청색 선결봉함갑](./cos229.json) 전이를 감시해야 하며, rear body 확인 전 봉함 상태를 승인하지 않는다."
       ]
+    },
+    {
+      "relatedId": 246,
+      "type": "reciprocal",
+      "title": "COS246 상호기록",
+      "paragraphs": [
+        "[COS246 — 회청색 중간확인판](./cos246.json) 위에서 양성 반응을 보인 front host를 used audit board에 올리면, actual body 회수 이전에도 [COS211 — 회청색 선결검수면](./cos211.json)의 completion frame이 선행 형성될 수 있다. 2045-11-27 EXP-246-04에서는 used audit board군 6건 중 5건이 18~62 s 안에 `대조 완료` 외형을 획득했으나 rear body는 모두 후방 위치에서 별도로 회수되었다.",
+        "따라서 COS211은 COS246의 중간확인 상태를 검수 완료 상태로 과도 종결시키는 대표 하류 표면으로 기록한다. COS246 유래 front host에서 생성된 completion box를 provenance 회복이나 검수 종료의 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

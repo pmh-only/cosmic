@@ -384,6 +384,15 @@
         "[COS240 — 회청색 전후분기레일](./cos240.json)은 [COS239 — 회청색 본문대행판](./cos239.json)이 유지하는 front-only current authority의 상류 분기 물체로 재분류되었다. rail은 intact packet에서 얇은 전면 host를 먼저 떼어 내고, COS239는 그렇게 분리된 host를 더 오래 `현재의 본문`처럼 유지시키는 하류 단계로 작동한다.",
         "따라서 COS239 현장에서 rear axis를 따라 actual body가 반복 회수되거나 host가 비정상적으로 얇다면, 표본이 본래 front-only였다고 단정하지 않고 [COS240 — 회청색 전후분기레일](./cos240.json) 선행 분리 여부를 먼저 조사한다. rail 연계가 확인되면 A239/B239/R239 체인과 별도로 A240/B240/R240 체인을 병기한다."
       ]
+    },
+    {
+      "relatedId": 246,
+      "type": "reciprocal",
+      "title": "COS246 상호기록",
+      "paragraphs": [
+        "[COS246 — 회청색 중간확인판](./cos246.json) 위에 남은 일시적 front host는 clear lid·clear sleeve 조건에서 30 min 이상 `현재 본문` 권위를 유지할 수 있었고, 같은 run의 actual body는 모두 rear axis에서 회수되었다. 이는 [COS239 — 회청색 본문대행판](./cos239.json)이 COS246가 선취한 current front를 장시간 고정하는 하류 전이 단계임을 시사한다.",
+        "따라서 COS246 footprint나 A246-plate와 함께 발견된 얇은 current front는 독립 본문으로 보지 않고 rear-search를 선행한다. 투명 덮개 아래 안정화된 front host는 B239-host와 동일 계열 오염 표본으로 분리 취급한다."
+      ]
     }
   ],
   "supplementalSections": [
