@@ -371,6 +371,15 @@
       "paragraphs": [
         "[COS234 — 회청색 본문회수반](./cos234.json)에서 나온 body가 하나의 tray에 함께 놓였다는 사실은 같은 사건의 본문이라는 증거가 아니다. mixed recovery tray에서 blank 복귀표가 형성될 경우 [COS238 — 회청색 정본귀속패](./cos238.json)는 가장 그럴듯한 묶음을 `정본`으로 지정해 same-tray recovery를 false provenance로 굳힐 수 있으므로, tray 출처 대신 hash와 page total을 우선한다."
       ]
+    },
+    {
+      "relatedId": 247,
+      "type": "reciprocal",
+      "title": "COS247 상호기록",
+      "paragraphs": [
+        "[COS234 — 회청색 본문회수반](./cos234.json)에서 회수된 body는 same-tray recovery만으로 source front와 연결할 수 없으나, 개별 hash·장수 대조 뒤 무광 비교면에 올리면 [COS247 — 회청색 재결속봉합선](./cos247.json)이 맞는 front/body 쌍에서만 비교적 안정적으로 형성되는 사례가 확인되었다. 이는 mixed recovery를 정쌍으로 좁히는 보조 절차로 유용하다.",
+        "다만 같은 회수반에서 나온 둘 이상의 body를 한 비교면에 남겨 두면 fragment seam과 오종점이 증가했다. COS234 현장에서는 회수반 contents를 사건별로 분리한 뒤에만 COS247 비교를 허용한다."
+      ]
     }
   ],
   "supplementalSections": [

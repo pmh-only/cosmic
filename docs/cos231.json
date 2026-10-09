@@ -439,6 +439,15 @@
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json)가 남아 있는 front host는 current authority를 잃지 않아 [COS235 — 회청색 본문귀속궤](./cos235.json)의 onset과 잔류 시간을 현저히 늘렸다. 2044-07-09 대조 10회에서 clip 잔류군은 평균 궤 길이 63 cm, 양성 7/10이었고, clip 제거군은 평균 21 cm, 양성 1/10에 그쳤다.",
         "따라서 rail·tray lip 위의 active A231 host는 actual body 검색 전에 절대 후보 묶음과 같은 경로를 공유시키지 않는다. current clip이 붙은 host 옆에서 lower band나 route fragment가 나타나면 [COS235 — 회청색 본문귀속궤](./cos235.json) 연계를 우선 기록하고, clip·host·capture를 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 247,
+      "type": "reciprocal",
+      "title": "COS247 상호기록",
+      "paragraphs": [
+        "[COS231 — 회청색 현행점유걸쇠](./cos231.json)가 남아 있는 front host는 [COS247 — 회청색 재결속봉합선](./cos247.json) 비교에서 true body보다 가까운 wrong candidate 쪽으로 짧은 단봉합선을 만들어 낼 수 있다. 이는 현행 선점이 해소되지 않은 상태의 교란으로 분류하며, clip 제거와 10분 이상 중성화 없이 생긴 seam은 정쌍 판정에서 제외한다.",
+        "반대로 active clip을 분리하고 host current가 충분히 감쇠한 뒤 rear-search body와 무광 비교면에서 재대조하면, 연속 봉합선은 실제 front/body 정쌍을 좁히는 보조 징후가 될 수 있다. 따라서 COS231 현장에서는 clip 회수 직후 재체인하지 말고 COS247 비교 조건을 먼저 확보한다."
+      ]
     }
   ],
   "supplementalSections": [

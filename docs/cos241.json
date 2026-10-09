@@ -381,6 +381,15 @@
         "[COS241 — 회청색 본문유도띠](./cos241.json) 종점 18~46 cm 전후에서 [COS244 — 회청색 후면판독면](./cos244.json)이 형성되는 사례가 반복 확인되었다. COS241가 actual body가 있는 방향을 먼저 좁히면, COS244는 그 근처 blank plane에 제목선과 줄 구조를 남겨 회수 직전의 page layout 일부를 외재화한다.",
         "이 조합은 회수 보조에는 유용하지만 판독면을 대체본으로 오인하게 만들 위험이 크다. 띠와 판독면이 동시에 있으면 먼저 body를 회수하고, line layout은 사진으로만 보존하며, 판독면 내용을 근거로 footer hash나 종결 상태를 확정하지 않는다."
       ]
+    },
+    {
+      "relatedId": 247,
+      "type": "reciprocal",
+      "title": "COS247 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json)가 origin host에서 actual body의 위치를 좁힌 뒤, 해당 body를 회수해 무광 비교면에서 재대조하면 [COS247 — 회청색 재결속봉합선](./cos247.json)의 연속 봉합선이 형성되는 사례가 반복 확인되었다. 실무상 COS241는 방향을 제공하고 COS247는 회수 뒤 정쌍 여부를 다시 좁히는 후속 단계로 취급한다.",
+        "그러나 분기 trace, 3인 동시 확인, generated card 회귀가 있었던 run에서는 wrong body short seam도 동반될 수 있다. 따라서 COS241 종점에서 회수한 body는 즉시 결합하지 말고, 분기 유무를 먼저 기록한 뒤 COS247 비교 절차로 넘긴다."
+      ]
     }
   ],
   "supplementalSections": [

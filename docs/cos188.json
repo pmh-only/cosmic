@@ -427,6 +427,15 @@
         "[COS236 — 회청색 정합대행면](./cos236.json) 양성 run 18회 중 12회에서 [COS188 — 무본문 대용철](./cos188.json)의 `A188-shell`이 중앙 시야를 점유했고, 같은 평면 45 cm 이내에 actual body와 generated receipt가 함께 노출되면 shell 상단 제목선과 도착 필드가 동일 건처럼 읽히기 시작했다. 이는 COS188 shell이 단순 대용 외피를 넘어 COS236의 전면 기준점으로 기능했음을 뜻한다.",
         "따라서 A188-shell은 rear body나 generated receipt와 flat board 위에서 same-case 확인용으로 나란히 두지 않는다. COS236 경계가 형성되면 body는 보조 위치로 밀리고 generated closure가 남을 수 있으므로, shell/body/trace는 기존 분리 규정보다 강화된 H236/C236/R236 절차로 추가 봉인한다."
       ]
+    },
+    {
+      "relatedId": 247,
+      "type": "reciprocal",
+      "title": "COS247 상호기록",
+      "paragraphs": [
+        "[COS188 — 무본문 대용철](./cos188.json)의 `A188-shell`과 rear slot에서 회수된 `A188-body`를 불투명 트레이에서 분리 유지한 채 무광 비교면에 올리면, [COS247 — 회청색 재결속봉합선](./cos247.json)의 연속 봉합선이 형성되는 사례가 확인되었다. 이는 shell이 본문을 되찾았다는 뜻이 아니라, bodyless shell과 후행 body가 동일 사건철의 전면·본문이었을 가능성을 좁혀 주는 짧은 검증 창으로 취급한다.",
+        "반대로 [COS231 — 회청색 현행점유걸쇠](./cos231.json) 잔류 current나 [COS203 — 회청색 교차편철면](./cos203.json) 영향이 남은 flat board에서 비교하면 wrong short seam이 생길 수 있다. COS188 자료의 봉합선은 footer hash·page count·질량 대조가 끝나기 전까지 정본화 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
