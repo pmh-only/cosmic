@@ -349,6 +349,14 @@
       "paragraphs": [
         "[COS232 — 회청색 후착본문띠](./cos232.json)는 [COS228 — 회청색 대조대행창](./cos228.json) pane가 붕괴한 뒤 실제 rear body에 `참조용`, `후착본문` 띠를 남겨, clear host 안에서 먼저 맞아 보였던 state field가 해제 뒤에도 actual body를 secondary source처럼 보이게 만드는 후속 단계로 기록한다. COS228 현장에서 pane 해제 직후 발견된 late band는 match failure의 표식이지 appendix 승인 근거가 아니며, rear body는 opaque-backed direct source로만 재확인한다."
       ]
+    },
+    {
+      "relatedId": 248,
+      "type": "reciprocal",
+      "title": "COS248 상호기록",
+      "paragraphs": [
+        "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS228 — 회청색 대조대행창](./cos228.json)의 상류 위치 신호로 확인되었다. clear PET sleeve나 acrylic shield가 front/rear source 사이에 들어오면 rear body를 향하던 구조전달 burst가 pane alignment로 치환되어 wrong pair가 더 설득력 있게 보일 수 있다. 따라서 COS228 pane가 형성되면 accession·lower line을 읽기 전에 black backing으로 pane를 붕괴시키고, 남아 있는 COS248 축을 따라 actual body를 다시 수색한다."
+      ]
     }
   ],
   "supplementalSections": [

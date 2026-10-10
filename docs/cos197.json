@@ -456,6 +456,14 @@
         "[COS229 — 회청색 선결봉함갑](./cos229.json) 양성 host의 다수는 실제 본문이 [COS197 — 회청색 후행본문퇴](./cos197.json)로 후방에 남은 상태에서 front shell만 닫힌 운반본처럼 굳은 사례였다. 즉 COS197이 body-only 잔류를 만들고, COS229가 남은 front 외피를 휴대 가능한 packet으로 완결시키는 순차 결합이 반복되었다.",
         "COS197 조사 중 질량 부족 shell이 이미 sleeve나 case 안에서 닫혀 있으면 이를 복구 완료본으로 보지 말고 [COS229 — 회청색 선결봉함갑](./cos229.json) 단계로 재분류한 뒤 rear search를 선행한다."
       ]
+    },
+    {
+      "relatedId": 248,
+      "type": "reciprocal",
+      "title": "COS248 상호기록",
+      "paragraphs": [
+        "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS197 — 회청색 후행본문퇴](./cos197.json)의 rear body 회수 직전에 가장 자주 확인되는 구조전달 신호로 재분류되었다. front shell이 current line을 유지한 채 body가 rear stack에 남아 있을 때, 78~94 Hz burst가 shell이 놓인 lip와 후면 적층 사이를 따라 이동하며 회수축을 좁힌다. 다만 이 burst 자체가 정합을 증명하지는 않으므로, COS197 표본은 COS248 방향성을 이용해 rear-search를 우선하되 footer hash·질량·스테이플 간격 대조 전에는 재결합하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

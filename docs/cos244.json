@@ -388,6 +388,14 @@
         "[COS245 — 회청색 전면종결곽](./cos245.json)은 [COS244 — 회청색 후면판독면](./cos244.json)이 generated sign-off와 recipientless handoff를 같은 국지 배치 안에서 함께 획득한 확장형으로 분류된다. blank plane의 page-like field가 단독일 때도 대체본 오인 위험이 높지만, 여기에 blank sign-off field와 preview까지 붙으면 actual body 미회수 상태가 `완결 사건철`처럼 보이는 속도가 급격히 빨라진다.",
         "따라서 COS244 판독면이 발견되면 line band 전사보다 먼저 주변 sign-off host와 handoff 상태를 확인한다. [COS245 — 회청색 전면종결곽](./cos245.json) 결합형에서는 판독면·generated sign-off·front host·recovered body를 각각 별도 체인으로 유지하고, 어떤 표면도 대체 본문이나 수령 증거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 248,
+      "type": "reciprocal",
+      "title": "COS248 상호기록",
+      "paragraphs": [
+        "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS244 — 회청색 후면판독면](./cos244.json)의 가장 실무적인 선행 지표로 재분류되었다. page-like field가 blank plane에 나타나기 전 또는 같은 시점에 78~94 Hz burst가 rear axis를 좁히며, 실제 body는 대개 그 terminal 주변에서 회수된다. 따라서 COS244 판독면을 읽거나 전사하기 전에 COS248 축을 기록하고 silent rear-search를 먼저 수행하며, 판독면은 body 회수 이후에도 대체본으로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

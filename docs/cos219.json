@@ -462,6 +462,14 @@
       "paragraphs": [
         "[COS241 — 회청색 본문유도띠](./cos241.json) 활성 구간에서 generated card를 읽거나 가리키면 origin 또는 분기부가 축소·회귀하는 교란이 반복 확인되었다. 본 항목의 `검토 종료`, `received`, lower line은 본문 회수 단서가 아니라 회청색 유도띠를 자기회귀시키는 허위 종점 표지로 취급해야 한다. 따라서 COS241 trace가 확인된 현장에서는 generated card를 즉시 불투명 차폐판 뒤로 이동시키고, 문구 낭독과 현장 삽입을 금지한다."
       ]
+    },
+    {
+      "relatedId": 248,
+      "type": "reciprocal",
+      "title": "COS248 상호기록",
+      "paragraphs": [
+        "[COS248 — 회청색 후축동조맥](./cos248.json)가 active host와 rear body 사이에서 형성된 상태에서 blank note card를 두거나 lower line을 낭독하면 [COS219 — 회청색 종결전사패](./cos219.json)형 generated card가 생길 가능성이 높아진다. 즉 COS219는 실제 body 위치를 가리키던 COS248 신호가 종결 어휘와 확인선으로 오염된 downstream 결과일 수 있다. generated card가 나타난 순간 rear pulse는 약화하거나 wrong terminal로 분기할 수 있으므로, COS219 표본은 card 문구보다 COS248의 사전 축 기록을 우선하고 rear-search를 먼저 시행한다."
+      ]
     }
   ],
   "supplementalSections": [

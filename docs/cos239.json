@@ -393,6 +393,14 @@
         "[COS246 — 회청색 중간확인판](./cos246.json) 위에 남은 일시적 front host는 clear lid·clear sleeve 조건에서 30 min 이상 `현재 본문` 권위를 유지할 수 있었고, 같은 run의 actual body는 모두 rear axis에서 회수되었다. 이는 [COS239 — 회청색 본문대행판](./cos239.json)이 COS246가 선취한 current front를 장시간 고정하는 하류 전이 단계임을 시사한다.",
         "따라서 COS246 footprint나 A246-plate와 함께 발견된 얇은 current front는 독립 본문으로 보지 않고 rear-search를 선행한다. 투명 덮개 아래 안정화된 front host는 B239-host와 동일 계열 오염 표본으로 분리 취급한다."
       ]
+    },
+    {
+      "relatedId": 248,
+      "type": "reciprocal",
+      "title": "COS248 상호기록",
+      "paragraphs": [
+        "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS239 — 회청색 본문대행판](./cos239.json) 활성 run에서 front-only current host와 rear body를 연결하는 가장 신뢰도 높은 탐색 신호로 확인되었다. active plate 위 host가 current authority를 선점한 상태에서 78~94 Hz burst가 챔퍼 후축을 따라 이동하면, 그 종점 부근에서 actual body가 회수되는 비율이 높았다. 다만 declared mass나 false handoff보다 COS248 축이 우선 증거라는 뜻이지 정합 자체를 대체하지는 않으므로, COS239 표본은 pulse-guided rear-search 뒤 footer hash·page count 대조를 거친 후에만 복귀시킨다."
+      ]
     }
   ],
   "supplementalSections": [
