@@ -343,6 +343,14 @@
         "[COS233 — 사후 목격삼각](./cos233.json) 정삼각 관찰 배치 9회 중 8회에서 [COS242 — 회청색 무인서명란](./cos242.json)이 2개 이상 sign-off field를 동시에 폐합했다. 세 관찰자는 실제 서명자를 보지 않았는데도 `모두 확인했다`는 높은 확신을 보고했다.",
         "따라서 COS233 배치가 witness line·receipt slip 주변에 형성되면 일치 진술을 sign-off 진정성 근거로 사용하지 않는다. 삼각 배치를 즉시 해체하고 단일 관찰자 1인만 남긴 뒤 generated mark와 actual body를 각각 봉인한다."
       ]
+    },
+    {
+      "relatedId": 249,
+      "type": "reciprocal",
+      "title": "COS249 상호기록",
+      "paragraphs": [
+        "[COS249 — 사후 증언석](./cos249.json) 둘레 1.6 m 정삼각에 가까운 3인 관찰 배치 4회는 모두 실제 입실자 없는 동일 착석자 진술을 생성했다. 이는 [COS233 — 사후 목격삼각](./cos233.json)이 요구하는 사후 목격 위치를 COS249의 빈 좌석이 고정점으로 제공한 사례로 보이므로, 의자 주변 3인 대등 관찰은 즉시 해체한다."
+      ]
     }
   ],
   "supplementalSections": [

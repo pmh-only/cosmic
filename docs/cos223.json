@@ -404,6 +404,14 @@
         "[COS229 — 회청색 선결봉함갑](./cos229.json) 외벽에 loose appendix slip이나 summary sheet가 부착될 때, [COS223 — 사후 합철침](./cos223.json)의 첨부 관계 오염이 closed host 바깥면으로 이동한 사례가 확인되었다. 이 경우 packet 자체가 완결본처럼 보이는 것에 더해 외벽 첨부까지 공식 부속서처럼 읽혀 오판 가능성이 급격히 커진다.",
         "COS223 자료가 닫힌 lightweight host 외벽에 붙어 있으면 해당 slip을 정상 부속서로 편철하지 말고 [COS229 — 회청색 선결봉함갑](./cos229.json) outer annex 산물로 별도 봉인한다."
       ]
+    },
+    {
+      "relatedId": 249,
+      "type": "reciprocal",
+      "title": "COS249 상호기록",
+      "paragraphs": [
+        "[COS249 — 사후 증언석](./cos249.json) 전방에 분리 배치된 진술서, 출입 로그 출력본, 열화상 정지화면은 6회 시험 중 3회에서 도구 흔적 없는 U자 결속을 형성했다. 이 결속본은 서로 다른 생성 시각에도 하나의 면담 부속서처럼 읽혔으므로, COS249는 [COS223 — 사후 합철침](./cos223.json)의 첨부 관계 오인을 현장 면담 기록으로 확장하는 물체로 취급한다."
+      ]
     }
   ],
   "supplementalSections": [
