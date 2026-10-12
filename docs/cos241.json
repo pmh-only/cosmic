@@ -390,6 +390,15 @@
         "[COS241 — 회청색 본문유도띠](./cos241.json)가 origin host에서 actual body의 위치를 좁힌 뒤, 해당 body를 회수해 무광 비교면에서 재대조하면 [COS247 — 회청색 재결속봉합선](./cos247.json)의 연속 봉합선이 형성되는 사례가 반복 확인되었다. 실무상 COS241는 방향을 제공하고 COS247는 회수 뒤 정쌍 여부를 다시 좁히는 후속 단계로 취급한다.",
         "그러나 분기 trace, 3인 동시 확인, generated card 회귀가 있었던 run에서는 wrong body short seam도 동반될 수 있다. 따라서 COS241 종점에서 회수한 body는 즉시 결합하지 말고, 분기 유무를 먼저 기록한 뒤 COS247 비교 절차로 넘긴다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS241 — 회청색 본문유도띠](./cos241.json)로 actual body를 회수한 직후 가장 자주 나타나는 하류 기록 오염으로 분류된다. trace가 가리킨 rear body를 찾았다는 안도감이 생기는 순간, blank correction slip이나 preview field가 `처음부터 같은 chain이었다`는 footer를 생성해 rear-search 자체를 기록에서 지우려 할 수 있다.",
+        "따라서 COS241 성공 run에서는 body 회수 후 90분 동안 correction media를 origin bench 1 m 안에 두지 않고, trail 기록과 continuity line을 같은 장부에 합치지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

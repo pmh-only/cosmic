@@ -357,6 +357,15 @@
       "paragraphs": [
         "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS228 — 회청색 대조대행창](./cos228.json)의 상류 위치 신호로 확인되었다. clear PET sleeve나 acrylic shield가 front/rear source 사이에 들어오면 rear body를 향하던 구조전달 burst가 pane alignment로 치환되어 wrong pair가 더 설득력 있게 보일 수 있다. 따라서 COS228 pane가 형성되면 accession·lower line을 읽기 전에 black backing으로 pane를 붕괴시키고, 남아 있는 COS248 축을 따라 actual body를 다시 수색한다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS228 — 회청색 대조대행창](./cos228.json) clear pane 안에서 accession과 lower line이 먼저 맞아 보인 뒤, 그 결과가 blank correction media의 연속 footer로 굳어지는 하류 오염으로 확인되었다. transparent host가 남아 있는 상태의 continuity line은 검증된 correction record가 아니라 pane가 만든 시각적 합치의 문서화본일 가능성이 높다.",
+        "따라서 COS228 pane가 확인되면 black backing으로 즉시 붕괴시키고, same-room body 대조와 raw log 확인 전에는 어떤 correction footer도 작성하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

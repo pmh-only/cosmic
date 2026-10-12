@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "확정 사례 11건 모두에서 생성물이 실제 correction footer, thermal strip, shelf-prep card와 육안상 거의 구분되지 않았고, 4건은 일반 preview 체계까지 전이되었다. 형성 조건이 외부에 알려질 경우 분리·복구 이력을 숨긴 연속 chain을 의도적으로 위조하는 데 악용될 가능성이 높다.",
+    "permission": "진위 판정에는 raw access log, footer hash, 실측 질량, page count, rechain 이력, rear-search 시각을 함께 대조해야 했다. 비교·인계·배가 담당자라도 이러한 교차 검증 권한이 없으면 generated continuity를 실제 custody proof로 오인할 위험이 높아 4등급 열람이 필요하다.",
+    "chaos": "활성 run 46회에서 lower footer, thermal strip, queue preview, shelf card, blank correction form 등으로 분기했고 onset도 26~103초 범위로 흔들렸다. 육성 확인과 transparent host가 개입할 때 형태와 지속 시간이 크게 달라져 예측 곤란도가 높다.",
+    "danger": "직접 생체 위해는 없었지만 조기 closure 시도 3건, false audit completion 2건, shelf-prep 오인 1건이 발생했다. 위해의 중심은 인명보다 기록 무결성과 운영 절차의 조기 종결에 있으므로 3으로 판정한다.",
+    "popularity": "정식 편입 전 10일 동안 front/body recovery 계열 교차 검토 15건에서 선행 확인 항목으로 호출되었고, correction·handoff·shelf-prep 부서가 공통으로 참조했다. 기관 전체 최상위 허브 수준은 아니지만 중간 이상의 참조 빈도를 보인다.",
+    "containment": "불투명 분리, remote rechain, 무구두 취급, blank carrier 1m 격리, preview lockout을 함께 적용했을 때만 재발이 1/14로 감소했다. 단순 봉인이나 현장 가로지움만으로는 억제되지 않아 강화된 통제가 필요하다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "기록관 Q-12",
+        "role": "교차대조 기록관",
+        "status": "active",
+        "involvement": "2046-04-02 최초 연속증빙지를 봉인하고 raw log 우선 원칙을 확정했다. 이후 T-250 초동 문서와 정식 편입 초안을 작성했다."
+      },
+      {
+        "name": "체인검증관 길-09",
+        "role": "체인 무결성 분석관",
+        "status": "active",
+        "involvement": "footer hash, 실측 질량, page count, 체인 이력을 대조해 generated continuity를 실제 custody proof에서 배제했다. 세 건의 조기 closure 시도를 중단시켰다."
+      },
+      {
+        "name": "보존기사 H-19",
+        "role": "표본 보존기사",
+        "status": "active",
+        "involvement": "front/body 분리쌍의 보존 상태와 blank correction media 배치를 담당했고, 이후 physical host와 actual body를 분리 봉인하는 A250 절차를 정리했다."
+      },
+      {
+        "name": "음향분석관 A-05",
+        "role": "음향·전사 오염 분석",
+        "status": "active",
+        "involvement": "육성 낭독과 필사가 continuity line의 지속 시간과 2차 spread를 늘린다는 점을 계측했고, generated footer와 실제 발화의 불일치를 정리했다."
+      },
+      {
+        "name": "서가담당 ARC-07",
+        "role": "예비배가 기록관",
+        "status": "active",
+        "involvement": "Q-2 예비배가대 사건에서 blank shelf card가 continuity line을 획득한 사례를 발견하고 shelf-prep 중단 및 재촬영 절차를 시행했다."
+      },
+      {
+        "name": "시설운용원 L-05",
+        "role": "preview 운용 담당",
+        "status": "reassigned",
+        "involvement": "현장 correction footer와 preview line을 실제 완료 근거로 오인해 조기 handoff·종결선을 시도했다. 사건 이후 preview 운용 업무에서 재배치되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2046-04-02 10:24 KST",
+        "label": "최초 continuity slip 확인",
+        "description": "중앙기록단지 재결속실 R-6에서 [COS241 — 회청색 본문유도띠](./cos241.json)와 [COS247 — 회청색 재결속봉합선](./cos247.json)으로 회수·대조를 마친 front/body 쌍 옆 blank correction form에 회청색 연속 footer가 형성되었다."
+      },
+      {
+        "date": "2046-04-02 13:40 KST",
+        "label": "임시표기 T-250 부여",
+        "description": "같은 날 두 번째 blank slip에서 동일 양상이 재현되었고, 원시 출입 로그와 생성 footer의 시간 불일치가 확인되면서 T-250이 임시등록되었다."
+      },
+      {
+        "date": "2046-04-05 15:32 KST",
+        "label": "현장 무효화 전이 사고",
+        "description": "봉인실 M-2에서 false pair를 해제한 직후 현장 가로지움과 thermal preview를 병행하자 blank footer strip와 queue preview에 연속 chain이 다시 생성되었다."
+      },
+      {
+        "date": "2046-04-09 09:18 KST",
+        "label": "shelf-prep 말단 전이 확인",
+        "description": "Q-2 예비배가대에서 blank shelf card와 scanner preview가 `복귀 완료`형 연속 line을 획득해 일반 배가 직전까지 진행되었다가 중단되었다."
+      },
+      {
+        "date": "2046-04-10 16:20 KST",
+        "label": "통제 실험 완료",
+        "description": "recovered pair, false pair, intact packet, remote rechain 대조군을 이용한 E-250-01~05가 종료되어 same-room body 존재와 blank auxiliary host가 핵심 조건으로 정리되었다."
+      },
+      {
+        "date": "2046-04-12 18:00 KST",
+        "label": "표준 억제 절차 발효",
+        "description": "blank carrier 1m 격리, remote rechain 3m 분리, 무구두 취급, preview lockout, 90분 재점검을 포함한 A250 표준 절차가 관련 구역 전체에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-250-01",
+        "date": "2046-04-02",
+        "location": "중앙기록단지 재결속실 R-6",
+        "title": "정쌍 회수 직후 생성된 무단절 correction footer",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "체인검증관 길-09",
+          "보존기사 H-19",
+          "음향분석관 A-05"
+        ],
+        "narrative": [
+          "Q-12와 H-19는 [COS241 — 회청색 본문유도띠](./cos241.json) 추적과 [COS247 — 회청색 재결속봉합선](./cos247.json) 대조로 `A247-front-09`와 `B247-body-09`를 같은 사건의 정쌍으로 좁힌 뒤, 아직 rechain을 확정하지 않은 상태에서 blank correction form `CF-09`를 두 표본 사이 14cm 지점에 놓고 사진을 남기려 했다. H-19는 correction 시간을 나중에 옮겨 적기보다 같은 프레임에 담는 편이 낫다고 판단해, 불투명 tray 밖으로 `CF-09`를 잠시 끌어냈다. 배치 66초 뒤 form 하단 4mm 폭에 회청색 footer가 나타났고 `08:03 접수 / 08:04 검토 / 08:17 인계 준비`와 유사한 연속 line이 생성되었다.",
+          "문제는 actual body가 rear slot에서 회수된 시각이 10:24였고, 그 전 33분은 chain freeze와 rear-search에 사용되었다는 점이었다. 길-09는 footer hash, 출입 로그, UWB 위치 기록을 즉시 대조해 footer의 중간 단계가 물리적으로 불가능하다고 판단하고 form을 불투명 봉투로 옮겼다. A-05는 같은 시점의 raw audio에 correction footer에 대응하는 완결 발화가 없고, 제목과 번호를 읽는 짧은 호흡 파편만 남았음을 보고했다. Q-12는 staff가 옮겨 적은 첫 줄을 오염 trace로 분리하고, generated footer를 실제 correction record에서 배제했다."
+        ],
+        "outcome": "T-250 임시표기가 발령되었고, rear-search 뒤 blank correction form을 pair 30cm 이내에 두지 않는 규정이 즉시 시행되었다."
+      },
+      {
+        "code": "INC-250-02",
+        "date": "2046-04-05",
+        "location": "본부 제2보존동 1층 봉인실 M-2",
+        "title": "현장 가로지움과 thermal preview를 통한 연속 chain 재생성",
+        "involvedPersonnel": [
+          "기록관 Q-12",
+          "체인검증관 길-09",
+          "시설운용원 L-05",
+          "음향분석관 A-05"
+        ],
+        "narrative": [
+          "M-2에서는 [COS205 — 회청색 대조합치막](./cos205.json)과 [COS206 — 회청색 동체인란](./cos206.json) 정정 표본을 remote rechain 구역으로 옮기기 전, 기존 번호를 현장에서 가로지우고 취소 stamp를 준비하고 있었다. L-05는 printer queue를 열어 둔 채 blank thermal footer strip `TS-17`를 장착했고, `A206-field-11` front shell과 `B206-field-11` body packet을 같은 bench 위 22cm 간격으로 두었다. 그는 새 번호가 찍히는지 확인한다며 기존 provisional accession을 낮게 한 번 읽었고, 74초 뒤 queue preview와 `TS-17` 양쪽에 `09:07 수령 / 09:08 검토 / 09:09 봉인` 형식의 gapless chain이 나타났다. footer에는 실제로 수행된 `rear-search`, `void`, `rebag` 단계가 모두 빠져 있었다.",
+          "L-05는 같은 번호와 연속 line이 보이자 이미 정정이 완료되었다고 해석하고 print 승인 키를 누르려 했다. 길-09는 footer hash가 여전히 두 표본에서 다르고, queue의 print count가 0인데 preview만 생성되었다는 점을 지적하며 즉시 printer 전원을 차단했다. Q-12는 기존 번호를 덧줄로 지운 행위 자체가 새로운 blank host를 선정했을 가능성을 고려해 현장 무효화를 중단시키고, shell·body·footer strip·preview snapshot을 각각 다른 봉투와 다른 사건 보조번호로 분리했다. A-05는 발화 후 preview 생성까지의 음성 로그를 검토해, footer line 전체에 대응하는 완결 문장이 없고 accession 호명만이 선행했다는 사실을 남겼다."
+        ],
+        "outcome": "현장 가로지움과 즉시 재포장이 금지되었고, remote rechain 3m 분리 원칙 및 printer preview lockout이 봉인실 전체에 적용되었다."
+      },
+      {
+        "code": "INC-250-03",
+        "date": "2046-04-09",
+        "location": "Q-2 예비배가대 P-4",
+        "title": "blank shelf card의 연속 복귀 line과 배가 직전 중단",
+        "involvedPersonnel": [
+          "서가담당 ARC-07",
+          "기록관 Q-12",
+          "체인검증관 길-09"
+        ],
+        "narrative": [
+          "ARC-07은 정정이 끝난 front/body 쌍을 감사 확인 전까지 예비배가대에서 임시 대기시키고 있었고, 같은 선반의 빈 자리 식별을 위해 무산성 blank shelf card `SC-00`를 우측 19cm 지점에 세워 두었다. recovered pair는 [COS204 — 회청색 보류인계슬리브](./cos204.json)와 [COS206 — 회청색 동체인란](./cos206.json) 정정 대상에서 막 분리된 표본이었고, 실제 배가 승인은 아직 내려지지 않은 상태였다. 배치 84초 뒤 `SC-00` 등면과 scanner preview에 `복귀 완료 / shelf ready`형 회청색 line이 생겼고, ARC-07은 한순간 이를 정정본의 별도 current copy로 해석해 배가 lane 쪽으로 손을 뻗었다.",
+          "Q-12는 preview line이 너무 깨끗해 anomaly history가 사라졌다고 판단하고 즉시 중지시켰다. 길-09가 card 질량을 재자 8.1g에 불과했고 page block이나 staple shadow는 없었다. 세 사람은 raw access log를 다시 대조해 해당 표본이 아직 감사 보류 상태이며 어떤 `복귀 완료`도 승인되지 않았음을 확인했다. `SC-00`는 일반 shelf-prep card가 아니라 `A250-slip`으로 재분류되어 봉인되었고, pair는 90분 재점검 뒤에야 다시 Q-2 밖으로 이동할 수 있었다."
+        ],
+        "outcome": "blank shelf card와 scanner preview는 continuity proof host로 분류되었고, active trace 반경 1m 안의 shelf-prep card·blank jacket 사용이 금지되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-250-01",
+        "type": "physical continuity slip",
+        "description": "`A250-slip-01`. R-6에서 회수한 blank correction form `CF-09`. 하단 4 mm 폭의 회청색 연속 footer와 실제 raw log에 없는 `08:03 접수 / 08:04 검토 / 08:17 인계 준비` line이 남아 있다.",
+        "custodyStatus": "문서위험물 금고 G-250-1에 matte-black sleeve 이중 봉인 보관"
+      },
+      {
+        "code": "EV-250-02",
+        "type": "raw audit and access log packet",
+        "description": "R-6, M-2, Q-2의 출입 로그, rear-search 시각, chain freeze 시각, footer hash 대조표를 묶은 원시 기록 세트. continuity line의 실제 불가능한 중간 단계가 검증된다.",
+        "custodyStatus": "감사서버 AUD-250 read-only 보관 및 오프라인 SSD 1식 이중 저장"
+      },
+      {
+        "code": "EV-250-03",
+        "type": "thermal footer strip and preview capture",
+        "description": "`TS-17` blank thermal footer strip, queue preview 스크린 캡처, print count 0 상태 로그 묶음. 현장 가로지움 이후 actual print 없이 continuity line이 생성된 M-2 사건 핵심 증거이다.",
+        "custodyStatus": "봉인실 M-2 사고증거함 AE-9 보관, printer 본체와 분리 유지"
+      },
+      {
+        "code": "EV-250-04",
+        "type": "shelf-prep contamination set",
+        "description": "blank shelf card `SC-00`, Q-2 scanner preview 캡처, 질량·광투과·page block 부재 기록을 포함한다. `복귀 완료 / shelf ready`형 line이 body 없는 card에 형성된 사례다.",
+        "custodyStatus": "예비배가 금고 Q2-250에 별도 봉인, 일반 배가 라인 반입 금지"
+      },
+      {
+        "code": "EV-250-05",
+        "type": "source pair comparison set",
+        "description": "`A247-front-09`/`B247-body-09`, `A206-field-11`/`B206-field-11`의 분리 보관 세트와 corresponding footer hash, 실측 질량, page count 비교표. generated continuity가 실제 provenance 일치와 무관함을 입증한다.",
+        "custodyStatus": "체인-무결성 보관고 C-250 분리 봉인, 동시 열람 시 2인 승인 필요"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "기록관 Q-12",
+        "role": "교차대조 기록관",
+        "context": "INC-250-01 직후 현장 진술",
+        "statement": "제가 확인한 사실은 blank correction form에 그럴듯한 연속 line이 생겼다는 점과, 실제 body 회수 시각이 그 line의 중간 단계보다 훨씬 늦었다는 점입니다. `처음부터 연속 인계였을 것이다`라는 설명은 line이 주는 인상일 뿐, raw log가 지지하지 않았습니다."
+      },
+      {
+        "speaker": "체인검증관 길-09",
+        "role": "체인 무결성 분석관",
+        "context": "2046-04-05 정정 메모",
+        "statement": "같은 번호와 같은 하단선이 남아 있어도 footer hash와 실측 질량이 다르면 같은 사건이 아닙니다. 연속증빙지는 내용이 아니라 절차를 먼저 정리하려 했고, 그 점을 구분하지 않으면 잘못된 chain이 매우 빠르게 닫힙니다."
+      },
+      {
+        "speaker": "시설운용원 L-05",
+        "role": "preview 운용 담당",
+        "context": "재배치 전 면담",
+        "statement": "preview와 footer에 단계가 줄줄이 보였기 때문에 정정이 이미 끝난 줄 알았습니다. 그 판단은 제 해석이었고, 실제로는 body와 shell이 아직 서로 다른 hash를 가지고 있었다는 사실을 이후에 확인했습니다."
+      }
+    ]
+  },
+  "id": 250,
+  "title": "회청색 연속증빙지",
+  "language": "ko-KR",
+  "overview": [
+    "**COS250**는 분리되었다가 회수된 front/body 기록쌍의 정정 직후, blank correction slip·thermal footer strip·queue preview·shelf-prep card에 형성되는 회청색 연속성 증빙 현상이다. 현재 통칭은 **회청색 연속증빙지**이다.",
+    "생성된 line은 `접수-검토-인계-복귀`가 한 번도 끊기지 않았던 것처럼 보이게 만들지만, 실제 raw access log·rear-search 시각·footer hash와 대조하면 `hold`, `void`, `rebag`, `rear-search`, `pair correction` 같은 핵심 중간 단계가 사라져 있다.",
+    "COS250는 본문을 복구하지 않으며, 오히려 실제 복구가 끝난 뒤 그 과정을 **처음부터 연속적이었던 chain**으로 봉합하려 한다. 첫 줄과 마지막 줄만 실제 시간·식별자와 맞고 중간 단계가 비정상적으로 압축되는 경우가 많아 오판 위험이 높다.",
+    "2046-04-02부터 2046-04-12까지 확정 사례 11건, 부분 사례 4건이 집계되었고, 모두 front/body 분리군의 재결속 또는 정정 단계에서 발생했다."
+  ],
+  "identificationTraits": [
+    "blank correction form, thermal footer strip, queue preview, shelf-prep card, blank rebag sleeve 같은 **보조 기록 매체**에 먼저 나타나며, 완전한 본문 packet 자체에 직접 형성된 사례는 아직 없다.",
+    "blank host가 recovered pair 또는 active trace 반경 10~30cm 안에 28~103초 놓이면 하단 3~6mm 폭의 회청색 footer band가 생성된다. 길이는 24~127mm 범위이며 486±5nm 부근에서 반사 피크가 상승한다.",
+    "footer band는 대개 2~6개의 짧은 custody step, handler initial, minute-level timestamp를 포함하지만, 실제 raw log와 대조하면 중간 단계가 30초 미만으로 압축되거나 서로 다른 위치가 동시에 기록된다.",
+    "확정 사례 11건 모두에서 `rear-search`, `hold`, `void`, `rebag`, `pair correction` 가운데 최소 1개 이상이 삭제되거나 generic lower line으로 치환되었다.",
+    "continuity line의 첫 단계와 마지막 단계는 실제 access log와 일치하는 경우가 많으나, middle segment만 비현실적으로 매끈하게 정리된다. 이 때문에 실무자는 부분 일치를 전체 진실성으로 오인하기 쉽다.",
+    "line을 소리 내어 읽거나 그대로 다른 장부에 베껴 적으면 지속 시간이 늘고 queue preview·blank card·shelf-prep field로 2차 전이될 수 있다.",
+    "actual body를 같은 room 밖으로 완전히 반출하거나, blank host를 1m 이상 분리하면 형성률이 급격히 떨어진다. same-room rear-search 조건이 유지될 때 가장 잘 발생했다.",
+    "matte-black mask와 opaque tray 분리를 적용하면 대개 5~18분 안에 가독성이 감소하지만, transparent clip stand·preview monitor·thermal footer strip와 함께 두면 persistence가 연장되었다."
+  ],
+  "discovery": [
+    "COS250는 [COS204 — 회청색 보류인계슬리브](./cos204.json)·[COS205 — 회청색 대조합치막](./cos205.json)·[COS206 — 회청색 동체인란](./cos206.json) 정정 작업과, [COS241 — 회청색 본문유도띠](./cos241.json)·[COS247 — 회청색 재결속봉합선](./cos247.json)·[COS248 — 회청색 후축동조맥](./cos248.json)을 이용한 body 회수 작업 뒤 남는 blank correction media를 검토하는 과정에서 분리되었다. 초기 현장 인원은 이 line을 정정 성공의 부산물 또는 thermal preview 잔상으로 해석했으나, 생성된 footer가 실제 rear-search와 chain freeze 단계를 일관되게 누락한다는 공통점이 드러났다.",
+    "최초 확정 사례는 2046-04-02 중앙기록단지 재결속실 R-6에서 기록되었다. [COS241 — 회청색 본문유도띠](./cos241.json)로 actual body를 회수하고 [COS247 — 회청색 재결속봉합선](./cos247.json)으로 정쌍 가능성을 좁힌 뒤, blank correction form `CF-09`를 같은 bench 위에 올려 둔 지 66초 후 하단 continuity footer가 생성되었다. footer는 pair가 이미 `08:03 접수 / 08:04 검토 / 08:17 인계 준비`로 이어졌다고 주장했지만, raw access log와 recovery 시각은 이를 지지하지 않았다.",
+    "이후 2046-04-05 봉인실 M-2에서는 현장 무효화와 thermal preview가, 2046-04-09 Q-2 예비배가대에서는 blank shelf-prep card와 scanner preview가 같은 양상을 보였다. 또한 [COS219 — 회청색 종결전사패](./cos219.json)가 남긴 closure cue와 [COS228 — 회청색 대조대행창](./cos228.json)의 transparent verification 환경이 있을 때 generated continuity가 더 설득력 있게 보이는 점이 확인되었다. 이로써 현상은 단순 인쇄 오류가 아니라 recovery 이후의 **연속성 증빙 오염**으로 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS250는 actual body가 이미 회수되었거나 false pair가 해제되어 **정정 직전 상태**가 되었을 때만 안정적으로 형성되었다.",
+      "현상은 내용을 되돌리지 않고, blank auxiliary media에 `문제없는 custody`의 외형을 먼저 부여한다. 따라서 본문보다 correction slip과 preview가 더 빨리 `끝난 사건`처럼 보이게 된다.",
+      "generated continuity를 읽거나 필사하면 line이 더 오래 남고 queue preview, shelf card, thermal footer로 spread할 수 있으므로, 조기 해석 자체가 오염 증폭 요인이다."
+    ],
+    "stages": [
+      {
+        "name": "recovery threshold",
+        "description": "front/body 쌍이 rear-search와 hash 대조를 거쳐 같은 room 안에서 recovery 직전 또는 직후 상태에 도달하지만, 아직 rechain과 correction이 공식 완료되지 않은 단계다. intact packet이나 body가 room 밖으로 완전히 반출된 상태에서는 현재까지 안정적 형성이 없었다."
+      },
+      {
+        "name": "continuity band seeding",
+        "description": "blank correction slip, thermal footer strip, queue preview, shelf-prep card 같은 auxiliary host가 recovered pair 또는 active trace 반경 10~30cm 안에 들어오면 lower footer band가 먼저 형성된다. 이 단계의 line은 짧고 파편적이지만 시간·번호·handler initial을 빠르게 얻는다."
+      },
+      {
+        "name": "gap compression",
+        "description": "footer는 실제 있었던 `rear-search`, `hold`, `void`, `rebag`, `pair correction` 단계를 생략하고, 접수부터 인계·복귀까지를 물리적으로 불가능한 간격으로 압축한다. first step과 last step만 실제 로그와 일치하는 경우가 많아 신뢰감이 생긴다."
+      },
+      {
+        "name": "procedural capture",
+        "description": "queue preview, handoff closure, shelf-prep scanner, review close field가 generated continuity를 근거로 절차를 닫으려 한다. 실무자는 이때 본문과 hash보다 lower line과 clean timeline을 먼저 믿는 경향을 보였다."
+      },
+      {
+        "name": "migration or decay",
+        "description": "불투명 차폐와 remote rechain이 적용되면 line은 5~18분 안에 약화되지만, 읽기·필사·transparent host 노출이 있으면 다른 blank medium으로 전이된다. 전이된 line은 원 host보다 더 짧고 더 정리된 형태를 보이는 경향이 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS250는 [COS241 — 회청색 본문유도띠](./cos241.json)·[COS247 — 회청색 재결속봉합선](./cos247.json)·[COS248 — 회청색 후축동조맥](./cos248.json)으로 actual body를 찾은 **이후** 단계에서, [COS205 — 회청색 대조합치막](./cos205.json)·[COS206 — 회청색 동체인란](./cos206.json)·[COS204 — 회청색 보류인계슬리브](./cos204.json)이 남긴 번호·보류 외피를 `문제없던 연속 chain`처럼 정리하는 하류 현상으로 가장 자주 기록되었다.",
+      "또한 [COS219 — 회청색 종결전사패](./cos219.json)의 closure cue와 [COS228 — 회청색 대조대행창](./cos228.json)의 transparent validation 환경은 generated continuity의 설득력을 강화했다. 따라서 COS250는 recovery 증거가 아니라 **recovery 이후 기록이 스스로를 정리하는 오염 단계**로 취급해야 한다."
+    ],
+    "entries": [
+      {
+        "targetId": 204,
+        "targetTitle": "회청색 보류인계슬리브",
+        "description": "[COS204 — 회청색 보류인계슬리브](./cos204.json)에서 actual body가 분리·회수된 직후, blank correction slip이나 handoff footer에 COS250 line이 형성되면 hold 상태가 실제로는 해제되지 않았는데도 `처음부터 정상 인계였다`는 외피가 만들어질 수 있다. 즉 COS204가 남긴 보류 인계 외피를 COS250가 사후적으로 매끈한 연속 인계로 덮는 것이다."
+      },
+      {
+        "targetId": 205,
+        "targetTitle": "회청색 대조합치막",
+        "description": "[COS205 — 회청색 대조합치막](./cos205.json)이 false pair를 만들어 냈다가 해제된 뒤에는 blank correction media에 COS250가 잘 발생했다. 이때 generated continuity는 `대조 오류가 수정되었다`가 아니라 `애초에 끊김이 없었다`는 방향으로 기록을 봉합하므로, false pair 해제 사실 자체가 사라질 위험이 높다."
+      },
+      {
+        "targetId": 206,
+        "targetTitle": "회청색 동체인란",
+        "description": "[COS206 — 회청색 동체인란](./cos206.json)의 shared accession이나 borrowed chain field는 COS250가 연속 증빙 line을 만들 때 가장 자주 재사용한 식별자였다. COS206이 여러 host에 같은 번호를 남긴다면, COS250는 그 번호를 하나의 정리된 custody line으로 압축해 행정적으로 문제없는 사건철처럼 보이게 만든다."
+      },
+      {
+        "targetId": 219,
+        "targetTitle": "회청색 종결전사패",
+        "description": "[COS219 — 회청색 종결전사패](./cos219.json)의 `검토 종료`, `인계 가능`, `received`류 closure cue는 COS250 footer의 마지막 행 또는 종결 어휘로 자주 재사용되었다. generated note를 읽거나 옮겨 적을수록 continuity line이 더 빨리 안정화되었으므로, COS219 card는 COS250의 wording seed로 취급한다."
+      },
+      {
+        "targetId": 228,
+        "targetTitle": "회청색 대조대행창",
+        "description": "[COS228 — 회청색 대조대행창](./cos228.json)의 transparent pane는 actual body와 generated continuity를 같은 시야 안에 정렬시켜, COS250 line이 검증된 correction record처럼 보이게 한다. pane 안에서 accession과 lower line이 매끈하게 맞아 보이면 staff가 raw hash 대조보다 continuity line을 먼저 믿는 경향이 강해졌다."
+      },
+      {
+        "targetId": 241,
+        "targetTitle": "회청색 본문유도띠",
+        "description": "[COS241 — 회청색 본문유도띠](./cos241.json)로 actual body를 회수한 직후 blank correction host가 nearby에 남아 있으면 COS250가 높은 비율로 형성되었다. 이 경우 generated continuity는 body가 `찾아졌다`가 아니라 `처음부터 그 chain 안에 있었다`고 기록하려 하므로, trail 자체보다 위험한 사후 정리 압력을 만든다."
+      },
+      {
+        "targetId": 247,
+        "targetTitle": "회청색 재결속봉합선",
+        "description": "[COS247 — 회청색 재결속봉합선](./cos247.json)은 올바른 front/body 비교를 좁히는 보조 지표지만, 그 직후 blank correction form을 들이밀면 COS250가 생겨 `재결속이 성공했다`를 넘어 `끊긴 적이 없었다`는 허위 audit line을 남길 수 있다. 따라서 봉합선은 정쌍 후보를 좁히는 데만 사용하고 continuity line 생성 host는 즉시 격리한다."
+      },
+      {
+        "targetId": 248,
+        "targetTitle": "회청색 후축동조맥",
+        "description": "[COS248 — 회청색 후축동조맥](./cos248.json)으로 rear-search를 진행한 run에서는 body 회수 직후 blank footer, preview, shelf card에 COS250가 잘 형성되었다. pulse가 가리킨 실제 body를 찾은 뒤 staff가 relief를 느끼며 correction을 서두를수록 generated continuity가 더 설득력 있게 보였으므로, COS248의 성공 run은 오히려 COS250에 취약한 전환점으로 기록된다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "E-250-01 / recovered pair 인접 correction slip 시험",
+      "description": "2046-04-10 09:20~11:40, 재결속실 R-6. [COS241 — 회청색 본문유도띠](./cos241.json)와 [COS247 — 회청색 재결속봉합선](./cos247.json)으로 정쌍 후보를 좁힌 recovered pair 12쌍과 완전 intact packet 12쌍을 비교했다. 조도 34 lux, 450 nm 사광, black ABS tray 조건에서 blank correction form을 pair 하단 15 cm에 배치한 결과 recovered pair군 9/12가 28~86초 내 COS250 line을 형성했고, intact packet 대조군은 0/12였다."
+    },
+    {
+      "label": "E-250-02 / 현장 무효화 대 remote rechain 시험",
+      "description": "2046-04-10 12:10~14:00, 봉인실 M-2와 O-3 remote rechain 구역. [COS205 — 회청색 대조합치막](./cos205.json)·[COS206 — 회청색 동체인란](./cos206.json) 정정 표본 10건을 두 군으로 나눠, 같은 bench에서 가로지움·재포장을 시행한 현장 무효화군과 3.4 m 떨어진 remote rechain군을 비교했다. 현장 무효화군은 7/10에서 blank rebag sleeve 또는 thermal footer strip에 연속 chain이 재생성되었고, remote rechain군은 0/10이었다."
+    },
+    {
+      "label": "E-250-03 / 육성 낭독·필사 증폭 시험",
+      "description": "positive slip 8점을 무구두 보존군과 read-aloud/필사군으로 나누었다. 무구두군의 가독성 지속 중앙값은 11분 20초였고 2차 spread는 0/8이었다. 반면 line을 소리 내어 읽고 장부에 옮겨 적은 군은 지속 시간이 중앙값 31분 40초로 늘었고, preview·note card·shelf card로의 2차 전이가 5/8에서 발생했다."
+    },
+    {
+      "label": "E-250-04 / transparent preview coupling 시험",
+      "description": "blank correction host 8개를 clear clip stand·preview monitor 환경에, 같은 host 8개를 opaque shield 환경에 두고 recovered pair 8쌍과 함께 노출했다. transparent군은 6/8에서 queue preview 또는 clear pane 안에 continuity line이 더 선명하게 재출현했고, opaque군은 1/8의 약한 footer만 남겼다. [COS228 — 회청색 대조대행창](./cos228.json)형 시각 검증이 COS250의 설득력을 증폭하는 것으로 판정되었다."
+    },
+    {
+      "label": "E-250-05 / actual body proximity matrix",
+      "description": "same-room rear zone 8회, adjacent locked airlock 8회, out-of-zone 8회로 나눠 actual body 거리를 비교했다. same-room rear zone은 8/8 양성, adjacent airlock은 2/8의 약한 partial footer, out-of-zone는 0/8이었다. COS250 형성에는 blank host뿐 아니라 actual body가 같은 통제구역 안에 남아 있는 미완결 recovery 상태가 필요하다는 해석을 지지한다."
+    }
+  ],
+  "handlingProcedures": [
+    "actual body 회수와 footer hash 대조가 끝나기 전에는 blank correction slip, thermal footer strip, blank rebag sleeve, shelf-prep card를 front/body pair 반경 1m 안에 두지 않는다.",
+    "recovered pair와 correction media는 같은 작업면에 두지 말고, correction은 origin bench에서 3m 이상 떨어진 remote rechain 구역에서만 수행한다.",
+    "`A250-slip` 또는 `D250-preview`가 형성되면 즉시 queue preview, auto-close, shelf scanner, handoff closure를 정지하고 수기 검증 모드로 전환한다.",
+    "generated continuity line을 읽거나 옮겨 적지 않는다. accession, time stamp, lower line 확인은 외부 코드 카드와 무음 촬영으로만 기록한다.",
+    "continuity host는 덧줄이나 correction pen으로 현장에서 지우지 않는다. 우선 무플래시 촬영, 열영상, raw log snapshot을 확보한 뒤 matte-black mask로 가리고 봉인한다.",
+    "pair 검증은 continuity line이 아니라 footer hash, page count, 실측 질량, 스테이플 간격, rear-search 시각을 기준으로 수행한다. 같은 번호가 적혀 있어도 이 값들이 불일치하면 병합하지 않는다.",
+    "generated continuity가 붙은 blank host는 `A250-slip` 또는 `T250-trace`로 분리하고, 실제 source front/body는 기존 사건 번호를 유지한 채 따로 보관한다.",
+    "recovery 완료 후 90분 동안 blank plane, preview monitor, shelf-prep card, thermal footer 장착 상태를 15분 간격으로 재확인한다. 동일 근무조 안에 2차 line이 붙는 경우가 있었다.",
+    "[COS219 — 회청색 종결전사패](./cos219.json) card, [COS228 — 회청색 대조대행창](./cos228.json) clear host, [COS204 — 회청색 보류인계슬리브](./cos204.json) shell은 COS250 형성 환경에서 즉시 치우거나 차폐한다."
+  ],
+  "hypotheses": [
+    "COS250는 끊어진 chain을 실제로 복구하는 현상이 아니라, **복구가 끝난 뒤 그 불연속을 기록에서 지워 버리려는 하류 정리 현상**일 가능성이 높다.",
+    "현재 자료는 COS250 형성에 세 조건이 반복적으로 필요했음을 시사한다. `1)` actual body가 같은 통제구역 안에 남아 있을 것, `2)` front/body recovery 또는 false pair 해제가 막 끝난 상태일 것, `3)` correction을 기록할 blank auxiliary host가 nearby에 있을 것.",
+    "[COS206 — 회청색 동체인란](./cos206.json)이 accession과 chain field를, [COS219 — 회청색 종결전사패](./cos219.json)가 closure wording을, [COS241 — 회청색 본문유도띠](./cos241.json)·[COS247 — 회청색 재결속봉합선](./cos247.json)·[COS248 — 회청색 후축동조맥](./cos248.json)이 recovery threshold를 제공하면 COS250는 이 요소들을 하나의 clean continuity record로 압축하는 것으로 보인다.",
+    "transparent validation 환경이 있을 때 generated continuity가 더 설득력 있게 보인 점은, COS250가 단순 printer 오류가 아니라 `검증이 끝났다`는 시각적 완료감을 흡수하는 현상일 가능성을 시사한다. 다만 이 가설은 [COS228 — 회청색 대조대행창](./cos228.json)과의 결합 표본이 더 축적되어야 확정할 수 있다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "체인 연속성 위조",
+      "assessment": "가장 큰 위험이다. continuity line은 실제 rear-search와 correction 단계를 삭제하고도 genuine receipt처럼 보여, 잘못된 provenance가 이후 감사와 외부 제출까지 통과할 수 있다."
+    },
+    {
+      "category": "감사·정정 절차 조기 종료",
+      "assessment": "generated footer와 preview가 `이미 수정되었다`는 인상을 주어 hash·page count 재검증을 생략하게 만든다. 조기 closure 시도 3건이 모두 이 범주에 속한다."
+    },
+    {
+      "category": "하류 handoff·shelf-prep 오염",
+      "assessment": "blank shelf card, thermal footer, queue preview로 전이된 continuity line은 actual body가 아직 봉인 상태여도 handoff나 배가가 끝난 것처럼 보이게 한다. downstream 절차를 잘못 닫을 위험이 높다."
+    },
+    {
+      "category": "인원 판단 편향",
+      "assessment": "first/last timestamp만 실제와 맞기 때문에 실무자는 부분 일치를 전체 진실성으로 오인하기 쉽다. generated continuity는 내용보다 절차가 ‘깨끗해 보이는’ 점을 먼저 믿게 만든다."
+    },
+    {
+      "category": "직접 신체 위해",
+      "assessment": "현재까지 직접적인 독성·열상·화상은 없다. 다만 correction과 rear-search를 서두르다 장비를 재가동하거나 후면 수색을 생략할 가능성이 있어 간접 운영 위험은 남는다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "확정 사례 11건 모두에서 generated continuity는 실제로 수행된 `rear-search`, `void`, `rebag`, `hold`, `pair correction` 중 최소 1개 이상을 삭제했다. 지금까지 이 다섯 단계를 모두 보존한 COS250 표본은 없다."
+    },
+    {
+      "type": "quotation",
+      "content": "**`복구는 했는데, 서류는 처음부터 복구돼 있었다고 적었습니다.`** — 기록관 Q-12, 2046-04-02 현장 메모"
+    },
+    {
+      "type": "paragraph",
+      "content": "완전한 intact packet만으로 COS250가 발생한 사례는 아직 없다. 현상은 항상 front/body 분리 또는 false pair 정정 같은 **이미 끊어진 chain**의 주변에서만 확인되었다."
+    },
+    {
+      "type": "quotation",
+      "content": "**`같은 번호와 깨끗한 끝줄이 보이면 끝났다고 믿고 싶어집니다. 그 믿음이 먼저 생기는 것이 문제였습니다.`** — 시설운용원 L-05, 재배치 전 면담"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-250 정식 편입",
+      "paragraphs": [
+        "2046-04-02~2046-04-12 현장 메모에서는 현상을 `T-250`, `continuity footer`, `gapless custody strip`, `연속 chain note`로 병기했다.",
+        "통제 실험과 사건 검토 결과, 본 항목은 단순 preview 잔상이나 printer duplication이 아니라 **분리·복구된 chain의 불연속을 지우는 보조 기록 현상**으로 판정되었다.",
+        "이에 공식 명칭을 **회청색 연속증빙지**로 확정하고 COS250으로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A250 식별 접두 및 우선순위 원칙",
+      "paragraphs": [
+        "physical continuity host에는 `A250-slip-일련번호`, digital preview·queue·screen 상태에는 `D250-preview-일련번호`, 필사본·2차 spread·오염 장부에는 `T250-trace-일련번호`를 부여한다. source front/body는 기존 사건 번호를 유지하며 COS250 번호로 덮어쓰지 않는다.",
+        "`A250-slip`, `D250-preview`, `T250-trace`는 같은 봉투, 같은 current chain, 같은 correction record에 병합하지 않는다. raw access log, rear-search 시각, footer hash, page count가 generated continuity보다 항상 우선한다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 체크리스트",
+      "paragraphs": [
+        "다음 5개 조건 중 4개 이상을 만족하면 COS250 의심으로 분류한다: `1)` blank correction media 또는 preview field일 것, `2)` lower footer band 높이 3~6mm일 것, `3)` chain 단계 2개 이상이 minute-level로 연속 기재될 것, `4)` 실제로 수행된 `rear-search`·`void`·`rebag` 단계가 누락될 것, `5)` same-room rear body 또는 active recovery trace가 존재할 것.",
+        "정식 판정 전에는 generated continuity를 correction proof, handoff receipt, shelf-prep 승인 근거로 사용하지 않는다. 먼저 raw log와 footer hash 대조를 끝내고 이후에도 line이 남아 있으면 COS250로 봉인한다."
+      ]
+    },
+    {
+      "title": "remote rechain 우선 절차",
+      "paragraphs": [
+        "origin bench에서 3m 이상 떨어진 불투명 구역에 black ABS board, matte-black mask, raw log console, 독립 카메라를 준비한다. recovered pair와 blank auxiliary host는 separate tray로만 이동한다.",
+        "새 chain 번호는 old line이 형성된 현장에서 발급하지 않는다. preview·printer·shelf scanner를 모두 잠근 뒤 remote console에서만 발급하고, 기존 continuity line은 삭제하지 않은 채 무효 상태로 보존한다.",
+        "같은 교대 안에 second-pass continuity line이 다시 생기지 않는지 90분간 15분 간격으로 재점검한다. 재발 시 source pair를 다시 원 구역으로 되돌리지 말고, blank host를 별도 사건으로 분리한다."
+      ]
+    },
+    {
+      "title": "raw log 우선 순위",
+      "paragraphs": [
+        "증거 우선순위는 `1)` 출입·장비 원시 로그, `2)` rear-search 촬영본, `3)` footer hash·page count·실측 질량, `4)` generated continuity line, `5)` 육안 정렬감 순으로 유지한다.",
+        "generated continuity line이 first step과 last step을 정확히 맞추더라도, 중간 단계가 raw log와 1분 이상 어긋나거나 anomaly marker를 누락하면 해당 line은 오염 자료로 분류한다. partial match는 authenticity의 증거가 아니다."
+      ]
+    }
+  ]
+}

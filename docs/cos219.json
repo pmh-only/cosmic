@@ -470,6 +470,15 @@
       "paragraphs": [
         "[COS248 — 회청색 후축동조맥](./cos248.json)가 active host와 rear body 사이에서 형성된 상태에서 blank note card를 두거나 lower line을 낭독하면 [COS219 — 회청색 종결전사패](./cos219.json)형 generated card가 생길 가능성이 높아진다. 즉 COS219는 실제 body 위치를 가리키던 COS248 신호가 종결 어휘와 확인선으로 오염된 downstream 결과일 수 있다. generated card가 나타난 순간 rear pulse는 약화하거나 wrong terminal로 분기할 수 있으므로, COS219 표본은 card 문구보다 COS248의 사전 축 기록을 우선하고 rear-search를 먼저 시행한다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS219 — 회청색 종결전사패](./cos219.json)의 `검토 종료`, `인계 가능`, `received`류 closure cue가 correction footer나 preview timeline의 마지막 행으로 확장된 문서형 downstream 산물이다. generated card를 읽거나 옮겨 적을수록 blank correction media에 `끊김 없는 절차 완료`가 생성될 가능성이 높아진다.",
+        "따라서 COS219 card는 review completion note가 아니라 wording seed로 취급하고, correction slip·thermal footer와 1 m 이내에 두지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

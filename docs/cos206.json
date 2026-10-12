@@ -424,6 +424,15 @@
       "paragraphs": [
         "본 항목의 borrowed accession은 [COS228 — 회청색 대조대행창](./cos228.json) 안에서 가장 자주 오판되는 상태값으로 재분류된다. same-field shell이 transparent host 앞에 놓이고 후면에 displaced body가 있으면, COS228은 accession과 lower line만 봉합하여 provenance가 회복된 것처럼 보이게 하므로, 같은 번호가 clear pane 안에서 일치해도 correction 완료나 pair 성립 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS206 — 회청색 동체인란](./cos206.json)의 borrowed accession이 blank correction slip, thermal footer, queue preview로 압축될 때 나타나는 후속 단계로 확인되었다. COS206이 여러 host에 같은 번호를 남긴다면, COS250는 그 번호가 `문제없이 같은 chain으로 이어졌다`는 허위 continuity를 만든다.",
+        "같은 accession이 correction media에서 매끈한 시간열과 lower line을 얻더라도 provenance가 회복된 것은 아니다. COS206 표본의 rechain은 현장 소거가 아니라 3 m 이상 떨어진 remote zone에서만 수행한다."
+      ]
     }
   ],
   "supplementalSections": [

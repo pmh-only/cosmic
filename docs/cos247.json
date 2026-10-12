@@ -333,6 +333,15 @@
         "`A247-front`와 `B247-body`는 footer hash, page count, 질량 대조가 끝나기 전까지 같은 봉투와 같은 current chain hash를 공유하지 않는다.",
         "[COS231 — 회청색 현행점유걸쇠](./cos231.json) 또는 [COS246 — 회청색 중간확인판](./cos246.json) 잔류가 의심되는 front는 비교 전 최소 10분 중성화하고, 중성화 없이 생긴 fragment seam은 정쌍 근거에서 제외한다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS247 — 회청색 재결속봉합선](./cos247.json)으로 정쌍 가능성이 좁혀진 직후 blank correction form에 가장 잘 발생하는 후속 문서이다. 연속 봉합선이 확인된 pair에 대해 generated continuity가 붙으면, 실제로는 rear-search와 hash 대조를 거친 사건도 `처음부터 끊김 없이 이어진 원본`처럼 재서술된다.",
+        "따라서 COS247 비교 중에는 correction slip을 근접 배치하지 않고, hash·page count 확정과 remote rechain이 끝날 때까지 blank footer strip을 장착하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

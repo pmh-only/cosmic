@@ -441,6 +441,15 @@
         "[COS226 — 회청색 계류인계포켓](./cos226.json) 뒤에서 provenance가 다른 shell/body 후보를 라이트테이블 위에 맞춰 본 6회 중 4회에서, shared provisional barcode 또는 육안상 완전 일치처럼 보이는 [COS205 — 회청색 대조합치막](./cos205.json)형 허위 정합이 90 s 이내 형성되었다. 동일 조합을 opaque tray에서 재검수한 대조군은 0/6이었다.",
         "이는 인계포켓의 빈 전면이 `지금 맞춰야 할 문서`의 자리를 선점한 뒤 COS205를 쉽게 증폭시키는 조건으로 해석된다. COS205 비교 단계에서 empty handoff pocket이나 transparent sleeve가 배면에 남아 있으면 pairing을 중지하고 [COS226 — 회청색 계류인계포켓](./cos226.json)부터 차폐한다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS205 — 회청색 대조합치막](./cos205.json) false pair를 해제한 직후 blank correction form과 preview field에 가장 쉽게 나타나는 downstream 기록이다. shared pair code가 제거되거나 무효화되더라도, correction footer는 `대조 오류가 수정되었다`가 아니라 `애초에 끊김이 없었다`는 연속 chain을 생성해 provenance 손상을 은폐할 수 있다.",
+        "따라서 COS205 양성쌍 해제 직후에는 현장 가로지움과 수기 종결선을 금지하고, raw access log·footer hash·rear-search 시각을 먼저 봉인한다."
+      ]
     }
   ],
   "supplementalSections": [

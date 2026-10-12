@@ -504,6 +504,15 @@
       "paragraphs": [
         "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS204 — 회청색 보류인계슬리브](./cos204.json)의 2~4단계 표본에서 sleeve mouth와 하단 우측 lip를 따라 나타나는 후면 body 탐색 신호로 확인되었다. hold sleeve가 front shell을 current 상태로 붙잡는 동안 actual body가 같은 구역 rear axis에 남아 있으면 78~94 Hz burst가 반복되며, 이 축을 따라 실제 본문이 회수되는 사례가 확인되었다. 그러나 title·lower line을 육성으로 읽으면 generated note와 false closure가 먼저 붙어 신호가 분기하므로, COS204 재개봉 표본에서는 COS248 축을 silent rear-search에만 사용하고 종결·인계 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS204 — 회청색 보류인계슬리브](./cos204.json)에서 front shell과 actual body가 분리·회수된 뒤 가장 자주 남는 하류 정정 산물로 확인되었다. hold line과 provisional accession이 해제되기 전 blank correction slip, thermal footer, handoff preview가 가까이 있으면 실제 rear-search·void·rebag 단계가 있었는데도 `처음부터 연속 인계였다`는 footer가 생성될 수 있다.",
+        "따라서 COS204 표본을 재결합하거나 해제 정정할 때는 blank correction media를 1 m 밖으로 치우고 remote rechain을 우선한다. generated continuity는 hold 해제 완료 증거가 아니라 본문 분리 사실을 지우는 2차 오염으로 취급한다."
+      ]
     }
   ],
   "supplementalSections": [

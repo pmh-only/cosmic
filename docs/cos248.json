@@ -388,6 +388,15 @@
         "front-only host는 `F248-front-일련번호`, rear에서 회수된 actual body는 `R248-body-일련번호`, generated note·false preview·종결선 초안과 같은 하류 오염은 `T248-trace-일련번호`를 부여한다.",
         "권장 센서 세트는 contact microphone 1대 이상, 3축 가속도계 1대 이상, 445~470 nm 사광 광원 1기, black ABS break 2매로 구성한다. 이 네 요소 중 둘 이상이 빠지면 정식 판정 대신 참고 관찰로만 기록한다."
       ]
+    },
+    {
+      "relatedId": 250,
+      "type": "reciprocal",
+      "title": "COS250 상호기록",
+      "paragraphs": [
+        "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS248 — 회청색 후축동조맥](./cos248.json)으로 rear body를 추적·회수한 뒤 그 과정을 blank footer와 preview line에 평탄화해 남기는 하류 현상으로 확인되었다. pulse-guided recovery가 성공하더라도 generated continuity는 `탐색과 정정이 있었다`는 사실을 삭제하고 `처음부터 같은 chain이었다`는 외형을 남긴다.",
+        "따라서 COS248 active run 종료 후에는 silent protocol을 유지한 채 raw sensor log와 rear-search 시각을 먼저 봉인하고, correction footer와 shelf-prep line 작성은 최소 90분 지연한다."
+      ]
     }
   ],
   "supplementalSections": [
