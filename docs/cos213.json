@@ -399,6 +399,14 @@
       "paragraphs": [
         "[COS214 — 회청색 장넘김대행막](./cos214.json)은 [COS213 — 회청색 절단면대행갑](./cos213.json) host의 open edge에 마지막 manual review cue를 추가하는 후속 단계로 확인되었다. COS213가 cut-edge shadow와 pinch resistance를 제공한 host에 COS214가 결합하면 side inspection과 thumb-check가 모두 complete packet처럼 보이지만 gauge와 borescope는 여전히 hollow channel만 보여 주므로, 자연스러운 절단면 뒤에 장넘김감이 더해져도 body 복구로 판단하지 않고 213 triad에 no-leafing 절차를 추가 적용한다."
       ]
+    },
+    {
+      "relatedId": 251,
+      "type": "reciprocal",
+      "title": "COS251 상호기록",
+      "paragraphs": [
+        "[COS213 — 회청색 절단면대행갑](./cos213.json) host에서 actual body를 뒤늦게 회수한 뒤에도, rear stop·correction tray·guide lip가 한동안 `아직 본문이 남아 있을 것 같은` active terminal로 남는 후행 사례가 [COS251 — 회청색 잔류종점면](./cos251.json)으로 분리되었다. COS213 표본에서 empty rear terminal에 생긴 footer 조각이나 lower line은 미회수 leaf의 증거가 아니라 잔류종점면 오염일 수 있으므로, body 회수 직후 rear zone을 세척·정리하지 말고 불투명 cap과 quiet interval을 먼저 적용한다."
+      ]
     }
   ],
   "supplementalSections": [

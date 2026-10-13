@@ -327,6 +327,14 @@
       "paragraphs": [
         "[COS241 — 회청색 본문유도띠](./cos241.json) 발현 14건 중 11건에서, origin 직전 지지면의 잔열은 주변보다 1.4~3.1°C 높았고 지속 시간은 6~18분이었다. 이는 본 항목의 늦게 식는 부재면이 단순 최근 접촉 흔적이 아니라, 같은 구역 rear body를 가리키는 회청색 유도띠의 전구 조건일 수 있음을 시사한다. 잔열이 직사각형 또는 립 형태로 남으면 최근 인원 접근 증거로 채택하지 말고 [COS241 — 회청색 본문유도띠](./cos241.json) 조사 순서를 먼저 적용한다."
       ]
+    },
+    {
+      "relatedId": 251,
+      "type": "reciprocal",
+      "title": "COS251 상호기록",
+      "paragraphs": [
+        "[COS251 — 회청색 잔류종점면](./cos251.json)은 [COS173 — 늦게 식는 부재면](./cos173.json)이 origin 또는 대좌에 남기는 최근성 외형과 구별되는 후행 현상으로 확인되었다. 실제 body 회수 뒤에도 empty slot·rear notch·blind cavity mouth가 잠시 active terminal처럼 남아 새 host나 blank correction strip를 다시 그 자리로 끌어들이는 사례가 있었으므로, COS173형 온기 소실만으로 회수 종료를 선언하지 말고 rear terminal의 COS251 잔류 여부를 추가 확인한다."
+      ]
     }
   ],
   "supplementalSections": []

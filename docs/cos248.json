@@ -397,6 +397,14 @@
         "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS248 — 회청색 후축동조맥](./cos248.json)으로 rear body를 추적·회수한 뒤 그 과정을 blank footer와 preview line에 평탄화해 남기는 하류 현상으로 확인되었다. pulse-guided recovery가 성공하더라도 generated continuity는 `탐색과 정정이 있었다`는 사실을 삭제하고 `처음부터 같은 chain이었다`는 외형을 남긴다.",
         "따라서 COS248 active run 종료 후에는 silent protocol을 유지한 채 raw sensor log와 rear-search 시각을 먼저 봉인하고, correction footer와 shelf-prep line 작성은 최소 90분 지연한다."
       ]
+    },
+    {
+      "relatedId": 251,
+      "type": "reciprocal",
+      "title": "COS251 상호기록",
+      "paragraphs": [
+        "[COS248 — 회청색 후축동조맥](./cos248.json) active run에서 rear body를 회수한 뒤에도, burst 최대점이 남아 있던 rear terminal이 [COS251 — 회청색 잔류종점면](./cos251.json)으로 전이되어 blank footer·preview line·correction strip 오염을 남기는 사례가 확인되었다. COS248의 구조전달 신호가 body 회수 뒤에도 즉시 0이 되지 않을 경우 이를 추가 body 존재로 단정하지 말고, empty terminal 잔류 여부를 먼저 판정한 뒤 correction footer 작성과 preview 재개를 지연한다."
+      ]
     }
   ],
   "supplementalSections": [

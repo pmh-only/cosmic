@@ -439,6 +439,14 @@
         "[COS240 — 회청색 전후분기레일](./cos240.json)이 intact packet을 front-only host와 rear body로 분기시키면, 후축 방향으로 밀려난 actual body는 [COS227 — 회청색 후면적체벽](./cos227.json) cavity의 공급원으로 자주 확인되었다. 현장과 통제 기록에서 rear body 회수축이 rail 챔퍼 후축과 15° 이내로 일치하는 사례가 반복되었다.",
         "따라서 COS227 rear plane에서 body-only cluster가 회수될 때 인접 line이나 작업대에서 rail형 분기 물체 존재를 함께 조사한다. 후축이 일치하는 경우 최상단 candidate를 우선 body로 확정하지 말고 [COS240 — 회청색 전후분기레일](./cos240.json) upstream 분리 사건으로 분류한다."
       ]
+    },
+    {
+      "relatedId": 251,
+      "type": "reciprocal",
+      "title": "COS251 상호기록",
+      "paragraphs": [
+        "[COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 body-only cluster를 모두 회수한 뒤에도, cavity mouth와 rear plane이 곧바로 inert surface로 돌아가지 않고 [COS251 — 회청색 잔류종점면](./cos251.json) host로 남는 사례가 반복 확인되었다. 따라서 COS227 recovery 완료는 body cluster 제거만으로 성립하지 않으며, empty cavity가 unrelated host의 [COS241 — 회청색 본문유도띠](./cos241.json)나 [COS248 — 회청색 후축동조맥](./cos248.json)을 다시 끌어들이지 않는지 quiet interval 동안 별도 확인해야 한다."
+      ]
     }
   ],
   "supplementalSections": [

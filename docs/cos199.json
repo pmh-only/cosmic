@@ -377,6 +377,14 @@
         "[COS199 — 회청색 이격결속띠](./cos199.json) 잔편은 [COS203 — 회청색 교차편철면](./cos203.json)에서 형성된 허위 복합체의 seam을 가리는 안정화 요소로 확인되었다. 2026-08-22~2026-08-25 허위 복합체 7건 중 3건에서 6~11 mm 띠형 잔편이 interstitial gap을 덮고 있었고, 섬유 역배열과 압흔 간격이 COS199 기준 표본과 일치했다.",
         "이 잔편이 남은 pair는 육안상 binding edge가 더 자연스럽게 보였으므로, COS199 절편이 확인된 front/body 조합은 provenance 일치 여부가 증명되기 전까지 즉시 분리 봉인한다."
       ]
+    },
+    {
+      "relatedId": 251,
+      "type": "reciprocal",
+      "title": "COS251 상호기록",
+      "paragraphs": [
+        "[COS199 — 회청색 이격결속띠](./cos199.json) 사건에서 rear body를 회수한 뒤에도, 본체가 걸려 있던 rear anchor나 stop lip가 곧바로 비활성화되지 않고 [COS251 — 회청색 잔류종점면](./cos251.json)으로 남는 사례가 확인되었다. 이 상태의 empty terminal 근처에 blank correction media를 두면 footer 조각과 lower line이 새로 생길 수 있으므로, COS199 표본에서 body 회수 후 rear anchor를 즉시 일반 bench로 환원하지 말고 COS251 quiet interval을 적용한다."
+      ]
     }
   ],
   "supplementalSections": [

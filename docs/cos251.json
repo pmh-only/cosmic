@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "확정 사례 11건 중 9건에서 이미 회수된 actual body의 rear-search 좌표가 empty terminal 잔류면만으로 18~42cm 범위까지 다시 좁혀졌다. 이 정보는 후면 슬롯·가림판 뒤 간극·이중바닥의 위치를 역추적하게 하므로 외부 공개를 제한한다.",
+    "permission": "판정에는 rear panel 접근, footer hash·실측 질량·page count 재대조, 오염 correction slip 분리, 445~470 nm 사광·열영상 확인이 함께 필요했다. 2046-04-21과 2046-04-23 두 사건에서 일반 라인 인원이 잔류면을 실제 본문 잔존으로 오해해 wrong pair를 진행하려 했으므로 최소 4등급 열람이 요구된다.",
+    "chaos": "잔류 지속 시간은 12분에서 96분까지 흔들렸고, 후속 host를 60cm 이내에 재배치한 12회 중 7회는 empty terminal로 재유도, 4회는 무반응, 1회는 인접 투명면 전이로 나타났다. 같은 bench라도 blank media·발화·투명 차폐 유무에 따라 결과가 크게 달라져 예측 곤란도가 높다.",
+    "danger": "직접 치명상은 없었지만 wrong pair 시도 2건, dispatch 직전 중단 1건, empty cavity 재수색 중 손목 염좌 1건, 플래시·세척으로 인한 trace 손실 2건이 기록되었다. 위해는 주로 기록 무결성과 후면 수색 동선에 집중되어 3단계로 평가한다.",
+    "popularity": "임시등록 후 11일 동안 rear-search 재점검 15건, correction hold 9건, 교육 회람 5건에서 COS251 확인 여부가 선행 항목으로 추가되었다. front/body 분리군 내부에서는 중간 이상 빈도로 참조되었으나 기관 전체 상시 허브 항목 수준은 아니다.",
+    "containment": "matte-black ABS cap 3mm를 60초 안에 설치하고, blank media 1m 배제, 90분 quiet interval, silent protocol, trace 별도 체인을 함께 적용했을 때만 재오염률이 1/10으로 감소했다. 세척만 하거나 투명 차폐만 덮는 단일 조치로는 오히려 인접 면 전이가 반복되어 관리 강도가 높다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "채록-17",
+        "role": "rear-search 조정 기록관",
+        "status": "active",
+        "involvement": "2046-04-14 H-4 사건에서 이미 회수된 body와 empty terminal을 분리 기록하고 T-251 임시등록을 발의했다. 이후 black cap 규격과 90분 quiet interval 절차를 정리했다."
+      },
+      {
+        "name": "광도-06",
+        "role": "광학·열계측 기사",
+        "status": "active",
+        "involvement": "445~470 nm 사광, 열영상, 표면온도 비교, clear board 전이 실험을 담당했다. 잔류종점면의 광학·열 특성과 무플래시 기록 기준을 확정했다."
+      },
+      {
+        "name": "결락-09",
+        "role": "체인 무결성 분석관",
+        "status": "active",
+        "involvement": "footer hash, page count, 실측 질량 대조로 empty terminal이 본문 잔존이 아님을 입증했고, wrong pair 2건을 취소했다."
+      },
+      {
+        "name": "정리-21",
+        "role": "라인 운영원",
+        "status": "reassigned",
+        "involvement": "회수 직후 blank correction strip과 clear board를 같은 bench에 두어 오염을 악화시켰다. 이후 rear-search 구역의 실시간 preview 운용에서 재배치되었다."
+      },
+      {
+        "name": "보수-03",
+        "role": "설비보수 기사",
+        "status": "medical-leave",
+        "involvement": "R2-3 cavity의 temporary cap을 조기에 제거하고 손으로 후면 틈을 더듬다 우측 손목 염좌를 입었다. cap-first 접근 규정 제정의 직접 계기가 되었다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2046-04-14 08:27 KST",
+        "label": "최초 잔류종점 확인",
+        "description": "제2보존동 B1 동측 rear-search bench H-4에서 이미 회수된 body의 cable race notch가 새 host를 다시 empty terminal로 유도하는 사례가 확인되었다."
+      },
+      {
+        "date": "2046-04-15 13:10 KST",
+        "label": "blank correction strip 오염 재현",
+        "description": "Q-5B 수령구 후면 선반 3열에서 actual body 회수 후 빈 슬롯 26cm 안에 둔 correction strip이 lower line과 hash 말단 4자를 획득했다."
+      },
+      {
+        "date": "2046-04-18 11:00 KST",
+        "label": "지속시간 통제 실험 개시",
+        "description": "H-4, Q-5B, R2-3에서 확보한 active terminal 10면과 대조면 10면을 대상으로 445 nm 사광·열영상 time-lapse 기록이 시작되었다."
+      },
+      {
+        "date": "2046-04-21 16:32 KST",
+        "label": "clear board 전이 사고",
+        "description": "Q-5B empty terminal을 IPA로 세척한 뒤 clear acrylic board를 덮자 잔류면이 board underside로 이동하고 wrong candidate pairing 시도가 발생했다."
+      },
+      {
+        "date": "2046-04-23 09:46 KST",
+        "label": "비워진 적체벽의 잔류 확인",
+        "description": "[COS227 — 회청색 후면적체벽](./cos227.json) cluster를 회수한 다음 날 R2-3 cavity 입구가 unrelated host의 [COS241 — 회청색 본문유도띠](./cos241.json) 종점으로 재사용되는 사례가 확인되었다."
+      },
+      {
+        "date": "2046-04-25 09:00 KST",
+        "label": "black cap 규정 발효",
+        "description": "matte-black ABS cap 설치, blank media 1m 배제, 90분 quiet interval, silent protocol을 묶은 COS251 표준 취급 절차가 관련 구역에 배포되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "IR-251-01",
+        "date": "2046-04-14",
+        "location": "제2보존동 B1 동측 rear-search bench H-4 및 cable race",
+        "title": "회수 뒤 비워진 종점의 재유도",
+        "involvedPersonnel": [
+          "채록-17",
+          "광도-06",
+          "결락-09",
+          "정리-21"
+        ],
+        "narrative": [
+          "07:58에 `R239-body-14`가 이미 cable race 뒤에서 회수·봉인된 상태였음에도, 08:27 정리-21은 provisional handoff line을 정리하기 위해 빈 notch 가장자리에 blank correction strip `CF-H4-14`를 올려두었다. 같은 bench에 새로 들어온 front-only host `F207-front-11`은 notch에서 58cm 떨어져 있었고, 조도 37 lux·446 nm 사광 19° 조건에서 host 하단에서 notch 쪽으로 폭 6mm의 회청색 저반사 띠가 다시 형성되었다. 정리-21은 이미 회수된 body 외에 appendix가 더 남아 있다고 해석해 notch를 다시 손으로 확인하려 했다.",
+          "채록-17은 재개봉을 중지시키고 광도-06에게 notch와 인접 금속면의 표면온도를 기록하게 했다. notch lip는 주변보다 0.8°C 낮았고, `CF-H4-14`에는 실제 본문이 아니라 hash 말단 6자와 `14/14` 유사 footer 조각만 남아 있었다. 결락-09가 이미 봉인된 `R239-body-14`와 대조한 결과 새 누락 페이지는 없었고, 3mm matte-black ABS cap을 notch 위에 삽입하자 5초 안에 띠가 붕괴했다. 이후 같은 host의 actual body는 H-4 rear axis에서 좌후방 1.7m 지점에서 별도로 회수되었다."
+        ],
+        "outcome": "empty terminal이 새로운 rear-search를 재유도할 수 있음이 공식 기록으로 남았고, H-4 사건은 T-251의 기준 사례가 되었다. `CF-H4-14`는 본문 증거가 아니라 trace 산물로 재분류되었다."
+      },
+      {
+        "code": "IR-251-02",
+        "date": "2046-04-21",
+        "location": "Q-5B 수령구 후면 선반 3열 및 clear comparison board",
+        "title": "세척·투명 차폐에 의한 종점면 전이",
+        "involvedPersonnel": [
+          "채록-17",
+          "광도-06",
+          "결락-09",
+          "정리-21"
+        ],
+        "narrative": [
+          "Q-5B-R3 rear slot에서 actual body를 회수한 뒤, 정리-21은 다음 run을 준비한다며 slot mouth를 IPA 천으로 닦고 2mm clear acrylic board를 덮었다. 4분 뒤 board underside에는 9×22cm의 회청색 저반사 patch가 생겼고, 그 위에 임시로 놓인 blank ruled card는 lower line과 hash 말단 4자를 획득했다. 동시에 steel lip에서 약하게 남아 있던 [COS248 — 회청색 후축동조맥](./cos248.json)형 burst 최대점이 board edge 쪽으로 이동했다.",
+          "정리-21은 ruled card를 correction 완료 메모로 해석해 wrong candidate `R207-body-12`를 provisional pair로 기입하려 했다. 채록-17은 즉시 발화를 중지시키고 blank media를 제거했으며, 광도-06은 clear board 대신 matte-black cap을 같은 위치에 올렸다. cap 삽입 4초 후 underside patch와 wrong-axis burst가 동시에 사라졌고, 결락-09는 `R207-body-12`의 footer hash와 질량이 불일치함을 확인해 pair를 취소했다. 올바른 actual body는 같은 선반에서 84cm 오른쪽의 opaque rear pocket에서 추가로 회수되었다."
+        ],
+        "outcome": "IPA 세척과 clear board 덮개가 억제가 아니라 전이를 유발한다는 사실이 확정되었다. 관련 구역에서 transparent host·clear shield·scanner lid 사용이 금지되었고, blank correction slip은 rear-search 종료 후 90분이 지나기 전까지 반경 1m 안에 둘 수 없게 되었다."
+      },
+      {
+        "code": "IR-251-03",
+        "date": "2046-04-23",
+        "location": "중앙기록단지 동관 4층 rear cavity R2-3",
+        "title": "비워진 적체벽의 잔류 종점",
+        "involvedPersonnel": [
+          "채록-17",
+          "광도-06",
+          "결락-09",
+          "보수-03"
+        ],
+        "narrative": [
+          "전날 [COS227 — 회청색 후면적체벽](./cos227.json) cluster를 모두 회수한 R2-3 cavity는 black cap으로 임시 봉인된 상태였다. 09:46 unrelated front-only host 1점이 같은 통로의 비교 rail에 들어오자, 광도-06은 445 nm 사광 아래 host 하단에서 cavity mouth를 향하는 약한 [COS241 — 회청색 본문유도띠](./cos241.json)와 rail 후축의 미약한 [COS248 — 회청색 후축동조맥](./cos248.json) 동조 burst를 동시에 확인했다. 보수-03은 missed page가 남았다고 판단해 cap을 조기에 제거하고 손으로 틈새를 더듬기 시작했다.",
+          "cavity 안에서는 route suffix가 묻은 blank tab 1점만 새로 보였고, actual body는 존재하지 않았다. 보수-03은 상단 lip 아래를 더듬다 우측 손목을 비틀어 즉시 철수했으며, 채록-17은 관찰자를 1인으로 줄이고 cap을 복구했다. 18분 뒤 같은 host의 actual body는 R2-3에서 2.2m 떨어진 별도 rear guide에서 회수되었다. 결락-09는 cavity mouth에서 얻은 route suffix가 실제 body의 footer hash나 page count와 무관함을 확인했다."
+        ],
+        "outcome": "비워진 [COS227 — 회청색 후면적체벽](./cos227.json) cavity도 일정 시간 COS251 host로 남을 수 있음이 확인되었다. 보수-03은 6일간 의료 관찰에 들어갔고, rear cavity는 회수 직후 90분간 cap을 제거할 수 없다는 규정이 추가되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-251-A",
+        "type": "rear terminal plate 및 optical map",
+        "description": "H-4 cable race notch의 탈착식 aluminum lip plate와 446 nm 사광·열영상 overlay 세트이다. empty terminal의 0.8°C 저온대와 6mm 폭 잔류 띠 위치가 표시되어 있다.",
+        "custodyStatus": "광학증거실 O-4 금고에 lip plate 실물과 인쇄 map을 분리 보관, 복사본만 열람 허가"
+      },
+      {
+        "code": "EV-251-B",
+        "type": "오염 correction strip",
+        "description": "`CF-H4-14` blank correction strip 원본이다. 본문 없이 hash 말단 6자와 `14/14` 유사 footer 조각만 남아 있다.",
+        "custodyStatus": "`T251-trace-01`로 재분류 후 matte-black sleeve에 단독 봉인, 실제 body chain과 병합 금지"
+      },
+      {
+        "code": "EV-251-C",
+        "type": "Q-5B clear board 전이 세트",
+        "description": "clear acrylic board underside 사진, 오염 ruled card, IPA 천 섬유 시료, board 교체 전후 pulse 최대점 좌표를 포함한 세트이다.",
+        "custodyStatus": "재질별 개별 봉투 보관, board underside는 비접촉 촬영 후 저광량 캐비닛에 수납"
+      },
+      {
+        "code": "EV-251-D",
+        "type": "R2-3 cavity cap 및 blank route tab",
+        "description": "R2-3에 사용된 3mm matte-black ABS cap 1점과 cap 제거 직후 오염된 blank route tab 1점이다. tab에는 route suffix만 남고 footer hash는 없다.",
+        "custodyStatus": "rear cavity 사고 캐비닛 RC-251에 cap과 tab를 분리 봉인, 동일 사진 프레임 사본 동봉"
+      },
+      {
+        "code": "EV-251-E",
+        "type": "persistence 시험 로그",
+        "description": "active terminal 10면과 control 10면의 445 nm time-lapse, 표면온도, blank media distance test, black cap suppression 결과를 묶은 원시 로그 세트이다.",
+        "custodyStatus": "격리광학실 서버 LOG-251 및 오프라인 SSD 이중 저장, 수정권한 차단"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "채록-17",
+        "role": "rear-search 조정 기록관",
+        "context": "IR-251-01 초동 구술 기록",
+        "statement": "관찰된 사실은 본문이 이미 봉인되었는데도 빈 notch가 다음 host를 다시 자기 쪽으로 끌었다는 점입니다. 그 자리에 다른 body가 더 남아 있다고 느낀 것은 당시 인원의 해석이었고, hash 대조는 그 해석을 지지하지 않았습니다."
+      },
+      {
+        "speaker": "광도-06",
+        "role": "광학·열계측 기사",
+        "context": "E-251-04 차단재 비교 보고",
+        "statement": "잔류면은 닦아서 없어지지 않았고 clear board 쪽으로 옮겨 붙었습니다. 제가 확인한 것은 광학 반사 저하와 pulse 최대점 이동이며, 그것이 실제 본문 잔존을 뜻한다는 주장은 관찰이 아니라 해석입니다."
+      },
+      {
+        "speaker": "정리-21",
+        "role": "라인 운영원",
+        "context": "재배치 전 면담",
+        "statement": "저는 blank card에 lower line이 생긴 것을 보고 correction이 끝났다고 판단했습니다. 하지만 제가 실제로 본 것은 줄과 숫자 일부뿐이었고, 그 자리에 본문이 있다는 사실을 확인한 적은 없었습니다."
+      }
+    ]
+  },
+  "id": 251,
+  "title": "회청색 잔류종점면",
+  "language": "ko-KR",
+  "overview": [
+    "**COS251**는 rear-search로 actual body를 회수한 뒤에도, 비워진 rear terminal surface가 짧게는 12분, 길게는 96분 동안 **여전히 body가 있는 종점처럼 행동하는 잔류 평면 현상**이다. 현재 통칭은 **회청색 잔류종점면**이다.",
+    "현상은 body 자체를 남기지 않는다. 대신 empty slot, cable race notch, blind cavity mouth, rear stop lip에 8~34cm 길이의 회청색 저반사 띠와 약한 저온대가 남고, 가까이 놓인 blank correction strip·blank route tab·새 front-only host를 다시 그 빈 종점으로 묶는다.",
+    "주요 위험은 `이미 회수되었으니 빈 자리`라고 판단한 직후 blank media를 같은 bench에 올리거나 다음 rear-search를 시작하는 선택이다. 이 경우 [COS241 — 회청색 본문유도띠](./cos241.json)나 [COS248 — 회청색 후축동조맥](./cos248.json)이 empty terminal을 다시 종점으로 사용하거나, trace 산물이 실제 correction evidence처럼 보일 수 있다."
+  ],
+  "identificationTraits": [
+    "actual body가 회수된 뒤 445~470nm 사광을 15~25°로 비추면 empty rear terminal에 8~34cm 길이, 3~12cm 폭의 회청색 무광 저반사 띠가 나타날 수 있다.",
+    "active terminal의 표면온도는 인접 금속·목재면보다 대개 0.6~1.2°C 낮거나 재가열 속도가 현저히 느렸다.",
+    "면봉, tape lift, 저점착 필름 전사 18건에서 색소·분진·섬유성 잔류는 회수되지 않았다. 광학·열 상태 변화만 반복 확인되었다.",
+    "actual body 회수 후 20분 이내에 새 front-only host를 60cm 안으로 들이면, [COS241 — 회청색 본문유도띠](./cos241.json) 또는 [COS248 — 회청색 후축동조맥](./cos248.json) 잔류형 신호가 empty terminal로 다시 수렴할 수 있다.",
+    "empty terminal 30cm 이내의 blank correction strip, blank ruled card, blank route tab은 hash 말단 4~8자, lower line, page total 조각을 부분적으로 획득할 수 있다.",
+    "IPA 세척, clear acrylic board, PET sleeve, scanner lid는 억제가 아니라 인접 면 전이를 유발했다. 반대로 3mm matte-black ABS cap은 10건 중 9건에서 6초 안에 신호를 붕괴시켰다.",
+    "former [COS227 — 회청색 후면적체벽](./cos227.json) cavity와 [COS199 — 회청색 이격결속띠](./cos199.json)·[COS213 — 회청색 절단면대행갑](./cos213.json) 유래 rear anchor에서 형성률이 가장 높았다."
+  ],
+  "discovery": [
+    "COS251는 [COS241 — 회청색 본문유도띠](./cos241.json)와 [COS248 — 회청색 후축동조맥](./cos248.json)을 이용해 actual body를 회수한 뒤, 같은 terminal이 후속 host를 다시 empty slot으로 끌어들이는 사례를 재검토하는 과정에서 분리되었다. 2046-04-14 H-4 사건에서는 `R239-body-14`가 이미 봉인된 뒤에도 빈 cable race notch가 새 host의 종점으로 재사용되었고, blank correction strip에는 본문이 아니라 footer 조각만 남았다.",
+    "초기에는 missed page, 미회수 appendix, 혹은 [COS173 — 늦게 식는 부재면](./cos173.json)과 같은 최근성 잔열로 오인되었다. 그러나 active terminal 11건 모두에서 대응 body는 이미 다른 chain으로 봉인되었거나 별도 rear guide에서 회수되었고, empty surface의 swab·tape lift는 일관되게 음성이었다.",
+    "채록-17 팀은 2026~2046 front/body 분리군 rear-search 자료 9건을 재검토해, [COS199 — 회청색 이격결속띠](./cos199.json) 또는 [COS213 — 회청색 절단면대행갑](./cos213.json) 유래 shell에서 hidden body를 회수한 직후 7건에 동일한 low-reflectance terminal patch가 남았음을 확인했다. 이 patch는 특히 former [COS227 — 회청색 후면적체벽](./cos227.json) cavity에서 오래 지속되었다.",
+    "이후 통제 실험에서 active terminal 10면 중 9면이 12~96분 동안 잔류하고 blank media contamination 또는 재유도를 보인 반면, body가 없던 control terminal 10면은 모두 음성이었다. 이에 현상은 T-251을 거쳐 COS251로 정식 분리되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS251는 **actual body가 이미 회수된 뒤**에만 형성되며, 회수 직전의 rear terminal을 잠시 `아직 active한 종점`처럼 유지한다.",
+      "형성된 잔류종점면은 새 front-only host, blank correction media, blank route tab을 끌어들여, 회수된 body가 여전히 그 자리에 남아 있는 것처럼 절차를 재개시키려 한다.",
+      "opaque cap과 quiet interval을 주면 자연 붕괴하거나 억제되지만, 세척·투명 차폐·구두 종결 발화는 인접 면 전이나 trace 산물 생성을 악화시킨다."
+    ],
+    "stages": [
+      {
+        "name": "회수 직후 비워짐",
+        "description": "rear slot, cable race, blind cavity, rear stop에서 actual body가 제거되지만 front/body 분리 사건의 절차 상태는 아직 완전히 해제되지 않은 상태로 남는다."
+      },
+      {
+        "name": "잔류 종점 고정",
+        "description": "empty terminal에 회청색 저반사 띠와 약한 저온대가 생기며, 그 자리가 `마지막 body 위치`였다는 사실이 광학·열적으로 고정된다."
+      },
+      {
+        "name": "2차 포획",
+        "description": "blank correction media 또는 새 front-only host가 가까이 들어오면 empty terminal이 이를 다시 끌어당겨 footer 조각, lower line, 재유도 신호를 만든다."
+      },
+      {
+        "name": "전이 또는 재앵커링",
+        "description": "세척, 투명 차폐, clear host, blank note card가 개입하면 잔류면은 인접 plane·board underside·route tab으로 옮겨가거나 wrong candidate 쪽으로 약하게 재앵커링될 수 있다."
+      },
+      {
+        "name": "붕괴 및 휴지",
+        "description": "matte-black ABS cap, blank media 배제, 90분 quiet interval을 적용하면 광학·열 차이와 재유도성이 사라진다. 일부 former cavity는 장시간 host로 남아 이후 사건의 origin이 될 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS251는 [COS199 — 회청색 이격결속띠](./cos199.json)·[COS213 — 회청색 절단면대행갑](./cos213.json)처럼 front/body 분리를 강화하는 상류 항목에서 시작된 사건이, [COS241 — 회청색 본문유도띠](./cos241.json)·[COS248 — 회청색 후축동조맥](./cos248.json)으로 body를 회수한 뒤에도 완전히 종료되지 않았음을 보여 주는 후행 표면이다.",
+      "특히 former [COS227 — 회청색 후면적체벽](./cos227.json) cavity, [COS173 — 늦게 식는 부재면](./cos173.json) 전구면, 그리고 active rear anchor에서 장시간 남는 경향이 강해, 후속 사건의 false terminal을 만드는 공통 host로 관리된다."
+    ],
+    "entries": [
+      {
+        "targetId": 173,
+        "targetTitle": "늦게 식는 부재면",
+        "description": "[COS173 — 늦게 식는 부재면](./cos173.json)은 actual body 회수 **이전**의 origin 또는 대좌에 `방금 여기 있었다`는 최근성을 남기는 반면, COS251는 body 회수 **이후** empty rear terminal에 `아직 여기가 종점이다`라는 잔류 권위를 남긴다. 두 현상은 모두 빈 자리를 활성화하지만, COS173의 온기는 대개 주변보다 높고 COS251는 rear terminal에서 더 차갑거나 재가열이 느렸다."
+      },
+      {
+        "targetId": 199,
+        "targetTitle": "회청색 이격결속띠",
+        "description": "[COS199 — 회청색 이격결속띠](./cos199.json) 사건에서 rear body를 뒤늦게 회수한 뒤, front와 body를 다시 붙잡아 주던 rear anchor가 COS251 host로 남는 사례가 확인되었다. 이 경우 blank correction strip에 생기는 footer 조각은 bridge가 남긴 본문이 아니라, 이미 비워진 anchor가 후속 절차를 끝내려는 잔류종점면의 산물로 본다."
+      },
+      {
+        "targetId": 213,
+        "targetTitle": "회청색 절단면대행갑",
+        "description": "[COS213 — 회청색 절단면대행갑](./cos213.json)이 shell을 정상 page block처럼 보이게 만들면 rear-search가 지연되고, 뒤늦게 actual body를 회수한 뒤에도 empty rear stop이 오래 uncapped로 남는다. COS251는 이렇게 늦게 비워진 terminal에서 특히 강하게 형성되며, side-edge audit가 끝났다는 이유만으로 rear zone을 곧바로 재사용해서는 안 된다는 근거가 된다."
+      },
+      {
+        "targetId": 227,
+        "targetTitle": "회청색 후면적체벽",
+        "description": "former [COS227 — 회청색 후면적체벽](./cos227.json) cavity는 COS251의 가장 안정적인 host였다. body-only cluster를 모두 제거한 뒤에도 cavity mouth가 12~96분 동안 active terminal처럼 남아, unrelated host의 [COS241 — 회청색 본문유도띠](./cos241.json)나 [COS248 — 회청색 후축동조맥](./cos248.json)을 다시 끌어들일 수 있었다."
+      },
+      {
+        "targetId": 241,
+        "targetTitle": "회청색 본문유도띠",
+        "description": "성공적으로 [COS241 — 회청색 본문유도띠](./cos241.json) 종점을 따라 actual body를 회수한 뒤, 같은 rear zone을 즉시 재사용하면 빈 종점이 COS251로 남아 새 host의 유도띠를 다시 받아낼 수 있다. 따라서 COS241 종료는 body 회수 자체가 아니라 terminal quiescence 확인까지 포함해야 한다."
+      },
+      {
+        "targetId": 248,
+        "targetTitle": "회청색 후축동조맥",
+        "description": "[COS248 — 회청색 후축동조맥](./cos248.json)의 burst 최대점이 body 회수 뒤에도 같은 rear axis에 남아 있을 때, 대응 surface는 COS251로 전이되는 경우가 많았다. 이때 pulse는 위치 단서에서 empty terminal 오염으로 기능이 바뀌므로, rear axis가 잔류하는 동안 blank note card나 correction footer를 들이면 generated trace가 증가한다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "EXP-251-01 / persistence 시간 계측",
+      "description": "2046-04-18~2046-04-20, H-4·Q-5B·R2-3에서 active terminal 10면과 body 미회수 이력이 없는 control terminal 10면을 비교했다. 446 nm 사광 19°, 23.1±0.4°C, RH 43~46% 조건에서 active terminal 9/10이 12~96분(중앙값 41분) 동안 잔류했고 control 10/10은 음성이었다."
+    },
+    {
+      "label": "EXP-251-02 / blank media 거리 시험",
+      "description": "active terminal 8면에서 blank correction strip와 blank route tab을 10cm, 30cm, 60cm, 100cm에 각각 배치했다. 10cm군은 8/8, 30cm군은 6/8에서 hash 말단 또는 lower line 오염이 발생했고, 60cm군은 1/8 약양성, 100cm군은 0/8이었다."
+    },
+    {
+      "label": "EXP-251-03 / 재유도 시험",
+      "description": "actual body 회수 20분 이내 동일 bench에 새 front-only host를 재배치한 12회 중 7회에서 empty terminal로의 [COS241 — 회청색 본문유도띠](./cos241.json) 또는 [COS248 — 회청색 후축동조맥](./cos248.json) 잔류형 신호가 나타났다. 같은 조건에서 3mm matte-black ABS cap을 씌운 대조군 12회는 0/12였다."
+    },
+    {
+      "label": "EXP-251-04 / 투명·불투명 차단 대조",
+      "description": "clear acrylic board 6회, PET sleeve 6회, matte-black ABS cap 10회를 같은 terminal에 적용했다. clear board는 4/6, PET sleeve는 3/6에서 인접면 underside 전이를 보였고, matte-black cap은 10회 중 9회에서 6초 이내 신호를 붕괴시켰다."
+    },
+    {
+      "label": "EXP-251-05 / 구두 개입 교란 시험",
+      "description": "active terminal 6회에 대해 chain number와 page total을 육성으로 읽은 군, silent protocol과 code paddle만 사용한 군을 비교했다. 육성군은 generated trace 4/6, wrong candidate 접근 3/6이었고, silent군은 각각 0/6, 1/6에 그쳤다."
+    }
+  ],
+  "handlingProcedures": [
+    "actual body를 회수한 terminal은 60초 안에 `A251-plane` 잠정 표식을 부여하고 3mm matte-black ABS cap으로 먼저 덮는다.",
+    "rear-search 종료 후 90분 동안 blank correction strip, blank ruled card, blank route tab, clear PET sleeve, scanner lid를 terminal 반경 1m 안에 두지 않는다.",
+    "기록이 필요하면 조도 20~60 lux와 445~470nm 사광만 사용하고, 플래시·정면 LED·투명 반사판은 사용하지 않는다.",
+    "새 front-only host, pseudo-body, generated card를 같은 bench에 올리기 전 terminal quiescence를 먼저 확인한다. quiescence 미확인 상태에서는 다음 rear-search를 시작하지 않는다.",
+    "발화는 금지한다. chain number, title, lower line, page total은 육성으로 읽지 말고 흑색 code paddle과 외부 타임스탬프 보드로만 기록한다.",
+    "세척, IPA 도포, 압착 정리, clear board 덮개를 사용하지 않는다. 필요한 경우 cap째로 host를 이동하고, panel 분리나 청소는 quiet interval 종료 뒤에만 시행한다.",
+    "회수된 actual body와 COS251 trace 산물은 절대 같은 슬리브나 current chain으로 병합하지 않는다. footer hash, page count, 질량 대조를 마치기 전까지 trace는 본문 근거가 아니다.",
+    "former [COS227 — 회청색 후면적체벽](./cos227.json) cavity는 body cluster를 모두 회수한 뒤에도 90분간 동일하게 cap을 유지한다.",
+    "잔류종점면이 90분 뒤에도 남아 있으면 일반 bench로 환원하지 말고 rear plane 자체를 분리 봉인하고 상급 분석으로 전환한다."
+  ],
+  "hypotheses": [
+    "COS251는 남아 있는 본문이나 은닉된 appendix가 아니라, [COS199 — 회청색 이격결속띠](./cos199.json)·[COS213 — 회청색 절단면대행갑](./cos213.json)·[COS227 — 회청색 후면적체벽](./cos227.json) 계열 사건에서 **마지막으로 유효했던 rear terminal 상태**가 empty surface에 짧게 고정된 결과일 가능성이 높다.",
+    "[COS241 — 회청색 본문유도띠](./cos241.json)와 [COS248 — 회청색 후축동조맥](./cos248.json)이 actual body 회수 방향을 제공한 뒤에도, 그 종점 정보 일부가 surface privilege로 남아 후속 host와 blank media를 같은 자리로 재앵커링하는 것으로 해석할 수 있다.",
+    "[COS173 — 늦게 식는 부재면](./cos173.json)이 origin 쪽의 최근성, COS251가 terminal 쪽의 잔류 종점 권위를 맡는다면, front/body 분리 사건은 회수 전후의 빈 자리를 서로 다른 방식으로 활성화하는 한 쌍의 표면 현상을 가진 셈이다. 다만 두 현상이 동일 기전인지, 단지 연속되는 절차 상태인지에 대해서는 추가 표본이 필요하다.",
+    "투명면과 blank correction media가 COS251를 증폭하는 이유는 아직 미확정이다. 현재로서는 이들이 잔류 terminal의 광학·절차 신호를 본문이 아닌 lower line·footer fragment 형태로 가장 쉽게 받아들이는 sink일 가능성이 높다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "empty terminal 재사용 위험",
+      "assessment": "높음. body가 이미 회수된 자리임에도 후속 rear-search와 correction 절차가 다시 그 자리로 수렴해 시간과 체인을 동시에 오염시킨다."
+    },
+    {
+      "category": "blank media 오염 위험",
+      "assessment": "높음. correction strip, route tab, ruled card가 footer 조각과 lower line을 획득해 실제 본문 회수 근거처럼 보일 수 있다."
+    },
+    {
+      "category": "wrong pair 및 dispatch 지연 위험",
+      "assessment": "높음. residual terminal을 실제 body 잔존으로 오해하면 wrong candidate를 provisional pair로 기입하거나, 반대로 올바른 body 회수를 늦출 수 있다."
+    },
+    {
+      "category": "후면 수색 중 물리적 부상 위험",
+      "assessment": "중간. empty cavity와 rear slot을 재수색하는 과정에서 손목 염좌, 절개 상처, 좁은 틈 협착 가능성이 있다."
+    },
+    {
+      "category": "후면 구조 노출 위험",
+      "assessment": "중간 이상. active terminal 위치와 잔류 시간을 알면 숨겨진 slot, cable race, 이중바닥의 구조를 역추적할 수 있다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "active terminal 11건에 대한 면봉·tape lift·저점착 필름 전사 18회는 모두 음성이었다. 현재까지 COS251에서 독립된 잉크, 분진, 섬유, 점착 부산물은 회수되지 않았다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“본문은 이미 봉인했는데 빈 홈이 계속 `여기가 끝자리`라고 남아 있었습니다.” — 채록-17, 2046-04-14 H-4 초동 기록**"
+    },
+    {
+      "type": "paragraph",
+      "content": "90분 quiet interval은 안전 상한이 아니라 운영상 절충값이다. 통제 실험 10면 중 9면은 87분 안에 소실되었으나, 1면은 96분까지 잔류했다. former cavity와 clear-board 전이 사례는 90분 경과 뒤에도 재점검해야 한다."
+    },
+    {
+      "type": "quotation",
+      "content": "**“줄과 숫자가 생겼다고 해서 본문이 돌아온 것은 아니었습니다. 돌아온 것은 빈 자리의 권한이었습니다.” — 결락-09, Q-5B 전이 사고 검토 메모**"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시등록 T-251 정식 편입",
+      "paragraphs": [
+        "2046-04-14~2046-04-25 초동 기록에서는 현상을 `T-251`, `empty terminal stain`, `rear terminal afterimage`, `잔류 종점`으로 병기했다.",
+        "통제 실험과 현장 재오염 사례 검토 결과, 본 항목은 missed page나 단순 열흔이 아니라 **actual body 회수 뒤에도 종점 권위를 유지하는 rear surface 현상**으로 확인되었다. 이에 공식 명칭을 **회청색 잔류종점면**으로 확정하고 COS251로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A251/T251/C251 식별 접두",
+      "paragraphs": [
+        "active rear terminal host는 `A251-plane-일련번호`, 오염된 correction strip·route tab·generated lower line은 `T251-trace-일련번호`, 억제에 사용한 matte-black cap과 해제 로그는 `C251-cap-일련번호`를 부여한다.",
+        "actual body는 원래 사건의 body chain을 유지하며 COS251 체인으로 재편입하지 않는다. `A251-plane`, `T251-trace`, `C251-cap`은 같은 봉투·같은 current chain hash를 공유하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "1차 양성 기준은 **actual body 회수 완료**가 선행된 rear terminal에서 445~470nm 사광 15~25° 조건으로 회청색 저반사 patch가 30초 이상 유지되는 것이다.",
+        "2차 기준은 다음 셋 중 하나 이상이 동반될 때 확정한다: blank media의 footer/lower line 오염, empty terminal로의 [COS241 — 회청색 본문유도띠](./cos241.json) 재유도, 같은 rear axis의 [COS248 — 회청색 후축동조맥](./cos248.json) 잔류 최대점.",
+        "swab·tape lift 음성, footer hash 불일치, body 재부재가 함께 확인되면 missed page가 아니라 COS251로 분류한다."
+      ]
+    },
+    {
+      "title": "black cap 규격 및 해제 기준",
+      "paragraphs": [
+        "권장 억제재는 두께 3mm 이상의 matte-black ABS cap 또는 같은 수준의 무광 불투명 cap이며, active patch 전체를 최소 2cm 이상 덮어야 한다.",
+        "cap 설치 시각, 설치 전 온도차, 15분 간격 재점검 6회, 해제 시각을 모두 `C251-cap` 로그에 기록한다.",
+        "cap 해제는 90분 quiet interval 종료와 15분 간격 2회 연속 무반응 확인 뒤에만 허용한다. former [COS227 — 회청색 후면적체벽](./cos227.json) cavity는 90분 뒤에도 추가 1회 광학 검사를 시행한다."
+      ]
+    }
+  ]
+}

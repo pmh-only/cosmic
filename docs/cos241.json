@@ -399,6 +399,14 @@
         "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS241 — 회청색 본문유도띠](./cos241.json)로 actual body를 회수한 직후 가장 자주 나타나는 하류 기록 오염으로 분류된다. trace가 가리킨 rear body를 찾았다는 안도감이 생기는 순간, blank correction slip이나 preview field가 `처음부터 같은 chain이었다`는 footer를 생성해 rear-search 자체를 기록에서 지우려 할 수 있다.",
         "따라서 COS241 성공 run에서는 body 회수 후 90분 동안 correction media를 origin bench 1 m 안에 두지 않고, trail 기록과 continuity line을 같은 장부에 합치지 않는다."
       ]
+    },
+    {
+      "relatedId": 251,
+      "type": "reciprocal",
+      "title": "COS251 상호기록",
+      "paragraphs": [
+        "[COS241 — 회청색 본문유도띠](./cos241.json)로 actual body를 성공적으로 회수한 뒤에도, 이전 종점면이 [COS251 — 회청색 잔류종점면](./cos251.json)으로 남아 새 host의 trail을 다시 같은 empty terminal로 끌어들이는 사례가 확인되었다. 따라서 COS241 종료 판단에는 body 회수뿐 아니라 terminal quiescence 확인이 포함되어야 하며, 종점 주변 blank correction media와 clear host를 즉시 반입해서는 안 된다."
+      ]
     }
   ],
   "supplementalSections": [
