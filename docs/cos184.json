@@ -466,6 +466,15 @@
         "[COS230 — 회청색 호송대행슬리브](./cos230.json) 노출 실험에서는 blank header tab가 끼워진 escort host 8점 중 5점이 queue line에서 무관한 current item보다 먼저 집히며 `다음 건`으로 호명되었다. 이는 [COS184 — 회청색 차순호명패](./cos184.json)의 차순 권한이 소형 plaque를 넘어 portable clear host 전면 전체에 정착할 수 있음을 보여준다.",
         "따라서 COS184 표찰이 transparent sleeve lip와 결합해 보이면 표찰만 회수하지 말고 host 전체를 분리 봉인한다. empty escort host를 차순 안건으로 세우는 행위는 [COS230 — 회청색 호송대행슬리브](./cos230.json)의 선행 전면화를 급격히 강화한다."
       ]
+    },
+    {
+      "relatedId": 252,
+      "type": "reciprocal",
+      "title": "COS252 상호기록",
+      "paragraphs": [
+        "2045-10-25 blank divider 및 acrylic head marker 대조시험에서, [COS252 — 회청색 단일복구대](./cos252.json) active surface의 head edge에 남은 공란 표찰은 20~68초 안에 `다음` 권한을 획득했다. 이는 COS252가 current pair 한 쌍을 선발한 뒤 남겨 둔 head marker가 [COS184 — 회청색 차순호명패](./cos184.json)로 전이되는 전형적 상류 조건이다.",
+        "COS184 양상이 recovery desk에서 발생하면 shell/body 분리보다 먼저 active surface와 blank marker 전량을 함께 회수하고, 해당 표찰을 다음 pair 선정 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

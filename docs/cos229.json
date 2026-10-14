@@ -377,6 +377,15 @@
         "[COS244 — 회청색 후면판독면](./cos244.json)은 [COS229 — 회청색 선결봉함갑](./cos229.json) 양성 host의 외벽 안쪽, lid, 인접 blank board에 반복 형성되었다. 이 조합은 `닫힌 packet 안에 읽을 내용이 있다`는 인상을 강화하지만, 확인된 사례에서 actual body는 여전히 rear box나 gap에 남아 있었고 line band는 footer hash와 장수 정보를 완전하게 제공하지 못했다.",
         "선결봉함갑 주변에 판독면이 생기더라도 이를 contents confirmation으로 사용하지 않는다. host와 blank plane을 분리 봉인하고 rear body 수색을 우선 시행하며, 판독면 전사본이나 preview 문구는 완결 packet의 증거로 채택하지 않는다."
       ]
+    },
+    {
+      "relatedId": 252,
+      "type": "reciprocal",
+      "title": "COS252 상호기록",
+      "paragraphs": [
+        "2045-10-24와 2045-10-26 incident/실험에서 [COS252 — 회청색 단일복구대](./cos252.json) active head position 8~10 cm 안에 empty sleeve가 남아 있으면, selected pair 주위로 flap과 seam이 먼저 정렬되어 [COS229 — 회청색 선결봉함갑](./cos229.json) 단계가 쉽게 형성되었다. 이 봉함은 정합 증거가 아니라 surface가 선발한 current pair의 조기 완결 외형으로 본다.",
+        "따라서 COS229 양성 host가 rear-search 또는 재편철 desk에서 나왔으면, 봉함 seam보다 active surface 이력과 후방 body 잔류 여부를 먼저 검토한다."
+      ]
     }
   ],
   "supplementalSections": [

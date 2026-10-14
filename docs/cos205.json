@@ -450,6 +450,15 @@
         "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS205 — 회청색 대조합치막](./cos205.json) false pair를 해제한 직후 blank correction form과 preview field에 가장 쉽게 나타나는 downstream 기록이다. shared pair code가 제거되거나 무효화되더라도, correction footer는 `대조 오류가 수정되었다`가 아니라 `애초에 끊김이 없었다`는 연속 chain을 생성해 provenance 손상을 은폐할 수 있다.",
         "따라서 COS205 양성쌍 해제 직후에는 현장 가로지움과 수기 종결선을 금지하고, raw access log·footer hash·rear-search 시각을 먼저 봉인한다."
       ]
+    },
+    {
+      "relatedId": 252,
+      "type": "reciprocal",
+      "title": "COS252 상호기록",
+      "paragraphs": [
+        "2045-10-26 same-surface 비교에서 [COS252 — 회청색 단일복구대](./cos252.json)가 wrong body를 head position에 올린 뒤, 그 조합에 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 4/6으로 먼저 붙었다. 즉 COS252는 false pair를 비교면 앞줄로 선발하는 상류 surface로 분류된다.",
+        "COS205 양성쌍이 recovery desk origin일 경우, 해당 쌍이 COS252 current pair였는지 먼저 확인하고 같은 surface에서 재대조하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [
