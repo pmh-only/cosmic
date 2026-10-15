@@ -386,6 +386,15 @@
         "2045-10-24와 2045-10-26 incident/실험에서 [COS252 — 회청색 단일복구대](./cos252.json) active head position 8~10 cm 안에 empty sleeve가 남아 있으면, selected pair 주위로 flap과 seam이 먼저 정렬되어 [COS229 — 회청색 선결봉함갑](./cos229.json) 단계가 쉽게 형성되었다. 이 봉함은 정합 증거가 아니라 surface가 선발한 current pair의 조기 완결 외형으로 본다.",
         "따라서 COS229 양성 host가 rear-search 또는 재편철 desk에서 나왔으면, 봉함 seam보다 active surface 이력과 후방 body 잔류 여부를 먼저 검토한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json) active head pair 주변에 empty sleeve나 thin case가 남아 있으면 [COS229 — 회청색 선결봉함갑](./cos229.json)이 빠르게 형성되어, 아직 provenance가 검증되지 않은 조합이 완결 packet처럼 이동할 수 있다. queue 선두와 봉함 외형을 같은 사실로 취급해서는 안 된다.",
+        "COS229 양성 host가 recovery queue desk에서 나온 경우 seam보다 surface 이력과 rear body 잔류를 먼저 검토하고, empty sleeve는 active zone 밖에서만 취급한다."
+      ]
     }
   ],
   "supplementalSections": [

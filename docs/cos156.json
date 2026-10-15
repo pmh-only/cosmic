@@ -441,6 +441,15 @@
         "2045-10-29 H-2/L-1 사례에서 [COS252 — 회청색 단일복구대](./cos252.json)가 current pair로 선발한 조합이 footer 검증 전 이관대에 옮겨지자, 수령자 공란 상태의 `handover complete`가 먼저 생성되었다. 이는 복구 surface의 우선순위가 실제 인수인계보다 앞서 무수령 완료를 닫게 하는 결합형으로 분류한다.",
         "COS156 현장에서 origin이 COS252인 packet은 rear zone 완전 음성 판정과 질량 재계측 전까지 어떤 인계 desk에도 놓지 않는다. current pair로 보인다는 인상만으로 전달 사슬을 개시해서는 안 된다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)에서 선발된 current pair가 desk 밖으로 이동하면, 수령자 공란 상태의 `handover complete`가 먼저 닫히는 [COS156 — 무수령 인계대](./cos156.json) 결합형이 반복 확인되었다. queue 앞자리가 실제 인계 완결을 뜻하지 않으므로, head pair 이동만으로 handoff를 시작해서는 안 된다.",
+        "COS156 현장에서 origin이 recovery queue surface로 확인되면 rear zone 음성 판정과 질량 재계측 전까지 인계 desk 사용을 보류한다."
+      ]
     }
   ],
   "supplementalSections": []

@@ -378,6 +378,15 @@
         "current pair를 제거한 뒤에도 [COS252 — 회청색 단일복구대](./cos252.json) 활성 표면에 12~31분 지속되는 저온 직사각형과 head position이 남는 사례가 확인되었다. 이 잔류 위치는 무관한 백지나 thin shell에 직전 사건의 current line을 상속시켜 [COS169 — 잔류 대좌면](./cos169.json)형 빈 current spot으로 이행한다.",
         "따라서 COS169 자료에서 직전 복구 사건의 번호나 current line이 빈 자리 자체에 남으면, 그 표면을 단순 resting surface로 재사용하지 말고 COS252 연계 잔류 대좌면으로 봉인한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json) active surface에서 current pair가 제거된 뒤 남는 저온 직사각형과 head position은 [COS169 — 잔류 대좌면](./cos169.json)형 빈 current spot으로 빠르게 전이될 수 있다. 이때 빈 복구면은 `이번 사건의 자리`를 계속 주장하며 무관한 백지나 thin shell에 provisional current line을 상속시킨다.",
+        "COS169 현장에서 직전 rear-search나 rebind 흔적이 확인되면 resting surface로 환원하지 말고 COS253 잔류 surface 이력을 함께 조사한다. 빈 자리의 current 권위는 해결 완료가 아니라 미정리 복구 순서의 잔류일 수 있다."
+      ]
     }
   ],
   "supplementalSections": []

@@ -447,6 +447,15 @@
       "paragraphs": [
         "[COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 body-only cluster를 모두 회수한 뒤에도, cavity mouth와 rear plane이 곧바로 inert surface로 돌아가지 않고 [COS251 — 회청색 잔류종점면](./cos251.json) host로 남는 사례가 반복 확인되었다. 따라서 COS227 recovery 완료는 body cluster 제거만으로 성립하지 않으며, empty cavity가 unrelated host의 [COS241 — 회청색 본문유도띠](./cos241.json)나 [COS248 — 회청색 후축동조맥](./cos248.json)을 다시 끌어들이지 않는지 quiet interval 동안 별도 확인해야 한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS227 — 회청색 후면적체벽](./cos227.json)에서 회수된 mixed body cluster를 same bench에 풀어놓으면 [COS253 — 회청색 복구대기열](./cos253.json)이 어떤 body를 먼저 current pair로 올릴지 surface 차원에서 선발하는 경우가 반복되었다. 이때 queue 앞자리는 cavity provenance와 무관할 수 있다.",
+        "COS227 회수물은 같은 recovery surface에 복수 후보를 병치하지 말고, 순차 선발이 시작되면 즉시 분할 board로 이송해 queue 형성을 차단한다."
+      ]
     }
   ],
   "supplementalSections": [

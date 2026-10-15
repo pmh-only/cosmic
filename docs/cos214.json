@@ -412,6 +412,15 @@
         "[COS230 — 회청색 호송대행슬리브](./cos230.json) 양성 host 8점은 borescope상 공실임에도 0.9 N 이하 thumb pressure 1회에 1.8~3.9 kHz rustle 4~7회를 발생시켰다. 이는 실제 leaf stack 없이 manual page-turn cue만 남는 [COS214 — 회청색 장넘김대행막](./cos214.json)과 직접 중첩되는 양상이다.",
         "따라서 clear escort host에서 넘김음이 들려도 body 회수 근거로 사용하지 않는다. COS214 no-leafing triad는 [COS230 — 회청색 호송대행슬리브](./cos230.json) 의심 숙주에도 동일하게 적용하며, thumb-check는 증거 보강이 아니라 증폭 행위로 기록한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json) active head pair에 [COS214 — 회청색 장넘김대행막](./cos214.json)이 결합하면 작업자는 queue 앞자리를 실제 complete packet으로 더 쉽게 오인한다. 넘김감과 current priority가 동시에 있더라도 이는 provenance가 아니라 감각적 완료감에 불과하다.",
+        "따라서 COS214 cue가 있는 queue 선두 pair는 no-leafing triad와 rear-search를 먼저 적용하고, 표면 우선권을 완결본 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

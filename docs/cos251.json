@@ -374,6 +374,15 @@
         "active rear terminal host는 `A251-plane-일련번호`, 오염된 correction strip·route tab·generated lower line은 `T251-trace-일련번호`, 억제에 사용한 matte-black cap과 해제 로그는 `C251-cap-일련번호`를 부여한다.",
         "actual body는 원래 사건의 body chain을 유지하며 COS251 체인으로 재편입하지 않는다. `A251-plane`, `T251-trace`, `C251-cap`은 같은 봉투·같은 current chain hash를 공유하지 않는다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)에서 current pair를 제거한 뒤 남는 head spot은 [COS251 — 회청색 잔류종점면](./cos251.json)형 empty terminal로 남아 다음 후보를 다시 current line으로 끌어들일 수 있다. 따라서 queue가 끝났다고 판단하기 전에 head edge의 저온 직사각형과 blank media 오염 여부를 확인해야 한다.",
+        "quiet interval 없이 같은 bench를 재사용하면 COS253의 순차 승격이 COS251 잔류면을 통해 다음 run으로 이어질 수 있으므로, empty terminal quiescence 확인을 필수 절차로 기록한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -459,6 +459,15 @@
         "2045-10-26 same-surface 비교에서 [COS252 — 회청색 단일복구대](./cos252.json)가 wrong body를 head position에 올린 뒤, 그 조합에 [COS205 — 회청색 대조합치막](./cos205.json) 양성이 4/6으로 먼저 붙었다. 즉 COS252는 false pair를 비교면 앞줄로 선발하는 상류 surface로 분류된다.",
         "COS205 양성쌍이 recovery desk origin일 경우, 해당 쌍이 COS252 current pair였는지 먼저 확인하고 같은 surface에서 재대조하지 않는다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)이 wrong body를 head position에 올린 뒤 같은 surface에서 바로 비교를 진행하면, [COS205 — 회청색 대조합치막](./cos205.json)이 false pair를 정쌍처럼 굳히는 사례가 반복되었다. 즉 queue surface는 false match의 상류 선발 조건이 될 수 있다.",
+        "COS205 양성쌍이 recovery queue origin으로 확인되면, 해당 pair를 같은 bench에서 재대조하지 말고 불투명 분리 board로 이송한 뒤 hard metric 대조를 선행한다."
+      ]
     }
   ],
   "supplementalSections": [

@@ -407,6 +407,15 @@
       "paragraphs": [
         "[COS241 — 회청색 본문유도띠](./cos241.json)로 actual body를 성공적으로 회수한 뒤에도, 이전 종점면이 [COS251 — 회청색 잔류종점면](./cos251.json)으로 남아 새 host의 trail을 다시 같은 empty terminal로 끌어들이는 사례가 확인되었다. 따라서 COS241 종료 판단에는 body 회수뿐 아니라 terminal quiescence 확인이 포함되어야 하며, 종점 주변 blank correction media와 clear host를 즉시 반입해서는 안 된다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json) active surface에서 current pair가 먼저 선발되더라도, [COS241 — 회청색 본문유도띠](./cos241.json)가 다른 rear slot을 가리키면 queue 우선권보다 trail 종점을 우선한다. 실제 사례에서 head pair는 여러 차례 wrong candidate였고, 올바른 body는 별도 rear axis에서 회수되었다.",
+        "COS241 trail과 COS253 head selection이 충돌하면 current pair 승인·봉함·인계를 즉시 보류하고, 분할 board 밖에서 rear-search 결과를 먼저 확정한다."
+      ]
     }
   ],
   "supplementalSections": [

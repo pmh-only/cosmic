@@ -363,6 +363,15 @@
         "[COS252 — 회청색 단일복구대](./cos252.json) 활성 표면에서 current pair로 선택되지 못한 shell/body 후보가 `중복본`, `잔량`, `보존해제 검토`로 밀려난 사례가 2045-10-27 S-11R에서 확인되었다. 이는 실제 원본문 회수가 끝나지 않았는데도 복구 순서 밖으로 밀린 자료에 보존 종료 사유가 먼저 붙는 위험한 결합형이다.",
         "따라서 COS142 자료가 rear-search 또는 재편철 직후의 active bench 위에 놓였다면, 해제 표식을 채택하기 전에 [COS252 — 회청색 단일복구대](./cos252.json) 잔류 current surface와 후면 body 미회수 가능성을 먼저 판정한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json) active surface에서 current pair로 선택되지 못한 후보는 `중복본`, `잔량`, `보존해제 검토` 상태로 밀려날 수 있으며, 이는 [COS142 — 연회색 보존해제고](./cos142.json)의 오발현 조건으로 확인되었다. 실제 원본문 후보가 queue 뒤로 밀렸다는 이유만으로 보존 불요 판정을 내려서는 안 된다.",
+        "COS142 자료가 rear-search 또는 재편철 직후 surface currentization과 함께 나타나면, 해제 표식보다 COS253 잔류 대기열 여부를 먼저 판정하고 provenance 미확정 표본을 유지한다."
+      ]
     }
   ],
   "supplementalSections": []

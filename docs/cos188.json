@@ -436,6 +436,15 @@
         "[COS188 — 무본문 대용철](./cos188.json)의 `A188-shell`과 rear slot에서 회수된 `A188-body`를 불투명 트레이에서 분리 유지한 채 무광 비교면에 올리면, [COS247 — 회청색 재결속봉합선](./cos247.json)의 연속 봉합선이 형성되는 사례가 확인되었다. 이는 shell이 본문을 되찾았다는 뜻이 아니라, bodyless shell과 후행 body가 동일 사건철의 전면·본문이었을 가능성을 좁혀 주는 짧은 검증 창으로 취급한다.",
         "반대로 [COS231 — 회청색 현행점유걸쇠](./cos231.json) 잔류 current나 [COS203 — 회청색 교차편철면](./cos203.json) 영향이 남은 flat board에서 비교하면 wrong short seam이 생길 수 있다. COS188 자료의 봉합선은 footer hash·page count·질량 대조가 끝나기 전까지 정본화 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)에서는 [COS188 — 무본문 대용철](./cos188.json) shell이 실제 rear body보다 먼저 head position을 차지해 `이번에 끝낼 packet`처럼 선발되는 사례가 반복되었다. 이 경우 current line과 queue priority는 shell 쪽에 붙지만 actual body는 후방 0.5~2.7 m에 남을 수 있다.",
+        "따라서 bodyless shell이 recovery desk의 앞줄에 섰다는 사실만으로 current packet으로 승인하지 않는다. footer hash, 질량, rear-search 결과를 우선 대조하고, COS253 active surface가 의심되면 shell과 body를 분할 board로 분리한다."
+      ]
     }
   ],
   "supplementalSections": [

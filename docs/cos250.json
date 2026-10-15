@@ -391,6 +391,15 @@
         "physical continuity host에는 `A250-slip-일련번호`, digital preview·queue·screen 상태에는 `D250-preview-일련번호`, 필사본·2차 spread·오염 장부에는 `T250-trace-일련번호`를 부여한다. source front/body는 기존 사건 번호를 유지하며 COS250 번호로 덮어쓰지 않는다.",
         "`A250-slip`, `D250-preview`, `T250-trace`는 같은 봉투, 같은 current chain, 같은 correction record에 병합하지 않는다. raw access log, rear-search 시각, footer hash, page count가 generated continuity보다 항상 우선한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)에서 head pair가 provisional current line을 얻은 직후 blank correction slip, shelf card, preview field에 [COS250 — 회청색 연속증빙지](./cos250.json)가 형성되는 사례가 반복 확인되었다. 이는 surface가 만든 순차 우선권을 `처음부터 연속된 chain`처럼 재서술하는 하류 오염이다.",
+        "COS253 현장에서는 blank auxiliary media를 active zone 밖으로 격리하고 remote rechain 전까지 continuity line 작성을 금지한다. queue 순서는 provenance의 증거가 아니다."
+      ]
     }
   ],
   "supplementalSections": [

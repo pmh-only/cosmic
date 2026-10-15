@@ -473,6 +473,15 @@
         "RB-4, S-11R, H-2 사례에서 [COS197 — 회청색 후행본문퇴](./cos197.json) rear body bundle은 복구면에 올려진 직후 provenance 대조보다 `이번에 먼저 끝낼 쌍`을 고르는 [COS252 — 회청색 단일복구대](./cos252.json) surface currentization에 자주 포획되었다. 이때 head position에 오른 pair가 실제 정합을 뜻하지는 않았다.",
         "따라서 COS197 body를 front shell과 대조할 때는 current head selection을 pairing 근거로 사용하지 않고, 분할 board와 rear-search hold를 먼저 적용한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS197 — 회청색 후행본문퇴](./cos197.json) rear body bundle은 [COS253 — 회청색 복구대기열](./cos253.json)의 가장 흔한 입력원이었다. surface currentization은 어떤 body를 먼저 current pair로 올릴지 정했지만, 그 선택이 실제 정합을 뜻하지는 않았다.",
+        "따라서 COS197 body를 front shell과 대조할 때는 queue 앞자리를 pairing 근거로 사용하지 않고, footer hash·질량·rear-search 좌표를 먼저 대조한다."
+      ]
     }
   ],
   "supplementalSections": [

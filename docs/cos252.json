@@ -450,6 +450,15 @@
       "paragraphs": [
         "[COS248 — 회청색 후축동조맥](./cos248.json)는 [COS252 — 회청색 단일복구대](./cos252.json)에서 선택된 current pair가 실제 완결본이 아닐 때, 후방에 남은 body의 방향을 좁히는 탐색 신호로 사용된다. burst를 current pair 승인 근거로 쓰지 말고 rear-search 우선 근거로만 기록한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)은 [COS252 — 회청색 단일복구대](./cos252.json)가 한 시점의 current pair를 고른 뒤, 그 pair가 제거되면 남은 후보들 사이에서 같은 선발을 연쇄적으로 반복하는 하류 단계로 확인되었다. 즉 COS252가 `하나를 먼저 끝낼 것`을 정하면, COS253는 `그다음 무엇을 끝낼지`를 queue 형태로 고정한다.",
+        "따라서 COS252 active surface를 비웠다고 해서 곧바로 안전해졌다고 판단하지 않는다. head position이 사라진 뒤에도 queue priority와 잔류 current line이 남아 있으면 COS253 절차를 적용해 blank marker 제거, 40분 냉각, rear-search hold를 지속한다."
+      ]
     }
   ],
   "supplementalSections": [

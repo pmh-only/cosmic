@@ -342,6 +342,15 @@
         "[COS250 — 회청색 연속증빙지](./cos250.json)는 [COS247 — 회청색 재결속봉합선](./cos247.json)으로 정쌍 가능성이 좁혀진 직후 blank correction form에 가장 잘 발생하는 후속 문서이다. 연속 봉합선이 확인된 pair에 대해 generated continuity가 붙으면, 실제로는 rear-search와 hash 대조를 거친 사건도 `처음부터 끊김 없이 이어진 원본`처럼 재서술된다.",
         "따라서 COS247 비교 중에는 correction slip을 근접 배치하지 않고, hash·page count 확정과 remote rechain이 끝날 때까지 blank footer strip을 장착하지 않는다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json)에서 head position을 차지한 조합을 같은 surface에서 바로 대조하면, 표면이 만든 우선순위가 [COS247 — 회청색 재결속봉합선](./cos247.json)의 fragment seam 또는 wrong short seam으로 이어질 수 있다. 즉 비교 이전의 currentization이 봉합선 판독을 오염시키는 결합형이 존재한다.",
+        "따라서 COS247 비교 전에는 해당 pair가 COS253 active surface origin인지 먼저 확인하고, 확인될 경우 불투명 분할 board로 옮긴 뒤 footer hash·질량·page count를 선대조한다."
+      ]
     }
   ],
   "supplementalSections": [

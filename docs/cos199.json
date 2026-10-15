@@ -385,6 +385,15 @@
       "paragraphs": [
         "[COS199 — 회청색 이격결속띠](./cos199.json) 사건에서 rear body를 회수한 뒤에도, 본체가 걸려 있던 rear anchor나 stop lip가 곧바로 비활성화되지 않고 [COS251 — 회청색 잔류종점면](./cos251.json)으로 남는 사례가 확인되었다. 이 상태의 empty terminal 근처에 blank correction media를 두면 footer 조각과 lower line이 새로 생길 수 있으므로, COS199 표본에서 body 회수 후 rear anchor를 즉시 일반 bench로 환원하지 말고 COS251 quiet interval을 적용한다."
       ]
+    },
+    {
+      "relatedId": 253,
+      "type": "reciprocal",
+      "title": "COS253 상호기록",
+      "paragraphs": [
+        "[COS253 — 회청색 복구대기열](./cos253.json) active surface에서는 [COS199 — 회청색 이격결속띠](./cos199.json) 잔류 front가 장수·수령 표식을 먼저 가진 채 head pair로 선발되는 경향이 있었다. 그러나 body는 여전히 rear anchor나 후면 slot에 남아 있을 수 있어, queue 앞자리에 섰다는 사실은 결속 완료의 증거가 아니다.",
+        "COS199 징후가 있는 pair는 current priority보다 rear body 잔류 여부를 먼저 확인하고, active surface origin이 확인되면 봉함·인계·폐기 판단을 모두 보류한다."
+      ]
     }
   ],
   "supplementalSections": [

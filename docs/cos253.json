@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 4,
+  "classification": {
+    "secrecy": 4,
+    "permission": 4,
+    "chaos": 4,
+    "danger": 3,
+    "popularity": 3,
+    "containment": 4
+  },
+  "classificationRationale": {
+    "secrecy": "2045-10-24부터 2045-11-02까지 확인된 확정 사례 13건 중 9건에서 잘못 선발된 current pair가 봉함·인계·예비배가 직전 단계까지 진행되었다. 현상 조건이 알려지면 제한 기록의 실제 rear body 위치와 기관의 복구 절차 취약점이 함께 노출되므로 공개 범위를 높게 제한한다.",
+    "permission": "COS253 판정에는 footer hash, 실측 질량·두께, page count, rear-search 기록, blank marker 제거 순서를 동시에 대조하고 필요 시 인계·봉함·보존해제 선을 동결할 권한이 필요했다. 일반 라인 인원은 head position을 정답으로 오인하는 비율이 높아 최소 4등급 열람이 요구된다.",
+    "chaos": "활성 surface 혼합 시험 24회 중 11회에서 현재쌍 선발 결과가 blank marker 위치, 육성 순서 지시, 직전 회수 이력에 따라 바뀌었다. 표면을 비운 뒤에도 9~34분 동안 우선권이 잔류해 다음 run을 다시 오염시키므로 예측 곤란도가 높다.",
+    "danger": "직접적인 치명상은 확인되지 않았지만 wrong pair 선봉함 3건, 무수령 인계 직전 중단 1건, 보존해제 후보 오판 1건이 기록되었다. 위해의 중심은 인명보다 기록 무결성과 운영 절차의 조기 종결에 있으므로 3단계로 판정한다.",
+    "popularity": "임시등록 T-253 이후 10일 동안 rear-search 재점검 14건, 체인복구 비교 요청 9건, 예비배가·봉함선 질의 6건이 접수되었다. 기관 전반의 상시 허브 항목은 아니지만 front/body 복구 구역에서는 참조 빈도가 높은 편이다.",
+    "containment": "한 zone당 shell 1건과 body 1건만 올리는 분할 board, blank marker 전량 제거, 40분 냉각, rear-search hold, 무구두 순서 지시를 함께 적용해야 재발률이 의미 있게 감소했다. 단일 조치만 적용한 12회 중 7회가 실패하여 관리 강도는 높다."
+  },
+  "narrative": {
+    "personnel": [
+      {
+        "name": "REC-11",
+        "role": "기록관 / 후면회수실 책임",
+        "status": "active",
+        "involvement": "2045-10-24 RB-4 이상 surface를 최초로 독립 항목으로 분리하고, 잘못 선발된 current pair의 이송을 중지시켰다. 이후 T-253 임시 등록과 공식 조사 문안 정리를 맡았다."
+      },
+      {
+        "name": "CON-04",
+        "role": "보존기사 / surface 격리 및 계측 담당",
+        "status": "active",
+        "involvement": "활성 표면의 온도차, 사광 반응, empty sleeve 선봉함 조건을 계측했고 분할 board 규격과 40분 냉각 절차를 확정했다."
+      },
+      {
+        "name": "ANA-06",
+        "role": "문서연속성 분석원",
+        "status": "active",
+        "involvement": "footer hash, 실측 질량·두께, 스테이플 간격 대조를 수행하고 잘못 선택된 현재쌍과 실제 rear body의 불일치를 입증했다."
+      },
+      {
+        "name": "OPR-08",
+        "role": "이관·회람 운영요원",
+        "status": "reassigned",
+        "involvement": "blank head marker를 남긴 채 선발된 쌍을 current packet으로 취급해 봉함·인계 단계로 옮기려 했고, 사건 뒤 실시간 회람선 운용에서 재배치되었다."
+      },
+      {
+        "name": "ARC-07",
+        "role": "예비배가 기록관",
+        "status": "active",
+        "involvement": "Q-2 예비배가대 사건에서 blank shelf card가 current line을 상속한 사례를 발견하고 shelf-prep 중단 및 재촬영 절차를 시행했다."
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2045-10-24 07:32 KST",
+        "label": "RB-4 이상 surface 식별",
+        "description": "중앙기록동 별관 B1 후면회수실 RB-4에서 [COS197 — 회청색 후행본문퇴](./cos197.json) 회수 본문과 front shell을 재결합하던 중 한 쌍만 반복적으로 head position을 차지하는 현상이 독립 기록되었다."
+      },
+      {
+        "date": "2045-10-24 11:18 KST",
+        "label": "T-253 임시 등록",
+        "description": "wrong pair가 empty Tyvek sleeve 안에서 먼저 봉함되고 실제 body가 후방에 남아 있는 사례가 확인되어 임시 표기 T-253이 부여되었다."
+      },
+      {
+        "date": "2045-10-25 09:40 KST",
+        "label": "대조 surface 실험 개시",
+        "description": "RB-4 활성 bench와 분할된 무광 흑색 control board를 비교하는 재현 실험이 시작되었다."
+      },
+      {
+        "date": "2045-10-27 16:05 KST",
+        "label": "잔류 surface와 해제 후보 오판",
+        "description": "S-11R 재검토대에서 current pair 제거 후 남은 후보가 `중복본`과 `보존해제 검토` 상태로 밀려나는 사고가 발생해 잔류 current surface의 위험이 분리 기록되었다."
+      },
+      {
+        "date": "2045-10-29 13:20 KST",
+        "label": "분할 recovery board 승인",
+        "description": "한 zone당 shell 1건, body 1건만 두는 분할 board와 40분 냉각 절차가 승인되었다."
+      },
+      {
+        "date": "2045-11-02 08:50 KST",
+        "label": "공식 문서 편입 결정",
+        "description": "임시 등록 표본, 대조 실험, near-miss 보고서가 정리되어 COS253 공식 조사 문서 작성이 승인되었다."
+      }
+    ],
+    "incidents": [
+      {
+        "code": "INC-253-01",
+        "date": "2045-10-24",
+        "location": "중앙기록동 별관 B1 후면회수실 RB-4",
+        "title": "head position 선점과 빈 sleeve 선봉함",
+        "involvedPersonnel": [
+          "REC-11",
+          "CON-04",
+          "ANA-06",
+          "OPR-08"
+        ],
+        "narrative": [
+          "REC-11과 ANA-06은 [COS197 — 회청색 후행본문퇴](./cos197.json)에서 회수한 body bundle 3건과 front shell 3건을 RB-4 상판에 일렬로 놓고 footer hash를 대조하려 했다. OPR-08은 직전 회수 작업의 위치를 기억해 두겠다며 head edge에 아무 내용 없는 divider card 1장을 남겨 두었고, CON-04는 이를 즉시 제거하지 않았다. 74초 뒤 divider 앞쪽 612×308 mm 구역의 상단띠가 회청색으로 드러났고, 서로 맞지 않는 shell 1건과 body 1건이 같은 축으로 모이면서 empty Tyvek sleeve가 그 둘을 먼저 감쌌다.",
+          "OPR-08은 `맨 앞에 정리된 쌍부터 넘기면 된다`고 판단해 봉함된 sleeve를 인계 트레이 쪽으로 들었으나, ANA-06은 같은 시각 rail 뒤쪽에서 83.4 Hz burst가 계속 남아 있고 봉함된 쌍의 footer hash와 질량이 모두 불일치한다고 지적했다. REC-11은 이송 직전에 sleeve를 다시 내려놓게 하고 divider card, 봉함된 host, 남아 있던 rear body를 각각 분리했다.",
+          "CON-04가 rear rail 뒤 1.4 m 지점에서 실제 대응 body를 회수하자 wrong pair를 둘러싼 seam은 6분 내 약화되었다. 이 사건은 `head position이 정답을 뜻하지 않는다`는 판단의 직접 근거가 되었고, RB-4는 즉시 봉쇄되어 T-253 임시 등록의 기준 사례로 지정되었다."
+        ],
+        "outcome": "wrong pair는 원본문으로 승인되지 않았고, divider card와 empty sleeve는 `A253-head` 산물로 분리 봉인되었다. RB-4 active bench는 40분 냉각과 rear-search hold 없이는 재사용할 수 없도록 전환되었다."
+      },
+      {
+        "code": "INC-253-02",
+        "date": "2045-10-27",
+        "location": "임시보존 재검토대 S-11R",
+        "title": "선발되지 않은 후보의 중복본·해제 후보 강등",
+        "involvedPersonnel": [
+          "REC-11",
+          "CON-04",
+          "ANA-06"
+        ],
+        "narrative": [
+          "전날 회수한 shell/body 후보 4쌍 중 1쌍만 별도 검증실로 옮긴 뒤, REC-11과 CON-04는 S-11R 상판을 비우고 무수 천으로 한 차례 닦았다. 14분 뒤 같은 자리에는 214×301 mm 크기의 저온 직사각형이 남아 있었고, ANA-06이 다음 사건 메모를 적으려 올려둔 무관 백지가 직전 사건의 provisional current line을 얻었다. 남아 있던 thin shell 1건과 body 1건은 그 직사각형 밖으로 밀려나면서 `중복본 잔류`와 `보존해제 검토`라는 메모가 각각 붙기 시작했다.",
+          "CON-04는 current pair가 이미 빠져나갔으니 바깥으로 밀린 후보는 참조 잔량일 가능성이 높다고 해석해 body 후보를 해제 검토 봉투에 넣으려 했다. 그러나 ANA-06은 footer hash가 아직 어느 front와도 맞지 않았고, bench 후면에서 81.1 Hz burst가 계속 이어지는 점을 근거로 해제 판단을 보류시켰다.",
+          "REC-11은 해제 봉투 기입을 중지하고 cold rectangle과 남은 후보를 분리 촬영했다. 이어 rear rack 0.9 m 뒤에서 대응 front shell을 추가 회수하면서, 선택되지 않은 나머지 표본이 단순 잔량이 아니라 미회수 current 후보였음이 확인되었다."
+        ],
+        "outcome": "S-11R에서 발생한 `중복본` 및 `보존해제 검토` 상태는 모두 무효화되었다. 이 사건 뒤로 active surface에서 탈락한 표본은 해제·중복·참조본으로 어떤 표기도 붙이지 못하도록 절차가 개정되었다."
+      },
+      {
+        "code": "INC-253-03",
+        "date": "2045-10-29",
+        "location": "Q-2 예비배가대 P-4 및 이관대 H-2",
+        "title": "순차 current의 무수령 인계 직전 중단",
+        "involvedPersonnel": [
+          "REC-11",
+          "CON-04",
+          "OPR-08",
+          "ARC-07"
+        ],
+        "narrative": [
+          "분할 board 도입 직전 마지막 비교에서 OPR-08은 head position에 놓인 shell/body 조합 1쌍이 이전보다 더 안정적으로 보이자, 아직 footer hash 1항목만 맞춘 상태에서 이를 `임시 current packet`으로 표기했다. 그는 blank routing card를 붙인 채 H-2 이관대로 옮겼고, 같은 시간 Q-2 shelf preview에는 `next ready`와 유사한 line이 형성되었다.",
+          "ARC-07은 preview가 지나치게 깨끗하고 anomaly history가 사라졌다고 보고 REC-11에게 중지를 요청했다. CON-04는 실측 질량이 등록 총량보다 22 g 부족하다는 점을 재확인했고, rear search를 다시 수행한 결과 분실된 부록 3쪽이 H-2 뒤 service gap 0.8 m 지점에서 회수되었다. blank routing card는 곧 다음 건 표식을 얻기 시작해 동일 surface가 두 번째 queue slot까지 만들고 있음을 보여 주었다.",
+          "OPR-08은 수령자가 나중에 채워질 것이라고 가정한 판단이 잘못이었다고 인정했다. REC-11은 인계 로그를 무효 보류하고, active surface에서 나온 packet은 rear zone 완전 음성 판정 전 어떤 이관 desk에도 놓지 못한다는 규칙을 즉시 삽입했다."
+        ],
+        "outcome": "무수령 인계 상태는 6분 내 무효화되었고, H-2 desk는 24시간 동안 shell/body current packet의 시험 이송에서 제외되었다. OPR-08은 회람선 운용에서 재배치되었다."
+      }
+    ],
+    "evidence": [
+      {
+        "code": "EV-253-A",
+        "type": "상부 타임랩스 및 사광 사진군",
+        "description": "RB-4와 S-11R에서 head position이 형성되는 27개 시퀀스를 기록한 상부 타임랩스, 445~470 nm 사광 사진, 측면 영상 묶음이다. wrong pair가 76초 안에 전면으로 모이고 residual cold rectangle이 14분 이상 유지되는 장면이 포함된다.",
+        "custodyStatus": "디지털증거서버 DE-4에 원본 해시와 함께 봉인, 비교용 저해상 사본은 분리 저장"
+      },
+      {
+        "code": "EV-253-B",
+        "type": "질량·두께·footer hash 대조표",
+        "description": "shell 18건, body bundle 21건의 실측 질량, 두께, footer hash, 스테이플 간격을 비교한 표이다. active surface가 선택한 현재쌍 9건 중 6건에서 최소 2개 이상의 hard metric 불일치가 확인되었다.",
+        "custodyStatus": "문서연속성 분석실 원본 보관, 수정 금지 상태로 열람 제한"
+      },
+      {
+        "code": "EV-253-C",
+        "type": "blank head marker와 선봉함 sleeve 세트",
+        "description": "head edge에 남겨졌던 blank divider card 4점, queue plaque 2점, empty Tyvek sleeve 3점, polyester sleeve 2점을 포함한 물증 세트이다. 일부 표본은 provisional line 또는 seam만 획득한 상태다.",
+        "custodyStatus": "무광 흑색 분리함 BX-253에 개별 봉인, 서로 접촉 금지"
+      },
+      {
+        "code": "EV-253-D",
+        "type": "후축 burst 음향·가속도 로그",
+        "description": "RB-4, S-11R, H-2에서 기록된 78.9~84.1 Hz burst와 3축 가속도계 로그이다. active surface가 선택한 현재쌍 뒤 0.8~1.9 m 후방에서 실제 body 회수 좌표와 동기화된다.",
+        "custodyStatus": "AU-248/253 교차 저장소에 읽기 전용 보관"
+      },
+      {
+        "code": "EV-253-E",
+        "type": "잔류 냉각 직사각형 열영상",
+        "description": "표본 제거 뒤 9분에서 34분 동안 남은 212×304 mm~618×312 mm 범위의 저온 직사각형 9건을 기록한 열화상 파일이다.",
+        "custodyStatus": "열영상 원본과 온도 보정값을 분리 봉인"
+      },
+      {
+        "code": "EV-253-F",
+        "type": "무수령 인계 로그 및 정지 명령서",
+        "description": "Q-2/H-2에서 생성된 `handover complete` 공란 로그, 정지 시각, 질량 재계측 값, 후면 부록 회수 시각이 포함된 운영 기록이다.",
+        "custodyStatus": "인계감사실 포렌식 금고에 보관, 후속 교육자료 사용 금지"
+      }
+    ],
+    "testimonies": [
+      {
+        "speaker": "REC-11",
+        "role": "기록관 / 후면회수실 책임",
+        "context": "INC-253-01 직후 구술 기록",
+        "statement": "제가 확인한 사실은 같은 bench 위에 서로 다른 후보를 놓았는데도 한 쌍만 반복적으로 맨 앞자리를 차지했고, 그 앞에 있던 빈 sleeve가 먼저 닫혔다는 점입니다. 그 쌍이 정답이라는 판단은 surface가 만든 우선순위를 사실로 받아들인 해석일 뿐이었습니다."
+      },
+      {
+        "speaker": "OPR-08",
+        "role": "이관·회람 운영요원",
+        "context": "재배치 면담",
+        "statement": "적힌 내용은 없었지만 앞에 선 쌍부터 넘겨야 한다는 느낌이 강했습니다. 제가 본 것은 위치와 완료 표시였고, 그것이 실제로 검증된 current packet이라는 판단은 제 해석이었습니다."
+      },
+      {
+        "speaker": "ANA-06",
+        "role": "문서연속성 분석원",
+        "context": "대조 실험 253-C 검토 메모",
+        "statement": "active surface에서 먼저 선택된 조합은 대개 작업자가 가장 확인하기 쉬운 쌍이었지만, footer hash와 질량은 자주 다른 곳을 가리켰습니다. 따라서 COS253는 정답을 주기보다 `이번에 먼저 정리할 것`을 강요하는 현상으로 보는 편이 현재 관측에 더 맞습니다."
+      }
+    ]
+  },
+  "id": 253,
+  "title": "회청색 복구대기열",
+  "language": "ko-KR",
+  "overview": [
+    "**COS253**는 rear-search, 재편철, 비교 복구가 반복된 평면이 한 번에 단 하나의 shell/body 조합만 `현재 사건 packet`으로 취급한 뒤, 그 조합을 제거하면 남은 후보들을 다시 **순차적 대기열**로 승격시키는 회청색 surface 현상이다. 현재 통칭은 **회청색 복구대기열**이다.",
+    "COS253는 새 본문을 만들지 않으며, 사라진 자료를 자동으로 복원하지도 않는다. 대신 같은 표면에 놓인 여러 후보를 `현재쌍`, `다음 대기`, `나머지 잔류분`으로 서열화하고, blank marker·empty sleeve·무관 메모를 그 서열 유지에 끌어들인다.",
+    "핵심 위험은 provenance보다 **표면 위에서 먼저 머리자리를 차지한 순서**가 우선권을 얻는다는 점이다. 실제 대응 본문이 후방에 남아 있어도 잘못 선택된 조합이 먼저 봉함, 인계, 해제 검토 단계로 이동할 수 있다.",
+    "2045-10-24부터 2045-11-02까지 자연 발생 확정 사례 13건, 부분 사례 4건이 집계되었고, 모두 복수 후보를 한 recovery surface에서 동시에 다룬 상황에서 발생했다."
+  ],
+  "identificationTraits": [
+    "활성 표면은 대개 rear-search 또는 재편철 직후 비워진 520×310 mm 이상의 평면에서 나타난다. 재질은 무광 복합판, 책상 상판, 보존 트레이, 재검토대가 가장 많았다.",
+    "445~470 nm 사광을 15~25° 각도로 비추면 한 변의 1~3 mm 띠가 회청색으로 먼저 드러나며, 같은 구역의 표면 온도는 주변보다 0.6~1.3°C 낮게 측정된다.",
+    "둘 이상의 shell/body 후보를 올려두면 한 조합만 head position에 반복적으로 남고, 상부 타임랩스에서는 무접촉 상태에서 3~8 mm 중심 이동이 6/11 시험에서 관찰되었다.",
+    "선택되지 않은 후보는 보통 head edge 뒤 23~35 cm 간격으로 정렬되거나 바깥 변으로 밀린다. 이 배열은 provenance가 아니라 current surface의 우선순위를 반영한다.",
+    "blank divider, queue card, routing slip 같은 공란 표찰을 head edge 30 cm 안에 남겨 두면 20~90초 안에 `다음`, provisional line, blank current mark를 얻을 수 있다.",
+    "empty Tyvek sleeve, polyester sleeve, thin case를 head position 10 cm 이내에 두면, footer 검증 전에도 선택된 쌍 주위로 flap이나 seam이 먼저 정렬될 수 있다.",
+    "표면을 비운 뒤에도 9~34분 동안 저온 직사각형과 handling priority가 남을 수 있으며, 무관한 문서나 백지가 직전 사건의 current line 또는 정리 순서를 상속받는 사례가 있었다.",
+    "head position에 놓인 조합이 안정적으로 보이더라도 실제 대응 body는 0.5~2.7 m 후방에 남아 있을 수 있다. 후축 burst가 계속 검출되면 current pair를 완결본으로 인정하지 않는다."
+  ],
+  "discovery": [
+    "COS253는 #100~252 구간 existing COS 중 무작위 대조 표본으로 선정한 [COS169 — 잔류 대좌면](./cos169.json), [COS188 — 무본문 대용철](./cos188.json), [COS199 — 회청색 이격결속띠](./cos199.json), [COS214 — 회청색 장넘김대행막](./cos214.json), [COS227 — 회청색 후면적체벽](./cos227.json), [COS241 — 회청색 본문유도띠](./cos241.json), [COS250 — 회청색 연속증빙지](./cos250.json), [COS251 — 회청색 잔류종점면](./cos251.json), [COS252 — 회청색 단일복구대](./cos252.json) 관련 복구 로그를 재검토하던 중 분리되었다.",
+    "최초 분리 기록은 2045-10-24 07:32 KST, 중앙기록동 별관 B1 후면회수실 RB-4에서 확보되었다. [COS197 — 회청색 후행본문퇴](./cos197.json) 회수 body bundle 3건과 shell 3건을 같은 bench에 올려놓자, provenance 검증 전에도 특정 한 쌍만 head position을 선점하고 blank divider와 empty sleeve가 그 쌍에 먼저 정렬되었다.",
+    "같은 날과 다음 교대조에서 Q-2 예비배가대, S-11R 재검토대, H-2 이관대에서도 유사한 순차 승격이 반복되었다. 반면 한 zone당 shell 1건과 body 1건만 두는 분할 무광 흑색 board 대조군에서는 같은 표본과 같은 작업자 조건에서도 head currentization이 재현되지 않았다.",
+    "따라서 현상은 개별 shell이나 body의 속성이 아니라, 반복 사용된 recovery surface가 여러 후보를 순차적으로 `이번에 먼저 끝낼 것`으로 조직하는 독립 항목으로 판정되어 COS253이 부여되었다."
+  ],
+  "behavior": {
+    "summary": [
+      "COS253는 보통 front-only shell, rear body candidate, blank marker, empty sleeve가 같은 복구 평면에 동시에 놓일 때 활성화된다.",
+      "활성화된 표면은 provenance를 확인하기보다 한 조합을 `이번에 먼저 끝낼 것`으로 선택하고, 그 조합이 제거되면 다음 후보를 다시 head position으로 승격시키는 순차적 대기열을 만든다.",
+      "잘못 대응하면 selected pair는 봉함·인계·배가 단계로 앞서가고, 실제 body는 후방 burst와 함께 뒤에 남는다."
+    ],
+    "stages": [
+      {
+        "name": "복구면 노출",
+        "description": "rear-search, 재편철, 비교 작업 직후 비워진 평면이 직전 사건의 current authority를 유지한다. 이 단계에서는 빈 자리와 약한 온도차만 남아 있어 단순 작업 흔적으로 보일 수 있다."
+      },
+      {
+        "name": "head selection",
+        "description": "둘 이상의 shell/body 후보가 놓이면 한 조합만 head edge를 차지하고 회청색 띠가 그 위치에 고정된다. blank marker가 있으면 해당 표찰이 `다음` 또는 `current`의 머리 위치를 보조한다."
+      },
+      {
+        "name": "대기열 편입",
+        "description": "선택되지 않은 후보는 뒤쪽 간격으로 정렬되거나 바깥쪽으로 밀린다. 이때 작업자는 검증보다 정리 순서를 먼저 따르려는 경향을 보인다."
+      },
+      {
+        "name": "순차 승격",
+        "description": "head pair를 제거하거나 다른 desk로 옮기면 18~126초 안에 다음 후보가 head edge로 앞당겨지고, blank marker가 `다음`, `2/3`, provisional current line을 획득한다."
+      },
+      {
+        "name": "가짜 종결 또는 후방 소집",
+        "description": "empty sleeve, routing slip, handoff desk가 가까우면 selected pair는 봉함·인계·검토 완료 상태를 앞서 획득한다. 반대로 후축 burst를 유지하면 실제 body가 남은 방향을 다시 좁힐 수 있다."
+      },
+      {
+        "name": "잔류 current authority",
+        "description": "표면을 비워도 저온 직사각형, head edge, 정리 우선순위가 일정 시간 남는다. 이 잔류 단계에서 무관한 문서나 메모가 직전 사건의 current line을 상속받을 수 있다."
+      }
+    ]
+  },
+  "relationships": {
+    "summary": [
+      "COS253는 [COS252 — 회청색 단일복구대](./cos252.json)가 만든 단일 current pair 선발이 제거 뒤에도 연쇄적으로 반복되는 하류 단계로 가장 자주 관측되었다.",
+      "또한 [COS169 — 잔류 대좌면](./cos169.json), [COS188 — 무본문 대용철](./cos188.json), [COS199 — 회청색 이격결속띠](./cos199.json), [COS214 — 회청색 장넘김대행막](./cos214.json), [COS227 — 회청색 후면적체벽](./cos227.json), [COS241 — 회청색 본문유도띠](./cos241.json), [COS250 — 회청색 연속증빙지](./cos250.json), [COS251 — 회청색 잔류종점면](./cos251.json)과 결합할 때 provenance보다 처리 순서가 먼저 굳어지는 경향이 강했다."
+    ],
+    "entries": [
+      {
+        "targetId": 169,
+        "targetTitle": "잔류 대좌면",
+        "description": "[COS169 — 잔류 대좌면](./cos169.json)은 current pair가 빠져나간 뒤 빈 head spot이 계속 권위를 유지하도록 만드는 가장 안정적인 잔류형이다. COS253가 여러 후보를 순차적으로 선발한다면, COS169는 그 선발이 끝난 뒤에도 빈 머리자리를 `계속 그 사건의 자리`처럼 남긴다."
+      },
+      {
+        "targetId": 188,
+        "targetTitle": "무본문 대용철",
+        "description": "[COS188 — 무본문 대용철](./cos188.json)의 bodyless shell은 COS253 대기열에서 가장 자주 head pair를 선점했다. 표지와 책등이 안정적인 shell이 current packet처럼 보이더라도, 실제 본문은 rear zone에 남아 있을 수 있으므로 queue 앞자리와 provenance를 분리해 기록해야 한다."
+      },
+      {
+        "targetId": 199,
+        "targetTitle": "COS199 — 회청색 이격결속띠",
+        "description": "[COS199 — 회청색 이격결속띠](./cos199.json)는 front에 장수·수령 표식을 먼저 남겨 COS253의 head selection을 왜곡하는 대표 입력원이다. current pair가 안정적으로 보이더라도 rear anchor에서 burst가 지속되면 queue가 아니라 미완결 분리를 우선 의심해야 한다."
+      },
+      {
+        "targetId": 214,
+        "targetTitle": "회청색 장넘김대행막",
+        "description": "[COS214 — 회청색 장넘김대행막](./cos214.json)이 남아 있는 head pair는 실제 장 수보다 `넘겨 볼 수 있다`는 감각을 먼저 제공해 COS253의 순차 승격을 더 설득력 있게 만든다. 따라서 queue 앞자리의 촉각적 완결감은 정쌍 증거가 아니라 오염 증폭 신호로 본다."
+      },
+      {
+        "targetId": 227,
+        "targetTitle": "회청색 후면적체벽",
+        "description": "[COS227 — 회청색 후면적체벽](./cos227.json)은 COS253 current pair 뒤에 실제 body를 남기는 가장 흔한 저장 지점이다. active surface가 한 조합을 머리자리로 밀어 올릴수록, 아직 회수되지 않은 body cluster는 후면 cavity에서 더 오래 방치될 수 있다."
+      },
+      {
+        "targetId": 241,
+        "targetTitle": "회청색 본문유도띠",
+        "description": "[COS241 — 회청색 본문유도띠](./cos241.json)는 COS253가 부여한 순차 우선권을 가장 자주 교정한 보조 지표였다. head pair가 이미 current처럼 보여도 trail이 다른 rear slot을 가리키면 queue 순서보다 actual body 회수를 우선해야 한다."
+      },
+      {
+        "targetId": 250,
+        "targetTitle": "회청색 연속증빙지",
+        "description": "[COS250 — 회청색 연속증빙지](./cos250.json)는 COS253가 만든 순차 처리 흔적을 `처음부터 매끈한 연속 chain이었다`는 하단 line으로 압축한다. 대기열의 첫째·둘째·셋째가 실제 복구 순서였다는 보장은 없으므로, generated continuity는 queue 기록을 정당화하는 증거로 사용하지 않는다."
+      },
+      {
+        "targetId": 251,
+        "targetTitle": "회청색 잔류종점면",
+        "description": "[COS251 — 회청색 잔류종점면](./cos251.json)은 head pair 제거 뒤 빈 current spot이 다음 후보를 다시 끌어들이는 잔류 terminal을 제공한다. COS253의 순차 승격이 끊기지 않고 이어지는 run에서는 empty terminal이 완전히 quiet해지지 않은 경우가 많았다."
+      },
+      {
+        "targetId": 252,
+        "targetTitle": "회청색 단일복구대",
+        "description": "[COS252 — 회청색 단일복구대](./cos252.json)가 한 시점의 current pair를 고른다면, COS253는 그 current pair가 제거된 뒤 **남은 후보들 사이에서 같은 선발을 연쇄적으로 반복하는 하류 단계**로 분류된다. 두 항목은 별개지만 현장에서는 같은 bench에서 연속 발생하는 경우가 가장 많다."
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "label": "실험 253-A / 활성 surface 대조",
+      "description": "2045-10-25 09:40~11:20, RB-4 active bench와 분할 무광 흑색 control board C-2를 비교했다. 각 시험마다 front shell 3건, body candidate 3건, blank divider 1장을 60 cm 간격으로 놓고 4회 반복한 결과, RB-4에서는 4/4에서 head pair가 30~118초 내 형성되었고 wrong pair currentization이 3/4에서 나타났다. C-2 대조군은 current head selection 0/4였다."
+    },
+    {
+      "label": "실험 253-B / blank head marker 영향",
+      "description": "2045-10-25 13:00~14:10, active surface 위에 blank acrylic plaque, 무산성 종이 divider, marker 없음 조건을 각각 6회 비교했다. plaque 조건은 5/6, 종이 divider는 4/6에서 `다음` 또는 `2/3` 표식이 20~68초 내 형성되었고, marker 없음 조건은 약한 head preference 1/6만 관찰되었다."
+    },
+    {
+      "label": "실험 253-C / false pair 증폭",
+      "description": "2045-10-26 10:20~12:00, correct body보다 wrong body를 head edge에서 12 cm 더 가깝게 둔 뒤 same-surface 대조를 실시했다. active surface에서는 6회 중 4회에서 false pair가 먼저 current head를 차지했고, 같은 표본을 50 cm 이상 분리한 불투명 board 대조군에서는 0/6이었다."
+    },
+    {
+      "label": "실험 253-D / empty sleeve 선봉함",
+      "description": "2045-10-26 14:30~15:50, empty Tyvek sleeve 4개와 polyester sleeve 4개를 head position 8 cm 옆에 배치했다. active surface 8회 중 5회에서 선택된 current pair 주위로 seam 또는 flap 정렬이 54~140초 내 형성되었고, control board에서는 0/8이었다."
+    },
+    {
+      "label": "실험 253-E / clearance persistence",
+      "description": "2045-10-27 09:10~10:40, current pair를 제거한 뒤 표면을 비우고 열영상과 사광 반응을 추적했다. 저온 직사각형은 9~34분 지속되었고, 무관한 백지를 40초간 올려 둔 5회 중 3회에서 provisional line 또는 handling priority가 전이되었다. 같은 처치를 C-2에서 반복한 대조군은 0/5였다."
+    },
+    {
+      "label": "실험 253-F / rear burst 동조 회수",
+      "description": "2045-10-28 16:00~17:30, current pair처럼 보이는 shell/body 조합을 head position에 둔 뒤 actual body를 후방 0.8 m, 1.6 m, 2.4 m 위치 중 한 곳에 숨겼다. 후축 burst를 유지한 6회 중 5회는 올바른 rear body를 회수했지만, burst를 끈 비교군은 6회 중 2회만 올바른 회수에 성공했고 3회는 wrong pair를 current packet으로 유지했다."
+    }
+  ],
+  "handlingProcedures": [
+    "COS253 의심 표면은 일반 복구 desk로 쓰지 않고, **한 zone당 front shell 1건과 body candidate 1건만** 올릴 수 있는 분할 board로 전환한다.",
+    "active zone 반경 30 cm 안에 blank divider, queue card, empty sleeve, blank routing slip, thin case를 남겨 두지 않는다.",
+    "445~470 nm 사광과 열영상으로 head edge 반응과 저온 직사각형을 먼저 확인한 뒤 작업을 시작한다. 잔류 표면이 확인되면 최소 40분 냉각한다.",
+    "current pair처럼 보이는 조합이라도 footer hash, 실측 질량, 두께, 스테이플 간격, page total 중 3개 이상이 일치하기 전에는 승인·인계·봉함·보존해제 단계로 이동시키지 않는다.",
+    "active surface에서 선택되지 않은 후보는 `중복본`, `잔량`, `참조본`, `폐기 후보`로 표기하지 않는다.",
+    "후축 burst가 남아 있으면 rear-search를 계속하고, current pair를 완결본으로 승인하지 않는다.",
+    "active zone 0.8 m 안에서는 `다음`, `둘째`, `끝`, `이제 넘김` 같은 구두 순서 지시를 사용하지 않는다. 번호 패들 또는 수기 보드만 사용한다.",
+    "current pair를 다른 desk로 옮길 때는 blank routing card를 붙이지 않고, 이동 전후 질량 차를 재계측한다. 수령자 공란의 `handover complete`가 생성되면 즉시 무효 보류한다.",
+    "body bundle은 불투명 흑색 sleeve에 개별 봉인하고 원래 chain 번호를 유지한다. active surface 위에서 다른 shell과 임시 합철하지 않는다.",
+    "모든 조작 전후에 상부 사진, 측면 영상, 사광 사진, 열영상을 남기며, wrong pair가 형성된 흔적을 지우기 위해 표면을 닦거나 연마하지 않는다."
+  ],
+  "hypotheses": [
+    "현재 자료는 COS253가 특정 문서나 sleeve가 아니라, 반복된 rear-search와 재결합 시도 속에서 **`현재 사건 packet`의 권위가 surface 자체에 침전된 상태**라는 해석을 가장 강하게 지지한다. 이 경우 표면은 provenance를 판정하지 않고도 한 조합을 먼저 끝낼 대상으로 밀어 올린다.",
+    "관측상 COS253는 [COS169 — 잔류 대좌면](./cos169.json)의 자리 권위, [COS188 — 무본문 대용철](./cos188.json)의 전면 안정성, [COS227 — 회청색 후면적체벽](./cos227.json)의 rear body 잔류, [COS252 — 회청색 단일복구대](./cos252.json)의 current 선발이 한 평면 위에서 순차적으로 연결된 결과일 가능성이 높다.",
+    "[COS241 — 회청색 본문유도띠](./cos241.json)와 후축 burst가 current pair보다 다른 방향을 가리키는 사례가 반복된 점은, COS253가 정답을 제시하기보다 **이번에 먼저 정리할 순서**를 강요하는 운영상 허브 surface라는 해석에 부합한다.",
+    "다만 작업자 행동이 보조 조건인지 독립 변수인지는 아직 분리되지 않았다. control board는 현상을 약화시켰지만, 반복 작업자가 `먼저 정리된 것`을 current로 받아들이는 편향이 surface currentization을 강화했을 가능성은 남아 있다."
+  ],
+  "riskAssessment": [
+    {
+      "category": "현재쌍 오판 위험",
+      "assessment": "높음. head position과 provisional line만으로 wrong pair가 우선 packet처럼 취급될 수 있으며, 혼합 시험 24회 중 11회에서 선발 결과가 provenance와 다르게 흔들렸다."
+    },
+    {
+      "category": "후방 원본문 누락 위험",
+      "assessment": "높음. active surface가 선택한 pair와 별개로 actual body가 rear zone 0.5~2.7 m 뒤에 남은 사례가 반복되었다. 후축 burst를 무시하면 회수 성공률이 크게 떨어졌다."
+    },
+    {
+      "category": "허위 봉함 및 무수령 인계 위험",
+      "assessment": "높음. empty sleeve와 blank routing card가 nearby일 때 current pair가 봉함·인계 단계로 빠르게 앞질러 갈 수 있다."
+    },
+    {
+      "category": "중복본·보존해제 오인 위험",
+      "assessment": "중간 이상. current pair에서 탈락한 후보가 실제 원본문임에도 `나머지 잔량` 또는 `해제 검토`로 밀려난 사례가 확인되었다."
+    },
+    {
+      "category": "연쇄 COS 증폭 위험",
+      "assessment": "높음. COS253는 [COS250 — 회청색 연속증빙지](./cos250.json), [COS251 — 회청색 잔류종점면](./cos251.json), [COS241 — 회청색 본문유도띠](./cos241.json)와 결합해 회수·정정·인계 전 단계를 연속 오염시킬 수 있다."
+    }
+  ],
+  "notes": [
+    {
+      "type": "paragraph",
+      "content": "COS253 현장에서 가장 위험한 문장은 `맨 앞에 정리된 쌍부터 끝내면 된다`이다. current position은 편의를 제공하지만 provenance를 증명하지 않는다."
+    },
+    {
+      "type": "quotation",
+      "content": "**\"적합한 근거보다 먼저 자리가 정해졌고, 사람 손이 그 자리를 따라갔습니다.\" — REC-11, 2045-10-24 구술 기록**"
+    },
+    {
+      "type": "paragraph",
+      "content": "분할 무광 흑색 board를 사용한 대조군에서는 같은 표본, 같은 작업자, 같은 시간 제한에서도 current head selection이 재현되지 않았다. COS253 판정에서 `surface 이력`은 개별 문서보다 우선 확인해야 한다."
+    },
+    {
+      "type": "quotation",
+      "content": "**\"active surface에서 먼저 선택된 조합은 가장 확인하기 쉬운 쌍이었지만, footer hash는 자주 다른 곳을 가리켰습니다.\" — ANA-06**"
+    }
+  ],
+  "amendments": [
+    {
+      "relatedId": null,
+      "type": "reclassification",
+      "title": "임시표기 T-253 정식 편입",
+      "paragraphs": [
+        "2045-10-24부터 2045-11-02까지 현장 메모에서는 현상을 `T-253`, `recovery queue surface`, `head-current line`, `복구대기열`로 병기했다.",
+        "control board 대조와 잔류 surface 재현 결과, 본 항목은 단순 sorting bias가 아니라 여러 후보를 순차적으로 `이번에 먼저 끝낼 것`으로 선발하는 recovery surface의 현재화 현상으로 판정되었다.",
+        "이에 공식 명칭을 **회청색 복구대기열**로 확정하고 COS253으로 정식 편입한다."
+      ]
+    },
+    {
+      "relatedId": null,
+      "type": "supplemental",
+      "title": "A253/S253/R253 식별 접두",
+      "paragraphs": [
+        "head edge에서 current 권위를 얻은 blank marker와 queue plaque에는 `A253-head-일련번호`, active surface 사진·열영상에는 `S253-surface-일련번호`, current pair에서 탈락한 잔류 후보에는 원 chain 번호를 유지한 채 `R253-remainder-일련번호`를 교차 부여한다.",
+        "`A253-head`, `S253-surface`, `R253-remainder` 자료는 실제 current packet이나 recovered body와 같은 봉투·같은 current chain hash를 공유하지 않는다. provenance 검증 전에는 어떤 `R253-remainder`도 중복본 또는 해제 후보로 재분류하지 않는다."
+      ]
+    }
+  ],
+  "supplementalSections": [
+    {
+      "title": "현장 판정 기준",
+      "paragraphs": [
+        "445~470 nm 사광에서 head edge 1~3 mm 회청색 띠가 나타나고, 같은 구역에 저온 직사각형 또는 current pair 선발이 동반되면 COS253 의심 surface로 분류한다.",
+        "여기에 blank marker의 `다음` 권한 획득, empty sleeve의 선봉함, wrong pair currentization 중 1개 이상이 추가되면 COS253 확정 사례로 승격한다.",
+        "current pair처럼 보이는 조합도 footer hash·질량·두께·스테이플 간격·page total 대조 전에는 완결 packet, 임시본, 이관본으로 어느 범주에도 넣지 않는다."
+      ]
+    },
+    {
+      "title": "분할 board 규격 및 기록 방식",
+      "paragraphs": [
+        "권장 board는 무광 흑색 ABS 또는 동등 재질이며, 각 zone은 최소 500×300 mm, zone 간 간격은 50 cm 이상, partition 두께는 5 mm 이상으로 유지한다.",
+        "각 zone에는 front shell 1건과 body candidate 1건만 올릴 수 있고, blank marker와 empty sleeve는 zone 밖에 보관한다. rear-search 전후 사진, 열영상, 질량 로그, chain 번호를 같은 사건 묶음으로 보존하되 표면 접두와 원본문 체인은 병합하지 않는다.",
+        "분할 board 해제는 40분 냉각, 후축 burst 무반응 2회 확인, 저온 직사각형 소실을 모두 만족할 때만 허용한다."
+      ]
+    }
+  ]
+}
