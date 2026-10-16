@@ -456,6 +456,14 @@
         "[COS227 — 회청색 후면적체벽](./cos227.json)에서 회수된 mixed body cluster를 same bench에 풀어놓으면 [COS253 — 회청색 복구대기열](./cos253.json)이 어떤 body를 먼저 current pair로 올릴지 surface 차원에서 선발하는 경우가 반복되었다. 이때 queue 앞자리는 cavity provenance와 무관할 수 있다.",
         "COS227 회수물은 같은 recovery surface에 복수 후보를 병치하지 말고, 순차 선발이 시작되면 즉시 분할 board로 이송해 queue 형성을 차단한다."
       ]
+    },
+    {
+      "relatedId": 254,
+      "type": "reciprocal",
+      "title": "COS254 상호기록",
+      "paragraphs": [
+        "[COS254 — 회청색 검증간극](./cos254.json)은 [COS227 — 회청색 후면적체벽](./cos227.json) rear cavity에서 회수된 body를 front-only shell과 즉시 재결합하지 않도록 만드는 후속 검증 창으로 확인되었다. 후면적체벽 표본에서는 cavity 입구의 최상단 후보 편향이 강해 가장 먼저 꺼낸 body가 실제 대응체가 아닌 경우가 많았고, generated card나 archive tag가 남아 있으면 wrong candidate가 더 그럴듯해졌다. 이때 front와 회수 body를 무광 검증면에 분리 대치해 COS254를 형성하면 top-candidate bias가 약화되고 footer hash·질량 대조가 더 안정적으로 수행되므로, COS227 회수물은 rear search 직후 [COS254 — 회청색 검증간극](./cos254.json) 절차를 거치기 전까지 current file로 복귀시키지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

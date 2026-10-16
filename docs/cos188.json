@@ -445,6 +445,14 @@
         "[COS253 — 회청색 복구대기열](./cos253.json)에서는 [COS188 — 무본문 대용철](./cos188.json) shell이 실제 rear body보다 먼저 head position을 차지해 `이번에 끝낼 packet`처럼 선발되는 사례가 반복되었다. 이 경우 current line과 queue priority는 shell 쪽에 붙지만 actual body는 후방 0.5~2.7 m에 남을 수 있다.",
         "따라서 bodyless shell이 recovery desk의 앞줄에 섰다는 사실만으로 current packet으로 승인하지 않는다. footer hash, 질량, rear-search 결과를 우선 대조하고, COS253 active surface가 의심되면 shell과 body를 분할 board로 분리한다."
       ]
+    },
+    {
+      "relatedId": 254,
+      "type": "reciprocal",
+      "title": "COS254 상호기록",
+      "paragraphs": [
+        "[COS254 — 회청색 검증간극](./cos254.json)은 [COS188 — 무본문 대용철](./cos188.json)의 bodyless shell에서 actual body를 회수한 뒤 가장 중요한 후속 검증 단계로 확인되었다. shell과 body를 즉시 재삽입하면 전면 제목선·current status·검토선이 다시 본문 위로 덮일 수 있으나, 둘을 무광 불투명 면 위에 일정 간격으로 대치하면 shell 쪽 표면 권위가 먼저 약화되고 body의 footer hash·실장수는 안정적으로 남는 경향이 있다. 따라서 COS188 자료에서 rear slot이나 별도 sleeve에서 body가 회수되면 재삽입 전에 반드시 [COS254 — 회청색 검증간극](./cos254.json) 조건의 분리 대조를 시행하고, gap 형성 중에는 title line을 본문 존재의 근거로 사용하지 않는다."
+      ]
     }
   ],
   "supplementalSections": [

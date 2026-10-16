@@ -421,6 +421,14 @@
         "[COS253 — 회청색 복구대기열](./cos253.json) active head pair에 [COS214 — 회청색 장넘김대행막](./cos214.json)이 결합하면 작업자는 queue 앞자리를 실제 complete packet으로 더 쉽게 오인한다. 넘김감과 current priority가 동시에 있더라도 이는 provenance가 아니라 감각적 완료감에 불과하다.",
         "따라서 COS214 cue가 있는 queue 선두 pair는 no-leafing triad와 rear-search를 먼저 적용하고, 표면 우선권을 완결본 근거로 사용하지 않는다."
       ]
+    },
+    {
+      "relatedId": 254,
+      "type": "reciprocal",
+      "title": "COS254 상호기록",
+      "paragraphs": [
+        "[COS254 — 회청색 검증간극](./cos254.json)은 [COS214 — 회청색 장넘김대행막](./cos214.json) 숙주에서 actual body를 회수한 뒤에도 남는 manual page-turn cue를 약화시키는 대표적 검증 환경으로 확인되었다. 장넘김대행막 표본은 body를 찾은 뒤에도 host를 complete packet처럼 느끼게 만들어 thumb-flip 재시도를 유도하지만, front와 body를 분리 대치해 COS254가 형성되면 leaf-rustle burst와 lower-right corner lift가 유의하게 감소했다. 따라서 COS214 자료는 body 회수 뒤 바로 넘겨 보지 말고, [COS254 — 회청색 검증간극](./cos254.json) 조건에서 no-leafing triad를 반복 적용해 tactile cue와 provenance 판정을 분리한다."
+      ]
     }
   ],
   "supplementalSections": [
